@@ -1,0 +1,17 @@
+{
+  "name": "Open Source AI Landscape",
+  "short_name": "Open Source AI",
+  "description": "The curated landscape of open-source AI tools, frameworks, agents, runtimes and infrastructure.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f1724",
+  "theme_color": "#0a84ff",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

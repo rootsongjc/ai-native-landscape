@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.astro/
+.DS_Store
+public/data/
+public/exports/
+public/og/projects/

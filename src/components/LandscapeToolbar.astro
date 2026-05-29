@@ -1,0 +1,338 @@
+---
+import { ui } from '../lib/landscape.mjs';
+
+const { lang = 'en', categories = [] } = Astro.props;
+const copy = ui(lang);
+---
+
+<div class="landscape-toolbar" data-landscape-toolbar>
+  <div class="landscape-toolbar__search">
+    <svg class="landscape-toolbar__search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+    </svg>
+    <input
+      type="search"
+      class="landscape-toolbar__search-input"
+      placeholder={copy.toolbarSearchPlaceholder}
+      data-landscape-search
+      autocomplete="off"
+    />
+  </div>
+
+  <select class="landscape-toolbar__select" data-landscape-sort>
+    <option value="default">{copy.toolbarSortDefault}</option>
+    <option value="score">{copy.toolbarSortScore}</option>
+    <option value="name">{copy.toolbarSortName}</option>
+    <option value="added">{copy.toolbarSortAdded}</option>
+    <option value="oss-date">{copy.toolbarSortOssDate}</option>
+  </select>
+
+  <select class="landscape-toolbar__select" data-landscape-category>
+    <option value="all">{copy.allCategories}</option>
+    {categories.map((category) => (
+      <option value={category.key}>{lang === 'zh' ? category.name?.zh : category.name?.en}</option>
+    ))}
+  </select>
+
+  <select class="landscape-toolbar__select" data-landscape-status>
+    <option value="all">{copy.toolbarAllStatus}</option>
+    <option value="recommended">{copy.toolbarStatusRecommended}</option>
+    <option value="worthWatching">{copy.toolbarStatusWorthWatching}</option>
+    <option value="newlyAdded">{copy.toolbarStatusNewlyAdded}</option>
+    <option value="inactive">{copy.toolbarStatusInactive}</option>
+    <option value="archived">{copy.toolbarStatusArchived}</option>
+  </select>
+
+  <div class="landscape-toolbar__divider"></div>
+
+  <div class="landscape-toolbar__views">
+    <button class="landscape-toolbar__view-btn landscape-toolbar__view-btn--active" data-view="grid" title={copy.viewGrid}>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+      <span>{copy.viewGrid}</span>
+    </button>
+    <button class="landscape-toolbar__view-btn" data-view="heatmap" title={copy.viewHeatmap}>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="4" height="18" rx="1"/><rect x="9" y="8" width="4" height="13" rx="1"/><rect x="15" y="5" width="4" height="16" rx="1"/></svg>
+      <span>{copy.viewHeatmap}</span>
+    </button>
+  </div>
+
+  <div class="landscape-toolbar__export" data-landscape-export-menu>
+    <button class="landscape-toolbar__export-trigger" type="button" aria-haspopup="menu" aria-label={copy.toolbarExportLabel}>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      <span>{copy.toolbarExportLabel}</span>
+      <svg class="landscape-toolbar__export-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 10l5 5 5-5"/></svg>
+    </button>
+    <div class="landscape-toolbar__export-list" role="menu" hidden>
+      <button type="button" role="menuitem" data-landscape-export-png>PNG</button>
+      <button type="button" role="menuitem" data-landscape-export-pdf>PDF</button>
+      <a role="menuitem" href="/exports/projects.json" download>JSON</a>
+      <a role="menuitem" href="/exports/projects.csv" download>CSV</a>
+    </div>
+  </div>
+</div>
+
+<style>
+  .landscape-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+  }
+
+  .landscape-toolbar__search {
+    position: relative;
+    width: 220px;
+    min-width: 180px;
+    max-width: 220px;
+    flex: 0 1 220px;
+    flex-shrink: 1;
+  }
+
+  .landscape-toolbar__search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    color: var(--muted);
+    pointer-events: none;
+  }
+
+  .landscape-toolbar__search-input {
+    width: 100%;
+    height: 36px;
+    padding: 0 10px 0 30px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--surface-soft);
+    color: var(--text);
+    font: inherit;
+    font-size: 0.84rem;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+  }
+
+  .landscape-toolbar__search-input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(10, 132, 255, 0.12);
+  }
+
+  html[data-theme='dark'] .landscape-toolbar__search-input:focus {
+    box-shadow: 0 0 0 2px rgba(110,168,255,0.15);
+  }
+
+  .landscape-toolbar__select {
+    width: auto;
+    height: 36px;
+    min-width: 132px;
+    flex: 0 1 168px;
+    padding: 0 26px 0 10px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--surface-soft);
+    color: var(--text);
+    font: inherit;
+    font-size: 0.82rem;
+    cursor: pointer;
+    appearance: none;
+    box-sizing: border-box;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%235f6471' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 7px center;
+  }
+
+  .landscape-toolbar__select:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+
+  /* Divider between filters and actions */
+  .landscape-toolbar__divider {
+    width: 1px;
+    height: 24px;
+    background: var(--border);
+    flex-shrink: 0;
+    margin: 0 4px;
+  }
+
+  /* View toggle */
+  .landscape-toolbar__views {
+    display: flex;
+    height: 36px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--surface-soft);
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .landscape-toolbar__view-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 100%;
+    padding: 0 12px;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    transition: all 0.15s;
+    font: inherit;
+    font-size: 0.78rem;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .landscape-toolbar__view-btn + .landscape-toolbar__view-btn {
+    border-left: 1px solid var(--border);
+  }
+
+  .landscape-toolbar__view-btn:hover {
+    color: var(--text);
+    background: var(--surface);
+  }
+
+  .landscape-toolbar__view-btn--active {
+    background: var(--surface);
+    color: var(--accent);
+  }
+
+  /* Export dropdown */
+  .landscape-toolbar__export {
+    position: relative;
+  }
+
+  .landscape-toolbar__export-trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--surface-soft);
+    color: var(--muted);
+    font: inherit;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+    box-sizing: border-box;
+  }
+
+  .landscape-toolbar__export-trigger:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .landscape-toolbar__export-caret {
+    opacity: 0.5;
+  }
+
+  .landscape-toolbar__export-list {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 6px);
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+    padding: 4px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--surface);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    z-index: 20;
+  }
+
+  .landscape-toolbar__export-list[hidden] {
+    display: none !important;
+  }
+
+  html[data-theme='dark'] .landscape-toolbar__export-list {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  }
+
+  .landscape-toolbar__export-list button,
+  .landscape-toolbar__export-list a {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 7px;
+    background: transparent;
+    color: var(--text);
+    font: inherit;
+    font-size: 0.82rem;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: left;
+    transition: background 0.1s;
+  }
+
+  .landscape-toolbar__export-list button:hover,
+  .landscape-toolbar__export-list a:hover {
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+
+  @media (max-width: 720px) {
+    .landscape-toolbar {
+      padding: 10px 12px;
+      gap: 8px;
+    }
+
+    .landscape-toolbar__search {
+      width: 100%;
+    }
+
+    .landscape-toolbar__select {
+      width: 100%;
+      flex: 1 1 calc(50% - 4px);
+    }
+
+    .landscape-toolbar__divider {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .landscape-toolbar__select {
+      width: 100%;
+      flex: 1 1 100%;
+    }
+  }
+</style>
+
+<script>
+  const exportMenu = document.querySelector('[data-landscape-export-menu]');
+  const trigger = exportMenu?.querySelector('.landscape-toolbar__export-trigger');
+  const list = exportMenu?.querySelector('.landscape-toolbar__export-list');
+  if (trigger && list) {
+    const toggle = (open) => {
+      list.hidden = !open;
+      trigger.setAttribute('aria-expanded', String(open));
+    };
+    trigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggle(list.hidden);
+    });
+    list.addEventListener('click', (e) => {
+      if (e.target.closest('button, a')) toggle(false);
+    });
+    document.addEventListener('click', (e) => {
+      if (!exportMenu.contains(e.target)) toggle(false);
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') toggle(false);
+    });
+  }
+</script>

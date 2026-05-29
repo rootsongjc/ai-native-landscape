@@ -1,0 +1,67 @@
+{
+  "type": "object",
+  "required": [
+    "name",
+    "slug",
+    "repo",
+    "category",
+    "description"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "name": { "type": "string", "minLength": 1 },
+    "slug": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "homepage": { "type": ["string", "null"], "format": "uri" },
+    "repo": { "type": "string", "format": "uri" },
+    "license": { "type": "string" },
+    "category": { "type": "string" },
+    "subCategory": { "type": "string" },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "description": {
+      "type": "object",
+      "required": ["zh", "en"],
+      "additionalProperties": false,
+      "properties": {
+        "zh": { "type": "string", "minLength": 1 },
+        "en": { "type": "string", "minLength": 1 }
+      }
+    },
+    "content": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "zh": { "type": "string" },
+        "en": { "type": "string" }
+      }
+    },
+    "logo": { "type": "string" },
+    "author": { "type": "string" },
+    "ossDate": { "type": "string" },
+    "featured": { "type": "boolean" },
+    "thumbnail": { "type": "string" },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "zh": { "type": "string" },
+        "en": { "type": "string" }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": ["tracked", "inactive", "archived"]
+    },
+    "score": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "health": { "type": "number", "minimum": 0, "maximum": 100 },
+        "activity": { "type": "number", "minimum": 0, "maximum": 100 },
+        "community": { "type": "number", "minimum": 0, "maximum": 100 },
+        "popularity": { "type": "number", "minimum": 0, "maximum": 100 },
+        "quality": { "type": "number", "minimum": 0, "maximum": 100 },
+        "sustainability": { "type": "number", "minimum": 0, "maximum": 100 }
+      }
+    }
+  }
+}

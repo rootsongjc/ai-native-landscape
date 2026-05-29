@@ -1,0 +1,40 @@
+---
+import CategoryPage from '../../components/CategoryPage.astro';
+import { getCategories, getTaxonomy } from '../../lib/landscape.mjs';
+
+export async function getStaticPaths() {
+  const categories = getCategories();
+  const categoryMap = new Map(categories.map((category) => [category.key, category]));
+  const taxonomy = getTaxonomy();
+
+  const paths = categories.map((category) => ({
+    params: { key: category.key },
+    props: { category, canonicalCategoryKey: category.key },
+  }));
+
+  for (const [legacyKey, targets] of Object.entries(taxonomy.legacyAliases || {})) {
+    const firstTarget = targets.find((target) => categoryMap.has(target));
+    const base = categoryMap.get(firstTarget);
+    if (!base) continue;
+    paths.push({
+      params: { key: legacyKey },
+      props: {
+        canonicalCategoryKey: firstTarget,
+        category: {
+          ...base,
+          key: legacyKey,
+          name: base.name,
+          description: base.description,
+          subcategories: base.subcategories,
+        },
+      },
+    });
+  }
+
+  return paths;
+}
+
+const { category } = Astro.props;
+---
+
+<CategoryPage category={category} canonicalCategoryKey={Astro.props.canonicalCategoryKey} lang="en" />

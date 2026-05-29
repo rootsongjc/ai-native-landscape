@@ -1,0 +1,167 @@
+name: Add AI project
+description: Submit an open source AI project to AI Native Landscape.
+title: "[Project]: "
+labels: ["project-submission"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing to AI Native Landscape!
+
+        Before submitting, please:
+        1. **Search** [existing projects](https://landscape.jimmysong.io) to avoid duplicates
+        2. Ensure the project has an **active open source repository**
+        3. Verify the project fits the [inclusion criteria](https://landscape.jimmysong.io/methodology/)
+
+  - type: input
+    id: name
+    attributes:
+      label: Project name
+      description: The official name of the project.
+    validations:
+      required: true
+
+  - type: input
+    id: repo
+    attributes:
+      label: GitHub repository
+      description: The primary GitHub repository URL.
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+
+  - type: input
+    id: homepage
+    attributes:
+      label: Homepage / Website
+      description: Official project website or documentation URL (if different from GitHub repo).
+      placeholder: https://example.com
+
+  - type: dropdown
+    id: license
+    attributes:
+      label: Open source license
+      description: The license used by the project.
+      options:
+        - Apache-2.0
+        - MIT
+        - BSD-2-Clause
+        - BSD-3-Clause
+        - GPL-2.0
+        - GPL-3.0
+        - LGPL-2.1
+        - LGPL-3.0
+        - MPL-2.0
+        - AGPL-3.0
+        - Unlicense
+        - Other
+        - Not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: The top-level category this project belongs to.
+      options:
+        - agents
+        - rag-knowledge
+        - models-modalities
+        - inference-serving
+        - training-optimization
+        - evaluation-observability
+        - coding-devtools
+        - applications-products
+        - platform-infra
+        - open-source-misc
+    validations:
+      required: true
+
+  - type: dropdown
+    id: subCategory
+    attributes:
+      label: Subcategory
+      description: Choose the most specific subcategory. Pick "uncategorized" if unsure.
+      options:
+        - agent-frameworks
+        - agent-orchestration
+        - agent-memory-context
+        - mcp-tools
+        - sandboxes-runtimes
+        - vector-databases
+        - retrieval-indexing
+        - document-processing
+        - knowledge-graphs
+        - data-connectors
+        - foundation-models
+        - model-toolkits
+        - multimodal
+        - audio-speech
+        - image-video-generation
+        - model-serving
+        - inference-runtimes
+        - gpu-acceleration
+        - edge-local-inference
+        - llm-routing-gateways
+        - training-frameworks
+        - finetuning-alignment
+        - experiment-mlops
+        - optimization-simulation
+        - evaluation-benchmarks
+        - observability-monitoring
+        - prompt-quality
+        - safety-guardrails
+        - coding-agents
+        - ide-cli-tools
+        - sdk-frameworks
+        - browser-automation
+        - developer-utilities
+        - chat-interfaces
+        - desktop-clients
+        - workflow-automation
+        - low-code-builders
+        - productivity-tools
+        - cloud-native-ai
+        - data-platforms
+        - security-policy
+        - deployment-operations
+        - uncategorized
+        - learning-resources
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Why should this project be included?
+      description: |
+        A short description of the project and why it is relevant to the AI Native ecosystem.
+        Please provide both English and Chinese descriptions if possible.
+      placeholder: |
+        EN: <English description>
+        ZH: <中文描述>
+    validations:
+      required: true
+
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: Comma-separated keywords for discoverability (e.g., llm, agent, mcp, rag).
+      placeholder: llm, agent, mcp
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Submission checklist
+      options:
+        - label: The project has a publicly accessible GitHub repository
+          required: true
+        - label: The project is actively maintained (commits in the last 6 months)
+          required: false
+        - label: The project is open source (not a wrapper around a proprietary API)
+          required: true
+        - label: I have searched and this project is not already listed
+          required: true

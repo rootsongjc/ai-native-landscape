@@ -1,0 +1,379 @@
+categories:
+- key: agents
+  name:
+    zh: 智能体系统
+    en: Agent Systems
+  description:
+    zh: 面向智能体构建、协作和任务执行的系统层能力。
+    en: Core systems for building, coordinating, and operating AI agents.
+  subcategories:
+  - key: agent-frameworks
+    name:
+      zh: 智能体框架
+      en: Agent Frameworks
+    description:
+      zh: 多智能体与单智能体开发框架。
+      en: Frameworks for single-agent and multi-agent development.
+  - key: agent-orchestration
+    name:
+      zh: 编排与工作流
+      en: Orchestration & Workflows
+    description:
+      zh: 任务路由、流程编排和执行控制。
+      en: Task routing, workflow orchestration, and execution control.
+
+- key: rag-knowledge
+  name:
+    zh: 知识与上下文工程
+    en: Knowledge & Context
+  description:
+    zh: 覆盖检索增强、上下文状态、索引构建、知识组织与数据接入能力。
+    en: Retrieval, memory, indexing, knowledge organization, and data connectivity.
+  subcategories:
+  - key: agent-memory-context
+    name:
+      zh: 记忆与上下文
+      en: Memory & Context
+    description:
+      zh: 记忆层、上下文压缩、长期状态与会话管理。
+      en: Memory layers, context compression, and state management for AI systems.
+  - key: vector-databases
+    name:
+      zh: 向量数据库
+      en: Vector Databases
+    description:
+      zh: 向量存储、相似检索与 ANN 引擎。
+      en: Vector stores, ANN engines, and similarity search.
+  - key: retrieval-indexing
+    name:
+      zh: 检索与索引
+      en: Retrieval & Indexing
+    description:
+      zh: 分块、召回、重排与索引构建。
+      en: Chunking, retrieval, reranking, and indexing pipelines.
+  - key: document-processing
+    name:
+      zh: 文档处理
+      en: Document Processing
+    description:
+      zh: OCR、解析、结构化提取与文档理解。
+      en: OCR, parsing, extraction, and document understanding.
+  - key: knowledge-graphs
+    name:
+      zh: 知识图谱
+      en: Knowledge Graphs
+    description:
+      zh: 图谱建模、实体关系和图检索。
+      en: Entity graphs, relationship modeling, and graph retrieval.
+  - key: data-connectors
+    name:
+      zh: 数据连接器
+      en: Data Connectors
+    description:
+      zh: 外部系统接入、同步与数据管道。
+      en: Data ingestion, connectors, and synchronization pipelines.
+
+- key: models-modalities
+  name:
+    zh: 模型与多模态
+    en: Models & Modalities
+  description:
+    zh: 基础模型、模型工具链与多模态能力。
+    en: Foundation models, model toolkits, and multimodal capabilities.
+  subcategories:
+  - key: foundation-models
+    name:
+      zh: 基础模型
+      en: Foundation Models
+    description:
+      zh: 通用模型、权重发布与模型家族。
+      en: Foundation model families and model releases.
+  - key: model-toolkits
+    name:
+      zh: 模型工具链
+      en: Model Toolkits
+    description:
+      zh: 模型转换、量化、压缩与部署辅助。
+      en: Tooling for model conversion, quantization, and packaging.
+  - key: multimodal
+    name:
+      zh: 多模态
+      en: Multimodal
+    description:
+      zh: 文本、图像、音频、视频跨模态处理。
+      en: Cross-modal modeling for text, image, audio, and video.
+  - key: audio-speech
+    name:
+      zh: 语音与音频
+      en: Audio & Speech
+    description:
+      zh: 语音识别、语音合成和音频理解。
+      en: Speech-to-text, text-to-speech, and audio understanding.
+  - key: image-video-generation
+    name:
+      zh: 图像与视频生成
+      en: Image & Video Generation
+    description:
+      zh: 视觉生成模型与图像视频创作工具。
+      en: Image/video generation models and creative pipelines.
+
+- key: inference-serving
+  name:
+    zh: 推理与运行时
+    en: Inference & Runtime
+  description:
+    zh: 模型推理服务化、执行运行时、加速和访问路由能力。
+    en: Model serving, execution runtimes, acceleration, and routing for inference workloads.
+  subcategories:
+  - key: model-serving
+    name:
+      zh: 模型服务
+      en: Model Serving
+    description:
+      zh: 推理服务框架和生产部署方案。
+      en: Production model serving frameworks and stacks.
+  - key: inference-runtimes
+    name:
+      zh: 推理运行时
+      en: Inference Runtimes
+    description:
+      zh: 高性能推理内核与执行引擎。
+      en: Runtime engines and low-level inference kernels.
+  - key: sandboxes-runtimes
+    name:
+      zh: 沙箱与执行运行时
+      en: Sandboxes & Execution
+    description:
+      zh: 代码执行沙箱、代理执行环境和隔离运行时。
+      en: Sandboxes and isolated execution environments for AI workloads.
+  - key: gpu-acceleration
+    name:
+      zh: GPU 加速
+      en: GPU Acceleration
+    description:
+      zh: GPU 算子优化、并行与吞吐优化。
+      en: GPU-oriented acceleration and performance optimization.
+  - key: edge-local-inference
+    name:
+      zh: 边缘与本地推理
+      en: Edge & Local Inference
+    description:
+      zh: 端侧设备和本地环境推理。
+      en: On-device and local inference systems.
+  - key: llm-routing-gateways
+    name:
+      zh: 路由与网关
+      en: LLM Routing & Gateways
+    description:
+      zh: 模型路由、代理、成本与策略治理。
+      en: Routing, policy, and gateway controls for model access.
+
+- key: training-optimization
+  name:
+    zh: 训练、评测与优化
+    en: Training, Evaluation & Optimization
+  description:
+    zh: 训练框架、微调对齐、实验评测、观测与质量治理流程。
+    en: Training frameworks, fine-tuning, evaluation, observability, and optimization workflows.
+  subcategories:
+  - key: training-frameworks
+    name:
+      zh: 训练框架
+      en: Training Frameworks
+    description:
+      zh: 分布式训练和训练生态组件。
+      en: Training frameworks and distributed training systems.
+  - key: finetuning-alignment
+    name:
+      zh: 微调与对齐
+      en: Finetuning & Alignment
+    description:
+      zh: SFT、RLHF、偏好优化与对齐方法。
+      en: SFT, RLHF, preference optimization, and alignment.
+  - key: experiment-mlops
+    name:
+      zh: 实验与 MLOps
+      en: Experiment & MLOps
+    description:
+      zh: 实验追踪、模型管理与流水线管理。
+      en: Experiment tracking, model ops, and training pipelines.
+  - key: evaluation-benchmarks
+    name:
+      zh: 评测与基准
+      en: Evaluation & Benchmarks
+    description:
+      zh: 评测框架、基准套件与测试集。
+      en: Evaluation frameworks, benchmark suites, and datasets.
+  - key: observability-monitoring
+    name:
+      zh: 可观测性与监控
+      en: Observability & Monitoring
+    description:
+      zh: 链路追踪、日志分析与线上观测。
+      en: Tracing, logging, and runtime observability.
+  - key: prompt-quality
+    name:
+      zh: 提示词质量
+      en: Prompt Quality
+    description:
+      zh: 提示词管理、版本控制和质量分析。
+      en: Prompt management, versioning, and quality tooling.
+  - key: safety-guardrails
+    name:
+      zh: 安全与护栏
+      en: Safety & Guardrails
+    description:
+      zh: 内容安全、行为约束与风险控制。
+      en: Safety filters, guardrails, and risk controls.
+  - key: optimization-simulation
+    name:
+      zh: 优化与仿真
+      en: Optimization & Simulation
+    description:
+      zh: 编译优化、自动调优和训练仿真。
+      en: Compiler optimization, autotuning, and simulation.
+
+- key: coding-devtools
+  name:
+    zh: 开发者工具链
+    en: Developer Tooling
+  description:
+    zh: 面向开发者工作流、协议接入、编码和自动化的工具链。
+    en: Tooling for developer workflows, protocol integration, coding, and automation.
+  subcategories:
+  - key: mcp-tools
+    name:
+      zh: MCP 与工具协议
+      en: MCP & Tool Protocols
+    description:
+      zh: MCP server、tool registry、A2A/AG-UI 等工具协议生态。
+      en: MCP servers, tool registries, and related tool protocol ecosystems.
+  - key: coding-agents
+    name:
+      zh: 编程智能体
+      en: Coding Agents
+    description:
+      zh: 代码生成、修复、重构和开发助手。
+      en: AI coding agents for generation, review, and refactoring.
+  - key: ide-cli-tools
+    name:
+      zh: IDE 与 CLI 工具
+      en: IDE & CLI Tools
+    description:
+      zh: IDE 扩展、命令行工具和终端助手。
+      en: IDE plugins, CLIs, and terminal developer assistants.
+  - key: sdk-frameworks
+    name:
+      zh: SDK 与框架
+      en: SDK Frameworks
+    description:
+      zh: 开发 SDK、应用框架和集成库。
+      en: Application SDKs, frameworks, and integration libraries.
+  - key: browser-automation
+    name:
+      zh: 浏览器自动化
+      en: Browser Automation
+    description:
+      zh: 网页自动化、RPA 与浏览器控制。
+      en: Browser automation, RPA, and web control frameworks.
+  - key: developer-utilities
+    name:
+      zh: 开发者工具
+      en: Developer Utilities
+    description:
+      zh: 代码质量、依赖分析和工程效率工具。
+      en: Engineering utilities for code quality and workflows.
+
+- key: applications-products
+  name:
+    zh: 应用与体验
+    en: Applications & Experience
+  description:
+    zh: 直接面向用户和团队的 AI 应用、界面与交互体验。
+    en: User-facing AI applications, interfaces, and productivity experiences.
+  subcategories:
+  - key: chat-interfaces
+    name:
+      zh: 聊天与交互界面
+      en: Chat Interfaces
+    description:
+      zh: 聊天机器人、助手前端与交互 UI。
+      en: Chat interfaces, assistant UIs, and interaction layers.
+  - key: desktop-clients
+    name:
+      zh: 桌面客户端
+      en: Desktop Clients
+    description:
+      zh: 原生桌面应用和跨平台客户端。
+      en: Native desktop applications and cross-platform clients.
+  - key: workflow-automation
+    name:
+      zh: 工作流自动化
+      en: Workflow Automation
+    description:
+      zh: 自动化任务流和业务流程编排。
+      en: Workflow automation and process orchestration tools.
+  - key: low-code-builders
+    name:
+      zh: 低代码构建
+      en: Low-code Builders
+    description:
+      zh: 可视化搭建和低代码应用平台。
+      en: Visual builders and low-code platforms.
+  - key: productivity-tools
+    name:
+      zh: 效率工具
+      en: Productivity Tools
+    description:
+      zh: 内容创作、笔记、办公和效率增强。
+      en: Productivity apps for writing, notes, and collaboration.
+
+- key: platform-infra
+  name:
+    zh: 平台与基础设施
+    en: Platform & Infrastructure
+  description:
+    zh: 云原生 AI、数据平台、安全治理与运维能力。
+    en: Cloud-native AI platform capabilities and infrastructure.
+  subcategories:
+  - key: cloud-native-ai
+    name:
+      zh: 云原生 AI
+      en: Cloud Native AI
+    description:
+      zh: K8s、调度与云原生 AI 基础设施。
+      en: Kubernetes-native AI infrastructure and scheduling.
+  - key: data-platforms
+    name:
+      zh: 数据平台
+      en: Data Platforms
+    description:
+      zh: 数据湖仓、数据服务和治理平台。
+      en: Data platforms, lakehouse stacks, and data services.
+  - key: security-policy
+    name:
+      zh: 安全与策略
+      en: Security & Policy
+    description:
+      zh: 安全策略、权限治理和合规组件。
+      en: Security policy, access control, and compliance tooling.
+  - key: deployment-operations
+    name:
+      zh: 部署与运维
+      en: Deployment & Operations
+    description:
+      zh: 部署编排、发布流程和运行运维工具。
+      en: Deployment pipelines and operations tooling.
+
+legacyAliases:
+  agents_orchestration: [ agents, rag-knowledge, coding-devtools, inference-serving ]
+  applications_products: [ applications-products ]
+  data_retrieval: [ rag-knowledge ]
+  dev_tools_sdk: [ coding-devtools ]
+  evaluation_monitoring: [ training-optimization ]
+  ai_gateways: [ inference-serving ]
+  inference_serving: [ inference-serving ]
+  models_foundation: [ models-modalities ]
+  training_finetuning: [ training-optimization ]
+  vibe_coding: [ coding-devtools ]
+  ui_integration: [ applications-products, coding-devtools ]
