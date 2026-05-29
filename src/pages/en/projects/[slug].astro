@@ -1,0 +1,15 @@
+---
+import ProjectDetail from '../../../components/ProjectDetail.astro';
+import { getProjects } from '../../../lib/landscape.mjs';
+
+export async function getStaticPaths() {
+  return getProjects().map((project) => ({
+    params: { slug: project.slug },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+---
+
+<ProjectDetail project={project} lang="en" />
