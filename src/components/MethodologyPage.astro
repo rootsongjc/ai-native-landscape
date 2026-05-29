@@ -1,0 +1,406 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { localizedPath, SITE, ui } from '../lib/landscape.mjs';
+
+const { lang = 'en' } = Astro.props;
+const copy = ui(lang);
+const isZh = lang === 'zh';
+---
+
+<BaseLayout title={copy.methodologyPageTitle} description={copy.methodologyPageDescription} canonical={localizedPath('/methodology/', lang)} lang={lang}>
+  <main class="methodology-page">
+    <section class="method-hero">
+      <h1>{copy.methodologyPageTitle}</h1>
+      <p>{copy.methodologyPageDescription}</p>
+    </section>
+
+    <!-- Scoring Model -->
+    <section class="method-section">
+      <h2>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
+        {copy.scoringModel}
+      </h2>
+      <p class="method-section__intro">{copy.scoringModelDescription}</p>
+      <div class="method-dims">
+        <article class="method-dim">
+          <div class="method-dim__header">
+            <span class="method-dim__icon" style="background: #3b82f6;">A</span>
+            <h3>{copy.activity}</h3>
+          </div>
+          <p>{copy.activityDescription}</p>
+        </article>
+        <article class="method-dim">
+          <div class="method-dim__header">
+            <span class="method-dim__icon" style="background: #8b5cf6;">C</span>
+            <h3>{copy.community}</h3>
+          </div>
+          <p>{copy.communityDescription}</p>
+        </article>
+        <article class="method-dim">
+          <div class="method-dim__header">
+            <span class="method-dim__icon" style="background: #f59e0b;">Q</span>
+            <h3>{copy.quality}</h3>
+          </div>
+          <p>{copy.qualityDescription}</p>
+        </article>
+        <article class="method-dim">
+          <div class="method-dim__header">
+            <span class="method-dim__icon" style="background: #10b981;">S</span>
+            <h3>{copy.sustainability}</h3>
+          </div>
+          <p>{copy.sustainabilityDescription}</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Score Labels -->
+    <section class="method-section">
+      <h2>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        {copy.scoringRange}
+      </h2>
+      <div class="method-labels">
+        <div class="method-label">
+          <span class="method-label__badge" data-score-level="90">≥90</span>
+          <div>
+            <strong>{copy.scoreRange90}</strong>
+            <p>{copy.scoreRange90Desc}</p>
+          </div>
+        </div>
+        <div class="method-label">
+          <span class="method-label__badge" data-score-level="80">≥80</span>
+          <div>
+            <strong>{copy.scoreRange80}</strong>
+            <p>{copy.scoreRange80Desc}</p>
+          </div>
+        </div>
+        <div class="method-label">
+          <span class="method-label__badge" data-score-level="70">≥70</span>
+          <div>
+            <strong>{copy.scoreRange70}</strong>
+            <p>{copy.scoreRange70Desc}</p>
+          </div>
+        </div>
+        <div class="method-label">
+          <span class="method-label__badge" data-score-level="60">≥60</span>
+          <div>
+            <strong>{copy.scoreRange60}</strong>
+            <p>{copy.scoreRange60Desc}</p>
+          </div>
+        </div>
+        <div class="method-label">
+          <span class="method-label__badge" data-score-level="0">&lt;60</span>
+          <div>
+            <strong>{copy.scoreRangeBelow}</strong>
+            <p>{copy.scoreRangeBelowDesc}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curation Standards -->
+    <section class="method-section">
+      <h2>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        {copy.curationStandards}
+      </h2>
+      <p class="method-section__intro">{copy.curationStandardsDescription}</p>
+      <ul class="method-rules">
+        <li>{copy.curationRule1}</li>
+        <li>{copy.curationRule2}</li>
+        <li>{copy.curationRule3}</li>
+        <li>{copy.curationRule4}</li>
+      </ul>
+    </section>
+
+        <!-- Reference status -->
+    <section class="method-section">
+      <h2>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        {copy.projectLifecycle}
+      </h2>
+      <p class="method-section__intro">{copy.projectLifecycleDescription}</p>
+      <div class="method-lifecycle">
+        <article class="method-status" data-status="sandbox">
+          <span class="method-status__badge">{copy.statuses.sandbox}</span>
+          <p>{copy.statusSandboxDescription}</p>
+        </article>
+        <article class="method-status" data-status="incubating">
+          <span class="method-status__badge">{copy.statuses.incubating}</span>
+          <p>{copy.statusIncubatingDescription}</p>
+        </article>
+        <article class="method-status" data-status="graduated">
+          <span class="method-status__badge">{copy.statuses.graduated}</span>
+          <p>{copy.statusGraduatedDescription}</p>
+        </article>
+        <article class="method-status" data-status="archived">
+          <span class="method-status__badge">{copy.statuses.archived}</span>
+          <p>{copy.statusArchivedDescription}</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- How to Submit -->
+    <section class="method-section">
+      <h2>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+        {copy.howToSubmit}
+      </h2>
+      <p class="method-section__intro">{copy.howToSubmitDescription}</p>
+      <ol class="method-steps">
+        <li>{copy.submitStep1}</li>
+        <li>{copy.submitStep2}</li>
+        <li>{copy.submitStep3}</li>
+      </ol>
+      <a class="method-cta" href={SITE.issueNew} target="_blank" rel="noopener noreferrer">
+        {copy.openIssueForm}
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+      </a>
+    </section>
+
+    <!-- How to Update -->
+    <section class="method-section">
+      <h2>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+        {copy.howToUpdate}
+      </h2>
+      <p class="method-section__intro">{copy.howToUpdateDescription}</p>
+      <ol class="method-steps">
+        <li>{copy.updateStep1}</li>
+        <li>{copy.updateStep2}</li>
+        <li>{copy.updateStep3}</li>
+      </ol>
+    </section>
+
+    <!-- How to Archive -->
+    <section class="method-section">
+      <h2>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 8v13H3V8M1 3h22v5H1zM10 12h4"/></svg>
+        {copy.howToArchive}
+      </h2>
+      <p class="method-section__intro">{copy.howToArchiveDescription}</p>
+      <ul class="method-rules">
+        <li>{copy.archiveReason1}</li>
+        <li>{copy.archiveReason2}</li>
+        <li>{copy.archiveReason3}</li>
+        <li>{copy.archiveReason4}</li>
+      </ul>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .methodology-page {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 24px 16px 48px;
+  }
+
+  /* Hero */
+  .method-hero {
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+  .method-hero h1 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin: 0 0 8px;
+  }
+  .method-hero p {
+    color: var(--muted);
+    font-size: 0.92rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* Sections */
+  .method-section {
+    margin-bottom: 36px;
+  }
+  .method-section h2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0 0 12px;
+    color: var(--text);
+  }
+  .method-section h2 svg {
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+  .method-section__intro {
+    color: var(--muted);
+    font-size: 0.88rem;
+    margin: 0 0 16px;
+    line-height: 1.5;
+  }
+
+  /* Scoring Dimensions */
+  .method-dims {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .method-dim {
+    padding: 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+  .method-dim__header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  .method-dim__icon {
+    display: grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    color: white;
+    font-weight: 800;
+    font-size: 0.75rem;
+    flex-shrink: 0;
+  }
+  .method-dim h3 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  .method-dim p {
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.45;
+    margin: 0;
+  }
+
+  /* Score Labels */
+  .method-labels {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .method-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+  .method-label__badge {
+    display: grid;
+    place-items: center;
+    min-width: 44px;
+    height: 28px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: white;
+    flex-shrink: 0;
+  }
+  .method-label__badge[data-score-level="90"] { background: #10b981; }
+  .method-label__badge[data-score-level="80"] { background: #3b82f6; }
+  .method-label__badge[data-score-level="70"] { background: #8b5cf6; }
+  .method-label__badge[data-score-level="60"] { background: #f59e0b; }
+  .method-label__badge[data-score-level="0"] { background: #94a3b8; }
+  .method-label strong {
+    font-size: 0.88rem;
+    display: block;
+    margin-bottom: 2px;
+  }
+  .method-label p {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin: 0;
+    line-height: 1.35;
+  }
+
+  /* Rules / Steps */
+  .method-rules, .method-steps {
+    padding-left: 20px;
+    margin: 0;
+  }
+  .method-rules li, .method-steps li {
+    font-size: 0.86rem;
+    line-height: 1.5;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+  .method-rules li::marker {
+    color: var(--accent);
+  }
+  .method-steps li::marker {
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  /* Lifecycle */
+  .method-lifecycle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .method-status {
+    padding: 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+  .method-status__badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 8px;
+  }
+  .method-status[data-status="sandbox"] .method-status__badge { background: #f59e0b; }
+  .method-status[data-status="incubating"] .method-status__badge { background: #8b5cf6; }
+  .method-status[data-status="graduated"] .method-status__badge { background: #10b981; }
+  .method-status[data-status="archived"] .method-status__badge { background: #94a3b8; }
+  .method-status p {
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin: 0;
+    line-height: 1.45;
+  }
+
+  /* CTA Button */
+  .method-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 18px;
+    border-radius: 8px;
+    background: var(--accent);
+    color: white;
+    font-size: 0.86rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 16px;
+    transition: opacity 0.2s;
+  }
+  .method-cta:hover {
+    opacity: 0.9;
+  }
+  .method-cta svg {
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 640px) {
+    .method-dims, .method-lifecycle {
+      grid-template-columns: 1fr;
+    }
+    .method-hero h1 {
+      font-size: 1.3rem;
+    }
+  }
+</style>

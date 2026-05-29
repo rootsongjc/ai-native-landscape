@@ -1,0 +1,263 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  categoryDescription,
+  categoryName,
+  getLandscape,
+  legacyCategoryTargets,
+  localizedPath,
+  projectDescription,
+  projectIconUrl,
+  scoreLabel,
+  statusLabel,
+  subCategoryName,
+  ui,
+} from '../lib/landscape.mjs';
+
+const { lang = 'en', category, canonicalCategoryKey = category.key } = Astro.props;
+const copy = ui(lang);
+const landscape = getLandscape();
+const isLegacyCategory = !landscape.byCategory[category.key] && legacyCategoryTargets(category.key).length > 0;
+const resolvedKeys = isLegacyCategory ? legacyCategoryTargets(category.key) : [category.key];
+const projects = resolvedKeys.flatMap((key) => landscape.byCategory[key] || []);
+
+const grouped = (category.subcategories || []).map((subCategory) => ({
+  ...subCategory,
+  projects: projects.filter((project) => project.subCategory === subCategory.key),
+})).filter((item) => item.projects.length > 0);
+
+const allTags = Array.from(new Set(projects.flatMap((project) => project.tags || []))).sort();
+const title = `${categoryName(category, lang)}`;
+const description = categoryDescription(category, lang);
+---
+
+<BaseLayout title={title} description={description} canonical={localizedPath(`/categories/${canonicalCategoryKey}/`, lang)} lang={lang}>
+  <main class="category-page category-page--grouped">
+    <a class="back-link" href={localizedPath('/', lang)}>{copy.back}</a>
+    <section class="page-heading">
+      <h1>{categoryName(category, lang)}</h1>
+      <p>{description}</p>
+      <div class="category-page__meta" aria-label={lang === 'zh' ? '分类摘要' : 'Category summary'}>
+        <span class="category-page__meta-item">
+          <strong>{projects.length}</strong>
+          <span>{copy.projects}</span>
+        </span>
+        <span class="category-page__meta-item">
+          <strong>{grouped.length}</strong>
+          <span>{copy.subCategory}</span>
+        </span>
+        <span class="category-page__meta-item">
+          <strong>{allTags.length}</strong>
+          <span>{lang === 'zh' ? '标签' : 'Tags'}</span>
+        </span>
+      </div>
+      {isLegacyCategory && <p class="legacy-notice">{copy.legacyCategoryNotice}</p>}
+    </section>
+
+    <section class="toolbar toolbar--category" aria-label="Category filters">
+      <div class="category-toolbar__search">
+        <label class="search-field">
+          <span>{copy.search}</span>
+          <input data-filter-search type="search" placeholder={copy.searchPlaceholder} />
+        </label>
+      </div>
+      <div class="category-toolbar__filters">
+        <label>
+          <span>{copy.subCategory}</span>
+          <select data-filter-subcategory>
+            <option value="">{copy.allSubCategories}</option>
+            {grouped.map((subCategory) => <option value={subCategory.key}>{subCategoryName(subCategory.key, lang)}</option>)}
+          </select>
+        </label>
+        <label>
+          <span>{copy.status}</span>
+          <select data-filter-status>
+            <option value="">{copy.allStatus}</option>
+            <option value="graduated">{statusLabel('graduated', lang)}</option>
+            <option value="incubating">{statusLabel('incubating', lang)}</option>
+            <option value="sandbox">{statusLabel('sandbox', lang)}</option>
+            <option value="archived">{statusLabel('archived', lang)}</option>
+          </select>
+        </label>
+        <label>
+          <span>{copy.filterByTag}</span>
+          <select data-filter-tag>
+            <option value="">{copy.allTags}</option>
+            {allTags.map((tag) => <option value={tag}>{tag}</option>)}
+          </select>
+        </label>
+        <label>
+          <span>{copy.sort}</span>
+          <select data-filter-sort>
+            <option value="score">{copy.score}</option>
+            <option value="name">{copy.name}</option>
+            <option value="newest">{copy.ossDate}</option>
+          </select>
+        </label>
+      </div>
+      <div class="category-toolbar__actions">
+        <button class="button button-secondary" type="button" data-reset>{copy.resetFilters}</button>
+      </div>
+    </section>
+
+    <section class="subcategory-board" data-board>
+      {grouped.map((subCategory) => (
+        <section class="subcategory-group" data-group data-subcategory={subCategory.key}>
+          <button class="subcategory-heading" type="button" data-toggle aria-expanded="true">
+            <span>
+              <strong>{subCategoryName(subCategory.key, lang)}</strong>
+              <small>{subCategory.projects.length} {copy.projects.toLowerCase()}</small>
+            </span>
+            <span class="chevron">⌄</span>
+          </button>
+          <p>{subCategory.description?.[lang] || subCategory.description?.en || ''}</p>
+          <div class="project-list">
+            {subCategory.projects.map((project) => {
+              const avatar = projectIconUrl(project);
+              return (
+                <article
+                  class="project-list-item"
+                  data-card
+                  data-repo={project.repoSlug}
+                  data-name={project.name.toLowerCase()}
+                  data-status={project.status}
+                  data-tags={(project.tags || []).join(' ')}
+                  data-score=""
+                  data-oss-date={project.ossDate || ''}
+                  data-subcategory={project.subCategory}
+                  data-search={`${project.name} ${project.slug} ${(project.tags || []).join(' ')} ${projectDescription(project, 'zh')} ${projectDescription(project, 'en')}`.toLowerCase()}
+                >
+                  <div class="project-list-main">
+                    <div class="logo project-logo">
+                      {avatar && (
+                        <img
+                          src={avatar}
+                          alt={`${project.name} logo`}
+                          loading="lazy"
+                          decoding="async"
+                          onerror="this.hidden=true;this.nextElementSibling.hidden=false"
+                        />
+                      )}
+                      <span hidden={Boolean(avatar)}>{project.name.slice(0, 2).toUpperCase()}</span>
+                    </div>
+                    <div class="project-list-copy">
+                      <h2><a href={localizedPath(`/projects/${project.slug}/`, lang)}>{project.name}</a></h2>
+                      <p>{projectDescription(project, lang)}</p>
+                    </div>
+                  </div>
+                  <div class="project-list-side">
+                    <div class="project-list-side__stats">
+                      <div class="project-score" data-score-repo={project.repoSlug}>
+                        <strong data-score-value>--</strong>
+                        <span data-score-label>{copy.scoreLoading}</span>
+                      </div>
+                      <span class={`status-pill status-pill--${project.status}`}>{statusLabel(project.status, lang)}</span>
+                    </div>
+                    <div class="card-actions card-actions--stacked">
+                      <a class="card-action" href={localizedPath(`/projects/${project.slug}/`, lang)}>{copy.details}</a>
+                      <a class="card-action" href={project.repo} target="_blank" rel="noopener noreferrer">GitHub</a>
+                      {project.homepage && <a class="card-action" href={project.homepage} target="_blank" rel="noopener noreferrer">{copy.website}</a>}
+                    </div>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      ))}
+    </section>
+
+    <p class="empty-state" data-empty hidden>{copy.noProjects}</p>
+  </main>
+
+  <script>
+    const locale = document.documentElement.lang.startsWith('zh') ? 'zh' : 'en';
+    const search = document.querySelector('[data-filter-search]');
+    const subCategory = document.querySelector('[data-filter-subcategory]');
+    const status = document.querySelector('[data-filter-status]');
+    const tag = document.querySelector('[data-filter-tag]');
+    const sort = document.querySelector('[data-filter-sort]');
+    const empty = document.querySelector('[data-empty]');
+    const groups = Array.from(document.querySelectorAll('[data-group]'));
+
+    function applyFilters() {
+      const q = search.value.trim().toLowerCase();
+      const subCategoryValue = subCategory.value;
+      const statusValue = status.value;
+      const tagValue = tag.value;
+      let visible = 0;
+
+      groups.forEach((group) => {
+        const cards = Array.from(group.querySelectorAll('[data-card]'));
+        cards
+          .sort((a, b) => {
+            if (sort.value === 'name') return a.dataset.name.localeCompare(b.dataset.name);
+            if (sort.value === 'newest') return (b.dataset.ossDate || '').localeCompare(a.dataset.ossDate || '');
+            return Number(b.dataset.score) - Number(a.dataset.score);
+          })
+          .forEach((card) => card.parentElement.appendChild(card));
+
+        let groupVisible = 0;
+        cards.forEach((card) => {
+          const match = (!q || card.dataset.search.includes(q))
+            && (!subCategoryValue || card.dataset.subcategory === subCategoryValue)
+            && (!statusValue || card.dataset.status === statusValue)
+            && (!tagValue || card.dataset.tags.includes(tagValue));
+          card.hidden = !match;
+          if (match) {
+            visible += 1;
+            groupVisible += 1;
+          }
+        });
+
+        group.hidden = groupVisible === 0;
+      });
+
+      empty.hidden = visible > 0;
+    }
+
+    document.querySelectorAll('[data-toggle]').forEach((button) => {
+      button.addEventListener('click', () => {
+        const group = button.closest('[data-group]');
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!expanded));
+        group.classList.toggle('is-collapsed', expanded);
+      });
+    });
+
+    document.querySelector('[data-reset]').addEventListener('click', () => {
+      search.value = '';
+      subCategory.value = '';
+      status.value = '';
+      tag.value = '';
+      sort.value = 'score';
+      applyFilters();
+    });
+
+    [search, subCategory, status, tag, sort].forEach((input) => {
+      input.addEventListener('input', applyFilters);
+      input.addEventListener('change', applyFilters);
+    });
+
+    const query = new URLSearchParams(window.location.search);
+    if (query.get('sub')) {
+      subCategory.value = query.get('sub');
+    }
+
+    applyFilters();
+
+    async function hydrateCategoryScores() {
+      const cards = Array.from(document.querySelectorAll('[data-card]'));
+      const repos = cards.map((card) => card.dataset.repo).filter(Boolean);
+      await window.aiLandscapeScores?.fetchScores(repos, locale);
+      cards.forEach((card) => {
+        const score = window.aiLandscapeScores?.getCachedScore(card.dataset.repo);
+        card.dataset.score = Number.isFinite(score?.health) ? String(score.health) : '';
+      });
+      await window.aiLandscapeScores?.hydrateScores(document, locale);
+      applyFilters();
+    }
+
+    hydrateCategoryScores();
+  </script>
+</BaseLayout>

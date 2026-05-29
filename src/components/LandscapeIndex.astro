@@ -1,0 +1,325 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  categoryName,
+  getLandscape,
+  localizedPath,
+  projectDescription,
+  projectIconUrl,
+  scoreLabel,
+  SITE,
+  statusLabel,
+  subCategoryName,
+  ui,
+} from '../lib/landscape.mjs';
+
+const { lang = 'en' } = Astro.props;
+const copy = ui(lang);
+const landscape = getLandscape();
+const categories = landscape.categories
+  .filter((category) => (landscape.byCategory[category.key] || []).length > 0)
+  .sort((a, b) => (landscape.byCategory[b.key] || []).length - (landscape.byCategory[a.key] || []).length);
+const primaryCategories = categories.slice(0, 4);
+const secondaryCategories = categories.slice(4);
+const featured = landscape.projects.filter((project) => project.featured).slice(0, 6);
+
+const searchIndex = landscape.projects.map((project) => ({
+  slug: project.slug,
+  name: project.name,
+  repoSlug: project.repoSlug,
+  scorePercent: null,
+  scoreLabel: copy.scoreLoading,
+  status: statusLabel(project.status, lang),
+  category: categoryName(landscape.categories.find((category) => category.key === project.category), lang),
+  subCategory: subCategoryName(project.subCategory, lang),
+  description: projectDescription(project, lang),
+  tags: project.tags || [],
+  categoryKey: project.category,
+  statusKey: project.status,
+  ossDate: project.ossDate || '',
+  href: localizedPath(`/projects/${project.slug}/`, lang),
+  avatar: projectIconUrl(project),
+}));
+
+const canonical = localizedPath('/', lang);
+---
+
+<BaseLayout title={SITE.title} description={copy.metaDescription} canonical={canonical} lang={lang}>
+  <main>
+    <section class="hero hero--refined">
+      <div class="hero-copy">
+        <h1>{copy.landscapeTitle}</h1>
+        <p>{copy.heroDescription}</p>
+        <div class="hero-actions">
+          <a class="button" href={localizedPath('/submit/', lang)}>{copy.submitProject}</a>
+          <a class="button button-secondary" href="/exports/projects.json" download>{copy.downloadJson}</a>
+        </div>
+      </div>
+
+      <div class="feature-grid" aria-label="Landscape features">
+        <article class="feature-card">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16v12H4zM8 7V5h8v2"/></svg>
+          <strong>{landscape.projectCount}</strong>
+          <span>{lang === 'zh' ? '收录项目' : 'Projects indexed'}</span>
+        </article>
+        <article class="feature-card">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 12h18"/></svg>
+          <strong>{lang === 'zh' ? '从 2025 年起' : 'Since 2025'}</strong>
+          <span>{lang === 'zh' ? '持续人工策展更新' : 'Continuously curated and updated'}</span>
+        </article>
+        <article class="feature-card">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-4z"/></svg>
+          <strong>{lang === 'zh' ? '透明评分标准' : 'Transparent scoring'}</strong>
+          <span>{lang === 'zh' ? '4 维度模型，可解释可追踪' : '4 dimensions, explainable and traceable'}</span>
+        </article>
+        <article class="feature-card">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h10"/></svg>
+          <strong>{lang === 'zh' ? '开源维护优先' : 'Open-source maintained'}</strong>
+          <span>{lang === 'zh' ? '关注活跃社区、项目影响力与可持续性' : 'Prioritizes active communities, impact, and sustainability'}</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="search-panel search-panel--simple search-panel--top">
+      <div class="section-head">
+        <h2>{copy.searchResults}</h2>
+      </div>
+      <div class="toolbar toolbar--search-simple" aria-label="Search controls">
+        <label class="search-field">
+          <span>{copy.search}</span>
+          <input data-search-input type="search" placeholder={copy.searchPlaceholder} />
+        </label>
+        <label>
+          <span>{copy.category}</span>
+          <select data-search-category>
+            <option value="">{copy.allCategories}</option>
+            {categories.map((category) => <option value={category.key}>{categoryName(category, lang)}</option>)}
+          </select>
+        </label>
+        <label>
+          <span>{copy.status}</span>
+          <select data-search-status>
+            <option value="">{copy.allStatus}</option>
+            <option value="graduated">{statusLabel('graduated', lang)}</option>
+            <option value="incubating">{statusLabel('incubating', lang)}</option>
+            <option value="sandbox">{statusLabel('sandbox', lang)}</option>
+            <option value="archived">{statusLabel('archived', lang)}</option>
+          </select>
+        </label>
+      </div>
+      <p class="search-empty" data-search-empty data-empty-text={copy.noProjects}>{copy.searchPlaceholder}</p>
+      <div class="search-results" data-search-results></div>
+    </section>
+
+    <section class="directory-panel directory-panel--compact">
+      <div class="section-head">
+        <h2>{copy.browseByCategory}</h2>
+      </div>
+      <div class="category-list">
+        {primaryCategories.map((category) => {
+          const projects = landscape.byCategory[category.key] || [];
+          const subRows = (category.subcategories || [])
+            .map((subCategory) => ({
+              key: subCategory.key,
+              name: subCategoryName(subCategory.key, lang),
+              count: (landscape.bySubCategory[subCategory.key] || []).length,
+            }))
+            .filter((row) => row.count > 0)
+            .sort((a, b) => b.count - a.count)
+            .slice(0, 3);
+
+          return (
+            <article class="category-row">
+              <div class="category-row-main">
+                <h3><a href={localizedPath(`/categories/${category.key}/`, lang)}>{categoryName(category, lang)}</a></h3>
+                <span>{projects.length} {copy.projects.toLowerCase()}</span>
+              </div>
+              <div class="category-row-tags">
+                {subRows.map((row) => (
+                  <a href={localizedPath(`/categories/${category.key}/?sub=${row.key}`, lang)}>{row.name} ({row.count})</a>
+                ))}
+              </div>
+            </article>
+          );
+        })}
+
+        {secondaryCategories.length > 0 && (
+          <details class="category-more">
+            <summary>More categories ({secondaryCategories.length})</summary>
+            <div class="category-list category-list--nested">
+              {secondaryCategories.map((category) => {
+                const projects = landscape.byCategory[category.key] || [];
+                const subRows = (category.subcategories || [])
+                  .map((subCategory) => ({
+                    key: subCategory.key,
+                    name: subCategoryName(subCategory.key, lang),
+                    count: (landscape.bySubCategory[subCategory.key] || []).length,
+                  }))
+                  .filter((row) => row.count > 0)
+                  .sort((a, b) => b.count - a.count)
+                  .slice(0, 3);
+
+                return (
+                  <article class="category-row">
+                    <div class="category-row-main">
+                      <h3><a href={localizedPath(`/categories/${category.key}/`, lang)}>{categoryName(category, lang)}</a></h3>
+                      <span>{projects.length} {copy.projects.toLowerCase()}</span>
+                    </div>
+                    <div class="category-row-tags">
+                      {subRows.map((row) => (
+                        <a href={localizedPath(`/categories/${category.key}/?sub=${row.key}`, lang)}>{row.name} ({row.count})</a>
+                      ))}
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          </details>
+        )}
+      </div>
+    </section>
+
+    <section class="discover-panel discover-panel--compact">
+      <div class="section-head">
+        <h2>{copy.featuredDiscover}</h2>
+      </div>
+      <div class="discover-cards discover-cards--compact">
+        {featured.map((project) => {
+          const avatar = projectIconUrl(project);
+          return (
+            <article class="discover-card">
+              <div class="discover-main">
+                <div class="logo project-logo">
+                  {avatar && (
+                    <img
+                      src={avatar}
+                      alt={`${project.name} logo`}
+                      loading="lazy"
+                      decoding="async"
+                      onerror="this.hidden=true;this.nextElementSibling.hidden=false"
+                    />
+                  )}
+                  <span hidden={Boolean(avatar)}>{project.name.slice(0, 2).toUpperCase()}</span>
+                </div>
+                <div>
+                  <h4><a href={localizedPath(`/projects/${project.slug}/`, lang)}>{project.name}</a></h4>
+                  <p>{projectDescription(project, lang)}</p>
+                </div>
+              </div>
+              <div class="discover-meta">
+                <span data-score-repo={project.repoSlug}><span data-score-value>--</span></span>
+                <span>{statusLabel(project.status, lang)}</span>
+                <span>{subCategoryName(project.subCategory, lang)}</span>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    </section>
+
+    <details class="methodology-panel" id="methodology">
+      <summary>{copy.methodologyTitle}</summary>
+      <div class="methodology-grid">
+        <article>
+          <h3>{copy.scoringModel}</h3>
+          <ul>
+            <li>{copy.overallHealth}: 0-100</li>
+            <li>{copy.activity}: 0-100</li>
+            <li>{copy.community}: 0-100</li>
+            <li>{copy.quality}: 0-100</li>
+            <li>{copy.sustainability}: 0-100</li>
+          </ul>
+        </article>
+        <article>
+          <h3>{copy.curationStandards}</h3>
+          <ul>
+            <li>{copy.curationRule1}</li>
+            <li>{copy.curationRule2}</li>
+            <li>{copy.curationRule3}</li>
+          </ul>
+        </article>
+      </div>
+    </details>
+  </main>
+
+  <script type="application/json" id="project-index" set:html={JSON.stringify(searchIndex)}></script>
+  <script>
+    const locale = document.documentElement.lang.startsWith('zh') ? 'zh' : 'en';
+    const searchInput = document.querySelector('[data-search-input]');
+    const searchCategory = document.querySelector('[data-search-category]');
+    const searchStatus = document.querySelector('[data-search-status]');
+    const searchEmpty = document.querySelector('[data-search-empty]');
+    const resultsHost = document.querySelector('[data-search-results]');
+
+    const raw = document.getElementById('project-index')?.textContent || '[]';
+    const index = JSON.parse(raw);
+
+    function renderResults() {
+      const q = searchInput.value.trim().toLowerCase();
+      const categoryValue = searchCategory.value;
+      const statusValue = searchStatus.value;
+
+      let results = index.filter((item) => {
+        const searchable = `${item.name} ${item.description} ${item.tags.join(' ')} ${item.category} ${item.subCategory}`.toLowerCase();
+        const matchesQuery = !q || searchable.includes(q);
+        const matchesCategory = !categoryValue || item.categoryKey === categoryValue;
+        const matchesStatus = !statusValue || item.statusKey === statusValue;
+        return matchesQuery && matchesCategory && matchesStatus;
+      });
+
+      results = results.sort((a, b) => (b.scorePercent ?? -1) - (a.scorePercent ?? -1));
+
+      if (!q && !categoryValue && !statusValue) {
+        searchEmpty.hidden = false;
+        resultsHost.innerHTML = '';
+        return;
+      }
+
+      const limited = results.slice(0, 60);
+      searchEmpty.hidden = limited.length > 0;
+      searchEmpty.textContent = limited.length > 0 ? '' : (searchEmpty.dataset.emptyText || 'No results');
+
+      resultsHost.innerHTML = limited.map((item) => `
+        <article class="result-card">
+          <div class="result-main">
+            <div class="logo project-logo">
+              ${item.avatar ? `<img src="${item.avatar}" alt="${item.name} logo" loading="lazy" decoding="async">` : `<span>${item.name.slice(0, 2).toUpperCase()}</span>`}
+            </div>
+            <div>
+              <h3><a href="${item.href}">${item.name}</a></h3>
+              <p>${item.description || ''}</p>
+            </div>
+          </div>
+          <div class="result-meta">
+            <span data-score-repo="${item.repoSlug}"><span data-score-value>${item.scorePercent ?? '--'}</span></span>
+            <span>${item.status}</span>
+            <span>${item.subCategory}</span>
+          </div>
+        </article>
+      `).join('');
+
+      window.aiLandscapeScores?.hydrateScores(resultsHost, locale);
+    }
+
+    [searchInput, searchCategory, searchStatus].forEach((input) => {
+      input.addEventListener('input', renderResults);
+      input.addEventListener('change', renderResults);
+    });
+
+    renderResults();
+
+    async function hydrateSearchScores() {
+      const repos = index.map((item) => item.repoSlug).filter(Boolean);
+      await window.aiLandscapeScores?.fetchScores(repos, locale);
+      index.forEach((item) => {
+        const score = window.aiLandscapeScores?.getCachedScore(item.repoSlug);
+        item.scorePercent = Number.isFinite(score?.health) ? Math.round(score.health) : null;
+        item.scoreLabel = window.aiLandscapeScores?.scoreLabel(item.scorePercent) || item.scoreLabel;
+      });
+      renderResults();
+      await window.aiLandscapeScores?.hydrateScores(document, locale);
+    }
+
+    hydrateSearchScores();
+  </script>
+</BaseLayout>

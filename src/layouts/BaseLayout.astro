@@ -1,0 +1,526 @@
+---
+import '../styles/global.css';
+import { alternatePath, localizedPath, SITE, ui } from '../lib/landscape.mjs';
+
+const {
+  title = SITE.title,
+  description = SITE.description,
+  canonical = Astro.url.pathname,
+  lang = 'en',
+  alternate = alternatePath(Astro.url.pathname, lang),
+} = Astro.props;
+const copy = ui(lang);
+const pageTitle = !title || title === SITE.title
+  ? SITE.title
+  : title.includes(SITE.title)
+    ? title
+    : `${title} | ${SITE.title}`;
+const canonicalUrl = new URL(canonical, SITE.url).toString();
+const alternateUrl = new URL(alternate, SITE.url).toString();
+const defaultUrl = lang === 'zh' ? alternateUrl : canonicalUrl;
+const imageUrl = new URL(SITE.image, SITE.url).toString();
+const locale = lang === 'zh' ? 'zh_CN' : 'en_US';
+const alternateLocale = lang === 'zh' ? 'en_US' : 'zh_CN';
+const selfHreflang = lang === 'zh' ? 'zh-CN' : 'en';
+const alternateHreflang = lang === 'zh' ? 'en' : 'zh-CN';
+const languageOptions = [
+  { code: 'en', label: 'English', href: localizedPath(canonical, 'en') },
+  { code: 'zh', label: '中文', href: localizedPath(canonical, 'zh') },
+];
+const currentLanguage = languageOptions.find((option) => option.code === lang) || languageOptions[0];
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITE.title,
+  url: SITE.url,
+  description,
+  inLanguage: copy.htmlLang,
+  publisher: {
+    '@type': 'Organization',
+    name: 'jimmysong.io',
+    url: 'https://jimmysong.io',
+  },
+};
+---
+
+<!doctype html>
+<html lang={copy.htmlLang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" hreflang={selfHreflang} href={canonicalUrl} />
+    <link rel="alternate" hreflang={alternateHreflang} href={alternateUrl} />
+    <link rel="alternate" hreflang="x-default" href={defaultUrl} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://api.github.com" crossorigin />
+    <link rel="preconnect" href={SITE.scoreApiBase} crossorigin />
+    <meta name="theme-color" content="#0a84ff" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:site_name" content={SITE.title} />
+    <meta property="og:locale" content={locale} />
+    <meta property="og:locale:alternate" content={alternateLocale} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:image:alt" content={pageTitle} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageUrl} />
+    <title>{pageTitle}</title>
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+    <script is:inline>
+      (() => {
+        try {
+          const langKey = 'ai-landscape-lang';
+          if (!localStorage.getItem(langKey)) {
+            const p = location.pathname.replace(/\/+$/, '');
+            if (p === '' || p === '/en') {
+              const nav = (navigator.language || '').toLowerCase();
+              if (nav.startsWith('zh')) {
+                localStorage.setItem(langKey, 'zh');
+                location.replace('/zh/');
+                return;
+              }
+              localStorage.setItem(langKey, 'en');
+            }
+          }
+        } catch {}
+      })();
+    </script>
+    <script is:inline>
+      (() => {
+        try {
+          const key = 'ai-landscape-theme';
+          const stored = localStorage.getItem(key);
+          const preference = stored === 'light' || stored === 'dark' || stored === 'system' ? stored : 'system';
+          const resolved = preference === 'system'
+            ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+            : preference;
+          document.documentElement.dataset.themePreference = preference;
+          document.documentElement.dataset.theme = resolved;
+        } catch {
+          document.documentElement.dataset.themePreference = 'system';
+          document.documentElement.dataset.theme = 'light';
+        }
+      })();
+    </script>
+    <script is:inline define:vars={{
+      scoreApiBase: SITE.scoreApiBase,
+      scoreLabels: copy.scoreLabels,
+      scoreLoading: copy.scoreLoading,
+      scoreUnavailable: copy.scoreUnavailable,
+      pageLang: lang,
+    }}>
+      (() => {
+        const normalizeRepo = (value) => String(value || '').trim().toLowerCase();
+        const cache = new Map();
+        const batchSize = 40;
+
+        const labelFor = (score) => {
+          if (!Number.isFinite(score)) return scoreUnavailable;
+          if (score >= 90) return scoreLabels.mustWatch;
+          if (score >= 80) return scoreLabels.strongRecommendation;
+          if (score >= 70) return scoreLabels.worthTrying;
+          if (score >= 60) return scoreLabels.monitorProgress;
+          return scoreLabels.exploreCarefully;
+        };
+
+        const formatScore = (value) => (Number.isFinite(value) ? String(Math.round(value)) : '--');
+
+        async function fetchBatch(repos, locale) {
+          if (repos.length === 0) return [];
+          const url = new URL('/api/health', scoreApiBase);
+          url.searchParams.set('repos', repos.join(','));
+          url.searchParams.set('locale', locale);
+          const response = await fetch(url.toString());
+          if (!response.ok) {
+            throw new Error(`Score API request failed with ${response.status}`);
+          }
+          const payload = await response.json();
+          return Array.isArray(payload.projects) ? payload.projects : [];
+        }
+
+        async function fetchScores(repos, locale = pageLang) {
+          const normalized = Array.from(new Set(repos.map(normalizeRepo).filter(Boolean)));
+          const missing = normalized.filter((repo) => !cache.has(repo));
+
+          for (let index = 0; index < missing.length; index += batchSize) {
+            const batch = missing.slice(index, index + batchSize);
+            const projects = await fetchBatch(batch, locale);
+            const seen = new Set();
+
+            projects.forEach((project) => {
+              const repo = normalizeRepo(project.repo);
+              seen.add(repo);
+              cache.set(repo, project);
+            });
+
+            batch.forEach((repo) => {
+              if (!seen.has(repo)) cache.set(repo, null);
+            });
+          }
+
+          return cache;
+        }
+
+        function getCachedScore(repo) {
+          const entry = cache.get(normalizeRepo(repo));
+          return entry?.scores || null;
+        }
+
+        function getProjectData(repo) {
+          return cache.get(normalizeRepo(repo)) || null;
+        }
+
+        function computeStatus(project) {
+          if (!project) return 'unknown';
+          if (project.tags?.isArchived) return 'archived';
+          if (project.metrics?.daysSinceLastCommit > 180) return 'inactive';
+          const created = project.metrics?.createdAt;
+          if (created && (Date.now() - new Date(created).getTime()) < 30 * 86400000) return 'newlyAdded';
+          if (project.scores?.health >= 80) return 'recommended';
+          if (project.scores?.health >= 60) return 'worthWatching';
+          return 'worthWatching';
+        }
+
+        function getProjectStatus(repo) {
+          const project = getProjectData(repo);
+          return computeStatus(project);
+        }
+
+        function getProjectMetrics(repo) {
+          const project = getProjectData(repo);
+          return project?.metrics || null;
+        }
+
+        function applyScoreToElement(element) {
+          const score = getCachedScore(element.dataset.scoreRepo);
+          const health = score?.health;
+          const stateLabel = Number.isFinite(health) ? labelFor(health) : scoreUnavailable;
+
+          const selectNode = (selector) => (element.matches(selector) ? element : element.querySelector(selector));
+
+          const valueNode = selectNode('[data-score-value]');
+          if (valueNode) valueNode.textContent = formatScore(health);
+
+          const labelNode = selectNode('[data-score-label]');
+          if (labelNode) labelNode.textContent = stateLabel;
+
+          const meterNode = selectNode('[data-score-meter]');
+          if (meterNode) meterNode.value = Number.isFinite(health) ? Math.round(health) : 0;
+
+          const healthNode = selectNode('[data-score-health]');
+          if (healthNode) healthNode.textContent = formatScore(score?.health);
+
+          const activityNode = selectNode('[data-score-activity]');
+          if (activityNode) activityNode.textContent = formatScore(score?.activity);
+
+          const communityNode = selectNode('[data-score-community]');
+          if (communityNode) communityNode.textContent = formatScore(score?.community);
+
+          const qualityNode = selectNode('[data-score-quality]');
+          if (qualityNode) qualityNode.textContent = formatScore(score?.quality);
+
+          const sustainabilityNode = selectNode('[data-score-sustainability]');
+          if (sustainabilityNode) sustainabilityNode.textContent = formatScore(score?.sustainability);
+        }
+
+        async function hydrateScores(scope = document, locale = pageLang) {
+          const elements = Array.from(scope.querySelectorAll('[data-score-repo]'));
+          const repos = elements.map((element) => element.dataset.scoreRepo).filter(Boolean);
+
+          try {
+            await fetchScores(repos, locale);
+          } catch {
+            elements.forEach((element) => {
+              const labelNode = element.querySelector('[data-score-label]');
+              if (labelNode) labelNode.textContent = scoreUnavailable;
+            });
+          }
+
+          elements.forEach((element) => applyScoreToElement(element));
+          return cache;
+        }
+
+        window.aiLandscapeScores = {
+          fetchScores,
+          getCachedScore,
+          getProjectData,
+          getProjectMetrics,
+          getProjectStatus,
+          computeStatus,
+          hydrateScores,
+          scoreLabel: labelFor,
+        };
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__bar">
+        <a class="brand" href={localizedPath('/', lang)}>
+          <span class="brand-mark">
+            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path class="brand-mark__path" d="M7.5 25.5L18 8.8l10.5 16.7" />
+              <path class="brand-mark__bar" d="M12.2 25.5h11.6" />
+              <circle class="brand-mark__node" cx="18" cy="19.5" r="3.2" />
+            </svg>
+          </span>
+          <span class="brand-wordmark">
+            <strong aria-label={SITE.title}>{SITE.title}</strong>
+          </span>
+        </a>
+        <button
+          class="site-header__menu-toggle"
+          type="button"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="site-primary-nav"
+          aria-label={lang === 'zh' ? '切换导航菜单' : 'Toggle navigation menu'}
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+      <nav class="site-nav" id="site-primary-nav" aria-label="Primary">
+        <div class="site-nav__links">
+          <a class="site-nav__link" href={localizedPath('/methodology/', lang)}>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16"/><path d="M7 16V8M12 16V5M17 16v-6"/></svg>
+            <span>{copy.navMethodology}</span>
+          </a>
+          <a class="site-nav__link" href={SITE.issueNew} target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/><path d="M4 4h16v16H4z"/></svg>
+            <span>{copy.navSubmit}</span>
+          </a>
+          <a class="site-nav__link" href={localizedPath('/about/', lang)}>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 10v5"/><path d="M12 7h.01"/></svg>
+            <span>{copy.navAbout}</span>
+          </a>
+        </div>
+        <div class="site-nav__actions">
+          <div class="language-menu" data-language-menu>
+            <button
+              class="language-menu__trigger"
+              type="button"
+              aria-haspopup="menu"
+              aria-label={lang === 'zh' ? '选择语言' : 'Choose language'}
+            >
+              <svg class="language-menu__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z" />
+              </svg>
+              <span class="language-label">{currentLanguage.label}</span>
+              <svg class="language-menu__caret" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 10l5 5 5-5" />
+              </svg>
+            </button>
+            <div class="language-menu__list" role="menu" aria-label={lang === 'zh' ? '语言列表' : 'Language list'}>
+              {languageOptions.map((option) => (
+                <a
+                  class:list={["language-menu__option", option.code === lang && 'is-current']}
+                  href={option.href}
+                  role="menuitem"
+                  aria-current={option.code === lang ? 'page' : undefined}
+                >
+                  <span>{option.label}</span>
+                  {option.code === lang ? (
+                    <svg class="language-menu__check" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M5 12l5 5L20 7" />
+                    </svg>
+                  ) : null}
+                </a>
+              ))}
+            </div>
+          </div>
+          <div class="theme-menu" data-theme-menu>
+            <button
+              class="theme-switch"
+              type="button"
+              data-theme-toggle
+              aria-label={copy.themeToggleAria}
+              aria-expanded="false"
+              aria-controls="theme-menu-list"
+            >
+              <svg class="theme-switch-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v2M12 19v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M3 12h2M19 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4M12 8a4 4 0 100 8 4 4 0 000-8z"/>
+              </svg>
+              <svg class="theme-switch-caret" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 10l5 5 5-5"/>
+              </svg>
+            </button>
+            <div class="theme-menu-list" id="theme-menu-list" role="menu" hidden>
+              <button type="button" role="menuitemradio" data-theme-option="system" aria-checked="false">
+                <svg class="theme-option-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 5h16v10H4zM8 19h8M10 15v4M14 15v4"/>
+                </svg>
+                <span>{copy.themeSystem}</span>
+              </button>
+              <button type="button" role="menuitemradio" data-theme-option="light" aria-checked="false">
+                <svg class="theme-option-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3v2M12 19v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M3 12h2M19 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4M12 8a4 4 0 100 8 4 4 0 000-8z"/>
+                </svg>
+                <span>{copy.themeLight}</span>
+              </button>
+              <button type="button" role="menuitemradio" data-theme-option="dark" aria-checked="false">
+                <svg class="theme-option-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/>
+                </svg>
+                <span>{copy.themeDark}</span>
+              </button>
+            </div>
+          </div>
+          <a class="github-star" href={SITE.starRepo} target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            <span class="action-label">{copy.navGithub}</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <slot />
+    <footer class="site-footer">
+      <a class="site-footer__legal" href={SITE.mainSite}>{copy.footer}</a>
+      <a class="site-footer__github" href={SITE.starRepo} target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        <span>{copy.navGithub}</span>
+      </a>
+    </footer>
+    <script is:inline define:vars={{
+      themeLabels: {
+        system: copy.themeSystem,
+        dark: copy.themeDark,
+        light: copy.themeLight,
+      },
+      toggleAria: copy.themeToggleAria,
+    }}>
+      (() => {
+        const key = 'ai-landscape-theme';
+        const root = document.documentElement;
+        const menuRoot = document.querySelector('[data-theme-menu]');
+        const button = document.querySelector('[data-theme-toggle]');
+        const menu = document.getElementById('theme-menu-list');
+        const options = Array.from(document.querySelectorAll('[data-theme-option]'));
+        const header = document.querySelector('.site-header');
+        const navToggle = document.querySelector('[data-nav-toggle]');
+        const media = window.matchMedia('(prefers-color-scheme: dark)');
+        const order = ['system', 'dark', 'light'];
+
+        const normalize = (value) => (order.includes(value) ? value : 'system');
+        const resolve = (preference) =>
+          preference === 'system' ? (media.matches ? 'dark' : 'light') : preference;
+
+        const setNavOpen = (open) => {
+          if (!header || !navToggle) return;
+          header.classList.toggle('is-nav-open', open);
+          navToggle.setAttribute('aria-expanded', String(open));
+        };
+
+        const setMenuOpen = (open) => {
+          if (!button || !menu) return;
+          button.setAttribute('aria-expanded', String(open));
+          menu.hidden = !open;
+        };
+
+        const updateOptionState = (preference) => {
+          options.forEach((node) => {
+            const checked = node.dataset.themeOption === preference;
+            node.setAttribute('aria-checked', String(checked));
+          });
+        };
+
+        const render = (preference) => {
+          const resolved = resolve(preference);
+          root.dataset.themePreference = preference;
+          root.dataset.theme = resolved;
+          if (button) button.setAttribute('aria-label', `${toggleAria}: ${themeLabels[preference]}`);
+          updateOptionState(preference);
+        };
+
+        const apply = (preference, persist = true) => {
+          const next = normalize(preference);
+          if (persist) localStorage.setItem(key, next);
+          render(next);
+        };
+
+        const current = normalize(localStorage.getItem(key));
+        apply(current, false);
+
+        if (button && menu) {
+          button.addEventListener('click', (event) => {
+            event.stopPropagation();
+            const expanded = button.getAttribute('aria-expanded') === 'true';
+            setMenuOpen(!expanded);
+          });
+        }
+
+        options.forEach((node) => {
+          node.addEventListener('click', (event) => {
+            event.stopPropagation();
+            const preference = normalize(node.dataset.themeOption);
+            apply(preference, true);
+            setMenuOpen(false);
+          });
+        });
+
+        if (navToggle) {
+          navToggle.addEventListener('click', (event) => {
+            event.stopPropagation();
+            const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+            setNavOpen(!expanded);
+          });
+        }
+
+        document.addEventListener('click', (event) => {
+          if (header && !header.contains(event.target)) {
+            setNavOpen(false);
+          }
+          if (menuRoot && !menuRoot.contains(event.target)) {
+            setMenuOpen(false);
+          }
+        });
+
+        document.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape') {
+            setNavOpen(false);
+            setMenuOpen(false);
+          }
+        });
+
+        if (menu) {
+          menu.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+              setMenuOpen(false);
+            }
+          });
+        }
+
+        media.addEventListener('change', () => {
+          if (normalize(root.dataset.themePreference) === 'system') {
+            render('system');
+          }
+        });
+
+        window.matchMedia('(min-width: 721px)').addEventListener('change', (event) => {
+          if (event.matches) {
+            setNavOpen(false);
+          }
+        });
+
+        window.aiLandscapeScores?.hydrateScores(document, root.lang?.startsWith('zh') ? 'zh' : 'en').then(() => {
+          window.dispatchEvent(new CustomEvent('ai-landscape:scores-ready'));
+        }).catch(() => {
+          window.dispatchEvent(new CustomEvent('ai-landscape:scores-ready'));
+        });
+
+      })();
+    </script>
+  </body>
+</html>

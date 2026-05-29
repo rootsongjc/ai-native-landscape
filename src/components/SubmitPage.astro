@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { localizedPath, SITE, ui } from '../lib/landscape.mjs';
+
+const { lang = 'en' } = Astro.props;
+const copy = ui(lang);
+---
+
+<BaseLayout title={copy.submitTitle} description={copy.submitDescription} canonical={localizedPath('/submit/', lang)} lang={lang}>
+  <main class="submit-page">
+    <section class="page-heading">
+      <h1>{copy.submitTitle}</h1>
+      <p>{copy.submitDescription}</p>
+    </section>
+    <div class="submit-grid">
+      <article>
+        <h2>{copy.addProject}</h2>
+        <p>{copy.addProjectDescription}</p>
+        <a class="button" href={SITE.issueNew} target="_blank" rel="noopener noreferrer">{copy.openIssueForm}</a>
+      </article>
+      <article>
+        <h2>{copy.updateProject}</h2>
+        <p>{copy.updateProjectDescription}</p>
+        <pre><code>npm run validate
+npm run build</code></pre>
+      </article>
+      <article>
+        <h2>{copy.dataRules}</h2>
+        <p>{copy.dataRulesDescription}</p>
+      </article>
+    </div>
+  </main>
+</BaseLayout>

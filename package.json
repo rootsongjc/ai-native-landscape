@@ -1,0 +1,27 @@
+{
+  "name": "ai-landscape",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-data.mjs",
+    "migrate:projects-markdown": "node scripts/migrate-projects-to-markdown.mjs",
+    "migrate:taxonomy": "node scripts/migrate-taxonomy.mjs",
+    "build:index": "node scripts/build-index.mjs",
+    "export": "node scripts/export-data.mjs",
+    "import:website": "node scripts/import-website-data.mjs",
+    "build": "npm run validate && npm run build:index && npm run export && astro build",
+    "dev": "astro dev --host 127.0.0.1 --port 4173",
+    "preview": "astro preview --host 127.0.0.1 --port 4173"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.2",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "astro": "^6.3.7",
+    "html2canvas": "^1.4.1",
+    "js-yaml": "^4.1.0",
+    "jspdf": "^4.2.1",
+    "marked": "^18.0.4"
+  }
+}

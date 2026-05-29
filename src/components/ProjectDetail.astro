@@ -1,0 +1,1033 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  categoryName,
+  getCategories,
+  localizedPath,
+  markdownToHtml,
+  projectContent,
+  projectDescription,
+  projectIconUrl,
+  statusLabel,
+  ui,
+} from '../lib/landscape.mjs';
+
+const { lang = 'en', project } = Astro.props;
+const copy = ui(lang);
+const category = getCategories().find((item) => item.key === project.category);
+const description = projectDescription(project, lang);
+const html = markdownToHtml(projectContent(project, lang));
+const avatar = projectIconUrl(project, 128);
+const repoSlug = project.repoSlug || '';
+const repoOwner = repoSlug.split('/')[0] || '';
+---
+
+<BaseLayout title={project.name} description={description} canonical={localizedPath(`/projects/${project.slug}/`, lang)} lang={lang}>
+  <main class="detail-page">
+    <nav class="detail-breadcrumb" aria-label="Breadcrumb">
+      <a href={localizedPath('/', lang)}>{copy.navLandscape}</a>
+      <span class="breadcrumb-sep">/</span>
+      <a href={localizedPath(`/categories/${project.category}/`, lang)}>{categoryName(category, lang)}</a>
+    </nav>
+
+    <section class="detail-layout">
+      <section class="detail-hero">
+        <div class="detail-hero__main">
+          <div class="detail-hero__top">
+            <div class="detail-logo">
+              {avatar ? (
+                <img src={avatar} alt="" loading="eager" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false" />
+              ) : null}
+              <span hidden={Boolean(avatar)}>{project.name.slice(0, 2).toUpperCase()}</span>
+            </div>
+            <div class="detail-hero__info">
+              <h1>{project.name}</h1>
+              <p class="detail-desc">{description}</p>
+            </div>
+            <div class="detail-highlights" aria-label={copy.projectFacts}>
+              <span class="hero-metric">
+                <span class="hero-metric__label">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  {copy.author}
+                </span>
+                <strong>{project.author || copy.unknown}</strong>
+              </span>
+              <span class="hero-metric">
+                <span class="hero-metric__label">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  {copy.openSourced}
+                </span>
+                <strong data-metrics-created>{project.ossDate ? new Date(project.ossDate).toISOString().slice(0, 10) : copy.unknown}</strong>
+              </span>
+              <span class="hero-metric">
+                <span class="hero-metric__label">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="10"/></svg>
+                  {copy.lastCommit}
+                </span>
+                <strong data-metric-last-commit>{copy.unknown}</strong>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="detail-hero__side" aria-label="Project score and actions">
+          <div class="detail-score-panel" data-reference-status={project.status}>
+            <div class="detail-score" data-score-repo={repoSlug}>
+              <span class="detail-score-panel__eyebrow">{copy.score}</span>
+              <div class="detail-score__left">
+                <strong data-score-value>--</strong><span class="score-max">/100</span>
+              </div>
+              <span class="score-label" data-score-label>{copy.scoreLoading}</span>
+              <strong class="reference-status">
+                <span class="reference-status__dot"></span>
+                {statusLabel(project.status, lang)}
+              </strong>
+            </div>
+          </div>
+
+          <div class="detail-actions">
+            <a class="btn-primary" href={project.repo} target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            {project.homepage && (
+              <a class="btn-secondary" href={project.homepage} target="_blank" rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                {copy.website || 'Website'}
+              </a>
+            )}
+          </div>
+        </aside>
+      </section>
+
+      <article class="content-card">
+        <div class="content-body markdown" set:html={html} />
+      </article>
+
+      <aside class="detail-sidebar">
+        <div class="sidebar-card github-card">
+          <h3>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            {copy.githubMetrics}
+          </h3>
+          <div class="detail-meta" aria-label={copy.githubMetrics}>
+            <span class="hero-metric">
+              <span class="hero-metric__label">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                {copy.stars}
+              </span>
+              <strong data-metrics-stars>--</strong>
+            </span>
+            <span class="hero-metric">
+              <span class="hero-metric__label">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                {copy.contributors}
+              </span>
+              <strong data-metrics-contributors>--</strong>
+            </span>
+            <span class="hero-metric">
+              <span class="hero-metric__label">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 15h8M9 9h.01M15 9h.01"/></svg>
+                {copy.openIssues}
+              </span>
+              <strong data-metrics-issues>--</strong>
+            </span>
+            <span class="hero-metric">
+              <span class="hero-metric__label">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><path d="M18 9v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9"/><path d="M12 12v3"/></svg>
+                {copy.forks}
+              </span>
+              <strong data-metrics-forks>--</strong>
+            </span>
+            <span class="hero-metric">
+              <span class="hero-metric__label">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                {copy.owner}
+              </span>
+              <strong data-metrics-owner>{repoOwner || copy.unknown}</strong>
+            </span>
+            <span class="hero-metric" data-github-language-card hidden>
+              <span class="hero-metric__label">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="m18 20-6-6-6 6"/></svg>
+                {copy.primaryLanguage}
+              </span>
+              <strong data-metrics-language>{copy.unknown}</strong>
+            </span>
+            <span class="hero-metric">
+              <span class="hero-metric__label">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                {copy.license}
+              </span>
+              <strong data-metrics-license>{project.license && project.license !== 'Unknown' ? project.license : copy.unknown}</strong>
+            </span>
+            <span class="hero-metric">
+              <span class="hero-metric__label">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                {copy.commitsLastYear}
+              </span>
+              <strong data-metric-commits-year>{copy.unknown}</strong>
+            </span>
+            <span class="hero-metric">
+              <span class="hero-metric__label">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                {copy.repoCreatedAt}
+              </span>
+              <strong data-metrics-created>{copy.unknown}</strong>
+            </span>
+            <span class="hero-metric" data-github-governance-card hidden>
+              <span class="hero-metric__label">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                {copy.governance}
+              </span>
+              <strong data-metrics-governance>{copy.unknown}</strong>
+            </span>
+          </div>
+        </div>
+
+        <!-- Score Breakdown -->
+        <div class="sidebar-card score-card">
+          <h3>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+            {copy.scoreBreakdown}
+          </h3>
+          <div class="score-row">
+            <span>{copy.activity}</span>
+            <div class="score-row__bar"><div class="score-fill fill-activity" data-score-repo={repoSlug} data-score-dimension="activity" style="width:0%"></div></div>
+            <span class="score-row__val" data-score-repo={repoSlug} data-score-activity>--</span>
+          </div>
+          <div class="score-row">
+            <span>{copy.community}</span>
+            <div class="score-row__bar"><div class="score-fill fill-community" data-score-repo={repoSlug} data-score-dimension="community" style="width:0%"></div></div>
+            <span class="score-row__val" data-score-repo={repoSlug} data-score-community>--</span>
+          </div>
+          <div class="score-row">
+            <span>{copy.quality}</span>
+            <div class="score-row__bar"><div class="score-fill fill-quality" data-score-repo={repoSlug} data-score-dimension="quality" style="width:0%"></div></div>
+            <span class="score-row__val" data-score-repo={repoSlug} data-score-quality>--</span>
+          </div>
+          <div class="score-row">
+            <span>{copy.sustainability}</span>
+            <div class="score-row__bar"><div class="score-fill fill-sustainability" data-score-repo={repoSlug} data-score-dimension="sustainability" style="width:0%"></div></div>
+            <span class="score-row__val" data-score-repo={repoSlug} data-score-sustainability>--</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .detail-page {
+    width: min(1180px, calc(100% - 32px));
+  }
+
+  .detail-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 0 12px;
+    font-size: 0.86rem;
+    color: var(--muted);
+    min-width: 0;
+  }
+  .detail-breadcrumb a { color: var(--accent); font-weight: 600; }
+  .breadcrumb-sep { color: var(--border); }
+
+  .detail-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) clamp(280px, 28vw, 340px);
+    grid-template-areas:
+      "hero hero"
+      "content sidebar";
+    gap: 20px;
+    align-items: stretch;
+  }
+
+  .detail-hero {
+    grid-area: hero;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(240px, 300px);
+    gap: clamp(18px, 3vw, 34px);
+    align-items: stretch;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    padding: clamp(18px, 2vw, 24px);
+    border-top: 2px solid rgba(10, 132, 255, 0.64);
+  }
+  html[data-theme='dark'] .detail-hero { border-top-color: rgba(10,132,255,0.58); }
+
+  .detail-hero__main {
+    min-width: 0;
+    display: grid;
+    align-content: center;
+  }
+
+  .detail-hero__side {
+    min-width: 0;
+    display: grid;
+    gap: 14px;
+    align-content: center;
+    padding-left: 18px;
+    border-left: 1px solid var(--border);
+  }
+
+  .detail-hero__top {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-areas:
+      "logo info"
+      "highlights highlights";
+    column-gap: 12px;
+    row-gap: 10px;
+    align-items: stretch;
+  }
+  .detail-logo {
+    grid-area: logo;
+    aspect-ratio: 1;
+    max-height: 80px;
+    min-height: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    background: var(--accent-soft);
+    border: 1px solid var(--border);
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--accent);
+  }
+  .detail-logo img { width: 100%; height: 100%; object-fit: cover; }
+  .detail-hero__info {
+    grid-area: info;
+    min-width: 0;
+    display: grid;
+    align-content: start;
+    gap: 8px;
+  }
+  .detail-hero__info h1 {
+    margin: 0;
+    font-size: clamp(1.3rem, 2vw, 1.8rem);
+    line-height: 1.1;
+  }
+  .detail-desc {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.92rem;
+    line-height: 1.4;
+    max-width: 62ch;
+  }
+  .detail-highlights {
+    grid-area: highlights;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 0;
+    max-width: 68ch;
+  }
+  .detail-highlights .hero-metric {
+    min-height: 34px;
+    display: inline-flex;
+    align-items: center;
+    width: auto;
+    max-width: 100%;
+    gap: 7px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(10, 132, 255, 0.055);
+  }
+  .detail-highlights .hero-metric__label {
+    grid-column: auto;
+    flex: 0 0 auto;
+    gap: 5px;
+    font-size: 0.72rem;
+  }
+  .detail-highlights .hero-metric__label svg {
+    width: 15px;
+    height: 15px;
+    flex-basis: 15px;
+  }
+  .detail-highlights .hero-metric strong {
+    grid-column: auto;
+    display: inline-block;
+    max-width: 14rem;
+    font-size: 0.78rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .detail-score-panel {
+    display: grid;
+    padding: 8px 10px;
+    border: 1px solid rgba(10, 132, 255, 0.18);
+    border-radius: 14px;
+    background: linear-gradient(135deg, rgba(10, 132, 255, 0.08), rgba(80, 181, 124, 0.06));
+  }
+  .detail-score-panel__eyebrow {
+    color: var(--muted);
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .reference-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    min-height: 26px;
+    padding: 3px 9px;
+    border: 1px solid rgba(10, 132, 255, 0.24);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--text);
+    font-size: 0.78rem;
+    font-weight: 800;
+    white-space: nowrap;
+  }
+  .reference-status__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: var(--accent);
+    box-shadow: 0 0 0 4px rgba(10, 132, 255, 0.16);
+  }
+  .detail-score-panel[data-reference-status="graduated"] .reference-status__dot { background: #10b981; box-shadow: 0 0 0 4px rgba(16,185,129,0.16); }
+  .detail-score-panel[data-reference-status="incubating"] .reference-status__dot { background: #8b5cf6; box-shadow: 0 0 0 4px rgba(139,92,246,0.16); }
+  .detail-score-panel[data-reference-status="sandbox"] .reference-status__dot { background: #f59e0b; box-shadow: 0 0 0 4px rgba(245,158,11,0.16); }
+  .detail-score-panel[data-reference-status="archived"] .reference-status__dot { background: #94a3b8; box-shadow: 0 0 0 4px rgba(148,163,184,0.16); }
+
+  .detail-score {
+    display: grid;
+    grid-template-columns: auto auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 8px;
+    min-height: 38px;
+    margin-top: 0;
+    background: transparent;
+  }
+  .detail-score__left {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    flex: 0 0 auto;
+  }
+  .detail-score__left strong { font-size: 1.55rem; font-weight: 850; line-height: 1; }
+  .score-max { font-size: 0.78rem; color: var(--muted); }
+  .score-label {
+    min-width: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 0.78rem;
+    line-height: 1.15;
+    font-weight: 800;
+    color: var(--ok);
+  }
+
+  .detail-meta {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin: 0;
+    max-width: none;
+  }
+  .hero-metric {
+    min-width: 0;
+    display: grid;
+    grid-template-columns: 16px minmax(0, 1fr);
+    column-gap: 6px;
+    row-gap: 2px;
+    align-items: center;
+    padding: 7px;
+    border-radius: 9px;
+    border: 1px solid rgba(10, 132, 255, 0.13);
+    background: rgba(10, 132, 255, 0.045);
+  }
+  html[data-theme='dark'] .hero-metric {
+    border-color: rgba(110,168,255,0.14);
+    background: rgba(10, 132, 255, 0.055);
+  }
+  .hero-metric__label {
+    display: inline-flex;
+    min-width: 0;
+    align-items: center;
+    grid-column: 1 / -1;
+    gap: 6px;
+    color: var(--muted);
+    font-size: 0.7rem;
+    line-height: 1.1;
+    white-space: nowrap;
+  }
+  .hero-metric__label svg {
+    flex: 0 0 16px;
+    width: 16px;
+    height: 16px;
+    color: var(--accent);
+    opacity: 0.9;
+  }
+  .hero-metric strong {
+    min-width: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    grid-column: 2;
+    color: var(--text);
+    overflow: hidden;
+    font-size: 0.82rem;
+    font-weight: 800;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .hero-metric strong svg {
+    flex: 0 0 auto;
+    opacity: 0.55;
+  }
+  .meta-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+  .meta-pill svg { flex-shrink: 0; opacity: 0.6; }
+
+  .detail-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 2px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .btn-primary, .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 36px;
+    padding: 7px 12px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.82rem;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .btn-primary {
+    background: var(--accent);
+    color: white;
+    border: none;
+  }
+  .btn-primary:hover { filter: brightness(1.1); transform: translateY(-1px); }
+  .btn-secondary {
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid rgba(10,132,255,0.3);
+  }
+  .btn-secondary:hover { background: var(--accent-soft); transform: translateY(-1px); }
+  html[data-theme='dark'] .btn-secondary { border-color: rgba(110,168,255,0.4); }
+
+  .content-card {
+    grid-area: content;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    border-top: 3px solid transparent;
+    background-image: linear-gradient(var(--surface), var(--surface)), linear-gradient(135deg, var(--accent), var(--ok));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+  html[data-theme='dark'] .content-card {
+    background-image: linear-gradient(var(--surface), var(--surface)), linear-gradient(135deg, rgba(110,168,255,0.4), rgba(80,181,124,0.4));
+  }
+  .content-body { padding: 28px; }
+  .content-body :global(h2) { font-size: 1.4rem; font-weight: 700; margin: 2rem 0 0.8rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+  .content-body :global(h2:first-child) { margin-top: 0; }
+  .content-body :global(h3) { font-size: 1.15rem; font-weight: 600; margin: 1.5rem 0 0.6rem; }
+  .content-body :global(p) { color: var(--muted); line-height: 1.75; margin: 0 0 1rem; font-size: 0.95rem; }
+  .content-body :global(ul), .content-body :global(ol) { color: var(--muted); line-height: 1.7; padding-left: 1.5rem; margin: 0 0 1rem; }
+  .content-body :global(li) { margin-bottom: 0.4rem; }
+  .content-body :global(li)::marker { color: var(--accent); }
+  .content-body :global(strong) { color: var(--text); }
+
+  .detail-sidebar {
+    grid-area: sidebar;
+    min-width: 0;
+    display: grid;
+    gap: 16px;
+  }
+  .sidebar-card {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    padding: 18px;
+  }
+  .sidebar-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 14px;
+    font-size: 0.92rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  .sidebar-card h3 svg { color: var(--accent); flex-shrink: 0; }
+
+  .score-card { border-left: 3px solid var(--accent); }
+  .github-card { border-left: 3px solid var(--accent); }
+
+  .score-row {
+    display: grid;
+    grid-template-columns: 90px 1fr 32px;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+    font-size: 0.82rem;
+  }
+  html[data-theme='dark'] .score-row { border-bottom-color: rgba(255,255,255,0.06); }
+  .score-row:last-child { border-bottom: none; }
+  .score-row span:first-child { color: var(--muted); font-weight: 600; }
+  .score-row__bar { height: 6px; border-radius: 99px; background: var(--surface-soft); overflow: hidden; }
+  .score-row__val { font-weight: 700; text-align: right; font-size: 0.88rem; }
+  .fill-activity { background: linear-gradient(90deg, #3b82f6, #60a5fa); height: 100%; border-radius: 99px; transition: width 0.5s; }
+  .fill-community { background: linear-gradient(90deg, #8b5cf6, #a78bfa); height: 100%; border-radius: 99px; transition: width 0.5s; }
+  .fill-quality { background: linear-gradient(90deg, #10b981, #34d399); height: 100%; border-radius: 99px; transition: width 0.5s; }
+  .fill-sustainability { background: linear-gradient(90deg, #f59e0b, #fbbf24); height: 100%; border-radius: 99px; transition: width 0.5s; }
+
+  @media (min-width: 1280px) {
+    .detail-score-panel {
+      position: static;
+    }
+  }
+
+  @media (max-width: 1120px) {
+    .detail-page {
+      width: min(1000px, calc(100% - 32px));
+    }
+    .detail-layout {
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 18px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .detail-layout {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "hero"
+        "content"
+        "sidebar";
+    }
+    .detail-hero {
+      grid-template-columns: 1fr;
+      min-height: 0;
+    }
+    .detail-hero__side {
+      padding-left: 0;
+      padding-top: 14px;
+      border-left: 0;
+      border-top: 1px solid var(--border);
+    }
+    .detail-meta { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
+
+  @media (max-width: 720px) {
+    .detail-page {
+      width: min(100% - 16px, 720px);
+    }
+    .detail-breadcrumb {
+      padding-bottom: 8px;
+      font-size: 0.82rem;
+    }
+    .detail-hero {
+      grid-template-columns: 1fr;
+      gap: 10px;
+      padding: 12px;
+      border-top-width: 2px;
+    }
+    .detail-hero__top {
+      grid-template-columns: 42px minmax(0, 1fr);
+      grid-template-areas:
+        "logo info"
+        "highlights highlights";
+      column-gap: 10px;
+      row-gap: 10px;
+      align-items: stretch;
+    }
+    .detail-logo {
+      min-width: 36px;
+      border-radius: 10px;
+    }
+    .detail-hero__info {
+      align-self: start;
+      gap: 4px;
+    }
+    .detail-hero__info h1 {
+      font-size: clamp(1.45rem, 8vw, 2rem);
+      line-height: 1.05;
+    }
+    .detail-desc {
+      font-size: 0.9rem;
+      line-height: 1.42;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .detail-highlights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .detail-highlights .hero-metric {
+      min-height: 30px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      width: auto;
+      max-width: 100%;
+      padding: 5px 8px;
+      border-radius: 999px;
+      background: rgba(10, 132, 255, 0.06);
+    }
+    .detail-highlights .hero-metric__label {
+      display: inline-flex;
+      flex: 0 0 auto;
+      grid-column: auto;
+      gap: 0;
+      font-size: 0;
+    }
+    .detail-highlights .hero-metric__label svg {
+      width: 14px;
+      height: 14px;
+      flex-basis: 14px;
+    }
+    .detail-highlights .hero-metric strong {
+      grid-column: auto;
+      display: inline-block;
+      max-width: 8rem;
+      font-size: 0.76rem;
+      line-height: 1.1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .detail-hero__side {
+      gap: 8px;
+      padding-top: 10px;
+    }
+    .detail-score-panel {
+      padding: 7px 8px;
+    }
+    .detail-score-panel__eyebrow {
+      font-size: 0.66rem;
+    }
+    .reference-status {
+      min-height: 24px;
+      padding: 3px 7px;
+      font-size: 0.74rem;
+    }
+    .reference-status__dot {
+      width: 8px;
+      height: 8px;
+      box-shadow: 0 0 0 3px rgba(10, 132, 255, 0.14);
+    }
+    .content-body { padding: 16px; }
+    .detail-score {
+      grid-template-columns: auto auto minmax(0, 1fr) auto;
+      gap: 6px;
+      align-items: center;
+      min-height: 34px;
+    }
+    .detail-score__left {
+      gap: 3px;
+    }
+    .detail-score__left strong {
+      font-size: 1.38rem;
+    }
+    .score-max {
+      font-size: 0.72rem;
+    }
+    .score-label {
+      font-size: 0.74rem;
+      line-height: 1.1;
+    }
+    .detail-actions {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 0;
+    }
+    .btn-primary,
+    .btn-secondary {
+      min-height: 38px;
+      justify-content: center;
+      padding: 7px 10px;
+      border-radius: 10px;
+      font-size: 0.82rem;
+    }
+    .detail-meta { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+</style>
+
+<script>
+  const repoMetadataRequests = new Map();
+  const repoLanguagesRequests = new Map();
+
+  function formatNum(n) {
+    if (n == null || !Number.isFinite(n)) return '--';
+    if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
+    if (n >= 1000) return (n / 1000).toFixed(1) + 'k';
+    return String(n);
+  }
+
+  function relativeTime(dateStr) {
+    if (!dateStr) return '--';
+    const diff = Date.now() - new Date(dateStr).getTime();
+    const days = Math.floor(diff / 86400000);
+    if (days === 0) {
+      const hours = Math.floor(diff / 3600000);
+      if (hours === 0) return document.documentElement.lang?.startsWith('zh') ? '刚刚' : 'just now';
+      return hours + (document.documentElement.lang?.startsWith('zh') ? '小时前' : 'h ago');
+    }
+    if (days === 1) return document.documentElement.lang?.startsWith('zh') ? '昨天' : 'yesterday';
+    return days + (document.documentElement.lang?.startsWith('zh') ? '天前' : 'd ago');
+  }
+
+  function formatDate(dateStr) {
+    if (!dateStr) return '--';
+    return new Date(dateStr).toISOString().slice(0, 10);
+  }
+
+  function formatLicense(license) {
+    if (!license) return '';
+    if (license.spdx_id && license.spdx_id !== 'NOASSERTION') return license.spdx_id;
+    return license.name || '';
+  }
+
+  function formatOwner(owner) {
+    if (!owner?.login) return '';
+    return owner.login;
+  }
+
+  function hostFromUrl(value) {
+    if (!value) return '';
+    try {
+      return new URL(value).hostname.toLowerCase();
+    } catch {
+      return '';
+    }
+  }
+
+  function inferGovernance(payload) {
+    const owner = payload?.owner?.login?.toLowerCase() || '';
+    const homepageHost = hostFromUrl(payload?.homepage);
+    const matchesHost = (...hosts) => hosts.some((host) => homepageHost === host || homepageHost.endsWith(`.${host}`));
+
+    if (owner === 'apache' || matchesHost('apache.org')) {
+      return document.documentElement.lang?.startsWith('zh')
+        ? 'Apache 软件基金会'
+        : 'Apache Software Foundation';
+    }
+
+    if (
+      ['cncf', 'kubernetes', 'kubernetes-sigs', 'envoyproxy', 'prometheus', 'open-telemetry', 'containerd', 'coredns', 'etcd-io', 'grpc', 'helm'].includes(owner) ||
+      matchesHost('cncf.io', 'kubernetes.io', 'k8s.io')
+    ) {
+      return document.documentElement.lang?.startsWith('zh')
+        ? '云原生计算基金会（CNCF）'
+        : 'Cloud Native Computing Foundation (CNCF)';
+    }
+
+    if (
+      ['lfai', 'lfai-training', 'openxla'].includes(owner) ||
+      matchesHost('lfai.foundation', 'lfaidata.foundation', 'openxla.org')
+    ) {
+      return document.documentElement.lang?.startsWith('zh')
+        ? 'LF AI & Data 基金会'
+        : 'LF AI & Data Foundation';
+    }
+
+    if (owner.startsWith('eclipse-') || matchesHost('eclipse.org')) {
+      return document.documentElement.lang?.startsWith('zh')
+        ? 'Eclipse 基金会'
+        : 'Eclipse Foundation';
+    }
+
+    return '';
+  }
+
+  async function fetchGitHubRepo(repo) {
+    if (!repo) return null;
+    if (!repoMetadataRequests.has(repo)) {
+      repoMetadataRequests.set(repo, (async () => {
+        try {
+          const response = await fetch(`https://api.github.com/repos/${repo}`);
+          if (!response.ok) return null;
+          return await response.json();
+        } catch {
+          return null;
+        }
+      })());
+    }
+
+    return repoMetadataRequests.get(repo);
+  }
+
+  async function fetchGitHubLanguages(repo) {
+    if (!repo) return null;
+    if (!repoLanguagesRequests.has(repo)) {
+      repoLanguagesRequests.set(repo, (async () => {
+        try {
+          const response = await fetch(`https://api.github.com/repos/${repo}/languages`);
+          if (!response.ok) return null;
+          return await response.json();
+        } catch {
+          return null;
+        }
+      })());
+    }
+
+    return repoLanguagesRequests.get(repo);
+  }
+
+  function pickPrimaryLanguage(languages, fallback = '') {
+    if (languages && typeof languages === 'object') {
+      let maxBytes = -1;
+      let primary = '';
+      Object.entries(languages).forEach(([name, bytes]) => {
+        if (typeof bytes !== 'number' || !Number.isFinite(bytes)) return;
+        if (bytes > maxBytes) {
+          maxBytes = bytes;
+          primary = name;
+        }
+      });
+      if (primary) return primary;
+    }
+    return fallback || '';
+  }
+
+  async function hydrateGitHubMetadata(repo) {
+    if (!repo) return;
+
+    const licenseNodes = document.querySelectorAll('[data-metrics-license]');
+    const ownerNodes = document.querySelectorAll('[data-metrics-owner]');
+    const languageNodes = document.querySelectorAll('[data-metrics-language]');
+    const languageCards = document.querySelectorAll('[data-github-language-card]');
+    const governanceNodes = document.querySelectorAll('[data-metrics-governance]');
+    const governanceCards = document.querySelectorAll('[data-github-governance-card]');
+    if (
+      licenseNodes.length === 0 &&
+      ownerNodes.length === 0 &&
+      languageNodes.length === 0 &&
+      governanceNodes.length === 0
+    ) {
+      return;
+    }
+
+    const [payload, languagesPayload] = await Promise.all([
+      fetchGitHubRepo(repo),
+      fetchGitHubLanguages(repo),
+    ]);
+    if (!payload) return;
+
+    const license = formatLicense(payload.license);
+    if (license) {
+      licenseNodes.forEach((el) => {
+        el.textContent = license;
+      });
+    }
+
+    const owner = formatOwner(payload.owner);
+    if (owner) {
+      ownerNodes.forEach((el) => {
+        el.textContent = owner;
+      });
+    }
+
+    const language = pickPrimaryLanguage(languagesPayload, payload.language || '');
+    languageCards.forEach((el) => {
+      el.hidden = !language;
+    });
+    if (language) {
+      languageNodes.forEach((el) => {
+        el.textContent = language;
+      });
+    }
+
+    const governance = inferGovernance(payload);
+    governanceCards.forEach((el) => {
+      el.hidden = !governance;
+    });
+    if (governance) {
+      governanceNodes.forEach((el) => {
+        el.textContent = governance;
+      });
+    }
+
+    try {
+      // License is supplemental metadata; keep the curated fallback if GitHub is unavailable.
+    } catch {}
+  }
+
+  function hydrateDetail() {
+    if (!window.aiLandscapeScores) return;
+    const heroBar = document.querySelector('.detail-score');
+    if (!heroBar?.dataset.scoreRepo) return;
+
+    const repo = heroBar.dataset.scoreRepo;
+    const data = window.aiLandscapeScores.getProjectData?.(repo);
+    const scores = data?.scores;
+    const metrics = data?.metrics;
+
+    document.querySelectorAll('[data-score-dimension]').forEach(el => {
+      const dim = el.dataset.scoreDimension;
+      if (!scores || scores[dim] == null) return;
+      el.style.width = Math.round(scores[dim]) + '%';
+    });
+    document.querySelectorAll('[data-score-activity]').forEach(el => el.textContent = scores ? Math.round(scores.activity) : '--');
+    document.querySelectorAll('[data-score-community]').forEach(el => el.textContent = scores ? Math.round(scores.community) : '--');
+    document.querySelectorAll('[data-score-quality]').forEach(el => el.textContent = scores ? Math.round(scores.quality) : '--');
+    document.querySelectorAll('[data-score-sustainability]').forEach(el => el.textContent = scores ? Math.round(scores.sustainability) : '--');
+
+    if (metrics) {
+      document.querySelectorAll('[data-metric-stars]').forEach(el => el.textContent = formatNum(metrics.stars));
+      document.querySelectorAll('[data-metric-forks]').forEach(el => el.textContent = formatNum(metrics.forks));
+      document.querySelectorAll('[data-metric-issues]').forEach(el => el.textContent = formatNum(metrics.openIssues));
+      document.querySelectorAll('[data-metric-contributors]').forEach(el => el.textContent = formatNum(metrics.contributors));
+      document.querySelectorAll('[data-metric-last-commit]').forEach(el => el.textContent = relativeTime(metrics.lastCommitAt));
+      document.querySelectorAll('[data-metric-commits-year]').forEach(el => el.textContent = formatNum(metrics.commitsLastYear));
+      document.querySelectorAll('[data-metric-created]').forEach(el => el.textContent = formatDate(metrics.createdAt));
+      document.querySelectorAll('[data-metrics-stars]').forEach(el => el.textContent = formatNum(metrics.stars));
+      document.querySelectorAll('[data-metrics-forks]').forEach(el => el.textContent = formatNum(metrics.forks));
+      document.querySelectorAll('[data-metrics-issues]').forEach(el => el.textContent = formatNum(metrics.openIssues));
+      document.querySelectorAll('[data-metrics-contributors]').forEach(el => el.textContent = formatNum(metrics.contributors));
+      document.querySelectorAll('[data-metrics-created]').forEach(el => el.textContent = formatDate(metrics.createdAt));
+    }
+
+    hydrateGitHubMetadata(repo);
+  }
+
+  window.addEventListener('ai-landscape:scores-ready', hydrateDetail);
+  const check = setInterval(() => {
+    const heroBar = document.querySelector('.detail-score');
+    if (heroBar?.dataset.scoreRepo && window.aiLandscapeScores?.getProjectData?.(heroBar.dataset.scoreRepo)) {
+      hydrateDetail();
+      clearInterval(check);
+    }
+  }, 500);
+  setTimeout(() => clearInterval(check), 10000);
+</script>

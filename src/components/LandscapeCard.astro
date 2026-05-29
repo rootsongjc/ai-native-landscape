@@ -1,0 +1,205 @@
+---
+import { localizedPath, projectDescription, projectIconUrl, scoreLabel } from '../lib/landscape.mjs';
+
+const { project, lang = 'en' } = Astro.props;
+const avatar = projectIconUrl(project, 96);
+const href = localizedPath(`/projects/${project.slug}/`, lang);
+const isArchived = project.status === 'archived';
+const repoSlug = project.repoSlug || '';
+const desc = projectDescription(project, lang);
+const scoreStateText = scoreLabel(project.scores?.health, lang);
+---
+
+<a
+  class:list={['landscape-card', { 'landscape-card--archived': isArchived }]}
+  href={href}
+  data-score-repo={repoSlug}
+  data-card-name={project.name}
+  data-card-slug={project.slug}
+  data-card-desc={desc}
+  data-card-repo={project.repo || ''}
+  data-card-added={project.added || ''}
+  data-card-oss-date={project.ossDate || ''}
+>
+  <div class="landscape-card__logo">
+    {avatar ? (
+      <img src={avatar} alt="" loading="lazy" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false" />
+    ) : null}
+    <span class="landscape-card__initial" hidden={Boolean(avatar)}>
+      {project.name.slice(0, 2).toUpperCase()}
+    </span>
+  </div>
+  <span class="landscape-card__name">{project.name}</span>
+
+  <!-- Tooltip -->
+  <span class="landscape-card__tooltip" aria-hidden="true">
+    <strong class="landscape-card__tooltip-name">{project.name}</strong>
+    {desc && <span class="landscape-card__tooltip-desc">{desc}</span>}
+    <span class="landscape-card__tooltip-meta">
+      <span class="landscape-card__tooltip-repo">{project.repoSlug}</span>
+      <span class="landscape-card__tooltip-status" data-tooltip-status>{scoreStateText}</span>
+    </span>
+  </span>
+</a>
+
+<style>
+  .landscape-card {
+    --tooltip-offset: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 6px 8px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text);
+    transition: all 0.2s;
+    cursor: pointer;
+    min-width: 0;
+    position: relative;
+  }
+  .landscape-card:hover {
+    background: var(--accent-soft);
+    border-color: rgba(10, 132, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    z-index: 10;
+  }
+  html[data-theme='dark'] .landscape-card:hover {
+    background: rgba(110,168,255,0.1);
+    border-color: rgba(110,168,255,0.25);
+  }
+  .landscape-card--archived {
+    opacity: 0.4;
+  }
+  .landscape-card--archived .landscape-card__name {
+    text-decoration: line-through;
+  }
+
+  .landscape-card__logo {
+    width: 36px;
+    height: 36px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    background: var(--accent-soft);
+    border: 1px solid var(--border);
+  }
+  .landscape-card__logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .landscape-card__initial {
+    font-size: 0.6rem;
+    font-weight: 800;
+    color: var(--accent);
+    line-height: 1;
+  }
+
+  .landscape-card__name {
+    font-size: 0.65rem;
+    font-weight: 600;
+    line-height: 1.2;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+  }
+
+  /* Tooltip — :global needed because Astro scoped CSS breaks :hover chain */
+  :global(.landscape-card__tooltip) {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(calc(-50% + var(--tooltip-offset))) translateY(4px);
+    min-width: 200px;
+    max-width: 280px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background: var(--text);
+    color: var(--bg);
+    font-size: 0.75rem;
+    line-height: 1.4;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.2s;
+    z-index: 50;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    white-space: normal;
+  }
+  :global(html[data-theme='dark'] .landscape-card__tooltip) {
+    background: #1e293b;
+    color: #e2e8f0;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  :global(.landscape-card__tooltip::after) {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: calc(50% - var(--tooltip-offset));
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: var(--text);
+  }
+  :global(html[data-theme='dark'] .landscape-card__tooltip::after) {
+    border-top-color: #1e293b;
+  }
+  :global(.landscape-card:hover .landscape-card__tooltip) {
+    opacity: 1;
+    transform: translateX(calc(-50% + var(--tooltip-offset))) translateY(0);
+  }
+  :global(.landscape-card__tooltip-name) {
+    font-size: 0.82rem;
+    font-weight: 700;
+    display: block;
+  }
+  :global(.landscape-card__tooltip-desc) {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    opacity: 0.85;
+    font-size: 0.7rem;
+    line-height: 1.35;
+  }
+  :global(.landscape-card__tooltip-repo) {
+    font-size: 0.65rem;
+    opacity: 0.5;
+    font-family: monospace;
+  }
+  :global(.landscape-card__tooltip-meta) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 2px;
+  }
+  :global(.landscape-card__tooltip-status) {
+    display: inline-flex;
+    align-items: center;
+    min-height: 22px;
+    padding: 0 8px;
+    border-radius: 999px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    white-space: nowrap;
+    color: #047857;
+    background: rgba(16,185,129,0.16);
+  }
+
+  @media (max-width: 720px) {
+    :global(.landscape-card__tooltip) {
+      display: none;
+    }
+  }
+</style>
