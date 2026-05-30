@@ -27,13 +27,23 @@ const grouped = (category.subcategories || []).map((subCategory) => ({
 })).filter((item) => item.projects.length > 0);
 
 const allTags = Array.from(new Set(projects.flatMap((project) => project.tags || []))).sort();
+const usedStatuses = [...new Set(projects.map((p) => p.status).filter(Boolean))];
 const title = `${categoryName(category, lang)}`;
 const description = categoryDescription(category, lang);
 ---
 
 <BaseLayout title={title} description={description} canonical={localizedPath(`/categories/${canonicalCategoryKey}/`, lang)} lang={lang}>
   <main class="category-page category-page--grouped">
-    <a class="back-link" href={localizedPath('/', lang)}>{copy.back}</a>
+    <nav class="back-link" aria-label="Breadcrumb">
+      <a class="back-link__home" href={localizedPath('/', lang)}>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/></svg>
+        <span>{copy.navLandscape}</span>
+      </a>
+      <span class="back-link__sep" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg>
+      </span>
+      <span class="back-link__current">{categoryName(category, lang)}</span>
+    </nav>
     <section class="page-heading">
       <h1>{categoryName(category, lang)}</h1>
       <p>{description}</p>
@@ -50,6 +60,11 @@ const description = categoryDescription(category, lang);
           <strong>{allTags.length}</strong>
           <span>{lang === 'zh' ? '标签' : 'Tags'}</span>
         </span>
+      </div>
+      <div class="status-legend">
+        {usedStatuses.map((s) => (
+          <span class="status-legend__item"><span class={`status-dot status-dot--${s}`} />{statusLabel(s, lang)}</span>
+        ))}
       </div>
       {isLegacyCategory && <p class="legacy-notice">{copy.legacyCategoryNotice}</p>}
     </section>
@@ -146,17 +161,18 @@ const description = categoryDescription(category, lang);
                     </div>
                   </div>
                   <div class="project-list-side">
-                    <div class="project-list-side__stats">
-                      <div class="project-score" data-score-repo={project.repoSlug}>
-                        <strong data-score-value>--</strong>
-                        <span data-score-label>{copy.scoreLoading}</span>
-                      </div>
-                      <span class={`status-pill status-pill--${project.status}`}>{statusLabel(project.status, lang)}</span>
+                    <div class="project-score" data-score-repo={project.repoSlug}>
+                      <strong data-score-value>--</strong>
+                      <span data-score-label>{copy.scoreLoading}</span>
                     </div>
+                    <span class={`status-dot status-dot--${project.status}`} title={statusLabel(project.status, lang)} />
                     <div class="card-actions card-actions--stacked">
-                      <a class="card-action" href={localizedPath(`/projects/${project.slug}/`, lang)}>{copy.details}</a>
-                      <a class="card-action" href={project.repo} target="_blank" rel="noopener noreferrer">GitHub</a>
-                      {project.homepage && <a class="card-action" href={project.homepage} target="_blank" rel="noopener noreferrer">{copy.website}</a>}
+                      <a class="card-action card-action--icon" href={project.repo} target="_blank" rel="noopener noreferrer" title="GitHub">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                      </a>
+                      {project.homepage && <a class="card-action card-action--icon" href={project.homepage} target="_blank" rel="noopener noreferrer" title={copy.website}>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                      </a>}
                     </div>
                   </div>
                 </article>
