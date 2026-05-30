@@ -107,20 +107,7 @@ const canonical = localizedPath('/', lang);
         <p>{copy.directoryDescription}</p>
       </div>
 
-      <div class="landscape-category-grid">
-        {categories.map((cat, i) => (
-          <LandscapeCategory category={cat} lang={lang} index={i} />
-        ))}
-      </div>
-    </section>
-
-    <section class="landscape-explorer" aria-labelledby="landscape-explorer-title">
-      <div class="landscape-section__head">
-        <h2 id="landscape-explorer-title">{copy.featuredDiscover}</h2>
-        <p>{copy.projectLandscapeDescription}</p>
-      </div>
-
-      <div class="landscape-grid" data-landscape-grid>
+      <div class="landscape-category-grid" data-landscape-grid>
         {categories.map((cat, i) => (
           <LandscapeCategory category={cat} lang={lang} index={i} />
         ))}
@@ -132,9 +119,7 @@ const canonical = localizedPath('/', lang);
 
   <script define:vars={{ searchIndex, lang }}>
     const grid = document.querySelector('[data-landscape-grid]');
-    const directoryGrid = document.querySelector('.landscape-category-grid');
     const heatmap = document.querySelector('[data-heatmap]');
-    const directory = document.querySelector('.landscape-directory');
     const searchInput = document.querySelector('[data-landscape-search]');
     const categorySelect = document.querySelector('[data-landscape-category]');
     const statusSelect = document.querySelector('[data-landscape-status]');
@@ -155,7 +140,6 @@ const canonical = localizedPath('/', lang);
       const isGrid = view === 'grid';
       grid.style.display = isGrid ? '' : 'none';
       heatmap.style.display = isGrid ? 'none' : '';
-      if (directory) directory.style.display = isGrid ? '' : 'none';
       viewBtns.forEach(b => b.classList.toggle('landscape-toolbar__view-btn--active', b.dataset.view === view));
     }
     viewBtns.forEach(b => b.addEventListener('click', () => setView(b.dataset.view)));
@@ -278,7 +262,6 @@ const canonical = localizedPath('/', lang);
       const status = statusSelect?.value || 'all';
       const sortMode = sortSelect?.value || 'default';
 
-      filterCategoryContainer(directoryGrid, category, status, query, sortMode);
       filterCategoryContainer(grid, category, status, query, sortMode);
 
       updateAllTooltipOffsets();
@@ -481,8 +464,7 @@ const canonical = localizedPath('/', lang);
 
   .landscape-hero,
   .landscape-search,
-  .landscape-directory,
-  .landscape-explorer {
+  .landscape-directory {
     display: grid;
     gap: 16px;
   }
@@ -679,10 +661,6 @@ const canonical = localizedPath('/', lang);
   .landscape-grid {
     display: grid;
     gap: 32px;
-  }
-
-  .landscape-explorer {
-    padding-top: 4px;
   }
 
   @media (max-width: 720px) {
