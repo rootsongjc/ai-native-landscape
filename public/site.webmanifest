@@ -1,7 +1,7 @@
 {
-  "name": "Open Source AI Landscape",
-  "short_name": "Open Source AI",
-  "description": "The curated landscape of open-source AI tools, frameworks, agents, runtimes and infrastructure.",
+  "name": "AI Native Landscape",
+  "short_name": "AI Landscape",
+  "description": "The ecosystem map for building AI Native systems.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0f1724",
@@ -11,6 +11,17 @@
       "src": "/favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
       "purpose": "any maskable"
     }
   ]

@@ -11,14 +11,15 @@
     "export": "node scripts/export-data.mjs",
     "import:website": "node scripts/import-website-data.mjs",
     "build": "npm run validate && npm run build:index && npm run export && astro build",
-    "dev": "astro dev --host 127.0.0.1 --port 4173",
-    "preview": "astro preview --host 127.0.0.1 --port 4173"
+    "dev": "astro dev --host --port 4173",
+    "dev:fresh": "astro dev --host --port 4173 --force",
+    "preview": "astro preview --host --port 4173"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.7.2",
+    "@astrojs/sitemap": "^3.7.3",
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
-    "astro": "^6.3.7",
+    "astro": "^6.4.2",
     "html2canvas": "^1.4.1",
     "js-yaml": "^4.1.0",
     "jspdf": "^4.2.1",

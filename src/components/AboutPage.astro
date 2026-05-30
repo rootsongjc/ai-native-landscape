@@ -1,198 +1,87 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { localizedPath, ui } from '../lib/landscape.mjs';
+import aboutEn from '../data/about.en.md?raw';
+import aboutZh from '../data/about.zh.md?raw';
+import { localizedPath, markdownToHtml, ui } from '../lib/landscape.mjs';
 
 const { lang = 'en' } = Astro.props;
 const copy = ui(lang);
+const content = lang === 'zh' ? aboutZh : aboutEn;
+const html = markdownToHtml(content);
 ---
 
 <BaseLayout title={copy.aboutPageTitle} description={copy.aboutPageDescription} canonical={localizedPath('/about/', lang)} lang={lang}>
   <main class="about-page">
-    <section class="about-hero">
-      <h1>{copy.aboutHeroTitle}</h1>
-      <p>{copy.aboutHeroDescription}</p>
-    </section>
-
-    <section class="about-grid" aria-label={copy.aboutPageTitle}>
-      <article class="about-card about-card--wide">
-        <h2>{copy.footerTitle}</h2>
-        <p>{copy.scopeStatement}</p>
-        <p>{copy.whatNotBody}</p>
-      </article>
-
-      <article class="about-card">
-        <h2>{copy.aboutFocusTitle}</h2>
-        <ul>
-          {copy.aboutFocusItems.map((item) => (
-            <li>{item}</li>
-          ))}
-        </ul>
-      </article>
-
-      <article class="about-card">
-        <h2>{copy.aboutExcludeTitle}</h2>
-        <ul>
-          {copy.aboutExcludeItems.map((item) => (
-            <li>{item}</li>
-          ))}
-        </ul>
-      </article>
-
-      <article class="about-card">
-        <h2>{copy.aboutGoalTitle}</h2>
-        <p>{copy.aboutGoalBody}</p>
-      </article>
-    </section>
-
-    <section class="about-section">
-      <h2>{copy.whyTrustTitle}</h2>
-      <ul class="about-list">
-        {copy.aboutTrustItems.map((item) => (
-          <li>{item}</li>
-        ))}
-      </ul>
-    </section>
-
-    <section class="about-section">
-      <h2>{copy.aboutJimmyTitle}</h2>
-      <div class="about-profile">
-        <div class="about-profile__identity">
-          <p>{copy.aboutJimmyDescription}</p>
-        </div>
-        <ul class="about-list">
-          {copy.aboutJimmyRoles.map((item) => (
-            <li>{item}</li>
-          ))}
-        </ul>
-      </div>
-    </section>
-
-    <section class="about-actions" aria-label={lang === 'zh' ? '下一步' : 'Next steps'}>
-      <a class="about-action" href={localizedPath('/methodology/', lang)}>{copy.aboutCtaMethodology}</a>
-      <a class="about-action" href={localizedPath('/submit/', lang)}>{copy.aboutCtaSubmit}</a>
-    </section>
+    <article class="about-content markdown" set:html={html} />
   </main>
 </BaseLayout>
 
 <style>
   .about-page {
-    max-width: 900px;
+    max-width: 860px;
     margin: 0 auto;
     padding: 24px 16px 56px;
-    display: grid;
-    gap: 28px;
   }
 
-  .about-hero {
-    display: grid;
-    gap: 10px;
-    padding-bottom: 22px;
+  .about-content {
+    padding: 4px 0 0;
+  }
+
+  .about-content :global(h1) {
+    margin: 0 0 18px;
+    font-size: clamp(1.8rem, 3vw, 2.7rem);
+    line-height: 1.04;
+  }
+
+  .about-content :global(h2) {
+    margin: 2rem 0 0.8rem;
+    padding-bottom: 0.45rem;
     border-bottom: 1px solid var(--border);
+    font-size: 1.2rem;
+    line-height: 1.2;
   }
 
-  .about-hero h1 {
-    margin: 0;
-    font-size: clamp(1.7rem, 3vw, 2.6rem);
-    line-height: 1.05;
-  }
-
-  .about-hero p {
-    margin: 0;
+  .about-content :global(p),
+  .about-content :global(ul) {
     color: var(--muted);
-    line-height: 1.6;
     font-size: 1rem;
-    max-width: 760px;
+    line-height: 1.75;
   }
 
-  .about-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px;
+  .about-content :global(p) {
+    margin: 0 0 1rem;
   }
 
-  .about-card--wide {
-    grid-column: 1 / -1;
+  .about-content :global(ul) {
+    margin: 0 0 1rem;
+    padding-left: 1.35rem;
   }
 
-  .about-card,
-  .about-section {
-    padding: 18px;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    background: var(--surface);
-    box-shadow: var(--shadow);
+  .about-content :global(li) {
+    margin-bottom: 0.45rem;
   }
 
-  .about-card h2,
-  .about-section h2 {
-    margin: 0 0 10px;
-    font-size: 1rem;
-    font-weight: 800;
-  }
-
-  .about-card p,
-  .about-section p {
-    margin: 0;
-    color: var(--muted);
-    line-height: 1.6;
-  }
-
-  .about-card {
-    display: grid;
-    gap: 10px;
-  }
-
-  .about-card ul,
-  .about-list,
-  .about-steps {
-    margin: 0;
-    padding-left: 18px;
-    color: var(--muted);
-    line-height: 1.7;
-  }
-
-  .about-profile {
-    display: grid;
-    gap: 14px;
-  }
-
-  .about-profile__identity {
-    display: grid;
-    gap: 8px;
-  }
-
-  .about-profile__identity strong {
-    font-size: 1.14rem;
-    line-height: 1.1;
-  }
-
-  .about-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .about-action {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 44px;
-    padding: 0 16px;
-    border-radius: 999px;
-    border: 1px solid rgba(10, 132, 255, 0.2);
-    background: rgba(10, 132, 255, 0.08);
+  .about-content :global(li)::marker {
     color: var(--accent);
-    font-weight: 800;
+  }
+
+  .about-content :global(a) {
+    color: var(--accent);
     text-decoration: none;
   }
 
-  .about-action:hover {
-    background: rgba(10, 132, 255, 0.14);
-  }
-
   @media (max-width: 720px) {
-    .about-grid {
-      grid-template-columns: 1fr;
+    .about-page {
+      padding: 20px 16px 44px;
+    }
+
+    .about-content :global(h1) {
+      margin-bottom: 14px;
+      font-size: clamp(1.56rem, 6.5vw, 2rem);
+    }
+
+    .about-content :global(h2) {
+      font-size: 1.08rem;
     }
   }
 </style>

@@ -23,6 +23,11 @@ const locale = lang === 'zh' ? 'zh_CN' : 'en_US';
 const alternateLocale = lang === 'zh' ? 'en_US' : 'zh_CN';
 const selfHreflang = lang === 'zh' ? 'zh-CN' : 'en';
 const alternateHreflang = lang === 'zh' ? 'en' : 'zh-CN';
+const currentYear = new Date().getFullYear();
+const footerCopyright = `© ${SITE.copyrightStartYear}-${currentYear} Jimmy Song All Rights Reserved`;
+const mainSiteBase = lang === 'zh' ? `${SITE.mainSite}/zh` : SITE.mainSite;
+const footerBlogUrl = `${mainSiteBase}/blog`;
+const footerBookUrl = `${mainSiteBase}/book`;
 const languageOptions = [
   { code: 'en', label: 'English', href: localizedPath(canonical, 'en') },
   { code: 'zh', label: '中文', href: localizedPath(canonical, 'zh') },
@@ -55,6 +60,9 @@ const structuredData = {
     <link rel="alternate" hreflang={alternateHreflang} href={alternateUrl} />
     <link rel="alternate" hreflang="x-default" href={defaultUrl} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="preconnect" href="https://api.github.com" crossorigin />
     <link rel="preconnect" href={SITE.scoreApiBase} crossorigin />
@@ -387,11 +395,73 @@ const structuredData = {
     </header>
     <slot />
     <footer class="site-footer">
-      <a class="site-footer__legal" href={SITE.mainSite}>{copy.footer}</a>
-      <a class="site-footer__github" href={SITE.starRepo} target="_blank" rel="noopener noreferrer">
-        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-        <span>{copy.navGithub}</span>
-      </a>
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a class="footer-brand__link" href={localizedPath('/', lang)}>
+              <svg class="footer-brand__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M7.5 25.5L18 8.8l10.5 16.7" />
+                <path d="M12.2 25.5h11.6" />
+                <circle cx="18" cy="19.5" r="3.2" />
+              </svg>
+              <span class="footer-brand__title">{copy.footerTitle}</span>
+            </a>
+            <p class="footer-brand__desc">{copy.footerDescription}</p>
+            <span class="footer-brand__curated">{copy.footerCuratedBy}</span>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-nav__group">
+              <h3 class="footer-nav__heading">{copy.footerResources}</h3>
+              <ul class="footer-nav__list">
+                <li>
+                  <a href={footerBlogUrl} target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19.5h14"/><path d="M7 16.5V5.5a2 2 0 0 1 2-2h8v13"/><path d="M7 7.5h10"/><path d="M10 11.5h7"/></svg>
+                    <span>{copy.footerBlog}</span>
+                  </a>
+                </li>
+                <li>
+                  <a href={footerBookUrl} target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M8 7h8"/><path d="M8 11h8"/></svg>
+                    <span>{copy.footerBook}</span>
+                  </a>
+                </li>
+                <li>
+                  <a href={localizedPath('/about/', lang)}>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 10v5"/><path d="M12 7h.01"/></svg>
+                    <span>{copy.footerAbout}</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-nav__group">
+              <h3 class="footer-nav__heading">{copy.footerCommunity}</h3>
+              <ul class="footer-nav__list">
+                <li>
+                  <a class="footer-link--github" href={SITE.starRepo} target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                    <span>{copy.navGithub}</span>
+                  </a>
+                </li>
+                <li>
+                  <a href={SITE.issueNew} target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/><path d="M4 4h16v16H4z"/></svg>
+                    <span>{copy.footerSubmit}</span>
+                  </a>
+                </li>
+                <li>
+                  <a href={SITE.mainSite} target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    <span>{copy.footerMainSite}</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span class="footer-bottom__copy">{footerCopyright}</span>
+        </div>
+      </div>
     </footer>
     <script is:inline define:vars={{
       themeLabels: {
