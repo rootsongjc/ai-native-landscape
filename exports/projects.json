@@ -968,6 +968,47 @@
     "subCategoryNameEn": "Memory & Context"
   },
   {
+    "name": "AgentMemory",
+    "slug": "agentmemory",
+    "homepage": "https://agent-memory.dev",
+    "repo": "https://github.com/rohitg00/agentmemory",
+    "license": "Apache-2.0",
+    "category": "rag-knowledge",
+    "subCategory": "agent-memory-context",
+    "tags": [
+      "Memory",
+      "AI Agent",
+      "Claude Code",
+      "Context Engineering"
+    ],
+    "description": {
+      "en": "Persistent memory layer for AI coding agents, enabling cross-session context retention based on real-world benchmarks.",
+      "zh": "AI 编程智能体的持久化记忆层，基于真实场景基准测试，支持跨会话上下文保持。"
+    },
+    "logo": "",
+    "author": "rohitg00",
+    "ossDate": "2026-02-25T07:32:52Z",
+    "featured": false,
+    "thumbnail": "",
+    "source": {
+      "en": ""
+    },
+    "status": "tracked",
+    "content": {
+      "en": "## Overview\n\nAgentMemory provides persistent memory for AI coding agents, enabling them to retain and recall context across sessions. It is benchmarked against real-world coding tasks and integrates with popular agent platforms.\n\n## Key Features\n\n- Persistent memory layer that survives agent restarts and session boundaries\n- Benchmarked against real-world coding agent tasks\n- Integrates with Claude Code, Cursor, Codex, Copilot, and more\n- Lightweight and easy to integrate into existing agent workflows\n\n## Use Cases\n\n- Enabling coding agents to remember project context across sessions\n- Building long-term knowledge bases for AI-assisted development\n- Improving agent accuracy by providing historical context\n\n## Technical Details\n\n- Cross-session memory persistence\n- Compatible with major AI coding agent platforms\n- Real-world benchmark-driven design",
+      "zh": "## 简介\n\nAgentMemory 为 AI 编程智能体提供持久化记忆能力，使其能够在不同会话之间保留和召回上下文。基于真实编程任务基准测试，并集成主流智能体平台。\n\n## 主要特性\n\n- 持久化记忆层，支持智能体重启后会话保持\n- 基于真实编程智能体任务的基准测试\n- 集成 Claude Code、Cursor、Codex、Copilot 等\n- 轻量级，易于集成到现有智能体工作流\n\n## 使用场景\n\n- 使编程智能体跨会话记住项目上下文\n- 为 AI 辅助开发构建长期知识库\n- 通过提供历史上下文提高智能体准确性\n\n## 技术特点\n\n- 跨会话记忆持久化\n- 兼容主流 AI 编程智能体平台\n- 基于真实世界基准测试驱动设计"
+    },
+    "score": {},
+    "repoSlug": "rohitg00/agentmemory",
+    "totalScore": null,
+    "scorePercent": null,
+    "taxonomyReason": "explicit",
+    "categoryNameZh": "知识与上下文工程",
+    "categoryNameEn": "Knowledge & Context",
+    "subCategoryNameZh": "记忆与上下文",
+    "subCategoryNameEn": "Memory & Context"
+  },
+  {
     "name": "Agents Towards Production",
     "slug": "agents-towards-production",
     "homepage": "https://www.diamant-ai.com/",
@@ -1627,6 +1668,49 @@
     "categoryNameEn": "Inference & Runtime",
     "subCategoryNameZh": "推理运行时",
     "subCategoryNameEn": "Inference Runtimes"
+  },
+  {
+    "name": "Anthropic Cybersecurity Skills",
+    "slug": "anthropic-cybersecurity-skills",
+    "homepage": "https://mahipal.engineer/Anthropic-Cybersecurity-Skills/",
+    "repo": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+    "license": "Apache-2.0",
+    "category": "training-optimization",
+    "subCategory": "safety-guardrails",
+    "tags": [
+      "Cybersecurity",
+      "Security",
+      "MCP",
+      "MITRE ATT&CK",
+      "Claude Code",
+      "AI Agent"
+    ],
+    "description": {
+      "en": "754 structured cybersecurity skills for AI agents mapped to 5 frameworks including MITRE ATT&CK, NIST CSF 2.0, and MITRE ATLAS.",
+      "zh": "754 个面向 AI 智能体的结构化网络安全技能，映射到 MITRE ATT&CK、NIST CSF 2.0 等 5 大安全框架。"
+    },
+    "logo": "",
+    "author": "mukul975",
+    "ossDate": "2026-02-25T09:47:50Z",
+    "featured": false,
+    "thumbnail": "",
+    "source": {
+      "en": ""
+    },
+    "status": "tracked",
+    "content": {
+      "en": "## Overview\n\nAnthropic Cybersecurity Skills provides 754 structured cybersecurity skills for AI agents, mapped to 5 major security frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, and NIST AI RMF. It works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI, and 20+ platforms.\n\n## Key Features\n\n- 754 structured cybersecurity skills across 26 security domains\n- Mapped to MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, and NIST AI RMF\n- Compatible with Claude Code, Copilot, Codex CLI, Cursor, Gemini CLI, and 20+ platforms\n- agentskills.io standard format\n\n## Use Cases\n\n- Automated security assessment and penetration testing with AI agents\n- Threat intelligence analysis and incident response\n- Security-aware code review and DevSecOps automation\n\n## Technical Details\n\n- Apache 2.0 licensed, covering 26 security domains\n- Structured in agentskills.io standard format\n- Covers OSINT, malware analysis, cloud security, threat hunting, and more",
+      "zh": "## 简介\n\nAnthropic Cybersecurity Skills 提供 754 个面向 AI 智能体的结构化网络安全技能，映射到 5 大安全框架：MITRE ATT&CK、NIST CSF 2.0、MITRE ATLAS、D3FEND 和 NIST AI RMF。兼容 Claude Code、GitHub Copilot、Codex CLI、Cursor、Gemini CLI 等 20+ 平台。\n\n## 主要特性\n\n- 754 个结构化网络安全技能，覆盖 26 个安全领域\n- 映射到 MITRE ATT&CK、NIST CSF 2.0、MITRE ATLAS、D3FEND 和 NIST AI RMF\n- 兼容 Claude Code、Copilot、Codex CLI、Cursor、Gemini CLI 等 20+ 平台\n- 采用 agentskills.io 标准格式\n\n## 使用场景\n\n- 使用 AI 智能体进行自动化安全评估和渗透测试\n- 威胁情报分析和事件响应\n- 安全感知的代码审查和 DevSecOps 自动化\n\n## 技术特点\n\n- Apache 2.0 许可证，覆盖 26 个安全领域\n- 采用 agentskills.io 标准格式\n- 涵盖 OSINT、恶意软件分析、云安全、威胁狩猎等"
+    },
+    "score": {},
+    "repoSlug": "mukul975/anthropic-cybersecurity-skills",
+    "totalScore": null,
+    "scorePercent": null,
+    "taxonomyReason": "explicit",
+    "categoryNameZh": "训练、评测与优化",
+    "categoryNameEn": "Training, Evaluation & Optimization",
+    "subCategoryNameZh": "安全与护栏",
+    "subCategoryNameEn": "Safety & Guardrails"
   },
   {
     "name": "AntV MCP Server Chart",
@@ -3149,6 +3233,46 @@
     "subCategoryNameEn": "Low-code Builders"
   },
   {
+    "name": "Bumblebee",
+    "slug": "bumblebee",
+    "homepage": null,
+    "repo": "https://github.com/perplexityai/bumblebee",
+    "license": "Apache-2.0",
+    "category": "coding-devtools",
+    "subCategory": "developer-utilities",
+    "tags": [
+      "Golang",
+      "Supply Chain Security",
+      "Package Inventory"
+    ],
+    "description": {
+      "en": "Read-only developer endpoint scanner for on-disk package, extension, and developer-tool metadata, built to check exposure to known software supply-chain compromises.",
+      "zh": "面向开发者终端的只读扫描工具，扫描磁盘上的包、扩展和开发工具元数据，用于检测已知软件供应链漏洞的暴露情况。"
+    },
+    "logo": "",
+    "author": "Perplexity AI",
+    "ossDate": "2026-05-20T18:11:37Z",
+    "featured": false,
+    "thumbnail": "",
+    "source": {
+      "en": ""
+    },
+    "status": "tracked",
+    "content": {
+      "en": "## Overview\n\nBumblebee is a read-only inventory collector for package, extension, and developer-tool metadata on macOS and Linux developer endpoints. It answers a narrow supply-chain response question: when an advisory names a package, extension, or version, which developer machines show a match in their on-disk metadata right now?\n\n## Key Features\n\n- Single static binary, zero non-stdlib dependencies (Go 1.25+)\n- Three scan profiles (`baseline`, `project`, `deep`) for different populations and cadences\n- Structured NDJSON output with optional exposure catalog matching\n- Covers npm, pnpm, Yarn, Bun, PyPI, Go modules, RubyGems, Composer, MCP configs, editor and browser extensions, Homebrew\n\n## Use Cases\n\n- Supply-chain incident response: quickly identify which developer endpoints are exposed to a compromised package\n- Continuous developer endpoint inventory for security and compliance\n- MCP host configuration auditing across AI coding tools\n\n## Technical Details\n\n- Read-only scanning of lockfiles, package-manager metadata, extension manifests, and MCP JSON configs\n- No package manager execution or source-file reads\n- Supports exposure catalog matching for fast, targeted checks\n- Per-ecosystem coverage with structured ecosystem identifiers",
+      "zh": "## 简介\n\nBumblebee 是一个只读的清单收集器，用于扫描 macOS 和 Linux 开发者终端上的包、扩展和开发工具元数据。它回答一个精准的供应链响应问题：当安全公告指出某个包或版本存在漏洞时，哪些开发者机器上的本地元数据存在匹配？\n\n## 主要特性\n\n- 单一静态二进制文件，零外部依赖（Go 1.25+）\n- 三种扫描模式（`baseline`、`project`、`deep`），适配不同场景和频率\n- 结构化 NDJSON 输出，支持可选的暴露目录匹配\n- 覆盖 npm、pnpm、Yarn、Bun、PyPI、Go modules、RubyGems、Composer、MCP 配置、编辑器和浏览器扩展、Homebrew\n\n## 使用场景\n\n- 供应链安全事件响应：快速识别哪些开发者终端暴露于受 compromised 的包\n- 持续的开发者终端清单管理，满足安全和合规需求\n- 跨 AI 编程工具的 MCP 主机配置审计\n\n## 技术特点\n\n- 只读扫描 lockfile、包管理器元数据、扩展清单和 MCP JSON 配置\n- 不执行包管理器命令，不读取源代码文件\n- 支持暴露目录匹配，实现快速定向检查\n- 按生态系统提供结构化标识符"
+    },
+    "score": {},
+    "repoSlug": "perplexityai/bumblebee",
+    "totalScore": null,
+    "scorePercent": null,
+    "taxonomyReason": "explicit",
+    "categoryNameZh": "开发者工具链",
+    "categoryNameEn": "Developer Tooling",
+    "subCategoryNameZh": "开发者工具",
+    "subCategoryNameEn": "Developer Utilities"
+  },
+  {
     "name": "Bun",
     "slug": "bun",
     "homepage": "https://bun.sh",
@@ -4515,6 +4639,48 @@
     "categoryNameEn": "Knowledge & Context",
     "subCategoryNameZh": "知识图谱",
     "subCategoryNameEn": "Knowledge Graphs"
+  },
+  {
+    "name": "CodeWhale",
+    "slug": "codewhale",
+    "homepage": "https://codewhale.net/",
+    "repo": "https://github.com/Hmbown/CodeWhale",
+    "license": "MIT",
+    "category": "coding-devtools",
+    "subCategory": "coding-agents",
+    "tags": [
+      "Coding Agent",
+      "DeepSeek",
+      "Rust",
+      "CLI",
+      "Terminal"
+    ],
+    "description": {
+      "en": "DeepSeek and MiMo powered coding agent that runs in the terminal, built with Rust for speed and reliability.",
+      "zh": "基于 DeepSeek 和 MiMo 模型的终端编程智能体，使用 Rust 构建，注重速度和可靠性。"
+    },
+    "logo": "",
+    "author": "Hmbown",
+    "ossDate": "2026-01-19T18:21:01Z",
+    "featured": false,
+    "thumbnail": "",
+    "source": {
+      "en": ""
+    },
+    "status": "tracked",
+    "content": {
+      "en": "## Overview\n\nCodeWhale is a terminal-based AI coding agent powered by DeepSeek and MiMo models. Written in Rust, it provides fast and reliable code generation, editing, and assistance directly from the command line.\n\n## Key Features\n\n- Powered by DeepSeek and MiMo models for code intelligence\n- Written in Rust for high performance and low resource usage\n- Terminal-first design with TUI interface\n- Supports multiple LLM backends\n\n## Use Cases\n\n- Quick code generation and editing from the terminal\n- AI-assisted development in environments without GUI\n- Lightweight coding agent for resource-constrained systems\n\n## Technical Details\n\n- Built with Rust for native performance\n- DeepSeek and MiMo model integration\n- TUI-based terminal interface",
+      "zh": "## 简介\n\nCodeWhale 是一个基于 DeepSeek 和 MiMo 模型的终端 AI 编程智能体。使用 Rust 编写，在命令行中提供快速可靠的代码生成、编辑和辅助功能。\n\n## 主要特性\n\n- 由 DeepSeek 和 MiMo 模型驱动的代码智能\n- 使用 Rust 编写，高性能低资源占用\n- 终端优先设计，配备 TUI 界面\n- 支持多种 LLM 后端\n\n## 使用场景\n\n- 从终端快速生成和编辑代码\n- 在无 GUI 环境中进行 AI 辅助开发\n- 适用于资源受限环境的轻量级编程智能体\n\n## 技术特点\n\n- 使用 Rust 构建，原生级性能\n- DeepSeek 和 MiMo 模型集成\n- 基于 TUI 的终端界面"
+    },
+    "score": {},
+    "repoSlug": "hmbown/codewhale",
+    "totalScore": null,
+    "scorePercent": null,
+    "taxonomyReason": "explicit",
+    "categoryNameZh": "开发者工具链",
+    "categoryNameEn": "Developer Tooling",
+    "subCategoryNameZh": "编程智能体",
+    "subCategoryNameEn": "Coding Agents"
   },
   {
     "name": "Codex",
@@ -6253,6 +6419,48 @@
     "categoryNameEn": "Applications & Experience",
     "subCategoryNameZh": "效率工具",
     "subCategoryNameEn": "Productivity Tools"
+  },
+  {
+    "name": "DeepSeek-Reasonix",
+    "slug": "deepseek-reasonix",
+    "homepage": "https://esengine.github.io/DeepSeek-Reasonix/",
+    "repo": "https://github.com/esengine/DeepSeek-Reasonix",
+    "license": "MIT",
+    "category": "coding-devtools",
+    "subCategory": "coding-agents",
+    "tags": [
+      "Coding Agent",
+      "DeepSeek",
+      "CLI",
+      "TypeScript",
+      "Terminal"
+    ],
+    "description": {
+      "en": "DeepSeek-native AI coding agent for your terminal, engineered around prefix-cache stability for long-running sessions.",
+      "zh": "面向终端的 DeepSeek 原生 AI 编程智能体，围绕前缀缓存稳定性设计，支持长时间运行。"
+    },
+    "logo": "",
+    "author": "esengine",
+    "ossDate": "2026-04-21T08:27:02Z",
+    "featured": false,
+    "thumbnail": "",
+    "source": {
+      "en": ""
+    },
+    "status": "tracked",
+    "content": {
+      "en": "## Overview\n\nDeepSeek-Reasonix is a DeepSeek-native AI coding agent that runs in your terminal. It is engineered around prefix-cache stability, allowing it to run for extended sessions without losing context or performance.\n\n## Key Features\n\n- DeepSeek-native with optimized prompt caching for long-running sessions\n- Terminal UI built with Ink (React-based TUI framework)\n- Tool use and function calling support\n- Designed for continuous operation — leave it running\n\n## Use Cases\n\n- Long-running coding sessions with DeepSeek models\n- Autonomous code generation and refactoring in the terminal\n- Persistent coding agent that maintains context over extended tasks\n\n## Technical Details\n\n- Built with TypeScript and Ink for rich terminal UI\n- Prefix-cache aware prompt engineering for cost efficiency\n- Supports DeepSeek R1 and other DeepSeek model variants",
+      "zh": "## 简介\n\nDeepSeek-Reasonix 是一个运行在终端中的 DeepSeek 原生 AI 编程智能体。它围绕前缀缓存稳定性进行工程优化，支持长时间持续运行而不丢失上下文或性能。\n\n## 主要特性\n\n- DeepSeek 原生优化，支持长时间运行的提示缓存\n- 基于 Ink（React TUI 框架）构建的终端界面\n- 工具调用和函数调用支持\n- 专为持续运行设计\n\n## 使用场景\n\n- 使用 DeepSeek 模型进行长时间编程会话\n- 终端中的自主代码生成和重构\n- 在扩展任务中保持上下文的持续编程智能体\n\n## 技术特点\n\n- 使用 TypeScript 和 Ink 构建丰富的终端界面\n- 前缀缓存感知的提示工程，提高成本效率\n- 支持 DeepSeek R1 及其他 DeepSeek 模型变体"
+    },
+    "score": {},
+    "repoSlug": "esengine/deepseek-reasonix",
+    "totalScore": null,
+    "scorePercent": null,
+    "taxonomyReason": "explicit",
+    "categoryNameZh": "开发者工具链",
+    "categoryNameEn": "Developer Tooling",
+    "subCategoryNameZh": "编程智能体",
+    "subCategoryNameEn": "Coding Agents"
   },
   {
     "name": "DeepSpeed",
@@ -10537,6 +10745,47 @@
     "subCategoryNameEn": "MCP & Tool Protocols"
   },
   {
+    "name": "Knowledge Work Plugins",
+    "slug": "knowledge-work-plugins",
+    "homepage": null,
+    "repo": "https://github.com/anthropics/knowledge-work-plugins",
+    "license": "Apache-2.0",
+    "category": "applications-products",
+    "subCategory": "productivity-tools",
+    "tags": [
+      "Productivity",
+      "Claude",
+      "Knowledge Work",
+      "Plugin"
+    ],
+    "description": {
+      "en": "Open source repository of plugins for knowledge workers to use in Claude Cowork, enhancing productivity and workflow automation.",
+      "zh": "Anthropic 官方开源的知识工作者插件仓库，用于 Claude Cowork，提升生产力和工作流自动化。"
+    },
+    "logo": "",
+    "author": "Anthropic",
+    "ossDate": "2026-01-23T20:11:54Z",
+    "featured": false,
+    "thumbnail": "",
+    "source": {
+      "en": ""
+    },
+    "status": "tracked",
+    "content": {
+      "en": "## Overview\n\nKnowledge Work Plugins is an open source repository by Anthropic containing plugins primarily intended for knowledge workers to use in Claude Cowork. These plugins enhance productivity and automate common knowledge work tasks.\n\n## Key Features\n\n- Official plugins from Anthropic for Claude Cowork\n- Designed for knowledge workers and productivity enhancement\n- Open source under Apache 2.0 license\n- Covers common knowledge work automation patterns\n\n## Use Cases\n\n- Enhancing Claude Cowork with specialized productivity plugins\n- Automating repetitive knowledge work tasks\n- Building custom workflows for document processing and analysis\n\n## Technical Details\n\n- Official Anthropic repository\n- Apache 2.0 licensed\n- Designed for the Claude Cowork platform",
+      "zh": "## 简介\n\nKnowledge Work Plugins 是 Anthropic 官方的开源插件仓库，主要面向在 Claude Cowork 中使用的知识工作者。这些插件提升生产力并自动化常见的知识工作任务。\n\n## 主要特性\n\n- Anthropic 官方提供的 Claude Cowork 插件\n- 专为知识工作者和生产力提升设计\n- Apache 2.0 开源许可证\n- 覆盖常见知识工作自动化模式\n\n## 使用场景\n\n- 通过专业化生产力插件增强 Claude Cowork\n- 自动化重复性知识工作任务\n- 构建文档处理和分析的自定义工作流\n\n## 技术特点\n\n- Anthropic 官方仓库\n- Apache 2.0 许可证\n- 专为 Claude Cowork 平台设计"
+    },
+    "score": {},
+    "repoSlug": "anthropics/knowledge-work-plugins",
+    "totalScore": null,
+    "scorePercent": null,
+    "taxonomyReason": "explicit",
+    "categoryNameZh": "应用与体验",
+    "categoryNameEn": "Applications & Experience",
+    "subCategoryNameZh": "效率工具",
+    "subCategoryNameEn": "Productivity Tools"
+  },
+  {
     "name": "KServe",
     "slug": "kserve",
     "homepage": "https://kserve.github.io/website/",
@@ -13086,6 +13335,49 @@
     },
     "score": {},
     "repoSlug": "idosal/mcp-ui",
+    "totalScore": null,
+    "scorePercent": null,
+    "taxonomyReason": "explicit",
+    "categoryNameZh": "开发者工具链",
+    "categoryNameEn": "Developer Tooling",
+    "subCategoryNameZh": "MCP 与工具协议",
+    "subCategoryNameEn": "MCP & Tool Protocols"
+  },
+  {
+    "name": "md2wechat-skill",
+    "slug": "md2wechat-skill",
+    "homepage": "https://md2wechat.cn",
+    "repo": "https://github.com/geekjourneyx/md2wechat-skill",
+    "license": "Other",
+    "category": "coding-devtools",
+    "subCategory": "mcp-tools",
+    "tags": [
+      "WeChat",
+      "Markdown",
+      "CLI",
+      "MCP Server",
+      "Claude Code",
+      "Go"
+    ],
+    "description": {
+      "en": "Markdown to WeChat CLI tool with 40+ formatting styles, AI-generated images, and batch publishing support for WeChat public accounts.",
+      "zh": "Markdown 转微信公众号排版工具，支持 40+ 排版样式、AI 配图和批量发布。"
+    },
+    "logo": "",
+    "author": "geekjourneyx",
+    "ossDate": "2026-01-11T06:36:13Z",
+    "featured": false,
+    "thumbnail": "",
+    "source": {
+      "en": ""
+    },
+    "status": "tracked",
+    "content": {
+      "en": "## Overview\n\nmd2wechat-skill is a CLI tool that converts Markdown to formatted WeChat public account articles. It supports 40+ formatting styles, AI-generated cover images, and batch publishing, designed as both a standalone CLI and an MCP server for integration with AI agents.\n\n## Key Features\n\n- 40+ formatting styles and professional themes for WeChat articles\n- AI-generated cover images for articles\n- Batch publishing to WeChat public accounts\n- Available as MCP server for Claude Code and other agent platforms\n\n## Use Cases\n\n- Converting Markdown blog posts to WeChat-formatted articles\n- Automated WeChat public account content publishing pipeline\n- AI agent-driven content formatting and distribution\n\n## Technical Details\n\n- Built with Go for cross-platform CLI support\n- MCP server integration for AI agent compatibility\n- Supports both CLI and agent-driven workflows",
+      "zh": "## 简介\n\nmd2wechat-skill 是一个将 Markdown 转换为微信公众号格式文章的 CLI 工具。支持 40+ 排版样式、AI 生成封面图片和批量发布，既可作为独立 CLI 使用，也可作为 MCP 服务器集成到 AI 智能体平台。\n\n## 主要特性\n\n- 40+ 排版样式和微信公众号专业主题\n- AI 生成文章封面图片\n- 批量发布到微信公众号\n- 提供 MCP 服务器，兼容 Claude Code 等智能体平台\n\n## 使用场景\n\n- 将 Markdown 博客文章转换为微信排版格式\n- 自动化微信公众号内容发布流水线\n- AI 智能体驱动的内容排版和分发\n\n## 技术特点\n\n- 使用 Go 构建，支持跨平台 CLI\n- MCP 服务器集成，兼容 AI 智能体\n- 支持 CLI 和智能体驱动的双重工作流"
+    },
+    "score": {},
+    "repoSlug": "geekjourneyx/md2wechat-skill",
     "totalScore": null,
     "scorePercent": null,
     "taxonomyReason": "explicit",
@@ -20518,6 +20810,46 @@
     "categoryNameEn": "Developer Tooling",
     "subCategoryNameZh": "SDK 与框架",
     "subCategoryNameEn": "SDK Frameworks"
+  },
+  {
+    "name": "Sympozium",
+    "slug": "sympozium",
+    "homepage": "https://sympozium.ai/",
+    "repo": "https://github.com/sympozium-ai/sympozium",
+    "license": "MIT",
+    "category": "agents",
+    "subCategory": "agent-orchestration",
+    "tags": [
+      "Agentic AI",
+      "Multi-Agent",
+      "Orchestration"
+    ],
+    "description": {
+      "en": "The coordination layer for multi-agent AI, providing orchestration and communication infrastructure for agent teams.",
+      "zh": "多智能体 AI 的协调层，提供智能体团队的编排和通信基础设施。"
+    },
+    "logo": "",
+    "author": "Sympozium AI",
+    "ossDate": "2026-02-23T09:53:24Z",
+    "featured": false,
+    "thumbnail": "",
+    "source": {
+      "en": ""
+    },
+    "status": "tracked",
+    "content": {
+      "en": "## Overview\n\nSympozium is the coordination layer for multi-agent AI systems. It provides the orchestration and communication infrastructure needed for multiple AI agents to work together effectively on complex tasks.\n\n## Key Features\n\n- Multi-agent coordination and orchestration\n- Agent communication infrastructure\n- Task distribution and result aggregation\n- Designed for complex, multi-step AI workflows\n\n## Use Cases\n\n- Orchestrating multiple specialized AI agents on complex tasks\n- Building multi-agent pipelines with role-based agent teams\n- Enterprise AI workflow coordination\n\n## Technical Details\n\n- MIT licensed, open-source coordination layer\n- Agentic AI architecture\n- Supports multi-agent communication patterns",
+      "zh": "## 简介\n\nSympozium 是多智能体 AI 系统的协调层。它提供多个 AI 智能体协同工作所需的编排和通信基础设施，使智能体团队能够高效处理复杂任务。\n\n## 主要特性\n\n- 多智能体协调和编排\n- 智能体通信基础设施\n- 任务分发和结果聚合\n- 为复杂多步骤 AI 工作流设计\n\n## 使用场景\n\n- 在复杂任务上编排多个专业化 AI 智能体\n- 构建基于角色的智能体团队的多智能体流水线\n- 企业级 AI 工作流协调\n\n## 技术特点\n\n- MIT 许可证，开源协调层\n- Agentic AI 架构\n- 支持多智能体通信模式"
+    },
+    "score": {},
+    "repoSlug": "sympozium-ai/sympozium",
+    "totalScore": null,
+    "scorePercent": null,
+    "taxonomyReason": "explicit",
+    "categoryNameZh": "智能体系统",
+    "categoryNameEn": "Agent Systems",
+    "subCategoryNameZh": "编排与工作流",
+    "subCategoryNameEn": "Orchestration & Workflows"
   },
   {
     "name": "Tabby",
