@@ -1,5 +1,15 @@
-# Agent Discovery headers
-# Works with Cloudflare Pages, Netlify, and other static hosts
+# Agent Discovery — RFC 8288 Link headers (all HTML pages)
+# Cloudflare Pages _headers format
+
+/*
+  Link: </.well-known/api-catalog>; rel="api-catalog"; type="application/linkset+json"; title="API Catalog (RFC 9727)"
+  Link: </.well-known/mcp/server-card.json>; rel="mcp-server"; type="application/json"; title="MCP Server Card"
+  Link: </.well-known/agent-skills/index.json>; rel="agent-skills"; type="application/json"; title="Agent Skills Discovery Index"
+  Link: </auth.md>; rel="service-doc"; type="text/markdown"; title="Agent Authentication & Discovery"
+  Link: </data/projects.json>; rel="service-desc"; type="application/json"; title="Projects Data (JSON)"
+  Link: </sitemap-index.xml>; rel="sitemap"; type="application/xml"; title="Sitemap"
+
+# Well-known endpoint Content-Types
 
 /.well-known/api-catalog
   Content-Type: application/linkset+json
