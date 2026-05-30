@@ -10,7 +10,8 @@
     "build:index": "node scripts/build-index.mjs",
     "export": "node scripts/export-data.mjs",
     "import:website": "node scripts/import-website-data.mjs",
-    "build": "npm run validate && npm run build:index && npm run export && astro build",
+    "build:worker-manifest": "node scripts/generate-worker-manifest.mjs",
+    "build": "npm run validate && npm run build:index && npm run export && npm run build:worker-manifest && astro build",
     "dev": "astro dev --host --port 4173",
     "dev:fresh": "astro dev --host --port 4173 --force",
     "preview": "astro preview --host --port 4173"
