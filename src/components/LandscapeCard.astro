@@ -36,7 +36,6 @@ const scoreStateText = scoreLabel(project.scores?.health, lang);
     <strong class="landscape-card__tooltip-name">{project.name}</strong>
     {desc && <span class="landscape-card__tooltip-desc">{desc}</span>}
     <span class="landscape-card__tooltip-meta">
-      <span class="landscape-card__tooltip-repo">{project.repoSlug}</span>
       <span class="landscape-card__tooltip-status" data-tooltip-status>{scoreStateText}</span>
     </span>
   </span>
@@ -172,15 +171,10 @@ const scoreStateText = scoreLabel(project.scores?.health, lang);
     font-size: 0.7rem;
     line-height: 1.35;
   }
-  :global(.landscape-card__tooltip-repo) {
-    font-size: 0.65rem;
-    opacity: 0.5;
-    font-family: monospace;
-  }
   :global(.landscape-card__tooltip-meta) {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 8px;
     margin-top: 2px;
   }
