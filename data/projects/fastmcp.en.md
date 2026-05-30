@@ -12,7 +12,7 @@ description: >-
   FastMCP is a production-ready Python framework for the Model Context Protocol (MCP), providing enterprise
   authentication, deployment tooling, and comprehensive server/client features.
 logo: ''
-author: jlowin / FastMCP 社区
+author: 'jlowin / FastMCP'
 ossDate: '2024-11-30T01:47:40.000Z'
 featured: false
 thumbnail: ''
