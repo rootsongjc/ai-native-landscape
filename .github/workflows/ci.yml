@@ -13,3 +13,58 @@ jobs:
           node-version: '22'
       - run: npm ci
       - run: npm run build
+
+  trigger-worker-sync:
+    needs: validate
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Check if project data changed
+        id: detect
+        run: |
+          PREV_HEAD="HEAD~1"
+          # Handle first commit (no parent)
+          if ! git rev-parse "$PREV_HEAD" >/dev/null 2>&1; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          DIFF=$(git diff --name-only "$PREV_HEAD" "HEAD" -- 'data/projects/' 'data/categories.yaml')
+          if [ -n "$DIFF" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Project data changes:"
+            echo "$DIFF"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No project data changes, skipping worker sync."
+          fi
+
+      - name: Wait for Cloudflare Pages deployment
+        if: steps.detect.outputs.changed == 'true'
+        run: |
+          echo "Waiting 120s for Cloudflare Pages deployment..."
+          sleep 120
+          for i in 1 2 3; do
+            HTTP=$(curl -s -o /dev/null -w "%{http_code}" "https://landscape.jimmysong.io/data/ai-projects-manifest.json")
+            if [ "$HTTP" = "200" ]; then
+              echo "Manifest is live"
+              break
+            fi
+            echo "Attempt $i: manifest not yet live (HTTP $HTTP), retrying in 30s..."
+            sleep 30
+          done
+
+      - name: Trigger worker recalculate
+        if: steps.detect.outputs.changed == 'true'
+        run: |
+          RESPONSE=$(curl -sf "https://ai-oss-rank-worker.jimmysong.io/recalculate?reset=true&limit=50" 2>&1) || {
+            echo "⚠️ Worker sync trigger failed (non-fatal)"
+            echo "$RESPONSE"
+            exit 0
+          }
+          echo "✅ Worker sync triggered"
+          echo "$RESPONSE" | head -20
