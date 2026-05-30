@@ -18,6 +18,7 @@ const category = getCategories().find((item) => item.key === project.category);
 const description = projectDescription(project, lang);
 const html = markdownToHtml(projectContent(project, lang));
 const avatar = projectIconUrl(project, 128);
+const avatarLarge = projectIconUrl(project, 400);
 const repoSlug = project.repoSlug || '';
 const repoOwner = repoSlug.split('/')[0] || '';
 ---
@@ -116,6 +117,133 @@ const repoOwner = repoSlug.split('/')[0] || '';
       <article class="content-card">
         <div class="content-body markdown" set:html={html} />
       </article>
+
+      <!-- Share -->
+      <div class="share-bar" data-share-section>
+        <span class="share-bar__label">{copy.share}</span>
+        <button class="share-btn" data-share-generate type="button" title={copy.shareCard}>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+        </button>
+        <a class="share-btn" data-share-x href="#" target="_blank" rel="noopener noreferrer" title={lang === 'zh' ? '分享到 X' : 'Share on X'}>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a class="share-btn" data-share-linkedin href="#" target="_blank" rel="noopener noreferrer" title={lang === 'zh' ? '分享到 LinkedIn' : 'Share on LinkedIn'}>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <button class="share-btn" data-share-copy type="button" title={copy.copyLink}>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        </button>
+      </div>
+
+      <!-- Hidden share card template -->
+      <div class="share-card-template" data-share-card-template style="position:fixed;left:-9999px;top:0;z-index:-1;">
+        <div class="sc" style="width:1200px;height:630px;display:flex;flex-direction:column;font-family:'Inter',system-ui,-apple-system,sans-serif;overflow:hidden;background:#ffffff;">
+          <!-- Top accent bar -->
+          <div style="height:6px;background:linear-gradient(90deg,#0a84ff,#60a5fa,#a78bfa);flex-shrink:0;"></div>
+
+          <!-- Header -->
+          <div style="display:flex;padding:44px 56px 0;gap:24px;">
+            <div style="flex:1;min-width:0;">
+              <!-- Row 1: Logo + Name -->
+              <div style="display:flex;align-items:center;gap:14px;">
+                <canvas data-sc-logo-canvas data-sc-logo-src={avatarLarge || ''} width="192" height="192" style="width:48px;height:48px;border-radius:12px;object-fit:cover;flex-shrink:0;"></canvas>
+                <div data-sc-name style="font-size:36px;font-weight:700;color:#0f172a;line-height:1.1;letter-spacing:-0.03em;">{project.name}</div>
+              </div>
+              <!-- Row 2: Description -->
+              <div data-sc-desc style="font-size:20px;line-height:1.5;color:#475569;margin-top:14px;max-width:680px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">{description}</div>
+              <!-- Row 3: GitHub repo + meta -->
+              <div style="display:flex;align-items:center;gap:16px;margin-top:12px;flex-wrap:wrap;">
+                <div style="display:flex;align-items:center;gap:8px;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#64748b"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span data-sc-repo style="font-size:17px;color:#64748b;font-weight:600;">{project.repo ? project.repo.replace('https://github.com/', 'github.com/') : ''}</span>
+                </div>
+                <div style="width:1px;height:18px;background:#cbd5e1;"></div>
+                <div style="display:flex;align-items:center;gap:6px;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  <span style="font-size:16px;color:#64748b;font-weight:500;">{project.author || (lang === 'zh' ? '未知' : 'Unknown')}</span>
+                </div>
+                {project.ossDate && (
+                  <div style="display:flex;align-items:center;gap:6px;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    <span style="font-size:16px;color:#64748b;font-weight:500;">{project.ossDate ? new Date(project.ossDate).toISOString().slice(0, 10) : ''}</span>
+                  </div>
+                )}
+              </div>
+            </div>
+            <!-- Health score badge -->
+            <div style="flex-shrink:0;text-align:center;padding:24px 32px;min-width:150px;background:#eff6ff;border-radius:20px;">
+              <div style="font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#0a84ff;margin-bottom:6px;">{copy.overallHealth}</div>
+              <div data-sc-health style="font-size:60px;font-weight:900;line-height:1;color:#0a84ff;">--</div>
+              <div data-sc-health-label style="font-size:16px;font-weight:700;margin-top:6px;color:#059669;"></div>
+            </div>
+          </div>
+
+          <!-- Score card: metrics + dimensions -->
+          <div style="margin:32px 56px 0;background:#f8fafc;border-radius:16px;padding:24px 32px;">
+            <!-- GitHub metrics -->
+            <div style="display:flex;gap:44px;">
+              <div style="display:flex;align-items:center;gap:10px;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span data-sc-stars style="font-size:24px;font-weight:800;color:#0f172a;">--</span>
+                <span style="font-size:16px;color:#94a3b8;">Stars</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:10px;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2"><circle cx="12" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><path d="M18 9v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9"/><path d="M12 12v3"/></svg>
+                <span data-sc-forks style="font-size:24px;font-weight:800;color:#0f172a;">--</span>
+                <span style="font-size:16px;color:#94a3b8;">Forks</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:10px;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 15h8M9 9h.01M15 9h.01"/></svg>
+                <span data-sc-issues style="font-size:24px;font-weight:800;color:#0f172a;">--</span>
+                <span style="font-size:16px;color:#94a3b8;">Issues</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:10px;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <span data-sc-contributors style="font-size:24px;font-weight:800;color:#0f172a;">--</span>
+                <span style="font-size:16px;color:#94a3b8;">Contributors</span>
+              </div>
+            </div>
+
+            <!-- Divider -->
+            <div style="height:1px;background:#e2e8f0;margin:18px 0;"></div>
+
+            <!-- Score dimensions - progress bars -->
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px 40px;">
+              <div>
+                <div style="display:flex;justify-content:space-between;font-size:15px;margin-bottom:5px;"><span style="color:#64748b;font-weight:600;">{copy.activity}</span><span data-sc-activity style="font-weight:800;color:#0f172a;">--</span></div>
+                <div style="height:8px;border-radius:99px;background:#e2e8f0;overflow:hidden;"><div data-sc-bar-activity style="height:100%;border-radius:99px;background:linear-gradient(90deg,#3b82f6,#60a5fa);width:0%;"></div></div>
+              </div>
+              <div>
+                <div style="display:flex;justify-content:space-between;font-size:15px;margin-bottom:5px;"><span style="color:#64748b;font-weight:600;">{copy.community}</span><span data-sc-community style="font-weight:800;color:#0f172a;">--</span></div>
+                <div style="height:8px;border-radius:99px;background:#e2e8f0;overflow:hidden;"><div data-sc-bar-community style="height:100%;border-radius:99px;background:linear-gradient(90deg,#8b5cf6,#a78bfa);width:0%;"></div></div>
+              </div>
+              <div>
+                <div style="display:flex;justify-content:space-between;font-size:15px;margin-bottom:5px;"><span style="color:#64748b;font-weight:600;">{copy.quality}</span><span data-sc-quality style="font-weight:800;color:#0f172a;">--</span></div>
+                <div style="height:8px;border-radius:99px;background:#e2e8f0;overflow:hidden;"><div data-sc-bar-quality style="height:100%;border-radius:99px;background:linear-gradient(90deg,#10b981,#34d399);width:0%;"></div></div>
+              </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:15px;margin-bottom:5px;"><span style="color:#64748b;font-weight:600;">{copy.sustainability}</span><span data-sc-sustainability style="font-weight:800;color:#0f172a;">--</span></div>
+              <div style="height:8px;border-radius:99px;background:#e2e8f0;overflow:hidden;"><div data-sc-bar-sustainability style="height:100%;border-radius:99px;background:linear-gradient(90deg,#f59e0b,#fbbf24);width:0%;"></div></div>
+            </div>
+            </div>
+          </div>
+
+          <!-- Bottom: branding left + QR right -->
+          <div style="margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between;padding:0 56px 36px;">
+            <div style="display:flex;align-items:center;gap:14px;">
+              <svg width="36" height="36" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#0a84ff"/><path d="M16 45 32 17l16 28" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="36" r="6" fill="none" stroke="#fff" stroke-width="4"/><path d="M24 45h16" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/></svg>
+              <div>
+                <div style="font-size:17px;font-weight:800;color:#0f172a;">AI Native Landscape</div>
+                <div style="font-size:13px;color:#94a3b8;">landscape.jimmysong.io</div>
+              </div>
+            </div>
+            <div style="text-align:center;">
+              <div style="font-size:12px;color:#94a3b8;margin-bottom:6px;">{lang === 'zh' ? '扫码查看详情' : 'Scan to view'}</div>
+              <canvas data-sc-qrcode width="88" height="88" style="border-radius:10px;"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <aside class="detail-sidebar">
         <div class="sidebar-card github-card">
@@ -275,7 +403,7 @@ const repoOwner = repoSlug.split('/')[0] || '';
       "hero hero"
       "content sidebar";
     gap: 20px;
-    align-items: stretch;
+    align-items: start;
   }
 
   .detail-hero {
@@ -757,6 +885,76 @@ const repoOwner = repoSlug.split('/')[0] || '';
   .fill-community { background: linear-gradient(90deg, #8b5cf6, #a78bfa); height: 100%; border-radius: 99px; transition: width 0.5s; }
   .fill-quality { background: linear-gradient(90deg, #10b981, #34d399); height: 100%; border-radius: 99px; transition: width 0.5s; }
   .fill-sustainability { background: linear-gradient(90deg, #f59e0b, #fbbf24); height: 100%; border-radius: 99px; transition: width 0.5s; }
+
+  /* Share Bar */
+  .share-bar {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  .share-bar__label {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--muted);
+    margin-right: 4px;
+  }
+  .share-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--surface-soft);
+    color: var(--muted);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .share-btn:hover {
+    color: var(--accent);
+    border-color: color-mix(in srgb, var(--accent) 34%, var(--border));
+    background: color-mix(in srgb, var(--accent-soft) 58%, var(--surface) 42%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(10, 132, 255, 0.08);
+  }
+  .share-btn:active {
+    transform: translateY(0);
+  }
+
+  /* Share card template background */
+  .sc {
+    background: #ffffff;
+  }
+
+  /* Toast */
+  .share-toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: var(--text);
+    color: var(--surface);
+    font-size: 0.85rem;
+    font-weight: 600;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 9999;
+    pointer-events: none;
+  }
+  .share-toast--visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  @media (max-width: 720px) {
+    .share-bar { gap: 5px; }
+  }
 
   @media (min-width: 1280px) {
     .detail-score-panel {
@@ -1283,4 +1481,230 @@ const repoOwner = repoSlug.split('/')[0] || '';
     }
   }, 500);
   setTimeout(() => clearInterval(check), 10000);
+
+  // ── Share Card Logic ──
+  (function() {
+    const section = document.querySelector('[data-share-section]');
+    if (!section) return;
+
+    const generateBtn = section.querySelector('[data-share-generate]');
+    const copyBtn = section.querySelector('[data-share-copy]');
+    const xLink = section.querySelector('[data-share-x]');
+    const linkedInLink = section.querySelector('[data-share-linkedin]');
+    const template = document.querySelector('[data-share-card-template]');
+    if (!template) return;
+
+    const lang = document.documentElement.lang?.startsWith('zh') ? 'zh' : 'en';
+    const copy = {
+      generating: lang === 'zh' ? '生成中...' : 'Generating...',
+      linkCopied: lang === 'zh' ? '链接已复制' : 'Link Copied',
+      generateFailed: lang === 'zh' ? '生成失败，请重试' : 'Generation failed, please retry',
+    };
+
+    const projectName = document.querySelector('.detail-hero__info h1')?.textContent?.trim() || '';
+    const projectDesc = document.querySelector('.detail-desc')?.textContent?.trim() || '';
+    const projectUrl = window.location.href.split('?')[0].split('#')[0];
+
+    // Social share URLs
+    if (xLink) {
+      const text = encodeURIComponent(`${projectName} — ${projectDesc}`);
+      xLink.href = `https://twitter.com/intent/tweet?text=${text}&url=${encodeURIComponent(projectUrl)}`;
+    }
+    if (linkedInLink) {
+      linkedInLink.href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(projectUrl)}`;
+    }
+
+    // Copy link
+    if (copyBtn) {
+      copyBtn.addEventListener('click', () => {
+        navigator.clipboard.writeText(projectUrl).then(() => {
+          showToast(copy.linkCopied);
+        }).catch(() => {
+          // Fallback
+          const ta = document.createElement('textarea');
+          ta.value = projectUrl;
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          showToast(copy.linkCopied);
+        });
+      });
+    }
+
+    // Generate share card PNG
+    if (generateBtn) {
+      generateBtn.addEventListener('click', async () => {
+        const originalText = generateBtn.querySelector('span')?.textContent;
+        if (generateBtn.querySelector('span')) generateBtn.querySelector('span').textContent = copy.generating;
+        generateBtn.disabled = true;
+
+        try {
+          // Fill card data from page
+          await fillCardData();
+          // Generate QR code
+          await generateQRCode();
+          // Wait for images to load
+          await waitForImages();
+
+          const html2canvas = (await import('html2canvas')).default;
+          const cardEl = template.querySelector('.sc');
+          const canvas = await html2canvas(cardEl, {
+            width: 1200,
+            height: 630,
+            scale: 2,
+            useCORS: true,
+            allowTaint: true,
+            backgroundColor: null,
+            logging: false,
+          });
+
+          // Download
+          canvas.toBlob(blob => {
+            if (!blob) { showToast(copy.generateFailed); return; }
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${projectName.replace(/[^a-zA-Z0-9一-鿿]/g, '-').replace(/-+/g, '-')}-share.png`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+          }, 'image/png');
+        } catch (err) {
+          console.error('Share card generation failed:', err);
+          showToast(copy.generateFailed);
+        } finally {
+          if (generateBtn.querySelector('span')) generateBtn.querySelector('span').textContent = originalText;
+          generateBtn.disabled = false;
+        }
+      });
+    }
+
+    async function fillCardData() {
+      const heroBar = document.querySelector('.detail-score');
+      const repo = heroBar?.dataset.scoreRepo;
+      const data = repo ? window.aiLandscapeScores?.getProjectData?.(repo) : null;
+      const scores = data?.scores;
+      const metrics = data?.metrics;
+
+      // Scores
+      if (scores) {
+        const overall = Math.round((scores.activity + scores.community + scores.quality + scores.sustainability) / 4);
+        const healthEl = template.querySelector('[data-sc-health]');
+        const healthLabelEl = template.querySelector('[data-sc-health-label]');
+        if (healthEl) healthEl.textContent = overall;
+        if (healthLabelEl) {
+          healthLabelEl.textContent = overall >= 80
+            ? (lang === 'zh' ? '优秀' : 'Excellent')
+            : overall >= 60
+              ? (lang === 'zh' ? '良好' : 'Good')
+              : overall >= 40
+                ? (lang === 'zh' ? '一般' : 'Fair')
+                : (lang === 'zh' ? '待改进' : 'Needs Work');
+          healthLabelEl.style.color = overall >= 80 ? '#34d399' : overall >= 60 ? '#60a5fa' : overall >= 40 ? '#fbbf24' : '#f87171';
+        }
+
+        const dims = ['activity', 'community', 'quality', 'sustainability'];
+        dims.forEach(dim => {
+          const val = Math.round(scores[dim]);
+          const valEl = template.querySelector(`[data-sc-${dim}]`);
+          const barEl = template.querySelector(`[data-sc-bar-${dim}]`);
+          if (valEl) valEl.textContent = val;
+          if (barEl) barEl.style.width = val + '%';
+        });
+      }
+
+      // Metrics
+      if (metrics) {
+        const setIfExists = (sel, val) => { const el = template.querySelector(sel); if (el) el.textContent = val; };
+        setIfExists('[data-sc-stars]', formatNum(metrics.stars));
+        setIfExists('[data-sc-forks]', formatNum(metrics.forks));
+        setIfExists('[data-sc-issues]', formatNum(metrics.openIssues));
+        setIfExists('[data-sc-contributors]', formatNum(metrics.contributors));
+      }
+    }
+
+    async function generateQRCode() {
+      const canvas = template.querySelector('[data-sc-qrcode]');
+      if (!canvas) return;
+      try {
+        const QRCode = (await import('qrcode')).default;
+        await QRCode.toCanvas(canvas, projectUrl, {
+          width: 80,
+          margin: 1,
+          color: { dark: '#0f172a', light: '#ffffff' },
+          errorCorrectionLevel: 'M',
+        });
+      } catch (err) {
+        console.error('QR generation failed:', err);
+      }
+    }
+
+    async function waitForImages() {
+      // Draw logo on canvas via CORS proxy
+      const logoCanvas = template.querySelector('[data-sc-logo-canvas]');
+      if (logoCanvas) {
+        const ctx = logoCanvas.getContext('2d');
+        // Use high-res 400px source image from data attribute
+        const logoUrl = logoCanvas.dataset.scLogoSrc || '';
+        let drawn = false;
+
+        if (logoUrl) {
+          const urls = [logoUrl];
+          if (logoUrl.includes('github')) {
+            urls.push(`https://images.weserv.nl/?url=${encodeURIComponent(logoUrl)}&default=1`);
+          }
+
+          for (const url of urls) {
+            try {
+              const resp = await fetch(url, { mode: 'cors', credentials: 'omit' });
+              if (!resp.ok) continue;
+              const blob = await resp.blob();
+              const img = await createImageBitmap(blob);
+              ctx.save();
+              ctx.beginPath();
+              ctx.roundRect(0, 0, 192, 192, 48);
+              ctx.clip();
+              ctx.drawImage(img, 0, 0, 192, 192);
+              ctx.restore();
+              drawn = true;
+              break;
+            } catch { continue; }
+          }
+        }
+
+        if (!drawn) {
+          const gradient = ctx.createLinearGradient(0, 0, 192, 192);
+          gradient.addColorStop(0, '#3b82f6');
+          gradient.addColorStop(1, '#8b5cf6');
+          ctx.fillStyle = gradient;
+          ctx.beginPath();
+          ctx.roundRect(0, 0, 192, 192, 48);
+          ctx.fill();
+          ctx.fillStyle = '#fff';
+          ctx.font = 'bold 64px system-ui, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText((projectName || '?').slice(0, 2).toUpperCase(), 96, 99);
+        }
+      }
+    }
+
+    function showToast(message, duration = 2500) {
+      let toast = document.querySelector('.share-toast');
+      if (!toast) {
+        toast = document.createElement('div');
+        toast.className = 'share-toast';
+        document.body.appendChild(toast);
+      }
+      toast.textContent = message;
+      // Force reflow
+      toast.offsetHeight;
+      toast.classList.add('share-toast--visible');
+      setTimeout(() => {
+        toast.classList.remove('share-toast--visible');
+      }, duration);
+    }
+  })();
 </script>

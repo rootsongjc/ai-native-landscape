@@ -194,26 +194,62 @@ html[data-theme='dark'] .site-header {
 
 .footer-top {
   display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr;
-  gap: 48px;
+  grid-template-columns: minmax(300px, 1.18fr) repeat(2, minmax(136px, 0.91fr));
+  gap: 40px;
   padding-bottom: 32px;
 }
 
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  min-width: 0;
+  max-width: 300px;
+}
+
 .footer-brand__link {
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
   align-items: center;
-  gap: 10px;
+  gap: 9px;
+  width: auto;
+  max-width: none;
+  padding: 0;
+  border: none;
+  border-radius: 0;
   text-decoration: none;
   color: var(--text);
+  background: none;
+  box-shadow: none;
+  transition: color 0.2s ease;
   cursor: pointer;
 }
 
+html[data-theme='dark'] .footer-brand__link {
+  background: none;
+  box-shadow: none;
+}
+
+.footer-brand__link:hover {
+  color: var(--accent);
+}
+
+html[data-theme='dark'] .footer-brand__link:hover {
+  color: var(--accent);
+}
+
 .footer-brand__icon {
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
   stroke: var(--accent);
   stroke-width: 2;
   fill: none;
+  background: color-mix(in srgb, var(--accent-soft) 72%, transparent);
+  box-shadow: none;
 }
 
 .footer-brand__icon circle {
@@ -222,25 +258,23 @@ html[data-theme='dark'] .site-header {
 }
 
 .footer-brand__title {
-  font-size: 1.05rem;
+  display: block;
+  max-width: none;
+  font-size: 0.88rem;
   font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: 0;
+  white-space: nowrap;
   color: var(--text);
 }
 
 .footer-brand__desc {
-  margin: 12px 0 0;
-  font-size: 0.85rem;
-  line-height: 1.6;
+  margin: 0;
+  font-size: 0.79rem;
+  line-height: 1.5;
   color: var(--muted);
-  max-width: 320px;
-}
-
-.footer-brand__curated {
-  display: inline-block;
-  margin-top: 14px;
-  font-size: 0.78rem;
-  color: var(--muted);
-  opacity: 0.8;
+  max-width: 28ch;
+  text-wrap: balance;
 }
 
 .footer-nav {
@@ -2352,6 +2386,7 @@ meter {
 
   .footer-brand {
     grid-column: 1 / -1;
+    max-width: 100%;
   }
 }
 
@@ -2445,6 +2480,14 @@ meter {
 
   .footer-brand__desc {
     max-width: 100%;
+  }
+
+  .footer-brand__link {
+    max-width: 100%;
+  }
+
+  .footer-brand__title {
+    max-width: none;
   }
 
   .footer-bottom {
