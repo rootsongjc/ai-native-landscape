@@ -11,7 +11,7 @@ tags:
   - Utility
 description: AI 对话客户端，支持多种服务提供商集成。注重隐私和安全，所有数据都存储在本地。
 logo: ''
-author: ''
+author: CherryHQ
 ossDate: '2024-05-24T01:56:26.000Z'
 featured: false
 thumbnail: ''
