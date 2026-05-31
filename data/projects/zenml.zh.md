@@ -15,8 +15,6 @@ logo: ''
 author: ZenML
 ossDate: '2020-11-19T09:25:46.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -14,8 +14,6 @@ logo: ''
 author: NLWeb Community
 ossDate: '2025-04-28T20:44:02.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

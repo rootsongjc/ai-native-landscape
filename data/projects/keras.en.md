@@ -15,8 +15,6 @@ logo: ''
 author: Keras Team
 ossDate: '2015-03-28T00:35:42.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

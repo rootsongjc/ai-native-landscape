@@ -14,8 +14,6 @@ logo: ''
 author: OpenDCAI
 ossDate: '2024-10-13T14:45:45Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -13,8 +13,6 @@ logo: ''
 author: Dao-AI Lab
 ossDate: '2022-05-19T21:22:06.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

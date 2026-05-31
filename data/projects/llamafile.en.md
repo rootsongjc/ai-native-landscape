@@ -14,8 +14,6 @@ logo: ''
 author: Mozilla
 ossDate: '2023-09-10T21:12:32Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

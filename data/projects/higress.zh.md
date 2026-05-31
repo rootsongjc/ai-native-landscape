@@ -13,8 +13,6 @@ logo: ''
 author: 阿里巴巴
 ossDate: '2022-10-27T03:53:00.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

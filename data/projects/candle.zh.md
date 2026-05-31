@@ -14,8 +14,6 @@ logo: ''
 author: Hugging Face
 ossDate: '2023-06-19T16:06:31.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

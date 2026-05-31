@@ -15,8 +15,6 @@ logo: ''
 author: TEN Framework
 ossDate: '2024-06-19T14:26:15.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

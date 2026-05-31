@@ -13,8 +13,6 @@ logo: ''
 author: OpenBMB
 ossDate: '2023-08-28T02:18:13.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

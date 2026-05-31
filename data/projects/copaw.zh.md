@@ -15,8 +15,6 @@ logo: ''
 author: AgentScope
 ossDate: '2026-02-24T00:00:00.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

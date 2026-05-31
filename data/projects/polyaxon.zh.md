@@ -14,8 +14,6 @@ logo: ''
 author: Polyaxon
 ossDate: '2016-12-26T12:48:47.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

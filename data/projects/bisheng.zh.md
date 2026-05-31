@@ -16,8 +16,6 @@ logo: ''
 author: DataElement
 ossDate: '2023-08-28T10:00:24Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

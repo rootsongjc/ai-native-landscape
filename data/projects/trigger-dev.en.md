@@ -15,8 +15,6 @@ logo: ''
 author: trigger.dev
 ossDate: '2022-11-30T14:59:07.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

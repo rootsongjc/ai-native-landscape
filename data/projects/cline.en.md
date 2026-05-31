@@ -15,8 +15,6 @@ logo: ''
 author: Cline Team
 ossDate: '2024-07-06T07:28:10.000Z'
 featured: true
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

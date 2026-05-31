@@ -16,8 +16,6 @@ logo: ''
 author: Basic Machines
 ossDate: '2024-12-02T22:40:43Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

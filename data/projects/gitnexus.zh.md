@@ -15,8 +15,6 @@ logo: ''
 author: Abhigyan Patwari
 ossDate: '2025-08-02T23:20:31Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -15,8 +15,6 @@ logo: ''
 author: Metaflow 社区
 ossDate: '2019-09-17T17:48:25.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

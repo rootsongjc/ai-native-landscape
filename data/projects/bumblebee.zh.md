@@ -15,8 +15,6 @@ logo: ''
 author: Perplexity AI
 ossDate: '2026-05-20T18:11:37Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

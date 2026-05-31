@@ -17,8 +17,6 @@ logo: ''
 author: ThinkInAIXYZ
 ossDate: '2025-02-14T01:56:51Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

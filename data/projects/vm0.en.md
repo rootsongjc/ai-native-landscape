@@ -20,8 +20,6 @@ logo: ''
 author: VM0.ai
 ossDate: '2025-11-14T03:27:22Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

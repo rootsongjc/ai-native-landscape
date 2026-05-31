@@ -16,8 +16,6 @@ logo: ''
 author: MLC AI
 ossDate: '2024-06-28T06:34:27.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

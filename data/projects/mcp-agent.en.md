@@ -16,8 +16,6 @@ logo: ''
 author: lastmile-ai
 ossDate: '2024-12-18T01:55:10.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

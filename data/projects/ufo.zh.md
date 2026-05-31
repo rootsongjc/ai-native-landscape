@@ -14,8 +14,6 @@ logo: ''
 author: Microsoft
 ossDate: '2024-01-08T05:07:52.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

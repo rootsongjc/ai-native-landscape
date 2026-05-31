@@ -13,8 +13,6 @@ logo: ''
 author: Kilocode
 ossDate: '2025-03-10T15:34:26.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

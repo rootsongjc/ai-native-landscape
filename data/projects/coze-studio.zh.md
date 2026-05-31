@@ -15,8 +15,6 @@ logo: ''
 author: 字节跳动
 ossDate: '2025-06-26T02:19:21.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

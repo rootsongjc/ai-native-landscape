@@ -16,8 +16,6 @@ logo: ''
 author: NevaMind-AI
 ossDate: '2025-07-29T01:54:40.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

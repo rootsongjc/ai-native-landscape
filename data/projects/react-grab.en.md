@@ -18,8 +18,6 @@ logo: ''
 author: Aiden Bai
 ossDate: '2025-01-15'
 featured: true
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

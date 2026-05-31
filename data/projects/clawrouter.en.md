@@ -17,8 +17,6 @@ logo: ''
 author: BlockRunAI
 ossDate: '2026-02-03T00:00:00.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

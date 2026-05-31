@@ -14,8 +14,6 @@ logo: ''
 author: oobabooga
 ossDate: '2022-12-21T04:17:37Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

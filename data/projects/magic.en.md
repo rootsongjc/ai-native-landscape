@@ -15,8 +15,6 @@ logo: ''
 author: dtyq
 ossDate: '2025-05-14T22:04:29.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

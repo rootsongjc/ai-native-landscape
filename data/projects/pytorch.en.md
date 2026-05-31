@@ -17,8 +17,6 @@ logo: ''
 author: PyTorch
 ossDate: '2016-08-13T05:26:41.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

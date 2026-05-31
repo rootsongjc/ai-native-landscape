@@ -15,8 +15,6 @@ logo: ''
 author: py-pdf
 ossDate: '2022-04-09T20:49:42Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

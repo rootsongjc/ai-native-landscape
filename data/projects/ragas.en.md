@@ -15,8 +15,6 @@ logo: ''
 author: ExplodingGradients
 ossDate: '2023-05-08T17:48:04.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

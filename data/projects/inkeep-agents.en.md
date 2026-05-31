@@ -16,8 +16,6 @@ logo: ''
 author: Inkeep
 ossDate: '2025-09-05T12:23:24.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

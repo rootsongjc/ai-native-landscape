@@ -14,8 +14,6 @@ logo: ''
 author: MLflow
 ossDate: '2018-06-05T16:05:58.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

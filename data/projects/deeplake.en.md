@@ -17,8 +17,6 @@ logo: ''
 author: Activeloop
 ossDate: '2019-08-09T06:17:59.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -16,8 +16,6 @@ logo: ''
 author: TimePlus
 ossDate: '2023-08-14T03:11:43.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

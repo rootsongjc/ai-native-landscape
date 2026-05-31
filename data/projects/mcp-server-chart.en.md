@@ -14,8 +14,6 @@ logo: ''
 author: AntV
 ossDate: '2025-04-25T09:10:06.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

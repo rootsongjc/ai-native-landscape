@@ -15,8 +15,6 @@ logo: ''
 author: Addy Osmani
 ossDate: '2026-02-15T20:20:26Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

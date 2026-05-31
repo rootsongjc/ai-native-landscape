@@ -16,8 +16,6 @@ logo: ''
 author: letta-ai
 ossDate: '2023-10-11T07:38:37.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

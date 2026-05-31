@@ -16,8 +16,6 @@ logo: ''
 author: Musi Studio
 ossDate: '2025-02-25T02:17:18.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

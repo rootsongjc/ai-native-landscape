@@ -15,8 +15,6 @@ logo: ''
 author: TabbyML
 ossDate: '2023-03-16T09:18:01.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

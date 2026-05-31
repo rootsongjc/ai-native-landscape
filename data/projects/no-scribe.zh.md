@@ -14,8 +14,6 @@ logo: ''
 author: Kai Dröge
 ossDate: '2023-05-12T06:25:03.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

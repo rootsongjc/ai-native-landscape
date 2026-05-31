@@ -15,8 +15,6 @@ logo: ''
 author: badlogic
 ossDate: '2022-01-01'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

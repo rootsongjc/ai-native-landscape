@@ -15,8 +15,6 @@ logo: ''
 author: Ray Project
 ossDate: '2016-10-25T19:38:30.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

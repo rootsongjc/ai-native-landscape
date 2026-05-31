@@ -14,8 +14,6 @@ logo: ''
 author: Apache Software Foundation
 ossDate: '2014-02-25T08:00:08Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

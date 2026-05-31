@@ -20,8 +20,6 @@ logo: ''
 author: Google Cloud
 ossDate: '2024-08-15T20:28:49Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

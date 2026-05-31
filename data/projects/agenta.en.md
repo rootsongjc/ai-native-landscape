@@ -16,8 +16,6 @@ logo: ''
 author: Agenta-AI
 ossDate: '2023-04-26T09:54:28.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

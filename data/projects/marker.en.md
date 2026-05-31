@@ -13,8 +13,6 @@ logo: ''
 author: Datalab.to
 ossDate: '2023-10-30T20:14:08.000Z'
 featured: true
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

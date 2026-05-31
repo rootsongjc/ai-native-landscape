@@ -14,8 +14,6 @@ logo: ''
 author: LiveBench
 ossDate: '2024-06-12T12:13:57.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

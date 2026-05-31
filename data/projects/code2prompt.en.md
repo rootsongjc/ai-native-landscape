@@ -15,8 +15,6 @@ logo: ''
 author: mufeedvh
 ossDate: '2024-03-09T12:42:06.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

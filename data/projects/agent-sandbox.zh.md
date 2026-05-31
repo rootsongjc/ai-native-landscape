@@ -14,8 +14,6 @@ logo: ''
 author: Kubernetes SIGs
 ossDate: '2025-08-12T04:55:05Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -16,8 +16,6 @@ logo: ''
 author: inclusionAI
 ossDate: '2025-03-14T08:30:52Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

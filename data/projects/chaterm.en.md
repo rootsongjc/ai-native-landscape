@@ -15,8 +15,6 @@ logo: ''
 author: Chaterm
 ossDate: '2025-04-14T04:19:01.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

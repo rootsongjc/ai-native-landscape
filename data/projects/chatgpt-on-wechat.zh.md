@@ -14,8 +14,6 @@ logo: ''
 author: zhayujie
 ossDate: '2022-08-07T08:33:41.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

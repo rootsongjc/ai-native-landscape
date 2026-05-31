@@ -15,8 +15,6 @@ logo: ''
 author: OpenBMB
 ossDate: '2025-01-16T10:56:02Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

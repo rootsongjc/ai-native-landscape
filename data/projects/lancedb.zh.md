@@ -14,8 +14,6 @@ logo: ''
 author: LanceDB
 ossDate: '2023-04-20'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

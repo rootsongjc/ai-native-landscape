@@ -15,8 +15,6 @@ logo: ''
 author: Katanemo
 ossDate: '2026-04-10T00:00:00Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

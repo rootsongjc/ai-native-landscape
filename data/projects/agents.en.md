@@ -15,8 +15,6 @@ logo: ''
 author: Seth Hobson
 ossDate: '2023-07-19T18:13:13.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

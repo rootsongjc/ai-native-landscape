@@ -15,8 +15,6 @@ logo: ''
 author: mudler
 ossDate: '2025-02-12T21:07:04Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -14,8 +14,6 @@ logo: ''
 author: Anthropic
 ossDate: '2025-10-20T02:52:10.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

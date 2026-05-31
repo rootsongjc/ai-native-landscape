@@ -18,8 +18,6 @@ logo: ''
 author: Skyvern
 ossDate: '2024-02-28T15:45:19Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

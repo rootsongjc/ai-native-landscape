@@ -13,8 +13,6 @@ logo: ''
 author: ZJUNLP
 ossDate: '2023-05-09T07:48:02Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

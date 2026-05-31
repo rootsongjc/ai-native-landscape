@@ -16,8 +16,6 @@ logo: ''
 author: Gradio
 ossDate: '2018-12-19T08:24:04.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

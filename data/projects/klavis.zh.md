@@ -15,8 +15,6 @@ logo: ''
 author: Klavis AI
 ossDate: '2025-04-14T07:53:36.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -13,8 +13,6 @@ logo: ''
 author: TauricResearch
 ossDate: '2024-12-28T03:31:08Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

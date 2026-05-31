@@ -14,8 +14,6 @@ logo: ''
 author: flashinfer-ai
 ossDate: '2023-01-01T00:00:00.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

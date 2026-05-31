@@ -15,8 +15,6 @@ logo: ''
 author: Helicone
 ossDate: '2023-01-31T22:34:44.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -15,8 +15,6 @@ logo: ''
 author: Genesis-Embodied-AI
 ossDate: '2023-10-31T03:33:11.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

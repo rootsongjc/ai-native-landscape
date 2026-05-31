@@ -16,8 +16,6 @@ logo: ''
 author: Convex Team
 ossDate: '2025-03-31T19:00:59.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

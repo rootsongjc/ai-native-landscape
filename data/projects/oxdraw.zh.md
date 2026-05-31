@@ -14,8 +14,6 @@ logo: ''
 author: Rohan Adwankar
 ossDate: '2025-10-07T19:59:40.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

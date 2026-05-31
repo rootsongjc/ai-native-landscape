@@ -14,8 +14,6 @@ logo: ''
 author: Eigent
 ossDate: '2025-07-29T15:56:02Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

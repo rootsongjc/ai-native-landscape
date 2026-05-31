@@ -17,8 +17,6 @@ logo: ''
 author: CodebuffAI
 ossDate: '2024-07-09T21:21:56.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

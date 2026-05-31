@@ -16,8 +16,6 @@ logo: ''
 author: Transformer Lab
 ossDate: '2023-12-24T22:09:14.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -15,8 +15,6 @@ logo: ''
 author: Vercel
 ossDate: '2026-01-14T17:22:39Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

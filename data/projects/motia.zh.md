@@ -15,8 +15,6 @@ logo: ''
 author: MotiaDev
 ossDate: '2025-01-02T17:45:02.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

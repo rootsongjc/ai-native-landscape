@@ -15,8 +15,6 @@ logo: ''
 author: Sipeed
 ossDate: '2026-02-04T12:32:35Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

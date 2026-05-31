@@ -15,8 +15,6 @@ logo: ''
 author: MAIF
 ossDate: '2020-04-29T07:34:23Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

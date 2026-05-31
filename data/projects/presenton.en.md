@@ -15,8 +15,6 @@ logo: ''
 author: Presenton
 ossDate: '2025-05-10T14:12:46Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

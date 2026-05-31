@@ -18,8 +18,6 @@ logo: ''
 author: jd-opensource
 ossDate: '2025-08-12T13:16:07.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

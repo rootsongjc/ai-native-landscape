@@ -15,8 +15,6 @@ logo: ''
 author: Simon Willison
 ossDate: '2023-04-01T21:16:57.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

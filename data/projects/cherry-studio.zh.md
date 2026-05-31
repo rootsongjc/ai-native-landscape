@@ -14,8 +14,6 @@ logo: ''
 author: CherryHQ
 ossDate: '2024-05-24T01:56:26.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

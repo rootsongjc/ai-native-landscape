@@ -15,8 +15,6 @@ logo: ''
 author: Intelligent Machine Learning
 ossDate: '2022-06-24T09:31:07.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

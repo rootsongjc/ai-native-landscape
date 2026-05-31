@@ -18,8 +18,6 @@ logo: ''
 author: breaking-brake
 ossDate: '2025-03-16'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

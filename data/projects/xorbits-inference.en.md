@@ -16,8 +16,6 @@ logo: ''
 author: Xorbits
 ossDate: '2023-06-14T07:05:04.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

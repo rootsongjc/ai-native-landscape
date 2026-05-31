@@ -16,8 +16,6 @@ logo: ''
 author: Keploy
 ossDate: '2022-01-19T10:40:31.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

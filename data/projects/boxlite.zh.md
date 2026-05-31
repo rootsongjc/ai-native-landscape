@@ -15,8 +15,6 @@ logo: ''
 author: BoxLite Labs
 ossDate: '2025-12-07T22:49:32Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

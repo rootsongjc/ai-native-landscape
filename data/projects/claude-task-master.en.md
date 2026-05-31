@@ -17,8 +17,6 @@ logo: ''
 author: eyaltoledano
 ossDate: '2025-03-04T18:54:54.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

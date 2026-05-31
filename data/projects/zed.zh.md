@@ -13,8 +13,6 @@ logo: ''
 author: Zed Industries
 ossDate: '2021-02-20T03:01:06.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -14,8 +14,6 @@ logo: ''
 author: Siyuan Team
 ossDate: '2020-08-30T09:21:35Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

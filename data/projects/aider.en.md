@@ -15,8 +15,6 @@ logo: ''
 author: Aider
 ossDate: '2023-05-09T18:57:49.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -16,8 +16,6 @@ logo: ''
 author: Assistant UI
 ossDate: '2023-11-22T16:01:17Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

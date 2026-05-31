@@ -14,8 +14,6 @@ logo: ''
 author: All-Hands-AI
 ossDate: '2024-03-13T03:33:31.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

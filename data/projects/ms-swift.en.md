@@ -15,8 +15,6 @@ logo: ''
 author: ModelScope
 ossDate: '2023-08-01T15:06:39.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

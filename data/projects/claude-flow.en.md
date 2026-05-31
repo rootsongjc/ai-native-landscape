@@ -15,8 +15,6 @@ logo: ''
 author: ruvnet
 ossDate: '2023-06-01T00:00:00+08:00'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

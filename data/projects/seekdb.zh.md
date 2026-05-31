@@ -14,8 +14,6 @@ logo: ''
 author: OceanBase
 ossDate: '2025-10-21T11:31:11Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -14,8 +14,6 @@ logo: ''
 author: kvcache-ai
 ossDate: '2024-06-25T05:21:05.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

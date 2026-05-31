@@ -15,8 +15,6 @@ logo: ''
 author: Tencent Music
 ossDate: '2023-06-12T07:23:28Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

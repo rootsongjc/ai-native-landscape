@@ -17,8 +17,6 @@ logo: ''
 author: Weights & Biases
 ossDate: '2017-03-24T05:46:23.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

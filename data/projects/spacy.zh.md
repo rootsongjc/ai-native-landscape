@@ -13,8 +13,6 @@ logo: ''
 author: Explosion
 ossDate: '2014-07-03T15:15:40Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

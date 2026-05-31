@@ -16,8 +16,6 @@ logo: ''
 author: La Suite / Suite Numérique
 ossDate: '2024-01-09T14:17:32.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

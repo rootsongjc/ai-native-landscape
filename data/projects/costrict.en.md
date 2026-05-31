@@ -17,8 +17,6 @@ logo: ''
 author: 深信服 (Sangfor)
 ossDate: '2025-04-10T02:06:51Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

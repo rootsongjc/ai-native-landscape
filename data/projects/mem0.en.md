@@ -16,8 +16,6 @@ logo: ''
 author: Mem0
 ossDate: '2023-06-20T08:58:36.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -17,8 +17,6 @@ logo: ''
 author: esengine
 ossDate: '2026-04-21T08:27:02Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

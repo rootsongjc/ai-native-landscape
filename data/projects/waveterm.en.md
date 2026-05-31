@@ -15,8 +15,6 @@ logo: ''
 author: Wave Terminal Developers
 ossDate: '2022-06-08T00:26:00.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

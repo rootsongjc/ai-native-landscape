@@ -16,8 +16,6 @@ logo: ''
 author: vllm-project
 ossDate: '2024-06-10T23:06:10.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

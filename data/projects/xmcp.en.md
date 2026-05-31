@@ -17,8 +17,6 @@ logo: ''
 author: Basement Studio
 ossDate: '2025-05-17T04:09:27Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

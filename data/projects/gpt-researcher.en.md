@@ -15,8 +15,6 @@ logo: ''
 author: assafelovic
 ossDate: '2023-05-12T10:33:54.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

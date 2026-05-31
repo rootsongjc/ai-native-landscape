@@ -16,8 +16,6 @@ logo: ''
 author: camel-ai
 ossDate: '2025-03-01T00:00:00.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

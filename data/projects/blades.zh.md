@@ -14,8 +14,6 @@ logo: ''
 author: go-kratos
 ossDate: '2025-09-15T16:43:22.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

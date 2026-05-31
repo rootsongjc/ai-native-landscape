@@ -13,8 +13,6 @@ logo: ''
 author: EricLBuehler
 ossDate: '2024-02-26T22:30:06.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

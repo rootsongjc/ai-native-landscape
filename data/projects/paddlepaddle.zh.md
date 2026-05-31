@@ -13,8 +13,6 @@ logo: ''
 author: 百度
 ossDate: '2016-08-15T06:59:08.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

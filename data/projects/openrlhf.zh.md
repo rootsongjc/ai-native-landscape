@@ -15,8 +15,6 @@ logo: ''
 author: OpenRLHF 团队
 ossDate: '2023-07-30T02:20:13.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

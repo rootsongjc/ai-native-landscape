@@ -13,8 +13,6 @@ logo: ''
 author: Mendable AI
 ossDate: '2024-04-15T21:02:29.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

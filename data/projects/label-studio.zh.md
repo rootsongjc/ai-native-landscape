@@ -14,8 +14,6 @@ logo: ''
 author: HumanSignal
 ossDate: '2019-06-19T02:00:44.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

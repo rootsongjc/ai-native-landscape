@@ -17,8 +17,6 @@ logo: ''
 author: Stripe
 ossDate: '2024-11-11T17:13:41Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

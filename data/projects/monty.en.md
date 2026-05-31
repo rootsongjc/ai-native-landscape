@@ -16,8 +16,6 @@ logo: ''
 author: Pydantic
 ossDate: '2023-05-28T11:13:38Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

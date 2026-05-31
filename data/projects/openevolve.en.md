@@ -15,8 +15,6 @@ logo: ''
 author: OpenEvolve
 ossDate: '2025-05-15T11:46:52.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

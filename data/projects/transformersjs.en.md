@@ -15,8 +15,6 @@ logo: ''
 author: Xenova
 ossDate: '2023-02-13T13:51:45.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

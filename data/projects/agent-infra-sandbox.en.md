@@ -17,8 +17,6 @@ logo: ''
 author: Agent Infra
 ossDate: '2025-08-06T14:51:05.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

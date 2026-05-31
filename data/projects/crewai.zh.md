@@ -14,8 +14,6 @@ logo: ''
 author: CrewAI Inc.
 ossDate: '2023-10-27T03:26:59.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

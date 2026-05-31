@@ -14,8 +14,6 @@ logo: ''
 author: knownsec
 ossDate: '2025-04-06T07:04:34.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

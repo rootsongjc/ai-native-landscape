@@ -14,8 +14,6 @@ logo: ''
 author: mlc-ai
 ossDate: '2023-04-13T18:11:59.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

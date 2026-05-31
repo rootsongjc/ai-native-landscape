@@ -14,8 +14,6 @@ logo: ''
 author: Siddharth Ahuja
 ossDate: '2025-03-07T09:58:58.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

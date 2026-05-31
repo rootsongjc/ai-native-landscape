@@ -13,8 +13,6 @@ logo: ''
 author: Activepieces
 ossDate: '2022-12-03T02:52:46.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

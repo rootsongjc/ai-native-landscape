@@ -13,8 +13,6 @@ logo: ''
 author: fastrepl
 ossDate: '2024-12-09T02:51:21Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -17,8 +17,6 @@ logo: ''
 author: pchalasani
 ossDate: '2025-07-30T20:10:38Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

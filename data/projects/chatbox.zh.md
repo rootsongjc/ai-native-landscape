@@ -13,8 +13,6 @@ logo: ''
 author: Chatbox AI
 ossDate: '2023-03-06T12:22:15.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

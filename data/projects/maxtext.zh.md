@@ -15,8 +15,6 @@ logo: ''
 author: AI-Hypercomputer
 ossDate: '2023-02-28T19:47:29.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

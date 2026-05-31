@@ -16,8 +16,6 @@ logo: ''
 author: llm-d
 ossDate: '2025-04-29T18:28:17.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

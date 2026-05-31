@@ -13,8 +13,6 @@ logo: ''
 author: Anthropic
 ossDate: '2024-09-24T20:26:52.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

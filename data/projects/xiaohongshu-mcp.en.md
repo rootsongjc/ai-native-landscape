@@ -16,8 +16,6 @@ logo: ''
 author: xpzouying
 ossDate: '2025-08-03T09:08:45.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -13,8 +13,6 @@ logo: ''
 author: Docling
 ossDate: '2024-07-09T07:50:26.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

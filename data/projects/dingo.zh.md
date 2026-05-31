@@ -13,8 +13,6 @@ logo: ''
 author: MigoXLab / DataEval
 ossDate: '2024-12-24T05:59:24.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

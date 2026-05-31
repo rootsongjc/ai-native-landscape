@@ -14,8 +14,6 @@ logo: ''
 author: Airweave
 ossDate: '2024-12-24T10:00:06.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

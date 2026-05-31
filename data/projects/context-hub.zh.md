@@ -17,8 +17,6 @@ logo: ''
 author: Andrew Ng（吴恩达）
 ossDate: '2025-03-17'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

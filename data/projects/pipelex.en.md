@@ -15,8 +15,6 @@ logo: ''
 author: Pipelex
 ossDate: '2025-05-26T07:21:34Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

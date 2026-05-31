@@ -15,8 +15,6 @@ logo: ''
 author: Sympozium AI
 ossDate: '2026-02-23T09:53:24Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

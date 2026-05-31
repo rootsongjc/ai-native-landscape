@@ -13,8 +13,6 @@ logo: ''
 author: Done-0
 ossDate: '2025-06-25T16:40:22.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

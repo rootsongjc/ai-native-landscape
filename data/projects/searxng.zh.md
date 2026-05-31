@@ -13,8 +13,6 @@ logo: ''
 author: searxng
 ossDate: '2021-04-12T15:18:15.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

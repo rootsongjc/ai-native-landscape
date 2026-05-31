@@ -14,8 +14,6 @@ logo: ''
 author: CodeRabbit
 ossDate: '2025-08-07T21:13:33Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

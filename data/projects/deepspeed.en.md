@@ -16,8 +16,6 @@ logo: ''
 author: DeepSpeed 团队
 ossDate: '2020-01-23T18:35:18.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

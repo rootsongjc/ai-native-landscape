@@ -15,8 +15,6 @@ logo: ''
 author: Sourcebot
 ossDate: '2024-08-23T20:40:37.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

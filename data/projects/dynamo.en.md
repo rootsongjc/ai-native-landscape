@@ -16,8 +16,6 @@ logo: ''
 author: ai-dynamo
 ossDate: '2025-03-03T18:40:07.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

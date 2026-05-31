@@ -16,8 +16,6 @@ logo: ''
 author: Weaviate
 ossDate: '2016-03-30T15:03:17.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

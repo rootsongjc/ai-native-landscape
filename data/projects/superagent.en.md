@@ -14,8 +14,6 @@ logo: ''
 author: Superagent
 ossDate: '2023-05-10T18:50:39.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

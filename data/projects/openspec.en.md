@@ -15,8 +15,6 @@ logo: ''
 author: Fission AI
 ossDate: '2025-08-05T10:37:45.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

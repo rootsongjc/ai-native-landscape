@@ -15,8 +15,6 @@ logo: ''
 author: Flyte 社区
 ossDate: '2019-10-21T17:40:04.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

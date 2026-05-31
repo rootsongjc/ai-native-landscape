@@ -13,8 +13,6 @@ logo: ''
 author: Apache
 ossDate: '2017-08-10T12:13:30Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

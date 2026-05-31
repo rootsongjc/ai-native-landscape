@@ -15,8 +15,6 @@ logo: ''
 author: BrowserBase
 ossDate: '2024-03-24T19:19:44.000Z'
 featured: true
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -16,8 +16,6 @@ logo: ''
 author: LangChain4j
 ossDate: '2023-06-20T15:30:29Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

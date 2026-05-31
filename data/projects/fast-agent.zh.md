@@ -13,8 +13,6 @@ logo: ''
 author: evalstate
 ossDate: '2025-01-18T20:39:51.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

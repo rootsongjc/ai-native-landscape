@@ -13,8 +13,6 @@ logo: ''
 author: Valkey Project
 ossDate: '2024-03-22T00:42:17Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

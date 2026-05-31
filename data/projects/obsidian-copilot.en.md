@@ -13,8 +13,6 @@ logo: ''
 author: Logan Yang
 ossDate: '2023-03-31T00:15:29.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

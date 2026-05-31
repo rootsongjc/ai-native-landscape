@@ -16,8 +16,6 @@ logo: ''
 author: nanbingxyz
 ossDate: '2024-01-06T06:57:15.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

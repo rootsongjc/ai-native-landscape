@@ -14,8 +14,6 @@ logo: ''
 author: SillyTavern
 ossDate: '2023-02-09T10:19:24Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

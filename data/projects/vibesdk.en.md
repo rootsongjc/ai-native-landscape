@@ -15,8 +15,6 @@ logo: ''
 author: Cloudflare
 ossDate: '2025-08-25T15:07:31.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 
