@@ -19,6 +19,7 @@ const canonicalUrl = new URL(canonical, SITE.url).toString();
 const alternateUrl = new URL(alternate, SITE.url).toString();
 const defaultUrl = lang === 'zh' ? alternateUrl : canonicalUrl;
 const imageUrl = new URL(SITE.image, SITE.url).toString();
+const imageSquareUrl = new URL(SITE.imageSquare, SITE.url).toString();
 const locale = lang === 'zh' ? 'zh_CN' : 'en_US';
 const alternateLocale = lang === 'zh' ? 'en_US' : 'zh_CN';
 const selfHreflang = lang === 'zh' ? 'zh-CN' : 'en';
