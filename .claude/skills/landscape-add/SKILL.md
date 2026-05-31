@@ -1,5 +1,5 @@
 ---
-name: add-project
+name: landscape-add
 description: Add a new project to the AI Native Landscape from a GitHub URL or GitHub issue requesting inclusion.
 ---
 
