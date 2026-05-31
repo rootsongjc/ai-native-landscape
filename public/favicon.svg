@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Open Source AI Landscape">
-  <rect width="64" height="64" rx="14" fill="#0a84ff"/>
-  <path d="M16 45 32 17l16 28" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="32" cy="36" r="6" fill="none" stroke="#fff" stroke-width="4"/>
-  <path d="M24 45h16" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" aria-label="Open Source AI Landscape" role="img" viewBox="0 0 64 64"><rect width="64" height="64" fill="#0a84ff" rx="14"/><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5" d="M16 45 32 17l16 28"/><circle cx="32" cy="36" r="6" fill="none" stroke="#fff" stroke-width="4"/><path fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4" d="M24 45h16"/></svg>
