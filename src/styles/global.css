@@ -1567,9 +1567,9 @@ html[data-theme='dark'] .methodology-grid article {
 }
 
 .category-page .page-heading h1 {
-  font-size: clamp(2rem, 3.8vw, 3.4rem);
+  font-size: clamp(2rem, 3.2vw, 3rem);
   line-height: 1.02;
-  max-width: 12ch;
+  max-width: none;
 }
 
 .category-page .page-heading p {
