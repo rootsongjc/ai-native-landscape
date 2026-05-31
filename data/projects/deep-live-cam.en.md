@@ -14,8 +14,6 @@ logo: ''
 author: hacksider
 ossDate: '2023-09-24T13:19:31Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

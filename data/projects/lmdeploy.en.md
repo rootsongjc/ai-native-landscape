@@ -16,8 +16,6 @@ logo: ''
 author: InternLM
 ossDate: '2023-06-15T12:38:06.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

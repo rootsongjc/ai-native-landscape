@@ -15,8 +15,6 @@ logo: ''
 author: 蚂蚁集团
 ossDate: '2025-02-24T07:23:43Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

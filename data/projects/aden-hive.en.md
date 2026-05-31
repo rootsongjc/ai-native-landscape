@@ -16,8 +16,6 @@ logo: ''
 author: Aden
 ossDate: '2026-01-12T00:04:22Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

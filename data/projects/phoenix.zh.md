@@ -14,8 +14,6 @@ logo: ''
 author: 'Chris McCord '
 ossDate: '2014-01-20T14:14:11.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

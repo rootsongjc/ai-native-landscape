@@ -17,8 +17,6 @@ logo: ''
 author: ModelTC
 ossDate: '2025-03-24T10:27:56Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

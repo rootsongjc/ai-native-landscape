@@ -14,8 +14,6 @@ logo: ''
 author: CVAT
 ossDate: '2018-06-29T14:02:45.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

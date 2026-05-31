@@ -15,8 +15,6 @@ logo: ''
 author: run-llama
 ossDate: '2025-08-23T21:56:09Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

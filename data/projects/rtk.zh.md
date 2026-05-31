@@ -17,8 +17,6 @@ logo: ''
 author: rtk-ai
 ossDate: '2026-01-22'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -14,8 +14,6 @@ logo: ''
 author: Flox
 ossDate: '2022-12-22T15:52:43Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

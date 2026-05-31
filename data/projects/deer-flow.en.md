@@ -18,8 +18,6 @@ logo: ''
 author: ByteDance
 ossDate: '2026-03-23'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

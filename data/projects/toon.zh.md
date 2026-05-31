@@ -15,8 +15,6 @@ logo: ''
 author: toon-format
 ossDate: '2025-10-22T18:17:32Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

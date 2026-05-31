@@ -15,8 +15,6 @@ logo: ''
 author: Steve Yegge
 ossDate: '2025-10-12T03:09:46Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

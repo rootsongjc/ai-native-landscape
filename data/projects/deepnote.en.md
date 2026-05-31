@@ -17,8 +17,6 @@ logo: ''
 author: Deepnote
 ossDate: '2025-09-29T15:24:25Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

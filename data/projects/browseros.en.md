@@ -17,8 +17,6 @@ logo: ''
 author: browseros-ai
 ossDate: '2025-05-18T16:23:54Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

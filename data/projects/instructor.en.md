@@ -14,8 +14,6 @@ logo: ''
 author: Instructor 社区
 ossDate: '2023-06-14T10:42:23.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

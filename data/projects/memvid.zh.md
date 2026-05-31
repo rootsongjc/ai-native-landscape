@@ -14,8 +14,6 @@ logo: ''
 author: Saleban Olow (@Olow304)
 ossDate: '2025-05-27T16:01:08.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

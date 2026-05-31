@@ -15,8 +15,6 @@ logo: ''
 author: Pixeltable
 ossDate: '2023-05-10T18:03:02Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

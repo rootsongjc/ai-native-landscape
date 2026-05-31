@@ -15,8 +15,6 @@ logo: ''
 author: thu-pacman
 ossDate: '2025-02-20T06:34:38Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

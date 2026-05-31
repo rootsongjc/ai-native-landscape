@@ -14,8 +14,6 @@ logo: ''
 author: BlinkoSpace
 ossDate: '2024-10-23T10:04:59Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

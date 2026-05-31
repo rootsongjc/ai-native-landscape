@@ -16,8 +16,6 @@ logo: ''
 author: AstrBotDevs
 ossDate: '2022-12-08T13:27:46.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

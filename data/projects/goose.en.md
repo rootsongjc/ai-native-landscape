@@ -16,8 +16,6 @@ logo: ''
 author: Goose
 ossDate: '2024-08-23T19:03:36.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

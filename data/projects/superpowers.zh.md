@@ -15,8 +15,6 @@ logo: ''
 author: Jesse Vincent
 ossDate: '2025-10-09T19:45:18Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

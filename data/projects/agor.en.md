@@ -18,8 +18,6 @@ logo: ''
 author: Preset
 ossDate: '2025-10-04T19:17:32Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

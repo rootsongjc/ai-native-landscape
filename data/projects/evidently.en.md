@@ -14,8 +14,6 @@ logo: ''
 author: Evidently Team
 ossDate: '2020-11-25T15:20:08.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

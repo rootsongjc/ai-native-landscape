@@ -14,8 +14,6 @@ logo: ''
 author: geohot
 ossDate: '2020-10-18T16:23:12.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

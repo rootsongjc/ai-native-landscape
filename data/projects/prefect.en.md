@@ -14,8 +14,6 @@ logo: ''
 author: Prefect
 ossDate: '2018-06-29T21:59:26.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

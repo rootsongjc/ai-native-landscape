@@ -15,8 +15,6 @@ logo: ''
 author: 78
 ossDate: '2024-08-31T10:08:16.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

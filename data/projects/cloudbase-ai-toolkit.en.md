@@ -17,8 +17,6 @@ logo: ''
 author: Tencent CloudBase
 ossDate: '2025-05-23T08:31:26.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

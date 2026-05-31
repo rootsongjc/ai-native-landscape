@@ -17,8 +17,6 @@ logo: ''
 author: ValueCell AI
 ossDate: '2025-09-01T09:07:06Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -13,8 +13,6 @@ logo: ''
 author: Stanford CRFM
 ossDate: '2021-11-29T08:53:17.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

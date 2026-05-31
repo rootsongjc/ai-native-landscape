@@ -16,8 +16,6 @@ logo: ''
 author: Yusuf Karaaslan
 ossDate: '2025-10-17T14:43:48Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -13,8 +13,6 @@ logo: ''
 author: DeepSeek
 ossDate: '2025-02-27T13:36:53.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

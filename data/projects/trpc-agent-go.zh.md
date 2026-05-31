@@ -15,8 +15,6 @@ logo: ''
 author: tRPC Group
 ossDate: '2025-05-14T13:51:35Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

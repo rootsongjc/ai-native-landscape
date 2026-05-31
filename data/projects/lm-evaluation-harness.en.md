@@ -15,8 +15,6 @@ logo: ''
 author: EleutherAI
 ossDate: '2020-08-28T00:09:15.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

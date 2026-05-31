@@ -16,8 +16,6 @@ logo: ''
 author: Cisco AI Defense
 ossDate: '2025-09-24T01:02:24.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

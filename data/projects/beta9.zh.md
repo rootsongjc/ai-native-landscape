@@ -13,8 +13,6 @@ logo: ''
 author: Beam
 ossDate: '2023-11-15T00:53:21.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

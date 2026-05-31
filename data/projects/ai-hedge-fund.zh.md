@@ -14,8 +14,6 @@ logo: ''
 author: virattt
 ossDate: '2024-11-29T16:30:01Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

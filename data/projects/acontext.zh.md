@@ -17,8 +17,6 @@ logo: ''
 author: MemoDB
 ossDate: '2025-07-16T13:15:48Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

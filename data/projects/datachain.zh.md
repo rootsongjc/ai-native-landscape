@@ -14,8 +14,6 @@ logo: ''
 author: Iterative
 ossDate: '2024-06-25T22:29:35.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

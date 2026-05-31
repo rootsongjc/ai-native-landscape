@@ -14,8 +14,6 @@ logo: ''
 author: gpustack
 ossDate: '2024-05-11T03:41:58.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

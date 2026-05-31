@@ -13,8 +13,6 @@ logo: ''
 author: hsliuping
 ossDate: '2025-06-01T00:00:00+08:00'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

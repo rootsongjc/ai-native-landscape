@@ -16,8 +16,6 @@ logo: ''
 author: NEAR AI
 ossDate: '2026-02-03'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -15,8 +15,6 @@ logo: ''
 author: Solo.o
 ossDate: '2025-01-21T17:03:23.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -15,8 +15,6 @@ logo: ''
 author: NVIDIA
 ossDate: '2025-02-26T20:39:42Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

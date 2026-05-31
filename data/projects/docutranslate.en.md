@@ -14,8 +14,6 @@ logo: ''
 author: xunbu
 ossDate: '2025-05-08T08:16:40Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

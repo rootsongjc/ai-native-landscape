@@ -14,8 +14,6 @@ logo: ''
 author: Newton Project
 ossDate: '2025-04-22T04:12:07.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

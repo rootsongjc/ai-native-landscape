@@ -14,8 +14,6 @@ logo: ''
 author: cheahjs
 ossDate: '2024-07-04T20:10:17Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -15,8 +15,6 @@ logo: ''
 author: Project-HAMi
 ossDate: '2021-09-14T11:51:49.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

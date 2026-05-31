@@ -14,8 +14,6 @@ logo: ''
 author: BMad Code
 ossDate: '2025-04-13T14:54:25.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

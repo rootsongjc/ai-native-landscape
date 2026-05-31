@@ -14,8 +14,6 @@ logo: ''
 author: MLRun
 ossDate: '2019-09-01T16:59:19.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

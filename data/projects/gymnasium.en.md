@@ -16,8 +16,6 @@ logo: ''
 author: Farama Foundation
 ossDate: '2022-09-08T01:58:05.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -15,8 +15,6 @@ logo: ''
 author: torchtune maintainers
 ossDate: '2023-10-20T21:10:49.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

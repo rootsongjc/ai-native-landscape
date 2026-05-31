@@ -14,8 +14,6 @@ logo: ''
 author: 腾讯
 ossDate: '2025-07-22T08:01:23.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

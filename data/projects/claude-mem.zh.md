@@ -14,8 +14,6 @@ logo: ''
 author: thedotmack
 ossDate: '2025-08-31T20:50:03Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

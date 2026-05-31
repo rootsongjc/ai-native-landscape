@@ -13,8 +13,6 @@ logo: ''
 author: MindsDB
 ossDate: '2018-08-02T17:56:45.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -15,8 +15,6 @@ logo: ''
 author: foryourhealth111-pixel
 ossDate: '2026-02-22T13:51:44Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

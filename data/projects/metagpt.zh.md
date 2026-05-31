@@ -15,8 +15,6 @@ logo: ''
 author: Foundation Agents
 ossDate: '2023-06-30T09:04:55.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

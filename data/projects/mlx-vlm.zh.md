@@ -16,8 +16,6 @@ logo: ''
 author: Blaizzy
 ossDate: '2024-04-16T15:10:12.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

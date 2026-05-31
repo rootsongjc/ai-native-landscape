@@ -15,8 +15,6 @@ logo: ''
 author: BerriAI
 ossDate: '2023-07-27T00:09:52.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

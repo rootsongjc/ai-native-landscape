@@ -14,8 +14,6 @@ logo: ''
 author: Mixedbread
 ossDate: '2025-11-06T01:01:47Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

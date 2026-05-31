@@ -14,8 +14,6 @@ logo: ''
 author: Lightpanda IO
 ossDate: '2023-02-07T15:19:34Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

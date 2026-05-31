@@ -16,8 +16,6 @@ logo: ''
 author: max-sixty
 ossDate: '2025-10-17T22:13:14Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

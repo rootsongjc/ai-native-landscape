@@ -14,8 +14,6 @@ logo: ''
 author: DroidRun
 ossDate: '2025-04-12T22:03:47Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

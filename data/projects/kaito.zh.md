@@ -17,8 +17,6 @@ logo: ''
 author: kaito-project
 ossDate: '2023-09-09T01:53:38.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

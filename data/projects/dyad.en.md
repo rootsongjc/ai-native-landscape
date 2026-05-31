@@ -17,8 +17,6 @@ logo: ''
 author: Dyad
 ossDate: '2025-04-11T06:33:48Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

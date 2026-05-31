@@ -15,8 +15,6 @@ logo: ''
 author: E2B
 ossDate: '2023-03-04T13:41:18.000Z'
 featured: true
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

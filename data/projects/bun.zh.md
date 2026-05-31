@@ -15,8 +15,6 @@ logo: ''
 author: Oven
 ossDate: '2021-04-14T00:48:17Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

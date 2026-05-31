@@ -15,8 +15,6 @@ logo: ''
 author: OptimalScale
 ossDate: '2023-03-27T13:56:29.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

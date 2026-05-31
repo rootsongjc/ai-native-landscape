@@ -18,8 +18,6 @@ logo: ''
 author: geekjourneyx
 ossDate: '2026-01-11T06:36:13Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

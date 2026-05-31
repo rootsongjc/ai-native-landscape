@@ -13,8 +13,6 @@ logo: ''
 author: PyTorch
 ossDate: '2023-12-13T01:51:37.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

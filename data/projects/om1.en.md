@@ -13,8 +13,6 @@ logo: ''
 author: OpenMind
 ossDate: '2025-01-08T21:23:40.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

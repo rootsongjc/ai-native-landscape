@@ -14,8 +14,6 @@ logo: ''
 author: Zipstack
 ossDate: '2024-02-21T10:34:33.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

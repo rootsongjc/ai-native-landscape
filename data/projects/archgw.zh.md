@@ -15,8 +15,6 @@ logo: ''
 author: Arch (katanemo)
 ossDate: '2024-07-09T20:25:56Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -15,8 +15,6 @@ logo: ''
 author: Kayba AI
 ossDate: '2025-10-15T15:36:20.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

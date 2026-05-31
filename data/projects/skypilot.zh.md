@@ -14,8 +14,6 @@ logo: ''
 author: skypilot-org
 ossDate: '2021-08-11T23:32:15.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

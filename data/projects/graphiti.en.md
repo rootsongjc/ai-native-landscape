@@ -16,8 +16,6 @@ logo: ''
 author: Zep / getzep
 ossDate: '2024-08-08T22:08:30.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

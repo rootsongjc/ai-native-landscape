@@ -13,8 +13,6 @@ logo: ''
 author: Mintplex Labs
 ossDate: '2023-06-04T02:29:14.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

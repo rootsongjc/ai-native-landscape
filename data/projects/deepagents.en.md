@@ -16,8 +16,6 @@ logo: ''
 author: LangChain
 ossDate: '2025-07-27T23:07:53.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

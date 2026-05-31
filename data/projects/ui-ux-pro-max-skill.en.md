@@ -18,8 +18,6 @@ logo: ''
 author: Next Level Builder
 ossDate: '2025-11-30T11:36:31Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

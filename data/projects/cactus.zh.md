@@ -15,8 +15,6 @@ logo: ''
 author: cactus-compute
 ossDate: '2025-04-23T14:33:43.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -14,8 +14,6 @@ logo: ''
 author: DuckDB
 ossDate: '2018-06-26T15:04:45Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

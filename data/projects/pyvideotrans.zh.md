@@ -15,8 +15,6 @@ logo: ''
 author: jianchang512
 ossDate: '2023-10-02T16:13:19Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

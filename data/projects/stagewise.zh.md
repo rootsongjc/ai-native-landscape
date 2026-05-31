@@ -14,8 +14,6 @@ logo: ''
 author: Stagewise Team
 ossDate: '2025-04-26T12:43:16.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

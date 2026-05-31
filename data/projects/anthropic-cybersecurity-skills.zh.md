@@ -18,8 +18,6 @@ logo: ''
 author: mukul975
 ossDate: '2026-02-25T09:47:50Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

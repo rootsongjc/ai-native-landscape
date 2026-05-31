@@ -17,8 +17,6 @@ logo: ''
 author: Langfuse
 ossDate: '2023-05-18T17:47:09.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

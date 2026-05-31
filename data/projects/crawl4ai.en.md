@@ -15,8 +15,6 @@ logo: ''
 author: UncleCode
 ossDate: '2024-05-09T09:48:50Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

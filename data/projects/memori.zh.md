@@ -14,8 +14,6 @@ logo: ''
 author: GibsonAI
 ossDate: '2025-07-24T07:07:51Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

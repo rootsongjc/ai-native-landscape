@@ -13,8 +13,6 @@ logo: ''
 author: SuperClaude Team
 ossDate: '2025-06-22T12:03:53.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

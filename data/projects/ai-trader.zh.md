@@ -14,8 +14,6 @@ logo: ''
 author: HKUDS
 ossDate: '2025-10-23T12:45:00.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

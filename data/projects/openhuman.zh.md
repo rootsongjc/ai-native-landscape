@@ -17,8 +17,6 @@ logo: ''
 author: senamakel
 ossDate: '2025-04-01'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

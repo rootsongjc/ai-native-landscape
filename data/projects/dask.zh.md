@@ -14,8 +14,6 @@ logo: ''
 author: dask
 ossDate: '2015-01-04T18:50:00Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

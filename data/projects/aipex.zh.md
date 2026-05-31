@@ -13,8 +13,6 @@ logo: ''
 author: AIPexStudio
 ossDate: '2024-08-22T03:02:28.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -14,8 +14,6 @@ logo: ''
 author: Portkey-AI
 ossDate: '2023-08-23T11:52:47.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

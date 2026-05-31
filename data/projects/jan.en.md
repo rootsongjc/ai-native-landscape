@@ -16,8 +16,6 @@ logo: ''
 author: menloresearch
 ossDate: '2023-08-17T02:17:10.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -17,8 +17,6 @@ logo: ''
 author: OpenCSG
 ossDate: '2024-01-12T09:44:48Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

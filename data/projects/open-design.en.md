@@ -19,8 +19,6 @@ logo: ''
 author: nexu-io
 ossDate: '2026-04-28'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

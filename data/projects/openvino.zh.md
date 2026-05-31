@@ -14,8 +14,6 @@ logo: ''
 author: OpenVINO
 ossDate: '2018-10-15T10:54:40.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

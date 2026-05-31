@@ -16,8 +16,6 @@ logo: ''
 author: Othman Adi
 ossDate: '2026-01-03T07:37:28Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

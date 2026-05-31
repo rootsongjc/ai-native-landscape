@@ -16,8 +16,6 @@ logo: ''
 author: Composio
 ossDate: '2024-02-23T13:58:27.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

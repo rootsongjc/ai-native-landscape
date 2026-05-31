@@ -14,8 +14,6 @@ logo: ''
 author: traceloop
 ossDate: '2023-09-02T14:42:59.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

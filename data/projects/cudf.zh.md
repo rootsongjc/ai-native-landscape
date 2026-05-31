@@ -14,8 +14,6 @@ logo: ''
 author: RAPIDS (NVIDIA)
 ossDate: '2017-05-07T03:43:37.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

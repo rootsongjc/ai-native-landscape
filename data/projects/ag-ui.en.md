@@ -14,8 +14,6 @@ logo: ''
 author: AG-UI Team
 ossDate: '2025-05-07T12:49:37.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

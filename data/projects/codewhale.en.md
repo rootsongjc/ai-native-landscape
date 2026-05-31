@@ -17,8 +17,6 @@ logo: ''
 author: Hmbown
 ossDate: '2026-01-19T18:21:01Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

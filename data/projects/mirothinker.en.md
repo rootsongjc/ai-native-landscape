@@ -17,8 +17,6 @@ logo: ''
 author: MiroMindAI
 ossDate: '2025-08-07T13:32:12Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

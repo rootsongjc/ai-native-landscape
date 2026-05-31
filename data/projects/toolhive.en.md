@@ -18,8 +18,6 @@ logo: ''
 author: StackLok
 ossDate: '2025-03-12T14:49:15Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

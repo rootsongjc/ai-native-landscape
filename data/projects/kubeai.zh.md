@@ -14,8 +14,6 @@ logo: ''
 author: SubstratusAI
 ossDate: '2023-10-21T00:59:51.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

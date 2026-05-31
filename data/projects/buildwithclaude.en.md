@@ -17,8 +17,6 @@ logo: ''
 author: Dave Poon
 ossDate: '2025-07-25T02:26:45Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

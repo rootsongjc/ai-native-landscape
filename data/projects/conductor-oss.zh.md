@@ -13,8 +13,6 @@ logo: ''
 author: Conductor
 ossDate: '2023-12-08T06:06:09.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

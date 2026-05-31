@@ -14,8 +14,6 @@ logo: ''
 author: K8sGPT
 ossDate: '2023-03-21T19:58:16.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

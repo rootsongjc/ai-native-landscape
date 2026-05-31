@@ -14,8 +14,6 @@ logo: ''
 author: exo-explore
 ossDate: '2024-06-24T18:36:22.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

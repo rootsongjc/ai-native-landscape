@@ -13,8 +13,6 @@ logo: ''
 author: GitHub
 ossDate: '2025-09-26T00:00:00.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -15,8 +15,6 @@ logo: ''
 author: OpenLIT
 ossDate: '2024-01-23T17:40:59.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

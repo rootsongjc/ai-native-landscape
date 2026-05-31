@@ -14,8 +14,6 @@ logo: ''
 author: jeinlee1991
 ossDate: '2023-06-04T07:23:20.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

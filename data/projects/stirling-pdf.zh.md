@@ -13,8 +13,6 @@ logo: ''
 author: Stirling-Tools
 ossDate: '2023-01-27T18:22:42.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

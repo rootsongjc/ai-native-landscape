@@ -16,8 +16,6 @@ logo: ''
 author: SGLang
 ossDate: '2024-01-08T04:15:52.000Z'
 featured: true
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

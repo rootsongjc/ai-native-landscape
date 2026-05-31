@@ -13,8 +13,6 @@ logo: ''
 author: HPC-AI Tech / ColossalAI
 ossDate: '2021-10-28T16:19:44.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

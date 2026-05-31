@@ -15,8 +15,6 @@ logo: ''
 author: Golem Cloud
 ossDate: '2023-11-24T08:54:54Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

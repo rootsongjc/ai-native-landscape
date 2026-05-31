@@ -13,8 +13,6 @@ logo: ''
 author: OpenDataLab
 ossDate: '2024-02-29T08:52:34.000Z'
 featured: true
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

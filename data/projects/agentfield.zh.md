@@ -16,8 +16,6 @@ logo: ''
 author: Agent Field
 ossDate: '2025-11-05T02:04:44Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

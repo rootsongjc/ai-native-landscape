@@ -14,8 +14,6 @@ logo: ''
 author: hiyouga
 ossDate: '2023-05-28T10:09:12.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -16,8 +16,6 @@ logo: ''
 author: 京东
 ossDate: '2025-07-18T02:40:42Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

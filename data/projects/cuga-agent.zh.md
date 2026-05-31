@@ -14,8 +14,6 @@ logo: ''
 author: CUGA Project
 ossDate: '2025-09-11T11:58:55Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

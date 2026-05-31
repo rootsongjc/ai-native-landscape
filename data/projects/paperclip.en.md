@@ -18,8 +18,6 @@ logo: ''
 author: paperclipai
 ossDate: '2026-01-15'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

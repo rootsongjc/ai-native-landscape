@@ -17,8 +17,6 @@ logo: ''
 author: Google
 ossDate: '2025-09-11T10:39:55.000Z'
 featured: true
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

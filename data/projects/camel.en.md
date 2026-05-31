@@ -16,8 +16,6 @@ logo: ''
 author: CAMEL 社区
 ossDate: '2023-03-17T21:41:54.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

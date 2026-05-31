@@ -16,8 +16,6 @@ logo: ''
 author: Cavira
 ossDate: '2025-10-19T16:12:49Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

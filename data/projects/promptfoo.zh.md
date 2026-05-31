@@ -13,8 +13,6 @@ logo: ''
 author: Promptfoo 社区
 ossDate: '2023-04-28T15:48:49.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -13,8 +13,6 @@ logo: ''
 author: Giskard-AI
 ossDate: '2022-03-06T21:45:37.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

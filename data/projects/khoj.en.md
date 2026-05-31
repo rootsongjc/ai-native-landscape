@@ -17,8 +17,6 @@ logo: ''
 author: Khoj AI
 ossDate: '2021-08-16T01:48:44Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

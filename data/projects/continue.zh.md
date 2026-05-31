@@ -14,8 +14,6 @@ logo: ''
 author: Continue Team
 ossDate: '2023-05-24T03:39:39.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

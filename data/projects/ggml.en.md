@@ -13,8 +13,6 @@ logo: ''
 author: ggml-org
 ossDate: '2022-09-18T17:07:19Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

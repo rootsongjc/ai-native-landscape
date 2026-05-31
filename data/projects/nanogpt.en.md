@@ -16,8 +16,6 @@ logo: ''
 author: Andrej Karpathy
 ossDate: '2022-12-28T00:51:12Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

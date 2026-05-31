@@ -14,8 +14,6 @@ logo: ''
 author: Mastra
 ossDate: '2024-08-06T20:44:31.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

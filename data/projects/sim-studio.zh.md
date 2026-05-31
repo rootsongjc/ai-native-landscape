@@ -13,8 +13,6 @@ logo: ''
 author: Sim Studio
 ossDate: '2025-01-05T22:47:49.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

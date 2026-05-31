@@ -15,8 +15,6 @@ logo: ''
 author: Project Jupyter
 ossDate: '2015-04-09T06:58:03.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

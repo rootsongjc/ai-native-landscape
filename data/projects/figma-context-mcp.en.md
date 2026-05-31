@@ -14,8 +14,6 @@ logo: ''
 author: GLips
 ossDate: '2025-02-13T02:55:06.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

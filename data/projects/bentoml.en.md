@@ -17,8 +17,6 @@ logo: ''
 author: BentoML
 ossDate: '2019-04-02T01:39:27.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

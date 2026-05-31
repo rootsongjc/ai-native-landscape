@@ -18,8 +18,6 @@ logo: ''
 author: Nous Research
 ossDate: '2025-07-22T22:22:28Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -13,8 +13,6 @@ logo: ''
 author: Stefan Weil, Zdenko Podobny 等
 ossDate: '2014-08-12T18:04:59.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

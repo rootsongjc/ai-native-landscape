@@ -16,8 +16,6 @@ logo: ''
 author: rohitg00
 ossDate: '2026-02-25T07:32:52Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -14,8 +14,6 @@ logo: ''
 author: 月之暗面
 ossDate: '2025-10-15T12:58:03.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

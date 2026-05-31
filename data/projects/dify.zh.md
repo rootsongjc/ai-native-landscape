@@ -16,8 +16,6 @@ logo: ''
 author: LangGenius
 ossDate: '2023-04-12T07:40:24.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

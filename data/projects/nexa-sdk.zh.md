@@ -15,8 +15,6 @@ logo: ''
 author: NexaAI
 ossDate: '2024-08-16T20:13:07.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

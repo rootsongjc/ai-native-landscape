@@ -16,8 +16,6 @@ logo: ''
 author: OpenAI
 ossDate: '2025-06-23T16:43:33.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -16,8 +16,6 @@ logo: ''
 author: Ollama Team
 ossDate: '2023-06-26T19:39:32.000Z'
 featured: true
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

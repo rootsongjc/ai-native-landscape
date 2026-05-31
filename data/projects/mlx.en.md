@@ -16,8 +16,6 @@ logo: ''
 author: ml-explore
 ossDate: '2023-11-28T23:33:45.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -20,8 +20,6 @@ logo: ''
 author: gavrielc
 ossDate: '2026-01-31T15:47:22Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

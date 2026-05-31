@@ -13,8 +13,6 @@ logo: ''
 author: Onyx 社区
 ossDate: '2023-04-27T06:04:01.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

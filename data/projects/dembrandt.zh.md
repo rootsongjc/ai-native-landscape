@@ -16,8 +16,6 @@ logo: ''
 author: thevangelist
 ossDate: '2025-11-22T13:49:09Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

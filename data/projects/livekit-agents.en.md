@@ -15,8 +15,6 @@ logo: ''
 author: LiveKit
 ossDate: '2023-10-19T23:00:55.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

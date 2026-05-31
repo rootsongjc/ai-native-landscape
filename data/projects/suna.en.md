@@ -15,8 +15,6 @@ logo: ''
 author: Kortix
 ossDate: '2024-10-05T17:01:01.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

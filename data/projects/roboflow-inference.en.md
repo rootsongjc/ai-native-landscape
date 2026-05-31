@@ -17,8 +17,6 @@ logo: ''
 author: Roboflow
 ossDate: '2023-07-31T17:00:40.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

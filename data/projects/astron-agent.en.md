@@ -16,8 +16,6 @@ logo: ''
 author: 科大讯飞
 ossDate: '2025-09-19T08:46:01Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

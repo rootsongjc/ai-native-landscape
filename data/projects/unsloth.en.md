@@ -17,8 +17,6 @@ logo: ''
 author: Unsloth 团队
 ossDate: '2023-11-29T16:50:09.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -15,8 +15,6 @@ logo: ''
 author: SWE-agent
 ossDate: '2024-04-02T04:09:47.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

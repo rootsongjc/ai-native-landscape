@@ -15,8 +15,6 @@ logo: ''
 author: ClearML
 ossDate: '2019-06-10T08:18:32Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

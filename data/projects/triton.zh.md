@@ -13,8 +13,6 @@ logo: ''
 author: Triton Team
 ossDate: '2014-08-30T17:07:16.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

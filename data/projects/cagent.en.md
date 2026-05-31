@@ -16,8 +16,6 @@ logo: ''
 author: Docker
 ossDate: '2025-09-01T12:14:45Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

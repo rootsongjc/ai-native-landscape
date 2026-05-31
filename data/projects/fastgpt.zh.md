@@ -15,8 +15,6 @@ logo: ''
 author: Labring
 ossDate: '2023-02-23T16:53:25.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

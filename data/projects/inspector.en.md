@@ -16,8 +16,6 @@ logo: ''
 author: Model Context Protocol
 ossDate: '2024-10-03T21:47:42.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

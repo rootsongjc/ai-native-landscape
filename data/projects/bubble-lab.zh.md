@@ -15,8 +15,6 @@ logo: ''
 author: Bubble Lab
 ossDate: '2025-10-02T22:59:25Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

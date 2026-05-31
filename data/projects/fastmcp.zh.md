@@ -13,8 +13,6 @@ logo: ''
 author: jlowin / FastMCP 社区
 ossDate: '2024-11-30T01:47:40.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

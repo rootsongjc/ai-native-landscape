@@ -14,8 +14,6 @@ logo: ''
 author: EveryInc
 ossDate: '2025-10-09T19:43:46Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

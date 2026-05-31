@@ -14,8 +14,6 @@ logo: ''
 author: Apache
 ossDate: '2018-11-19T00:00:00.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

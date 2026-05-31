@@ -16,8 +16,6 @@ logo: ''
 author: Wanxing AI
 ossDate: '2025-01-20T12:31:57Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

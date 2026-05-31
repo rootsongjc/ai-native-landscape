@@ -16,8 +16,6 @@ logo: ''
 author: mindcraft-bots
 ossDate: '2023-08-16T06:39:59.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

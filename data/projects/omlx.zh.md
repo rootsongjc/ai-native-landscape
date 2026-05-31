@@ -15,8 +15,6 @@ logo: ''
 author: jundot
 ossDate: '2026-02-13'
 featured: true
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

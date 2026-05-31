@@ -17,8 +17,6 @@ logo: ''
 author: NovaSky-AI
 ossDate: '2025-04-22T17:33:31Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

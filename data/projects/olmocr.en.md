@@ -16,8 +16,6 @@ logo: ''
 author: Allen Institute for AI (AI2)
 ossDate: '2024-09-17T14:53:40.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

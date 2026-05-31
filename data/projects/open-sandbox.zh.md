@@ -15,8 +15,6 @@ logo: ''
 author: Alibaba
 ossDate: '2025-12-17T08:41:09Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

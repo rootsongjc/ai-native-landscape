@@ -18,8 +18,6 @@ logo: ''
 author: ScrapeGraph AI
 ossDate: '2024-01-27T16:54:38.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

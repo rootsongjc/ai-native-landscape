@@ -14,8 +14,6 @@ logo: ''
 author: pandas-dev
 ossDate: '2010-08-24T01:37:33Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -14,8 +14,6 @@ logo: ''
 author: alphacep
 ossDate: '2019-09-03T17:48:42.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

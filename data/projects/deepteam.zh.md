@@ -14,8 +14,6 @@ logo: ''
 author: Confident AI
 ossDate: '2025-03-05T06:34:21Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

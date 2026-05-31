@@ -13,8 +13,6 @@ logo: ''
 author: confident-ai
 ossDate: '2023-08-10T05:35:04.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

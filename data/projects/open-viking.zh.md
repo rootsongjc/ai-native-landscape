@@ -15,8 +15,6 @@ logo: ''
 author: Volcengine
 ossDate: '2026-01-15T00:00:00.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

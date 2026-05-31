@@ -15,8 +15,6 @@ logo: ''
 author: Datalab
 ossDate: '2025-10-08T21:34:16Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

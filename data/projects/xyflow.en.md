@@ -17,8 +17,6 @@ logo: ''
 author: xyflow
 ossDate: '2019-07-15T14:47:30.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -14,8 +14,6 @@ logo: ''
 author: comfyanonymous
 ossDate: '2023-01-17T03:15:56.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

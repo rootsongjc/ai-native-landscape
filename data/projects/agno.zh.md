@@ -15,8 +15,6 @@ logo: ''
 author: agno-agi
 ossDate: '2022-05-04T15:23:02.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

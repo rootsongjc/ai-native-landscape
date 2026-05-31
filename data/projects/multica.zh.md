@@ -15,8 +15,6 @@ logo: ''
 author: multica-ai
 ossDate: '2026-01-13T17:59:46Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 

@@ -15,8 +15,6 @@ logo: ''
 author: QwenLM
 ossDate: '2023-09-22T02:24:56.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 
