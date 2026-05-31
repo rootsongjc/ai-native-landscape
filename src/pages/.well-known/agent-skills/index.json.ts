@@ -24,6 +24,15 @@ export async function GET() {
         sha256:
           "placeholder_hash_will_be_computed_at_build_time_0000000000000001",
       },
+      {
+        name: "find-project",
+        type: "tool",
+        description:
+          "Find open-source AI projects by natural language description — returns project details, links, and metadata",
+        url: "https://landscape.jimmysong.io/.well-known/agent-skills/find-project.json",
+        sha256:
+          "placeholder_hash_will_be_computed_at_build_time_0000000000000002",
+      },
     ],
   };
 
