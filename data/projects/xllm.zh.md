@@ -13,8 +13,7 @@ tags:
   - Multimodal
   - Training
 description: >-
-  xLLM is an open-source framework for vision-language models, providing tools and documentation for training and
-  inference.
+  xLLM 是一个面向视觉语言模型的开源框架，提供训练与推理工具及文档。
 logo: ''
 author: jd-opensource
 ossDate: '2025-08-12T13:16:07.000Z'
@@ -24,20 +23,20 @@ source: ''
 status: tracked
 ---
 
-## Detailed Introduction
+## 详细介绍
 
-xLLM is an open-source framework for vision-language models, offering training, fine-tuning, and inference tooling with documentation and examples to help research and engineering teams build multimodal systems.
+xLLM 是一个面向视觉语言模型的开源框架，提供训练、微调与推理工具，附带文档和示例，帮助研究与工程团队构建多模态系统。
 
-## Main Features
+## 主要特性
 
-- Supports joint training and inference pipelines for vision-language tasks.
-- Provides multimodal data processing and evaluation tools.
-- Comprehensive ReadTheDocs documentation and example code for engineering adoption.
+- 支持视觉语言任务的联合训练与推理流程。
+- 提供多模态数据处理与评估工具。
+- 完善的 ReadTheDocs 文档和示例代码，便于工程落地。
 
-## Use Cases
+## 应用场景
 
-Suitable for research and product teams building visual question answering, image captioning, and multimodal retrieval systems.
+适用于构建视觉问答、图像描述生成和多模态检索系统的研究和产品团队。
 
-## Technical Features
+## 技术特点
 
-Focuses on multimodal feature fusion and cross-modal alignment, offering extensible model components and training strategies for large-scale training and fine-tuning.
+聚焦多模态特征融合与跨模态对齐，提供可扩展的模型组件和训练策略，支持大规模训练和微调。
