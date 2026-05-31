@@ -12,7 +12,7 @@ description: >-
   Open-source MCP-based voice AI chatbot for multimodal interaction and IoT control, supporting multiple hardware
   platforms.
 logo: ''
-author: ''
+author: 78
 ossDate: '2024-08-31T10:08:16.000Z'
 featured: false
 thumbnail: ''

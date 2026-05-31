@@ -11,7 +11,7 @@ tags:
   - Utility
 description: AI conversation client with multi-provider integration. Focused on privacy and security with all data stored locally.
 logo: ''
-author: ''
+author: CherryHQ
 ossDate: '2024-05-24T01:56:26.000Z'
 featured: false
 thumbnail: ''
