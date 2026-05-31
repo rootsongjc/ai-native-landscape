@@ -231,11 +231,110 @@ function estimateTokens(text) {
   return Math.ceil(rest / 4 + cjk / 2);
 }
 
+function htmlToJson(html) {
+  const data = {};
+
+  // Title
+  const titleMatch = html.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
+  if (titleMatch) {
+    data.title = decodeHtmlEntities(stripTags(titleMatch[1]).trim());
+  }
+
+  // Meta description
+  const descMatch = html.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']*)["']/i)
+    || html.match(/<meta[^>]*content=["']([^"']*)["'][^>]*name=["']description["']/i);
+  if (descMatch) {
+    data.description = decodeHtmlEntities(descMatch[1]);
+  }
+
+  // OG image
+  const ogImageMatch = html.match(/<meta[^>]*property=["']og:image["'][^>]*content=["']([^"']*)["']/i)
+    || html.match(/<meta[^>]*content=["']([^"']*)["'][^>]*property=["']og:image["']/i);
+  if (ogImageMatch) {
+    data.image = ogImageMatch[1];
+  }
+
+  // Canonical URL
+  const canonicalMatch = html.match(/<link[^>]*rel=["']canonical["'][^>]*href=["']([^"']*)["']/i);
+  if (canonicalMatch) {
+    data.url = canonicalMatch[1];
+  }
+
+  // Lang
+  const langMatch = html.match(/<html[^>]*lang=["']([^"']*)["']/i);
+  if (langMatch) {
+    data.lang = langMatch[1];
+  }
+
+  // Extract main text content (strip all tags)
+  const bodyMatch = html.match(/<body[^>]*>([\s\S]*?)<\/body>/i);
+  const body = bodyMatch ? bodyMatch[1] : html;
+
+  // Remove nav, header, footer, script, style
+  let content = body.replace(/<(nav|header|footer|script|style|noscript|svg|canvas|template)[^>]*>[\s\S]*?<\/\1>/gi, '');
+  content = stripTags(content).replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, ' ');
+  content = content.replace(/\s+/g, ' ').trim();
+
+  data.textContent = content;
+
+  // Extract links
+  const links = [];
+  const linkRe = /<a[^>]*href=["']([^"']*)["'][^>]*>([\s\S]*?)<\/a>/gi;
+  let linkMatch;
+  while ((linkMatch = linkRe.exec(body)) !== null) {
+    const href = linkMatch[1];
+    const text = stripTags(linkMatch[2]).trim();
+    if (href && !href.startsWith('#') && !href.startsWith('javascript:') && text) {
+      links.push({ href, text });
+    }
+  }
+  if (links.length > 0) {
+    data.links = links.slice(0, 100);
+  }
+
+  // Also generate markdown for convenience
+  data.markdown = htmlToMarkdown(html);
+
+  return data;
+}
+
+const WECHAT_UA_RE = /MicroMessenger|WeChat|WeChatBot/i;
+
 export async function onRequest(context) {
   const accept = context.request.headers.get('accept') || '';
   const wantsMarkdown = accept.includes('text/markdown');
+  const wantsJson = accept.includes('application/json');
+  const ua = context.request.headers.get('user-agent') || '';
+  const isWeChat = WECHAT_UA_RE.test(ua);
 
-  if (!wantsMarkdown) {
+  // ── WeChat: rewrite og:image to square Chinese version ──
+  if (isWeChat && !wantsMarkdown && !wantsJson) {
+    const response = await context.next();
+    const contentType = response.headers.get('content-type') || '';
+    if (!contentType.includes('text/html')) return response;
+
+    const html = await response.text();
+    const rewritten = html
+      .replace(
+        /(<meta\s+property="og:image"\s+content=")[^"]*(")/i,
+        '$1https://landscape.jimmysong.io/og.png$2',
+      )
+      .replace(
+        /(<meta\s+property="og:image:width"\s+content=")[^"]*(")/i,
+        '$1600$2',
+      )
+      .replace(
+        /(<meta\s+property="og:image:height"\s+content=")[^"]*(")/i,
+        '$1600$2',
+      );
+
+    return new Response(rewritten, {
+      status: response.status,
+      headers: response.headers,
+    });
+  }
+
+  if (!wantsMarkdown && !wantsJson) {
     return context.next();
   }
 
@@ -247,6 +346,19 @@ export async function onRequest(context) {
   }
 
   const html = await response.text();
+
+  if (wantsJson) {
+    const data = htmlToJson(html);
+    return new Response(JSON.stringify(data, null, 2), {
+      status: 200,
+      headers: {
+        'Content-Type': 'application/json; charset=utf-8',
+        'X-Content-Type-Options': 'nosniff',
+      },
+    });
+  }
+
+  // Markdown output
   const markdown = htmlToMarkdown(html);
   const tokens = estimateTokens(markdown);
 

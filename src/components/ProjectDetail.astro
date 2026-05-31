@@ -291,11 +291,6 @@ const repoOwner = repoSlug.split('/')[0] || '';
                 <span class="metric-row__label">{copy.license}</span>
                 <strong data-metrics-license>{project.license && project.license !== 'Unknown' ? project.license : copy.unknown}</strong>
               </span>
-              <span class="metric-row" data-github-governance-card hidden>
-                <span class="metric-row__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
-                <span class="metric-row__label">{copy.governance}</span>
-                <strong data-metrics-governance>{copy.unknown}</strong>
-              </span>
               <span class="metric-row">
                 <span class="metric-row__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></span>
                 <span class="metric-row__label">{copy.commitsLastYear}</span>
@@ -1267,53 +1262,6 @@ const repoOwner = repoSlug.split('/')[0] || '';
     return owner.login;
   }
 
-  function hostFromUrl(value) {
-    if (!value) return '';
-    try {
-      return new URL(value).hostname.toLowerCase();
-    } catch {
-      return '';
-    }
-  }
-
-  function inferGovernance(payload) {
-    const owner = payload?.owner?.login?.toLowerCase() || '';
-    const homepageHost = hostFromUrl(payload?.homepage);
-    const matchesHost = (...hosts) => hosts.some((host) => homepageHost === host || homepageHost.endsWith(`.${host}`));
-
-    if (owner === 'apache' || matchesHost('apache.org')) {
-      return document.documentElement.lang?.startsWith('zh')
-        ? 'Apache 软件基金会'
-        : 'Apache Software Foundation';
-    }
-
-    if (
-      ['cncf', 'kubernetes', 'kubernetes-sigs', 'envoyproxy', 'prometheus', 'open-telemetry', 'containerd', 'coredns', 'etcd-io', 'grpc', 'helm'].includes(owner) ||
-      matchesHost('cncf.io', 'kubernetes.io', 'k8s.io')
-    ) {
-      return document.documentElement.lang?.startsWith('zh')
-        ? '云原生计算基金会（CNCF）'
-        : 'Cloud Native Computing Foundation (CNCF)';
-    }
-
-    if (
-      ['lfai', 'lfai-training', 'openxla'].includes(owner) ||
-      matchesHost('lfai.foundation', 'lfaidata.foundation', 'openxla.org')
-    ) {
-      return document.documentElement.lang?.startsWith('zh')
-        ? 'LF AI & Data 基金会'
-        : 'LF AI & Data Foundation';
-    }
-
-    if (owner.startsWith('eclipse-') || matchesHost('eclipse.org')) {
-      return document.documentElement.lang?.startsWith('zh')
-        ? 'Eclipse 基金会'
-        : 'Eclipse Foundation';
-    }
-
-    return '';
-  }
-
   async function fetchGitHubRepo(repo) {
     if (!repo) return null;
     if (!repoMetadataRequests.has(repo)) {
@@ -1371,13 +1319,10 @@ const repoOwner = repoSlug.split('/')[0] || '';
     const ownerNodes = document.querySelectorAll('[data-metrics-owner]');
     const languageNodes = document.querySelectorAll('[data-metrics-language]');
     const languageCards = document.querySelectorAll('[data-github-language-card]');
-    const governanceNodes = document.querySelectorAll('[data-metrics-governance]');
-    const governanceCards = document.querySelectorAll('[data-github-governance-card]');
     if (
       licenseNodes.length === 0 &&
       ownerNodes.length === 0 &&
-      languageNodes.length === 0 &&
-      governanceNodes.length === 0
+      languageNodes.length === 0
     ) {
       return;
     }
@@ -1409,16 +1354,6 @@ const repoOwner = repoSlug.split('/')[0] || '';
     if (language) {
       languageNodes.forEach((el) => {
         el.textContent = language;
-      });
-    }
-
-    const governance = inferGovernance(payload);
-    governanceCards.forEach((el) => {
-      el.hidden = !governance;
-    });
-    if (governance) {
-      governanceNodes.forEach((el) => {
-        el.textContent = governance;
       });
     }
 
