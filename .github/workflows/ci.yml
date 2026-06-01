@@ -38,6 +38,18 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
             echo "Project data changes:"
             echo "$DIFF"
+
+            # Extract slugs from changed project files
+            SLUGS=""
+            for f in $DIFF; do
+              slug=$(basename "$f" | sed 's/\.\(en\|zh\)\.md$//')
+              case "$SLUGS" in
+                *"$slug"*) ;;
+                *) SLUGS="${SLUGS:+$SLUGS }$slug" ;;
+              esac
+            done
+            echo "slugs=$SLUGS" >> "$GITHUB_OUTPUT"
+            echo "Changed slugs: $SLUGS"
           else
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "No project data changes, skipping worker sync."
@@ -58,13 +70,33 @@ jobs:
             sleep 30
           done
 
-      - name: Trigger worker recalculate
+      - name: Trigger scoring for new/changed projects
         if: steps.detect.outputs.changed == 'true'
         run: |
-          RESPONSE=$(curl -sf "https://ai-oss-rank-worker.jimmysong.io/recalculate?reset=true&limit=50" 2>&1) || {
-            echo "⚠️ Worker sync trigger failed (non-fatal)"
-            echo "$RESPONSE"
+          SLUGS="${{ steps.detect.outputs.slugs }}"
+          if [ -z "$SLUGS" ]; then
+            echo "No specific slugs detected, skipping."
             exit 0
-          }
-          echo "✅ Worker sync triggered"
-          echo "$RESPONSE" | head -20
+          fi
+
+          echo "Generating scoring data for: $SLUGS"
+          for slug in $SLUGS; do
+            echo "  → $slug"
+            REPO=$(curl -sf "https://landscape.jimmysong.io/data/projects.json" 2>/dev/null | \
+              python3 -c "
+import sys, json
+data = json.load(sys.stdin)
+for p in data:
+    if p.get('slug') == '$slug':
+        repo = p.get('repo', '')
+        print(repo.replace('https://github.com/', ''))
+        break
+" 2>/dev/null)
+            if [ -n "$REPO" ]; then
+              echo "    Repo: $REPO"
+              curl -sf "https://ai-oss-rank-worker.jimmysong.io/recalculate?repo=$REPO" -o /dev/null 2>&1 && \
+                echo "    ✅ Scoring generated" || echo "    ⚠️ Scoring failed"
+            else
+              echo "    ⚠️ Could not resolve repo for slug: $slug"
+            fi
+          done
