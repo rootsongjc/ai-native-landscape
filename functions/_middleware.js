@@ -317,7 +317,7 @@ export async function onRequest(context) {
     const rewritten = html
       .replace(
         /(<meta\s+property="og:image"\s+content=")[^"]*(")/i,
-        '$1https://landscape.jimmysong.io/og.png$2',
+        '$1https://landscape.jimmysong.io/og.jpg$2',
       )
       .replace(
         /(<meta\s+property="og:image:width"\s+content=")[^"]*(")/i,
