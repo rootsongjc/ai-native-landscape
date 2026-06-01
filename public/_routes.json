@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "include": ["/*"],
+  "exclude": [
+    "/*.png",
+    "/*.jpg",
+    "/*.jpeg",
+    "/*.gif",
+    "/*.webp",
+    "/*.svg",
+    "/*.ico",
+    "/*.webmanifest",
+    "/_astro/*",
+    "/data/*",
+    "/fonts/*"
+  ]
+}
