@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Page Not Found" description="The page you are looking for does not exist." lang="en">
+  <meta name="robots" content="noindex, nofollow" />
+  <div class="not-found-page">
+    <div class="not-found-content">
+      <h1>404</h1>
+      <h2>Page Not Found</h2>
+      <p>The page you are looking for does not exist or has been moved.</p>
+      <a href="/" class="back-home">← Back to Home</a>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .not-found-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    text-align: center;
+  }
+  .not-found-content h1 {
+    font-size: 6rem;
+    font-weight: 800;
+    margin: 0;
+    opacity: 0.3;
+  }
+  .not-found-content h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0 1rem;
+  }
+  .not-found-content p {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+  }
+  .back-home {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .back-home:hover {
+    opacity: 0.9;
+  }
+</style>

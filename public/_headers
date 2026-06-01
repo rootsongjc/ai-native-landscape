@@ -2,6 +2,7 @@
 # Cloudflare Pages _headers format
 
 /*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   Link: </.well-known/api-catalog>; rel="api-catalog"; type="application/linkset+json"; title="API Catalog (RFC 9727)"
   Link: </.well-known/mcp/server-card.json>; rel="mcp-server"; type="application/json"; title="MCP Server Card"
   Link: </.well-known/agent-skills/index.json>; rel="agent-skills"; type="application/json"; title="Agent Skills Discovery Index"

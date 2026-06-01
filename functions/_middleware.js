@@ -298,9 +298,36 @@ function htmlToJson(html) {
   return data;
 }
 
+// Legacy category alias → canonical 301 redirects
+const LEGACY_CATEGORY_MAP = {
+  agents_orchestration: 'agents',
+  applications_products: 'applications-products',
+  data_retrieval: 'rag-knowledge',
+  dev_tools_sdk: 'coding-devtools',
+  evaluation_monitoring: 'training-optimization',
+  ai_gateways: 'inference-serving',
+  inference_serving: 'inference-serving',
+  models_foundation: 'models-modalities',
+  training_finetuning: 'training-optimization',
+  vibe_coding: 'coding-devtools',
+  ui_integration: 'applications-products',
+};
+
+const LEGACY_CATEGORY_RE = /^\/(?:zh\/)?categories\/([a-z_]+)\/?$/;
+
 const WECHAT_UA_RE = /MicroMessenger|WeChat|WeChatBot/i;
 
 export async function onRequest(context) {
+  const { pathname } = new URL(context.request.url);
+
+  // 301 redirect legacy category aliases to canonical paths
+  const legacyMatch = pathname.match(LEGACY_CATEGORY_RE);
+  if (legacyMatch && LEGACY_CATEGORY_MAP[legacyMatch[1]]) {
+    const prefix = pathname.startsWith('/zh/') ? '/zh' : '';
+    const canonical = LEGACY_CATEGORY_MAP[legacyMatch[1]];
+    return Response.redirect(new URL(`${prefix}/categories/${canonical}/`, context.request.url), 301);
+  }
+
   const accept = context.request.headers.get('accept') || '';
   const wantsMarkdown = accept.includes('text/markdown');
   const wantsJson = accept.includes('application/json');
