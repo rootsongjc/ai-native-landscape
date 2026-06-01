@@ -908,6 +908,44 @@
     "subCategoryNameEn": "Memory & Context"
   },
   {
+    "name": "Agentic Inbox",
+    "slug": "agentic-inbox",
+    "homepage": null,
+    "repo": "https://github.com/cloudflare/agentic-inbox",
+    "license": "Apache-2.0",
+    "category": "applications-products",
+    "subCategory": "productivity-tools",
+    "tags": [
+      "Email",
+      "AI Agent",
+      "Cloudflare Workers",
+      "Self-hosted"
+    ],
+    "description": {
+      "en": "A self-hosted email client with an AI agent that reads, summarizes, and acts on emails, running entirely on Cloudflare Workers.",
+      "zh": "Cloudflare 出品的自托管 AI 邮件客户端，AI Agent 自动阅读、摘要和处理邮件，完全运行在 Cloudflare Workers 上。"
+    },
+    "logo": "",
+    "author": "Cloudflare",
+    "ossDate": "2026-04-10T00:00:00Z",
+    "featured": false,
+    "status": "tracked",
+    "source": {},
+    "content": {
+      "en": "## Overview\n\nAgentic Inbox is a self-hosted email client built by Cloudflare that integrates an AI agent to read, summarize, and act on emails. It runs entirely on Cloudflare Workers with no external dependencies, demonstrating how AI agents can manage communication workflows.\n\n## Key Features\n\n- AI agent that reads, summarizes, and responds to emails.\n- Runs entirely on Cloudflare Workers — no external servers needed.\n- Self-hosted with full privacy control.\n- Built by Cloudflare as a reference architecture for agentic applications.\n\n## Use Cases\n\n- Automate email triage and response with an AI agent.\n- Build custom email workflows on Cloudflare's edge network.\n- Self-host a private AI-powered email assistant.\n\n## Technical Details\n\n- 3,800+ GitHub stars.\n- Cloudflare official project, Apache 2.0 licensed.\n- Runs entirely on edge compute with zero cold starts.",
+      "zh": "## 简介\n\nAgentic Inbox 是 Cloudflare 构建的自托管邮件客户端，集成 AI Agent 自动阅读、摘要和处理邮件。完全运行在 Cloudflare Workers 上，无需外部依赖，展示了 AI Agent 如何管理通信工作流。\n\n## 主要特性\n\n- AI Agent 自动阅读、摘要和回复邮件。\n- 完全运行在 Cloudflare Workers，无需外部服务器。\n- 自托管，完全隐私控制。\n- Cloudflare 官方出品的 Agent 应用参考架构。\n\n## 使用场景\n\n- 用 AI Agent 自动化邮件分类和回复。\n- 在 Cloudflare 边缘网络上构建自定义邮件工作流。\n- 自托管私有 AI 邮件助手。\n\n## 技术特点\n\n- GitHub 3,800+ Star。\n- Cloudflare 官方项目，Apache 2.0 协议。\n- 完全运行在边缘计算上，零冷启动。"
+    },
+    "score": {},
+    "repoSlug": "cloudflare/agentic-inbox",
+    "totalScore": null,
+    "scorePercent": null,
+    "taxonomyReason": "explicit",
+    "categoryNameZh": "应用与体验",
+    "categoryNameEn": "Applications & Experience",
+    "subCategoryNameZh": "效率工具",
+    "subCategoryNameEn": "Productivity Tools"
+  },
+  {
     "name": "AgentMemory",
     "slug": "agentmemory",
     "homepage": "https://agent-memory.dev",
@@ -2446,6 +2484,44 @@
     "subCategoryNameEn": "Memory & Context"
   },
   {
+    "name": "BB Browser",
+    "slug": "bb-browser",
+    "homepage": null,
+    "repo": "https://github.com/epiral/bb-browser",
+    "license": "MIT",
+    "category": "coding-devtools",
+    "subCategory": "browser-automation",
+    "tags": [
+      "Browser Automation",
+      "MCP",
+      "AI Agent",
+      "Chrome"
+    ],
+    "description": {
+      "en": "CLI and MCP server for AI agents to control Chrome with your login state — your browser is the API.",
+      "zh": "AI Agent 控制浏览器的 CLI 和 MCP server，复用用户登录态——你的浏览器就是 API。"
+    },
+    "logo": "",
+    "author": "epiral",
+    "ossDate": "2026-01-31T03:55:42Z",
+    "featured": false,
+    "status": "tracked",
+    "source": {},
+    "content": {
+      "en": "## Overview\n\nBB Browser turns your browser into an API for AI agents. It provides a CLI and MCP server that allows AI agents to control Chrome while preserving your login state, enabling authenticated web automation without credential management.\n\n## Key Features\n\n- CLI and MCP server for AI agents to control Chrome.\n- Preserves user login state for authenticated automation.\n- No credential storage — uses your existing browser session.\n- MIT licensed and lightweight.\n\n## Use Cases\n\n- Automate web tasks that require authenticated sessions.\n- Build AI agents that interact with web applications as a logged-in user.\n- Control browser from Claude Code or other MCP-compatible agents.\n\n## Technical Details\n\n- 5,600+ GitHub stars.\n- MCP protocol compatible with Claude Code and other AI agents.\n- Works with existing Chrome profiles and cookies.",
+      "zh": "## 简介\n\nBB Browser 将浏览器变为 AI Agent 的 API。它提供 CLI 和 MCP server，允许 AI Agent 控制浏览器同时保留用户登录状态，实现无需凭证管理的认证 Web 自动化。\n\n## 主要特性\n\n- AI Agent 控制浏览器的 CLI 和 MCP server。\n- 保留用户登录状态实现认证自动化。\n- 无需存储凭证——使用现有浏览器会话。\n- MIT 协议，轻量级。\n\n## 使用场景\n\n- 自动化需要认证会话的 Web 任务。\n- 构建 AI Agent 以登录用户身份与 Web 应用交互。\n- 从 Claude Code 或其他 MCP 兼容 Agent 控制浏览器。\n\n## 技术特点\n\n- GitHub 5,600+ Star。\n- MCP 协议兼容 Claude Code 和其他 AI Agent。\n- 支持现有 Chrome 配置和 Cookie。"
+    },
+    "score": {},
+    "repoSlug": "epiral/bb-browser",
+    "totalScore": null,
+    "scorePercent": null,
+    "taxonomyReason": "explicit",
+    "categoryNameZh": "开发者工具链",
+    "categoryNameEn": "Developer Tooling",
+    "subCategoryNameZh": "浏览器自动化",
+    "subCategoryNameEn": "Browser Automation"
+  },
+  {
     "name": "Beads",
     "slug": "beads",
     "homepage": "https://steveyegge.github.io/beads/",
@@ -3688,6 +3764,44 @@
     "subCategoryNameEn": "Developer Utilities"
   },
   {
+    "name": "Claude Ads",
+    "slug": "claude-ads",
+    "homepage": null,
+    "repo": "https://github.com/AgriciDaniel/claude-ads",
+    "license": "MIT",
+    "category": "coding-devtools",
+    "subCategory": "ide-cli-tools",
+    "tags": [
+      "Claude Code",
+      "Advertising",
+      "SEO",
+      "Audit"
+    ],
+    "description": {
+      "en": "Comprehensive paid advertising audit and optimization skill for Claude Code with 250+ checks across Google and Meta Ads.",
+      "zh": "Claude Code 广告审计与优化技能，覆盖 Google Ads 和 Meta Ads 的 250+ 自动检查项。"
+    },
+    "logo": "",
+    "author": "AgriciDaniel",
+    "ossDate": "2026-02-11T00:00:00Z",
+    "featured": false,
+    "status": "tracked",
+    "source": {},
+    "content": {
+      "en": "## Overview\n\nClaude Ads is a comprehensive Claude Code skill for paid advertising audit and optimization. It performs 250+ automated checks across Google Ads and Meta Ads campaigns, helping marketers and agencies identify issues and improve campaign performance.\n\n## Key Features\n\n- 250+ automated audit checks for Google Ads and Meta Ads.\n- Campaign performance analysis and optimization recommendations.\n- Integrated directly into Claude Code workflow.\n- MIT licensed and extensible.\n\n## Use Cases\n\n- Audit advertising campaigns for common mistakes and inefficiencies.\n- Get AI-powered optimization suggestions for ad spend.\n- Standardize ad review processes across marketing teams.\n\n## Technical Details\n\n- 5,400+ GitHub stars.\n- Designed for digital marketers and advertising agencies.",
+      "zh": "## 简介\n\nClaude Ads 是一个面向 Claude Code 的付费广告审计与优化技能。它执行 250+ 自动化检查，覆盖 Google Ads 和 Meta Ads 广告系列，帮助营销人员和代理商发现问题并提升广告效果。\n\n## 主要特性\n\n- Google Ads 和 Meta Ads 的 250+ 自动审计检查项。\n- 广告系列性能分析和优化建议。\n- 直接集成到 Claude Code 工作流中。\n- MIT 协议，可扩展。\n\n## 使用场景\n\n- 审计广告系列中的常见错误和低效问题。\n- 获取 AI 驱动的广告支出优化建议。\n- 在营销团队中标准化广告审核流程。\n\n## 技术特点\n\n- GitHub 5,400+ Star。\n- 专为数字营销人员和广告代理商设计。"
+    },
+    "score": {},
+    "repoSlug": "agricidaniel/claude-ads",
+    "totalScore": null,
+    "scorePercent": null,
+    "taxonomyReason": "explicit",
+    "categoryNameZh": "开发者工具链",
+    "categoryNameEn": "Developer Tooling",
+    "subCategoryNameZh": "IDE 与 CLI 工具",
+    "subCategoryNameEn": "IDE & CLI Tools"
+  },
+  {
     "name": "Claude Agent SDK for Python",
     "slug": "claude-agent-sdk-python",
     "homepage": "https://docs.anthropic.com/en/docs/claude-code/sdk/sdk-python",
@@ -3792,6 +3906,43 @@
     "categoryNameEn": "Agent Systems",
     "subCategoryNameZh": "编排与工作流",
     "subCategoryNameEn": "Orchestration & Workflows"
+  },
+  {
+    "name": "Claude Code Harness",
+    "slug": "claude-code-harness",
+    "homepage": null,
+    "repo": "https://github.com/Chachamaru127/claude-code-harness",
+    "license": "MIT",
+    "category": "coding-devtools",
+    "subCategory": "ide-cli-tools",
+    "tags": [
+      "Claude Code",
+      "Developer Tools",
+      "Automation"
+    ],
+    "description": {
+      "en": "Claude Code dedicated development harness for achieving high-quality autonomous coding workflows.",
+      "zh": "Claude Code 专用开发工具，通过结构化提示和任务模板实现高质量自主编码工作流。"
+    },
+    "logo": "",
+    "author": "Chachamaru127",
+    "ossDate": "2025-12-12T00:00:00Z",
+    "featured": false,
+    "status": "tracked",
+    "source": {},
+    "content": {
+      "en": "## Overview\n\nClaude Code Harness is a dedicated development harness for Claude Code that enables high-quality, autonomous coding workflows. It provides structured prompts, task templates, and development patterns to maximize Claude Code's effectiveness in real-world software development.\n\n## Key Features\n\n- Structured development harness optimized for Claude Code workflows.\n- Task templates and prompts for autonomous coding sessions.\n- High-quality output patterns through guided agent behavior.\n- MIT licensed and community-driven.\n\n## Use Cases\n\n- Set up Claude Code for complex, multi-step development tasks.\n- Standardize AI-assisted coding workflows across teams.\n- Achieve consistent, high-quality code output from AI agents.\n\n## Technical Details\n\n- 2,400+ GitHub stars.\n- Focused on developer productivity with Claude Code.",
+      "zh": "## 简介\n\nClaude Code Harness 是专为 Claude Code 设计的开发工具，支持高质量自主编码工作流。它提供结构化提示、任务模板和开发模式，最大化 Claude Code 在实际软件开发中的效果。\n\n## 主要特性\n\n- 针对 Claude Code 工作流优化的结构化开发工具。\n- 自主编码会话的任务模板和提示词。\n- 通过引导 Agent 行为实现高质量输出模式。\n- MIT 协议，社区驱动。\n\n## 使用场景\n\n- 为复杂多步骤开发任务配置 Claude Code。\n- 在团队中标准化 AI 辅助编码工作流。\n- 从 AI Agent 获得一致且高质量的代码输出。\n\n## 技术特点\n\n- GitHub 2,400+ Star。\n- 专注于提升 Claude Code 开发者生产力。"
+    },
+    "score": {},
+    "repoSlug": "chachamaru127/claude-code-harness",
+    "totalScore": null,
+    "scorePercent": null,
+    "taxonomyReason": "explicit",
+    "categoryNameZh": "开发者工具链",
+    "categoryNameEn": "Developer Tooling",
+    "subCategoryNameZh": "IDE 与 CLI 工具",
+    "subCategoryNameEn": "IDE & CLI Tools"
   },
   {
     "name": "Claude Code Router",
@@ -4631,6 +4782,43 @@
     "categoryNameEn": "Developer Tooling",
     "subCategoryNameZh": "编程智能体",
     "subCategoryNameEn": "Coding Agents"
+  },
+  {
+    "name": "Context Mode",
+    "slug": "context-mode",
+    "homepage": null,
+    "repo": "https://github.com/mksglu/context-mode",
+    "license": "Apache-2.0",
+    "category": "coding-devtools",
+    "subCategory": "ide-cli-tools",
+    "tags": [
+      "Context Window",
+      "AI Coding",
+      "Optimization"
+    ],
+    "description": {
+      "en": "Context window optimization for AI coding agents with sandboxed tool output and 98% reduction, supporting 15+ platforms.",
+      "zh": "AI 编码 Agent 的上下文窗口优化工具，沙箱化工具输出，实现 98% 的上下文缩减，支持 15+ 平台。"
+    },
+    "logo": "",
+    "author": "mksglu",
+    "ossDate": "2026-02-23T00:00:00Z",
+    "featured": true,
+    "status": "tracked",
+    "source": {},
+    "content": {
+      "en": "## Overview\n\nContext Mode optimizes context window usage for AI coding agents by sandboxing tool output and achieving up to 98% reduction in token consumption. It supports 15+ platforms including Claude Code, Cursor, Copilot, and more.\n\n## Key Features\n\n- Up to 98% context window reduction for AI coding agents.\n- Sandboxed tool output to prevent context pollution.\n- Support for 15+ AI coding platforms and agents.\n- Drop-in integration with existing workflows.\n\n## Use Cases\n\n- Extend effective context window for complex coding tasks.\n- Reduce token costs when using AI coding assistants.\n- Prevent tool output from consuming valuable context space.\n\n## Technical Details\n\n- 16,000+ GitHub stars.\n- Supports Claude Code, Cursor, Copilot, Windsurf, and more.",
+      "zh": "## 简介\n\nContext Mode 通过沙箱化工具输出优化 AI 编码 Agent 的上下文窗口使用，最高可实现 98% 的 token 消耗缩减。支持 Claude Code、Cursor、Copilot 等 15+ 平台。\n\n## 主要特性\n\n- AI 编码 Agent 上下文窗口最高缩减 98%。\n- 沙箱化工具输出防止上下文污染。\n- 支持 15+ AI 编码平台和 Agent。\n- 无缝集成现有工作流。\n\n## 使用场景\n\n- 扩展复杂编码任务的有效上下文窗口。\n- 降低 AI 编码助手的 token 成本。\n- 防止工具输出占用宝贵的上下文空间。\n\n## 技术特点\n\n- GitHub 16,000+ Star。\n- 支持 Claude Code、Cursor、Copilot、Windsurf 等。"
+    },
+    "score": {},
+    "repoSlug": "mksglu/context-mode",
+    "totalScore": null,
+    "scorePercent": null,
+    "taxonomyReason": "explicit",
+    "categoryNameZh": "开发者工具链",
+    "categoryNameEn": "Developer Tooling",
+    "subCategoryNameZh": "IDE 与 CLI 工具",
+    "subCategoryNameEn": "IDE & CLI Tools"
   },
   {
     "name": "Context7 MCP",
@@ -7279,6 +7467,43 @@
     "subCategoryNameEn": "MCP & Tool Protocols"
   },
   {
+    "name": "Feynman",
+    "slug": "feynman",
+    "homepage": "https://feynman.is",
+    "repo": "https://github.com/companion-inc/feynman",
+    "license": "MIT",
+    "category": "agents",
+    "subCategory": "agent-frameworks",
+    "tags": [
+      "Research Agent",
+      "AI Research",
+      "CLI"
+    ],
+    "description": {
+      "en": "Open-source AI research agent that automates literature search, paper analysis, and knowledge synthesis.",
+      "zh": "开源 AI 研究 Agent，自动化文献检索、论文分析和知识综合。"
+    },
+    "logo": "",
+    "author": "Companion Inc",
+    "ossDate": "2026-03-19T00:00:00Z",
+    "featured": false,
+    "status": "tracked",
+    "source": {},
+    "content": {
+      "en": "## Overview\n\nFeynman is an open-source AI research agent that automates the research process including literature search, paper analysis, and knowledge synthesis. It provides a CLI tool that researchers can use to accelerate their workflow with AI-powered insights.\n\n## Key Features\n\n- AI-powered literature search and paper analysis.\n- Automated knowledge synthesis across research domains.\n- CLI tool with standalone native bundle and built-in Node.js runtime.\n- MIT licensed by Companion Inc.\n\n## Use Cases\n\n- Accelerate academic and industrial research with AI.\n- Automatically summarize and synthesize large volumes of papers.\n- Build custom research workflows on top of an open-source agent.\n\n## Technical Details\n\n- 7,600+ GitHub stars.\n- Standalone installer for macOS, Linux, and Windows.\n- Self-contained runtime with no external Node.js dependency.",
+      "zh": "## 简介\n\nFeynman 是一个开源 AI 研究 Agent，自动化研究流程包括文献检索、论文分析和知识综合。它提供 CLI 工具，研究人员可以用 AI 驱动的洞见加速工作流。\n\n## 主要特性\n\n- AI 驱动的文献检索和论文分析。\n- 跨研究领域的自动化知识综合。\n- CLI 工具，包含独立原生包和内置 Node.js 运行时。\n- Companion Inc 出品，MIT 协议。\n\n## 使用场景\n\n- 用 AI 加速学术和工业研究。\n- 自动摘要和综合大量论文。\n- 在开源 Agent 基础上构建自定义研究工作流。\n\n## 技术特点\n\n- GitHub 7,600+ Star。\n- 支持 macOS、Linux 和 Windows 的独立安装器。\n- 自包含运行时，无需外部 Node.js 依赖。"
+    },
+    "score": {},
+    "repoSlug": "companion-inc/feynman",
+    "totalScore": null,
+    "scorePercent": null,
+    "taxonomyReason": "explicit",
+    "categoryNameZh": "智能体系统",
+    "categoryNameEn": "Agent Systems",
+    "subCategoryNameZh": "智能体框架",
+    "subCategoryNameEn": "Agent Frameworks"
+  },
+  {
     "name": "FinGPT",
     "slug": "fingpt",
     "homepage": "https://ai4finance.org",
@@ -9140,6 +9365,44 @@
     },
     "score": {},
     "repoSlug": "huggingface/diffusers",
+    "totalScore": null,
+    "scorePercent": null,
+    "taxonomyReason": "explicit",
+    "categoryNameZh": "模型与多模态",
+    "categoryNameEn": "Models & Modalities",
+    "subCategoryNameZh": "图像与视频生成",
+    "subCategoryNameEn": "Image & Video Generation"
+  },
+  {
+    "name": "Hyperframes",
+    "slug": "hyperframes",
+    "homepage": null,
+    "repo": "https://github.com/heygen-com/hyperframes",
+    "license": "Apache-2.0",
+    "category": "models-modalities",
+    "subCategory": "image-video-generation",
+    "tags": [
+      "Video Generation",
+      "HTML",
+      "Agent",
+      "HeyGen"
+    ],
+    "description": {
+      "en": "Write HTML, render video. Built for AI agents to programmatically create videos from code.",
+      "zh": "HeyGen 出品的 HTML 转视频工具，专为 AI Agent 设计，通过代码即可程序化生成视频。"
+    },
+    "logo": "",
+    "author": "HeyGen",
+    "ossDate": "2026-03-10T00:00:00Z",
+    "featured": true,
+    "status": "tracked",
+    "source": {},
+    "content": {
+      "en": "## Overview\n\nHyperframes by HeyGen is an open-source tool that converts HTML into rendered video, designed specifically for AI agents. It enables programmatic video creation from code, making it possible for AI agents to generate dynamic video content at scale.\n\n## Key Features\n\n- HTML-to-video rendering pipeline built for AI agents.\n- Programmatic video creation from structured templates.\n- Designed for integration into agent workflows and automation.\n- Apache 2.0 licensed by HeyGen.\n\n## Use Cases\n\n- Generate personalized videos at scale via AI agents.\n- Create dynamic marketing and presentation videos from data.\n- Build automated video production pipelines.\n\n## Technical Details\n\n- 23,000+ GitHub stars.\n- Built by HeyGen, a leader in AI video technology.\n- Agent-first API design for seamless automation.",
+      "zh": "## 简介\n\nHyperframes 是 HeyGen 推出的开源工具，将 HTML 转换为渲染视频，专为 AI Agent 设计。它支持从代码程序化创建视频，使 AI Agent 能够大规模生成动态视频内容。\n\n## 主要特性\n\n- 面向 AI Agent 的 HTML 转视频渲染管线。\n- 从结构化模板程序化创建视频。\n- 设计用于集成到 Agent 工作流和自动化中。\n- HeyGen 出品，Apache 2.0 协议。\n\n## 使用场景\n\n- 通过 AI Agent 大规模生成个性化视频。\n- 从数据创建动态营销和演示视频。\n- 构建自动化视频生产流水线。\n\n## 技术特点\n\n- GitHub 23,000+ Star。\n- 由 AI 视频领域领导者 HeyGen 构建。\n- Agent 优先的 API 设计，实现无缝自动化。"
+    },
+    "score": {},
+    "repoSlug": "heygen-com/hyperframes",
     "totalScore": null,
     "scorePercent": null,
     "taxonomyReason": "explicit",
@@ -14384,6 +14647,44 @@
     "subCategoryNameEn": "Audio & Speech"
   },
   {
+    "name": "NotFair",
+    "slug": "notfair",
+    "homepage": null,
+    "repo": "https://github.com/nowork-studio/NotFair",
+    "license": "MIT",
+    "category": "coding-devtools",
+    "subCategory": "ide-cli-tools",
+    "tags": [
+      "Claude Code",
+      "SEO",
+      "Marketing",
+      "Skills"
+    ],
+    "description": {
+      "en": "Open-source Claude Code skills for SEO, GEO, Google Ads, and Meta Ads automation.",
+      "zh": "开源 Claude Code 技能集，覆盖 SEO、GEO、Google Ads 和 Meta Ads 自动化。"
+    },
+    "logo": "",
+    "author": "Nowork Studio",
+    "ossDate": "2026-03-27T00:00:00Z",
+    "featured": false,
+    "status": "tracked",
+    "source": {},
+    "content": {
+      "en": "## Overview\n\nNotFair provides open-source Claude Code skills for SEO, Generative Engine Optimization (GEO), Google Ads, and Meta Ads. It enables marketers to automate campaign management, content optimization, and ad performance analysis directly through Claude Code.\n\n## Key Features\n\n- Claude Code skills for SEO and Generative Engine Optimization.\n- Google Ads and Meta Ads automation skills.\n- Content optimization and keyword analysis tools.\n- MIT licensed and community-maintained.\n\n## Use Cases\n\n- Automate SEO audits and content optimization workflows.\n- Manage and optimize Google Ads and Meta Ads campaigns via AI.\n- Build custom marketing automation with Claude Code skills.\n\n## Technical Details\n\n- 2,700+ GitHub stars.\n- Focused on marketing and advertising automation.",
+      "zh": "## 简介\n\nNotFair 提供面向 Claude Code 的开源技能集，涵盖 SEO、生成式引擎优化（GEO）、Google Ads 和 Meta Ads。营销人员可以通过 Claude Code 直接自动化广告管理、内容优化和广告效果分析。\n\n## 主要特性\n\n- Claude Code 的 SEO 和生成式引擎优化技能。\n- Google Ads 和 Meta Ads 自动化技能。\n- 内容优化和关键词分析工具。\n- MIT 协议，社区维护。\n\n## 使用场景\n\n- 自动化 SEO 审计和内容优化工作流。\n- 通过 AI 管理和优化 Google Ads 和 Meta Ads 广告系列。\n- 用 Claude Code 技能构建自定义营销自动化。\n\n## 技术特点\n\n- GitHub 2,700+ Star。\n- 专注于营销和广告自动化。"
+    },
+    "score": {},
+    "repoSlug": "nowork-studio/notfair",
+    "totalScore": null,
+    "scorePercent": null,
+    "taxonomyReason": "explicit",
+    "categoryNameZh": "开发者工具链",
+    "categoryNameEn": "Developer Tooling",
+    "subCategoryNameZh": "IDE 与 CLI 工具",
+    "subCategoryNameEn": "IDE & CLI Tools"
+  },
+  {
     "name": "NVIDIA AI Cluster Runtime",
     "slug": "aicr",
     "homepage": "https://docs.nvidia.com/aicr/",
@@ -14557,6 +14858,44 @@
     },
     "score": {},
     "repoSlug": "logancyang/obsidian-copilot",
+    "totalScore": null,
+    "scorePercent": null,
+    "taxonomyReason": "explicit",
+    "categoryNameZh": "应用与体验",
+    "categoryNameEn": "Applications & Experience",
+    "subCategoryNameZh": "效率工具",
+    "subCategoryNameEn": "Productivity Tools"
+  },
+  {
+    "name": "Obsidian Second Brain",
+    "slug": "obsidian-second-brain",
+    "homepage": null,
+    "repo": "https://github.com/eugeniughelbur/obsidian-second-brain",
+    "license": "MIT",
+    "category": "applications-products",
+    "subCategory": "productivity-tools",
+    "tags": [
+      "Obsidian",
+      "Knowledge Management",
+      "AI Agent",
+      "Claude Code"
+    ],
+    "description": {
+      "en": "Cross-CLI skill that turns your Obsidian vault into a living AI-first second brain across Claude Code and other agents.",
+      "zh": "跨 CLI 技能，将 Obsidian 知识库变为 AI 驱动的第二大脑，支持 Claude Code 等多种 Agent。"
+    },
+    "logo": "",
+    "author": "eugeniughelbur",
+    "ossDate": "2026-03-24T00:00:00Z",
+    "featured": false,
+    "status": "tracked",
+    "source": {},
+    "content": {
+      "en": "## Overview\n\nObsidian Second Brain is a cross-CLI skill that transforms an Obsidian vault into an AI-powered second brain. It integrates with Claude Code and other AI agents to enable intelligent note search, summarization, linking, and knowledge management directly from the terminal.\n\n## Key Features\n\n- Cross-CLI integration with Claude Code and other AI coding agents.\n- Turns Obsidian vaults into queryable AI knowledge bases.\n- Intelligent search, summarization, and linking across notes.\n- MIT licensed and extensible.\n\n## Use Cases\n\n- Query and synthesize knowledge from your Obsidian vault via AI agents.\n- Automate note linking and knowledge graph construction.\n- Use AI to surface relevant notes during coding and research sessions.\n\n## Technical Details\n\n- 1,700+ GitHub stars.\n- Designed for the AI-native knowledge worker.",
+      "zh": "## 简介\n\nObsidian Second Brain 是一个跨 CLI 技能，将 Obsidian 知识库转化为 AI 驱动的第二大脑。它集成 Claude Code 和其他 AI Agent，支持从终端直接进行智能笔记搜索、摘要、链接和知识管理。\n\n## 主要特性\n\n- 与 Claude Code 及其他 AI 编码 Agent 的跨 CLI 集成。\n- 将 Obsidian 知识库变为可查询的 AI 知识库。\n- 跨笔记的智能搜索、摘要和链接。\n- MIT 协议，可扩展。\n\n## 使用场景\n\n- 通过 AI Agent 查询和综合 Obsidian 知识库中的知识。\n- 自动化笔记链接和知识图谱构建。\n- 在编码和研究过程中用 AI 发现相关笔记。\n\n## 技术特点\n\n- GitHub 1,700+ Star。\n- 面向 AI 原生知识工作者设计。"
+    },
+    "score": {},
+    "repoSlug": "eugeniughelbur/obsidian-second-brain",
     "totalScore": null,
     "scorePercent": null,
     "taxonomyReason": "explicit",
@@ -14924,6 +15263,44 @@
     "categoryNameEn": "Developer Tooling",
     "subCategoryNameZh": "编程智能体",
     "subCategoryNameEn": "Coding Agents"
+  },
+  {
+    "name": "Open Generative AI",
+    "slug": "open-generative-ai",
+    "homepage": null,
+    "repo": "https://github.com/Anil-matcha/Open-Generative-AI",
+    "license": "Unknown",
+    "category": "models-modalities",
+    "subCategory": "image-video-generation",
+    "tags": [
+      "Image Generation",
+      "Video Generation",
+      "Open Source",
+      "Multi-model"
+    ],
+    "description": {
+      "en": "Open-source alternative to AI video platforms with 200+ models including Flux, Midjourney-style generation, and video creation studio.",
+      "zh": "AI 视频平台的开源替代方案，内置 200+ 模型，支持 Flux、Midjourney 风格生成和视频创作工作室。"
+    },
+    "logo": "",
+    "author": "Anil Matcha",
+    "ossDate": "2023-05-09T00:00:00Z",
+    "featured": true,
+    "status": "tracked",
+    "source": {},
+    "content": {
+      "en": "## Overview\n\nOpen Generative AI is an open-source alternative to commercial AI video and image generation platforms. It provides a studio interface with 200+ models including Flux, Midjourney-style image generation, and video creation capabilities, all running locally or self-hosted.\n\n## Key Features\n\n- 200+ AI models for image and video generation.\n- Midjourney-style image generation with Flux and other models.\n- Video creation studio with multiple generation pipelines.\n- Self-hosted with no API costs.\n\n## Use Cases\n\n- Generate images and videos without relying on commercial platforms.\n- Run AI generation locally for privacy and cost savings.\n- Build custom image and video generation workflows.\n\n## Technical Details\n\n- 17,800+ GitHub stars.\n- Supports local and self-hosted deployment.\n- No license specified — verify before commercial use.",
+      "zh": "## 简介\n\nOpen Generative AI 是商业 AI 视频和图像生成平台的开源替代方案。提供包含 200+ 模型的工作室界面，支持 Flux、Midjourney 风格图像生成和视频创作，可本地或自托管运行。\n\n## 主要特性\n\n- 200+ AI 模型用于图像和视频生成。\n- Midjourney 风格图像生成，支持 Flux 等模型。\n- 视频创作工作室，多种生成管线。\n- 自托管，无 API 费用。\n\n## 使用场景\n\n- 不依赖商业平台生成图像和视频。\n- 本地运行 AI 生成，保护隐私并节省成本。\n- 构建自定义图像和视频生成工作流。\n\n## 技术特点\n\n- GitHub 17,800+ Star。\n- 支持本地和自托管部署。\n- 未指定协议——商业使用前请确认。"
+    },
+    "score": {},
+    "repoSlug": "anil-matcha/open-generative-ai",
+    "totalScore": null,
+    "scorePercent": null,
+    "taxonomyReason": "explicit",
+    "categoryNameZh": "模型与多模态",
+    "categoryNameEn": "Models & Modalities",
+    "subCategoryNameZh": "图像与视频生成",
+    "subCategoryNameEn": "Image & Video Generation"
   },
   {
     "name": "Open Interpreter",
@@ -18568,6 +18945,44 @@
     "subCategoryNameEn": "Agent Frameworks"
   },
   {
+    "name": "SkillSpector",
+    "slug": "skillspector",
+    "homepage": null,
+    "repo": "https://github.com/nvidia/skillspector",
+    "license": "Apache-2.0",
+    "category": "training-optimization",
+    "subCategory": "safety-guardrails",
+    "tags": [
+      "Security",
+      "Safety",
+      "Agent Skills",
+      "Vulnerability Scanner"
+    ],
+    "description": {
+      "en": "Security scanner for AI agent skills by NVIDIA that detects vulnerabilities, malicious patterns, and security risks across 64 vulnerability patterns in 16 categories.",
+      "zh": "NVIDIA 出品的 AI Agent 技能安全扫描器，覆盖 16 大类 64 种漏洞模式，检测恶意模式和安全风险。"
+    },
+    "logo": "",
+    "author": "NVIDIA",
+    "ossDate": "2026-03-21T00:28:43Z",
+    "featured": false,
+    "status": "tracked",
+    "source": {},
+    "content": {
+      "en": "## Overview\n\nSkillSpector is a security scanner for AI agent skills built by NVIDIA. It answers \"Is this skill safe to install?\" by detecting vulnerabilities, malicious patterns, and security risks before installation. Research shows 26.1% of skills contain vulnerabilities and 5.2% show likely malicious intent.\n\n## Key Features\n\n- 64 vulnerability patterns across 16 categories including prompt injection, data exfiltration, privilege escalation, and supply chain risks.\n- Two-stage analysis: fast static analysis with optional LLM semantic evaluation.\n- Multi-format input: scan Git repos, URLs, zip files, directories, or single files.\n- Risk scoring with 0-100 score, severity labels, and clear recommendations.\n\n## Use Cases\n\n- Audit AI agent skills before installing them in Claude Code, Codex CLI, or Gemini CLI.\n- Scan skill repositories for supply chain attacks and malicious patterns.\n- Integrate security scanning into CI/CD pipelines for agent skill development.\n\n## Technical Details\n\n- NVIDIA official project, Apache 2.0 licensed.\n- Live vulnerability lookups via OSV.dev with offline fallback.\n- Outputs terminal, JSON, Markdown, and SARIF reports.",
+      "zh": "## 简介\n\nSkillSpector 是 NVIDIA 构建的 AI Agent 技能安全扫描器。它回答\"这个技能安全吗？\"——在安装前检测漏洞、恶意模式和安全风险。研究表明 26.1% 的技能包含漏洞，5.2% 有明显恶意意图。\n\n## 主要特性\n\n- 16 大类 64 种漏洞模式，覆盖提示注入、数据泄露、权限提升和供应链风险。\n- 两阶段分析：快速静态分析 + 可选 LLM 语义评估。\n- 多格式输入：扫描 Git 仓库、URL、zip 文件、目录或单文件。\n- 0-100 风险评分，带严重级别标签和明确建议。\n\n## 使用场景\n\n- 在安装 Claude Code、Codex CLI 或 Gemini CLI 的技能前进行安全审计。\n- 扫描技能仓库检测供应链攻击和恶意模式。\n- 将安全扫描集成到 Agent 技能开发的 CI/CD 流水线中。\n\n## 技术特点\n\n- NVIDIA 官方项目，Apache 2.0 协议。\n- 通过 OSV.dev 实时漏洞查询，支持离线降级。\n- 输出终端、JSON、Markdown 和 SARIF 格式报告。"
+    },
+    "score": {},
+    "repoSlug": "nvidia/skillspector",
+    "totalScore": null,
+    "scorePercent": null,
+    "taxonomyReason": "explicit",
+    "categoryNameZh": "训练、评测与优化",
+    "categoryNameEn": "Training, Evaluation & Optimization",
+    "subCategoryNameZh": "安全与护栏",
+    "subCategoryNameEn": "Safety & Guardrails"
+  },
+  {
     "name": "Skypilot",
     "slug": "skypilot",
     "homepage": "https://skypilot.ai/",
@@ -21177,6 +21592,44 @@
     "subCategoryNameEn": "Agent Frameworks"
   },
   {
+    "name": "Vibe-Trading",
+    "slug": "vibe-trading",
+    "homepage": "https://vibetrading.wiki",
+    "repo": "https://github.com/HKUDS/Vibe-Trading",
+    "license": "MIT",
+    "category": "agents",
+    "subCategory": "agent-frameworks",
+    "tags": [
+      "Trading Agent",
+      "Multi-Agent",
+      "Quantitative Finance",
+      "MCP"
+    ],
+    "description": {
+      "en": "Your personal AI trading agent with multi-agent architecture, backtesting, and MCP integration for algorithmic trading.",
+      "zh": "个人 AI 交易 Agent，多 Agent 架构，内置回测和 MCP 集成，支持算法化交易。"
+    },
+    "logo": "",
+    "author": "HKUDS",
+    "ossDate": "2026-04-01T09:52:20Z",
+    "featured": false,
+    "status": "tracked",
+    "source": {},
+    "content": {
+      "en": "## Overview\n\nVibe-Trading is a personal AI trading agent from HKUDS that combines multi-agent architecture with backtesting and MCP integration for algorithmic trading. It provides a one-command setup to empower AI agents with comprehensive trading capabilities.\n\n## Key Features\n\n- Multi-agent architecture for trading strategy development.\n- Built-in backtesting engine for strategy validation.\n- MCP server integration for agent-driven trading.\n- Shadow account system for risk-free testing.\n\n## Use Cases\n\n- Develop and backtest AI-driven trading strategies.\n- Run automated trading agents with MCP protocol integration.\n- Test strategies with shadow accounts before live deployment.\n\n## Technical Details\n\n- 9,300+ GitHub stars.\n- Built with Python (FastAPI backend) and React frontend.\n- HKUDS (Hong Kong University Data Science) research project.",
+      "zh": "## 简介\n\nVibe-Trading 是 HKUDS 推出的个人 AI 交易 Agent，结合多 Agent 架构、回测引擎和 MCP 集成，支持算法化交易。一条命令即可为 AI Agent 赋予全面的交易能力。\n\n## 主要特性\n\n- 多 Agent 架构用于交易策略开发。\n- 内置回测引擎用于策略验证。\n- MCP server 集成实现 Agent 驱动交易。\n- 影子账户系统用于无风险测试。\n\n## 使用场景\n\n- 开发和回测 AI 驱动的交易策略。\n- 通过 MCP 协议集成运行自动化交易 Agent。\n- 在实盘部署前用影子账户测试策略。\n\n## 技术特点\n\n- GitHub 9,300+ Star。\n- 使用 Python（FastAPI 后端）和 React 前端构建。\n- HKUDS（香港大学数据科学）研究项目。"
+    },
+    "score": {},
+    "repoSlug": "hkuds/vibe-trading",
+    "totalScore": null,
+    "scorePercent": null,
+    "taxonomyReason": "explicit",
+    "categoryNameZh": "智能体系统",
+    "categoryNameEn": "Agent Systems",
+    "subCategoryNameZh": "智能体框架",
+    "subCategoryNameEn": "Agent Frameworks"
+  },
+  {
     "name": "VibeVoice",
     "slug": "vibevoice",
     "homepage": null,
@@ -21438,6 +21891,44 @@
     "categoryNameEn": "Agent Systems",
     "subCategoryNameZh": "智能体框架",
     "subCategoryNameEn": "Agent Frameworks"
+  },
+  {
+    "name": "Voicebox",
+    "slug": "voicebox",
+    "homepage": null,
+    "repo": "https://github.com/jamiepine/voicebox",
+    "license": "MIT",
+    "category": "models-modalities",
+    "subCategory": "audio-speech",
+    "tags": [
+      "Audio",
+      "Speech",
+      "Voice Cloning",
+      "TTS"
+    ],
+    "description": {
+      "en": "Open-source AI voice studio for voice cloning, dictation, and audio creation with a modern web interface.",
+      "zh": "开源 AI 语音工作室，支持声音克隆、听写和音频创作，提供现代化 Web 界面。"
+    },
+    "logo": "",
+    "author": "Jamie Pine",
+    "ossDate": "2026-01-25T00:00:00Z",
+    "featured": true,
+    "status": "tracked",
+    "source": {},
+    "content": {
+      "en": "## Overview\n\nVoicebox is an open-source AI voice studio that provides voice cloning, dictation, and audio creation capabilities. It combines multiple AI voice models into a single, easy-to-use interface for creators, developers, and content producers.\n\n## Key Features\n\n- Voice cloning from short audio samples.\n- Speech-to-text dictation with high accuracy.\n- Multi-model support for diverse voice generation tasks.\n- Modern web-based studio interface.\n\n## Use Cases\n\n- Clone your voice for content creation and podcasting.\n- Generate voiceovers for videos and presentations.\n- Transcribe audio recordings with AI-powered dictation.\n\n## Technical Details\n\n- 29,000+ GitHub stars, one of the most popular open-source voice tools.\n- MIT licensed, fully open-source and self-hostable.",
+      "zh": "## 简介\n\nVoicebox 是一个开源 AI 语音工作室，提供声音克隆、听写和音频创作功能。它将多种 AI 语音模型整合到一个易用的界面中，面向创作者、开发者和内容生产者。\n\n## 主要特性\n\n- 从短音频样本克隆声音。\n- 高精度语音转文字听写。\n- 多模型支持，覆盖多种语音生成任务。\n- 现代化 Web 工作室界面。\n\n## 使用场景\n\n- 克隆自己的声音用于内容创作和播客。\n- 为视频和演示文稿生成配音。\n- 使用 AI 听写转录音频录音。\n\n## 技术特点\n\n- GitHub 29,000+ Star，最受欢迎的开源语音工具之一。\n- MIT 协议，完全开源可自托管。"
+    },
+    "score": {},
+    "repoSlug": "jamiepine/voicebox",
+    "totalScore": null,
+    "scorePercent": null,
+    "taxonomyReason": "explicit",
+    "categoryNameZh": "模型与多模态",
+    "categoryNameEn": "Models & Modalities",
+    "subCategoryNameZh": "语音与音频",
+    "subCategoryNameEn": "Audio & Speech"
   },
   {
     "name": "Volcano",
