@@ -1716,15 +1716,16 @@
     "homepage": "https://iceberg.apache.org/",
     "repo": "https://github.com/apache/iceberg",
     "license": "Unknown",
-    "category": "applications-products",
-    "subCategory": "productivity-tools",
+    "category": "platform-infra",
+    "subCategory": "data-platforms",
     "tags": [
-      "Application",
-      "Data"
+      "Data Platform",
+      "Data Lake",
+      "Table Format"
     ],
     "description": {
-      "en": "A high-performance table format for huge analytic tables, offering snapshots, transactions and multi-engine compatibility.",
-      "zh": "面向大规模分析表的高性能表格式，提供事务性、快照和多引擎兼容的表存储规范。"
+      "en": "A high-performance table format for huge analytic tables, offering snapshots, transactions and multi-engine compatibility. Widely used in AI data pipelines and ML feature stores.",
+      "zh": "面向大规模分析表的高性能表格式，提供事务性、快照和多引擎兼容的表存储规范，广泛应用于 AI 数据管线和 ML 特征存储。"
     },
     "logo": "",
     "author": "Apache",
@@ -1741,10 +1742,10 @@
     "totalScore": null,
     "scorePercent": null,
     "taxonomyReason": "explicit",
-    "categoryNameZh": "应用与体验",
-    "categoryNameEn": "Applications & Experience",
-    "subCategoryNameZh": "效率工具",
-    "subCategoryNameEn": "Productivity Tools"
+    "categoryNameZh": "平台与基础设施",
+    "categoryNameEn": "Platform & Infrastructure",
+    "subCategoryNameZh": "数据平台",
+    "subCategoryNameEn": "Data Platforms"
   },
   {
     "name": "Apache Spark",
@@ -4524,38 +4525,40 @@
   {
     "name": "Compounding Engineering Plugin",
     "slug": "compounding-engineering-plugin",
-    "homepage": null,
-    "repo": "https://github.com/everyinc/compounding-engineering-plugin",
-    "license": "Unknown",
-    "category": "inference-serving",
-    "subCategory": "inference-runtimes",
+    "homepage": "https://every.to/guides/compound-engineering",
+    "repo": "https://github.com/EveryInc/compound-engineering-plugin",
+    "license": "MIT",
+    "category": "coding-devtools",
+    "subCategory": "ide-cli-tools",
     "tags": [
-      "Dev Tools",
-      "Tool"
+      "Coding Agent",
+      "Plugin",
+      "Claude Code",
+      "Cursor"
     ],
     "description": {
-      "en": "An open-source plugin for engineering compounding scenarios that integrates with Claude Code.",
-      "zh": "一个面向工程复合场景的开源插件，提供与 Claude Code 集成的复合工程能力。"
+      "en": "Official plugin for Claude Code, Codex, Cursor, and more that brings compounding engineering workflows to AI-powered coding assistants.",
+      "zh": "面向 Claude Code、Codex、Cursor 等 AI 编程助手的复合工程（Compound Engineering）官方插件，将迭代增强的工程工作流引入编码工具。"
     },
     "logo": "",
     "author": "EveryInc",
     "ossDate": "2025-10-09T19:43:46Z",
-    "featured": false,
+    "featured": true,
     "status": "tracked",
     "source": {},
     "content": {
-      "en": "## Detailed Introduction\n\nThe Compounding Engineering Plugin, provided by EveryInc, is an open-source plugin designed to bring Claude Code's compounding engineering capabilities into developers' workflows and toolchains. Targeting engineering-grade scenarios, the plugin supports multi-step task composition, context management, and reusable engineering patterns to decompose complex tasks and coordinate execution via model capabilities, improving automation coverage and engineering productivity.\n\n## Main Features\n\n- Integration with Claude Code to orchestrate and execute compounding engineering tasks.\n- Context management and multi-step task composition for automating complex scenarios.\n- Plugin-first design for easy reuse and extension within existing toolchains.\n- Open-source implementation for auditing and customization.\n\n## Use Cases\n\n- Automate multi-step code generation and integration test workflows to shorten delivery cycles.\n- Use model capabilities to coordinate cross-system tasks, such as automated release steps in CI pipelines.\n- Serve as an internal team tool to improve collaboration on decomposing and executing complex engineering tasks.\n\n## Technical Features\n\n- Plugin architecture for integration with developer tools and CI/CD pipelines.\n- State and context management for multi-step tasks to improve continuity and consistency.\n- Focus on reuse and auditability to reduce uncertainty in automation processes.\n- Community-driven implementation to facilitate contributions and security reviews.",
-      "zh": "## 详细介绍\n\nCompounding Engineering Plugin 是一个由 EveryInc 提供的开源插件，旨在将 Claude Code 的复合工程（compounding engineering）能力集成到开发者的工作流与工具链中。该插件面向工程级场景，支持多步任务组合、上下文管理与可复用的工程模式，使开发者能够将复杂任务拆解并通过模型能力进行协调执行，从而提升自动化覆盖率与工程效率。\n\n## 主要特性\n\n- 与 Claude Code 集成以支持复合工程任务的编排与执行。\n- 提供上下文管理与多步骤任务组合能力，便于实现复杂场景自动化。\n- 面向工程实践的插件化设计，便于在现有工具链中复用与扩展。\n- 开源实现，便于审计与定制化扩展。\n\n## 使用场景\n\n- 自动化多步骤代码生成与集成测试流程以缩短交付周期。\n- 将模型能力用于跨系统任务协调，例如在 CI 流程中自动化发布步骤。\n- 作为团队内部工具，提升工程师在复杂任务拆解与执行上的协作效率。\n\n## 技术特点\n\n- 插件化架构，便于与现有开发工具和 CI/CD 流程集成。\n- 支持多步任务的状态与上下文管理，提高任务连续性与一致性。\n- 聚焦工程可复用性与可审计性，减少自动化过程中的不确定性。\n- 社区驱动的实现，便于贡献与安全审计。"
+      "en": "## Overview\n\nThe Compounding Engineering Plugin by Every is an open-source plugin that integrates compounding engineering workflows into AI-powered coding assistants including Claude Code, OpenAI Codex, and Cursor. It enables developers to build iterative, self-reinforcing engineering processes that compound improvements over time.\n\n## Key Features\n\n- Seamless integration with Claude Code, Codex, Cursor, and other AI coding tools.\n- Compounding engineering patterns that build on previous work to accelerate development.\n- Plugin-first architecture for easy adoption in existing developer workflows.\n- Open-source MIT license for full transparency and customization.\n\n## Use Cases\n\n- Automate multi-step code generation and refactoring tasks that build on each other.\n- Create self-improving development workflows where AI agents learn from prior iterations.\n- Standardize engineering best practices across teams using AI-powered coding assistants.\n\n## Technical Details\n\n- 18,800+ GitHub stars, widely adopted in the AI coding community.\n- Plugin architecture compatible with major AI coding assistants.\n- Designed around the compounding engineering methodology from Every.",
+      "zh": "## 简介\n\nCompounding Engineering Plugin 是 Every 推出的开源插件，支持 Claude Code、OpenAI Codex、Cursor 等主流 AI 编程助手。它将复合工程（Compound Engineering）方法论融入开发流程，使 AI 辅助编码能够基于前序工作不断迭代和增强。\n\n## 主要特性\n\n- 无缝集成 Claude Code、Codex、Cursor 等 AI 编程工具。\n- 复合工程模式：每次迭代在前序成果上构建，持续加速开发。\n- 插件化架构，轻松接入现有开发者工作流。\n- MIT 开源协议，完全透明可定制。\n\n## 使用场景\n\n- 自动化多步骤代码生成和重构任务，每步基于上一步的成果。\n- 构建自我增强的开发工作流，让 AI 编程助手从历史迭代中学习。\n- 在团队中标准化 AI 编程的最佳实践和工程模式。\n\n## 技术特点\n\n- GitHub 18,800+ Star，AI 编程社区广泛采用。\n- 插件架构兼容主流 AI 编程助手。\n- 基于 Every 提出的复合工程方法论设计。"
     },
     "score": {},
-    "repoSlug": "everyinc/compounding-engineering-plugin",
+    "repoSlug": "everyinc/compound-engineering-plugin",
     "totalScore": null,
     "scorePercent": null,
     "taxonomyReason": "explicit",
-    "categoryNameZh": "推理与运行时",
-    "categoryNameEn": "Inference & Runtime",
-    "subCategoryNameZh": "推理运行时",
-    "subCategoryNameEn": "Inference Runtimes"
+    "categoryNameZh": "开发者工具链",
+    "categoryNameEn": "Developer Tooling",
+    "subCategoryNameZh": "IDE 与 CLI 工具",
+    "subCategoryNameEn": "IDE & CLI Tools"
   },
   {
     "name": "Conductor OSS",
@@ -14381,6 +14384,82 @@
     "subCategoryNameEn": "Audio & Speech"
   },
   {
+    "name": "NVIDIA AI Cluster Runtime",
+    "slug": "aicr",
+    "homepage": "https://docs.nvidia.com/aicr/",
+    "repo": "https://github.com/NVIDIA/aicr",
+    "license": "Apache-2.0",
+    "category": "platform-infra",
+    "subCategory": "cloud-native-ai",
+    "tags": [
+      "GPU",
+      "Kubernetes",
+      "Cloud Native",
+      "Infrastructure"
+    ],
+    "description": {
+      "en": "NVIDIA AI Cluster Runtime (AICR) generates optimized, validated, and reproducible GPU-accelerated Kubernetes cluster configurations for AI training and inference.",
+      "zh": "NVIDIA AI Cluster Runtime（AICR）生成经过优化、验证和可复现的 GPU 加速 Kubernetes 集群配置，用于 AI 训练和推理环境搭建。"
+    },
+    "logo": "",
+    "author": "NVIDIA",
+    "ossDate": "2026-01-30T19:02:59Z",
+    "featured": false,
+    "status": "tracked",
+    "source": {},
+    "content": {
+      "en": "## Overview\n\nNVIDIA AI Cluster Runtime (AICR) makes it easy to stand up GPU-accelerated Kubernetes clusters by capturing known-good combinations of drivers, operators, kernels, and system configurations as version-locked recipes. It generates reproducible deployment artifacts for Helm, Argo CD, Flux, and Helmfile, solving the hardest problem in AI infrastructure — environment consistency.\n\n## Key Features\n\n- Recipe engine generating version-locked GPU K8s configurations validated by NVIDIA.\n- Multi-deployer bundles for Helm, Argo CD, Flux, and Helmfile.\n- Multi-phase validation covering deployment, performance (training and inference), and conformance.\n- Drift detection comparing cluster snapshots to surface configuration changes.\n- Supply chain security with SLSA Level 3 provenance, signed SBOMs, and Cosign attestations.\n\n## Use Cases\n\n- Stand up validated GPU K8s clusters for AI training or inference in minutes.\n- Ensure reproducible GPU environments across teams and regions.\n- Detect and remediate configuration drift in production GPU clusters.\n- Integrate GPU infrastructure provisioning into CI/CD and GitOps pipelines.\n\n## Technical Details\n\n- Single CLI binary for full workflow: snapshot, recipe, bundle, validate, verify, diff.\n- Supports EKS, GKE, AKS, Kind, and more with H100, B200, GB200, A100 accelerators.\n- Composable overlay architecture: base defaults layered with cloud, accelerator, OS, and workload tuning.\n- Go SDK available for programmatic integration without subprocess or REST calls.",
+      "zh": "## 简介\n\nNVIDIA AI Cluster Runtime（AICR）让 GPU 加速 Kubernetes 集群的搭建变得简单。它将 NVIDIA 验证过的驱动、Operator、内核和系统配置组合捕获为版本锁定的 recipe，生成可复现的部署产物，支持 Helm、Argo CD、Flux 和 Helmfile。解决了 AI 基础设施最头疼的问题——环境一致性。\n\n## 主要特性\n\n- Recipe 引擎生成由 NVIDIA 验证的版本锁定 GPU K8s 配置。\n- 多部署器产物，支持 Helm、Argo CD、Flux 和 Helmfile。\n- 多阶段验证覆盖部署、性能（训练和推理）和一致性。\n- 配置漂移检测，对比集群快照发现配置变化。\n- 供应链安全：SLSA Level 3 来源证明、签名 SBOM 和 Cosign 认证。\n\n## 使用场景\n\n- 几分钟内搭建经过验证的 GPU K8s 集群用于 AI 训练或推理。\n- 确保跨团队和跨区域的 GPU 环境可复现。\n- 检测并修复生产 GPU 集群的配置漂移。\n- 将 GPU 基础设施配置集成到 CI/CD 和 GitOps 流水线。\n\n## 技术特点\n\n- 单一 CLI 二进制文件覆盖全流程：快照、配方、打包、验证、校验、差异对比。\n- 支持 EKS、GKE、AKS、Kind 等，适配 H100、B200、GB200、A100 加速器。\n- 可组合 Overlay 架构：基础默认值逐层叠加云、加速器、OS 和工作负载调优。\n- 提供 Go SDK 支持进程内集成，无需子进程或 REST 调用。"
+    },
+    "score": {},
+    "repoSlug": "nvidia/aicr",
+    "totalScore": null,
+    "scorePercent": null,
+    "taxonomyReason": "explicit",
+    "categoryNameZh": "平台与基础设施",
+    "categoryNameEn": "Platform & Infrastructure",
+    "subCategoryNameZh": "云原生 AI",
+    "subCategoryNameEn": "Cloud Native AI"
+  },
+  {
+    "name": "NVIDIA Cloud Functions",
+    "slug": "nvcf",
+    "homepage": "https://docs.nvidia.com/nvcf/overview",
+    "repo": "https://github.com/NVIDIA/nvcf",
+    "license": "Apache-2.0",
+    "category": "inference-serving",
+    "subCategory": "model-serving",
+    "tags": [
+      "GPU",
+      "Inference",
+      "Serverless",
+      "Kubernetes"
+    ],
+    "description": {
+      "en": "NVIDIA Cloud Functions (NVCF) is a platform for deploying, managing, and running GPU-accelerated inference and streaming workloads at scale, powering build.nvidia.com.",
+      "zh": "NVIDIA Cloud Functions（NVCF）是面向 GPU 加速推理和流式工作负载的 serverless 平台，支撑 build.nvidia.com。"
+    },
+    "logo": "",
+    "author": "NVIDIA",
+    "ossDate": "2026-04-01T19:22:14Z",
+    "featured": false,
+    "status": "tracked",
+    "source": {},
+    "content": {
+      "en": "## Overview\n\nNVIDIA Cloud Functions (NVCF) is a GPU-accelerated serverless platform for deploying, managing, and running inference, streaming, and other GPU workloads at scale. It routes requests across multi-region GPU clusters with load balancing, autoscaling, and mixed GPU support. NVCF is the underlying engine for build.nvidia.com.\n\n## Key Features\n\n- Unified control plane managing function lifecycle across multi-region GPU clusters.\n- Load-balanced workload routing for inference, streaming, and custom GPU workloads.\n- Multi-cluster autoscaling from zero to max with mixed GPU type support.\n- Supports HTTP, streaming, and gRPC protocols for different workload needs.\n- Long-running functions and asynchronous run-to-completion tasks.\n\n## Use Cases\n\n- Deploy GPU inference endpoints at scale without managing infrastructure.\n- Run batch inference, fine-tuning, and evaluation as asynchronous tasks.\n- Stream real-time AI responses across multi-region GPU clusters.\n\n## Technical Details\n\n- Runs as Kubernetes services with control plane, invocation plane, and compute plane separation.\n- GPU clusters connect through NVIDIA Cluster Agent (NVCA) for resource registration and workload execution.\n- Includes CLI, Go/Python libraries, Helm-based deployment, and observability dashboards.\n- Built-in AI tooling with agent skills and workflow helpers for NVCF users.",
+      "zh": "## 简介\n\nNVIDIA Cloud Functions（NVCF）是 NVIDIA 推出的 GPU 加速 serverless 平台，用于大规模部署、管理和运行推理、流式传输及其他 GPU 工作负载。它支持跨多区域 GPU 集群的请求路由、负载均衡、自动伸缩和混合 GPU 类型。build.nvidia.com 即基于 NVCF 构建。\n\n## 主要特性\n\n- 统一控制平面管理跨多区域 GPU 集群的函数生命周期。\n- 面向推理、流式和自定义 GPU 工作负载的负载均衡路由。\n- 多集群自动伸缩，支持从零到最大实例，兼容混合 GPU 类型。\n- 支持 HTTP、流式和 gRPC 协议。\n- 长驻函数和异步一次性任务两种工作负载模式。\n\n## 使用场景\n\n- 无需管理基础设施即可大规模部署 GPU 推理端点。\n- 将批量推理、微调和评测作为异步任务运行。\n- 跨多区域 GPU 集群流式传输实时 AI 响应。\n\n## 技术特点\n\n- 以 Kubernetes 服务运行，采用控制面、调用面、计算面三层分离架构。\n- GPU 集群通过 NVIDIA Cluster Agent（NVCA）注册资源并管理工作负载执行。\n- 提供 CLI、Go/Python 库、Helm 部署方案和可观测性仪表盘。\n- 内置 AI 工具，提供 Agent Skills 和工作流辅助工具。"
+    },
+    "score": {},
+    "repoSlug": "nvidia/nvcf",
+    "totalScore": null,
+    "scorePercent": null,
+    "taxonomyReason": "explicit",
+    "categoryNameZh": "推理与运行时",
+    "categoryNameEn": "Inference & Runtime",
+    "subCategoryNameZh": "模型服务",
+    "subCategoryNameEn": "Model Serving"
+  },
+  {
     "name": "NVIDIA GPU Operator",
     "slug": "nvidia-gpu-operator",
     "homepage": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/",
@@ -16085,15 +16164,16 @@
     "homepage": "https://pandas.pydata.org",
     "repo": "https://github.com/pandas-dev/pandas",
     "license": "Unknown",
-    "category": "applications-products",
-    "subCategory": "productivity-tools",
+    "category": "coding-devtools",
+    "subCategory": "developer-utilities",
     "tags": [
-      "Application",
-      "Data"
+      "Data Processing",
+      "Python",
+      "ML Pipeline"
     ],
     "description": {
-      "en": "pandas is an open-source Python library for structured data manipulation and analysis.",
-      "zh": "pandas 是用于结构化数据处理与分析的开源 Python 库，提供高效的 DataFrame 与丰富的数据操作接口。"
+      "en": "pandas is an open-source Python library for structured data manipulation and analysis, a core dependency in ML and AI data preprocessing workflows.",
+      "zh": "pandas 是用于结构化数据处理与分析的开源 Python 库，是 ML 和 AI 数据预处理工作流的核心依赖。"
     },
     "logo": "",
     "author": "pandas-dev",
@@ -16110,10 +16190,10 @@
     "totalScore": null,
     "scorePercent": null,
     "taxonomyReason": "explicit",
-    "categoryNameZh": "应用与体验",
-    "categoryNameEn": "Applications & Experience",
-    "subCategoryNameZh": "效率工具",
-    "subCategoryNameEn": "Productivity Tools"
+    "categoryNameZh": "开发者工具链",
+    "categoryNameEn": "Developer Tooling",
+    "subCategoryNameZh": "开发者工具",
+    "subCategoryNameEn": "Developer Utilities"
   },
   {
     "name": "PandaWiki",
@@ -20790,7 +20870,7 @@
     "author": "Valkey Project",
     "ossDate": "2024-03-22T00:42:17Z",
     "featured": false,
-    "status": "tracked",
+    "status": "archived",
     "source": {},
     "content": {
       "en": "## Detailed Introduction\n\nValkey is a high-performance distributed key-value database optimized for caching and real-time workloads. It preserves the familiarity of Redis while offering native data structures, a modular plugin system, and flexible persistence and replication strategies to meet high-concurrency, low-latency requirements. The project is community-driven and hosted on GitHub with documentation and releases available on the official site.\n\n## Main Features\n\n- Redis protocol compatibility for easy migration and ecosystem interoperability.\n- Rich native data structures and extension points for custom modules and access patterns.\n- Optimized execution paths and optional memory allocators to improve throughput and reduce latency.\n- Support for TLS, RDMA, and cross-platform builds (Linux, macOS, *BSD) for enterprise deployments.\n\n## Use Cases\n\n- High-concurrency caching and session stores that require minimal access latency and high throughput.\n- Real-time counters, leaderboards, and ephemeral state management.\n- System migrations that require Redis compatibility but demand scalable performance.\n- Deployments in distributed environments that benefit from module extensions or specialized transports (e.g., RDMA).\n\n## Technical Features\n\n- Modular architecture and plugin system for extending commands and data structures.\n- Multiple build options (Makefile / CMake) and platform support to integrate into CI/CD pipelines.\n- Comprehensive test and benchmark suites, with runtime tuning options for production workloads.\n- Community-driven development; source hosted on GitHub (see `oss_date` frontmatter) with an active contributor base.\n\n## Summary\n\nValkey is an open-source key-value database engineered for production use, suitable for caching and real-time systems with strict latency and throughput requirements. Visit the project homepage or repository to learn more.",

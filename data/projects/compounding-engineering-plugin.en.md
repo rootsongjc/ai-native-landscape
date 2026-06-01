@@ -1,42 +1,43 @@
 ---
 name: Compounding Engineering Plugin
 slug: compounding-engineering-plugin
-homepage: null
-repo: https://github.com/everyinc/compounding-engineering-plugin
-license: Unknown
-category: inference-serving
-subCategory: inference-runtimes
+homepage: https://every.to/guides/compound-engineering
+repo: https://github.com/EveryInc/compound-engineering-plugin
+license: MIT
+category: coding-devtools
+subCategory: ide-cli-tools
 tags:
-  - Dev Tools
-  - Tool
-description: An open-source plugin for engineering compounding scenarios that integrates with Claude Code.
+  - Coding Agent
+  - Plugin
+  - Claude Code
+  - Cursor
+description: Official plugin for Claude Code, Codex, Cursor, and more that brings compounding engineering workflows to AI-powered coding assistants.
 logo: ''
 author: EveryInc
 ossDate: '2025-10-09T19:43:46Z'
-featured: false
+featured: true
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-The Compounding Engineering Plugin, provided by EveryInc, is an open-source plugin designed to bring Claude Code's compounding engineering capabilities into developers' workflows and toolchains. Targeting engineering-grade scenarios, the plugin supports multi-step task composition, context management, and reusable engineering patterns to decompose complex tasks and coordinate execution via model capabilities, improving automation coverage and engineering productivity.
+The Compounding Engineering Plugin by Every is an open-source plugin that integrates compounding engineering workflows into AI-powered coding assistants including Claude Code, OpenAI Codex, and Cursor. It enables developers to build iterative, self-reinforcing engineering processes that compound improvements over time.
 
-## Main Features
+## Key Features
 
-- Integration with Claude Code to orchestrate and execute compounding engineering tasks.
-- Context management and multi-step task composition for automating complex scenarios.
-- Plugin-first design for easy reuse and extension within existing toolchains.
-- Open-source implementation for auditing and customization.
+- Seamless integration with Claude Code, Codex, Cursor, and other AI coding tools.
+- Compounding engineering patterns that build on previous work to accelerate development.
+- Plugin-first architecture for easy adoption in existing developer workflows.
+- Open-source MIT license for full transparency and customization.
 
 ## Use Cases
 
-- Automate multi-step code generation and integration test workflows to shorten delivery cycles.
-- Use model capabilities to coordinate cross-system tasks, such as automated release steps in CI pipelines.
-- Serve as an internal team tool to improve collaboration on decomposing and executing complex engineering tasks.
+- Automate multi-step code generation and refactoring tasks that build on each other.
+- Create self-improving development workflows where AI agents learn from prior iterations.
+- Standardize engineering best practices across teams using AI-powered coding assistants.
 
-## Technical Features
+## Technical Details
 
-- Plugin architecture for integration with developer tools and CI/CD pipelines.
-- State and context management for multi-step tasks to improve continuity and consistency.
-- Focus on reuse and auditability to reduce uncertainty in automation processes.
-- Community-driven implementation to facilitate contributions and security reviews.
+- 18,800+ GitHub stars, widely adopted in the AI coding community.
+- Plugin architecture compatible with major AI coding assistants.
+- Designed around the compounding engineering methodology from Every.

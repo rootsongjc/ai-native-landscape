@@ -4,12 +4,13 @@ slug: pandas
 homepage: https://pandas.pydata.org
 repo: https://github.com/pandas-dev/pandas
 license: Unknown
-category: applications-products
-subCategory: productivity-tools
+category: coding-devtools
+subCategory: developer-utilities
 tags:
-  - Application
-  - Data
-description: pandas 是用于结构化数据处理与分析的开源 Python 库，提供高效的 DataFrame 与丰富的数据操作接口。
+  - Data Processing
+  - Python
+  - ML Pipeline
+description: pandas 是用于结构化数据处理与分析的开源 Python 库，是 ML 和 AI 数据预处理工作流的核心依赖。
 logo: ''
 author: pandas-dev
 ossDate: '2010-08-24T01:37:33Z'

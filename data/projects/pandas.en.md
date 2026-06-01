@@ -4,12 +4,13 @@ slug: pandas
 homepage: https://pandas.pydata.org
 repo: https://github.com/pandas-dev/pandas
 license: Unknown
-category: applications-products
-subCategory: productivity-tools
+category: coding-devtools
+subCategory: developer-utilities
 tags:
-  - Application
-  - Data
-description: pandas is an open-source Python library for structured data manipulation and analysis.
+  - Data Processing
+  - Python
+  - ML Pipeline
+description: pandas is an open-source Python library for structured data manipulation and analysis, a core dependency in ML and AI data preprocessing workflows.
 logo: ''
 author: pandas-dev
 ossDate: '2010-08-24T01:37:33Z'
