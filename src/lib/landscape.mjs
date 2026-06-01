@@ -8,8 +8,8 @@ marked.use({
 export const SITE = {
   title: 'AI Native Landscape',
   description: 'The ecosystem map for building AI Native systems.',
-  image: '/og-wide.png',
-  imageSquare: '/og.png',
+  image: '/og-wide.jpg',
+  imageSquare: '/og.jpg',
   url: 'https://landscape.jimmysong.io',
   copyrightStartYear: 2017,
   license: 'Apache-2.0',
