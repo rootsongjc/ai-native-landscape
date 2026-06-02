@@ -2,6 +2,7 @@ node_modules/
 dist/
 .astro/
 .DS_Store
+exports/
 public/data/
 public/exports/
 public/og/projects/
