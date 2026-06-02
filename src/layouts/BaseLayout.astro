@@ -10,11 +10,11 @@ const {
   alternate = alternatePath(Astro.url.pathname, lang),
 } = Astro.props;
 const copy = ui(lang);
-const pageTitle = !title || title === SITE.title
-  ? SITE.title
-  : title.includes(SITE.title)
-    ? title
-    : `${title} | ${SITE.title}`;
+const siteTitle = lang === 'zh' ? copy.landscapeTitle : SITE.title;
+const isHomePage = !title || title === SITE.title;
+const pageTitle = isHomePage
+  ? (lang === 'zh' ? copy.homePageTitle : SITE.title)
+  : `${title} | ${siteTitle}`;
 const canonicalUrl = new URL(canonical, SITE.url).toString();
 const alternateUrl = new URL(alternate, SITE.url).toString();
 const defaultUrl = lang === 'zh' ? alternateUrl : canonicalUrl;

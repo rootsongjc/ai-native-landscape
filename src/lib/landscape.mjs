@@ -23,7 +23,7 @@ export const SITE = {
 export const UI = {
   zh: {
     htmlLang: 'zh-CN',
-    homePageTitle: 'AI Native Landscape | AI 原生全景图',
+    homePageTitle: 'AI 原生全景图',
     landscapeTitle: 'AI 原生全景图',
     subsiteLabel: 'jimmysong.io 出品',
     navMainSite: '主站',

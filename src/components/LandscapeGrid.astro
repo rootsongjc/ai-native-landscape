@@ -38,7 +38,7 @@ const searchIndex = landscape.projects.map((project) => ({
 const canonical = localizedPath('/', lang);
 ---
 
-<BaseLayout title={copy.homePageTitle} description={copy.metaDescription} canonical={canonical} lang={lang}>
+<BaseLayout title={SITE.title} description={copy.metaDescription} canonical={canonical} lang={lang}>
   <main class="landscape-page" data-landscape-page>
     <section class="landscape-hero" aria-labelledby="landscape-title">
       <div class="landscape-hero__card">
