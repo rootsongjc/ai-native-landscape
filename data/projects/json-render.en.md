@@ -18,26 +18,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-json-render is an open-source framework that constrains natural language or model outputs into structured JSON so AI only uses a predefined component catalog to describe UIs. This approach makes AI output predictable and safer to render. The project provides a core type system, a React renderer, and example apps to streamline AI-driven UI pipelines into renderable, interactive frontend components.
+json-render is an open-source JSON rendering engine that constrains AI-generated structured outputs into predictable, safe UI components. By limiting AI to a predefined component catalog, it ensures that model outputs are always renderable and type-safe, making it ideal for building AI-driven user interfaces with confidence.
 
-## Main Features
+## Key Features
 
-- Define available components and actions in a catalog as guardrails to keep model outputs within permitted boundaries.
-- Support streaming generation and progressive rendering to improve interactivity and reduce time-to-first-render.
-- Built-in validation and schema checks (e.g., zod) to guarantee output correctness.
-- Ships React renderer and example projects for easy integration and extension.
+The framework provides a component catalog system that acts as guardrails, keeping model outputs within permitted boundaries while supporting streaming generation and progressive rendering for improved interactivity. Built-in validation powered by zod schema checks guarantees output correctness, and the project ships with a React renderer and example apps for easy integration.
 
 ## Use Cases
 
-- Convert natural-language prompts into dashboards, reports, and visualization components.
-- Serve as a guardrail layer where model outputs require provable constraints before rendering.
-- Act as a frontend integration layer to render responses from RAG, LLMs, or other intelligent services into safe, interactive UI.
+json-render excels at converting natural-language prompts into dashboards, reports, and visualization components without risking unpredictable output. It serves as a guardrail layer where model outputs require provable constraints before rendering, and as a frontend integration layer for rendering RAG, LLM, or other AI service responses into safe, interactive UIs.
 
-## Technical Features
+## Technical Details
 
-- Monorepo with packages such as `@json-render/core` and `@json-render/react` allowing modular adoption.
-- Schema-driven validation (zod) for component props and actions to ensure type-safety and stability.
-- Action declarations with external callback binding enable mapping user interactions to backend operations.
-- Apache-2.0 license, active community, and playground/example apps for quick onboarding.
+Organized as a monorepo with modular packages such as `@json-render/core` and `@json-render/react`, json-render uses schema-driven validation to enforce type safety on component props and actions. Action declarations with external callback binding enable mapping user interactions to backend operations, and the project is licensed under Apache-2.0 with an active community and playground for quick onboarding.

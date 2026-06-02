@@ -16,25 +16,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Hyprnote is a local-first AI notepad focused on private meetings and privacy-preserving note taking. It combines local storage with optional cloud sync, prioritizing data control and offline availability while providing AI features for automated summaries and improved note retrieval.
+Hyprnote is an open-source AI-powered meeting notes and transcription tool, positioned as a Granola AI alternative that prioritizes privacy and local-first operation. It combines local storage with optional cloud sync to keep sensitive meeting data under user control while providing intelligent features such as automated summaries, transcription, and improved note retrieval for private and professional meetings.
 
-## Main Features
+## Key Features
 
-- Local-first storage: keeps data local by default to protect privacy and enable offline use.
-- Meeting assistant: automatically generates concise summaries and highlights to reduce manual work.
-- Cross-platform: built with modern front-end tech and Tauri for native-like desktop experiences.
-- Open-source: GPL-3.0 licensed for community contributions and review.
+Hyprnote provides local-first storage that keeps data on the user's device by default, an AI meeting assistant that automatically generates concise summaries and highlights, and cross-platform desktop support built with Tauri for a native-like experience. It is fully open-source under GPL-3.0, enabling community contributions and security review.
 
 ## Use Cases
 
-- Private meeting notes: capture sensitive discussion points and generate structured summaries.
-- Team draft collaboration: serve as a local tool for collaborative notes and brainstorming.
-- Academic note-taking: organize literature and discussions into searchable summaries.
+Hyprnote is ideal for capturing private meeting notes and generating structured summaries of sensitive discussions, serving as a local-first tool for team collaboration and brainstorming sessions, and organizing academic literature and discussions into searchable, AI-enhanced notes.
 
-## Technical Characteristics
+## Technical Details
 
-- Built with modern front-end frameworks and Tauri to balance performance and native UX.
-- Supports multiple model backends and local inference options for different privacy and performance needs.
-- License: GPL-3.0, promoting open-source collaboration and governance.
+Built with modern frontend frameworks and Tauri for native desktop performance, Hyprnote supports multiple model backends and local inference options to accommodate different privacy requirements and performance needs. Its local-first architecture ensures offline availability while optional cloud sync provides flexibility for collaborative workflows.

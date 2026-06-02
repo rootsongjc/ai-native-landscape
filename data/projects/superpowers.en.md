@@ -20,28 +20,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Superpowers is an open-source skills library and development workflow for coding agents. Before a coding agent writes code, Superpowers guides design refinement, presents designs in digestible chunks for approval, then produces an executable implementation plan. It then drives subagent-driven development with two-stage review to ensure implementations follow the plan. The project emphasizes test-driven development (RED-GREEN-REFACTOR) and process-driven simplicity to make autonomous coding predictable and verifiable.
+Superpowers is an open-source skills library and development workflow framework for coding agents that structures the software development process into verifiable, predictable stages. It enforces a test-driven RED-GREEN-REFACTOR cycle and uses subagent-driven parallel execution with two-stage reviews to ensure implementations match their design specifications.
 
-## Main Features
+## Key Features
 
-- Triggered skills (brainstorming, writing plans, executing plans, requesting code review) that activate at the right stages.
-- Enforced test-driven workflow to ensure changes are covered by failing tests before implementation.
-- Subagent-driven parallel task execution with two-stage reviews (spec compliance, code quality).
-- Built-in git worktree workflows, tmux monitoring, and plugin marketplace installation (e.g., Claude Code plugin).
-- Clear contributor guides for adding new skills under the `skills/` directory.
+The framework provides triggered skills that activate at the appropriate development stages, including brainstorming, plan writing, plan execution, and code review requests. It enforces test-driven development by requiring failing tests before implementation, supports parallel task execution via subagents with both spec-compliance and code-quality reviews, and includes built-in git worktree workflows and tmux monitoring for multi-agent orchestration.
 
 ## Use Cases
 
-- Hand off coding tasks to agents while maintaining design reviewability and auditability.
-- Rapidly build prototypes with strong test coverage using Superpowers' TDD-first workflow.
-- Break work into small tasks and execute them in parallel via subagents to accelerate delivery.
-- Reuse skills across agent platforms such as Claude Code, Codex, and OpenCode.
+Developers hand off coding tasks to agents while retaining full design reviewability and auditability over the process. Teams use Superpowers to rapidly build prototypes with strong test coverage, break large features into small parallel tasks for faster delivery, and share reusable skills across agent platforms like Claude Code, Codex, and OpenCode.
 
-## Technical Characteristics
+## Technical Details
 
-- Script- and config-driven skills library suitable for multiple agent platforms.
-- Supports Claude Code plugin marketplace installation and includes docs for other platforms.
-- Emphasizes testability and verifiability with example tests and documentation in the repo.
-- Lightweight, modular design for minimal-friction integration into existing automation pipelines.
+Superpowers is a script- and configuration-driven skills library designed to work across multiple coding agent platforms. It supports installation through the Claude Code plugin marketplace, ships with comprehensive example tests and contributor guides for adding new skills, and features a lightweight modular architecture that integrates with minimal friction into existing automation pipelines.

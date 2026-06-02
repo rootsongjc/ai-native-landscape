@@ -16,26 +16,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-JoyAgent-JDGenie is JD Open Source's end-to-end multi-agent framework designed to make common office and engineering tasks plug-and-play. The project offers lightweight task orchestration, tool adapters, and result aggregation, and can run locally, on private clouds, or in public cloud environments. Example agents include report generation, data analysis, code assistance, and automated slide creation, with a pluggable toolchain for easy customization.
+JoyAgent-JDGenie is an open-source, end-to-end production-grade general agent framework developed by JD.com. It provides a comprehensive multi-agent orchestration platform designed to make common office and engineering tasks plug-and-play, with lightweight deployment options that work across local, private cloud, and public cloud environments.
 
-## Main Features
+## Key Features
 
-- Plug-and-play multi-agent orchestration with guided task decomposition and result aggregation.
-- Pluggable adapters for files, databases, search, and third-party APIs.
-- Lightweight deployment for local and cloud environments with minimal dependencies.
-- Extensible agent templates and examples to accelerate integrations.
+The framework offers plug-and-play multi-agent orchestration with guided task decomposition and result aggregation, along with pluggable adapters for files, databases, search, and third-party APIs. It ships with ready-to-use agent templates covering report generation, data analysis, code assistance, and automated slide creation, enabling teams to rapidly customize and deploy AI-powered workflows.
 
 ## Use Cases
 
-- Automated report and document generation from datasets.
-- Multi-turn knowledge retrieval and automated customer support workflows.
-- Development assistance such as code snippets, test generation, and deployment scripts.
-- Educational and lab workflows for task orchestration and evaluation.
+JoyAgent-JDGenie is well-suited for automated report and document generation from datasets, as well as multi-turn knowledge retrieval and customer support automation. Development teams can also leverage it for code assistance, test generation, and deployment script automation, while educational institutions can use it for task orchestration and evaluation workflows.
 
-## Technical Features
+## Technical Details
 
-- Modular architecture supporting multi-model setups and toolchain extensions.
-- Clear extension interfaces and sample projects for rapid adoption.
-- Community-driven project with ongoing documentation and use-case examples.
+Built with a modular architecture, JoyAgent-JDGenie supports multi-model setups and extensible toolchains through clear extension interfaces and sample projects. The framework has minimal dependencies and can be deployed with lightweight configuration, making it accessible for both experimentation and production use.

@@ -21,18 +21,21 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-PyMuPDF is a powerful Python library built on the lightweight MuPDF engine, designed for efficient processing of various document formats including PDF, XPS, and eBooks. Maintained and developed by Artifex Software, the library provides comprehensive document processing capabilities, including text extraction, image manipulation, page operations, and annotation management. PyMuPDF excels in performance, delivering 10× faster document parsing than comparable tools, requiring only CPU resources without GPU dependencies for high-speed document parsing and layout analysis.
+PyMuPDF is a high-performance Python library built on the lightweight MuPDF engine for extracting, analyzing, converting, and manipulating PDF and other document formats. It delivers up to 10x faster document parsing than comparable tools using only CPU resources, making it a go-to choice for production-grade document processing pipelines.
 
-## Main Features
+## Key Features
 
-PyMuPDF supports multiple document formats including PDF, XPS, EPUB, MOBI, and FB2, enabling efficient text and image extraction. It provides complete PDF manipulation capabilities such as page merging, splitting, rotation, and watermark addition, while supporting form filling and digital signature functionality. The library integrates OCR (Optical Character Recognition) capabilities to extract text from images and scanned documents. Additionally, PyMuPDF offers font subsetting features to optimize PDF file sizes and supports document conversion to image or HTML formats.
+- Multi-format support covering PDF, XPS, EPUB, MOBI, and FB2 with efficient text and image extraction.
+- Complete PDF manipulation including page merging, splitting, rotation, watermarking, form filling, and digital signatures.
+- Built-in OCR capabilities for extracting text from images and scanned documents without external dependencies.
+- Font subsetting for PDF size optimization and conversion to image or HTML output formats.
 
 ## Use Cases
 
-PyMuPDF is widely used in document automation, data extraction, and analysis scenarios. It's ideal for extracting structured data from PDFs, such as invoice parsing, contract review, and academic paper analysis. In RAG (Retrieval-Augmented Generation) applications, PyMuPDF converts PDF documents into formats suitable for LLM (Large Language Model) processing, seamlessly integrating with frameworks like LangChain and Llamaparse. It's also suitable for batch document processing, eBook conversion, automated form filling, and other tasks, particularly in production environments requiring high performance and low resource consumption.
+PyMuPDF is widely used for extracting structured data from PDFs in invoice parsing, contract review, and academic paper analysis workflows. In RAG (Retrieval-Augmented Generation) applications, it converts PDF documents into LLM-friendly formats and integrates seamlessly with frameworks like LangChain and Llamaparse. It also handles batch document processing, eBook conversion, and automated form filling in high-throughput production environments.
 
-## Technical Features
+## Technical Details
 
-PyMuPDF provides a pure Python interface, making it easy to integrate into existing projects without complex dependency configurations. Built on the MuPDF engine, it directly parses PDF internal structures rather than relying on vision models, offering significant advantages in speed and accuracy. The library supports Python 3.10 and above, available under both AGPL-3.0 open-source and commercial licenses. The advanced version (PyMuPDF Pro) supports Office document formats (DOC, DOCX, PPT, PPTX, XLS, XLSX) and Korean documents (HWP, HWPX), with built-in PyMuPDF Layout module providing enterprise-grade document structure extraction. Its architecture supports high concurrency processing, suitable for large-scale document processing tasks.
+The library provides a pure Python interface built on the MuPDF C engine, which directly parses PDF internal structures rather than relying on vision models for superior speed and accuracy. It supports Python 3.10+ and is available under AGPL-3.0 or commercial licenses. The Pro edition extends support to Office formats (DOC, DOCX, PPT, PPTX, XLS, XLSX) and Korean documents (HWP, HWPX), with the PyMuPDF Layout module delivering enterprise-grade structure extraction. Its architecture supports high-concurrency processing for large-scale document workloads.

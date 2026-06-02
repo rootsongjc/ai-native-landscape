@@ -19,23 +19,24 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Agent Sandbox is an experimental project initiated by the Kubernetes Special Interest Groups (SIGs). It aims to provide a Kubernetes-native sandbox for running, orchestrating, and managing autonomous agent workloads. The project explores secure, scalable ways to schedule and operate agents within cluster environments.
+Agent Sandbox is an experimental project by Kubernetes SIGs that enables easy management of isolated, stateful, singleton workloads ideal for AI agent runtimes on Kubernetes. It provides a Kubernetes-native sandbox for running, orchestrating, and managing autonomous agent workloads securely and at scale within cluster environments.
 
-## Main Features
+## Key Features
 
-- Kubernetes-native integration: express and manage agent lifecycles with CRDs/Controllers and other native Kubernetes mechanisms.
-- Security isolation: provide isolation at container/Pod level to reduce risks during agent execution.
-- Scalable orchestration: support parallel and coordinated agent executions leveraging Kubernetes scheduling and autoscaling capabilities.
-- Prototype-first: serves as a research and evaluation platform for experimenting with runtimes and orchestration strategies.
+- Kubernetes-native integration using CRDs and Controllers to express and manage agent lifecycles.
+- Security isolation at the container and Pod level to reduce risks during agent execution.
+- Scalable orchestration supporting parallel and coordinated agent executions with Kubernetes scheduling and autoscaling.
 
 ## Use Cases
 
-- Agent runtime testing: validate agent runtime behavior and resource usage in real cluster environments.
-- Multi-agent orchestration: evaluate coordination and fault-tolerance strategies for distributed multi-agent systems.
-- Security and compliance evaluation: test agent access patterns and security policies in an isolated environment.
+- Agent runtime testing and validation of behavior and resource usage in real cluster environments.
+- Multi-agent orchestration evaluating coordination and fault-tolerance strategies for distributed systems.
+- Security and compliance evaluation testing agent access patterns and policies in isolated environments.
 
 ## Technical Details
 
-The project is hosted on GitHub (kubernetes-sigs/agent-sandbox) under the Apache-2.0 license. It includes example manifests, controller code, and runtime adapters to help the community reproduce and extend experiments across different cluster setups. For more details, visit the project homepage or repository.
+- Hosted under the Apache-2.0 license with example manifests, controller code, and runtime adapters.
+- Prototype-first design serving as a research and evaluation platform for experimenting with runtimes and orchestration strategies.
+- Supports reproduction and extension of experiments across different Kubernetes cluster setups.

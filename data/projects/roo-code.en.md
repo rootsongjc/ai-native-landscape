@@ -18,13 +18,21 @@ featured: false
 status: tracked
 ---
 
-**Roo Code** is an AI-powered **autonomous coding agent** that lives in your editor. It can:
+## Overview
 
-- Communicate in natural language
-- Read and write files directly in your workspace
-- Run terminal commands
-- Automate browser actions
-- Integrate with any OpenAI-compatible or custom API/model
-- Adapt its “personality” and capabilities through **Custom Modes**
+Roo Code is an AI-powered autonomous coding agent that runs directly inside your code editor, acting as a full development team of specialized AI agents. It communicates in natural language, reads and writes files in your workspace, executes terminal commands, and automates browser actions to handle complex development tasks end-to-end.
 
-Whether you’re seeking a flexible coding partner, a system architect, or specialized roles like a QA engineer or product manager, Roo Code can help you build software more efficiently.
+## Key Features
+
+- Natural language interaction for reading, writing, and refactoring code across entire project workspaces.
+- Direct terminal command execution and automated browser actions for testing and UI automation workflows.
+- Compatibility with any OpenAI-compatible API or custom model, including local and self-hosted endpoints.
+- Custom Modes that let users define specialized AI roles such as architect, QA engineer, or product manager with tailored behaviors.
+
+## Use Cases
+
+Developers use Roo Code for everything from greenfield project scaffolding to legacy code maintenance, leveraging its deep context understanding to navigate complex codebases. Teams benefit from Custom Modes that provide role-specific AI assistance, while individual developers accelerate daily workflows including code generation, debugging, test writing, and documentation.
+
+## Technical Details
+
+Roo Code integrates deeply into VS Code and other popular editors, requiring no context switching between tools. It supports multi-turn conversations with persistent project context, analyzes code structure and dependency graphs, and includes safety mechanisms that prompt confirmation before executing sensitive operations like file deletion or system commands.

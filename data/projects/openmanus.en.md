@@ -18,24 +18,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-OpenManus is a modular open-source agent framework that helps move natural-language driven agent prototypes into deployable engineering systems. The project provides runnable examples, web demos, and multiple run modes (e.g., `run_flow`, `run_mcp`) and supports configuring different LLM providers and local runtimes.
+OpenManus is a modular open-source AI agent framework designed to transition natural-language-driven agent prototypes into production-ready engineering systems. It provides flexible run modes, rich examples, and configurable LLM integration that let teams move from experimentation to deployment without changing their tooling.
 
-## Main Features
+## Key Features
 
-- Modular architecture: pluggable Agents, toolsets, and workflow engines for flexible composition and extension.
-- Multiple run modes: support for single-run execution, MCP tool integration, and multi-agent coordination via `run_flow`.
-- Rich examples and demos: includes a Hugging Face space demo and example projects for quick validation.
-- Community and governance: active open-source community, MIT license, and broad contributor base.
+Modular architecture with pluggable agents, toolsets, and workflow engines enables flexible composition and extension for diverse use cases. Multiple run modes support single-step execution, MCP tool integration, and multi-agent coordination flows out of the box. Rich examples and demos including a Hugging Face Space allow quick validation and experimentation without extensive setup.
 
 ## Use Cases
 
-Suitable for prototype validation, agent orchestration experiments, automated workflows, and integrating multimodal/LLM capabilities into existing engineering systems. Teams commonly wire trained or fine-tuned models into OpenManus configurations to iterate quickly in production-like environments.
+Prototype validation and agent orchestration experiments where teams need to iterate rapidly on agent behavior and workflow design. Automated workflows that integrate multimodal or LLM capabilities into existing engineering systems and CI pipelines. Production-like evaluation of fine-tuned models wired into configurable agent workflows for rapid iteration cycles.
 
-## Technical Features
+## Technical Details
 
-- Support for multiple LLM configurations and browser automation tools, enabling integration with external APIs and local tools.
-- Provides example scripts, containerized deployment options, and a Python package for reproducibility in development and CI.
-- Uses modular protocols and configuration (e.g., MCP) to enable interoperability and permission isolation between tools.
-- Active contributor ecosystem and multilingual documentation to accelerate onboarding.
+Supports multiple LLM provider configurations alongside browser automation tools for integrating external APIs and local utilities. Provides example scripts, containerized deployment options, and a Python package for reproducible development and CI workflows. Uses modular protocols such as MCP for tool interoperability and permission isolation between agent components.

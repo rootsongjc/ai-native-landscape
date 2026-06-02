@@ -18,27 +18,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-spaCy, developed by Explosion, is an industrial-strength natural language processing (NLP) library for Python that focuses on production readiness, performance, and maintainability. It provides pretrained pipelines for 70+ languages, tokenization, POS tagging, dependency parsing, named entity recognition, text classification, and seamless integration with Transformer models. For full docs and examples see the official site: [spaCy Docs](https://spacy.io).
+spaCy is an industrial-strength natural language processing library for Python, developed by Explosion with a strong focus on production performance, maintainability, and ease of deployment. It ships with pretrained pipelines for over 70 languages and provides tokenization, part-of-speech tagging, dependency parsing, named entity recognition, and text classification out of the box.
 
-## Main Features
+## Key Features
 
-- High performance: Cython-optimized internals for large-scale text processing.
-- Pretrained pipelines and model management for easy deployment and versioning.
-- Production-ready training system and extensible pipeline components.
-- LLM integration and compatibility with Transformers for advanced workflows.
+spaCy uses Cython-optimized internals to deliver high-throughput text processing at scale, paired with a comprehensive model management system for versioning and deployment. Its pipeline architecture is fully extensible, supports seamless integration with Transformer-based models and LLMs, and includes a production-ready training system for building custom NLP components.
 
 ## Use Cases
 
-- Production text pipelines: log processing, classification, entity extraction, and indexing.
-- Information extraction and knowledge graph population from unstructured text.
-- Model training and research: custom pipelines, evaluation and transfer learning.
-- Teaching and demos: tutorials, project templates and an interactive online course.
+Engineering teams rely on spaCy for production text pipelines including log processing, content classification, entity extraction, and search indexing. It is also widely used for information extraction from unstructured documents to populate knowledge graphs, and as a teaching platform thanks to its extensive tutorials, project templates, and interactive online course.
 
-## Technical Features
+## Technical Details
 
-- Mixed Python/Cython implementation balancing usability and speed.
-- Interoperability with the Transformers ecosystem and multiple deep learning backends.
-- Extensive documentation, reproducible templates, and deployment guides for engineering teams.
-- MIT-licensed with active community maintenance and enterprise support options.
+The library is implemented as a hybrid Python and Cython codebase that balances developer ergonomics with raw processing speed. It interoperates natively with the Hugging Face Transformers ecosystem and multiple deep learning backends, is released under the permissive MIT license with active community maintenance, and includes reproducible project templates and deployment guides for production teams.

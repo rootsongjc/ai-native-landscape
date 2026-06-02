@@ -19,21 +19,25 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-llms.py is a lightweight LLM client and server developed by ServiceStack that combines a CLI, an OpenAI-compatible HTTP API, and an optional browser-based chat UI. It lets you mix local models with remote providers while keeping analytics and data local when desired, making it easy to balance privacy, latency, and cost. Docker images and ready-made configuration simplify local and production deployments.
+llms.py is a lightweight multi-provider LLM client and server that combines a command-line interface, an OpenAI-compatible HTTP API, and an optional browser-based chat UI. It enables developers to mix local models with remote providers while keeping analytics and data local, making it easy to balance privacy, latency, and cost across different usage scenarios.
 
-## Main Features
+## Key Features
 
-1. Multi-provider support: integrates OpenRouter, Ollama, Anthropic, Google, OpenAI, Grok, Groq, Qwen, Z.ai, Mistral and more with configurable model mappings.
-2. OpenAI-compatible API: exposes an API compatible with OpenAI chat completions for easy integration with existing clients and tooling.
-3. Local-first hybrid routing: prioritize local or free providers to reduce cost, with automatic fallback to other providers.
-4. Built-in analytics & UI: visualisations for costs, requests and token usage plus an optional ChatGPT-like web UI.
+- Multi-provider support integrating OpenRouter, Ollama, Anthropic, Google, OpenAI, Grok, Groq, Qwen, Mistral, and more with configurable model mappings.
+- OpenAI-compatible API that exposes chat completions endpoints for seamless integration with existing clients and tooling.
+- Local-first hybrid routing that prioritizes local or free providers to reduce cost, with automatic fallback to paid alternatives.
+- Built-in analytics dashboard for visualizing costs, requests, and token usage alongside an optional ChatGPT-style web UI.
 
 ## Use Cases
 
-llms.py is ideal for consolidating access to multiple LLMs — from developer testing of different models to running a controlled OpenAI-compatible gateway inside an organization, or creating local-first chat applications that preserve data privacy. It also works well for quick Docker-based deployments in edge or constrained environments.
+- Development teams consolidating access to multiple LLMs through a single gateway for testing, comparison, and cost optimization across providers.
+- Organizations deploying a controlled, OpenAI-compatible API endpoint internally to manage access, enforce policies, and monitor usage.
+- Privacy-sensitive applications requiring local-first inference with optional cloud fallback for complex queries.
 
-## Technical Features
+## Technical Details
 
-Technically, llms.py offers a compact single-file implementation (with Python/JS components), configurable provider routing, automatic retries and failover, and multimodal support for image and audio inputs. It also supports optional GitHub OAuth for authentication, automatic image resizing/format conversion, and a useful set of CLI commands for running and debugging.
+- Compact single-file implementation in Python with configurable provider routing, automatic retries, and failover logic across endpoints.
+- Supports multimodal inputs including image and audio, with automatic image resizing and format conversion for compatible models.
+- Ships with Docker images and ready-made configurations for rapid deployment in both development and production environments.

@@ -20,24 +20,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-The Universal Commerce Protocol (UCP) is an open, standards-driven specification that provides a common language and primitives for commerce interactions between AI agents, platforms, merchants, payment service providers, and credential providers. By defining Capabilities and Extensions, UCP enables platforms to discover merchant-supported features and securely initiate checkout and order flows with or without human intervention.
+The Universal Commerce Protocol (UCP) is an open, standards-driven specification that establishes a shared language and interaction primitives for commerce between AI agents, platforms, merchants, payment providers, and credential providers. By modeling commerce actions as discoverable Capabilities with optional Extensions, UCP enables autonomous and semi-autonomous transaction flows that work across disparate systems. The protocol aims to eliminate bespoke integrations by providing a universal interface for agent-driven commerce.
 
-## Main Features
+## Key Features
 
-- Capability-driven, composable architecture: commerce actions are expressed as discrete Capabilities (e.g., Checkout, Identity Linking, Order) with optional Extensions for enhanced experiences.
-- Dynamic discovery and configuration: merchants publish capability profiles so platforms can automatically discover and configure integrations, reducing one-off integration work.
-- Transport-agnostic design: the protocol is transport-neutral and supports REST, MCP (Model Context Protocol), or agent-to-agent (A2A) transports.
+A capability-driven composable architecture expresses commerce actions such as Checkout, Identity Linking, and Order as discrete, reusable units that can be extended for enhanced experiences. Merchants publish capability profiles that platforms discover and configure automatically, dramatically reducing per-integration engineering effort. The transport-agnostic design supports REST, MCP, and agent-to-agent (A2A) communication, giving implementers full flexibility in deployment topology.
 
 ## Use Cases
 
-- Agent-assisted shopping: agents can discover products, populate carts, and complete payments on behalf of users, enabling autonomous shopping experiences.
-- Platform integration: third-party platforms can call unified capabilities across multiple merchants for seamless cross-merchant experiences.
-- PSP and credential provider integration: standardized token and credential exchange flows simplify payment and identity integrations.
+Agent-assisted shopping experiences where AI agents discover products, populate carts, and complete payments on behalf of users represent the primary use case. Third-party platforms can invoke unified capabilities across multiple merchants to build seamless cross-merchant shopping and booking workflows. Payment service providers and credential exchanges benefit from standardized token flows that simplify identity and payment integration.
 
-## Technical Features
+## Technical Details
 
-- Built on open standards: UCP prefers existing standards for payments, identity, and security to avoid reinventing solutions.
-- Extensible capability model: keeps core capability definitions concise while allowing targeted extensions for specialized features.
-- Developer-friendly: comprehensive documentation, examples, and SDKs support rapid implementation and conformance testing.
+UCP prioritizes reuse of existing standards for payments, identity, and security rather than inventing new solutions. The extensible capability model keeps core definitions minimal while permitting targeted Extensions for specialized commerce features. Comprehensive documentation, example implementations, and SDKs accelerate developer adoption and conformance testing.

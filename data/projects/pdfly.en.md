@@ -18,23 +18,20 @@ featured: false
 status: tracked
 ---
 
-> A compact command-line toolkit for extracting and manipulating PDF files.
+## Overview
 
-## Detailed Introduction
+pdfly is a lightweight CLI tool for extracting metadata from PDFs and performing common PDF manipulations at scale. It provides scriptable commands that fit naturally into automation pipelines, CI jobs, and batch-processing workflows, making it straightforward to integrate PDF operations without writing custom parsing code.
 
-pdfly is a lightweight command-line tool designed to extract metadata and content from PDF files and perform common PDF manipulations. It offers configurable parsing and export options, making it easy to integrate into automation scripts, CI pipelines, or batch-processing workflows.
+## Key Features
 
-## Main Features
-
-- Extraction capabilities for metadata, text, and structured document information.
-- Batch and scriptable operations suitable for CI/CD or automation tasks.
-- Extensible configuration for custom output formats and processing steps.
-- Open-source under the BSD-3-Clause license for broad reuse.
+- Fast extraction of document metadata, text content, and structured information from one or many PDFs in a single command.
+- Batch-oriented CLI designed for scripting and unattended execution in CI/CD or data pipelines.
+- Configurable output formats and processing options that adapt to different archival, indexing, or analysis needs.
 
 ## Use Cases
 
-Ideal for large-scale PDF analysis, archival indexing, post-OCR processing, and automated data extraction pipelines. Developers can call pdfly from scripts or CI jobs to include PDF processing as part of a document workflow.
+Teams processing large document archives can use pdfly to extract and index metadata across thousands of PDFs automatically. It also serves post-OCR cleanup workflows and automated data extraction pipelines where PDFs need to be inspected or transformed before downstream analysis.
 
-## Technical Features
+## Technical Details
 
-pdfly is implemented in Python and exposes a command-line interface (CLI, Command Line Interface) and programmable APIs. It builds on established PDF parsing libraries to ensure compatibility and reliability. The source code and documentation are hosted on GitHub and Read the Docs.
+Built in Python on top of proven PDF parsing libraries, pdfly exposes both a CLI and programmatic APIs for flexibility. It is released under the BSD-3-Clause license, with source code and documentation hosted on GitHub and Read the Docs.

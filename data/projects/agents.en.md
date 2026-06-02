@@ -18,19 +18,21 @@ featured: false
 status: tracked
 ---
 
-Claude Code Agents is an agent and plugin ecosystem for the Anthropic Claude Code platform, featuring 62 focused plugins, 84 specialized agents, and 44 development tools. Its architecture emphasizes plugin granularity, single responsibility, and efficient context usage, supporting multi-agent collaboration, automation, development, testing, operations, and security. Users can install plugins as needed and flexibly combine them for full-stack development and automation.
+## Overview
 
-## Main Features
+Claude Code Agents is a multi-harness agentic plugin marketplace supporting Claude Code, Codex CLI, Cursor, OpenCode, and Gemini CLI. The ecosystem hosts 83 plugins, 191 agents, 155 skills, and 102 commands, providing a comprehensive toolkit for AI-assisted development. Its architecture emphasizes plugin granularity, single responsibility, and efficient context usage across multiple agent platforms.
 
-- 62 focused plugins covering 23 categories including development, testing, security, and operations
-- 84 specialized agents supporting architecture, AI, data, documentation, business, and more
-- 15 multi-agent workflow orchestrators for complex development and operations
-- Clear plugin architecture, on-demand loading, and optimal context efficiency
+## Key Features
+
+- 83 focused plugins spanning development, testing, security, operations, and more across 23 categories
+- 191 specialized agents and 155 skills supporting architecture, AI, data, documentation, and business workflows
+- 15 multi-agent workflow orchestrators for coordinating complex development and operations pipelines
+- Cross-platform compatibility with Claude Code, Codex, Cursor, OpenCode, and Gemini CLI
 
 ## Use Cases
 
-Ideal for scenarios requiring multi-agent collaboration, automated development, testing, operations, and AI application development, boosting team productivity and efficiency.
+Ideal for developers and teams who need multi-agent collaboration, automated development workflows, testing, operations, and AI application development. The marketplace model lets users install only the plugins they need and flexibly combine them for full-stack automation.
 
-## Technical Highlights
+## Technical Details
 
-Plugin-based architecture, single responsibility principle, supports both command and natural language invocation, component isolation, easy maintenance, and multi-model compatibility with Claude Code.
+Built on a plugin-based architecture following the single responsibility principle. Supports both command-line and natural language invocation with on-demand loading for optimal context efficiency. Components are isolated for easy maintenance, and the system is compatible with multiple AI coding platforms.

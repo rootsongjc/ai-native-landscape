@@ -17,24 +17,24 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-DocuTranslate is a lightweight tool for translating various document formats using large language models (LLMs) and multiple parsing engines. It provides an end-to-end pipeline from file parsing and semantic translation to exporting results. Supported formats include PDF, DOCX, XLSX, JSON, EPUB, and SRT. For PDF parsing it offers an online `minerU` engine and an optional local `docling` engine for offline scenarios.
+DocuTranslate is a lightweight document translation tool that leverages LLMs and multiple parsing engines to translate PDF, Word, Excel, JSON, EPUB, and SRT formats. It provides an end-to-end pipeline from file parsing and semantic translation to export, suitable for novels, theses, and subtitles.
 
-## Main Features
+## Key Features
 
-- Multi-format support: pdf, docx, xlsx, md, json, epub, srt, with table and formula preservation.
-- Parsing engines: choose online `minerU` for quick use or local `docling` for privacy/offline needs.
-- Workflow-driven: configurable Workflows map file types to converter → translator → exporter pipelines.
-- Web UI & API: interactive web interface and REST API for easy local deployment and integration.
+- Multi-format support for PDF, DOCX, XLSX, Markdown, JSON, EPUB, and SRT with table and formula preservation.
+- Choice of online `minerU` or local `docling` parsing engines for flexible deployment.
+- Workflow-driven pipeline mapping file types to converter, translator, and exporter stages with a built-in Web UI and REST API.
 
 ## Use Cases
 
-Suitable for translating academic papers, technical docs, novels, and subtitles. Teams can deploy locally to batch-convert and translate files into Markdown/HTML for publishing; individual users can use released packages or the demo to try features quickly.
+- Translating academic papers, technical documentation, novels, and subtitle files.
+- Team deployments for batch file conversion and translation into Markdown or HTML for publishing.
+- Individual users leveraging released packages or the demo for quick one-off translations.
 
-## Technical Features
+## Technical Details
 
-- Multi-provider compatibility: integrates with OpenAI, Zhipu, Qwen and other providers for translation.
-- Async & concurrent: designed for asynchronous translation with concurrency for high throughput.
-- Flexible exporters: output to HTML, Markdown, ZIP, DOCX for downstream editing and publishing.
-- Local-first options: Docker and standalone packages, plus caching to reduce repeated parsing.
+- Multi-provider compatibility with OpenAI, Zhipu, Qwen, and other LLM providers.
+- Async and concurrent translation design for high throughput on large document sets.
+- Local-first deployment via Docker or standalone packages with caching to reduce repeated parsing overhead.

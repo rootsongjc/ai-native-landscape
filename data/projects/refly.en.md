@@ -20,23 +20,21 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Refly is a vibe workflow platform for non-technical creators that lets users build automated content and processes via a visual canvas and low-code components. The platform integrates memory management, task orchestration, and model invocation, and can connect to external services—suitable for content creation, marketing automation, and knowledge workflows.
+Refly is an AI-powered workflow and content creation platform designed for non-technical creators. It provides a visual canvas with low-code components for building automated content and business processes, integrating memory management, task orchestration, and large language model invocation into a single drag-and-drop experience.
 
-## Main Features
+## Key Features
 
-- Visual canvas and component library for drag-and-drop workflow construction.
-- Vibe workflow paradigm that reduces complexity while remaining extensible.
-- Integrations with large language models (LLMs) and data sources, supporting memory and retrieval-augmented generation (RAG).
-- Plugin system and external service integrations for automated delivery.
+- Visual canvas and component library enabling drag-and-drop workflow construction without writing code.
+- Vibe workflow paradigm that abstracts complexity while remaining extensible for advanced use cases.
+- Deep integrations with LLMs and data sources, supporting memory persistence and retrieval-augmented generation (RAG).
+- Plugin system and external service connectors for automated content delivery and publishing.
 
 ## Use Cases
 
-- Non-technical creators building content generation, editing, and publishing pipelines.
-- Marketing automation and social media asset production and distribution.
-- Integrating memory stores and retrieval into workflows for personalized recommendations and knowledge management.
+Non-technical creators use Refly to build end-to-end content generation, editing, and publishing pipelines for blogs, social media, and marketing campaigns. Teams leverage its memory and RAG capabilities to create personalized recommendation systems and knowledge management workflows that connect to external data sources and publishing channels.
 
 ## Technical Details
 
-Refly is implemented in TypeScript with a modular component and plugin architecture, focusing on low-code UX and model integration capabilities. Repository topics include agent, ai-memory, workflow, and rag—targeting fast iteration and productization scenarios.
+Refly is implemented in TypeScript with a modular component and plugin architecture focused on low-code UX and flexible model integration. Repository topics include agent, ai-memory, workflow, and rag, reflecting its design for rapid iteration and productization of AI-powered content workflows.

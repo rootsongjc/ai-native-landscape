@@ -17,21 +17,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-gtr (Git Worktree Runner) is a repository-scoped, cross-platform CLI that wraps and extends native `git worktree` functionality to improve developer workflows. It automates per-branch worktree creation, selective config copying, optional dependency installation, and integrates with editors and AI coding tools to support parallel development and review scenarios.
+gtr (Git Worktree Runner) is a Bash-based, cross-platform CLI by CodeRabbit that simplifies git worktree management with editor and AI tool integration. It wraps and extends native git worktree functionality to automate per-branch worktree creation, selective config copying, and optional dependency installation, supporting parallel development and review workflows.
 
-## Main Features
+## Key Features
 
-- Simplified commands: intuitive subcommands such as `gtr new`, `gtr editor`, and `gtr ai` for common worktree tasks.
-- Editor integration: open worktrees in Cursor, VS Code, Zed, and others with a single command.
-- AI tool support: launch terminal/editor-based AI tools (Aider, Claude, etc.) inside a worktree to enable parallel agent workflows.
-- Automation & hooks: configurable file copying, post-create/post-remove hooks, and optional post-create dependency steps.
+gtr provides intuitive subcommands such as `gtr new`, `gtr editor`, and `gtr ai` for common worktree operations. It integrates with editors including Cursor, VS Code, and Zed to open worktrees with a single command, and supports launching AI tools like Aider and Claude inside worktrees for parallel agent workflows. Configurable file copying, hooks, and optional dependency steps automate the setup process.
 
 ## Use Cases
 
-gtr is useful when maintaining multiple concurrent branches or environments in the same repository: fixing bugs while developing features, reviewing pull requests without interrupting current work, running parallel CI or test instances, or enabling multiple AI agents to work on the same project in isolated worktrees.
+gtr is valuable for maintaining multiple concurrent branches in the same repository, such as fixing bugs while developing features or reviewing pull requests without interrupting current work. It supports running parallel CI or test instances and enables multiple AI agents to work on the same project in isolated worktrees simultaneously.
 
-## Technical Features
+## Technical Details
 
-Implemented in Bash, gtr is designed for repository-scoped operation and supports macOS, Linux, and Windows via Git Bash/WSL. It favors configuration over flags, provides shell completions, platform-aware path handling, and a pluggable adapters system for editors and AI tools.
+Implemented in Bash for maximum portability, gtr operates at the repository scope and supports macOS, Linux, and Windows via Git Bash/WSL. It favors configuration over command-line flags, provides shell completions and platform-aware path handling, and uses a pluggable adapter system for editor and AI tool integrations.

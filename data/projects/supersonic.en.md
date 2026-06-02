@@ -20,25 +20,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-SuperSonic is an enterprise AI+BI platform designed to unify Chat BI (LLM-powered conversational analytics) and Headless BI (semantic-layer-driven analytics) into a production-ready system. The platform uses large language models (LLMs) to handle natural language queries while leveraging a semantic data layer to deliver accurate, explainable business intelligence, enabling analysts and business users to obtain insights via conversational interfaces.
+SuperSonic is a next-generation AI+BI platform that unifies Chat BI (LLM-powered conversational analytics) and Headless BI (semantic-layer-driven analytics) into a single production-ready system. By combining natural language understanding with a governed semantic layer, it enables both business users and analysts to query data conversationally while maintaining metric accuracy and consistency.
 
-## Main Features
+## Key Features
 
-- Conversational analytics: supports natural-language Q&A and iterative data exploration.
-- Semantic layer: standardizes metrics and data sources to ensure consistent queries.
-- Pipeline automation: end-to-end data ingestion, modeling, and visualization pipelines.
-- Enterprise readiness: multi-tenancy and access control for production deployments.
+The platform provides a conversational analytics interface that translates natural-language questions into precise SQL queries via LLM inference. Its semantic layer standardizes business metrics, dimensions, and data models to ensure consistent results across all queries. SuperSonic also delivers end-to-end pipeline automation covering data ingestion, metric modeling, and visualization, with built-in multi-tenancy and role-based access control for enterprise deployments.
 
 ## Use Cases
 
-- Self-service analytics platforms where non-technical users obtain business insights via natural language.
-- Embedding LLM capabilities into dashboards for intelligent Q&A and automated reporting.
-- Building reusable semantic layers to enforce consistent data definitions and governance across teams.
+Non-technical business users leverage SuperSonic for self-service analytics, asking questions in natural language to get instant data insights without writing SQL. Data teams use it to build governed semantic layers that enforce consistent metric definitions across departments. Organizations embed its conversational Q&A capabilities into existing dashboards to add intelligent, on-demand reporting features.
 
-## Technical Features
+## Technical Details
 
-- Implemented in Java with a service-oriented architecture, suitable for enterprise data platforms and containerized deployment.
-- Combines LLM inference with semantic-layer querying and supports pluggable data sources and model backends.
-- Open-source repository available (see frontmatter); community contributions for plugins and adapters are welcome.
+SuperSonic is implemented in Java with a service-oriented architecture, designed for integration into enterprise data platforms and containerized deployment. It decouples LLM inference from semantic-layer querying through pluggable data source and model backends, allowing teams to swap models or databases without changing the analytics interface. The platform is open-source and welcomes community contributions for adapters and plugins.

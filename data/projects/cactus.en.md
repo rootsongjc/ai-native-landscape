@@ -22,22 +22,16 @@ status: tracked
 
 ## Overview
 
-Cactus is a phone-first inference engine and numerical computing framework optimized for ARM CPUs. It focuses on delivering high throughput and low energy usage for mobile LLM inference.
+Cactus is a low-latency AI inference engine and numerical computing framework designed for mobile devices and wearables. Developed by cactus-compute, it is optimized for ARM CPUs to run large language models with minimal power consumption and memory footprint, enabling on-device AI without relying on cloud connectivity.
 
 ## Key Features
 
-- CPU-first optimization: tuned for ARM CPU performance and reduced battery consumption.
-- Unified graph & kernels: Cactus Graph and Cactus Kernels offer zero-copy computation graphs and SIMD-optimized kernels.
-- SDKs for mobile: Flutter, React Native, and Kotlin SDKs enable easy integration into mobile apps.
+CPU-first optimization tuned for ARM processors to reduce battery drain and heat generation. Unified Cactus Graph and Cactus Kernels providing zero-copy computation graphs and SIMD-optimized kernels for high throughput. Cross-platform SDKs for Flutter, React Native, and Kotlin make it straightforward to integrate on-device inference into any mobile application.
 
 ## Use Cases
 
-- Run lightweight or hybrid LLM inference on-device for chat, assistants, and quick generation tasks.
-- Embed efficient deep learning inference into mobile apps to reduce latency and energy use.
-- Model porting & benchmarking: convert Hugging Face models and validate mobile performance.
+Running lightweight or hybrid LLM inference directly on phones and wearables for chatbots, assistants, and quick generation tasks without network latency. Embedding efficient deep learning inference into mobile apps to deliver real-time, privacy-preserving AI experiences. Converting and benchmarking Hugging Face models for mobile deployment to validate performance before shipping.
 
-## Technical Characteristics
+## Technical Details
 
-- C API / FFI: OpenAI-compatible C interface for integration across languages.
-- Efficient inference: demonstrates higher CPU-only throughput and smaller model footprints versus Llama.cpp on certain workloads.
-- Tooling: Python utilities for model conversion, testing scripts, and build instructions.
+OpenAI-compatible C API with FFI bindings for integration across multiple programming languages. Demonstrates higher CPU-only throughput and smaller model footprints compared to Llama.cpp on certain workloads. Includes Python utilities for model conversion, testing scripts, and comprehensive build instructions for rapid onboarding.

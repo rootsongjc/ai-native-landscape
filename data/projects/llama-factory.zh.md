@@ -17,12 +17,18 @@ featured: false
 status: tracked
 ---
 
-LLaMA Factory 是一个简单易用且高效的大语言模型（Large Language Model）训练与微调平台。通过 LLaMA Factory，可以在无需编写任何代码的前提下，在本地完成上百种预训练模型的微调，框架特性包括：
+## 简介
 
-- 模型种类：LLaMA、LLaVA、Mistral、Mixtral-MoE、Qwen、Yi、Gemma、Baichuan、ChatGLM、Phi 等等。
-- 训练算法：（增量）预训练、（多模态）指令监督微调、奖励模型训练、PPO 训练、DPO 训练、KTO 训练、ORPO 训练等等。
-- 运算精度：16 比特全参数微调、冻结微调、LoRA 微调和基于 AQLM/AWQ/GPTQ/LLM.int8/HQQ/EETQ 的 2/3/4/5/6/8 比特 QLoRA 微调。
-- 优化算法：GaLore、BAdam、DoRA、LongLoRA、LLaMA Pro、Mixture-of-Depths、LoRA+、LoftQ 和 PiSSA。
-- 加速算子：FlashAttention-2 和 Unsloth。
-- 推理引擎：Transformers 和 vLLM。
-- 实验监控：LlamaBoard、TensorBoard、Wandb、MLflow、SwanLab 等等。
+LLaMA Factory 是一个大语言模型统一微调框架，支持超过 100 种预训练模型和多种训练方法。它提供无代码的本地微调界面，使研究人员和生产工程师都能轻松地将基础模型适配到特定任务。
+
+## 主要特性
+
+该框架支持包括 LLaMA、Qwen、Mistral、Gemma 和 ChatGLM 在内的广泛模型，训练方法涵盖预训练、监督微调、奖励建模和偏好对齐（PPO、DPO、KTO、ORPO）。它提供从 16 位全参数微调到 2 位 QLoRA 的灵活计算精度，并集成 FlashAttention-2 和 Unsloth 等加速算子以实现高效训练。
+
+## 使用场景
+
+研究人员使用 LLaMA Factory 在前沿模型上实验不同的微调策略和优化算法。生产团队依赖它将基础模型适配到代码生成、客户支持和内容创作等特定领域任务。无代码界面也使非工程人员能够自定义模型行为。
+
+## 技术特点
+
+LLaMA Factory 支持 Transformers 和 vLLM 两种推理后端。它集成了 LlamaBoard、TensorBoard、Wandb、MLflow 和 SwanLab 等实验监控工具。内置 GaLore、DoRA、LongLoRA 和 PiSSA 等优化算法，以及 AQLM、AWQ、GPTQ 和 HQQ 等量化方法，可在消费级硬件上实现高效训练。

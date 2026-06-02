@@ -20,21 +20,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-sqlite-vector is an open-source SQLite extension from SQLiteAI that brings vector search capabilities to embedded databases. The extension enables storing, indexing, and querying embedding vectors directly within local SQLite instances, supporting cross-platform deployment and lightweight scenarios so developers can build near-real-time retrieval-augmented systems without an external vector database service.
+sqlite-vector is an open-source SQLite extension from SQLiteAI that brings native vector search capabilities to embedded databases. It allows developers to store, index, and query embedding vectors directly within local SQLite instances, enabling retrieval-augmented systems without the need for an external vector database service.
 
-## Main Features
+## Key Features
 
-- Embedded vector index: store and query vectors directly in SQLite to reduce external dependencies and operations overhead.
-- Efficient implementation: optimized for performance and memory footprint, suitable for local and mobile deployments.
-- Cross-platform: as a SQLite extension, it supports multiple operating systems and runtime environments.
-- Easy integration: works with common embedding generation and retrieval workflows to enable retrieval-augmented generation (RAG) in applications.
+The extension provides an embedded vector index that stores and queries vectors directly inside SQLite, eliminating external dependencies and operational overhead. It is optimized for small memory footprint and fast query performance across platforms, and integrates easily with standard embedding generation and RAG workflows.
 
 ## Use Cases
 
-Ideal for local or edge vector search scenarios such as offline search, privacy-sensitive retrieval, lightweight recommendations, and on-device semantic search. Engineering teams can add vector retrieval capabilities into existing SQLite databases without deploying external services, enabling low-latency similarity queries and RAG pipelines.
+sqlite-vector is ideal for local or edge deployment scenarios including offline semantic search, privacy-sensitive document retrieval, lightweight recommendation engines, and on-device AI features. Teams can add vector similarity search to existing SQLite databases without provisioning separate infrastructure.
 
-## Technical Features
+## Technical Details
 
-The project is implemented primarily in C as a SQLite extension, leveraging efficient data structures and indexing strategies for similarity search. It emphasizes compatibility with SQLite native features to smoothly introduce vector capabilities into existing database architectures.
+Implemented in C as a native SQLite extension, sqlite-vector uses efficient data structures and indexing strategies tuned for similarity search performance. It is designed for full compatibility with SQLite's existing feature set, allowing vector capabilities to be introduced into current database architectures with minimal disruption.

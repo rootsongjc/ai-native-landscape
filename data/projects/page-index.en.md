@@ -20,21 +20,20 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-PageIndex is an open-source document indexing system from Vectify AI that targets retrieval and analysis over long professional documents. Instead of relying on vector databases and artificial chunking, PageIndex builds a tree-like table-of-contents index and performs reasoning-based retrieval over that structure, producing more relevant and explainable results. The project offers self-hosted scripts, a cookbook, Colab demos, and cloud-hosted Agent and Dashboard experiences.
+PageIndex is a vectorless, reasoning-based document index created by Vectify AI for high-accuracy retrieval over long professional documents. Rather than relying on vector databases and artificial chunking, it constructs a tree-like table-of-contents structure and uses LLM reasoning to locate the most relevant sections, delivering results that are both more accurate and more explainable.
 
-## Main Features
+## Key Features
 
-- Vectorless RAG: retrieval via document structure and LLM reasoning, no vector DB required.
-- No chunking: documents are organized into natural sections preserving hierarchy.
-- Human-like retrieval: two-step tree search enabling multi-step reasoning to find relevant nodes.
-- Multiple integrations: self-hosted code, Dashboard, API, and MCP plugin for quick trials and enterprise use.
+- Vectorless RAG that replaces embedding search with document-structure-aware LLM reasoning, eliminating the need for a vector database.
+- Chunk-free indexing that preserves the natural hierarchy and sections of a document, keeping semantic context intact.
+- Two-step tree search that mirrors how a human expert would navigate a document, enabling multi-step reasoning for precise node-level retrieval.
 
 ## Use Cases
 
-Suitable for high-precision document analysis tasks such as financial report examination, regulatory compliance, legal/technical document search, and academic literature review. Teams can use PageIndex for R&D-grade document analysis or leverage the cloud Agent for interactive document Q&A and summarization.
+Financial analysts can use PageIndex to pinpoint specific figures and clauses in lengthy earnings reports without sifting through irrelevant chunks. Legal and compliance teams gain explainable, section-level citations when searching regulatory or contract documents. Academic researchers can quickly locate relevant passages across long papers using the interactive cloud Agent or self-hosted pipeline.
 
-## Technical Features
+## Technical Details
 
-Implemented primarily in Python, PageIndex represents documents as tree nodes and uses LLMs for node-level reasoning and retrieval. The repo provides `run_pageindex.py`, example notebooks, and a cookbook. PageIndex is released under the MIT license and offers optional OCR and cloud services for enhanced pipeline support.
+Implemented in Python, PageIndex represents documents as tree nodes and applies LLM-based reasoning at each node to guide retrieval. The repository ships with a ready-to-run script, example notebooks, and a cookbook. It is MIT-licensed and offers optional OCR support and a hosted cloud service for teams that need turnkey document processing.

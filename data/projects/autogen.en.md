@@ -20,19 +20,18 @@ featured: false
 status: tracked
 ---
 
-AutoGen is a programming framework for agentic AI that provides everything you need to create AI agents, especially multi-agent workflows. The framework uses a layered and extensible design where layers have clearly divided responsibilities and build on top of layers below. This design enables you to use the framework at different levels of abstraction, from high-level APIs to low-level components.
+## Overview
 
-The AutoGen ecosystem consists of several key components:
+AutoGen is Microsoft's programming framework for agentic AI, designed for building multi-agent systems with flexible conversation patterns. It uses a layered and extensible architecture where each layer has clearly divided responsibilities, enabling developers to work at different levels of abstraction from high-level APIs to low-level components for creating sophisticated multi-agent workflows.
 
-- **Core API** implements message passing, event-driven agents, and local and distributed runtime for flexibility and power. It also supports cross-language support for .NET and Python.
-- **AgentChat API** implements a simpler but opinionated API for rapid prototyping. This API is built on top of the Core API and is closest to what users of v0.2 are familiar with, supporting common multi-agent patterns such as two-agent chat or group chats.
-- **Extensions API** enables first- and third-party extensions continuously expanding framework capabilities. It supports specific implementations of LLM clients (e.g., OpenAI, AzureOpenAI), and capabilities such as code execution.
+## Key Features
 
-AutoGen also provides two essential developer tools:
+AutoGen provides a Core API for message passing and event-driven agents with local and distributed runtime, an AgentChat API for rapid prototyping of common multi-agent patterns like group chats, and an Extensions API for first- and third-party integrations with LLM clients and code execution. It also includes AutoGen Studio (no-code GUI) and AutoGen Bench (benchmarking suite) as essential developer tools.
 
-- **AutoGen Studio** provides a no-code GUI for building multi-agent applications.
-- **AutoGen Bench** provides a benchmarking suite for evaluating agent performance.
+## Use Cases
 
-With AutoGen you can create applications for your domain. For example, Magentic-One is a state-of-the-art multi-agent team built using AgentChat API and Extensions API that can handle a variety of tasks that require web browsing, code execution, and file handling.
+AutoGen is suitable for building multi-agent applications that require coordinated conversation patterns, such as Magentic-One which handles web browsing, code execution, and file handling. It serves teams prototyping agent-based solutions, evaluating agent performance with benchmarks, and developing production multi-agent systems across various domains.
 
-AutoGen has a thriving ecosystem with weekly office hours and talks with maintainers and community. It also has a Discord server for real-time chat, GitHub Discussions for Q&A, and a blog for tutorials and updates.
+## Technical Details
+
+The framework supports cross-language development with .NET and Python, offers local and distributed runtime options, and provides extensibility through its layered API design. It integrates with major LLM providers (OpenAI, Azure OpenAI) and includes tooling for observability, benchmarking, and no-code agent composition. The project is backed by an active community with weekly office hours, Discord, and GitHub Discussions.

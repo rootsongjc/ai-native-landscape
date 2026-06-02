@@ -20,25 +20,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-OpenSandbox is a universal sandbox platform for AI application scenarios. It provides safe, consistent, and extensible runtime environments to execute LLM-related capabilities such as command execution, file operations, code execution, browser automation, and more. The project includes multi-language SDKs, a unified sandbox protocol specification, and multiple sandbox runtime implementations to help developers run tools, plugins, or agents in controlled environments.
+OpenSandbox is a universal sandbox platform from Alibaba built specifically for AI application scenarios. It provides secure, consistent, and extensible isolated runtime environments for executing LLM-driven capabilities including code execution, file operations, command-line tasks, and browser automation.
 
-## Main Features
+## Key Features
 
-- Multi-language SDKs: Client SDKs for Python, Java, TypeScript (TBD) and other languages to integrate sandbox capabilities across ecosystems.
-- Unified Protocol: OpenAPI-based sandbox protocol specifications under `specs/`, enabling custom runtime extensions.
-- Rich Examples: Built-in sandbox implementations and examples for code interpreters, browser automation, filesystem operations, and more.
-- Extensible Runtimes: Supports local Docker execution and plans for Kubernetes cluster execution for production scenarios.
+Multi-language client SDKs for Python, Java, and TypeScript enable sandbox integration across diverse technology stacks. A unified OpenAPI-based protocol specification allows developers to extend runtimes and build custom sandbox implementations. Built-in examples cover code interpreters, browser automation, and filesystem operations to accelerate integration.
 
 ## Use Cases
 
-- Run LLM-driven code interpreters or toolchains inside isolated sandboxes to prevent external side effects.
-- Provide a safe runtime for third-party plugins in platforms or applications.
-- Use in automated testing, browser automation, remote development (VS Code Web), and desktop sandboxed environments.
+Running LLM-driven code interpreters or toolchains inside isolated sandboxes to prevent unintended external side effects. Providing a safe execution runtime for third-party plugins in platform or application ecosystems. Automated testing, browser automation, and remote development environments requiring controlled code execution boundaries.
 
-## Technical Features
+## Technical Details
 
-- OpenAPI-first: Defines sandbox lifecycle and capability APIs using OpenAPI, lowering integration barriers.
-- Modular components: Executor, filesystem, and command components are modular and replaceable for customization.
-- Examples and docs: `examples/` and `docs/` include practical integrations and architectural guidance for engineering adoption.
+OpenAPI-first design defines sandbox lifecycle and capability APIs with clear specifications that lower integration barriers. Modular architecture separates executor, filesystem, and command components for independent replacement and customization. Supports local Docker execution with planned Kubernetes cluster deployment for production-grade scenarios.

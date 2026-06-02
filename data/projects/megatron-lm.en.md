@@ -16,24 +16,24 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Megatron-LM is NVIDIA's open-source reference implementation for training and running large language models at scale. The project focuses on delivering production-grade training recipes, modular components for tensor and pipeline parallelism, and performance-tuned kernels to maximize GPU utilization across large clusters.
+Megatron-LM is NVIDIA's open-source framework for training large language models at extreme scale, providing production-grade training recipes, modular parallelism components, and performance-optimized kernels. It is designed to maximize GPU utilization across large clusters and serves as a reference implementation for researchers and engineers working on models ranging from billions to trillions of parameters.
 
-## Main Features
+## Key Features
 
-- Support for multiple parallelism strategies (tensor, pipeline, context, FSDP) for flexible scaling.
-- Optimized kernels and mixed-precision support (FP16/BF16/FP8) to improve throughput and memory efficiency.
-- End-to-end training scripts and examples for reproducible performance benchmarks.
+- Multiple parallelism strategies including tensor, pipeline, context, and data parallelism (FSDP) that can be composed for flexible scaling across GPU clusters.
+- Highly optimized CUDA kernels and mixed-precision support (FP16, BF16, FP8) to maximize training throughput and memory efficiency on NVIDIA hardware.
+- End-to-end training scripts, configuration templates, and benchmark examples for reproducible large-scale experiments.
 
 ## Use Cases
 
-- Research and engineering for training large-scale LLMs.
-- Performance tuning, kernel validation, and scaling experiments on NVIDIA GPUs.
-- Preparing model training pipelines for production deployments.
+- Research institutions and engineering teams training large-scale LLMs from scratch or fine-tuning foundation models on multi-node GPU clusters.
+- Performance tuning and scaling experiments to validate distributed training strategies and kernel optimizations on NVIDIA GPU architectures.
+- Organizations preparing production-grade model training pipelines that require reproducible benchmarks and battle-tested training recipes.
 
-## Technical Features
+## Technical Details
 
-- Built on PyTorch with modular Megatron Core components for composition and extension.
-- Integrates with acceleration libraries such as Transformer Engine to leverage vendor optimizations.
-- Documentation and examples aimed at reproducible performance and engineering adoption.
+- Built on PyTorch with a modular Megatron Core library that exposes composable components for attention, embedding, and transformer layers.
+- Integrates with NVIDIA's Transformer Engine and other acceleration libraries to leverage hardware-specific optimizations like FlashAttention and FP8 quantization.
+- Comprehensive documentation and example configurations covering pre-training, fine-tuning, and inference workflows for reproducible results.

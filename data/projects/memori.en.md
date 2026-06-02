@@ -17,22 +17,24 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Memori is an open-source, SQL-native memory engine designed to give any Large Language Model (LLM) persistent, queryable, and auditable memory. Memories are stored in standard SQL databases (SQLite, PostgreSQL, MySQL) that you control, avoiding vendor lock-in and expensive vector database costs.
+Memori is an agent-native memory infrastructure that provides an LLM-agnostic layer for turning agent execution into structured, persistent state stored in standard SQL databases. By using familiar relational databases like SQLite, PostgreSQL, or MySQL, it avoids vendor lock-in to proprietary vector databases while giving agents the ability to retain knowledge, user preferences, and task context across sessions.
 
-## Main Features
+## Key Features
 
-- SQL-native storage: memories live in familiar relational databases, making export, migration and audit straightforward.
-- Multi-framework support: integrates with OpenAI, Anthropic, LiteLLM, LangChain and other common LLM frameworks.
-- Intelligent memory management: automatic entity extraction, relationship mapping and context prioritization to surface relevant history.
+- SQL-native storage that keeps memories in standard relational databases, making export, migration, audit, and backup straightforward with existing tooling.
+- Multi-framework compatibility with OpenAI, Anthropic, LiteLLM, LangChain, and other common LLM frameworks for easy integration into any agent stack.
+- Intelligent memory management with automatic entity extraction, relationship mapping, and context prioritization to surface the most relevant history at query time.
 
 ## Use Cases
 
-Ideal for applications that require persistent conversational context, such as personal assistants, team collaboration tools, customer support, and developer tooling. Memori acts as a backend memory layer so agents can retain background knowledge, user preferences, and task state across sessions.
+- Personal assistants and chatbots that need to maintain conversational context, user preferences, and learned facts across multiple sessions and interactions.
+- Customer support platforms where agents must recall past tickets, resolution history, and customer-specific details to provide consistent service.
+- Developer tooling and coding assistants that benefit from persistent memory of project architecture, coding patterns, and team decisions.
 
-## Technical Characteristics
+## Technical Details
 
-- Retrieval-injection flow: retrieve relevant memories before LLM calls and record extracted information after responses.
-- Multiple memory modes: short-term, long-term, auto retrieval and conscious injection, with configurable prioritization and compression strategies.
-- Easy deployment: connect with a standard SQL connection string and run on existing infra (e.g., Supabase, Neon), with export and backup support.
+- Retrieval-injection architecture that retrieves relevant memories before each LLM call and records extracted information after responses, creating a continuous learning loop.
+- Multiple memory modes including short-term, long-term, auto-retrieval, and conscious injection with configurable prioritization and compression strategies.
+- Simple deployment using standard SQL connection strings, compatible with managed database services like Supabase and Neon, with built-in export and backup support.

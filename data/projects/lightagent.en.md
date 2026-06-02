@@ -19,25 +19,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-LightAgent is an open-source, lightweight agent framework released by Wanxing AI. It aims for production-readiness while remaining compact. The framework includes memory modules (e.g., `mem0`), Tools, and Tree-of-Thought (ToT) capabilities, supporting multi-agent collaboration, autonomous learning, and integration with major LLM providers (OpenAI, Qwen, DeepSeek, etc.). Its concise design makes it suitable for engineering deployment and extension.
+LightAgent is a lightweight, open-source AI agent framework with built-in memory, MCP support, and skill extensibility. It supports multi-agent collaboration and self-learning while remaining compatible with major LLM providers including OpenAI, Qwen, and DeepSeek, making it suitable for both prototyping and production deployment.
 
-## Main Features
+## Key Features
 
-- Lightweight and efficient: minimal Python core for quick deployment and debugging.
-- Pluggable memory: detachable long-term memory modules to support personalized dialogues.
-- Multi-model support: compatible with multiple model providers for flexible integration.
-- Tool generator: automated tool creation from API docs to accelerate developer productivity.
+The framework features a minimal Python core that is easy to deploy and debug, along with pluggable long-term memory modules for personalized multi-turn conversations. It includes an automated tool generator that creates agent tools from API documentation, accelerating developer productivity. Multi-model support allows seamless switching between LLM providers.
 
 ## Use Cases
 
-- Intelligent customer service and multi-turn assistants with tool integrations.
-- Data analysis and automated task workflows using Tree-of-Thought and multi-agent patterns.
-- Education and prototyping: compact implementation ideal for tutorials and rapid proofs-of-concept.
+Teams use LightAgent to build intelligent customer service bots and multi-turn assistants that integrate with external tools and APIs. It powers data analysis workflows and automated task execution through Tree-of-Thought reasoning and multi-agent collaboration. Its compact implementation also makes it ideal for education, tutorials, and rapid prototyping.
 
-## Technical Features
+## Technical Details
 
-- Streaming API support and compatibility with mainstream chat frameworks to improve UX.
-- Extensive examples and documentation for engineering integration and CI/CD workflows.
-- Released under Apache-2.0 license, suitable for commercial adaptation and enterprise use.
+LightAgent provides streaming API support compatible with mainstream chat frameworks for responsive user experiences. It ships with extensive examples and documentation covering engineering integration and CI/CD workflows. The project is released under the Apache-2.0 license, making it suitable for commercial adaptation and enterprise use.

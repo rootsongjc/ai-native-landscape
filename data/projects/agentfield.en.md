@@ -21,25 +21,24 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-AgentField abstracts agent lifecycle, identity, and communication as cloud-native objects so multi-agent applications can run on a cluster with scalability, observability, and identity awareness. It combines scheduling, authentication, monitoring, and autoscaling so developers can deploy and operate agents similarly to microservices.
+AgentField enables building, running, and scaling AI agents like APIs and microservices with observability, auditability, and identity awareness from day one. It abstracts agent lifecycle, identity, and communication as cloud-native objects so multi-agent applications can run on clusters with scalability and built-in operational controls.
 
-## Main Features
+## Key Features
 
-- Kubernetes-native scheduling and runtime integration with native horizontal scaling.
-- Identity-aware authentication for secure inter-agent communication and access control.
-- Built-in observability: logs, metrics, and tracing for behavior analysis and troubleshooting.
-- Microservice-style lifecycle management supporting rolling updates and rollbacks.
+- Kubernetes-native scheduling and runtime integration with built-in horizontal scaling support.
+- Identity-aware authentication for secure inter-agent communication and fine-grained access control.
+- Built-in observability with logs, metrics, and tracing for behavior analysis and troubleshooting.
 
 ## Use Cases
 
-- Deploy multi-agent workflows as scalable backend services for task distribution, autonomous operations, and complex orchestration.
-- Ensure secure agent-to-agent communication and auditing in multi-tenant or enterprise environments.
-- Combine with RAG and external model services to provide long-running, domain-specific agent services.
+- Deploying multi-agent workflows as scalable backend services for task distribution and complex orchestration.
+- Ensuring secure agent-to-agent communication and auditing in multi-tenant or enterprise environments.
+- Combining with RAG and external model services to provide long-running, domain-specific agent services.
 
-## Technical Features
+## Technical Details
 
 - Implements Kubernetes extensions and controller patterns to reduce operational friction.
-- Runtime design is language- and model-agnostic, enabling calls to external LLMs and inference services via APIs.
-- Provides observability and authentication integration points for existing cloud-native monitoring and security toolchains.
+- Language- and model-agnostic runtime design enabling calls to external LLMs and inference services via APIs.
+- Provides observability and authentication integration points compatible with existing cloud-native monitoring and security toolchains.

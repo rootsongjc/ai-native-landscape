@@ -18,27 +18,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-LiteRT is Google's lightweight inference runtime evolved from TensorFlow Lite, designed for deploying machine learning and generative models on resource-constrained edge devices. LiteRT V1 maintains compatibility with the classic TFLite API for existing apps, while LiteRT V2 introduces asynchronous execution, automated accelerator selection, and efficient I/O buffer handling to simplify integrating GPU and NPU acceleration across mobile, embedded, and desktop platforms.
+LiteRT is Google's on-device ML inference framework, succeeding TensorFlow Lite, designed for high-performance deployment of machine learning and generative AI models on edge platforms. LiteRT V1 maintains backward compatibility with the classic TFLite API, while V2 introduces asynchronous execution, automated accelerator selection, and efficient I/O buffer handling.
 
-## Main Features
+## Key Features
 
-- Cross-platform support: Android, iOS, Linux, macOS, Windows, with extensions planned for Web and IoT.
-- Hardware acceleration: unified paths for GPU and NPU acceleration and automated accelerator selection in V2.
-- Async and efficient I/O: true asynchronous execution and zero-copy buffer interoperability to reduce latency and improve throughput.
-- Ecosystem compatibility: migration paths from TFLite and integrations with LiteRT-LM and ai-edge-torch tools.
+The framework supports Android, iOS, Linux, macOS, and Windows with planned extensions for Web and IoT platforms. It provides unified GPU and NPU acceleration paths with automated accelerator selection in V2 to maximize hardware utilization. True asynchronous execution and zero-copy buffer interoperability reduce latency and improve throughput for demanding on-device workloads.
 
 ## Use Cases
 
-- Mobile real-time inference: run segmentation, detection, or speech models in Android/iOS apps with low latency.
-- Embedded and edge devices: deploy optimized models where compute and power are limited.
-- Generative model acceleration: support low-latency on-device inference for quantized or compact generative models.
-- Performance tuning and hardware adaptation: serve as the runtime foundation when GPU/NPU acceleration is required.
+Developers use LiteRT to run real-time segmentation, detection, and speech models in mobile applications with low latency. It enables deployment of optimized ML models on embedded and edge devices where compute and power are limited. The framework also supports on-device inference for quantized or compact generative models, providing a runtime foundation for GPU and NPU acceleration.
 
-## Technical Features
+## Technical Details
 
-- Runtime architecture: modular design supporting multiple backends and custom delegates.
-- Build & deployment: Docker and Bazel/CMake build guides for cross-compilation and artifact generation.
-- Open-source license: Apache-2.0 licensed for enterprise and community adoption.
-- Developer experience: sample applications and migration guides to ease transition from existing TFLite workflows.
+LiteRT features a modular runtime architecture supporting multiple backends and custom delegates. It provides Docker and Bazel/CMake build guides for cross-compilation and artifact generation. The project is Apache-2.0 licensed and includes sample applications and migration guides to ease the transition from existing TFLite workflows.

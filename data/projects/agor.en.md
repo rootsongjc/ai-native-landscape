@@ -21,24 +21,21 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Agor, built by Preset, is a multiplayer spatial canvas—think Figma for AI coding assistants—designed to orchestrate parallel sessions of AI assistants (AI Agent) such as Claude Code, Codex, and Gemini. Users create Git-linked worktrees on a 2D board, drop worktrees into zones to trigger templated prompts, and run isolated environments managed by Agor’s daemon or web UI. The project emphasizes reproducible isolated development environments and real-time team coordination.
+Agor is a multiplayer spatial canvas built by Preset for orchestrating parallel AI assistant sessions on a Figma-like board. It coordinates Claude Code, Codex, and Gemini sessions with Git-linked worktrees, enabling teams to manage AI conversations, track agent activities, and visualize collaborative agentic work in real-time. Users create worktrees on a 2D canvas, drop them into zones to trigger templated prompts, and run isolated environments.
 
-## Main Features
+## Key Features
 
-- Parallel agent orchestration and scheduling supporting multiple assistant providers.
-- Multiplayer spatial canvas with zone triggers to visualize and automate workflows.
-- Deep Git worktree integration with isolated environments and automatic port management.
-- Integration with Model Context Protocol (MCP) for agent coordination and orchestration.
+- Parallel agent orchestration supporting Claude Code, Codex, and Gemini with zone-triggered workflows
+- Multiplayer spatial canvas with real-time synchronization, multi-cursor presence, and pinned comments
+- Deep Git worktree integration providing isolated environments with automatic port management
+- Model Context Protocol (MCP) integration for agent coordination and orchestration across sessions
 
 ## Use Cases
 
-Agor is suitable for engineering teams that need to run many AI sessions concurrently: parallel PR workflows, exploring multiple model generation strategies, large-scale code review sessions, and isolated automated regression testing. It helps reduce context switching and enables reproducible experiments across team members.
+Engineering teams running concurrent AI sessions for parallel PR workflows, exploring multiple model generation strategies, large-scale code review sessions, and isolated automated regression testing. Reduces context switching and enables reproducible experiments across team members.
 
-## Technical Features
+## Technical Details
 
-- Real-time synchronization via WebSocket with multi-cursor presence and pinned comments.
-- Dual runtime model: local daemon for development and web UI for collaborative control.
-- Pluggable agent providers and templated zone triggers for building custom automation pipelines.
-- Worktree isolation and automatic environment orchestration to prevent port collisions and speed up start/stop cycles.
+Dual runtime model with a local daemon for development and web UI for collaborative control. Real-time WebSocket synchronization with pluggable agent providers and templated zone triggers. Worktree isolation with automatic environment orchestration prevents port collisions and accelerates start/stop cycles.

@@ -22,21 +22,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-CSGHub, developed by the OpenCSG team, is an open-source platform for managing Large Language Models (LLM) and related assets (models, datasets, spaces, code, etc.). It offers both a free SaaS experience and on-premise deployment options, supports Python SDKs, and provides Web, CLI and OpenAPI interfaces for asset lifecycle operations.
+CSGHub is an open-source platform developed by OpenCSG for managing large language models and related AI assets including models, datasets, and code. It offers features comparable to Hugging Face with both SaaS and on-premise deployment options for enterprise LLM lifecycle management.
 
-## Main Features
+## Key Features
 
-- Centralized LLM and asset management with upload, download, versioning and access control.
-- Extensible microservice framework and plugins to integrate training, fine-tuning and inference pipelines.
-- Enterprise-grade security and on-premise deployment options for compliance.
-- User experience comparable to Hugging Face, with broad model format and deployment support.
+CSGHub provides centralized asset management with upload, download, versioning, and access control for models and datasets. It features an extensible microservice framework with plugins for training and inference pipelines, enterprise-grade security for on-premise deployments, and broad model format compatibility.
 
 ## Use Cases
 
-CSGHub suits teams and enterprises needing centralized model and data asset management: internal model registries, model distribution and auditing, offline inference deployments, private-data fine-tuning pipelines, and production platforms integrating multiple models and services.
+CSGHub is designed for teams and enterprises that need centralized model and data asset management, including internal model registries and distribution auditing. It supports offline inference deployments, private-data fine-tuning pipelines, and production platforms that integrate multiple models and services.
 
-## Technical Characteristics
+## Technical Details
 
-CSGHub uses a microservices architecture with standardized OpenAPIs and supports Docker Compose and Kubernetes/Helm deployment. It integrates model versioning, space management and asset indexing, with pluggable storage backends and high-availability deployment patterns for end-to-end LLM lifecycle management in enterprise environments.
+CSGHub uses a microservices architecture with standardized OpenAPIs, supporting Docker Compose and Kubernetes/Helm deployment. It integrates model versioning, space management, and asset indexing with pluggable storage backends, providing high-availability deployment patterns for enterprise LLM lifecycle management.

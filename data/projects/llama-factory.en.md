@@ -19,12 +19,18 @@ featured: false
 status: tracked
 ---
 
-LLaMA Factory is an easy-to-use and efficient platform for training and fine-tuning large language models. With LLaMA Factory, you can fine-tune hundreds of pre-trained models locally without writing any code. Framework features include:
+## Overview
 
-- Models: LLaMA, LLaVA, Mistral, Mixtral-MoE, Qwen, Yi, Gemma, Baichuan, ChatGLM, Phi, etc.
-- Trainers: (incremental) pre-training, (multimodal) instruction supervision fine-tuning, reward model training, PPO training, DPO training, KTO training, ORPO training, etc.
-- Computation Precision: 16-bit full-parameter fine-tuning, frozen fine-tuning, LoRA fine-tuning, and 2/3/4/5/6/8-bit QLoRA fine-tuning based on AQLM/AWQ/GPTQ/LLM.int8/HQQ/EETQ.
-- Optimization Algorithms: GaLore, BAdam, DoRA, LongLoRA, LLaMA Pro, Mixture-of-Depths, LoRA+, LoftQ, and PiSSA.
-- Acceleration Operators: FlashAttention-2 and Unsloth.
-- Inference Engines: Transformers and vLLM.
-- Experiment Monitors: LlamaBoard, TensorBoard, Wandb, MLflow, SwanLab etc.
+LLaMA Factory is a unified framework for fine-tuning large language models that supports over 100 pre-trained models and multiple training methods. It provides a no-code interface for local fine-tuning, making it accessible to both researchers and production engineers who need to adapt foundation models to specific tasks.
+
+## Key Features
+
+The framework supports a wide range of models including LLaMA, Qwen, Mistral, Gemma, and ChatGLM with training methods spanning pre-training, supervised fine-tuning, reward modeling, and preference alignment (PPO, DPO, KTO, ORPO). It offers flexible computation precision from 16-bit full-parameter tuning to 2-bit QLoRA, and integrates acceleration operators like FlashAttention-2 and Unsloth for efficient training.
+
+## Use Cases
+
+Researchers use LLaMA Factory to experiment with different fine-tuning strategies and optimization algorithms on cutting-edge models. Production teams rely on it to adapt foundation models for domain-specific tasks such as code generation, customer support, and content creation. The no-code interface also makes it accessible to non-engineers who need to customize model behavior.
+
+## Technical Details
+
+LLaMA Factory supports inference through both Transformers and vLLM backends. It integrates experiment monitoring tools including LlamaBoard, TensorBoard, Wandb, MLflow, and SwanLab. Optimization algorithms such as GaLore, DoRA, LongLoRA, and PiSSA are built in, and quantization methods including AQLM, AWQ, GPTQ, and HQQ enable efficient training on consumer hardware.

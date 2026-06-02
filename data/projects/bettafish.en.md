@@ -18,25 +18,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-BettaFish (WeiYu) is a fully open-source multi-agent public opinion analysis platform. It integrates web crawling, retrieval, sentiment analysis, and multimodal parsing capabilities to continuously collect and deeply analyze data from major social media platforms such as Weibo, Xiaohongshu, and Douyin. The system uses conversational queries as the entry point, automatically generates structured research reports and visual results, and aims to help researchers and enterprises reconstruct the full landscape of public opinion, discover trends, and support decision-making.
+BettaFish (WeiYu) is a multi-agent public opinion analysis assistant built from scratch without external frameworks. It breaks information cocoons by integrating web crawling, retrieval, sentiment analysis, and multimodal parsing to continuously collect and analyze data from major social media platforms. The system uses conversational queries as its entry point and automatically generates structured research reports to help users restore the full picture of public opinion and predict trends.
 
 ## Key Features
 
-- Multi-Agent Architecture: Agents such as Query, Media, Insight, and Report collaborate to achieve a closed loop of retrieval, extraction, and reporting.
-- Full-Network Crawling & Multimodal Parsing: Supports extraction and feature fusion of text, images, and short videos.
-- Report & Template Engine: Automatically generates HTML/report files, which can be exported for decision-making reference.
-- One-Click Deployment: Provides Docker and script-based installation methods for quick startup on cloud hosts or local servers.
+BettaFish employs a multi-agent architecture with specialized agents (Query, Media, Insight, Report) that collaborate to form a closed loop of retrieval, extraction, and reporting. It supports full-network crawling with multimodal parsing of text, images, and short videos, along with an automatic report and template engine that generates exportable HTML reports for decision-making reference. One-click deployment via Docker and scripts enables quick startup on cloud hosts or local servers.
 
 ## Use Cases
 
-- Public Opinion Monitoring & Crisis Response: Real-time capture of trending topics and generation of source tracing and public opinion heat reports.
-- Brand & Market Research: Long-term tracking and trend prediction for competitors and brand reputation.
-- Academic & Policy Research: Provides structured, large-scale social media data analysis capabilities for social science and public policy research.
+BettaFish is ideal for public opinion monitoring and crisis response, enabling real-time capture of trending topics with source tracing and heat reports. It also serves brand and market research teams who need long-term tracking and trend prediction for competitors and brand reputation, as well as academic and policy researchers who require structured, large-scale social media data analysis capabilities.
 
-## Technical Highlights
+## Technical Details
 
-- Modular implementation primarily in Python, compatible with common data storage and message queues for easy secondary development and extension.
-- Supports connection pooling and caching mechanisms to improve stability and throughput for crawling and analysis.
-- Pluggable model interfaces: Can integrate locally fine-tuned models or mainstream cloud LLM services, supporting hybrid inference strategies.
+The platform is implemented primarily in Python with a modular design compatible with common data storage and message queues for easy secondary development. It supports connection pooling and caching mechanisms to improve stability and throughput, and provides pluggable model interfaces that can integrate locally fine-tuned models or mainstream cloud LLM services with hybrid inference strategies.

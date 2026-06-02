@@ -20,24 +20,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-DeepAnalyze is an agentic large language model designed for autonomous data science workflows. It can perform end-to-end tasks with minimal or no human intervention, covering data exploration, cleaning, modeling, visualization, and final report generation. By combining task planning with multi-modal data handling, DeepAnalyze can analyze structured data (databases, CSV), semi-structured formats (JSON), and unstructured text, and produce reproducible, structured research reports.
+DeepAnalyze is the first agentic large language model designed for autonomous data science workflows. It can perform end-to-end analysis tasks with minimal human intervention, covering data exploration, cleaning, modeling, visualization, and professional report generation across structured, semi-structured, and unstructured data sources.
 
 ## Key Features
 
-- End-to-end coverage: supports preprocessing, feature engineering, model training and evaluation, visualization, and report generation;
-
-- Agentic planning: built-in task decomposition and scheduling that makes coherent decisions across multiple analysis steps;
-
-- Open-source and transparent: code, models and training data are released to facilitate reproduction, deployment and extension;
-
-- Multi-source support: automatically recognizes and integrates structured, semi-structured and unstructured data sources for joint analysis.
+DeepAnalyze provides full end-to-end coverage from preprocessing and feature engineering through model training, evaluation, and report generation. Its agentic planning capability decomposes and schedules tasks across multiple analysis steps, while supporting automatic recognition and integration of diverse data sources including databases, CSV, JSON, and unstructured text.
 
 ## Use Cases
 
-DeepAnalyze fits scenarios such as automated data-science research, data analyst assistants, internal enterprise data exploration, and teaching examples. It can quickly generate research-grade data reports, automate repetitive analysis tasks, help engineering teams run preliminary modeling with limited resources, or be embedded as a customizable analytic assistant in business workflows.
+DeepAnalyze is ideal for automated data science research, data analyst assistants, and internal enterprise data exploration. It can quickly generate research-grade data reports, automate repetitive analysis tasks, and be embedded as a customizable analytic assistant in business workflows.
 
-## Technical Characteristics
+## Technical Details
 
-DeepAnalyze builds on open models and agentic training paradigms, leveraging vLLM-level inference efficiency and instruction-tuning strategies tailored for data science. The training data and evaluation suites are publicly available; local deployment is supported through vLLM or similar runtimes, with example scripts and a demo interface for end-to-end API interaction.
+DeepAnalyze builds on open models and agentic training paradigms with vLLM-level inference efficiency and data-science-specific instruction tuning. Training data and evaluation suites are publicly available, and local deployment is supported through vLLM or similar runtimes with example scripts and demo interfaces.

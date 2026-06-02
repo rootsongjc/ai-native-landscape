@@ -22,20 +22,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-xLLM is an open-source framework for vision-language models, offering training, fine-tuning, and inference tooling with documentation and examples to help research and engineering teams build multimodal systems.
+xLLM is an open-source framework developed by JD Open Source for building, training, and deploying vision-language models and other large-scale AI models. It provides a unified toolchain covering training, fine-tuning, and inference with comprehensive documentation and example code to help research and engineering teams bring multimodal systems from experimentation to production.
 
-## Main Features
+## Key Features
 
-- Supports joint training and inference pipelines for vision-language tasks.
-- Provides multimodal data processing and evaluation tools.
-- Comprehensive ReadTheDocs documentation and example code for engineering adoption.
+Joint training and inference pipelines support LLM, VLM, DiT, and REC model architectures, with optimizations tailored for diverse AI accelerators including GPUs and domestic chips. The framework includes multimodal data processing utilities and evaluation tooling out of the box. Detailed ReadTheDocs documentation and runnable examples lower the learning curve for engineering adoption.
 
 ## Use Cases
 
-Suitable for research and product teams building visual question answering, image captioning, and multimodal retrieval systems.
+Research and product teams building visual question answering, image captioning, and multimodal retrieval systems can use xLLM as their foundational training and inference platform. Organizations needing to deploy models across heterogeneous hardware accelerators benefit from the framework's cross-device optimization layer. The toolchain also supports large-scale fine-tuning workflows for adapting foundation models to domain-specific tasks.
 
-## Technical Features
+## Technical Details
 
-Focuses on multimodal feature fusion and cross-modal alignment, offering extensible model components and training strategies for large-scale training and fine-tuning.
+xLLM emphasizes multimodal feature fusion and cross-modal alignment through extensible model components and composable training strategies. It supports distributed training with efficient parallelism and memory management to handle large-scale parameter counts. The inference engine is optimized for throughput across multiple accelerator types, enabling cost-effective deployment on mixed hardware clusters.

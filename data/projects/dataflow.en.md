@@ -17,20 +17,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-DataFlow is a data preparation and pipeline system designed for domain-specific training and retrieval-augmented generation (RAG). It composes modular `operator` components into reusable `pipelines` to parse, clean, augment, and evaluate data from noisy sources such as PDFs, plain text, and low-quality QA, producing high-quality datasets suitable for pre-training, supervised fine-tuning, or RAG workflows.
+DataFlow is an open-source data preparation platform that uses the latest LLM-based operators and pipelines for AI data engineering. It transforms noisy data sources such as PDFs, plain text, and low-quality QA into high-quality datasets suitable for pre-training, supervised fine-tuning, and RAG workflows.
 
-## Main Features
+## Key Features
 
-- Modular operators: combine rule-based methods, deep models and large language models (LLM) to build diverse data-processing units.
-- Reusable pipelines: orchestrate operators to deliver end-to-end flows from extraction to quality evaluation.
-- Data quality scoring: multi-dimensional evaluation and filtering to improve downstream model performance and reduce noise.
+DataFlow provides modular operators that combine rule-based methods, deep models, and large language models into diverse data-processing units. It offers reusable pipeline orchestration from data extraction through quality evaluation, with multi-dimensional scoring and filtering to improve downstream model performance.
 
 ## Use Cases
 
-DataFlow is suitable for scenarios that require improved domain model performance — e.g., data cleaning and labeling in healthcare, finance, and legal domains; constructing SFT/fine-tuning datasets; building high-quality knowledge entries for RAG; or embedding automated training pipelines into MLOps workflows.
+DataFlow is used for data cleaning and labeling in domain-specific fields such as healthcare, finance, and legal. It supports constructing SFT and fine-tuning datasets, building high-quality knowledge entries for RAG systems, and embedding automated data pipelines into MLOps workflows.
 
-## Technical Characteristics
+## Technical Details
 
-Implemented primarily in Python, the project provides a broad operator library (text processing, format extraction, generation verification), supports Docker deployment and GPU acceleration, and interoperates with vLLM and Hugging Face dataset ecosystems; the repository is Apache-2.0 licensed for research and engineering use.
+Implemented primarily in Python, DataFlow provides a broad operator library covering text processing, format extraction, and generation verification. It supports Docker deployment and GPU acceleration, interoperates with vLLM and Hugging Face dataset ecosystems, and is licensed under Apache-2.0.

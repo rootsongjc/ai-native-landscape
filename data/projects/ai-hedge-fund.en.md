@@ -19,24 +19,21 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-AI Hedge Fund is a research and educational proof-of-concept that demonstrates how multiple specialized agents (valuation, sentiment, fundamentals, technicals, etc.) can collaborate to produce trading signals. The project provides a command-line interface and an optional web application for backtesting and strategy validation. It emphasizes reproducible research workflows and risk hypothesis testing; it is explicitly for learning purposes and not financial advice.
+AI Hedge Fund is a proof-of-concept project demonstrating an AI-powered hedge fund using multiple specialized agents for trading decisions. It showcases how agents focused on valuation, sentiment, fundamentals, and technicals can collaborate to produce trading signals. The project provides both a CLI and an optional web application for backtesting and strategy validation, emphasizing reproducible research and educational exploration.
 
-## Main Features
+## Key Features
 
-- Agentic collaboration: multiple strategy agents evaluate assets in parallel to produce diverse trading signals.
-- Backtesting & risk controls: configurable backtester and risk module for robustness checks on historical windows.
-- Pluggable LLM integration: supports major LLM providers and local models (e.g., via the `--ollama` flag) for strategy reasoning and narrative explanations.
-- Full-stack operation: runnable from `CLI` for automation or via the built-in web app for interactive analysis.
+- Multiple specialized agents (valuation, sentiment, fundamentals, technicals) evaluate assets in parallel to produce diverse trading signals
+- Configurable backtester and risk module for robustness checks across historical data windows
+- Pluggable LLM integration supporting major providers and local models via the `--ollama` flag
+- Full-stack operation with CLI for automation and a built-in web app for interactive analysis
 
 ## Use Cases
 
-Suitable for researchers, quant hobbyists, and educational settings to explore agent collaboration, LLM-driven decision explanations, and backtesting pipelines. Typical uses include prototyping strategies, teaching, and studying model influence on trading decisions in controlled experiments. The project is not intended for live trading; run experiments in sandboxed historical environments.
+Designed for researchers, quant hobbyists, and educational settings to explore agent collaboration, LLM-driven decision explanations, and backtesting pipelines. Typical uses include prototyping trading strategies, teaching AI-finance concepts, and studying model influence on trading decisions in controlled experiments. Not intended for live trading.
 
-## Technical Characteristics
+## Technical Details
 
-- Python implementation with `Poetry` for dependency management, enabling quick setup in development environments.
-- Modular architecture: separates data ingestion, strategy logic, backtester, and presentation layers for easy substitution of data sources or models.
-- Configurable data ingestion: supports free sample market data and third-party financial APIs, with API keys managed via `.env`.
-- Local-first privacy: core computations and backtests run locally; network calls are optional to protect sensitive data.
+Python implementation with Poetry for dependency management. Modular architecture separates data ingestion, strategy logic, backtester, and presentation layers. Configurable data sources support free sample market data and third-party financial APIs. Local-first design runs core computations locally with optional network calls to protect sensitive data.

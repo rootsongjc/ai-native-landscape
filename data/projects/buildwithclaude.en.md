@@ -20,27 +20,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Build with Claude is a plugin marketplace and discovery platform for Claude Code that aggregates agents, commands, hooks, skills, and plugin collections to make it easy to browse, search, and install community and curated extensions. The project provides a Web UI and a repository-style plugin layout, enabling installation via the Claude plugin marketplace or manual updates for controlled deployments. It helps teams integrate agent-driven automation into their workflows.
+Build with Claude is a single hub to find Claude Skills, Agents, Commands, Hooks, Plugins, and Marketplace collections to extend Claude Code, Claude Desktop, Agent SDK, and OpenClaw. It aggregates community and curated extensions into a searchable Web UI, enabling installation via the Claude plugin marketplace or manual repository-based updates for controlled deployments.
 
-## Main Features
+## Key Features
 
-- Rich plugin collections covering agents (language and domain experts), commands (commit, docs, TDD), and hooks (event-driven automation).
-- Marketplace discovery with filtering, search, and one-click copyable install commands; supports bundled collection installs.
-- MCP and community indexing to find MCP servers, connectors, and third-party marketplaces.
-- Multi-install options: marketplace integration and manual repository-based installation for different operational needs.
+The platform offers rich plugin collections covering agents, commands, hooks, and skills with marketplace discovery featuring filtering, search, and one-click copyable install commands. It includes MCP and community indexing to find MCP servers, connectors, and third-party marketplaces, with multi-install options supporting both marketplace integration and manual repository-based installation.
 
 ## Use Cases
 
-- Rapidly deploy domain-specific agents to assist with coding, reviews, and testing workflows.
-- Automate routine development tasks via commands and hooks (formatting, commits, docs generation).
-- Curate vetted plugins for regulated environments to ensure compliance and auditability.
-- Serve as a community discovery portal to explore and try third-party plugins and collections.
+Build with Claude is ideal for rapidly deploying domain-specific agents to assist with coding, reviews, and testing workflows. It enables automation of routine development tasks via commands and hooks, helps curate vetted plugins for regulated environments to ensure compliance, and serves as a community discovery portal to explore third-party plugins and collections.
 
-## Technical Characteristics
+## Technical Details
 
-- Repository-driven plugin manifests and metadata enable automated installs and updates.
-- Web UI for visual browsing, filtering, and usage examples to improve discoverability.
-- Native support for Claude Code marketplace installation flows.
-- Documentation and contribution guides define plugin formats and validation for contributors.
+The platform uses repository-driven plugin manifests and metadata to enable automated installs and updates, with a Web UI for visual browsing, filtering, and usage examples. It natively supports Claude Code marketplace installation flows and provides documentation and contribution guides that define plugin formats and validation for contributors.

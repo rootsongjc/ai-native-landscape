@@ -16,8 +16,18 @@ featured: false
 status: tracked
 ---
 
-Milvus is a high-performance vector database designed for large-scale unstructured data processing. Developed in Go and C++, it supports CPU/GPU hardware acceleration to achieve first-class vector search performance. Its distributed architecture enables horizontal scaling to handle search queries across billions of vectors.
+## Overview
 
-Milvus provides comprehensive enterprise-grade features: supporting multiple vector index types (such as HNSW, IVF, FLAT, etc.) for efficient vector search; optimizing cost and performance through multi-tenancy and hot/cold storage strategies; supporting full-text and hybrid search for simultaneous processing of sparse and dense vectors; offering robust data security mechanisms including user authentication, TLS encryption, and role-based access control.
+Milvus is a high-performance, cloud-native vector database purpose-built for scalable approximate nearest neighbor (ANN) search across billions of vectors. Developed in Go and C++ with CPU and GPU hardware acceleration, it handles large-scale unstructured data processing through a distributed, horizontally scalable architecture. As a graduate project of the LF AI and Data Foundation, Milvus is widely adopted in enterprise AI pipelines.
 
-The Milvus open-source project is part of the LF AI & Data Foundation and is distributed under the Apache 2.0 license. It supports standalone deployment mode and offers a lightweight version, Milvus Lite, for quick start use. For enterprise users, a fully managed service is available on Zilliz Cloud.
+## Key Features
+
+Multiple index types including HNSW, IVF, and FLAT provide tunable trade-offs between search accuracy and latency for diverse workload requirements. Hybrid search capabilities simultaneously process sparse and dense vectors, enabling combined keyword and semantic retrieval. Enterprise-grade features such as multi-tenancy, hot and cold storage tiering, TLS encryption, role-based access control, and full-text search support production deployments at scale.
+
+## Use Cases
+
+Milvus powers recommendation systems, image and video similarity search, natural language semantic retrieval, and AI-powered question answering in production environments. It is equally suited for real-time personalization engines and large-scale batch similarity computations across enterprise data lakes.
+
+## Technical Details
+
+The distributed architecture supports standalone, cluster, and cloud deployment modes, with a lightweight Milvus Lite variant for rapid prototyping. Go and C++ deliver high-throughput data ingestion and low-latency queries, while hardware-accelerated indexing leverages both CPU and GPU resources. A fully managed cloud offering is available through Zilliz Cloud for teams that prefer not to operate infrastructure directly.

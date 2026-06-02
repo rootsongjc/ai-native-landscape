@@ -19,18 +19,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-KitOps is a CNCF-hosted open standard and toolkit designed to package AI/ML projects — including model weights, datasets, code, configuration and experimental metadata — into immutable OCI artifacts called ModelKits. By elevating model deliverables to first-class managed assets, KitOps enables packaging, signing, provenance and versioning to be integrated into regular DevOps pipelines, reducing complexity around deployment and auditability.
+KitOps is a CNCF-backed open-source DevOps tool that standardizes the packaging and versioning of AI/ML models, datasets, code, and configuration into OCI artifacts called ModelKits. By treating model deliverables as first-class managed assets, KitOps enables teams to integrate AI artifact packaging, signing, provenance tracking, and versioning directly into their existing DevOps pipelines.
 
-## Main Features
+## Key Features
 
-KitOps provides a standardized description (Kitfile) and packaging format (ModelKit), along with a cross-platform CLI to pack, push and pull artifacts. Artifacts can be signed and verified for auditability. The project is OCI-compatible and integrates with container registries, CI/CD systems and Kubernetes, supporting private deployments and enterprise compliance.
+KitOps provides a standardized packaging format (ModelKit) and declarative description file (Kitfile), along with a cross-platform CLI for packing, pushing, and pulling artifacts with built-in signing and verification for auditability. It is fully OCI-compatible, integrating seamlessly with container registries, CI/CD systems, and Kubernetes while supporting private deployments and enterprise compliance requirements.
 
 ## Use Cases
 
-KitOps is suitable for scenarios requiring governed and auditable model delivery: enterprise model release processes, regulatory compliance (for example EU AI Act) where model versioning and traceability are required, and private or air-gapped environments where models and data must be managed behind a firewall.
+KitOps is ideal for enterprise model release processes that require governed and auditable delivery, regulatory compliance scenarios such as EU AI Act where model versioning and traceability are mandatory, and private or air-gapped environments where models and data must be managed securely behind a firewall.
 
-## Technical Features
+## Technical Details
 
-Built on OCI standards, KitOps uses immutable ModelKits and declarative Kitfiles to describe artifact contents. It supports signing, incremental pulls and fine-grained versioning. The implementation includes a Go core and a cross-platform CLI, and offers adapters for Kubernetes, container registries and existing CI toolchains to embed into ML engineering workflows.
+Built on OCI standards, KitOps uses immutable ModelKits and declarative Kitfiles to describe artifact contents, supporting signing, incremental pulls, and fine-grained versioning. The implementation features a Go core with a cross-platform CLI and provides adapters for Kubernetes, container registries, and existing CI toolchains to embed smoothly into ML engineering workflows.

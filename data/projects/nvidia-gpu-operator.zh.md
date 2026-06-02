@@ -17,21 +17,18 @@ featured: false
 status: tracked
 ---
 
-## 详细介绍
+## 简介
 
-NVIDIA GPU Operator 是一个面向 Kubernetes 的 Operator，用于自动化部署与管理 GPU 驱动、容器运行时、GPU 插件与监控组件。它将复杂的 GPU 安装、驱动版本管理与各类 Kubernetes 资源编排成可重现的工作流，帮助集群管理员在多节点环境中一致性地开启 GPU 能力，从而支持基于 GPU 的训练与推理工作负载。
+NVIDIA GPU Operator 是一个 Kubernetes 原生的 Operator，用于自动化部署、配置和生命周期管理集群节点上的 GPU 驱动、容器运行时、设备插件与监控组件。它将复杂的 GPU 供给过程转化为声明式、可重现的工作流，服务于训练与推理工作负载。
 
 ## 主要特性
 
-- 自动化部署：自动安装 NVIDIA 驱动、Container Toolkit、Device Plugin 等组件，减少手动配置工作量。
-- 版本管理：通过声明式 CR（Custom Resource）控制驱动与组件的版本，便于回滚与升级策略。
-- 健康检测与监控：集成监控导出器，便于在 Prometheus 等工具中观测 GPU 状态与指标。
-- Kubernetes 原生：以 Operator 模式运行，遵循 Kubernetes 的控制回路与声明式管理模型。
+自动化安装 NVIDIA 驱动、Container Toolkit 与 Device Plugin 组件，免除逐节点手动配置。通过声明式 Custom Resource 管理驱动与组件版本，简化集群范围内的升级与回滚操作。集成健康监控与指标导出器，在 Prometheus 等可观测性平台中提供 GPU 可见性。
 
 ## 使用场景
 
-适用于需要在 Kubernetes 上运行 GPU 加速工作负载的场景，例如深度学习训练集群、推理服务、HPC 作业以及需要 GPU 的数据处理流水线。对多租户集群或混合 GPU 型号环境，GPU Operator 能统一驱动与运行时配置，降低运维复杂度。
+在 Kubernetes 上运行 GPU 加速的深度学习训练集群与推理服务。管理异构 GPU 环境，统一驱动与运行时配置以降低运维开销。需要一致驱动与运行时配置的 GPU 密集型 HPC 作业与数据处理流水线。
 
 ## 技术特点
 
-GPU Operator 利用 Kubernetes 的 Custom Resource 和控制器模式，封装驱动安装、DaemonSet、Daemon 与 StatefulSet 等资源。它强调声明式配置，并结合节点选择器与容忍度实现对特定节点的 GPU 调度。更多细节与安装说明请参考官方文档：[NVIDIA GPU Operator 文档](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/)。
+利用 Kubernetes Custom Resource 与控制器模式管理驱动 DaemonSet 及节点级资源。采用声明式配置，通过节点选择器与容忍度实现精确的 GPU 调度策略。遵循 Kubernetes Operator 最佳实践，通过控制循环协调确保集群 GPU 堆栈状态一致。

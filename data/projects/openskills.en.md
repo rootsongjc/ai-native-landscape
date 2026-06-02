@@ -17,24 +17,20 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-OpenSkills is a developer-oriented universal skills loader for discovering, installing, and running "skills" in agent or script environments. Distributed as an npm package, it provides a CLI and lightweight interfaces to manage small tooling modules uniformly, reducing integration overhead when composing capabilities.
+OpenSkills is a universal skills loader that lets AI coding agents discover, install, and run modular skill packages through a simple CLI. Distributed as an npm package, it standardizes how small tooling modules are published and consumed, cutting down the integration effort when composing agent capabilities.
 
-## Main Features
+## Key Features
 
-- Unified packaging and publishing workflow for skills via npm.
-- A minimal CLI to list, install, uninstall and execute skills.
-- Support for running skills as independent modules, making it easy to integrate locally or in CI pipelines.
+- One-command install and execution of skills via a lightweight CLI, backed by the npm registry for versioning and distribution.
+- Agent-agnostic design that decouples skill discovery and execution from any specific runtime, making skills portable across environments.
+- Composable module architecture that lets developers stack skills together or run them independently in local dev, CI pipelines, or production agents.
 
 ## Use Cases
 
-- Package standalone tools or scripts as skills for on-demand invocation by agents or automation flows.
-- Rapidly experiment with new skills in local development or distribute and update skill collections in CI.
-- Foster a small plugin ecosystem where the community contributes reusable utility modules.
+Developers can package standalone scripts or tools as skills and have AI agents invoke them on demand during coding tasks. Teams can maintain a shared skill registry in CI, automatically distributing updates to every agent in the pipeline. The community can contribute reusable utility modules, building a growing plugin ecosystem around agent workflows.
 
-## Technical Features
+## Technical Details
 
-- Implemented in TypeScript with an emphasis on light weight and composability.
-- Uses the npm ecosystem for distribution and versioning, compatible with existing build tools.
-- Designed to be decoupled from specific agent runtimes or script hosts, focusing on discovery and execution contracts for skills.
+Built in TypeScript for a small footprint and strong type safety, OpenSkills relies on the npm ecosystem for package management and semantic versioning. Its runtime-agnostic contracts mean skills work with any agent host that supports the loader's discovery and execution interface, without coupling to a particular framework.

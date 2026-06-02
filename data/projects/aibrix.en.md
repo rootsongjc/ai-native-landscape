@@ -19,22 +19,21 @@ featured: false
 status: tracked
 ---
 
-AIBrix is a cloud-native infrastructure framework for large-scale LLM inference, designed to offer scalable and cost-efficient inference deployment. It includes routing, autoscaling, distributed inference, and KV caching components to build production-grade LLM services on Kubernetes.
+## Overview
 
-## Main Features
+AIBrix is a cost-efficient and pluggable infrastructure framework for GenAI inference, designed for large-scale LLM deployment. Built under the vLLM project, it provides production-grade components including routing, autoscaling, distributed inference, and KV caching to build scalable LLM services on Kubernetes.
 
-- High-density LoRA management and model adapters for lightweight adaptation and deployment.
-- LLM gateway and routing for multi-model and multi-replica traffic management.
-- Autoscaler tailored for inference workloads to dynamically scale resources and optimize costs.
+## Key Features
+
+- High-density LoRA management and model adapters for lightweight adaptation and deployment
+- LLM gateway and intelligent routing for multi-model and multi-replica traffic management
+- Autoscaler tailored for inference workloads that dynamically scales resources to optimize costs
+- Distributed inference, distributed KV cache, and heterogeneous GPU scheduling support
 
 ## Use Cases
 
-- Enterprise LLM inference platform and service deployment.
-- Mixed-model deployments with cost optimization requirements.
-- Research and engineering scenarios for building and evaluating large-scale inference baselines.
+Enterprise LLM inference platform and service deployment. Mixed-model deployments with cost optimization requirements. Research and engineering scenarios for building and evaluating large-scale inference baselines on Kubernetes.
 
-## Technical Highlights
+## Technical Details
 
-- Implemented with Go and Python, designed for Kubernetes-native deployment.
-- Supports distributed inference, distributed KV cache, and heterogeneous GPU scheduling to improve throughput and cost efficiency.
-- Open source (Apache-2.0) with extensive documentation and community support.
+Implemented with Go and Python, designed for Kubernetes-native deployment. Supports distributed inference, distributed KV cache, and heterogeneous GPU scheduling to maximize throughput and cost efficiency. Open source under Apache-2.0 license with extensive documentation and community support.

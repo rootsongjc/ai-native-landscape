@@ -18,21 +18,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Beads is a lightweight memory layer designed for coding agents. It converts important conversation snippets and code context into embeddings, stores them in an efficient index, and enables reliable retrieval during multi-turn interactions or long-lived sessions. The result is improved continuity and context-awareness for code generation, completion, and debugging workflows.
+Beads is a lightweight memory layer designed for coding agents, providing persistent context and efficient retrieval to enhance AI-assisted development. It converts important conversation snippets and code context into embeddings, stores them in an efficient index, and enables reliable retrieval during multi-turn interactions or long-lived sessions, improving continuity for code generation, completion, and debugging workflows.
 
-## Main Features
+## Key Features
 
-- Persistent memory storage for key interactions, code fragments, and metadata.
-- Embedding-based vector retrieval to find semantically relevant context quickly.
-- Low-latency queries tuned for coding assistant scenarios.
-- Simple, extensible API to integrate with existing agent runtimes and toolchains.
+Beads offers persistent memory storage for key interactions, code fragments, and metadata, embedding-based vector retrieval for finding semantically relevant context quickly, low-latency queries tuned for coding assistant scenarios, and a simple extensible API for integration with existing agent runtimes and toolchains.
 
 ## Use Cases
 
-Beads suits coding assistants that require long-term memory: maintaining conversational state across sessions, recovering relevant past changes and annotations, enriching debugging processes with historical context, and decoupling memory concerns from model inference. It functions as a modular memory component that can be plugged into existing pipelines.
+Beads suits coding assistants requiring long-term memory: maintaining conversational state across sessions, recovering relevant past changes and annotations, enriching debugging processes with historical context, and decoupling memory concerns from model inference. It functions as a modular memory component that can be plugged into existing agent pipelines.
 
-## Technical Features
+## Technical Details
 
 Built around embeddings and vector indexing, Beads balances recall relevance and performance with metadata filtering and semantic retrieval strategies tailored for code. It is designed to work alongside large language models by returning compact, relevant context that can be appended into the model's context window, reducing complexity in context engineering.

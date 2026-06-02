@@ -20,23 +20,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Stripe AI is an open-source toolkit and collection of SDKs from Stripe designed to integrate payments, billing, and related APIs into LLMs and agent workflows. The repository includes an Agent Toolkit for Python and TypeScript, billing-oriented components such as `ai-sdk` and `token-meter`, and support for the Model Context Protocol (MCP) to enable secure access to Stripe services in hosted or local setups. It helps developers handle billing, authorization, and payment flows when building AI-powered products.
+Stripe AI is an open-source collection of SDKs and tools from Stripe that brings payments, billing, and financial APIs directly into LLM and agent workflows. It provides Agent Toolkits for Python and TypeScript, billing utilities such as ai-sdk and token-meter, and Model Context Protocol support for secure access to Stripe services in both hosted and local environments.
 
-## Main Features
+## Key Features
 
-- Agent integration: tools compatible with OpenAI Agent SDK, LangChain, CrewAI, and Vercel AI SDK.
-- MCP support: use Stripe-hosted MCP or run a local MCP instance for secure, OAuth-based access.
-- Multi-language SDKs: Python and TypeScript packages for server and client integration.
-- Billing adapters: `ai-sdk` and `token-meter` assist in connecting model usage to Stripe billing.
+The toolkit integrates with major agent frameworks including OpenAI Agent SDK, LangChain, CrewAI, and Vercel AI SDK, enabling agents to perform payment actions with proper authorization. It supports Stripe-hosted or self-hosted MCP servers with OAuth-based security, offers Python and TypeScript SDKs, and includes billing adapters that connect model token usage directly to Stripe invoicing.
 
 ## Use Cases
 
-Useful when you need to incorporate payments or billing into AI products — for example, metering model usage for paid API calls, enabling agents to perform payment-related actions (such as creating payment links) with proper authorization, or bridging LLMs with enterprise billing systems for chargeback and reconciliation.
+Stripe AI is essential when building AI products that require payment functionality, such as metering token consumption for paid API services or allowing agents to create payment links and manage subscriptions on behalf of users. It also serves as an engineering bridge between LLM-powered applications and enterprise billing systems for usage tracking and reconciliation.
 
-## Technical Characteristics
+## Technical Details
 
-- Open-source under the MIT license, enabling customization for both enterprise and research uses.
-- Includes examples, docs, and demos (MCP quickstart, sample integrations, and toolkit examples).
-- Engineered for production use with context defaults (account context), permission configuration, and Stripe Dashboard API key integration.
+The project is open-sourced under the MIT license and ships with comprehensive examples, documentation, and MCP quickstart guides. It is engineered for production deployment with configurable account context defaults, fine-grained permission settings, and direct integration with Stripe Dashboard API keys.

@@ -17,23 +17,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-gpustack is an open-source platform that unifies heterogeneous GPU resources into a single, orchestratable pool for model training and inference. It provides device discovery, resource abstraction, and centralized scheduling so teams can run distributed training and low-latency inference with improved utilization and observability.
+GPUStack is an open-source GPU cluster manager that configures and orchestrates inference engines like vLLM and SGLang for high-performance AI model deployment. It unifies heterogeneous GPU resources into a single orchestratable pool, providing device discovery, resource abstraction, and centralized scheduling to help teams run distributed training and low-latency inference with improved GPU utilization and full observability.
 
-## Main Features
+## Key Features
 
-- Resource pooling and device discovery: automatic identification of GPU model, memory and driver details, with support for CUDA and ROCm.
-- Intelligent scheduling: policies based on job requirements, priorities and reservations to maximize utilization and reduce queue time.
-- Observability: built-in metrics collection, job dashboards and historical statistics with Prometheus/Grafana integration.
-- Extensibility: plugin hooks for custom schedulers, lifecycle events and monitoring integrations.
+GPUStack offers automatic resource pooling and device discovery that identifies GPU model, memory, and driver details across CUDA and ROCm stacks. It provides intelligent scheduling with policies based on job requirements and priorities, built-in metrics collection with Prometheus/Grafana integration, and extensible plugin hooks for custom schedulers and monitoring integrations.
 
 ## Use Cases
 
-- Research and education clusters: share GPUs safely across projects while avoiding memory and card conflicts.
-- Enterprise training platforms: orchestrate large-scale distributed training and control costs.
-- Online inference fleets: dynamically allocate GPUs by request load to provide low-latency, cost-effective serving.
+GPUStack is well-suited for research and education clusters that need to share GPUs across projects without memory or card conflicts, enterprise training platforms orchestrating large-scale distributed training, and online inference fleets that require dynamic GPU allocation by request load for low-latency, cost-effective serving.
 
-## Technical Highlights
+## Technical Details
 
-gpustack follows cloud-native principles and integrates with container ecosystems and orchestration tooling. It exposes a RESTful API and CLI for automation, supports modular deployment of scheduler/monitoring/access layers, and is released under the Apache-2.0 license with community documentation available on the project website.
+Built on cloud-native principles, GPUStack integrates with container ecosystems and exposes a RESTful API and CLI for automation. Its modular architecture supports independent deployment of scheduler, monitoring, and access layers, and it is released under the Apache-2.0 license with comprehensive community documentation.

@@ -18,23 +18,18 @@ featured: false
 status: tracked
 ---
 
-## 详细介绍
+## 简介
 
-Stripe AI 是 Stripe 提供的一套开源工具与 SDK，旨在把支付、计费与相关 API 无缝集成到 LLM 与智能体（智能体）工作流中。仓库包含用于 Python 与 TypeScript 的 Agent Toolkit、与计费相关的 `ai-sdk` 与 `token-meter` 等组件，并支持 Model Context Protocol（MCP）以便安全地在托管或本地环境中访问 Stripe 服务。该项目面向开发者开放，便于在构建 AI 驱动的产品时处理支付、账单与权限等工程需求。
+Stripe AI 是 Stripe 提供的开源 SDK 和工具集合，将支付、计费和金融 API 直接集成到 LLM 和智能体工作流中。它提供 Python 和 TypeScript 的 Agent Toolkit、计费工具（如 ai-sdk 和 token-meter）以及 Model Context Protocol 支持，可在托管和本地环境中安全访问 Stripe 服务。
 
 ## 主要特性
 
-- Agent 集成：提供可与 OpenAI Agent SDK、LangChain、CrewAI、Vercel AI SDK 等框架配合的工具。
-- MCP 支持：支持通过 Stripe 托管的 MCP 服务或本地 MCP 实例进行安全访问与 OAuth 授权。
-- 多语言 SDK：提供 Python 与 TypeScript 包，便于在服务端与前端集成。
-- 计费适配：`ai-sdk` 与 `token-meter` 有助于将模型调用计费与 Stripe 账单体系对接。
+该工具包与 OpenAI Agent SDK、LangChain、CrewAI、Vercel AI SDK 等主流智能体框架兼容，使智能体能够在适当授权下执行支付操作。它支持 Stripe 托管或自托管的 MCP 服务器并采用 OAuth 安全机制，提供 Python 和 TypeScript SDK，以及将模型 Token 用量直接关联到 Stripe 计费的适配器。
 
 ## 使用场景
 
-适用于需要将支付或计费流纳入 AI 产品的场景，例如为付费 API 请求计费的模型服务、在智能体执行支付相关操作（如创建支付链接）时进行安全授权、或在产品中对模型使用量进行计费与结算。它也可作为在企业级应用中把 LLM 与现有支付基础设施结合的工程化方案。
+Stripe AI 在构建需要支付功能的 AI 产品时不可或缺，例如为付费 API 服务的 Token 消耗计量，或让智能体代表用户创建支付链接和管理订阅。它也作为 LLM 应用与企业计费系统之间的工程桥梁，用于使用量追踪和对账。
 
 ## 技术特点
 
-- 基于 MIT 许可证开源，便于企业与研究机构定制与扩展。
-- 提供示例、文档与演示（包括 MCP 快速启动与 Gradio/示例集成）。
-- 支持工程化功能，如上下文默认值（account context）、权限配置与对接 Stripe Dashboard 的 API 密钥管理。
+项目以 MIT 许可证开源，附带完整的示例、文档和 MCP 快速入门指南。它为生产部署而设计，提供可配置的账户上下文默认值、细粒度权限设置以及与 Stripe Dashboard API 密钥的直接集成。

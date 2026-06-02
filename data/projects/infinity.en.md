@@ -20,24 +20,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Infinity is an AI-native database built for LLM applications, offering hybrid search over dense embeddings, sparse embeddings, tensors (multi-vector), full-text and structured fields. It focuses on delivering low-latency, high-throughput retrieval for RAG, search, recommendation, QA and conversational AI, while providing an easy-to-use Python SDK and single-binary deployment options for production integration.
+Infinity is an AI-native inference engine purpose-built for high-performance embeddings, reranking, and classification workloads. It delivers low-latency, high-throughput inference for the most commonly used AI model types in retrieval-augmented generation and search applications, supporting a wide range of embedding models and reranking architectures through a unified API.
 
-## Main Features
+## Key Features
 
-- High-performance hybrid search: combine dense/sparse/tensor/full-text retrieval with diverse reranking strategies.
-- Rich data types: support vectors, text, numeric and structured fields in a unified schema.
-- Developer-friendly client: intuitive Python SDK and single-binary operation for simple deployment.
-- Scalable & observable: designed for high QPS workloads with benchmarks and operational tooling.
+Infinity provides optimized inference for popular embedding models and rerankers with support for multiple data types including dense vectors, sparse vectors, and structured fields. It offers a developer-friendly Python SDK and single-binary deployment, along with built-in observability and benchmarking tools designed for high-QPS production workloads.
 
 ## Use Cases
 
-Suitable for vector search, retrieval-augmented generation (RAG), similarity recommendation, knowledge retrieval, conversational context retrieval and large-scale full-text search. Enterprises can deploy Infinity privately to satisfy compliance requirements and use the Python SDK to quickly integrate retrieval into LLM-driven applications.
+Infinity is ideal for powering vector search and retrieval-augmented generation (RAG) systems, building similarity recommendation engines, and deploying classification models at scale. Enterprises can deploy Infinity privately for compliance-sensitive workloads and use the Python SDK to quickly integrate embedding and reranking inference into LLM-driven applications.
 
-## Technical Features
+## Technical Details
 
-- Low-latency, high-throughput: millisecond-level queries and thousands+ QPS for large-scale datasets.
-- Hybrid index architecture: unifies vector, sparse and full-text indexes to improve retrieval accuracy.
-- Single-binary & Python embedding: run as a standalone binary or embedded in Python processes for flexible deployment.
-- Open-source license: Apache-2.0 licensed for community and enterprise adoption.
+Infinity achieves millisecond-level query latency and high QPS throughput through a hybrid index architecture that unifies vector, sparse, and full-text indexes. It can run as a standalone binary or be embedded in Python processes for flexible deployment, and is released under the Apache-2.0 license for both community and enterprise adoption.

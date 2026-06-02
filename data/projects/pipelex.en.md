@@ -18,21 +18,20 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Pipelex is an open-source domain-specific language (DSL) and toolkit focused on AI agents and workflow orchestration. It enables developers to declaratively define, compose, and execute multi-step, reproducible agent workflows with observability and replayability built in. Pipelex is designed to make complex tasks manageable by breaking them into composable tools and steps that an agent can orchestrate.
+Pipelex is an open-source declarative language and devtool for building composable AI workflows that both agents and humans can use. It lets developers define multi-step agent pipelines in a readable DSL, with built-in orchestration, observability, and replay so that complex tasks become reproducible and easy to debug.
 
-## Main Features
+## Key Features
 
-- Declarative workflow language for easy task specification.
-- Built-in orchestration, retry, and replay mechanisms to improve robustness.
-- Connectors and adapters for external APIs, databases, and vector stores.
-- Open-source and extensible, compatible with different LLMs (Large Language Models) and custom tools.
+- A declarative DSL that makes workflow definitions concise, versionable, and easy to review alongside application code.
+- Built-in orchestration engine with automatic retry and replay mechanisms that ensure workflows are robust and deterministic.
+- Pluggable connector system for external APIs, databases, vector stores, and custom tools, compatible with multiple LLM providers.
 
 ## Use Cases
 
-Suitable for scenarios that require composing multi-step model calls, retrieval, external APIs, and business logic into reliable pipelines — for example RAG-style systems, automated content generation, cross-system aggregation, and long-running task orchestration. It fits both prototyping and production workflows.
+Teams building RAG pipelines can declaratively chain retrieval, model inference, and post-processing steps into a single reproducible workflow. Content-generation pipelines benefit from step-level logging and replay when iterating on prompts. Long-running orchestration tasks across multiple systems can be modeled, tested, and deployed using the same DSL from prototype to production.
 
-## Technical Features
+## Technical Details
 
-Pipelex uses a lightweight DSL for orchestration and provides step-level logging and state tracking for observability and debugging. Its plugin system lets developers expose custom actions as tools callable by agents. The architecture prioritises reproducibility, extensibility, and interoperability with existing models and vector libraries.
+Pipelex's lightweight DSL compiles to an orchestrated runtime that provides step-level state tracking and structured logs for full observability. A plugin architecture allows any custom action to be exposed as a callable tool, and the system is designed for interoperability with existing model providers and vector libraries.

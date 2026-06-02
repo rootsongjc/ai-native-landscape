@@ -21,22 +21,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Basic Memory is a local-first knowledge system that stores user knowledge as structured Markdown files and exposes them to compatible LLMs via the Model Context Protocol (MCP). It implements a writable “memory” concept that keeps data local by default while offering optional cloud sync and cross-device collaboration, making it suitable as a persistent personal knowledge base and conversational context layer.
+Basic Memory is a local-first knowledge system that stores user knowledge as structured Markdown files and exposes them to compatible LLMs via the Model Context Protocol (MCP). It implements a writable memory layer that keeps data local by default while offering optional cloud sync and cross-device collaboration, ensuring AI conversations actually remember context without requiring users to re-explain their projects.
 
-## Main Features
+## Key Features
 
-- Local-first storage: Notes are plain Markdown files under user control.
-- Bi-directional read/write: Both humans and LLMs read and write the same files, building a traversable memory graph.
-- MCP support: Implements the Model Context Protocol for cross-tool interoperability.
-- Lightweight indexing: Uses a local SQLite index for fast search and traversal.
-- CLI & integrations: Provides CLI tools and integrations with editors and apps like VS Code and Claude Desktop.
+Basic Memory provides local-first Markdown storage under user control, bi-directional read/write for both humans and LLMs building a traversable memory graph, MCP support for cross-tool interoperability, lightweight SQLite indexing for fast search and traversal, and CLI tools with integrations for VS Code and Claude Desktop.
 
 ## Use Cases
 
-Fits scenarios that require persistent conversational context: developer project knowledge, research notes with semantic search, live-note syncing for meetings or streams, and personal assistants that maintain long-term memory across sessions. It can be used as a privacy-preserving alternative to cloud-only RAG setups.
+Basic Memory fits scenarios requiring persistent conversational context: developer project knowledge bases, research notes with semantic search, live-note syncing for meetings or streams, and personal assistants that maintain long-term memory across sessions. It serves as a privacy-preserving alternative to cloud-only RAG setups.
 
-## Technical Features
+## Technical Details
 
-Parses Markdown files into Entities, Observations and Relations and builds a local SQLite index to support retrieval and graph traversal. The system provides a MCP server component, event-driven APIs, and bidirectional sync, enabling LLM-driven knowledge writing while keeping data under the user's control.
+The system parses Markdown files into Entities, Observations, and Relations, building a local SQLite index to support retrieval and graph traversal. It provides an MCP server component, event-driven APIs, and bidirectional sync, enabling LLM-driven knowledge writing while keeping all data under the user's control.

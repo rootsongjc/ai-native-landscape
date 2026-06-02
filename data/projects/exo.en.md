@@ -21,23 +21,16 @@ status: tracked
 
 ## Overview
 
-exo lets you unify everyday devices (phones, laptops, Raspberry Pi, and more) into a distributed AI inference cluster. It automates device discovery, performs dynamic model partitioning based on available resources, and exposes a ChatGPT-compatible API so you can run models on your own hardware.
+exo enables running frontier AI models on distributed consumer hardware by unifying everyday devices such as phones, laptops, and Raspberry Pi units into a single inference cluster. It automates device discovery, performs dynamic model partitioning based on available resources, and exposes a ChatGPT-compatible API for seamless integration with existing applications.
 
 ## Key Features
 
-- Distributed inference across heterogeneous devices, enabling running larger models than a single device could handle.
-- Automatic device discovery and peer-to-peer connections, minimizing manual configuration.
-- Multiple inference backends supported (MLX, tinygrad) and compatibility with a variety of models (LLaMA, Mistral, LlaVA, DeepSeek).
-- ChatGPT-compatible API for easy integration with existing applications.
+exo supports distributed inference across heterogeneous devices, allowing users to run models larger than any single device could handle. It features automatic device discovery with peer-to-peer connections, multiple inference backends including MLX and tinygrad, and compatibility with popular models such as LLaMA, Mistral, LlaVA, and DeepSeek. A ChatGPT-compatible API enables easy integration with existing tools and workflows.
 
 ## Use Cases
 
-- Home or small-office clusters using idle devices to run open-source LLMs locally for privacy and cost savings.
-- Edge deployments where low-latency local inference is required across a fleet of devices.
-- Research and education on distributed model partitioning, peer networking, and heterogeneous inference.
+exo is ideal for building home or small-office AI clusters using idle devices to run open-source LLMs locally for privacy and cost savings. It suits edge deployments requiring low-latency local inference across a fleet of devices, and serves as a platform for research and education on distributed model partitioning and heterogeneous inference.
 
-## Technical Characteristics
+## Technical Details
 
-- Dynamic model partitioning strategy (ring memory weighted partition) that splits models by device memory and network topology.
-- Interoperable inference engines with optimizations for Apple Silicon and Linux environments.
-- Extensible discovery and networking modules (UDP, Tailscale, GRPC) to support heterogeneous networks and transport mechanisms.
+exo employs a dynamic model partitioning strategy using ring memory weighted partitioning that splits models based on device memory and network topology. It provides interoperable inference engines optimized for Apple Silicon and Linux environments, and features extensible discovery and networking modules supporting UDP, Tailscale, and gRPC for heterogeneous network deployments.

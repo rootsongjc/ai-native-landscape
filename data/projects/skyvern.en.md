@@ -21,24 +21,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Skyvern is an open-source browser automation platform that combines computer vision and multi-agent collaboration with large language models (LLM, Large Language Model) to understand page semantics and drive browser engines like Playwright. It offers both a local service and Skyvern Cloud, aiming to replace brittle selector-based automation with robust, agent-driven workflows that generalize across sites.
+Skyvern is an open-source browser automation platform that uses computer vision and large language models to understand web page semantics and drive browser interactions without relying on brittle CSS selectors or XPath. It offers both a self-hosted local service and a managed cloud offering, enabling teams to build robust agent-driven workflows that generalize across unfamiliar websites.
 
-## Main Features
+## Key Features
 
-- Vision + LLM inference to interact with websites without pre-defined selectors.
-- Multi-agent swarm coordination for task decomposition, parallel execution, and result aggregation.
-- Workflow building blocks: form filling, data extraction, file downloads, validation, and loop control.
-- Support for Model Context Protocol (MCP) and integrations with multiple LLM providers.
+Skyvern combines visual perception with LLM reasoning to interact with any website without pre-defined selectors, and coordinates multiple agents in a swarm to decompose complex tasks, execute them in parallel, and aggregate results. It provides ready-made workflow building blocks for form filling, data extraction, file downloads, and validation loops, along with Model Context Protocol support and integrations with major LLM providers.
 
 ## Use Cases
 
-Skyvern is suitable for large-scale browser automation tasks such as invoice downloading across sites, job-application automation, competitor research, and RPA-style business automation. It fits teams that need reproducible automation both on-premises and via a managed cloud offering.
+Skyvern excels at large-scale browser automation tasks such as bulk invoice downloading across vendor portals, automated job applications, competitor price monitoring, and RPA-style business process automation. It is well-suited for teams that need reproducible, auditable automation running either on-premises or through the managed Skyvern Cloud service.
 
-## Technical Features
+## Technical Details
 
-- Playwright-based browser control with livestreaming for debugging and auditability.
-- Pluggable LLM backends and environment configuration: OpenAI, Anthropic, Gemini, Ollama, etc.
-- API and Python client with schema-driven outputs for structured, reproducible results.
-- Core open-source components under AGPL-3.0; managed cloud adds anti-bot, proxy, and CAPTCHA handling.
+The platform drives browsers via Playwright with livestreaming support for real-time debugging and audit trails. It features pluggable LLM backends compatible with OpenAI, Anthropic, Gemini, and Ollama, and exposes an API with schema-driven outputs for structured, reproducible results. The open-source core is licensed under AGPL-3.0, while the managed cloud adds anti-bot bypass, proxy rotation, and CAPTCHA solving capabilities.

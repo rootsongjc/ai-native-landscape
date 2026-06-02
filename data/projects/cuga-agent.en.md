@@ -19,21 +19,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-CUGA is an open-source generalist agent framework designed to provide a composable, auditable runtime and toolchain for enterprise scenarios. The project supports executing complex tasks on the web and via APIs, integrates with OpenAPI and the Model Context Protocol (MCP), offers multiple reasoning and decision modes, and includes policy-aware controls for deployment in governed environments.
+CUGA is an open-source generalist agent framework designed for enterprise environments, supporting complex task execution across web and API interfaces. It integrates with OpenAPI and the Model Context Protocol (MCP) to provide a composable, auditable runtime with policy-aware controls for governed deployments.
 
-## Main Features
+## Key Features
 
-- Enterprise execution: supports end-to-end tasks across web/HTTP and third-party APIs.
-- Composable architecture: modular components and plugins for easy integration of custom capabilities and workflows.
-- OpenAPI / MCP integrations: built-in adapters to simplify tool invocation and capability extension.
-- Policy-aware: supports policy and permission controls for compliance and risk management.
+CUGA supports end-to-end task execution across web, HTTP, and third-party APIs with a modular, composable architecture. It provides built-in OpenAPI and MCP adapters for simplified tool invocation, along with policy and permission controls that enable compliance and risk management in enterprise settings.
 
 ## Use Cases
 
-CUGA is suitable for enterprise-grade agent use cases such as automated business process orchestration, controlled data retrieval and processing pipelines, task-oriented customer support agents, and automated services that require policy and auditability.
+CUGA is suited for enterprise-grade agent scenarios including automated business process orchestration and controlled data retrieval pipelines. It also supports task-oriented customer support agents and automated services that require policy enforcement and full auditability.
 
-## Technical Features
+## Technical Details
 
-Implemented primarily in Python, the project focuses on extensibility and observability, providing SDKs and runtime components, multiple reasoning modes, and adapters for external models to ease incremental adoption within enterprise systems.
+Implemented primarily in Python, CUGA focuses on extensibility and observability with SDKs and runtime components for incremental enterprise adoption. It supports multiple reasoning modes and provides adapters for external models, enabling flexible integration within existing enterprise systems.

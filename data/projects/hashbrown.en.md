@@ -17,21 +17,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Hashbrown is an open-source framework for running AI agents in the browser. It aims to bring multi-step task orchestration and external tool invocation into the frontend environment. With integrations for Angular and React, developers can coordinate model calls, page interactions, and external services on the client side in a controlled and secure manner, enabling agents that directly manipulate browser UIs.
+Hashbrown is a framework for building AI agents that run directly in the browser, purpose-built for Angular and React applications. It enables developers to bring multi-step task orchestration and external tool invocation into the frontend environment, allowing agents to directly manipulate browser UIs. With Hashbrown, model calls, page interactions, and external services can be coordinated on the client side in a controlled and secure manner.
 
-## Main Features
+## Key Features
 
-- Browser runtime: execute agent logic in the frontend to reduce backend dependence.
-- Frontend integration: adapters for Angular and React to simplify cooperation with components and routing.
-- Tools & adapters: built-in or extensible connectors for models, retrieval, and external APIs to support common LLM workflows.
-- Security & control: focuses on permission boundaries and execution isolation, easing debugging and observability in the browser.
+Hashbrown provides browser-native agent execution with dedicated adapters for Angular and React, simplifying cooperation with components and routing. It includes built-in and extensible connectors for models, retrieval, and external APIs to support common LLM workflows, along with permission boundaries and execution isolation for secure debugging and observability in the browser.
 
 ## Use Cases
 
-Suitable for scenarios that require coordinating interactive logic and model calls on the client, such as enhanced web assistants, automated form and data scraping agents, UI-focused task orchestrators, or browser-side triggers for RAG workflows.
+Hashbrown is suitable for scenarios requiring coordinated interactive logic and model calls on the client, such as enhanced web assistants, automated form filling and data scraping agents, and UI-focused task orchestrators. It also serves as a browser-side entry point for RAG workflows where frontend-driven retrieval and generation are needed.
 
-## Technical Features
+## Technical Details
 
-Implemented in TypeScript, Hashbrown emphasizes compatibility with modern frontend build chains and component systems. Its architecture uses modular adapters and workflow orchestration as core concepts to allow inserting external models, caches, and retrieval components into browser-side execution paths. The project is open source and community-friendly.
+Implemented in TypeScript, Hashbrown emphasizes compatibility with modern frontend build chains and component systems. Its modular architecture uses adapters and workflow orchestration as core concepts, allowing developers to insert external models, caches, and retrieval components into browser-side execution paths while maintaining security boundaries.

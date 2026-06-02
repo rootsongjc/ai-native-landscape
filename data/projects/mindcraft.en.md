@@ -21,22 +21,16 @@ status: tracked
 
 ## Overview
 
-Mindcraft integrates large language models with Mineflayer to create programmable, collaborative bots within Minecraft. It supports multiple model backends and provides profiles, task suites, and evaluation tools to benchmark agent behavior.
+Mindcraft is an open-source framework that integrates large language models with Mineflayer to create intelligent, programmable bots within Minecraft. It supports a wide range of model backends and provides profile-based configuration, task suites, and evaluation tools for benchmarking agent behavior in an interactive game environment.
 
 ## Key Features
 
-- Multi-backend model support: OpenAI, Anthropic, Gemini, Replicate, Hugging Face, Ollama, and others.
-- Task-driven evaluation: Task definitions and tooling to measure agent performance inside the game.
-- Extensibility: Profile-based configuration, Docker support, and a variety of community tutorials and demos.
+Multi-backend model support spans OpenAI, Anthropic, Gemini, Replicate, Hugging Face, Ollama, and other providers, giving developers flexibility to experiment with different LLMs. Task-driven evaluation provides structured definitions and tooling to measure and compare agent performance inside the game world. Extensible architecture with profile-based configuration, Docker support, and a rich collection of community tutorials and demos makes it straightforward to create and share new agent behaviors.
 
 ## Use Cases
 
-- Build automated bots and collaborative agents inside Minecraft for education, research, or entertainment.
-- Use as a platform to evaluate embodied/virtual agent capabilities and compare LLM-driven strategies.
-- Rapid prototyping of agent behaviors using provided profiles and configuration.
+Educators and researchers use Mindcraft to build automated bots and collaborative agents for teaching AI concepts, evaluating embodied agent strategies, and prototyping multi-agent interactions. Game developers and hobbyists leverage it to create intelligent NPCs and entertaining demonstrations of LLM-driven gameplay.
 
-## Technical Characteristics
+## Technical Details
 
-- Primarily JavaScript/Node.js with supplementary Python components for task tooling.
-- Profile-and-task-driven architecture (`profiles`, `andy.json`) that enables reproducible agent setups.
-- Active community, academic citation (arXiv), and frequent releases.
+The codebase is primarily JavaScript and Node.js with supplementary Python components for task evaluation tooling. A profile-and-task-driven architecture using configuration files enables reproducible agent setups that can be shared and benchmarked. The project maintains an active community with academic citations on arXiv and frequent releases.

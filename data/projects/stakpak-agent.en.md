@@ -19,27 +19,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Stakpak Agent is a terminal-native DevOps agent implemented in Rust, designed to run commands, edit files, search documentation, and generate high-quality infrastructure-as-code (IaC) in local or CI environments. The project emphasizes security and auditability, making it suitable as an agentic assistant integrated into developer workflows to automate routine operational and development tasks.
+Stakpak Agent is a terminal-native DevOps agent written in Rust that executes commands, edits files, searches documentation, and generates high-quality infrastructure-as-code in local or CI environments. It is designed around security and auditability principles, serving as an autonomous assistant that integrates directly into developer workflows.
 
-## Main Features
+## Key Features
 
-- Terminal-native: Runs naturally within command-line environments and integrates into existing workflows.
-- File and command operations: Supports editing files, executing shell commands, and interactive tasks.
-- Docs search: Can search local docs and repositories to inform decisions.
-- Security & audit: Designed for minimal privileges with auditable operation logs.
+The agent runs natively in the terminal and supports file editing, shell command execution, and interactive task automation without leaving the command line. It can search local documentation and repositories to inform its decisions, and enforces least-privilege execution with fully auditable operation logs for compliance-conscious teams.
 
 ## Use Cases
 
-- Developer assistance: Quickly generate or fix IaC snippets locally.
-- Automated ops: Delegate repetitive operational checks and commands to the agent.
-- CI integration: Execute repair or validation steps within CI pipelines.
-- Documentation lookup: Locate relevant documentation fragments across large repos.
+Developers use Stakpak Agent to quickly generate, fix, or validate infrastructure-as-code snippets directly in their local terminals. It also integrates into CI pipelines to automate repair and validation steps, and can locate relevant documentation across large codebases to support change reviews.
 
-## Technical Features
+## Technical Details
 
-- Built in Rust for performance and memory safety.
-- Pipelines for combining LLMs and local tools to generate and validate code fragments.
-- Auditable operation logs and least-privilege design to reduce risk.
-- Apache-2.0 licensed for enterprise adoption and extension.
+Built in Rust for strong performance and memory safety guarantees, Stakpak Agent pipelines combine LLM reasoning with local tooling to produce and verify code fragments. Every operation is logged for full auditability, and the project is released under the Apache-2.0 license to support enterprise adoption and customization.

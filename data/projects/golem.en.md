@@ -18,21 +18,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Golem is an open source durable computing platform designed to simplify building and deploying highly reliable distributed systems. It runs WebAssembly (WASM) components as execution units and provides an orchestrated, scalable, and fault-tolerant environment suitable for long-running workloads and stateful services. Golem focuses on durable execution so developers can delegate distributed concerns to the platform and concentrate on application logic.
+Golem Cloud is an agent-native platform for building AI agents and distributed applications that never lose state and never duplicate work. It runs WebAssembly components as durable execution units, enabling developers to build highly reliable stateful services without manually handling distributed systems complexity. Golem's durable execution model ensures that every step of an agent's workflow is persisted and recoverable, making it ideal for mission-critical AI workflows.
 
-## Main Features
+## Key Features
 
-- WebAssembly-based component model with language-agnostic runtime isolation.
-- Durable scheduling and recovery mechanisms to improve job reliability.
-- Modular control plane and services for consistent local development and cloud deployment.
-- Rich subcomponents and SDKs covering orchestration, debugging, and integration.
+Golem provides a WebAssembly-based component model with language-agnostic runtime isolation, durable scheduling and recovery mechanisms that guarantee exactly-once execution semantics. It offers a modular control plane with rich SDKs covering orchestration, debugging, and integration, along with built-in support for long-running stateful services that can survive failures transparently.
 
 ## Use Cases
 
-Golem fits scenarios that need high reliability and long-lived computation: distributed builds, long-running data pipelines, recoverable background jobs, and WASM-based microservices or edge computing. It is suitable for cloud-native systems that require reliable execution and observability.
+Golem is well-suited for building durable AI agent workflows that require reliable state management, such as multi-step orchestration pipelines, long-running data processing jobs, and recoverable background tasks. It also fits scenarios involving WASM-based microservices, edge computing workloads, and any cloud-native system that demands fault-tolerant execution with strong observability.
 
-## Technical Features
+## Technical Details
 
-Golem combines WebAssembly with durable execution semantics, offering lifecycle management, job recovery strategies, and a scalable scheduler. The project is implemented in Rust for performance and safety, and its modular architecture supports multiple deployment modes (local, private cloud, public cloud).
+Built in Rust for performance and safety, Golem combines WebAssembly with durable execution semantics to provide lifecycle management, automatic job recovery, and a scalable scheduler. Its modular architecture supports multiple deployment modes including local development, private cloud, and public cloud, with a language-agnostic component model that allows developers to write agents in their preferred programming language.

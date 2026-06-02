@@ -17,21 +17,17 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Lightpanda Browser is a headless browser designed for AI and automation workloads. It provides compatibility with common automation protocols like the Chrome DevTools Protocol (CDP) and interoperates with toolchains such as Playwright and Puppeteer. The project aims to offer a low-latency, reliable runtime for model-driven automation, web data extraction, and in-browser context execution.
+Lightpanda Browser is a headless browser designed for AI and automation, serving as a lightweight and fast alternative for agent-driven web browsing. It provides compatibility with the Chrome DevTools Protocol (CDP) and interoperates with toolchains such as Playwright and Puppeteer. The project aims to offer a low-latency, reliable runtime for model-driven automation, web data extraction, and in-browser context execution.
 
-## Main Features
+## Key Features
 
-- Protocol compatibility: CDP-compatible and integrates with Playwright / Puppeteer toolchains.
-- Headless automation: optimized headless execution flow suitable for large-scale automation and model-driven browser operations.
-- Performance & isolation: focuses on performance tuning and isolated execution to reduce risks and resource usage for automated tasks.
+Lightpanda provides CDP-compatible protocol integration with Playwright and Puppeteer toolchains, along with an optimized headless execution flow suitable for large-scale automation and model-driven browser operations. It focuses on performance tuning and isolated execution to reduce risks and resource usage for automated tasks.
 
 ## Use Cases
 
-- Serve as a controlled browser execution engine in RAG or data extraction pipelines for web context retrieval and interaction.
-- Embed browser automation into agent workflows to perform web-based automated tasks.
-- Replace traditional browsers in test and CI environments for more stable headless runs.
+Lightpanda can serve as a controlled browser execution engine in RAG or data extraction pipelines for web context retrieval and interaction. It is also useful for embedding browser automation into agent workflows to perform web-based automated tasks, and for replacing traditional browsers in test and CI environments for more stable headless runs.
 
 ## Technical Details
 

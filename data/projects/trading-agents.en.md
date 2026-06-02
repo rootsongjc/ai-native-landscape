@@ -18,25 +18,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-TradingAgents is a multi-agent framework aimed at financial trading, combining large language model-driven strategies with simulation and backtesting tools. The project provides multi-agent coordination, environment wrapping, and evaluation utilities to help researchers validate LLM-based strategies and agent collaboration mechanisms in simulated markets.
+TradingAgents is a multi-agent framework for financial trading that combines LLM-driven strategy generation with simulation and backtesting tools. It provides multi-agent coordination primitives, environment wrappers, and evaluation pipelines that allow researchers and practitioners to test LLM-based trading strategies and agent collaboration mechanisms in realistic simulated markets.
 
-## Main Features
+## Key Features
 
-- Multi-agent support: run parallel agents to study cooperative or adversarial behaviors.
-- Environment & backtesting: integrated backtest tools and simulation environments for performance and risk evaluation.
-- LLM-driven strategies: leverage large language models for strategy generation, signal extraction, and decision modeling.
-- Open-source license: Apache-2.0 for reproducible research and engineering.
+The framework supports running multiple agents in parallel to study cooperative, competitive, or adversarial trading behaviors within shared market simulations. It integrates backtesting engines and customizable simulation environments that produce performance metrics and risk assessments for each strategy. TradingAgents leverages large language models for strategy generation, signal extraction from market data, and decision modeling, enabling rapid exploration of LLM-powered trading approaches.
 
 ## Use Cases
 
-- Strategy research: test and optimize LLM-based trading strategies in simulated settings.
-- Risk evaluation: backtest strategies across market regimes to assess robustness.
-- Agent collaboration research: explore multi-agent coordination and game-theoretic interactions in trading tasks.
+Quantitative researchers use TradingAgents to prototype and evaluate LLM-based trading strategies before committing capital in live markets. Risk management teams backtest strategies across diverse market regimes to evaluate robustness and drawdown characteristics. Academic researchers explore multi-agent coordination and game-theoretic interactions in trading tasks to advance understanding of AI-driven market dynamics.
 
-## Technical Characteristics
+## Technical Details
 
-- Provides customizable environment interfaces and evaluation pipelines for automated experiments and benchmarks.
-- Supports multiple model backends and concurrent execution to accommodate large-scale simulation needs.
-- License: Apache-2.0, suitable for both academic and commercial use.
+TradingAgents provides customizable environment interfaces and standardized evaluation pipelines that support automated experimentation and reproducible benchmarks. It supports multiple LLM backends and concurrent agent execution to handle large-scale simulation workloads. The framework is licensed under Apache-2.0, making it suitable for both academic research and commercial applications.

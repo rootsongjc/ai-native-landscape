@@ -20,26 +20,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-AReaL is an open-source, fully asynchronous reinforcement learning system designed for large reasoning and agentic models. Maintained by the inclusionAI community with contributions from Ant Group and academic partners, AReaL provides algorithm–system co-design to enable stable, high-throughput RL training that scales from a single node to thousands of GPUs while publishing reproducible research artifacts.
+AReaL is an open-source, fully asynchronous reinforcement learning system designed for large reasoning and agentic models, maintained by the inclusionAI community with contributions from Ant Group and academic partners. It provides algorithm-system co-design to enable stable, high-throughput RL training that scales from a single node to thousands of GPUs while publishing reproducible research artifacts.
 
-## Main Features
+## Key Features
 
-- Fully asynchronous training pipeline that improves throughput and scalability.
-- A rich set of algorithms and examples (GRPO, GSPO, LitePPO, etc.) for reproducible experiments.
-- Support for multiple model families and training backends, including distributed parameter training and LoRA fine-tuning.
-- Apache-2.0 licensed with comprehensive documentation and examples for engineering integration.
+AReaL features a fully asynchronous training pipeline for improved throughput, a rich set of algorithms and examples (GRPO, GSPO, LitePPO) for reproducible experiments, and support for multiple model families and training backends including distributed parameter training and LoRA fine-tuning. It is Apache-2.0 licensed with comprehensive documentation for engineering integration.
 
 ## Use Cases
 
-- Research and engineering teams training large reasoning or agentic models on clusters can use AReaL as an efficient training framework.
-- Building multi-turn agents, search agents, or tool-integrated reasoning pipelines where asynchronous rollouts and scalability speed up iteration.
-- Rapid prototyping with AReaL-lite for algorithm development and resource-constrained experimentation.
+Research and engineering teams training large reasoning or agentic models on GPU clusters can use AReaL as an efficient training framework. It is also suited for building multi-turn agents, search agents, or tool-integrated reasoning pipelines where asynchronous rollouts accelerate iteration, as well as rapid prototyping with AReaL-lite for resource-constrained experimentation.
 
-## Technical Features
+## Technical Details
 
-- Algorithm-system co-design that stabilizes asynchronous RL and maximizes efficiency.
-- Detailed tutorials and quickstart examples, supporting Ray, Megatron, PyTorch FSDP and other backends.
-- Composable agentic rollout and tool-integration support for multi-step reasoning and RAG-style workflows.
-- Focus on reproducibility and open science: datasets, models, and training recipes are published alongside code.
+AReaL employs algorithm-system co-design to stabilize asynchronous RL and maximize efficiency, with support for Ray, Megatron, and PyTorch FSDP backends. It offers composable agentic rollout and tool-integration for multi-step reasoning and RAG-style workflows, with a focus on reproducibility by publishing datasets, models, and training recipes alongside code.

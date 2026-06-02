@@ -20,21 +20,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-MiroThinker, from MiroMindAI, is an open-source research-grade search agent and framework focused on tool-augmented reasoning and deep information seeking. The project includes the model (MiroThinker), an agent framework (MiroFlow), a dataset (MiroVerse), and training infrastructure. It supports very long contexts (up to 256K) and hundreds-to-thousands of tool calls, enabling complex research workflows. See the project homepage at [miromind.ai](https://miromind.ai/) and try the interactive demo at [dr.miromind.ai](https://dr.miromind.ai/).
+MiroThinker is an open-source, research-grade search agent from MiroMindAI optimized for tool-augmented reasoning and deep information seeking. It ships as a complete ecosystem including the MiroThinker model, the MiroFlow agent framework, the MiroVerse training dataset, and supporting infrastructure. With context windows up to 256K tokens and support for hundreds to thousands of sequential tool calls, it targets complex, multi-step research and prediction workflows.
 
-## Main Features
+## Key Features
 
-- Open research search agent designed for tool usage and multi-step reasoning.
-- Very long context windows (up to 256K) for handling long documents and extended traces.
-- High-frequency tool calling support with robust trace collection and logging.
-- Full ecosystem: models, reproducible agent framework, datasets, and benchmark suites for evaluation.
+Very long context windows of up to 256K tokens allow the agent to maintain coherence across extended document traces and prolonged multi-step reasoning chains. High-frequency tool calling support handles hundreds to thousands of sequential invocations with robust trace collection and logging for full reproducibility. The complete ecosystem bundles models, a reproducible agent framework, curated datasets, and benchmark suites so researchers can evaluate and compare performance systematically.
 
 ## Use Cases
 
-Suited for academic research, long-document Q&A, deep web retrieval, benchmark evaluation, and developer experimentation. Researchers can reproduce benchmark results and run evaluations; engineering teams can integrate MiroThinker as a tool-augmented retrieval or research assistant subsystem.
+Academic researchers leverage MiroThinker for deep web retrieval, long-document question answering, and reproducible benchmark evaluation. Engineering teams integrate it as a tool-augmented retrieval or research assistant subsystem for complex, multi-source information gathering and analysis tasks.
 
-## Technical Features
+## Technical Details
 
-Implemented primarily in Python, MiroThinker provides a configurable agent framework with tool integrations (web search, code execution, summarization, scrapers), Docker-friendly deployment, and multiple serving options. Retrieval pipelines include hybrid search, re-ranking, and centralized citation management to preserve reproducibility and traceability in evaluations.
+Implemented primarily in Python, the framework provides configurable tool integrations including web search, code execution, summarization, and scrapers. Retrieval pipelines combine hybrid search with re-ranking and centralized citation management to maintain traceability across evaluations. Docker-friendly deployment and multiple serving options make it straightforward to run locally or in cloud environments.

@@ -17,21 +17,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-The NVIDIA GPU Operator is a Kubernetes Operator that automates deployment and management of GPU drivers, container runtimes, device plugins, and monitoring components. It encapsulates the complexity of driver installation and versioning into reproducible workflows, enabling cluster operators to reliably enable GPU capabilities across nodes for training and inference workloads.
+The NVIDIA GPU Operator is a Kubernetes-native operator that automates the deployment, configuration, and lifecycle management of GPU drivers, container runtimes, device plugins, and monitoring components across cluster nodes. It turns the complexity of GPU provisioning into declarative, reproducible workflows for training and inference workloads.
 
-## Main Features
+## Key Features
 
-- Automated deployment: Installs NVIDIA drivers, Container Toolkit, and Device Plugin components automatically, reducing manual configuration.
-- Version control: Uses declarative Custom Resources to manage driver and component versions, simplifying upgrades and rollbacks.
-- Health and monitoring: Integrates exporters for visibility in Prometheus and other monitoring stacks.
-- Kubernetes-native: Runs as an Operator following Kubernetes control loops and declarative management patterns.
+Automated installation of NVIDIA drivers, Container Toolkit, and Device Plugin components eliminates manual node-level configuration. Declarative Custom Resources manage driver and component versions, streamlining upgrades and rollbacks across the cluster. Integrated health monitoring and metrics exporters provide GPU visibility within Prometheus and other observability stacks.
 
 ## Use Cases
 
-Suitable for running GPU-accelerated workloads on Kubernetes, including deep learning training clusters, inference services, HPC jobs, and GPU-based data pipelines. In multi-tenant or heterogeneous GPU environments, the GPU Operator standardizes drivers and runtimes to reduce operational complexity.
+Running GPU-accelerated deep learning training clusters and inference services on Kubernetes infrastructure. Managing heterogeneous GPU environments where standardizing drivers and runtimes reduces operational overhead. GPU-based HPC jobs and data pipelines requiring consistent driver and runtime configuration across nodes.
 
-## Technical Characteristics
+## Technical Details
 
-The GPU Operator leverages Kubernetes Custom Resources and controllers to manage driver installation, DaemonSets, and related resources. It emphasizes declarative configuration and uses node selectors and tolerations to target specific nodes for GPU scheduling. For installation details and guides, see the official docs: [NVIDIA GPU Operator docs](https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/).
+Leverages Kubernetes Custom Resources and controller patterns to manage driver DaemonSets and related node-level resources. Uses declarative configuration with node selectors and tolerations for targeted GPU scheduling. Follows Kubernetes Operator best practices with control-loop reconciliation for maintaining desired GPU stack state across the cluster.
