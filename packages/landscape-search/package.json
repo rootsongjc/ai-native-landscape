@@ -1,0 +1,33 @@
+{
+  "name": "landscape-search",
+  "version": "1.0.0",
+  "description": "Install the AI Native Landscape search skill for Claude Code, Cursor, Copilot, Codex, Cline, and Aider",
+  "type": "module",
+  "bin": {
+    "landscape-search": "./cli.mjs"
+  },
+  "files": [
+    "cli.mjs",
+    "lib/"
+  ],
+  "keywords": [
+    "ai-native-landscape",
+    "claude-code",
+    "cursor",
+    "copilot",
+    "codex",
+    "cline",
+    "aider",
+    "ai-coding-tools"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rootsongjc/ai-native-landscape.git",
+    "directory": "packages/landscape-search"
+  },
+  "homepage": "https://landscape.jimmysong.io",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

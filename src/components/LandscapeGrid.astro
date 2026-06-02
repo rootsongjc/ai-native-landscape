@@ -87,6 +87,24 @@ const canonical = localizedPath('/', lang);
       </div>
     </section>
 
+    <section class="landscape-skill-guide" aria-labelledby="landscape-skill-title">
+      <div class="landscape-section__head">
+        <h2 id="landscape-skill-title">{copy.skillGuideTitle}</h2>
+        <p>{copy.skillGuideDescription}</p>
+      </div>
+      <div class="landscape-skill-guide__body">
+        <div class="landscape-skill-guide__install">
+          <code class="landscape-skill-guide__cmd">npx landscape-search</code>
+          <span class="landscape-skill-guide__hint">{copy.skillGuideStep2}</span>
+        </div>
+        <div class="landscape-skill-guide__examples">
+          <span class="landscape-skill-guide__example">{copy.skillGuideExample1}</span>
+          <span class="landscape-skill-guide__example">{copy.skillGuideExample2}</span>
+        </div>
+      </div>
+      <a class="landscape-skill-guide__cta" href={SITE.repo} target="_blank" rel="noopener">{copy.skillGuideCta} →</a>
+    </section>
+
     <section class="landscape-search" aria-labelledby="landscape-search-title">
       <div class="landscape-section__head">
         <h2 id="landscape-search-title">{copy.browseFilterTitle}</h2>
@@ -457,6 +475,104 @@ const canonical = localizedPath('/', lang);
   .lc-pulse { animation: lc-pulse-ring 2.5s ease-out infinite; }
   .lc-pulse:nth-of-type(2) { animation-delay: 0.8s; }
   .lc-pulse:nth-of-type(3) { animation-delay: 1.6s; }
+
+  /* Skill guide section */
+  .landscape-skill-guide {
+    display: grid;
+    gap: 16px;
+    padding: 24px 28px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+  }
+
+  .landscape-skill-guide__body {
+    display: grid;
+    gap: 14px;
+  }
+
+  .landscape-skill-guide__install {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .landscape-skill-guide__cmd {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 1px solid var(--accent);
+    border-radius: var(--radius);
+    background: rgba(10, 132, 255, 0.06);
+    font-family: var(--mono, ui-monospace, monospace);
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: -0.01em;
+  }
+
+  html[data-theme='dark'] .landscape-skill-guide__cmd {
+    background: rgba(110, 168, 255, 0.1);
+  }
+
+  .landscape-skill-guide__hint {
+    font-size: 0.84rem;
+    color: var(--muted);
+  }
+
+  .landscape-skill-guide__examples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .landscape-skill-guide__example {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 14px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface-soft);
+    font-family: var(--mono, ui-monospace, monospace);
+    font-size: 0.78rem;
+    color: var(--text);
+    white-space: nowrap;
+  }
+
+  .landscape-skill-guide__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-self: start;
+    margin-top: 4px;
+    padding: 8px 18px;
+    border-radius: var(--radius);
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: opacity 0.15s;
+  }
+
+  .landscape-skill-guide__cta:hover {
+    opacity: 0.88;
+  }
+
+  @media (max-width: 720px) {
+    .landscape-skill-guide__install {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .landscape-skill-guide__examples {
+      flex-direction: column;
+    }
+    .landscape-skill-guide__example {
+      white-space: normal;
+      font-size: 0.74rem;
+    }
+  }
 
   @media (prefers-reduced-motion: reduce) {
     .lc-node, .lc-line, .lc-pulse { animation: none; }
