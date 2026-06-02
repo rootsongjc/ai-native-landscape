@@ -95,27 +95,30 @@ Scores (0–100) are fetched at runtime from an external API and cached client-s
 - **Output directory**: `dist`
 - **Production domain**: `landscape.jimmysong.io`
 
-## AI-Powered Skills (Claude Code)
+## AI-Powered Skills
 
-This project ships an AI-powered search skill that works with **Claude Code, Cursor, GitHub Copilot, OpenAI Codex, Cline, and Aider**. One command installs it:
+Search 600+ curated open-source AI projects by natural language, directly inside your AI coding tool.
+
+### Install for Claude Code
+
+```bash
+npx skills add rootsongjc/ai-native-landscape --skill landscape-search
+```
+
+### Install for Cursor, Copilot, Codex, Cline, Aider
 
 ```bash
 npx landscape-search
 ```
 
-This launches an interactive installer that adds the search skill to your AI coding tool. After installing, ask your AI assistant in natural language — e.g.:
+This launches an interactive installer that supports 6 AI coding tools. See [`packages/landscape-search/`](./packages/landscape-search/) for details.
+
+### After Installing
+
+Ask your AI assistant in natural language — e.g.:
 
 > "Find open-source agent frameworks for building multi-agent systems"
 > "帮我找一个支持中文的 RAG 框架"
-
-See [`packages/landscape-search/`](./packages/landscape-search/) for details.
-
-### Non-interactive Install
-
-```bash
-npx landscape-search --all                    # All supported tools
-npx landscape-search -t cursor -t copilot     # Specific tools
-```
 
 ### For Maintainers & Contributors (requires cloning this repo)
 

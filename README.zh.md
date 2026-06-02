@@ -97,25 +97,28 @@ ai-landscape/
 
 ## AI 智能搜索 Skill
 
-本项目提供 AI 智能搜索 skill，支持 **Claude Code、Cursor、GitHub Copilot、OpenAI Codex、Cline、Aider** 等主流 AI 编程工具。一行命令安装：
+用自然语言搜索 600+ 精选开源 AI 项目，直接在你的 AI 编程工具中使用。
+
+### Claude Code 安装
+
+```bash
+npx skills add rootsongjc/ai-native-landscape --skill landscape-search
+```
+
+### Cursor、Copilot、Codex、Cline、Aider 安装
 
 ```bash
 npx landscape-search
 ```
 
-启动交互式安装器，选择你的 AI 编程工具即可。安装后用自然语言提问，例如：
+启动交互式安装器，选择你的 AI 编程工具即可。详见 [`packages/landscape-search/`](./packages/landscape-search/)。
+
+### 安装后使用
+
+用自然语言提问，例如：
 
 > "帮我找一个支持 MCP 协议的 Agent 框架"
 > "推荐一些轻量级 RAG 工具"
-
-详见 [`packages/landscape-search/`](./packages/landscape-search/)。
-
-### 非交互式安装
-
-```bash
-npx landscape-search --all                    # 安装全部工具
-npx landscape-search -t cursor -t copilot     # 指定工具
-```
 
 ### 维护者专用（需克隆本仓库）
 
