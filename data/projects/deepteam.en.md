@@ -19,26 +19,24 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-DeepTeam is a framework for red-teaming large language models (LLMs) and LLM systems, designed to help researchers and engineering teams systematically discover security, robustness, and adversarial weaknesses. The project provides testing strategies, attack templates, and measurement tools to validate model boundary behaviors and risks across deployment scenarios, delivering empirical evidence to guide model hardening.
+DeepTeam is an open-source framework for red-teaming large language models and LLM systems, focused on security and robustness evaluation. It helps researchers and engineering teams systematically discover adversarial weaknesses and assess model risks before and after deployment.
 
-## Main Features
+## Key Features
 
-- Attack strategies and templates for generating adversarial inputs and scenarios.
-- Evaluation tooling for assessing model safety, robustness, and reproducibility.
-- Extensible testing pipelines to embed red-team workflows into CI/CD and evaluation processes.
-- Open-source implementation for auditability, reproducibility, and community contributions.
+- Attack strategies and templates for generating adversarial inputs across diverse threat scenarios.
+- Evaluation tooling for measuring model safety, robustness, and reproducibility with quantifiable metrics.
+- Extensible testing pipelines that integrate red-team workflows into CI/CD and evaluation processes.
 
 ## Use Cases
 
-- Pre-deployment security evaluations to identify potential abuse vectors or sensitive data leakage.
-- Continuous robustness regression testing in enterprise or research settings to monitor model quality.
-- Comparative assessments of defense strategies under realistic attack scenarios.
+- Pre-deployment security evaluations to identify abuse vectors and sensitive data leakage risks.
+- Continuous robustness regression testing in enterprise or research settings to monitor model quality over time.
+- Comparative assessments of defense strategies under realistic and adversarial attack conditions.
 
-## Technical Features
+## Technical Details
 
-- Focus on reproducible, quantifiable evaluation with shared attack templates and metrics.
-- Integration with retrieval, logging, and monitoring systems to collect rich signals during tests.
-- Modular architecture to extend new attack strategies or plug in custom model endpoints.
-- Community-driven development to quickly incorporate emerging attack vectors and defenses.
+- Modular architecture supports adding new attack strategies or plugging in custom model endpoints.
+- Integrates with retrieval, logging, and monitoring systems to collect rich signals during red-team tests.
+- Open-source design emphasizes auditability, reproducibility, and community-driven contribution of emerging attack vectors.

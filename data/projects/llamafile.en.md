@@ -17,24 +17,24 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Llamafile is a single-file, declarative distribution and runtime approach that lets developers package models, dependencies, and runtime parameters in one manifest, enabling consistent startup of LLM applications across local, container, and cloud environments. It lowers the friction of distributing and reproducing model-based applications and makes examples and workflows easier to share and reproduce.
+Llamafile turns model weights and their dependencies into a single executable file, making it trivial to distribute and run LLMs on any platform. By bundling everything into one self-contained binary, it eliminates the need for complex setup and ensures consistent behavior across local machines, containers, and cloud environments.
 
-## Main Features
+## Key Features
 
-- Single declarative file to describe models, dependencies, and runtime contracts for easy sharing and versioning.
-- Consistent startup across local, container, and cloud environments to reduce environment drift.
-- Compatibility with CI/CD and existing build tooling to integrate model delivery into engineering pipelines.
+- Single-file distribution that packages model weights, runtime, and dependencies into one portable executable with no installation required.
+- Cross-platform support covering macOS, Windows, Linux, and FreeBSD on both CPU and GPU hardware configurations.
+- Built-in inference server with an OpenAI-compatible API endpoint, enabling immediate integration with existing tools and chat interfaces.
 
 ## Use Cases
 
-- Package research models and experimental environments as reproducible single-file bundles for sharing and review.
-- Rapidly deploy lightweight LLM services in edge or constrained environments with minimal operational overhead.
-- Automate model verification in CI or use the file as a distribution artifact for model releases.
+- Developers can share LLM demos with teammates by distributing a single file instead of provisioning infrastructure or managing environment configurations.
+- Edge deployments in air-gapped or resource-constrained environments benefit from the self-contained nature of llamafile binaries.
+- CI/CD pipelines can use llamafile to standardize model testing and validation without relying on external API services.
 
-## Technical Features
+## Technical Details
 
-- Lightweight declarative format expressing dependencies, I/O and runtime parameters, emphasizing portability and reproducibility.
-- Designed to be runtime-agnostic and easily integrated with different orchestrators and tooling.
-- Built for shareability and engineering workflows, serving as a foundation for model engineering, testing, and deployment.
+- Based on Mozilla's llama.cpp engine with cosmo-libc for single-binary cross-platform compatibility across six OS/architecture combinations.
+- Supports GPU acceleration via CUDA, Metal, and Vulkan backends, with automatic detection and fallback to CPU inference when needed.
+- Includes a built-in HTTP server providing an OpenAI-compatible chat completions API for seamless integration with existing client libraries.

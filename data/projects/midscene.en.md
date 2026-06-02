@@ -22,21 +22,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Midscene.js is a cross-platform UI automation framework driven by vision-language models. It emphasizes screenshot-first visual localization and interactions so developers can describe automation goals and steps in natural language or lightweight scripts. The project offers a JavaScript SDK and YAML scripting, integrates with Puppeteer/Playwright, and provides a Bridge Mode for desktop browser control plus zero-code Chrome extension and mobile playgrounds.
+Midscene.js is a cross-platform UI automation framework driven by vision-language models that uses screenshots as the primary means of element localization and interaction. It enables developers to describe automation goals and steps in natural language or lightweight scripts, reducing reliance on fragile DOM selectors. The project provides a JavaScript SDK, YAML scripting, integrations with Puppeteer and Playwright, a Bridge Mode for desktop browsers, and zero-code Chrome extension and mobile playgrounds for rapid prototyping.
 
-## Main Features
+## Key Features
 
-- Vision-language model based element localization and interaction, reducing DOM dependence.
-- Multi-platform support for Web, Android, and iOS with a unified JS SDK and script format.
-- Built-in replay and visual debugging tools to reproduce and inspect automation flows.
-- Caching for efficient replays and MCP integration to enable higher-level orchestration by agents.
+Vision-language model based element localization replaces brittle CSS and XPath selectors with visual understanding, making automation more resilient to UI changes. Unified multi-platform support covers Web, Android, and iOS through a single JavaScript SDK and consistent scripting format. Built-in replay and visual debugging tools allow teams to reproduce, inspect, and troubleshoot automation flows with full transparency. Caching mechanisms and MCP integration enable efficient replays and higher-level orchestration by AI agents.
 
 ## Use Cases
 
-Midscene is suited for end-to-end UI testing, automation for operational tasks (e.g., form filling, demo flows), cross-platform demo scripting, and RPA scenarios that require visual understanding. It is particularly useful for teams that want to express complex interactions with natural language or concise scripts, reducing maintenance overhead.
+Midscene is ideal for end-to-end UI testing, automated operational tasks such as form filling and demo flows, and cross-platform RPA scenarios requiring visual understanding. Teams benefit most when they want to express complex interactions through natural language or concise scripts, significantly reducing the maintenance overhead of traditional selector-based automation.
 
-## Technical Features
+## Technical Details
 
-The project prioritizes a pure-vision path (DOM mode remains optional for data extraction) and supports multiple vision-language models (e.g., Qwen-VL, UI-TARS) to reduce token costs and improve cross-platform robustness. The architecture supports self-hosting and an open SDK ecosystem so teams can deploy locally or in the cloud and integrate with existing test frameworks.
+The architecture prioritizes a pure-vision approach with DOM mode available as an option for data extraction tasks. It supports multiple vision-language models including Qwen-VL and UI-TARS, balancing token costs against cross-platform robustness. The framework is designed for self-hosting with an open SDK ecosystem, allowing teams to deploy locally or in the cloud and integrate seamlessly with existing test infrastructure.

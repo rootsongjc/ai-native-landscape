@@ -20,21 +20,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-KubeRay is the Ray Project's open-source Kubernetes operator for deploying, scaling, and managing Ray applications on Kubernetes. It provides custom resources like RayCluster, RayJob, and RayService to simplify lifecycle management, autoscaling, and high-availability for distributed training, batch processing, and online inference workloads. User-facing documentation is hosted on Ray's docs site while the repository contains development and maintenance resources.
+KubeRay is the Ray Project's open-source Kubernetes operator for deploying and managing Ray applications on Kubernetes. It provides purpose-built custom resources including RayCluster, RayJob, and RayService to simplify lifecycle management, autoscaling, and high-availability for distributed AI and ML workloads running on Kubernetes clusters.
 
-## Main Features
+## Key Features
 
-- CRDs for RayCluster, RayJob, and RayService to automate cluster lifecycle and autoscaling.
-- Integrations with the Kubernetes ecosystem (Prometheus, Grafana, Ingress, queueing systems, etc.).
-- `kubectl ray` plugin and an experimental dashboard to simplify operations.
-- Support for production training and inference workloads in cloud-native environments.
+KubeRay offers CRDs for RayCluster, RayJob, and RayService that automate cluster lifecycle management and elastic autoscaling. It integrates deeply with the Kubernetes ecosystem including Prometheus, Grafana, Ingress, and queueing systems, and provides a `kubectl ray` plugin along with an experimental dashboard to streamline day-to-day operations for production training and inference workloads.
 
 ## Use Cases
 
-KubeRay is suitable for running Ray workloads on Kubernetes: large-scale training jobs, batch data processing, LLM online inference, and services that require elastic scaling. Organizations can integrate KubeRay into CI/CD, monitoring, and scheduling systems to build observable and resilient ML platforms.
+KubeRay is designed for organizations running Ray workloads on Kubernetes, including large-scale distributed training jobs, batch data processing, LLM online inference, and services requiring elastic scaling. Teams can integrate it into existing CI/CD, monitoring, and scheduling systems to build observable and resilient ML platforms.
 
-## Technical Features
+## Technical Details
 
-Implemented primarily in Go, KubeRay follows the Operator pattern and distributes Helm charts and examples. The repo includes tooling, development docs, and quickstarts. See Ray's Kubernetes docs for official user guides: [Ray Kubernetes docs](https://docs.ray.io/en/latest/cluster/kubernetes/index.html).
+Implemented primarily in Go using the Kubernetes Operator pattern, KubeRay distributes Helm charts and comprehensive examples for quick deployment. The repository includes tooling, development documentation, and quickstart guides, with official user documentation hosted on the Ray documentation site.

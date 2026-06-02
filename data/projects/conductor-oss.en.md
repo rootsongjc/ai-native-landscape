@@ -18,29 +18,18 @@ featured: false
 status: tracked
 ---
 
-Conductor OSS is an event‑driven, durable workflow/orchestration engine originally built at Netflix to coordinate complex microservices and asynchronous tasks. It models business processes as versioned JSON workflow definitions composed of diverse task types (HTTP, sub-workflow, event, queue, script, etc.), enabling decoupled service evolution, resilience, and deep runtime observability across cloud‑native and enterprise systems.
+## Overview
+
+Conductor OSS is an event-driven agentic workflow engine that provides durable and highly resilient execution for applications and AI agents. Originally built at Netflix, it models business processes as versioned JSON workflow definitions to coordinate complex microservices and asynchronous tasks with deep runtime observability.
 
 ## Key Features
 
-- JSON workflow definitions with versioning & evolution
-- Rich task library: HTTP, Lambda, Event, Sub-workflow, Queue, Script, more
-- Retries, failure handling, compensation patterns
-- Built‑in UI for execution tracing & debugging
-- Pluggable persistence and indexing (Redis, MySQL, Postgres, Elasticsearch / OpenSearch)
-- Polyglot SDKs (Java, Python, JavaScript/TypeScript, Go, C#)
-- Extensible event & queue integrations
+Conductor offers rich task types including HTTP, Lambda, sub-workflow, event, queue, and script, with built-in retry, failure handling, and compensation patterns. It provides a built-in UI for execution tracing, pluggable persistence backends (Redis, MySQL, Postgres, Elasticsearch), and polyglot SDKs for Java, Python, Go, and more.
 
 ## Use Cases
 
-- Microservice orchestration & distributed transaction coordination
-- Multi‑stage AI agent / toolchain pipelines (ingest → reasoning → enrichment → notify)
-- Data / ETL and asynchronous batch processing
-- Human‑in‑the‑loop or long‑running business workflows
+Conductor is ideal for microservice orchestration, multi-stage AI agent pipelines, and distributed transaction coordination. It also supports data ETL processing, asynchronous batch workflows, and human-in-the-loop business processes requiring long-running execution.
 
-## Technical Characteristics
+## Technical Details
 
-- Event‑driven durable state machine architecture for scale & resilience
-- Service decoupling via declarative DSL and task abstraction
-- Full observability: execution graph, metrics, failure diagnostics
-- Horizontal scaling & multi‑environment deployment flexibility
-- Active OSS ecosystem with clear roadmap and ongoing community maintenance
+Conductor uses an event-driven durable state machine architecture that supports horizontal scaling and multi-environment deployment. It enables service decoupling through declarative DSL definitions, provides full observability with execution graphs and diagnostics, and maintains an active open-source ecosystem with clear roadmap.

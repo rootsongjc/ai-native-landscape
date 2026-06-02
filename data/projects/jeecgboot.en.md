@@ -20,26 +20,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-JeecgBoot is an open-source Java low-code platform built on a front-end/back-end separated architecture (Spring Boot / Spring Cloud, MyBatis-Plus, Ant Design & Vue3). The platform centers on a powerful code generator that can scaffold full front-end and back-end code from database schema, reducing repetitive development. JeecgBoot has been evolving towards AI-enabled workflows—"AI generate → online coding → code generation → manual merge"—to speed up enterprise Java development and improve maintainability.
+JeecgBoot is an AI-powered low-code platform that combines dual-driven low-code and zero-code capabilities to dramatically accelerate enterprise application development. It enables developers to generate complete front-end and back-end code with a single click, making it possible to build functional business systems in as little as five minutes.
 
-## Main Features
+## Key Features
 
-- Powerful code generator: scaffolds CRUD, permission, and workflow code from database structures.  
-- AI-assisted development: integrates with AI models to suggest code snippets and speed up development.  
-- Enterprise-ready: supports microservice architecture, templates, and multiple deployment options.  
-- Rich ecosystem: includes security integrations, process engines, auth modules, and front-end components.
+The platform features a powerful code generator that scaffolds full-stack CRUD applications from database schemas, along with AI-assisted development workflows that suggest code snippets and automate repetitive tasks. It also provides a rich component ecosystem including security integrations, workflow engines, and authentication modules, all built on a microservice-ready architecture.
 
 ## Use Cases
 
-- Rapid enterprise backend construction: quickly scaffold data management and business UIs from table schemas.  
-- Prototyping and PoC generation: produce working prototypes quickly using code generation and AI assistance.  
-- Team productivity: reduce repetitive coding so developers focus on business logic and differentiation.
+JeecgBoot is ideal for rapid enterprise backend construction, allowing teams to quickly scaffold data management and business UIs from existing table structures. It also excels at prototyping and proof-of-concept generation, enabling teams to produce working prototypes quickly and focus their efforts on business logic rather than boilerplate code.
 
-## Technical Features
+## Technical Details
 
-- Built on mature Java stack (Spring Boot, Spring Cloud, MyBatis-Plus) for easy integration into enterprise systems.  
-- Front-end uses Ant Design Vue with Vite and TypeScript; generated front-end code is production-ready.  
-- Licensed under Apache-2.0, with active community maintenance and comprehensive documentation.  
-- Extensible via plugins, code generation templates, and workflow engine integration for customization.
+Built on a mature Java stack including Spring Boot, Spring Cloud, and MyBatis-Plus, JeecgBoot uses a front-end/back-end separated architecture with Ant Design Vue, Vite, and TypeScript. The platform is extensible through plugins, code generation templates, and workflow engine integration, and is licensed under Apache-2.0 with active community maintenance.

@@ -16,26 +16,25 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Apache Doris is a unified analytics database designed for both real-time and offline analysis. It combines columnar storage and an efficient query engine to support OLAP workloads, aiming to simplify data warehouse and analytics platform construction with a user-friendly SQL interface, vectorized execution, and high-performance concurrency.
+Apache Doris is an easy-to-use, high-performance unified analytics database designed for both real-time and offline analysis. It combines columnar storage with an efficient query engine to support OLAP workloads, simplifying data warehouse and analytics platform construction.
 
-## Main Features
+## Key Features
 
-- Unified analytics engine: supports real-time and offline analysis to simplify architecture.
-- Columnar storage and vectorized execution for high throughput and low latency queries.
-- Scalable and highly available: cluster deployment and load balancing for large datasets.
+- Unified analytics engine supporting real-time and offline analysis to simplify data platform architecture.
+- Columnar storage and vectorized execution delivering high throughput and low latency for analytical queries.
+- Scalable and highly available cluster deployment with load balancing for large datasets.
 - Rich ecosystem integrations with common data engineering tools and ETL pipelines.
 
 ## Use Cases
 
-- Real-time analytics: interactive BI dashboards and low-latency reporting.
-- Data warehousing: OLAP storage and large-scale offline analytics.
-- Reporting and dashboards: serve business analytics with responsive query performance.
+- Real-time analytics powering interactive BI dashboards and low-latency reporting.
+- Data warehousing with OLAP storage and large-scale offline analytics.
+- Business reporting and dashboards requiring responsive query performance on large volumes.
 
-## Technical Characteristics
+## Technical Details
 
-- Columnar storage and vectorized processing optimize large aggregations and scans.
-- Standard SQL interfaces and diverse data ingestion options ease integration.
-- License: Apache-2.0, suitable for enterprise and community use.
-- Cloud-native and big-data friendly, supporting multiple deployment topologies.
+- Columnar storage and vectorized processing optimized for large aggregations and scans.
+- Standard SQL interfaces with diverse data ingestion options for easy integration into existing workflows.
+- Apache-2.0 licensed, cloud-native design supporting multiple deployment topologies.

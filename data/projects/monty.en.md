@@ -19,26 +19,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Monty is a minimal, secure Python interpreter implemented in Rust, designed to safely execute LLM-generated Python code inside agents and model-driven workflows. By restricting the standard library, enforcing explicit external function boundaries, and applying resource limits, Monty avoids exposing the host environment while providing microsecond-level startup and a predictable execution model.
+Monty is a minimal, secure Python interpreter written in Rust, purpose-built for safely executing LLM-generated Python code inside agents and model-driven workflows. It restricts the standard library, enforces explicit external function boundaries, and applies strict resource limits to avoid exposing the host environment, all while delivering microsecond-level startup and a predictable execution model.
 
-## Main Features
+## Key Features
 
-- Microsecond startup and a small binary suitable for embedding in agent runtimes.
-- Serializable execution snapshots that allow pausing and resuming state externally.
-- Strict sandboxing: filesystem, network and env access are only available via developer-provided external functions.
-- Optional type checking and bindings for Python, Rust and JavaScript hosts.
+Microsecond startup and a compact binary make Monty ideal for embedding directly into agent runtimes where low-latency code execution is critical. Serializable execution snapshots allow pausing and resuming interpreter state externally, enabling sophisticated checkpoint-and-resume workflows. Strict sandboxing ensures that filesystem, network, and environment access are only available through developer-provided external functions, eliminating uncontrolled side effects. Optional type checking and bindings for Python, Rust, and JavaScript hosts provide flexibility across diverse technology stacks.
 
 ## Use Cases
 
-- Safely running LLM-generated code within agent architectures to call host-provided tools.
-- Low-latency inline code execution where full container sandboxes are too heavy.
-- Snapshot-and-resume workflows for suspending long-running tasks and migrating execution across processes.
+Agent architectures use Monty to safely run LLM-generated code that calls host-provided tools without risking the host environment. It serves as a lightweight alternative to full container sandboxes in low-latency inline execution scenarios. Snapshot-and-resume workflows benefit teams that need to suspend long-running tasks and migrate execution state across processes or machines.
 
-## Technical Features
+## Technical Details
 
-- Implemented in Rust with no CPython dependency, making it portable across host languages.
-- Fine-grained resource tracking (memory, stack depth, execution time) with cancel-on-limit semantics.
-- Byte-serializable interpreter state for caching or cross-process transport.
-- Intentionally limited language surface (restricted stdlib, limited syntax) to improve safety and auditability.
+Implemented entirely in Rust with no CPython dependency, Monty is portable across host languages and easy to embed. Fine-grained resource tracking covers memory, stack depth, and execution time with cancel-on-limit semantics to prevent runaway computations. The interpreter state is byte-serializable for efficient caching or cross-process transport. The deliberately limited language surface, including a restricted standard library and constrained syntax, improves security and makes the codebase auditable.

@@ -17,10 +17,18 @@ featured: false
 status: tracked
 ---
 
-GenAI Toolbox for Databases is an open-source Model Context Protocol (MCP) toolkit developed by Google that provides standardized database operation interfaces for AI agents, simplifying database tool development and deployment.
+## Overview
 
-The toolkit is currently in beta, with potential major changes before the first stable release (v1.0). As an open-source MCP server for databases, it significantly simplifies development by handling complex transactions like connection pooling and authentication.
+GenAI Toolbox for Databases is an open-source MCP server developed by Google that provides standardized interfaces for AI agents to interact with databases. It simplifies database tool development and deployment by handling complex operations such as connection pooling, authentication, and query optimization, enabling rapid integration with minimal code.
 
-Key features include rapid integration (under 10 lines of code), tool reusability across agents, easy version deployment, and standardized interfaces. It offers robust performance through connection pool management, query optimization, and concurrent request handling. Security features include authentication, granular access control, and audit logging. The toolkit supports OpenTelemetry for observability, providing detailed metrics and request tracing.
+## Key Features
 
-The architecture positions the toolkit between application orchestration frameworks and databases, serving as a control plane for centralized tool management, seamless sharing, and dynamic updates without application redeployment.
+The toolkit supports integration in under 10 lines of code with tool reusability across multiple agents and easy versioned deployment. It delivers robust performance through connection pool management, query optimization, and concurrent request handling. Security features include authentication, granular access control, and audit logging, while OpenTelemetry integration provides detailed metrics and request tracing for full observability.
+
+## Use Cases
+
+GenAI Toolbox is used to enable AI agents to perform intelligent queries, automated data analysis, and complex business logic processing against databases. It supports development tool integration for code generation and test data construction, as well as business automation scenarios such as report generation, cross-system data synchronization, and compliance checking.
+
+## Technical Details
+
+The architecture positions the toolkit as a control plane between application orchestration frameworks and databases, enabling centralized tool management, seamless sharing across agents, and dynamic updates without application redeployment. It supports PostgreSQL, MySQL, and SQLite with YAML-based configuration and supports binary, container, and source installation methods.

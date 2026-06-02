@@ -18,8 +18,18 @@ featured: false
 status: tracked
 ---
 
-Keras 3 is a multi-backend deep learning framework, with support for JAX, TensorFlow, PyTorch, and OpenVINO (for inference-only). Effortlessly build and train models for computer vision, natural language processing, audio processing, timeseries forecasting, recommender systems, etc.
+## Overview
 
-- **Accelerated model development**: Ship deep learning solutions faster thanks to the high-level UX of Keras and the availability of easy-to-debug runtimes like PyTorch or JAX eager execution.
-- **State-of-the-art performance**: By picking the backend that is the fastest for your model architecture (often JAX!), leverage speedups ranging from 20% to 350% compared to other frameworks. [Benchmark here](https://keras.io/getting_started/benchmarks/).
-- **Datacenter-scale training**: Scale confidently from your laptop to large clusters of GPUs or TPUs.
+Keras is a high-level deep learning API created by Francois Chollet, designed to make neural network development accessible and intuitive. Built with the philosophy of "deep learning for humans," Keras 3 is a multi-backend framework supporting JAX, TensorFlow, PyTorch, and OpenVINO, enabling developers to effortlessly build and train models across computer vision, NLP, audio processing, and more.
+
+## Key Features
+
+Keras accelerates model development through its high-level user experience combined with easy-to-debug runtimes like PyTorch and JAX eager execution. By selecting the optimal backend for each model architecture, users can achieve speedups ranging from 20% to 350% compared to other frameworks, while seamlessly scaling from laptops to datacenter-scale GPU and TPU clusters.
+
+## Use Cases
+
+Keras is widely used for rapid prototyping and production deployment of deep learning models in computer vision, natural language processing, audio processing, time-series forecasting, and recommender systems. Its multi-backend support makes it ideal for teams that need to experiment across different hardware accelerators and deployment targets.
+
+## Technical Details
+
+Keras 3 supports JAX, TensorFlow, PyTorch, and OpenVINO (inference-only) as backends within a single unified API. It provides a consistent high-level interface that abstracts away backend-specific complexity while allowing developers to leverage backend-specific optimizations when needed. The framework includes comprehensive documentation, benchmarks, and a large ecosystem of pre-built layers, models, and utilities.

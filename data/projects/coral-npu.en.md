@@ -17,27 +17,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Coral NPU is a machine learning accelerator core provided by Google Coral, designed for energy-efficient inference on edge devices. The project emphasizes co-optimized hardware architecture and software stack to deliver real-time or near-real-time inference under constrained power and compute budgets. The open-source repository includes tooling related to the architecture, runtime support, and examples, enabling developers to port models and run them on edge hardware.
+Coral NPU is a hardware accelerator for edge AI inference developed by Google Coral, supporting TensorFlow Lite models. It emphasizes co-optimized hardware architecture and software stack to deliver real-time inference under constrained power and compute budgets for edge devices.
 
-## Main Features
+## Key Features
 
-- Edge-oriented: optimized for energy efficiency on battery-powered and embedded devices.
-- Efficient inference: specialized operators and hardware acceleration improve throughput and latency.
-- Open-source license: released under Apache-2.0, suitable for industry and research use.
-- Developer-friendly: provides SDKs, drivers, and examples for quick onboarding and deployment.
+Coral NPU provides specialized operators and hardware acceleration that significantly improve inference throughput and latency on battery-powered and embedded devices. It includes SDKs, drivers, and model conversion tools that enable developers to quickly port and deploy machine learning models on edge hardware.
 
 ## Use Cases
 
-- Local inference for edge AI agents, such as home and industrial sensors.
-- Low-latency visual inference, e.g., object detection and face recognition.
-- Offline speech recognition and natural interaction to reduce cloud dependency.
-- Industrial IoT and on-site device intelligence upgrades.
+Coral NPU is used for local inference on edge AI agents in smart home and industrial sensor applications. It supports low-latency visual inference such as object detection and face recognition, offline speech recognition, and on-site intelligence upgrades for industrial IoT devices.
 
-## Technical Features
+## Technical Details
 
-- Hardware-software co-design: instruction-level optimizations and runtime support for specific operators.
-- Compatible toolchain: model conversion, quantization, and deployment tools for edge targets.
-- Support for model compression and quantization strategies to lower memory and compute footprint.
-- Community maintenance and documentation: official developer guides and repository contributions are actively maintained.
+The platform features hardware-software co-design with instruction-level optimizations and runtime support for specific operators. It provides a compatible toolchain for model conversion, quantization, and deployment, along with comprehensive developer documentation maintained by Google and the open-source community.

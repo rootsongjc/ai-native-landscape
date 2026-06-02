@@ -18,25 +18,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Crawl4AI is an open-source, LLM-friendly web crawler and scraper designed to turn web content into clean, indexable Markdown and structured data for RAG and downstream AI workflows. It supports Playwright-driven browser crawling, remote browser control, session and proxy management, and provides Dockerized deployments and an API gateway for production usage.
+Crawl4AI is an open-source LLM-friendly web crawler and scraper that extracts structured data optimized for large language model consumption. It converts web content into clean Markdown and structured formats, making it ideal for RAG pipelines and downstream AI workflows.
 
-## Main Features
+## Key Features
 
-- LLM-ready Markdown generation with noise removal and citation formatting.
-- Flexible extraction strategies: CSS/XPath, schema-based extraction, BM25 filtering, and intelligent table chunking.
-- Browser and session management with Playwright, persistent profiles, and proxy support to reduce bot detection.
-- Production readiness with Docker images, FastAPI server, and a web playground for interactive testing.
+Crawl4AI provides LLM-ready Markdown generation with automatic noise removal and citation formatting. It offers flexible extraction strategies including CSS/XPath, schema-based extraction, BM25 filtering, and intelligent table chunking, along with Playwright-driven browser management and Docker-ready production deployment.
 
 ## Use Cases
 
-- Building RAG pipelines: prepare clean corpora for vector indexing and retrieval.
-- Automated monitoring and reporting: scheduled crawls for news, competitors, and industry sites.
-- Research and data engineering: large-scale table extraction, semantic chunking, and LLM-driven data cleaning experiments.
+Crawl4AI is used to build RAG data pipelines by preparing clean corpora for vector indexing and retrieval. It also supports automated monitoring and reporting through scheduled crawls of news and industry sites, as well as large-scale data extraction and semantic chunking for research purposes.
 
-## Technical Features
+## Technical Details
 
-- Asynchronous crawler with a managed browser pool for performance and stability; supports virtual scroll and lazy-loaded content.
-- LLM-driven structured extraction and smart chunking with extensible hooks and custom strategies.
-- Apache-2.0 licensed, active community, and comprehensive documentation and examples for quick onboarding.
+Crawl4AI features an asynchronous crawler with a managed browser pool that handles virtual scroll and lazy-loaded content. It supports LLM-driven structured extraction with extensible hooks, provides Docker images and a FastAPI server for production use, and is licensed under Apache-2.0 with an active community.

@@ -17,25 +17,21 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Agent Skills is an open format and documentation set for agents, designed to define how skills are described, discovered, and shared. Skills consist of documentation, examples, and metadata that make it easier for different agents to implement and reuse capabilities, improving composability and reliability when solving complex tasks. The project includes the specification, reference implementations, and examples to help developers and the community get started.
+Agent Skills provides a standardized specification and documentation for describing, sharing, and discovering agent skills. A skill is a standardized way to give AI agents new capabilities and expertise, consisting of documentation, examples, and metadata that make it easier for different agents to implement and reuse capabilities, improving composability and reliability when solving complex tasks.
 
-## Main Features
+## Key Features
 
-- Unified specification: a clear format for declaring skill capabilities, inputs/outputs, and metadata.
-- Discoverability: standardized directories and examples enable indexing and lookup of skills for agents to load on demand.
-- Reference implementations: documentation and example repositories demonstrate how to author and test skills.
-- Community-driven: initiated by Anthropic and open to community contributions under an open-source workflow.
+- Unified specification defining skill capabilities, inputs/outputs, and metadata in a clear, human-readable format
+- Standardized directories and examples enabling indexing and lookup for on-demand skill loading by agents
+- Reference implementations and example repositories demonstrating how to author, test, and integrate skills
+- Community-driven and open-source, initiated by Anthropic with contributions welcome
 
 ## Use Cases
 
-- Extending agent capabilities: provide reusable modules for chat assistants, task agents, and automation pipelines.
-- Skill marketplace: enable third parties to publish reusable skills in a discoverable catalog.
-- Integration and interoperability: allow different agent platforms to call skills using a shared format, improving cross-platform compatibility.
+Extending agent capabilities with reusable modules for chat assistants, task agents, and automation pipelines. Building skill marketplaces where third parties can publish discoverable skills. Enabling cross-platform interoperability by allowing different agent platforms to call skills using a shared format.
 
-## Technical Characteristics
+## Technical Details
 
-- Documented specification: human-readable formats define skill interfaces and expected behavior.
-- Language-agnostic: the spec focuses on capabilities and metadata; examples are provided in Python and other languages.
-- Verifiable: examples and tests accompany the spec to validate correctness and compatibility.
+Language-agnostic specification focused on capabilities and metadata with examples provided in Python and other languages. Human-readable formats define skill interfaces and expected behavior. Examples and tests accompany the specification to validate correctness and compatibility.

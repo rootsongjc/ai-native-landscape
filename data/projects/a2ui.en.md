@@ -19,24 +19,24 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-A2UI (Agent-to-User Interface) is an open-source declarative UI specification and toolkit that enables agents to "speak UI." Agents produce a JSON payload (an A2UI Response) describing the intent and component tree; client renderers then map those abstract components to native widgets (e.g., Lit, Flutter, React). This approach aims to make agent-generated UIs "safe as data, expressive as code." See the project site at <https://a2ui.org/> for examples and documentation.
+A2UI (Agent-to-User Interface) is an open-source declarative UI specification and toolkit developed by Google that enables agents to describe renderable interfaces as safe, portable JSON. Agents produce structured JSON payloads describing intent and component trees, while client renderers map those abstract components to native widgets across platforms.
 
-## Main Features
+## Key Features
 
-- Declarative format: a structured JSON representation that supports incremental updates and is easy for LLMs to generate.
-- Security-first: clients maintain a catalog of trusted components to avoid executing arbitrary generated code.
-- Framework-agnostic: the same A2UI payload can be rendered by different client renderers across platforms.
-- Samples and renderers: the repository provides example renderers and sample agents to accelerate adoption.
+- Declarative JSON format that supports incremental updates and is easy for LLMs to generate.
+- Security-first design where clients maintain a catalog of trusted components to avoid executing arbitrary generated code.
+- Framework-agnostic rendering: the same A2UI payload works with Lit, Flutter, React, and other client renderers.
 
 ## Use Cases
 
-Use cases include dynamic data collection (agent-generated forms), embedding remote sub-agents that return UI fragments, and adaptive enterprise workflows that generate dashboards or approval UIs on the fly. A2UI is also useful as a verifiable communication layer between agents and clients to reduce security and consistency risks when models generate UI.
+- Dynamic data collection through agent-generated forms and interactive UI components.
+- Embedding remote sub-agents that return UI fragments into parent applications.
+- Adaptive enterprise workflows that generate dashboards, approval panels, or data visualizations on the fly.
 
-## Technical Characteristics
+## Technical Details
 
-- Lightweight spec: focuses on intent and data binding rather than executable logic, facilitating auditability and verification.
-- Rendering separation: renderers map abstract types to local implementations and can register "Smart Wrappers" for complex or sandboxed components.
-- Transport and renderer compatibility: works with transports like A2A and is designed for distributed orchestration scenarios.
-- Community-driven: Apache-2.0 licensed with a spec, samples, and renderers; contributions to additional renderers are encouraged.
+- Lightweight specification focused on intent and data binding rather than executable logic, facilitating auditability.
+- Rendering separation architecture with Smart Wrappers for complex or sandboxed components.
+- Compatible with transports like A2A for distributed agent orchestration scenarios.

@@ -21,23 +21,16 @@ status: tracked
 
 ## Overview
 
-Diffusers is a modular library from Hugging Face that provides state-of-the-art pretrained diffusion models and pipelines for image, audio and 3D generation. It focuses on usability and customizability, offering easy inference APIs as well as tools for training and experimenting with schedulers, models and pipelines.
+Diffusers is Hugging Face's flagship library providing state-of-the-art diffusion models for image, video, and audio generation in PyTorch. It offers a modular toolbox of pretrained models and pipelines designed for both inference and training, with a focus on usability and customizability. The library makes it straightforward to experiment with, deploy, and customize the latest generative AI models.
 
 ## Key Features
 
-- Ready-to-use pipelines for text-to-image, image-to-image, inpainting and more.
-- Interchangeable schedulers and modular model components to tune sampling quality and speed.
-- Large collection of pretrained checkpoints on the Hugging Face Hub and compatibility with popular backends (PyTorch, optimized runtimes).
-- Active community, extensive documentation and frequent releases.
+Diffusers provides ready-to-use pipelines for text-to-image, image-to-image, inpainting, and video generation tasks. It features interchangeable schedulers and modular model components that allow users to fine-tune the balance between sampling quality and speed. The library integrates deeply with the Hugging Face Hub, offering access to a large collection of pretrained checkpoints and compatibility with popular hardware backends.
 
 ## Use Cases
 
-- Rapid prototyping of generative models for research and creative applications.
-- Production inference pipelines for image and media generation.
-- Training and fine-tuning diffusion models with custom schedulers and components.
+Diffusers is ideal for rapid prototyping of generative models in research and creative applications, building production inference pipelines for image and media generation at scale, and training or fine-tuning diffusion models with custom schedulers and components for specialized use cases.
 
-## Technical Characteristics
+## Technical Details
 
-- Python-first library with strong PyTorch integration and optional optimizations for different hardware.
-- Modular design: pipelines, schedulers, models and utilities are composable and extendable.
-- Large ecosystem integration with the Hugging Face Hub for model discovery and distribution.
+Built as a Python-first library with strong PyTorch integration, Diffusers employs a modular design where pipelines, schedulers, models, and utilities are composable and extendable. It leverages the Hugging Face Hub ecosystem for model discovery and distribution, supports optional hardware-specific optimizations, and is maintained by an active community with extensive documentation and frequent releases.

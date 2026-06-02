@@ -18,26 +18,21 @@ featured: false
 status: tracked
 ---
 
-Aider is a powerful terminal-based AI pair programming tool that supports multiple mainstream large language models, including Claude 3.7 Sonnet, DeepSeek R1 & Chat V3, OpenAI o1, o3-mini, and GPT-4o, while also being able to connect to local models. It can intelligently map and understand your entire codebase, supporting over 100 programming languages, including Python, JavaScript, Rust, Ruby, Go, C++, PHP, HTML, CSS, and more.
+## Overview
 
-One of Aider's key features is its seamless Git integration, automatically committing changes and generating meaningful commit messages. You can use Aider in your favorite IDE or editor, simply adding comments to request changes. Additionally, it supports context understanding of images and web pages, as well as voice-to-code functionality, allowing you to request new features, test cases, or bug fixes through voice commands.
+Aider is an AI pair programming tool that runs in your terminal, letting you pair program with LLMs to start new projects or build on existing code. It supports multiple mainstream models including Claude, DeepSeek, OpenAI, and local models, while intelligently mapping and understanding your entire codebase across over 100 programming languages.
 
-Aider also provides code quality assurance features, automatically performing code checks and tests after each modification, and can fix detected issues. For developers who prefer web interfaces, Aider offers convenient copy-paste functionality, making it easy to interact with LLMs in the browser.
+## Key Features
 
-Quick start:
+- Seamless Git integration that automatically commits changes and generates meaningful commit messages
+- Support for multiple LLM providers (Claude, DeepSeek, OpenAI) and local models via Ollama
+- Context understanding of images, web pages, and voice-to-code functionality for hands-free coding
+- Automatic code quality assurance with built-in checking, testing, and issue fixing after each modification
 
-```bash
-# Installation
-python -m pip install aider-install
-aider-install
+## Use Cases
 
-# Navigate to project directory
-cd /to/your/project
+Pair programming with AI for starting new projects or building on existing codebases. Refactoring, debugging, and adding features through natural language commands in your terminal or favorite IDE. Useful for developers who want AI assistance integrated directly into their existing workflow without switching tools.
 
-# Choose model and configure
-aider --model deepseek --api-key deepseek=<key>  # DeepSeek
-aider --model sonnet --api-key anthropic=<key>   # Claude 3.7 Sonnet
-aider --model o3-mini --api-key openai=<key>     # o3-mini
-```
+## Technical Details
 
-For more detailed information, please refer to the official documentation, including installation guides, usage tutorials, video tutorials, LLM connection configuration, troubleshooting, etc. The community resources are rich, including LLM leaderboards, GitHub repository, Discord community, release notes, and blog posts.
+Python-based CLI tool installed via pip with support for over 100 programming languages. Connects to LLM providers via API keys and supports local models. Works with any editor or IDE by adding comments to request changes. Features a modular architecture with automatic Git operations, code analysis, and multi-file editing capabilities.

@@ -18,21 +18,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Chandra is a high‑accuracy OCR system designed for complex documents. It converts images and PDFs into structured HTML, Markdown, or JSON while preserving layout information such as headers/footers, tables, forms (including checkboxes), handwritten content, and math. Chandra supports both local inference (via HuggingFace) and remote inference using a vLLM server, and ships with a CLI and an interactive Streamlit demo. See the project website and playground for live demos and hosted API details.
+Chandra is a high-accuracy OCR model that handles complex tables, forms, handwriting, and full layout recognition. It converts images and PDFs into structured HTML, Markdown, or JSON outputs while preserving layout information such as headers, footers, tables, checkboxes, and mathematical notation, making it suitable for the most demanding document digitization tasks.
 
-## Main Features
+## Key Features
 
-- Converts documents to Markdown/HTML/JSON with detailed layout metadata.
-- Strong support for handwriting, forms, complex tables, and mathematical content.
-- Supports 40+ languages and two inference modes: local (HuggingFace) and remote (vLLM).
-- Provides a CLI package (`chandra-ocr`), Streamlit app, and a vLLM Docker image for production deployments.
+Converts documents to Markdown, HTML, or JSON with detailed layout metadata preserved. Strong support for handwriting recognition, complex forms with checkboxes, intricate table structures, and mathematical content. Supports 40+ languages with both local inference via HuggingFace and remote inference using a vLLM server. Ships with a CLI package, interactive Streamlit demo, and vLLM Docker image for production deployments.
 
 ## Use Cases
 
-Suitable for high‑quality document digitization and structured extraction tasks: legal and contract processing, invoice and form automation, digitizing handwritten notes and exams, newspaper and book digitization, and archival workflows that require preserving layout and semantic relationships. Well suited for organizations that need local or private‑cloud deployments and data control.
+High-quality document digitization and structured extraction for legal contracts, invoices, and forms with complex layouts. Digitizing handwritten notes, exams, and archival materials that require preserving layout and semantic relationships. Organizations needing local or private-cloud OCR deployments with full data control over sensitive documents.
 
-## Technical Features
+## Technical Details
 
-The project is implemented primarily in Python and leverages modern vision and layout modeling techniques. It offers example datasets, benchmarks, and packaged distributions (`chandra-ocr`). Chandra is released under the Apache‑2.0 license; commercial licensing and pricing information are available on the website.
+Implemented primarily in Python leveraging modern vision and layout modeling techniques for high-accuracy recognition. Provides example datasets, benchmarks, and packaged distributions via the `chandra-ocr` CLI. Released under the Apache-2.0 license with commercial licensing and hosted API options available through the project website.

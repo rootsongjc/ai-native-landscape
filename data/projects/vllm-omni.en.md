@@ -21,27 +21,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-vLLM-Omni is a framework designed for inference and serving of omni-modality models, supporting text, image, video, and audio inputs as well as heterogeneous outputs. Built on vLLM's efficient inference foundations, vLLM-Omni extends support to non-autoregressive architectures (e.g., Diffusion Transformers) and parallel generation models, enabling production-grade deployment with improved throughput and cost efficiency.
+vLLM-Omni is an inference and serving framework for omni-modality models that handle text, image, video, and audio inputs alongside heterogeneous outputs. Built on vLLM's proven high-performance inference engine, it extends support to non-autoregressive architectures such as Diffusion Transformers and parallel generation models. The framework targets production-grade deployment where throughput, cost efficiency, and multi-modal flexibility are critical.
 
 ## Key Features
 
-- Support for multi-modal inference across text, image, video and audio.
-- Low-latency, high-throughput execution via efficient KV cache management and pipelined stage execution.
-- Decoupled model and inference stages with distributed deployment through OmniConnector and dynamic resource allocation.
-- Seamless integration with Hugging Face models and an OpenAI-compatible API for easy adoption.
+Multi-modal inference covers text, image, video, and audio within a single serving pipeline, with low-latency and high-throughput execution powered by efficient KV cache management and staged pipeline scheduling. A decoupled architecture separates model stages from inference stages, enabling distributed deployment through OmniConnector with dynamic resource allocation. Seamless integration with Hugging Face model weights and an OpenAI-compatible API ensures quick adoption and minimal migration effort.
 
 ## Use Cases
 
-- Multi-modal assistants and conversational systems that combine text and visual inputs.
-- Backends for large-scale image/video generation and media processing pipelines.
-- Real-time multimedia applications requiring streaming outputs and low latency.
-- Heterogeneous model deployments where resource optimization and distributed inference are needed.
+Multi-modal assistants and conversational AI systems that must process interleaved text and visual inputs benefit from vLLM-Omni's unified serving layer. Teams operating large-scale image or video generation pipelines can use it as a high-throughput inference backend. Real-time multimedia applications requiring streaming outputs and low latency, as well as heterogeneous model deployments needing cross-node distribution, are well served by the framework.
 
-## Technical Features
+## Technical Details
 
-- Optimized KV cache management and memory-compute trade-offs inherited from vLLM.
-- Staged pipeline execution and support for tensor/pipeline/expert parallelism to maximize throughput.
-- Support for non-autoregressive generation workflows and heterogeneous output handling.
-- OmniConnector-based disaggregation for cross-node distribution and autoscaling.
+KV cache optimization and memory-compute trade-off strategies are inherited from vLLM to maximize hardware utilization. Staged pipeline execution supports tensor, pipeline, and expert parallelism for scaling across GPUs and nodes. The OmniConnector-based disaggregation layer enables independent scaling of prefill and decode stages, while native support for non-autoregressive generation workflows handles heterogeneous output formats.

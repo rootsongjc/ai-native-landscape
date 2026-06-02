@@ -20,25 +20,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-NeMo RL (NVIDIA NeMo RL) is a scalable post-training reinforcement learning toolkit within the NVIDIA NeMo ecosystem, designed to provide high-performance, reproducible training and evaluation pipelines for large language models (LLMs) and multimodal models. The project supports multiple training and generation backends (DTensor, Megatron, vLLM), and offers modular components (e.g., `nemo_rl`, `examples`, `research`) for research and production deployment.
+NeMo RL is NVIDIA's scalable post-training reinforcement learning toolkit designed for large language models and multimodal models. It delivers high-performance, reproducible training and evaluation pipelines through modular components that support research exploration and production deployment alike.
 
-## Main Features
+## Key Features
 
-- Post-training support: includes GRPO, DPO, SFT, RM training paradigms with example configurations.
-- Multi-backend compatibility: DTensor, Megatron Core, vLLM, and more for efficient training and generation.
-- Extensible architecture: modular design to integrate custom environments, algorithms, and parallelism strategies.
-- Enterprise documentation and examples: comprehensive docs and practical guides for cluster deployment and performance tuning.
+Supports multiple post-training paradigms including GRPO, DPO, SFT, and reward modeling with ready-to-use example configurations. Offers multi-backend compatibility across DTensor, Megatron Core, and vLLM for efficient distributed training and generation. Features an extensible modular architecture that allows integration of custom environments, algorithms, and parallelism strategies.
 
 ## Use Cases
 
-- Reinforcement fine-tuning and post-training on large models to improve performance in multi-turn tasks and tool-use scenarios.
-- Running large-scale experiments on clusters or cloud, leveraging Megatron or DTensor for long sequences and large models.
-- Research and education: reproduce experiments, compare algorithms, and run performance benchmarks.
+Reinforcement fine-tuning of large models to improve performance on multi-turn tasks and tool-use scenarios. Large-scale training experiments on clusters or cloud environments leveraging Megatron or DTensor backends. Academic research and benchmarking through reproducible experiment configurations and algorithm comparisons.
 
-## Technical Features
+## Technical Details
 
-- Implemented in Python and compatible with common deep-learning toolchains, supporting advanced parallelisms (TP/PP/CP/SP/FSDP).
-- Integrates Ray for scheduling and isolation, enabling multi-environment parallel training and resource isolation.
-- Provides command-line and configuration-driven interfaces, with example scripts for quickstart and reproducibility.
+Built in Python with support for advanced parallelism strategies including tensor, pipeline, context, sequence, and FSDP parallelism. Integrates Ray for task scheduling and resource isolation across multi-environment parallel training runs. Provides configuration-driven interfaces and CLI tools with example scripts for quickstart and experiment reproducibility.

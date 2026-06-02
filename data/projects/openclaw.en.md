@@ -20,24 +20,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-OpenClaw is a local-first personal agent platform that lets you run an always-on assistant on your own devices. The Gateway acts as the control plane, connecting the CLI, macOS/iOS/Android nodes, and multiple channels (WhatsApp, Telegram, Slack, Discord, Google Chat, Signal, iMessage, etc.), and provides a visual Canvas and skill management. See the [website](https://openclaw.ai) and [docs](https://docs.openclaw.ai) for install and getting-started guides.
+OpenClaw is a local-first personal AI assistant platform that runs directly on your devices and integrates with the messaging channels you already use. It provides an always-on, privacy-respecting agent experience through a centralized Gateway that connects desktop, mobile, and messaging interfaces into a unified personal assistant.
 
-## Main Features
+## Key Features
 
-- Local-first: keep the agent and data on your devices or self-hosted hosts to reduce external dependency.
-- Multi-channel support: native integrations with mainstream messaging channels and WebChat, with routing and distribution rules.
-- Orchestrable skills and workspaces: manage complex flows and automations via a skills registry and workspace model.
-- Developer-friendly: CLI and SDKs for building, debugging, and extending from source.
+Local-first architecture keeps the agent and all data on your own devices or self-hosted infrastructure, minimizing external dependencies. Native integrations with mainstream messaging channels including WhatsApp, Telegram, Slack, Discord, Signal, and iMessage with configurable routing and distribution rules. Orchestrable skills and workspaces enable complex automation flows managed through a visual skills registry and workspace model.
 
 ## Use Cases
 
-OpenClaw suits individuals and small teams who want a private, controllable always-on assistant: personal productivity (calendar, tasks, quick lookups), multi-channel alerts and automations, local developer testing and integration, and low-latency voice/Canvas interactions. The onboarding wizard configures the Gateway and channels to simplify setup.
+Personal productivity assistance for calendar management, task tracking, and quick information lookups across all your devices and channels. Multi-channel alert routing and automated workflows for individuals and small teams who need a private, controllable assistant. Local developer testing and integration scenarios where low-latency voice and Canvas interactions are required.
 
-## Technical Features
+## Technical Details
 
-- Gateway architecture: a WebSocket-based control plane that unifies sessions, routing, tools, and events for runtime extensibility and remote access.
-- Multi-node support: CLI, macOS menu app, and mobile nodes coordinate via RPC, enabling device-local actions such as `system.run`.
-- Model failover: supports multiple model backends, credential rotation, and failover strategies to improve robustness.
-- Security & guardrails: built-in DM access policies, permission controls, and security guidance to reduce misuse risk.
+WebSocket-based Gateway architecture serves as the control plane, unifying sessions, routing, tool invocations, and event management for runtime extensibility. Multi-node coordination via RPC connects CLI, macOS menu bar, and mobile nodes, enabling device-local actions such as system commands. Supports multiple model backends with credential rotation and automatic failover strategies for improved robustness.

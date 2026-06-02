@@ -19,24 +19,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Goose is an open-source, locally extensible agent focused on automating engineering tasks. The project provides CLI and desktop client examples and supports composing common development workflows—project initialization, code generation, build, and test—into reusable recipes with plugin-based integrations for multiple LLMs and tools.
+Goose is an autonomous AI coding agent developed by Block that can understand and modify codebases with minimal human intervention. It operates as a developer assistant that autonomously handles engineering tasks such as code generation, debugging, testing, and project scaffolding through an extensible plugin and recipe system. Goose runs locally via CLI or desktop client, giving developers full control over their automation workflows.
 
-## Main Features
+## Key Features
 
-- Local CLI and desktop client with multi-model integration.
-- Orchestratable recipe and plugin system for building reusable automation pipelines.
-- Developer-focused automation for build, test, and publish workflows.
+Goose provides a local CLI and desktop client with multi-model integration, enabling developers to compose common development workflows into reusable recipes. Its orchestratable plugin system supports building automation pipelines for project initialization, code generation, build, test, and publish tasks, with seamless integration for multiple LLM providers.
 
 ## Use Cases
 
-- Project scaffolding and code generation to jumpstart development.
-- Automated test generation and CI helper scripts.
-- Automation of repetitive tasks during daily development workflows.
+Goose is ideal for project scaffolding and code generation to jumpstart development, automated test generation and CI helper scripts, and automating repetitive engineering tasks during daily development workflows. It excels at understanding existing codebases and making targeted modifications without requiring constant human oversight.
 
-## Technical Features
+## Technical Details
 
-- Implemented in Rust and TypeScript, emphasizing performance and extensibility.
-- Well-documented examples and Apache-2.0 license for open contribution.
-- Interoperable with MCP, VS Code, and related tooling for easy integration.
+Implemented in Rust and TypeScript for performance and extensibility, Goose interoperates with MCP, VS Code, and related tooling for easy integration into existing development environments. The project uses an Apache-2.0 license with well-documented examples, and its architecture supports both local execution and extensibility through custom toolkits and provider integrations.

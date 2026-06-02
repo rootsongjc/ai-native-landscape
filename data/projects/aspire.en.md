@@ -19,24 +19,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Aspire is a code-first toolchain that simplifies local development, observability, and deployment for distributed applications. By expressing services, resources, and connections as a single source of truth, Aspire lets developers launch and debug an entire app locally with one command and deploy the same composition to Kubernetes, cloud providers, or on-premises servers.
+.NET Aspire is a code-first, extensible toolchain for building observable, production-ready cloud-native applications. It expresses services, resources, and connections as a single source of truth, letting developers launch and debug an entire distributed app locally with one command and deploy the same composition to Kubernetes, cloud providers, or on-premises servers.
 
-## Main Features
+## Key Features
 
-Aspire's core capabilities highlight its value across the development lifecycle:
-
-- Code-first app model and templates that reduce manual configuration.
-- Integrated CLI to run, debug, and produce deployment manifests locally.
-- Visual dashboard and service discovery to improve observability and debugging.
-- Seamless integration with Kubernetes and common cloud platforms for one-click deployment.
-- Rich samples and templates for quick onboarding and enterprise extension.
+Aspire provides a code-first app model with templates that reduce manual configuration, an integrated CLI for local run/debug and deployment manifest generation, a visual dashboard with service discovery for improved observability, and seamless integration with Kubernetes and common cloud platforms. Rich samples and templates enable quick onboarding and enterprise extension.
 
 ## Use Cases
 
-Aspire fits teams that iterate locally and deploy to production, such as microservice composition, local integration testing, CI validation pipelines, and collaborative debugging. It is especially useful where development workflows need tight coupling with observability.
+Aspire fits teams that iterate locally and deploy to production, including microservice composition, local integration testing, CI validation pipelines, and collaborative debugging. It is especially useful where development workflows need tight coupling between coding and observability.
 
-## Technical Features
+## Technical Details
 
-Built around the .NET ecosystem, Aspire provides a cross-platform CLI and dashboard, project templates, service discovery, observability integrations, and generated deployment manifests. The project is modular for CI/CD embedding and supports extensibility and self-hosting scenarios.
+Built around the .NET ecosystem, Aspire provides a cross-platform CLI and dashboard, project templates, service discovery, observability integrations, and generated deployment manifests. Its modular design supports CI/CD embedding, extensibility, and self-hosting scenarios for enterprise deployments.

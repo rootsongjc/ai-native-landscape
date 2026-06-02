@@ -18,23 +18,21 @@ featured: false
 status: tracked
 ---
 
-> Bring semantic search, embeddings, and parsing to the command line for local and CI workflows.
+## Overview
 
-## Detailed Introduction
+SemTools is a developer-focused command-line toolkit for semantic search, embedding generation, and document parsing. It wraps vector search and embedding workflows into simple CLI commands, supporting static embeddings, index construction, and similarity-based retrieval for seamless integration into local development environments and CI pipelines.
 
-SemTools is a developer-focused command-line toolkit for parsing documents, generating embeddings, and performing semantic search. It wraps embedding generation and vector search into simple CLI (CLI, Command Line Interface) commands, supporting static embeddings, index construction, and similarity-based retrieval to make it easy to integrate into local environments or automation pipelines.
+## Key Features
 
-## Main Features
-
-- Document parsing: extract text, segments, and metadata with support for common formats.
-- Embedding generation: convert text chunks into vectors suitable for offline indexing.
-- Semantic search: run fast similarity searches using static embeddings.
-- CLI-first and high-performance: implemented in Rust for efficient batch processing and CI integration.
+- Document parsing that extracts text, segments, and metadata from common file formats.
+- Embedding generation that converts text chunks into vectors suitable for offline indexing.
+- Fast semantic search using static embeddings for similarity-based retrieval without a running server.
+- High-performance Rust implementation producing static binaries for efficient batch processing and CI integration.
 
 ## Use Cases
 
-Ideal for building lightweight semantic indices and search over document collections in local or CI contexts—e.g., quick knowledge search, offline index generation, post-processing pipelines, and embedding-based test harnesses. Its CLI nature makes it easy to wire into scripts and containerized workflows.
+SemTools is ideal for building lightweight semantic indices and search over document collections in local or CI contexts such as quick knowledge lookup, offline index generation, and embedding-based test harnesses. Its CLI-first design makes it easy to wire into shell scripts, Makefiles, and containerized workflows for automated document processing.
 
-## Technical Features
+## Technical Details
 
-Implemented in Rust, SemTools emphasizes speed and static binary distribution. The project focuses on embeddings, parsing, and semantic-search, using static-embedding approaches and efficient indexing to lower runtime costs and enable usage in resource-constrained or fast-start environments.
+Implemented in Rust, SemTools prioritizes speed and single-binary distribution with no runtime dependencies. It uses static-embedding approaches and efficient indexing to minimize runtime costs, making it well-suited for resource-constrained environments and fast-start CI jobs where lightweight semantic search is needed without deploying a full vector database.

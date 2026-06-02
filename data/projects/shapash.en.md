@@ -18,23 +18,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Shapash is an open-source explainability toolkit maintained by MAIF that helps present machine learning model predictions as interactive visual reports for business stakeholders and non-technical audiences. It integrates with common Python ML libraries (e.g., scikit-learn, XGBoost, LightGBM) and combines outputs such as feature importance and local explanations (based on SHAP) into shareable reports to bridge model insights and business understanding.
+Shapash is an open-source Python library maintained by MAIF that makes machine learning models interpretable through interactive visual reports. It bridges the gap between data science teams and business stakeholders by transforming complex model predictions into clear, shareable explanations built on top of SHAP.
 
-## Main Features
+## Key Features
 
-Key capabilities of Shapash include:
-
-- Interactive reports: generate browser-viewable graphical reports for sharing and review.
-- Multi-model compatibility: works with common supervised models and pipelines for easy integration.
-- Ease of use: provides user-oriented APIs and examples to lower the barrier for interpretability analysis.
-- Local and global views: supports both global feature importance and per-prediction local explanations.
+Shapash generates browser-based interactive reports that combine global feature importance with per-prediction local explanations, making it easy to explore model behavior at any granularity. It integrates seamlessly with popular ML frameworks including scikit-learn, XGBoost, and LightGBM, and provides a user-friendly API that lowers the barrier to performing interpretability analysis.
 
 ## Use Cases
 
-Shapash is suitable for scenarios where model decisions must be explained to business teams, such as financial risk, credit scoring, marketing analysis, and compliance audits. Clear visual reports enable data scientists to communicate findings efficiently to product, risk, and legal stakeholders and support model validation and pre-deployment explainability checks.
+Shapash is ideal for regulated industries such as finance and healthcare where model transparency is required for compliance audits, credit scoring, and risk assessment. Data scientists also use it to validate models before deployment and to communicate prediction rationale to product managers, legal teams, and other non-technical stakeholders.
 
-## Technical Features
+## Technical Details
 
-Technically, Shapash is built in Python and leverages underlying explanation libraries like SHAP to compute feature contributions. It packages interactive components and HTML reports, emphasizes lightweight integration with mainstream feature-engineering pipelines, and provides exportable static reports for archiving and auditing.
+Built entirely in Python, Shapash wraps SHAP and other explanation backends to compute feature contributions and renders them as self-contained HTML reports. It is designed for lightweight integration into existing feature-engineering pipelines and supports exportable static reports for archiving, auditing, and long-term traceability.

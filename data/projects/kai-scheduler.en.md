@@ -20,26 +20,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-KAI Scheduler is NVIDIA's native Kubernetes scheduler, purpose-built for orchestrating and optimizing large-scale AI workloads. By deeply understanding AI task characteristics—such as GPU requirements, topology preferences, and communication patterns—it enhances resource utilization and scheduling quality for AI training and inference tasks in Kubernetes clusters. Implemented in Go, it integrates natively with the Kubernetes control plane to provide production-grade capabilities for containerized AI workflows.
+KAI Scheduler is an open-source, Kubernetes-native scheduler developed by NVIDIA specifically for orchestrating AI workloads at large scale. It deeply understands AI task characteristics such as GPU requirements, topology preferences, and communication patterns to deliver superior resource utilization and scheduling quality for containerized training and inference workflows.
 
-## Main Features
+## Key Features
 
-- Kubernetes-native design: works as a standard Kubernetes scheduler extension for easy deployment.
-- AI-aware scheduling: understands GPU, network topology, and communication patterns to optimize task placement and parallelism.
-- Large-scale support: specialized optimization for multi-GPU and multi-node distributed training and inference.
-- Resource efficiency: maximizes cluster utilization through smart pinning, network awareness, and dynamic allocation.
+The scheduler features AI-aware placement that understands GPU, network topology, and communication patterns to optimize task distribution and parallelism across clusters. It provides specialized optimizations for multi-GPU and multi-node distributed training and inference, maximizing cluster resource efficiency through smart pinning, network awareness, and dynamic allocation strategies.
 
 ## Use Cases
 
-- Data centers or cloud platforms running large-scale AI training on Kubernetes with efficient scheduling and resource isolation.
-- Dynamic load balancing and GPU resource sharing in inference service clusters.
-- Mixed workload (AI and regular applications) management with priority and resource control in shared clusters.
+KAI Scheduler is designed for data centers and cloud platforms running large-scale AI training on Kubernetes that require efficient scheduling and resource isolation. It also handles dynamic load balancing and GPU sharing in inference clusters, as well as mixed workload management where AI and regular applications share the same cluster with priority and resource controls.
 
-## Technical Features
+## Technical Details
 
-- Built on Kubernetes Scheduler Framework with a pluggable architecture for easy customization.
-- Implemented in Go for seamless integration into existing Kubernetes infrastructure.
-- Open-source under Apache 2.0 license, supporting community contributions.
-- Works seamlessly with NVIDIA AI and container technologies like CUDA, cuDNN, and Triton Inference Server.
+Built on the Kubernetes Scheduler Framework with a pluggable architecture, KAI Scheduler is implemented in Go for seamless integration into existing Kubernetes infrastructure. It works natively with NVIDIA AI and container technologies such as CUDA, cuDNN, and Triton Inference Server, and is open-source under the Apache 2.0 license.

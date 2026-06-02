@@ -20,21 +20,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Chitu is a production-oriented inference engine focused on delivering high-performance, low-latency inference for large language models (LLMs). It supports deployments ranging from CPU-only and single-GPU setups to large-scale cluster environments, and provides compatibility with multiple hardware vendors to accommodate enterprise rollout.
+Chitu is a high-performance inference framework for large language models developed by Tsinghua University, focusing on efficiency, flexibility, and availability. It delivers production-grade, low-latency LLM inference across a wide range of deployment scenarios from CPU-only and single-GPU setups to large-scale distributed clusters, with multi-vendor hardware compatibility for enterprise adoption.
 
-## Main Features
+## Key Features
 
-- Multi-hardware support: optimized implementations for NVIDIA and various domestic accelerators.
-- Scalable deployment: supports single-node, heterogeneous CPU/GPU setups and distributed clusters.
-- Production stability: engineering efforts for long-term stable operation under concurrent loads.
-- Tooling and docs: official images, developer guides and performance benchmarks for fast validation and adoption.
+Multi-hardware support with optimized implementations for NVIDIA GPUs and various domestic AI accelerators. Scalable deployment spanning single-node heterogeneous CPU/GPU configurations to full distributed cluster environments. Production stability engineering for long-term concurrent operation with comprehensive tooling including official container images, developer guides, and performance benchmarks.
 
 ## Use Cases
 
-Suitable for on-premise or edge LLM inference needs such as enterprise Q&A, realtime online inference services, batched model serving, and scenarios requiring domestic accelerator support or mixed-hardware optimization.
+On-premise or edge LLM inference for enterprise Q&A systems, real-time online inference services, and batched model serving. Scenarios requiring domestic accelerator support or mixed-hardware optimization in regulated or cost-sensitive environments. Large-scale production deployments needing stable, high-throughput inference with flexible hardware configurations.
 
-## Technical Features
+## Technical Details
 
-Chitu combines high-performance operator implementations, quantization and mixed-precision support (e.g., FP4/FP8/BF16), streaming and batch optimizations, and provides local images and benchmark documentation to facilitate engineering adoption. The project emphasizes extensibility and compatibility with mainstream LLMs via adapters and plugins.
+Combines high-performance operator implementations with quantization and mixed-precision support including FP4, FP8, and BF16 formats. Streaming and batch optimizations for maximizing throughput in production serving scenarios. Extensible plugin and adapter architecture ensures compatibility with mainstream LLMs and diverse backend hardware.

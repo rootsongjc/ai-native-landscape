@@ -20,25 +20,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-SkyRL is a modular full-stack reinforcement learning (RL) library maintained by NovaSky-AI, focused on building scalable training and evaluation pipelines for large language models (LLMs). The project includes subpackages such as `skyrl-agent`, `skyrl-train`, and `skyrl-gym`, covering environment construction, training stack, agent layers, and deployment tooling to support reproducible research and engineering for long-horizon, real-world tasks.
+SkyRL is a modular full-stack reinforcement learning library from NovaSky-AI designed specifically for training large language models on long-horizon, real-world tasks. It bundles environment construction, a high-performance training stack, agent abstractions, and deployment tooling into a cohesive framework that supports reproducible research and production engineering.
 
-## Main Features
+## Key Features
 
-- Modular components: split into training, agent, and environment libraries for easy composition and extension.
-- Reproducible training pipelines: high-performance training stack and configurable experiment management for large-scale training.
-- Rich environment suite: `skyrl-gym` provides tool-use environments implemented with the Gymnasium API.
-- Open collaboration: Apache-2.0 license with comprehensive docs and examples for community contributions.
+SkyRL is organized into independent subpackages including skyrl-agent, skyrl-train, and skyrl-gym, allowing researchers to compose and extend individual components without modifying the entire stack. It provides configurable experiment management for large-scale distributed training, a rich suite of Gymnasium-compatible tool-use environments, and comprehensive documentation under the Apache-2.0 license.
 
 ## Use Cases
 
-- Training long-horizon agents for multi-turn tool-use and dialog tasks.
-- Benchmarking and evaluating training algorithms and model performance in realistic environments.
-- Teaching and research: reproducing experiments, building baselines, and tuning performance.
+Researchers and engineers use SkyRL to train agents on multi-turn dialog and tool-use tasks that require sustained reasoning over many interaction steps. It also serves as a benchmarking platform for comparing RL algorithms in realistic environments, and as a teaching tool for reproducing published results and building new baselines.
 
-## Technical Features
+## Technical Details
 
-- Implemented in Python and compatible with common deep-learning and distributed training toolchains, with a focus on performance and scalability.
-- Command-line and configuration-driven interfaces enable running large-scale training on cloud or local clusters.
-- Integrated monitoring and evaluation modules export experiment metrics to support reproducibility.
+Built in Python, SkyRL integrates with mainstream deep learning frameworks and distributed training toolchains while prioritizing performance and scalability. Its command-line and configuration-driven interfaces make it straightforward to launch experiments on both local clusters and cloud infrastructure, and built-in monitoring modules export metrics for full experiment reproducibility.

@@ -20,25 +20,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-MockingBird is an open-source voice cloning and real-time speech generation toolkit designed for research and engineering use. It aims to clone a target speaker's voice from very short audio samples (e.g., 5 seconds) and synthesize arbitrary text in that voice. Implemented in PyTorch, MockingBird includes preprocessing, training, and inference components, a demo toolbox, and optional web server interfaces for quick experimentation and local deployment.
+MockingBird is an open-source voice cloning and real-time speech synthesis toolkit that can replicate a target speaker's voice from as little as five seconds of audio. Built in PyTorch with a modular encoder-synthesizer-vocoder pipeline, it provides preprocessing, training, and inference components alongside a demo toolbox and optional web server for rapid experimentation and local deployment.
 
-## Main Features
+## Key Features
 
-- Fast cloning: build a speaker representation from short audio clips and produce synthetic speech in a similar timbre.  
-- Cross-platform and hardware tested: runs on Windows and Linux, with notes for running on Apple M1; tested with GPUs like Tesla T4 and GTX series.  
-- Tooling and demos: includes training scripts, a demo toolbox, and a `web.py` web server for remote invocation.  
-- Community-shared models and comparisons for quality evaluation.
+Fast voice cloning builds a speaker embedding from short audio clips and generates synthetic speech with similar timbre and prosody in near real-time. Cross-platform support covers Windows and Linux with tested GPU configurations including Tesla T4 and GTX series, plus documented workarounds for Apple M1 hardware. Comprehensive tooling includes training scripts, an interactive demo toolbox, a web server interface, and community-shared pretrained models with side-by-side quality comparisons.
 
 ## Use Cases
 
-- Voice cloning research and experiments to validate speaker modeling methods.  
-- Prototyping speech products or demos that require sample-specific voices.  
-- Educational projects for learning TTS pipelines, vocoders, and model training workflows.
+Researchers use MockingBird to validate speaker modeling and voice conversion methods in controlled experiments. Product teams prototype speech-enabled applications and demos that require sample-specific voices without building TTS systems from scratch. Educators leverage it as a hands-on teaching platform for TTS pipelines, vocoder architectures, and model training workflows.
 
-## Technical Features
+## Technical Details
 
-- Modular PyTorch codebase with encoder, synthesizer, and vocoder components for easy replacement and extension.  
-- Options to reuse pretrained encoders/vocoders while training the synthesizer to reduce time-to-results.  
-- Platform-specific setup guides (including Rosetta-based workarounds for M1 macOS) and extensive README/Wiki documentation.
+The PyTorch codebase is cleanly separated into encoder, synthesizer, and vocoder modules that can be independently replaced or extended. Pretrained encoders and vocoders can be reused while training only the synthesizer, significantly reducing time to results. Detailed platform-specific setup guides, extensive README documentation, and a community wiki lower the barrier to entry for newcomers.

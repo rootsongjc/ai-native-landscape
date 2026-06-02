@@ -20,21 +20,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Deepnote is a collaborative notebook platform for data science and machine learning teams, compatible with Jupyter and supporting Python, R, and SQL. It combines interactive notebooks, data connectors, visualization components, and cloud execution environments to provide real-time multi-user editing, access controls, and reproducible experiment history.
+Deepnote is a collaborative data notebook platform for data science teams with AI-powered assistance. It is compatible with Jupyter and supports Python, R, and SQL, combining interactive notebooks with cloud execution environments for real-time multi-user collaboration.
 
-## Main Features
+## Key Features
 
-- Real-time collaboration: simultaneous editing, comments, and operation history for easy rollback.
-- Cloud execution and scalability: integrated cloud backends and configurable compute to move from local development to cloud runs.
-- Data and tools integrations: built-in connectors, visualization panels, and dataset versioning.
-- Production and deployment: package notebooks as deployable data apps or jobs, with CI integration and access controls.
+Deepnote provides real-time simultaneous editing with comments and operation history, integrated cloud backends with configurable compute resources, and built-in data connectors with visualization panels. It also supports packaging notebooks as deployable data apps or scheduled jobs with CI integration and access controls.
 
 ## Use Cases
 
-Suitable for collaborative data analysis, teaching labs, model prototyping, and small-scale inference services. Teams can perform exploration, build visual demos, and generate reproducible environments in Deepnote, then export or deploy mature workflows as data applications.
+Deepnote is suited for collaborative data analysis, teaching labs, model prototyping, and small-scale inference services. Teams can explore data, build visual demos, and generate reproducible experiment environments, then export or deploy mature workflows as production data applications.
 
-## Technical Characteristics
+## Technical Details
 
-Deepnote provides a modern frontend editor with modular components and a backend that supports pluggable execution backends and environment image management. It is Jupyter-compatible and exposes APIs and integration points for version control, CI/CD, and cloud storage. For more details see the official site: [Deepnote](https://deepnote.com).
+Deepnote provides a modern frontend editor with modular components and a backend supporting pluggable execution environments and image management. It is Jupyter-compatible and exposes APIs and integration points for version control, CI/CD pipelines, and cloud storage services.

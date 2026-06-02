@@ -19,27 +19,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-FinRobot is an open-source AI agent platform tailored for financial analysis. It combines large language models (LLMs) with adapters to market data, company filings and news, enabling reusable, orchestrated agent workflows. The project includes example agents for market forecasting, report generation, document analysis and trading strategies, and provides notebooks and integrations that let researchers and engineers quickly prototype and deploy financial automation workflows.
+FinRobot is an open-source AI agent platform designed specifically for financial analysis, combining large language models with multi-source data adapters for market data, company filings, and news. It enables reusable, orchestrated agent workflows for financial automation and includes example agents for market forecasting, report generation, document analysis, and trading strategies.
 
-## Main Features
+## Key Features
 
-- Multi-agent architecture: orchestrates task decomposition and coordination so complex analyses can be split and recomposed.
-- Multi-source data adapters: built-in connectors for market data, financial filings and textual sources, supporting retrieval-augmented generation.
-- Pluggable toolchain: integrates external APIs, factor libraries, backtesting modules and visualization components to turn model outputs into actionable steps.
-- Open and community-driven: Apache-2.0 licensed with active community, tutorials and example notebooks.
+FinRobot features a multi-agent architecture that orchestrates task decomposition and coordination for complex financial analyses. It provides built-in connectors for market data, financial filings, and textual sources with retrieval-augmented generation support. The platform offers a pluggable toolchain integrating external APIs, factor libraries, backtesting modules, and visualization components, and is released under the Apache-2.0 license with an active community and example notebooks.
 
 ## Use Cases
 
-- Market forecasting and signal generation: produce short- or medium-term directional forecasts from historical data and news.
-- Report automation: extract key insights from financial statements and generate research report drafts.
-- Quant strategy integration: convert agent outputs into tradable signals and validate them via backtesting and execution modules.
-- Document and compliance analysis: automate compliance checks, extraction of key clauses and summary generation.
+FinRobot is used for market forecasting and signal generation from historical data and news, automated extraction of insights from financial statements into research report drafts, and conversion of agent outputs into tradable signals validated through backtesting. It also supports document and compliance analysis, automating compliance checks and key clause extraction.
 
-## Technical Features
+## Technical Details
 
-- LLM-centered design with Chain-of-Thought patterns to improve multi-step reasoning and explainability.
-- Support for RAG (retrieval-augmented generation) and tool invocation to ensure contextual accuracy and executability.
-- Modular codebase and example notebooks for iterative development and customization.
-- Multiple deployment paths (local, containerized, and service-oriented) to suit research and production environments.
+FinRobot employs an LLM-centered design with Chain-of-Thought patterns to improve multi-step reasoning and explainability. It supports RAG and tool invocation for contextual accuracy, features a modular codebase with example notebooks for iterative development, and offers multiple deployment paths including local, containerized, and service-oriented configurations for both research and production environments.

@@ -20,22 +20,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-CocoIndex is a data transformation and indexing framework designed for AI workloads, providing ultra-performance processing with support for incremental and real-time indexing. It focuses on pipeline-ing and normalizing raw data into formats suitable for vectorization and retrieval, accelerating semantic search and Retrieval-Augmented Generation (RAG) workflows. The project offers end-to-end processing components that balance throughput and latency for large-scale, continuously-updated indexes.
+CocoIndex is an incremental data indexing engine designed for long-horizon AI agents that need to keep data indexes synchronized with constantly changing sources. It provides high-performance data transformation and semantic indexing that continuously processes updates, ensuring RAG pipelines and search systems always reflect the latest available information.
 
-## Main Features
+## Key Features
 
-- High-performance data transformation and indexing with parallel and incremental processing.
-- Native support for semantic indexing and vectorization pipelines to integrate with vector databases.
-- Composable processor components and adapters for connecting diverse data sources and downstream systems.
+High-performance data transformation and indexing with parallel and incremental processing that efficiently handles continuous source updates. Native support for semantic indexing and vectorization pipelines that integrate directly with vector databases. Composable processor components and adapters for connecting diverse data sources to downstream retrieval and search systems.
 
 ## Use Cases
 
-CocoIndex is suitable for converting massive heterogeneous data into searchable semantic indexes, such as knowledge base construction, real-time log/event indexing, document and code search, and upstream data processing for RAG pipelines. It is also well-suited for engineering applications requiring low-latency incremental indexing and continuous data synchronization.
+Converting massive heterogeneous data into searchable semantic indexes for knowledge base construction, real-time log and event indexing, and document or code search. Upstream data processing for RAG pipelines that require indexes to stay current with changing source data. Engineering applications needing low-latency incremental indexing and continuous data synchronization without full reprocessing.
 
-## Technical Features
+## Technical Details
 
-- Pipeline-oriented modular design with support for custom transformers and connectors.
-- Engineered for performance and scalability using efficient concurrency and incremental computation strategies.
-- Integrates with common vector databases and retrieval components, enabling CI/CD verification of data consistency and index quality.
+Pipeline-oriented modular design with support for custom transformers and connectors tailored to specific data workflows. Engineered for performance and scalability using efficient concurrency and incremental computation strategies that avoid redundant processing. Integrates with common vector databases and retrieval components, enabling CI/CD verification of data consistency and index quality.

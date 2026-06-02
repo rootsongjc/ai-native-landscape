@@ -20,27 +20,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Khoj is a self-hostable "second brain" platform that converts web pages, notes, and documents into a semantic knowledge base and enables building searchable agents and automation over private data. The project integrates semantic retrieval and Retrieval-Augmented Generation (RAG) pipelines, supports multiple LLM backends (e.g., GPT, Gemini, Llama), local/offline models, and plugin-style integrations, and includes a dashboard, CLI, and templates for rapid setup and observability.
+Khoj is a self-hostable AI "second brain" platform that transforms web pages, notes, and documents into a searchable knowledge base. It enables users to get answers from the web or their own documents, build custom agents, and perform deep research, all while maintaining full control over their data through private deployment options.
 
-## Main Features
+## Key Features
 
-- Private deployments: run in local or private networks to satisfy privacy and compliance requirements.
-- Semantic indexing & retrieval: convert heterogeneous documents into vector indexes for high-quality retrieval and multi-hop queries.
-- Multi-backend & offline model support: flexible choice between cloud LLMs and local models.
-- Automation & scheduling: build custom agents, automate tasks, and gather observations to improve agent strategies.
+Khoj integrates semantic retrieval and RAG pipelines with support for multiple LLM backends including GPT, Gemini, and Llama, as well as local and offline models. Users can build custom agents with automation and scheduling capabilities, convert heterogeneous documents into vector indexes for high-quality multi-hop queries, and deploy everything in private networks to meet strict privacy and compliance requirements.
 
 ## Use Cases
 
-- Enterprise knowledge bases: provide searchable knowledge for support, R&D, or legal teams within controlled environments.
-- Research & prototyping: serve as a platform for RAG and retrieval method experiments and benchmarks.
-- Personal productivity: turn notes or Obsidian vaults into a Q&A-ready knowledge base.
-- Offline & edge scenarios: perform retrieval and inference when external APIs are unavailable or undesired.
+Khoj is ideal for building enterprise knowledge bases that provide searchable knowledge for support, R&D, or legal teams in controlled environments. It also serves as a powerful personal productivity tool for turning notes or Obsidian vaults into Q&A-ready knowledge bases, and works well in offline or edge scenarios where external APIs are unavailable.
 
-## Technical Features
+## Technical Details
 
-- Modular architecture: decoupled retrieval, indexing, fusion, and generation modules for easy substitution.
-- Multi-language SDKs and templates: Python/TypeScript templates and example projects for quick integration.
-- Extensible storage backends: support local disk and external object storage for artifacts.
-- Open-source licensing: repository is AGPL-3.0 licensed; check licensing terms for commercial usage.
+Built with a modular architecture, Khoj features decoupled retrieval, indexing, fusion, and generation modules that are easy to substitute and extend. It provides multi-language SDKs and templates including Python and TypeScript, supports extensible storage backends from local disk to external object storage, and is licensed under AGPL-3.0.

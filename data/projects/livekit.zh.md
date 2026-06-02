@@ -17,24 +17,18 @@ featured: false
 status: tracked
 ---
 
-## 详细介绍
+## 简介
 
-LiveKit 是一套面向开发者的实时堆栈，提供分布式的 WebRTC SFU、生产级服务端、以及丰富的客户端与服务端 SDK。它将实时音视频、数据通道和流媒体功能以工程化方式暴露给应用，支持自托管与云托管两种部署模式，并提供示例应用与在线演示，帮助开发者快速将实时体验集成到产品中。
+LiveKit 是一个端到端的实时堆栈，基于 WebRTC 基础设施连接人类与 AI。它提供分布式 SFU 服务器、生产级媒体管道和多语言 SDK，暴露音频、视频、数据通道和流媒体能力，支持自托管和云托管两种部署模式。
 
 ## 主要特性
 
-- 可扩展的 SFU：支持分布式与多区域部署，面向高并发会议场景。
-- 丰富的 SDK：提供 JavaScript、iOS、Android、Flutter、Unity、Rust 等跨平台 SDK 与示例。
-- 生产级能力：支持 JWT 认证、WEBHOOK、模拟发布、录制（Egress）与流入（Ingress）。
-- 部署便捷：单二进制、Docker 与 Kubernetes 示例，适配云原生环境。
+LiveKit 提供面向多区域、高并发会议场景的可扩展 SFU，配备覆盖 JavaScript、iOS、Android、Flutter、Unity 和 Rust 的跨平台 SDK。生产级能力包括 JWT 认证、Webhook、录制导出和 RTMP/WHIP 流入。部署简单，支持单二进制、Docker 镜像和 Kubernetes 示例。
 
 ## 使用场景
 
-适用于多人视频会议、低延迟交互式课堂、实时多人游戏、远程协作与将语音/视频与 AI 服务（如语音助手、实时转写）结合的混合场景。团队可以选择自托管以满足合规或性能需求，也可以使用 LiveKit Cloud 快速上线。
+团队使用 LiveKit 构建多方视频会议、低延迟互动课堂和直播平台。它通过将媒体流与 AI 服务结合，驱动语音助手和实时转写等实时 AI 应用。企业可以选择自托管以满足合规要求，或使用 LiveKit Cloud 实现更快的上市速度。
 
 ## 技术特点
 
-- 多协议支持：通过 gRPC/HTTP 暴露控制接口，支持 JSON 与 Protobuf 数据格式。
-- 性能优化：针对媒体转发与网络抖动进行优化，支持 SVC、simulcast 与 AV1/VP9 编解码。
-- 可观察性与运维：内置指标与日志，支持 Prometheus 等监控方案。
-- 开源生态：采用 Apache-2.0 许可，拥有活跃社区与示例仓库（包括 Agents 与扩展）。
+LiveKit 暴露 gRPC 和 HTTP 控制 API，支持 JSON 和 Protobuf 数据格式以实现灵活集成。媒体优化包括 SVC、simulcast、AV1/VP9 编解码支持和内置抖动及延迟缓解。通过内置指标和兼容 Prometheus 的端点提供可观测性，项目采用 Apache-2.0 许可证开源。

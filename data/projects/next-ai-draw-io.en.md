@@ -19,26 +19,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Next AI Draw.io is a Next.js web application that integrates AI capabilities into the draw.io diagram editing workflow. Users can create, modify, or enhance diagram elements via natural language descriptions; the AI provides structured suggestions, automatic layouts, and visual improvements to lower the barrier for diagramming and accelerate prototyping. The project includes a demo site for quick evaluation.
+Next AI Draw.io is a Next.js web application that brings AI-powered natural language interaction to the draw.io diagram editing experience. Users can create, modify, and enhance diagrams simply by describing what they need, lowering the barrier to professional-quality visual communication.
 
-## Main Features
+## Key Features
 
-- Natural-language-driven creation and modification of diagram elements.
-- AI-assisted automatic layout and visual optimization to improve readability and aesthetics.
-- Integration with the draw.io editor to preserve conventional interactions while adding intelligent features.
-- Open-source codebase for customization and extension.
+Natural-language-driven diagram creation and modification that translates spoken or written descriptions into structured visual elements. AI-assisted automatic layout and visual optimization improve diagram readability and aesthetic quality. Deep integration with the draw.io editor preserves familiar interactions while adding intelligent generation capabilities.
 
 ## Use Cases
 
-- Rapidly generate flowcharts, architecture diagrams, and concept maps during product prototyping.
-- Guide students in educational settings to produce illustrative diagrams using natural language.
-- Convert spoken or written discussion into structured diagrams for team collaboration and retrospectives.
+Rapid generation of flowcharts, architecture diagrams, and concept maps during product prototyping and design sessions. Educational settings where students can produce illustrative diagrams through conversational prompts. Team collaboration scenarios for converting discussions into structured diagrams for documentation and retrospectives.
 
-## Technical Features
+## Technical Details
 
-- Built on Next.js for modern web architecture and easy deployment.
-- Combines natural language processing with a diagram editor, using retrieval or models to improve suggestions.
-- Provides an online demo for fast usability evaluation and iteration.
-- Community-driven repository to enable observability-led improvements and feature customization.
+Built on Next.js providing a modern web architecture with straightforward deployment options. Combines natural language processing with the draw.io editor engine, leveraging retrieval-augmented or model-based approaches for intelligent suggestions. Includes an online demo site for quick evaluation and iteration without local setup.

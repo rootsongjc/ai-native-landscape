@@ -20,21 +20,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Bun is a high-performance JavaScript platform developed by Oven that combines a runtime, bundler, package manager, and test runner into a single integrated experience. Distributed as a single binary, Bun focuses on fast startup, speedy dependency installation, and build performance, making it suitable for local development, CI pipelines, and edge function environments. See the official site at [bun.sh](https://bun.sh) and the project repository on [GitHub](https://github.com/oven-sh/bun).
+Bun is an incredibly fast JavaScript runtime, bundler, test runner, and package manager combined into a single integrated platform. Distributed as a single binary, it focuses on fast startup, speedy dependency installation, and build performance. Bun is widely used as a high-performance runtime for AI tooling and development workflows.
 
-## Main Features
+## Key Features
 
-- Integrated platform: runtime, bundling, package management, and testing in one toolchain.  
-- High performance: optimized I/O and startup paths to reduce script execution and build times.  
-- Compatibility: supports common Node.js APIs and modern ECMAScript features.  
-- Single-binary distribution: easy installation and deployment.
+Bun provides an integrated platform combining runtime, bundling, package management, and testing in one toolchain with optimized I/O and startup paths. It supports common Node.js APIs and modern ECMAScript features for broad compatibility, and ships as a single binary for easy installation and deployment.
 
 ## Use Cases
 
-Bun is suitable for building static sites, running development scripts, accelerating frontend build pipelines, running lightweight services on the edge or serverless platforms, and improving install/test times in CI. It is also a good fit for microservices and edge functions that require fast startup and high concurrency I/O.
+Bun is suitable for building static sites, running development scripts, accelerating frontend build pipelines, and improving install and test times in CI. It is also a strong fit for running lightweight services on edge or serverless platforms, microservices requiring fast startup, and as a high-performance runtime for AI tooling and development.
 
-## Technical Features
+## Technical Details
 
-Implemented in modern systems languages like Zig for core components, Bun minimizes runtime overhead and improves concurrency. It includes a high-performance JavaScript engine and native networking I/O, provides native package installation and bundling workflows, and supports fast resolution of common npm packages. The project is open-source and welcomes community contributions.
+Implemented in modern systems languages like Zig for core components, Bun minimizes runtime overhead and improves concurrency with a high-performance JavaScript engine and native networking I/O. It provides native package installation and bundling workflows with fast resolution of common npm packages. The project is open-source and welcomes community contributions.

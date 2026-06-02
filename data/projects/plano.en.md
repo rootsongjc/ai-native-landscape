@@ -18,25 +18,20 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Plano is an open-source AI gateway focused on production-grade LLM traffic management. It provides a unified ingress layer for multiple model backends and API providers, helping teams standardize access control, routing behavior, and runtime policies without tightly coupling application code to a single vendor.
+Plano is an AI-native proxy and data plane purpose-built for agentic applications, combining request routing, safety guardrails, and deep observability in a single open-source gateway. It sits between application code and LLM providers, giving teams centralized control over how agents communicate with models while keeping vendor coupling to a minimum.
 
-## Main Features
+## Key Features
 
-- Unified AI gateway layer for multi-provider and multi-model traffic.
-- Policy-driven routing and governance for request control and compliance.
-- Observability primitives for tracing, monitoring, and operational debugging.
-- Production-oriented architecture for reliability, rollout safety, and scale.
+- A unified gateway that routes traffic across multiple LLM providers with automatic fallback and resilience controls.
+- Built-in safety and policy enforcement layer that applies auth, content filtering, and compliance rules to every AI request.
+- Native observability primitives including distributed tracing, structured metrics, and request-level logging for operational debugging.
 
 ## Use Cases
 
-- Route traffic across different model providers with fallback and resilience controls.
-- Enforce centralized safety, auth, and policy checks for AI requests.
-- Standardize AI platform interfaces for internal teams and multi-tenant systems.
+Platform teams can use Plano to standardize AI access for internal developers across multiple models and providers without locking into a single vendor. Agentic applications benefit from the built-in orchestration and safety layer that ensures every agent request is authenticated, logged, and policy-compliant. Multi-tenant SaaS products can enforce per-tenant rate limits and governance at the gateway level.
 
-## Technical Features
+## Technical Details
 
-- Designed as an extensible gateway/runtime boundary for AI applications.
-- Emphasizes operational controls needed in enterprise and platform environments.
-- Suitable as a control plane entry point for rapidly evolving LLM stacks.
+Plano is designed as an extensible proxy and runtime boundary that separates the control plane from model backends. Its plugin architecture supports custom middleware for routing, transformation, and policy enforcement, making it suitable as the single entry point for rapidly evolving LLM stacks in enterprise environments.

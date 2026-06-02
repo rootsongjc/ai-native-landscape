@@ -17,26 +17,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-TRL (Train Reinforcement Learning) is an open-source toolkit from Hugging Face focused on reinforcement learning training and optimization for transformer models. It provides end-to-end pipelines for policy learning, reward modeling, and evaluation, and integrates with common pretrained models and training frameworks to support RL-based fine-tuning such as RLHF.
+TRL (Transformer Reinforcement Learning) is an open-source library from Hugging Face that provides end-to-end tooling for training transformer language models with reinforcement learning. It offers production-ready pipelines for reward modeling, policy optimization, and evaluation, tightly integrated with the Hugging Face ecosystem to enable RLHF and other alignment techniques on any pretrained transformer model.
 
-## Main Features
+## Key Features
 
-- Multiple training strategies and reward modeling options for fine-grained control.
-- Seamless integration with the Hugging Face ecosystem to reuse pretrained models and datasets.
-- Ready-made training scripts and evaluation tools to simplify experiment reproduction.
-- Active open-source community enabling extensions and shared best practices.
+TRL supports a wide range of training strategies including PPO, DPO, KTO, and reward modeling, giving practitioners fine-grained control over the alignment process. It integrates seamlessly with the Hugging Face Hub, allowing teams to load pretrained models and datasets directly and push trained results back to the hub. The library ships with ready-made training scripts, evaluation utilities, and logging integrations that simplify experiment reproduction and comparison.
 
 ## Use Cases
 
-- RLHF experiments: fine-tuning dialogue or generative models with human preference signals.
-- Behavior optimization: tune generation strategies to improve quality or safety in specific tasks.
-- Academic research: validate training strategies, reward functions, and stability improvements.
+AI teams use TRL to perform RLHF fine-tuning on dialogue and generative models using human preference datasets. Safety and alignment researchers leverage it to optimize model behavior for specific tasks, reducing harmful outputs and improving response quality. Academic researchers rely on TRL to benchmark novel training strategies, reward functions, and stability improvements in a standardized framework.
 
-## Technical Characteristics
+## Technical Details
 
-- Architecture compatibility: Transformer-based and interoperable with the Hugging Face model hub.
-- Reproducibility: standardized training scripts and evaluation pipelines for benchmarking.
-- Extensibility: modular design allows custom reward, policy, and data pipelines.
-- License: Apache-2.0, permissive for commercial use and community contributions.
+TRL is built on top of the Hugging Face Transformers and Accelerate libraries, ensuring compatibility with any model supported by the hub. Its modular architecture allows custom reward functions, policy wrappers, and data pipelines to be plugged in without modifying core training loops. The library is open-source under the Apache-2.0 license, permissive for both commercial use and community contributions.

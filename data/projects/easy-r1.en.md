@@ -19,24 +19,25 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-EasyR1 is an efficient, scalable reinforcement learning (RL) training framework for multimodal models. Built as a clean fork of veRL, EasyR1 incorporates engineering optimizations—such as HybridEngine and vLLM SPMD support—to enable RL training and evaluation for large language and vision-language models. The project includes Docker images, example scripts, and dataset templates to simplify experimentation and deployment.
+EasyR1 is an efficient, scalable, multi-modality reinforcement learning training framework based on veRL, optimized for reasoning models. It incorporates engineering optimizations such as HybridEngine and vLLM SPMD support to enable RL training and evaluation for large language and vision-language models.
 
-## Main Features
+## Key Features
 
-- Multimodal model support: compatible with text and vision-text models and dataset formats.
-- Scalable training engine: leverages HybridEngine and distributed strategies for multi-node training.
-- Algorithms and training tricks: supports GRPO, DAPO, Reinforce++, and optimizations like padding-free training.
-- Engineering and monitoring: provides Docker images, and integrations with Wandb, Mlflow and Tensorboard.
+- Multimodal model support compatible with text and vision-text models and dataset formats.
+- Scalable training engine leveraging HybridEngine and distributed strategies for multi-node training.
+- Built-in algorithms including GRPO, DAPO, and Reinforce++ with optimizations like padding-free training.
+- Monitoring integrations with Wandb, MLflow, and Tensorboard for experiment tracking.
 
 ## Use Cases
 
-EasyR1 is suitable for research and engineering that require RL-based policy optimization on large or multimodal models: improving multimodal reasoning, training reward models, reproducing RL baselines, and running large-scale multi-node experiments for performance validation.
+- Improving multimodal reasoning capabilities through RL-based policy optimization on large models.
+- Training and evaluating reward models and reproducing RL baselines for research validation.
+- Running large-scale multi-node experiments for performance benchmarking and production deployment.
 
-## Technical Features
+## Technical Details
 
-- vLLM SPMD and custom parallel strategies to reduce memory bottlenecks.
+- vLLM SPMD and custom parallel strategies to reduce memory bottlenecks during training.
 - Dataset examples and model merger scripts for Hugging Face checkpoint interoperability.
-- Containerized deployment recipes and Ray multi-node examples for cloud-native execution.
-- Open-source under Apache-2.0 with an active ecosystem and multiple reproduction projects.
+- Containerized deployment recipes with Ray multi-node examples for cloud-native execution.

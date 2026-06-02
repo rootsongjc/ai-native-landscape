@@ -19,21 +19,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Eigent is a desktop multi-agent workforce platform built on the CAMEL-AI multi-agent framework, designed to run locally or in the cloud. It offers visual workflow orchestration, a rich set of built-in tools (browser, code execution, document processing, etc.), and support for custom models and enterprise features like SSO, making it suitable for teams that require privacy and deep customization.
+Eigent is an open-source desktop multi-agent platform that serves as a local and free alternative to cloud-based cowork tools. It is designed to unlock exceptional productivity by enabling users to automate complex workflows through visual orchestration of multiple AI agents. The platform runs on the CAMEL-AI framework and supports both local and cloud deployment modes.
 
-## Main Features
+## Key Features
 
-- Multi-agent collaboration: splits complex tasks into agents that run in parallel to improve efficiency and robustness.  
-- Rich tool integrations: built-in browser, document, and terminal tools, with support for installing custom tools via MCP integrations.  
-- Local and cloud deployment: supports zero-config cloud experiences as well as self-hosted local deployment for data privacy.  
-- Enterprise features: SSO, access control, and commercial licensing options.
+Eigent provides multi-agent collaboration that splits complex tasks into parallel-executing agents for improved efficiency. It includes rich built-in tools for browser automation, code execution, and document processing, along with MCP-based custom tool integrations. The platform supports enterprise-grade features such as SSO and access control, and allows both zero-config cloud usage and self-hosted local deployment for data privacy.
 
 ## Use Cases
 
-Eigent fits scenarios that need automation of multi-step workflows, such as research assistance, product research, automated report generation, data cleaning, and scripted office workflows. Its local deployment capability also suits enterprises with privacy and compliance needs.
+Eigent is well-suited for automating multi-step workflows such as research assistance, product research, automated report generation, data cleaning, and scripted office tasks. Its local deployment capability makes it particularly valuable for enterprises and teams with strict data privacy and compliance requirements.
 
-## Technical Features
+## Technical Details
 
-Eigent uses modern web and backend technologies (React, Electron, FastAPI) to implement desktop client and server components, supports MCP tool integrations and custom model hookups. The project is open source and actively maintained by the community, released under an Apache-2.0 based open-source license variant to facilitate extension and customization.
+Built with modern web and backend technologies including React, Electron, and FastAPI, Eigent implements both desktop client and server components. It supports MCP tool integrations and custom model connections, and is released under an Apache-2.0 based open-source license to encourage community extension and customization.

@@ -18,30 +18,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-HolmesGPT is a CNCF-hosted, cloud-native AI agent platform that automates alert investigation, analyzes multi-source observability data, identifies root causes, and provides remediation suggestions. It integrates with Prometheus, Kubernetes, Slack, Jira, and other mainstream tools, supporting diverse data sources and automated operations scenarios. HolmesGPT helps SRE and operations teams improve incident response efficiency and reduce MTTR.
+HolmesGPT is a CNCF Sandbox project that serves as an AI-powered site reliability engineering (SRE) assistant. It automates alert investigation, analyzes multi-source observability data, identifies root causes, and provides actionable remediation suggestions for cloud-native infrastructure. By integrating with Prometheus, Kubernetes, AWS, Datadog, and other mainstream tools, HolmesGPT helps SRE and operations teams significantly improve incident response efficiency and reduce mean time to resolution (MTTR).
 
-## Main Features
+## Key Features
 
-- Multi-source integration: Supports Prometheus, Kubernetes, AWS, Datadog, Loki, Helm, and other major cloud-native and monitoring platforms
-- Agentic loop: Automated analysis, reasoning, and suggestions based on the agentic loop
-- Automated investigation and remediation: Collects context, analyzes root causes, and generates remediation plans automatically
-- Rich tool integration and extensibility: Custom data sources and runbooks, supports both CLI and SaaS deployment
-- Data privacy and security: Read-only permissions, bring your own LLM API key, and strong data protection
+HolmesGPT provides multi-source integration with major cloud-native and monitoring platforms, an agentic loop architecture for automated analysis and reasoning, and automated investigation that collects context and generates remediation plans. It supports custom data sources and runbooks with both CLI and SaaS deployment options, while maintaining data privacy through read-only permissions and bring-your-own LLM API key configurations.
 
 ## Use Cases
 
-- Automated incident investigation and root cause analysis for cloud-native infrastructure and applications
-- SRE team alert response and collaboration
-- Unified monitoring and event handling in multi-cloud and hybrid cloud environments
-- Automated runbook execution and knowledge base integration
-- Smart assistant for DevOps and ChatOps scenarios
+HolmesGPT is ideal for automated incident investigation and root cause analysis in cloud-native environments, SRE team alert response and collaboration, unified monitoring across multi-cloud and hybrid cloud deployments, automated runbook execution, and as a smart assistant in DevOps and ChatOps scenarios.
 
-## Technical Features
+## Technical Details
 
-- Python-based implementation with pluggable toolsets
-- Agentic loop architecture combining LLMs and multi-source observability data
-- Supports CLI and web interface for flexible deployment
-- CNCF Sandbox project with active community and comprehensive documentation
-- Licensed under Apache-2.0
+Implemented in Python with a pluggable toolset architecture, HolmesGPT uses an agentic loop that combines LLMs with multi-source observability data for intelligent reasoning. It supports both CLI and web interfaces for flexible deployment, is a CNCF Sandbox project with active community support and comprehensive documentation, and is licensed under Apache-2.0.

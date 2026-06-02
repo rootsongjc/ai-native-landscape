@@ -18,24 +18,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-AutoSubs is a creator-focused desktop application that produces subtitles with one click. It can run standalone or integrate with DaVinci Resolve, offering multilingual transcription, speaker diarization, English translation, and a visual subtitle editor with per-speaker styling and multi-track export. The project emphasizes privacy and offline capability while providing powerful editing and timing tools.
+AutoSubs is an AI-powered desktop application for on-device subtitle generation that connects directly to DaVinci Resolve, Premiere, and After Effects. It offers multilingual transcription, speaker diarization, English translation, and a visual subtitle editor with per-speaker styling, all running locally without cloud dependency for maximum privacy.
 
-## Main Features
+## Key Features
 
-- Fast, accurate multilingual transcription and speaker diarization.
-- English translation and flexible multi-line subtitle display.
-- Modern subtitle editor with per-speaker styling and multiple export formats.
-- One-click installers for Windows, macOS (Intel / Apple Silicon), and Linux.
+AutoSubs provides fast and accurate multilingual transcription with speaker diarization, English translation with flexible multi-line subtitle display, a modern subtitle editor with per-speaker styling and multiple export formats, and one-click installers for Windows, macOS (Intel and Apple Silicon), and Linux.
 
 ## Use Cases
 
-- Video creators who need quick subtitle generation and editing for publishing.
-- Generating and sending styled subtitles directly into DaVinci Resolve.
-- Transcribing meetings, podcasts, or lectures and exporting timed text.
-- Offline subtitle generation for privacy-sensitive workflows.
+Video creators can generate and edit subtitles quickly for publishing, send styled subtitles directly into DaVinci Resolve, transcribe meetings, podcasts, or lectures into timed text, or use offline subtitle generation for privacy-sensitive workflows without any cloud dependency.
 
-## Technical Features
+## Technical Details
 
-AutoSubs uses a Rust backend to improve performance and lower memory usage and a Tauri/TypeScript frontend for a cross-platform desktop experience. It integrates various speech recognition and diarization models, offering flexible model selection and accurate subtitle timing adjustments.
+AutoSubs uses a Rust backend for high performance and low memory usage, paired with a Tauri/TypeScript frontend for a cross-platform desktop experience. It integrates various speech recognition and diarization models with flexible model selection and accurate subtitle timing adjustments, all running on-device.

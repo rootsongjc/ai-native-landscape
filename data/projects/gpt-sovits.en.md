@@ -20,25 +20,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-GPT-SoVITS is an open-source WebUI project focused on few-shot voice conversion and text-to-speech (TTS). It supports zero-shot (5s) and few-shot (1min) modes, and includes tools for dataset slicing, Chinese ASR, text labeling, and more to help users prepare data, fine-tune models, and deploy locally or in containers. See the linked documentation and demos for examples and guides.
+GPT-SoVITS is an open-source few-shot voice cloning and text-to-speech (TTS) project that can train a high-quality TTS model with as little as one minute of voice data. It supports zero-shot inference with just 5 seconds of reference audio and few-shot fine-tuning with one minute of data, making voice cloning accessible to a wide range of users. The project includes a comprehensive WebUI with integrated tools for dataset preparation, model training, and deployment.
 
-## Main Features
+## Key Features
 
-- Zero-shot / few-shot operation: perform instant conversion from short reference audio or fine-tune with small datasets for higher timbre similarity.  
-- Cross-lingual inference: supports English, Japanese, Korean, Cantonese and Chinese.  
-- WebUI toolset: integrated utilities such as vocal separation, automatic dataset segmentation, ASR and labeling to streamline data preparation.  
-- Flexible deployment: local runs, Docker images and Hugging Face demos are supported for quick validation and production use.
+GPT-SoVITS offers zero-shot and few-shot voice cloning capabilities with cross-lingual inference support for English, Japanese, Korean, Cantonese, and Chinese. Its WebUI integrates vocal separation, automatic dataset segmentation, ASR, and text labeling utilities to streamline the data preparation pipeline, while supporting flexible deployment through local execution, Docker containers, and Hugging Face demos.
 
 ## Use Cases
 
-- Voice cloning prototyping and demos: generate target-voice samples quickly for presentation or testing.  
-- Research and model development: evaluate fine-tuning strategies, front-end text processing, and model variants.  
-- Media tooling integration: incorporate conversion and TTS into content production pipelines.
+GPT-SoVITS is ideal for rapid voice cloning prototyping and demos where target-voice samples need to be generated quickly for presentations or testing. It also serves researchers evaluating fine-tuning strategies and model variants, as well as content producers looking to integrate high-quality voice synthesis into media production pipelines.
 
-## Technical Features
+## Technical Details
 
-- PyTorch-based implementation with Conda and Docker installation scripts supporting multiple CUDA and CPU environments.  
-- Distributed pretrained models and public demos (Hugging Face) provided for rapid verification.  
-- MIT-licensed, actively maintained repository with extensive README and Wiki documentation for installation, training and deployment.
+Built on PyTorch with Conda and Docker installation scripts supporting multiple CUDA and CPU environments, GPT-SoVITS distributes pretrained models and public demos via Hugging Face for rapid verification. The project is MIT-licensed with an actively maintained repository featuring extensive documentation covering installation, training, and deployment workflows.

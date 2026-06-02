@@ -21,25 +21,21 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-AionUi is an open-source frontend UI library focused on LLM and agent interactions. It provides reusable chat panels, structured renderers, and a CLI scaffold to help teams quickly ship interactive web interfaces for conversational assistants, tool-calling experiences, and multi-step workflows in self-hosted or controlled environments.
+AionUI is a free, local, open-source 24/7 cowork application for managing and coordinating CLI agents including OpenClaw, Hermes Agent, Claude Code, Codex, OpenCode, Gemini CLI, and 20+ more. It provides a unified interface for running multiple AI agents simultaneously in a privacy-first, on-device environment without requiring complex setup or configuration.
 
-## Main Features
+## Key Features
 
-- Customizable chat panels and component set supporting messages, cards, and interactive forms.
-- Multiple renderer adapters (React / Vue etc.) for reusing declarative UI across frontends.
-- Built-in CLI and local deployment scaffolding with example projects to speed adoption.
-- Privacy- and audit-minded defaults suitable for self-hosted enterprise deployments.
+- Unified cowork interface supporting 20+ CLI agents including Claude Code, Codex, OpenCode, and Gemini CLI
+- Free, local, and privacy-first design running entirely on-device with no cloud dependencies
+- Multi-agent coordination for running and managing several AI assistants concurrently
+- Zero-configuration setup allowing developers to get started immediately
 
 ## Use Cases
 
-- Build interactive frontends for LLM-driven customer support, assistants, or internal tools.
-- Render structured UI payloads produced by agents into safe, local components.
-- Deploy chat consoles and demo environments inside private networks or intranets.
+Developers who work with multiple AI coding agents and need a single dashboard to coordinate them. Teams running local, privacy-sensitive development workflows that require 24/7 agent availability. Anyone looking for a free alternative to cloud-based AI coding assistants with full local control.
 
-## Technical Features
+## Technical Details
 
-- Lightweight, extensible component system based on modern frontend tooling.
-- Compatibility with multiple model providers and backend adapters for inference.
-- Open-source examples and license to encourage community-driven renderers and integrations.
+Runs entirely locally as a desktop application with no external cloud dependencies. Supports simultaneous management of 20+ CLI-based AI agents through a unified interface. Open-source architecture enables community contributions and custom agent integrations. Built with modern frontend tooling for a lightweight and extensible component system.

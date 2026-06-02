@@ -18,28 +18,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Firecrawl is a Web Data API designed for AI workflows. It crawls a target website, discovers accessible subpages, and extracts cleaned markdown and structured outputs suitable for retrieval-augmented generation (RAG) and indexing for Large Language Models (LLM). The service performs content segmentation, deduplication, metadata extraction, and language detection to produce reliable inputs for agents and search pipelines.
+Firecrawl is a web data API purpose-built for AI workflows, capable of searching, scraping, and interacting with websites at scale. It crawls target sites, discovers accessible subpages, and transforms web content into clean markdown or structured data optimized for retrieval-augmented generation (RAG) and large language model consumption.
 
-## Main Features
+## Key Features
 
-- Site discovery and recursive crawling without requiring a sitemap.
-- Content cleaning and segmentation to produce markdown, paragraph-level chunks, and metadata for indexing.
-- Language and encoding detection with basic normalization.
-- Configurable rate limits and robots.txt adherence for safe crawling.
+Firecrawl performs site discovery and recursive crawling without requiring a sitemap, producing cleaned markdown, paragraph-level chunks, and metadata for indexing. It includes language and encoding detection with normalization, and enforces configurable rate limits and robots.txt compliance for responsible crawling. The API supports both scraping and structured data extraction tailored for LLM-ready outputs.
 
 ## Use Cases
 
-- Feeding vector databases for RAG systems and semantic search.
-- Building knowledge bases and Q&A systems from public websites.
-- Automated content archiving and migration extraction.
+Firecrawl is used to feed vector databases for RAG systems and semantic search, build knowledge bases and Q&A systems from public websites, and automate content archiving and migration extraction. It is particularly valuable for teams that need to convert web content into structured, AI-consumable data at scale.
 
-## Technical Features
+## Technical Details
 
-- HTTP API with Docker deployment examples for local and cloud use.
-- Parallel crawling and streaming output to support incremental ingestion.
-- Extensible parser plugins for custom extraction and enrichment.
-- Integrates easily with downstream vector stores, indexers, and agent pipelines.
-
-The project is open-source (OSS) and actively developed; see the project site and repository for documentation and examples.
+Firecrawl provides an HTTP API with Docker deployment support for both local and cloud environments. It features parallel crawling and streaming output for incremental ingestion, extensible parser plugins for custom extraction and enrichment, and straightforward integration with downstream vector stores, indexers, and agent pipelines.

@@ -19,27 +19,18 @@ featured: false
 status: tracked
 ---
 
-## Introduction
+## Overview
 
-LangExtract is a Python library from Google that leverages large language models (LLMs) to extract structured data from unstructured text. It supports precise source grounding and an interactive HTML visualization for reviewing extraction results, making it well suited for long-form documents in domains such as healthcare, legal, and document understanding.
+LangExtract is a Python library from Google that leverages large language models to extract structured information from unstructured text with precise source grounding. It produces verifiable extractions with an interactive HTML visualization, making it well suited for long-form documents in domains such as healthcare, legal, and research.
 
 ## Key Features
 
-- Precise source grounding: each extraction links back to the exact location in the source text for easy verification and visualization.
-- Example-driven extraction tasks: define complex extraction schemas with a few high-quality examples.
-- Multi-backend support: works with cloud models like Gemini and OpenAI and supports local inference via Ollama.
-- Optimized for long documents: chunking, parallel processing, and multiple extraction passes improve recall.
+Every extraction links back to its exact source location, enabling easy verification and visual review of results. The library uses example-driven extraction schemas that can be defined with just a few high-quality examples. It supports cloud models like Gemini and OpenAI alongside local inference via Ollama, and optimizes long-document processing through chunking, parallel execution, and multi-pass strategies.
 
 ## Use Cases
 
-- Structuring clinical text such as medical notes and medication extraction.
-- Extracting clauses and entities from legal documents and contracts.
-- Bulk extraction of entities and relations from large archives or books.
-- Preprocessing for RAG pipelines and data-labeling verification.
+Practitioners use LangExtract to structure clinical text such as medical notes and medication records. It extracts clauses, entities, and relations from legal documents and contracts with full traceability. Teams also rely on it for bulk entity extraction from large archives and for preprocessing data in RAG pipelines.
 
-## Technical Characteristics
+## Technical Details
 
-- Prompt- and example-based extraction with multi-pass strategies to improve robustness.
-- Produces strongly-typed outputs consumable by downstream systems (JSONL, etc.).
-- Provides interactive HTML visualization tools for result inspection.
-- Plugin-based model provider system for easy integration with different inference backends.
+LangExtract employs prompt- and example-based extraction with multi-pass strategies to maximize recall and robustness. It outputs strongly-typed results in formats like JSONL for seamless downstream consumption. A plugin-based model provider system makes it easy to switch between inference backends without changing extraction logic.

@@ -19,26 +19,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-BlenderMCP connects Blender to Claude AI using the Model Context Protocol (MCP) to enable AI-driven 3D modeling, scene creation, and interactive operations. It allows creators to drive workflows via natural language or structured commands and accelerates prototype creation and repetitive tasks.
+BlenderMCP is an MCP server for Blender that allows AI agents to control Blender for 3D modeling and rendering tasks. It connects Blender to Claude AI using the Model Context Protocol, enabling AI-driven 3D modeling, scene creation, and interactive operations through natural language or structured commands. The tool accelerates prototype creation and automates repetitive 3D workflows.
 
-## Main Features
+## Key Features
 
-- Two-way real-time communication for reading scene state and issuing commands.
-- Supports creation, modification, and deletion of 3D objects, including material and metadata synchronization.
-- Executes Blender Python scripts for complex operations and automation.
-- Integrates third-party asset libraries (e.g., Poly Haven) for rapid scene construction.
+BlenderMCP provides two-way real-time communication that lets AI agents read scene state and issue commands to Blender. It supports creation, modification, and deletion of 3D objects with material and metadata synchronization, and can execute Blender Python scripts for complex operations and automation. Integration with third-party asset libraries such as Poly Haven enables rapid scene construction.
 
 ## Use Cases
 
-- AI-assisted 3D modeling and interactive scene building.
-- Intelligent art workflow automation and batch scene generation.
-- Rapid scene generation and editing for rendering and demonstrations.
-- Educational examples and automated course demonstrations.
+BlenderMCP is well-suited for AI-assisted 3D modeling and interactive scene building, as well as intelligent art workflow automation and batch scene generation. It can also be used for rapid scene generation and editing for rendering and demonstrations, and serves as a tool for educational examples and automated course demonstrations.
 
-## Technical Highlights
+## Technical Details
 
-- Uses MCP over TCP/JSON for command exchange and cross-platform support.
-- Fully open-source and extensible for custom toolchain integration.
-- Suitable as an entry point for AI-driven creative toolchains and Blender plugin ecosystems.
+The tool uses MCP over TCP/JSON for command exchange with cross-platform support. It is fully open-source and extensible for custom toolchain integration, making it suitable as an entry point for AI-driven creative toolchains and the broader Blender plugin ecosystem.

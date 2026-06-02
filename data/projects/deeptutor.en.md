@@ -21,21 +21,25 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-DeepTutor, developed by the HKU Data Intelligence Lab, is a multi-agent personalized learning system designed to provide end-to-end support from knowledge retrieval and understanding to practice and assessment. The platform combines Retrieval-Augmented Generation (RAG), knowledge graph capabilities, and multi-agent collaborative reasoning to deliver document-level Q&A, automated exercise generation, interactive visual explanations, and simulated exam scenarios with traceable citations and session memory.
+DeepTutor is an agent-native, open-source personalized tutoring platform developed by HKUDS. It combines Retrieval-Augmented Generation (RAG), knowledge graphs, and multi-agent collaborative reasoning to deliver end-to-end learning support from knowledge retrieval to practice and assessment.
 
-## Main Features
+## Key Features
 
-- Large-scale document Q&A: build knowledge bases and deliver cited answers via vector retrieval and RAG.
-- Multi-agent problem solving: dual-loop architecture for analysis and solving with real-time streaming reasoning.
-- Intelligent exercise generation: produce and validate practice questions by difficulty and exam style, supporting batch and mimic modes.
-- Interactive learning visualization: transform complex concepts into interactive step-by-step demonstrations and visual aids.
+- Large-scale document Q&A with cited answers powered by vector retrieval and RAG pipelines.
+- Multi-agent problem solving with a dual-loop architecture supporting real-time streaming reasoning.
+- Intelligent exercise generation that produces and validates practice questions by difficulty and exam style.
+- Interactive learning visualization that transforms complex concepts into step-by-step demonstrations.
 
 ## Use Cases
 
-Ideal for university teaching, online course platforms, literature reviews, and self-learners: instructors can rapidly build question banks and mock exams; students benefit from interactive explanations and personalized practice; researchers can run deep retrieval and report generation for systematic reviews and idea synthesis.
+- University teaching and online course platforms where instructors build question banks and mock exams.
+- Self-learners who benefit from interactive explanations and personalized practice sessions.
+- Researchers conducting literature reviews and systematic reviews with deep retrieval and report generation.
 
-## Technical Features
+## Technical Details
 
-The system uses Python/FastAPI for backend and Next.js for frontend, supports Docker deployment and local development. The retrieval layer uses embeddings and knowledge graph structures; the research pipeline features a parallelized dynamic task queue and centralized citation management, and the platform supports plugin-style tool integrations (web search, code execution, PDF parsing, etc.).
+- Built with Python/FastAPI backend and Next.js frontend, supporting Docker deployment and local development.
+- Retrieval layer combines embeddings with knowledge graph structures for semantic search.
+- Parallelized dynamic task queue with centralized citation management and plugin-style tool integrations.

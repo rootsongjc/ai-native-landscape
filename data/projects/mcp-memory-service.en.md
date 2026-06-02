@@ -21,28 +21,25 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-MCP Memory Service provides persistent, semantic project memory and fast retrieval for developer workflows. It captures code, docs, commit history and other contextual artifacts, converts them into embeddings, and exposes retrieval APIs to inject relevant context into new sessions for AI tools such as Claude, Claude Code, VS Code, Cursor and more. The project supports local SQLite-vec, a hybrid local+Cloudflare backend (recommended for low-latency reads and cloud sync), and a web dashboard for management.
+MCP Memory Service is a persistent semantic memory server for AI agents that captures code, documentation, commit history, and other contextual artifacts, then exposes them as retrievable embeddings through the Model Context Protocol. It enables tools like Claude, VS Code, and Cursor to inject relevant project context into new sessions automatically, eliminating the need to repeatedly explain project architecture and design decisions.
 
-## Main Features
+## Key Features
 
-- Persistent semantic memory with document chunking, metadata, and smart tagging.
-- Multiple storage backends: hybrid (local SQLite + Cloudflare sync), SQLite-vec, Cloudflare-backed storage.
-- Millisecond-scale local reads (~5ms) for instant context injection.
-- Team features via OAuth 2.1 and HTTP API for multi-user collaboration and access control.
-- Built-in web dashboard (default port 8000) and comprehensive HTTP API for administration.
+- Persistent semantic memory with document chunking, metadata extraction, and smart tagging for high-relevance retrieval across sessions.
+- Multiple storage backends including a recommended hybrid mode (local SQLite for ~5ms reads plus Cloudflare for cloud sync), pure SQLite-vec, and Cloudflare-backed storage.
+- Team collaboration features via OAuth 2.1 authentication and a comprehensive HTTP API for multi-user access control and memory sharing.
+- Built-in web dashboard on port 8000 for browsing, managing, and debugging stored memories.
 
 ## Use Cases
 
-- Developers and teams avoid re-explaining project architecture and design to LLMs on every session.
-- Code review, incident investigation, and architectural discussions benefit from injected commit history and design decisions.
-- Cross-device, cross-user memory sharing with OAuth-enabled syncing for team collaboration.
-- Using documents, logs, and meeting notes as memory sources improves RAG workflows and answer accuracy.
+- Developers avoiding the overhead of re-explaining project context to LLMs on every new coding session or conversation.
+- Teams sharing architectural knowledge, design decisions, and commit history across members and devices for consistent AI-assisted development.
+- RAG workflows that leverage documents, logs, and meeting notes as memory sources to improve answer accuracy and contextual relevance.
 
-## Technical Features
+## Technical Details
 
-- MCP (Model Context Protocol) compatible server and transports for broad client support.
-- Vector embeddings and semantic search with memory consolidation and compression strategies to control storage costs.
-- Automated install scripts, Docker support, and extensible plugin/handler architecture.
-- Privacy-first, local-first design with optional cloud sync for persistence and collaboration.
+- Fully compatible with the Model Context Protocol (MCP), supporting standard transports for broad integration with AI coding assistants and agent frameworks.
+- Vector embedding and semantic search engine with memory consolidation and compression strategies to control storage costs over time.
+- Privacy-first, local-first architecture with optional cloud sync, automated install scripts, Docker support, and an extensible plugin system.

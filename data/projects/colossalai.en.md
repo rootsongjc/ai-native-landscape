@@ -20,23 +20,16 @@ status: tracked
 
 ## Overview
 
-Colossal-AI is an open-source system for large-scale distributed training and high-performance inference. It provides data/tensor/pipeline/sequence parallelism, heterogeneous memory management, and Colossal-Inference for accelerated serving, helping reduce resource cost and improve reproducibility for large model training and deployment.
+Colossal-AI is an open-source distributed training and inference framework that makes large AI models cheaper, faster, and more accessible. It provides advanced parallelism strategies and heterogeneous memory management to reduce resource costs for large-scale model training and deployment.
 
 ## Key Features
 
-- Multi-parallelism strategies: data, tensor (1D/2D/2.5D/3D), pipeline, and sequence parallelism.
-- Heterogeneous memory management: memory allocation and scheduling to lower GPU memory footprint and enable larger models.
-- High-performance inference: Colossal-Inference accelerates model serving and reduces memory usage.
-- Extensive examples and documentation: many tutorials and production-ready docs for fast onboarding.
+Colossal-AI supports multiple parallelism strategies including data, tensor (1D/2D/2.5D/3D), pipeline, and sequence parallelism for flexible scaling. It offers heterogeneous memory management to lower GPU memory footprint and Colossal-Inference for accelerated model serving with reduced latency and memory usage.
 
 ## Use Cases
 
-- Distributed training and fine-tuning of large models (LLMs, Transformers, MoE).
-- High-throughput inference and production deployment.
-- Research and education on parallel strategies and performance optimization.
+Colossal-AI is used for distributed training and fine-tuning of large models such as LLMs, Transformers, and MoE architectures. It also supports high-throughput production inference deployments and serves as a research platform for parallelism strategies and performance optimization.
 
-## Technical Characteristics
+## Technical Details
 
-- PyTorch-based with examples from single-node to multi-node setups.
-- Provides optimizers, schedulers, and auto-parallelization tools to lower the barrier for distributed programming.
-- Active community and rich ecosystem (examples, Docker/Cloud integrations, third-party model support).
+Built on PyTorch, Colossal-AI provides optimizers, schedulers, and auto-parallelization tools that lower the barrier for distributed programming. It includes extensive examples from single-node to multi-node setups, Docker and cloud integrations, and an active community with production-ready documentation.

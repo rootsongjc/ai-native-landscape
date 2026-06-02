@@ -20,25 +20,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Bubble Lab is an open-source, AI-native workflow automation platform built for developers who need full control, transparency, and type safety. Unlike visual builders that lock workflows into proprietary formats, Bubble Lab compiles flows into clean, production-ready TypeScript that you can own, debug, and deploy anywhere. The project includes Bubble Studio (visual editor), runtime packages, and CLI tools to scaffold and run workflows locally or in production.
+Bubble Lab is an open-core workflow engine powering the Bubble Lab platform that is fully runnable, hostable, and extensible on its own. Built for developers who need full control, transparency, and type safety, it compiles visual flows into clean, production-ready TypeScript that can be owned, debugged, and deployed anywhere. The project includes Bubble Studio (visual editor), runtime packages, and CLI tools.
 
-## Main Features
+## Key Features
 
-- Visual builder (Bubble Studio) with side-by-side execution logs and metrics.  
-- Type-safe export: compile visual flows into production-ready TypeScript code.  
-- Built-in AI assistant to generate and refine workflow snippets.  
-- Multiple deployment options: hosted studio, local dev mode, CLI scaffold, and self-hosting guides.
+Bubble Lab provides a visual builder (Bubble Studio) with side-by-side execution logs and metrics, and type-safe export that compiles visual flows into production-ready TypeScript code. It includes a built-in AI assistant to generate and refine workflow snippets, and supports multiple deployment options including hosted studio, local dev mode, CLI scaffold, and self-hosting guides.
 
 ## Use Cases
 
-- Rapidly scaffold scraping, processing, and summary pipelines and export them to backend services.  
-- Standardize team automation via observable, testable workflows.  
-- Prototype and demo AI-driven automation with minimal setup.
+Bubble Lab is ideal for rapidly scaffolding scraping, processing, and summary pipelines and exporting them to backend services. It helps teams standardize automation via observable, testable workflows, and enables quick prototyping and demoing of AI-driven automation with minimal setup.
 
-## Technical Features
+## Technical Details
 
-- Modular TypeScript monorepo architecture with core engine (`@bubblelab/bubble-core`), runtime (`@bubblelab/bubble-runtime`), and shared schemas.  
-- Quickstart scaffold `create-bubblelab-app` and bun/node support for fast local development.  
-- Apache-2.0 licensed with comprehensive documentation and example templates for integration and self-hosting.
+The platform uses a modular TypeScript monorepo architecture with a core engine, runtime, and shared schemas. It offers a quickstart scaffold via `create-bubblelab-app` with bun/node support for fast local development, and is Apache-2.0 licensed with comprehensive documentation and example templates for integration and self-hosting.

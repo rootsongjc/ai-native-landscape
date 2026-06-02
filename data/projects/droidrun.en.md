@@ -19,16 +19,16 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-DroidRun is an open-source mobile automation framework that enables driving device interactions via natural language, supporting LLM-agnostic mobile agent applications. The project offers CLI and service integration modes, combining model inference, semantic retrieval, and device control to translate natural language into touch events and workflows. DroidRun is suitable for prototyping, automated testing, and building enhanced mobile assistants.
+DroidRun is an open-source mobile automation framework that enables driving device interactions via natural language commands. It is an LLM-agnostic mobile agent that combines model inference, semantic retrieval, and device control to translate natural language into touch events and workflows.
 
-## Main Features
+## Key Features
 
 - Generate and execute device action sequences from natural language task descriptions.
-- LLM-agnostic design with support for pluggable models and retrieval components.
-- CLI and integration APIs for scripting and pipeline automation.
-- Combine retrieval results with session context to improve accuracy and robustness.
+- LLM-agnostic design with pluggable model and retrieval component support.
+- CLI and integration APIs for scripting, pipeline automation, and CI/CD integration.
+- Combines retrieval results with session context to improve accuracy and robustness.
 
 ## Use Cases
 
@@ -36,9 +36,8 @@ DroidRun is an open-source mobile automation framework that enables driving devi
 - Building mobile assistants that complete complex multi-step tasks via natural language.
 - Rapidly validating mobile interaction logic and UX during product prototyping.
 
-## Technical Features
+## Technical Details
 
-- Combines natural language understanding, vector retrieval, and device controllers for end-to-end automation.
+- End-to-end pipeline combining natural language understanding, vector retrieval, and device controllers.
 - Pluggable adapters for models and retrieval systems to ease replacement and extension.
-- Engineering-friendly and scriptable for CI/CD or remote device pool execution.
-- Open-source implementation for auditing, customization, and community collaboration.
+- Scriptable and engineering-friendly design for remote device pool and CI/CD execution.

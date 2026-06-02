@@ -18,24 +18,21 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Presenton is an open-source AI presentation generator and API that lets users create professional PPTX and PDF presentations from prompts or uploaded documents. It supports local runs (including Ollama), multi-provider model integrations (OpenAI, Google, Anthropic), and offers templates, themes and export features—enabling teams to automate slide production while keeping data private.
+Presenton is an open-source AI presentation generator and API that creates professional PPTX and PDF slides from text prompts or uploaded documents. It supports local execution via Ollama alongside multi-provider integrations including OpenAI, Google, and Anthropic, making it a flexible alternative to proprietary tools like Gamma and Beautiful AI.
 
-## Main Features
+## Key Features
 
-- Templates & themes: custom HTML and Tailwind CSS templates to match brand requirements.
-- Multi-model support: integrate OpenAI, Google Gemini, Anthropic, Ollama, or self-hosted models.
-- Export-ready: generate PPTX and PDF with professional formatting.
-- Local and cloud deployment: Docker-ready with optional GPU acceleration for local models.
+- Custom HTML and Tailwind CSS templates with configurable themes for brand-consistent slides.
+- Multi-provider model support covering OpenAI, Google Gemini, Anthropic, Ollama, and self-hosted endpoints.
+- Direct export to PPTX and PDF with professional formatting ready for distribution.
+- Docker-based deployment with optional GPU acceleration for running local models at scale.
 
 ## Use Cases
 
-Ideal for automating the creation of course materials, training slides, product demos, and data reports. Teams concerned with privacy can run Presenton locally to avoid sending sensitive content to third-party cloud services.
+Teams can automate production of course materials, training decks, product demos, and data reports without manual slide design. Organizations with strict data privacy requirements benefit from fully local execution that keeps sensitive content away from third-party cloud services.
 
-## Technical Features
+## Technical Details
 
-- Open-source license: Apache-2.0 licensed for auditability and extension.
-- API-first: provides a REST API and examples for programmatic generation and management of presentations.
-- Extensible generation pipeline: supports generating templates from Markdown, PPTX or uploaded files and bulk generation workflows.
-- Production-ready deployment: Docker, GPU acceleration, and multi-provider model integrations for reliable production use.
+Presenton is Apache-2.0 licensed and exposes a REST API for programmatic presentation generation and management. Its extensible pipeline accepts Markdown, PPTX, or uploaded files as input sources and supports bulk generation workflows. Production deployments leverage Docker containers with GPU acceleration and multi-provider model routing for reliable, scalable slide automation.

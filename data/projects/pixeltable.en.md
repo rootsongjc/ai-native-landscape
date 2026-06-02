@@ -18,26 +18,20 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Pixeltable is an open-source declarative data infrastructure for multimodal AI applications. It exposes a unified table interface to manage images, video, audio, and documents, making ingestion, transformation, indexing and retrieval first-class capabilities. Pixeltable integrates with Large Language Models (LLM) and external Vector DBs to enable Retrieval-Augmented Generation (RAG) workflows while providing versioning and reproducibility for production workloads.
+Pixeltable is an open-source declarative backend for multimodal AI applications that unifies the storage, indexing, transformation, and inference of images, video, audio, and documents under a single table interface. It replaces hand-built ETL scripts with incremental, versioned computations so teams can focus on model logic rather than pipeline plumbing.
 
-## Main Features
+## Key Features
 
-- Unified multimodal table types: `pxt.Image`, `pxt.Video`, `pxt.Document` to manage diverse media.
-- Declarative computed columns: define processing and model inference once; execution is incremental and cached.
-- Built-in embedding indexes and semantic search: add embedding indexes directly on tables for similarity search and RAG.
-- Broad model and service integrations: adapters for OpenAI, Hugging Face, YOLOX, and more.
+- Native multimodal column types (`pxt.Image`, `pxt.Video`, `pxt.Document`) that treat media as first-class data alongside traditional structured fields.
+- Declarative computed columns that define transformation and inference pipelines once, with automatic incremental execution and caching to avoid redundant recomputation.
+- Built-in embedding indexes and semantic search on any column, enabling similarity retrieval and RAG workflows without external vector infrastructure.
 
 ## Use Cases
 
-- Multimodal retrieval and Q&A systems (RAG + LLM).
-- Automated image/video labeling and object detection pipelines.
-- Reproducible data pipelines that combine ETL, feature engineering, and model inference for production deployments.
+Teams building multimodal retrieval and Q&A systems can ingest, embed, and search images and documents in a single declarative table. Automated labeling and object-detection pipelines benefit from Pixeltable's incremental recomputation as new media arrive. Production ML workloads gain reproducibility and versioning for every data transformation and model inference step.
 
-## Technical Features
+## Technical Details
 
-- Incremental computation and view maintenance to reduce recomputation costs.
-- Extensible UDFs and custom iterators for user-defined processing.
-- Local caching and persistent metadata (Postgres) with media stored outside the DB.
-- Apache-2.0 licensed with an active contributor community and sample apps.
+Pixeltable stores media externally while managing metadata and computed results in PostgreSQL, using view-maintenance techniques to keep derived data fresh. Users can extend the system with custom UDFs and iterators, and pre-built adapters connect to OpenAI, Hugging Face, YOLOX, and other popular services. The project is Apache-2.0 licensed with an active contributor community.

@@ -20,24 +20,18 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-NOFX (Next-Generation AI Trading Operating System) is an open-source platform for quantitative trading that connects multiple exchanges (e.g., Binance, Hyperliquid, Aster), enables multi-model competition (deepseek, qwen, claude) and supports self-evolving strategy pipelines. The platform links agent development, backtesting, deployment and live monitoring into an observable, scalable operating system and provides real-time dashboards for operations and strategy analysis.
+NOFX is an open-source AI trading operating system designed for quantitative trading across US stocks, commodities, forex, and crypto markets. It connects multiple exchanges and pits diverse AI models against each other in competitive strategy evaluation, forming a self-evolving pipeline from research to live deployment.
 
-## Main Features
+## Key Features
 
-- Multi-exchange adapters: unified connectivity for orders and fund management across exchanges.
-- Multi-agent competition: parallel strategy evaluation, selection and ensemble decision-making.
-- Self-evolving pipelines: integrated model comparison, online evaluation and strategy update workflows.
-- Real-time monitoring: visual dashboards, alerts, and audit-ready traces for investigations.
+Multi-exchange adapters provide unified connectivity for order execution and fund management across platforms like Binance and Hyperliquid. Multi-agent competition enables parallel strategy evaluation, model selection, and ensemble decision-making across models such as DeepSeek, Qwen, and Claude. Self-evolving pipelines integrate model comparison, online evaluation, and automated strategy updates with real-time visual dashboards and alerting.
 
 ## Use Cases
 
-Suitable for quantitative research & development, strategy backtesting and live deployment, algorithmic competition platforms, and financial data-science workflows requiring multi-model orchestration or comparative evaluation. The system can run in private or controlled environments to meet compliance and security requirements.
+Quantitative research and strategy backtesting with seamless transition to live deployment. Multi-model orchestration for financial data science workflows requiring comparative evaluation across heterogeneous AI models. Private or controlled environment deployments meeting compliance and security requirements for institutional trading.
 
-## Technical Features
+## Technical Details
 
-- Microservices & containerization: modular, container-based deployment for scalability and high availability.
-- Multi-model integration layer: unified interfaces for heterogeneous model orchestration and evaluation.
-- Data pipelines & backtesting engine: built-in historical backtesting and real-time data stream processing.
-- Open-source license: AGPL-3.0, enabling community collaboration and auditability.
+Microservices architecture with containerized deployment for horizontal scalability and high availability. Unified integration layer for heterogeneous model orchestration and evaluation across trading strategies. Built-in historical backtesting engine and real-time data stream processing pipelines. Released under AGPL-3.0 license enabling community collaboration and full auditability.

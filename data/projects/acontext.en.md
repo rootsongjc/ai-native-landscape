@@ -20,27 +20,24 @@ featured: false
 status: tracked
 ---
 
-## Detailed Introduction
+## Overview
 
-Acontext is a context data platform for self-learning agents that centralizes session context, task observations, and artifacts. It captures agent task traces and user feedback, distills experiences into long-term memory, and provides a local dashboard and CLI for developers to build an observation-and-learning loop. See the official documentation at [Acontext Docs](https://docs.acontext.io/).
+Acontext is a context data platform for self-learning agents that turns agent skills into persistent memory. It centralizes session context, task observations, and artifacts, capturing agent task traces and user feedback to distill experiences into long-term memory for AI coding agents.
 
-## Main Features
+## Key Features
 
-- Structured context storage: hierarchical Session, Space, and Artifact models for easy retrieval and management.
-- Observability & metrics: task traces, success-rate dashboards, and diagnostic views for debugging agent behaviour.
-- Experience distillation: converts SOPs and task outcomes into reusable skills and memories.
-- Local and cloud deployment: `acontext` CLI, Docker presets and templates to speed up proofs-of-concept.
+- Structured context storage with hierarchical Session, Space, and Artifact models for easy retrieval and management.
+- Observability and metrics including task traces, success-rate dashboards, and diagnostic views for debugging agent behavior.
+- Experience distillation that converts SOPs and task outcomes into reusable skills and long-term memories.
 
 ## Use Cases
 
-- Agent products: provide centralized context and memory storage to improve multi-agent coordination and success rates.
-- R&D and testing: reproduce task flows locally, analyse failures, and iterate strategies quickly.
-- Enterprise deployment: run in controlled networks to meet compliance and data governance requirements.
-- Education & prototyping: serve as a foundation for building agent demos and teaching examples.
+- Agent products needing centralized context and memory storage to improve multi-agent coordination and success rates.
+- R&D and testing workflows that require reproducing task flows locally, analyzing failures, and iterating strategies quickly.
+- Enterprise deployments running in controlled networks to meet compliance and data governance requirements.
 
-## Technical Features
+## Technical Details
 
-- Multi-language SDKs and templates: support for Go, Python, TypeScript integration templates.
-- Extensible storage backends: disk and external object storage support for artifacts.
-- Developer-friendly: example repositories, scaffolding templates, and comprehensive docs for integration.
-- Open-source license: Apache-2.0 licensed for community adoption and contribution.
+- Multi-language SDKs and templates supporting Go, Python, and TypeScript integration.
+- Extensible storage backends with support for disk and external object storage for artifacts.
+- CLI tools and Docker presets for quick local or cloud deployment and proof-of-concept setups.
