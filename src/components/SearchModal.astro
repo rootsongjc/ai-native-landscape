@@ -1,0 +1,337 @@
+---
+import { ui } from '../lib/landscape.mjs';
+const { searchIndex = [], lang = 'en' } = Astro.props;
+const copy = ui(lang);
+---
+
+<div class="search-modal" id="search-modal" hidden aria-hidden="true" aria-modal="true" role="dialog" aria-label={copy.search}>
+  <div class="search-modal__backdrop" data-search-modal-close></div>
+  <div class="search-modal__panel">
+    <div class="search-modal__input-wrap">
+      <svg class="search-modal__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <input
+        type="search"
+        class="search-modal__input"
+        placeholder={copy.searchModalPlaceholder}
+        id="search-modal-input"
+        autocomplete="off"
+      />
+      <kbd class="search-modal__kbd">ESC</kbd>
+    </div>
+    <div class="search-modal__results" id="search-modal-results"></div>
+    <div class="search-modal__empty" id="search-modal-empty" hidden>
+      <p>{copy.searchModalNoResults}</p>
+    </div>
+    <div class="search-modal__hint" id="search-modal-hint">
+      <span>{copy.searchModalHint}</span>
+    </div>
+  </div>
+</div>
+
+<script define:vars={{ searchIndex, lang }}>
+(() => {
+  const modal = document.getElementById('search-modal');
+  const input = document.getElementById('search-modal-input');
+  const resultsEl = document.getElementById('search-modal-results');
+  const emptyEl = document.getElementById('search-modal-empty');
+  const hintEl = document.getElementById('search-modal-hint');
+  if (!modal || !input) return;
+  let currentResults = [];
+
+  function open() {
+    if (!modal.hidden) return;
+    modal.hidden = false;
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    requestAnimationFrame(() => input.focus());
+  }
+
+  function close() {
+    modal.hidden = true;
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    input.value = '';
+    resultsEl.innerHTML = '';
+    currentResults = [];
+    emptyEl.hidden = true;
+    hintEl.hidden = false;
+  }
+
+  // Listen for open events
+  document.addEventListener('open-search-modal', open);
+
+  // Close triggers
+  modal.querySelector('[data-search-modal-close]')?.addEventListener('click', close);
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      close();
+      return;
+    }
+    if (e.key === 'Enter' && currentResults[0]) {
+      e.preventDefault();
+      window.location.href = projectHref(currentResults[0]);
+    }
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !modal.hidden) close();
+  });
+
+  // Search logic
+  function search(query) {
+    if (!query) {
+      currentResults = [];
+      resultsEl.innerHTML = '';
+      emptyEl.hidden = true;
+      hintEl.hidden = false;
+      return;
+    }
+    const q = query.toLowerCase();
+    const results = searchIndex.filter(p => {
+      const name = (p.name || '').toLowerCase();
+      const desc = (p.description || '').toLowerCase();
+      const tags = (p.tags || []).join(' ').toLowerCase();
+      const cat = (p.categoryKey || '').toLowerCase();
+      return name.includes(q) || desc.includes(q) || tags.includes(q) || cat.includes(q);
+    }).slice(0, 20);
+    currentResults = results;
+
+    if (results.length === 0) {
+      resultsEl.innerHTML = '';
+      emptyEl.hidden = false;
+      hintEl.hidden = true;
+      return;
+    }
+
+    emptyEl.hidden = true;
+    hintEl.hidden = true;
+
+    resultsEl.innerHTML = results.map(p => {
+      const href = projectHref(p);
+      const tags = (p.tags || []).slice(0, 3);
+      const meta = [p.categoryKey, p.subCategoryKey].filter(Boolean).join(' / ');
+      return `<a class="search-modal__result" href="${href}">
+        <span class="search-modal__result-main">
+          <span class="search-modal__result-name">${esc(p.name)}</span>
+          ${meta ? `<span class="search-modal__result-category">${esc(meta)}</span>` : ''}
+        </span>
+        <span class="search-modal__result-desc">${esc(p.description?.substring(0, 150) || '')}</span>
+        ${tags.length ? `<span class="search-modal__result-tags">${tags.map(tag => `<span>${esc(tag)}</span>`).join('')}</span>` : ''}
+      </a>`;
+    }).join('');
+  }
+
+  function projectHref(project) {
+    const prefix = lang === 'zh' ? '/zh/projects/' : '/projects/';
+    return prefix + project.slug + '/';
+  }
+
+  function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+  input.addEventListener('input', () => search(input.value.trim()));
+})();
+</script>
+
+<style>
+  .search-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 900;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 15vh;
+  }
+
+  .search-modal[hidden] {
+    display: none;
+  }
+
+  .search-modal__backdrop {
+    position: absolute;
+    inset: 0;
+    background: color-mix(in srgb, #020617 58%, transparent);
+    backdrop-filter: blur(6px);
+  }
+
+  .search-modal__panel {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: 0 22px 70px rgba(2, 6, 23, 0.28);
+    overflow: hidden;
+    animation: search-modal-in 0.15s ease-out;
+  }
+
+  @keyframes search-modal-in {
+    from { opacity: 0; transform: scale(0.97) translateY(-8px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+  }
+
+  .search-modal__input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 58px;
+    padding: 0 16px;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+  }
+
+  .search-modal__icon {
+    flex: 0 0 20px;
+    width: 20px;
+    height: 20px;
+    color: var(--muted);
+  }
+
+  .search-modal__input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    font: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .search-modal__input::placeholder {
+    color: var(--muted);
+  }
+
+  .search-modal__kbd {
+    flex: 0 0 auto;
+    padding: 2px 8px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--surface-soft);
+    color: var(--muted);
+    font-family: var(--mono, ui-monospace, monospace);
+    font-size: 0.7rem;
+    line-height: 1.4;
+  }
+
+  .search-modal__results {
+    max-height: min(400px, 52vh);
+    overflow-y: auto;
+    padding: 6px;
+  }
+
+  :global(.search-modal__result) {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color 0.15s, background 0.15s, transform 0.15s;
+  }
+
+  :global(.search-modal__result + .search-modal__result) {
+    margin-top: 4px;
+  }
+
+  :global(.search-modal__result:hover),
+  :global(.search-modal__result:focus) {
+    border-color: color-mix(in srgb, var(--accent) 24%, var(--border));
+    background: color-mix(in srgb, var(--accent-soft) 52%, var(--surface) 48%);
+    outline: none;
+    transform: translateY(-1px);
+  }
+
+  :global(.search-modal__result-main) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    min-width: 0;
+  }
+
+  :global(.search-modal__result-name) {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  :global(.search-modal__result-category) {
+    flex: 0 1 auto;
+    min-width: 88px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: right;
+    color: var(--muted);
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  :global(.search-modal__result-desc) {
+    font-size: 0.78rem;
+    color: var(--muted);
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  :global(.search-modal__result-tags) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  :global(.search-modal__result-tags span) {
+    display: inline-flex;
+    align-items: center;
+    min-height: 20px;
+    padding: 0 7px;
+    border-radius: 999px;
+    background: var(--surface-soft);
+    color: var(--muted);
+    font-size: 0.68rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .search-modal__empty {
+    padding: 32px 16px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.88rem;
+  }
+
+  .search-modal__hint {
+    padding: 8px 16px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.72rem;
+  }
+
+  @media (max-width: 720px) {
+    .search-modal {
+      padding-top: 8vh;
+    }
+    .search-modal__panel {
+      margin: 0 8px;
+      border-radius: 8px;
+    }
+    .search-modal__results {
+      max-height: 55vh;
+    }
+  }
+</style>

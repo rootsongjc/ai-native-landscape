@@ -312,6 +312,10 @@ const structuredData = {
       </div>
       <nav class="site-nav" id="site-primary-nav" aria-label="Primary">
         <div class="site-nav__links">
+          <button class="site-nav__link" type="button" data-nav-search aria-label={copy.search}>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <span>{copy.search}</span>
+          </button>
           <a class="site-nav__link" href={localizedPath('/methodology/', lang)}>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16"/><path d="M7 16V8M12 16V5M17 16v-6"/></svg>
             <span>{copy.navMethodology}</span>
@@ -601,6 +605,20 @@ const structuredData = {
         });
 
       })();
+
+      // Nav search button & Cmd+K — open search modal
+      function openSearch() {
+        document.dispatchEvent(new CustomEvent('open-search-modal'));
+      }
+      document.querySelectorAll('[data-nav-search]').forEach((btn) => {
+        btn.addEventListener('click', openSearch);
+      });
+      document.addEventListener('keydown', (e) => {
+        if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+          e.preventDefault();
+          openSearch();
+        }
+      });
     </script>
   </body>
 </html>
