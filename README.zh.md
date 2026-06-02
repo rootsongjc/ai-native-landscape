@@ -50,7 +50,7 @@ ai-landscape/
 每个项目由一对 Markdown 文件组成，包含 YAML frontmatter：
 
 | 字段 | 必填 | 说明 |
-|------|------|------|
+| --- | --- | --- |
 | `name` | ✅ | 项目名称 |
 | `slug` | ✅ | URL 标识符 |
 | `repo` | ✅ | GitHub 仓库地址 |
@@ -71,7 +71,7 @@ ai-landscape/
 评分（0–100）通过外部 API 实时获取并在客户端缓存：
 
 | 维度 | 衡量内容 |
-|------|----------|
+| --- | --- |
 | **health** | 综合健康度（加权合成） |
 | **activity** | 提交频率、发布节奏、Issue 响应速度 |
 | **community** | 贡献者数量、PR 合并速度、讨论活跃度 |
@@ -81,7 +81,7 @@ ai-landscape/
 ## 常用脚本
 
 | 命令 | 说明 |
-|------|------|
+| --- | --- |
 | `npm run validate` | 校验所有项目数据 |
 | `npm run build:index` | 构建搜索索引 |
 | `npm run export` | 导出项目为 JSON/CSV |
@@ -94,6 +94,42 @@ ai-landscape/
 - **构建命令**：`npm ci && npm run build`
 - **输出目录**：`dist`
 - **生产域名**：`landscape.jimmysong.io`
+
+## AI 智能搜索 Skill
+
+本项目提供 AI 智能搜索 skill，支持 **Claude Code、Cursor、GitHub Copilot、OpenAI Codex、Cline、Aider** 等主流 AI 编程工具。一行命令安装：
+
+```bash
+npx landscape-search
+```
+
+启动交互式安装器，选择你的 AI 编程工具即可。安装后用自然语言提问，例如：
+
+> "帮我找一个支持 MCP 协议的 Agent 框架"
+> "推荐一些轻量级 RAG 工具"
+
+详见 [`packages/landscape-search/`](./packages/landscape-search/)。
+
+### 非交互式安装
+
+```bash
+npx landscape-search --all                    # 安装全部工具
+npx landscape-search -t cursor -t copilot     # 指定工具
+```
+
+### 维护者专用（需克隆本仓库）
+
+以下 skill 仅在本仓库内可用：
+
+| Skill | 功能 |
+| ----- | ---- |
+| **`/landscape-add`** | 从 GitHub URL 或 Issue 添加新项目 |
+| **`/landscape-update`** | 同步单个项目的 GitHub 元数据 |
+| **`/landscape-sync`** | 批量同步所有项目的 GitHub 元数据 |
+| **`/landscape-batch`** | 批量导入项目（JSON、CSV、URL 列表） |
+| **`/landscape-archive`** | 归档或停用项目 |
+| **`/landscape-health`** | 对所有项目运行健康检查 |
+| **`/landscape-report`** | 生成统计与分析报告 |
 
 ## 贡献指南
 

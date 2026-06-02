@@ -50,7 +50,7 @@ ai-landscape/
 Each project is a pair of Markdown files with YAML frontmatter:
 
 | Field | Required | Description |
-|-------|----------|-------------|
+| ----- | -------- | ----------- |
 | `name` | ✅ | Project display name |
 | `slug` | ✅ | URL-safe identifier |
 | `repo` | ✅ | GitHub repository URL |
@@ -71,7 +71,7 @@ Each project is a pair of Markdown files with YAML frontmatter:
 Scores (0–100) are fetched at runtime from an external API and cached client-side:
 
 | Dimension | What it measures |
-|-----------|-----------------|
+| --------- | ---------------- |
 | **health** | Overall project health (weighted composite) |
 | **activity** | Commit frequency, release cadence, issue response |
 | **community** | Contributors, PR merge speed, discussion volume |
@@ -81,7 +81,7 @@ Scores (0–100) are fetched at runtime from an external API and cached client-s
 ## Scripts
 
 | Command | Description |
-|---------|-------------|
+| ------- | ----------- |
 | `npm run validate` | Validate all project data against JSON Schema |
 | `npm run build:index` | Build search index |
 | `npm run export` | Export projects as JSON/CSV |
@@ -94,6 +94,42 @@ Scores (0–100) are fetched at runtime from an external API and cached client-s
 - **Build command**: `npm ci && npm run build`
 - **Output directory**: `dist`
 - **Production domain**: `landscape.jimmysong.io`
+
+## AI-Powered Skills (Claude Code)
+
+This project ships an AI-powered search skill that works with **Claude Code, Cursor, GitHub Copilot, OpenAI Codex, Cline, and Aider**. One command installs it:
+
+```bash
+npx landscape-search
+```
+
+This launches an interactive installer that adds the search skill to your AI coding tool. After installing, ask your AI assistant in natural language — e.g.:
+
+> "Find open-source agent frameworks for building multi-agent systems"
+> "帮我找一个支持中文的 RAG 框架"
+
+See [`packages/landscape-search/`](./packages/landscape-search/) for details.
+
+### Non-interactive Install
+
+```bash
+npx landscape-search --all                    # All supported tools
+npx landscape-search -t cursor -t copilot     # Specific tools
+```
+
+### For Maintainers & Contributors (requires cloning this repo)
+
+These skills are only available inside this repository:
+
+| Skill | What it does |
+| ----- | ------------ |
+| **`/landscape-add`** | Add a new project from a GitHub URL or issue |
+| **`/landscape-update`** | Sync a single project's metadata from GitHub |
+| **`/landscape-sync`** | Batch sync all projects' metadata from GitHub |
+| **`/landscape-batch`** | Bulk import projects from JSON, CSV, or URL lists |
+| **`/landscape-archive`** | Archive or deprecate a project |
+| **`/landscape-health`** | Run health checks across all projects |
+| **`/landscape-report`** | Generate statistics and analytics reports |
 
 ## Contributing
 
