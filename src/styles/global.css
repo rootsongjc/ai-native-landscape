@@ -474,8 +474,12 @@ html[data-theme='dark'] .footer-brand__link:hover {
   padding: 6px 9px;
   border: 1px solid transparent;
   border-radius: 999px;
+  background: transparent;
   color: var(--muted);
+  font: inherit;
+  font-weight: 700;
   white-space: nowrap;
+  appearance: none;
   transition: border-color 0.15s, background 0.15s, color 0.15s;
 }
 

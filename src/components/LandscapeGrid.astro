@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import LandscapeCategory from './LandscapeCategory.astro';
 import LandscapeHeatmap from './LandscapeHeatmap.astro';
 import LandscapeToolbar from './LandscapeToolbar.astro';
+import SearchModal from './SearchModal.astro';
 import {
   getLandscape,
   localizedPath,
@@ -33,6 +34,7 @@ const searchIndex = landscape.projects.map((project) => ({
   statusKey: project.status,
   categoryKey: project.category,
   subCategoryKey: project.subCategory,
+  tags: project.tags || [],
   description: projectDescription(project, lang),
 }));
 const canonical = localizedPath('/', lang);
@@ -125,10 +127,11 @@ const canonical = localizedPath('/', lang);
     </section>
   </main>
 
+  <SearchModal searchIndex={searchIndex} lang={lang} />
+
   <script define:vars={{ searchIndex, lang }}>
     const grid = document.querySelector('[data-landscape-grid]');
     const heatmap = document.querySelector('[data-heatmap]');
-    const searchInput = document.querySelector('[data-landscape-search]');
     const categorySelect = document.querySelector('[data-landscape-category]');
     const statusSelect = document.querySelector('[data-landscape-status]');
     const sortSelect = document.querySelector('[data-landscape-sort]');
@@ -265,17 +268,15 @@ const canonical = localizedPath('/', lang);
     }
 
     function applyFilters() {
-      const query = (searchInput?.value || '').toLowerCase().trim();
       const category = categorySelect?.value || 'all';
       const status = statusSelect?.value || 'all';
       const sortMode = sortSelect?.value || 'default';
 
-      filterCategoryContainer(grid, category, status, query, sortMode);
+      filterCategoryContainer(grid, category, status, '', sortMode);
 
       updateAllTooltipOffsets();
     }
 
-    if (searchInput) searchInput.addEventListener('input', applyFilters);
     if (categorySelect) categorySelect.addEventListener('change', applyFilters);
     if (statusSelect) statusSelect.addEventListener('change', applyFilters);
     if (sortSelect) sortSelect.addEventListener('change', applyFilters);
