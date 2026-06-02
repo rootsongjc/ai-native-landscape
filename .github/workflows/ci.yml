@@ -83,15 +83,7 @@ jobs:
           for slug in $SLUGS; do
             echo "  → $slug"
             REPO=$(curl -sf "https://landscape.jimmysong.io/data/projects.json" 2>/dev/null | \
-              python3 -c "
-import sys, json
-data = json.load(sys.stdin)
-for p in data:
-    if p.get('slug') == '$slug':
-        repo = p.get('repo', '')
-        print(repo.replace('https://github.com/', ''))
-        break
-" 2>/dev/null)
+              python3 -c "import sys,json;[print(p.get('repo','').replace('https://github.com/',''))for p in json.load(sys.stdin)if p.get('slug')=='$slug']" 2>/dev/null)
             if [ -n "$REPO" ]; then
               echo "    Repo: $REPO"
               curl -sf "https://ai-oss-rank-worker.jimmysong.io/recalculate?repo=$REPO" -o /dev/null 2>&1 && \
