@@ -12423,6 +12423,47 @@
     "subCategoryNameEn": "Retrieval & Indexing"
   },
   {
+    "name": "MASFactory",
+    "slug": "masfactory",
+    "homepage": "https://masfactory.dev",
+    "repo": "https://github.com/BUPT-GAMMA/MASFactory",
+    "license": "Apache-2.0",
+    "category": "agents",
+    "subCategory": "agent-frameworks",
+    "tags": [
+      "Multi-Agent Systems",
+      "Graph",
+      "LLM",
+      "Agent Framework"
+    ],
+    "description": {
+      "en": "A graph-centric framework for orchestrating multi-agent systems with vibe graphing, enabling flexible agent coordination through graph-based workflows.",
+      "zh": "基于图的多智能体系统编排框架，通过 Vibe Graphing 实现灵活的智能体协调与工作流编排。"
+    },
+    "logo": "",
+    "author": "BUPT-GAMMA",
+    "ossDate": "2026-02-14",
+    "featured": false,
+    "thumbnail": "",
+    "source": {
+      "en": ""
+    },
+    "status": "tracked",
+    "content": {
+      "en": "## Overview\n\nMASFactory is a graph-centric framework for orchestrating multi-agent systems. It uses a graph-based approach called \"Vibe Graphing\" to enable flexible and intuitive coordination between multiple AI agents powered by LLMs.\n\n## Key Features\n\n- Graph-centric multi-agent orchestration framework\n- Vibe Graphing approach for intuitive agent coordination\n- Built-in support for LLM-powered agents\n\n## Use Cases\n\n- Building complex multi-agent workflows with graph-based routing\n- Research and experimentation in multi-agent system architectures\n\n## Technical Details\n\n- Apache 2.0 licensed\n- Developed by BUPT-GAMMA lab\n- Supports graph-based agent topology design",
+      "zh": "## 简介\n\nMASFactory 是一个以图为中心的多智能体系统编排框架。它使用\"Vibe Graphing\"方法，通过基于图的工作流实现多个 LLM 智能体之间的灵活协调。\n\n## 主要特性\n\n- 以图为中心的多智能体编排框架\n- Vibe Graphing 方法实现直观的智能体协调\n- 内置 LLM 驱动的智能体支持\n\n## 使用场景\n\n- 构建基于图路由的复杂多智能体工作流\n- 多智能体系统架构的研究与实验\n\n## 技术特点\n\n- Apache 2.0 开源协议\n- 由北邮 GAMMA 实验室开发\n- 支持基于图的智能体拓扑设计"
+    },
+    "score": {},
+    "repoSlug": "bupt-gamma/masfactory",
+    "totalScore": null,
+    "scorePercent": null,
+    "taxonomyReason": "explicit",
+    "categoryNameZh": "智能体系统",
+    "categoryNameEn": "Agent Systems",
+    "subCategoryNameZh": "智能体框架",
+    "subCategoryNameEn": "Agent Frameworks"
+  },
+  {
     "name": "Mastra",
     "slug": "mastra",
     "homepage": "https://mastra.ai/",
@@ -14896,6 +14937,46 @@
     },
     "score": {},
     "repoSlug": "eugeniughelbur/obsidian-second-brain",
+    "totalScore": null,
+    "scorePercent": null,
+    "taxonomyReason": "explicit",
+    "categoryNameZh": "应用与体验",
+    "categoryNameEn": "Applications & Experience",
+    "subCategoryNameZh": "效率工具",
+    "subCategoryNameEn": "Productivity Tools"
+  },
+  {
+    "name": "Odysseus",
+    "slug": "odysseus",
+    "homepage": null,
+    "repo": "https://github.com/pewdiepie-archdaemon/odysseus",
+    "license": "MIT",
+    "category": "applications-products",
+    "subCategory": "productivity-tools",
+    "tags": [
+      "AI Workspace",
+      "Self-hosted",
+      "Productivity"
+    ],
+    "description": {
+      "en": "Self-hosted AI workspace for managing and interacting with AI models and tools in a unified interface.",
+      "zh": "自托管的 AI 工作空间，在统一界面中管理和使用多种 AI 模型与工具。"
+    },
+    "logo": "",
+    "author": "pewdiepie-archdaemon",
+    "ossDate": "2026-05-31",
+    "featured": false,
+    "thumbnail": "",
+    "source": {
+      "en": ""
+    },
+    "status": "tracked",
+    "content": {
+      "en": "## Overview\n\nOdysseus is a self-hosted AI workspace that provides a unified interface for managing and interacting with various AI models and tools. It allows users to set up their own AI environment with full control over data and configuration.\n\n## Key Features\n\n- Self-hosted deployment with full data ownership\n- Unified workspace for multiple AI models and tools\n- Privacy-first design with local execution support\n\n## Use Cases\n\n- Teams and individuals who need a private AI workspace\n- Self-hosted AI assistant for sensitive or proprietary workflows\n\n## Technical Details\n\n- MIT licensed, fully open source\n- Web-based interface for easy access",
+      "zh": "## 简介\n\nOdysseus 是一个自托管的 AI 工作空间，提供统一界面来管理和交互多种 AI 模型与工具。用户可以搭建自己的 AI 环境，完全掌控数据和配置。\n\n## 主要特性\n\n- 自托管部署，数据完全自主可控\n- 统一工作空间，集成多种 AI 模型和工具\n- 隐私优先设计，支持本地执行\n\n## 使用场景\n\n- 需要私有 AI 工作空间的团队和个人\n- 处理敏感或专有工作流的自托管 AI 助手\n\n## 技术特点\n\n- MIT 开源协议\n- 基于 Web 的界面，易于访问"
+    },
+    "score": {},
+    "repoSlug": "pewdiepie-archdaemon/odysseus",
     "totalScore": null,
     "scorePercent": null,
     "taxonomyReason": "explicit",
