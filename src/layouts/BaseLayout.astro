@@ -611,7 +611,15 @@ const structuredData = {
         document.dispatchEvent(new CustomEvent('open-search-modal'));
       }
       document.querySelectorAll('[data-nav-search]').forEach((btn) => {
-        btn.addEventListener('click', openSearch);
+        btn.addEventListener('click', (event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          openSearch();
+          const header = document.querySelector('.site-header');
+          const navToggle = document.querySelector('[data-nav-toggle]');
+          header?.classList.remove('is-nav-open');
+          navToggle?.setAttribute('aria-expanded', 'false');
+        });
       });
       document.addEventListener('keydown', (e) => {
         if ((e.metaKey || e.ctrlKey) && e.key === 'k') {

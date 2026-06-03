@@ -522,6 +522,8 @@ const canonical = localizedPath('/', lang);
   @media (max-width: 720px) {
     .landscape-skill-guide__cmd {
       font-size: 0.68rem;
+      max-width: 100%;
+      overflow-x: auto;
     }
   }
 
@@ -625,6 +627,95 @@ const canonical = localizedPath('/', lang);
       min-height: 32px;
       padding: 5px 11px;
       font-size: 0.76rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .landscape-page {
+      padding: 12px 0 36px;
+      gap: 22px;
+    }
+
+    .landscape-hero {
+      padding-top: 0;
+    }
+
+    .landscape-hero__card {
+      gap: 16px;
+      padding: 18px 16px;
+      border-radius: 16px;
+    }
+
+    .landscape-hero h1 {
+      font-size: 1.55rem;
+      letter-spacing: 0;
+    }
+
+    .landscape-hero__desc {
+      font-size: 0.92rem;
+      line-height: 1.55;
+      max-width: none;
+    }
+
+    .landscape-hero__badges {
+      gap: 6px;
+    }
+
+    .landscape-hero__badges span {
+      min-height: 28px;
+      padding: 4px 9px;
+      font-size: 0.7rem;
+    }
+
+    .landscape-hero__visual {
+      max-width: 220px;
+    }
+
+    .landscape-skill-guide {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      padding: 12px;
+      border-radius: 16px;
+    }
+
+    .landscape-skill-guide__title,
+    .landscape-skill-guide__sep {
+      display: none;
+    }
+
+    .landscape-skill-guide__cmd {
+      display: block;
+      min-width: 0;
+      padding: 6px 9px;
+      border-radius: 6px;
+      font-size: 0.68rem;
+      white-space: nowrap;
+    }
+
+    .landscape-skill-guide__link {
+      margin-left: 0;
+      justify-self: end;
+      font-size: 0.78rem;
+    }
+
+    .landscape-section__head h2 {
+      font-size: 1.45rem;
+      letter-spacing: 0;
+    }
+
+    .landscape-section__head p {
+      font-size: 0.92rem;
+      line-height: 1.5;
+    }
+
+    .landscape-directory__heading h2 {
+      display: flex;
+      gap: 8px;
+    }
+
+    .landscape-directory__meta {
+      margin-left: 0;
     }
   }
 
