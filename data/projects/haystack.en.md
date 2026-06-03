@@ -11,7 +11,6 @@ tags:
 description: >-
   Haystack is an open-source framework for building retrieval-augmented generation (RAG) and semantic search
   applications by combining document stores, vector search, and LLMs.
-logo: ''
 author: deepset-ai
 ossDate: '2019-11-14T09:05:28.000Z'
 featured: false

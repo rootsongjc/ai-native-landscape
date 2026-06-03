@@ -11,7 +11,6 @@ tags:
 description: >-
   Wave Terminal is an open-source, modern terminal application designed for developers, offering rich features and a
   customizable experience.
-logo: ''
 author: Wave Terminal Developers
 ossDate: '2022-06-08T00:26:00.000Z'
 featured: false

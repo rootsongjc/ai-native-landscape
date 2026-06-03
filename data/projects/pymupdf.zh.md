@@ -12,7 +12,6 @@ tags:
   - PDF
   - Python
 description: 一个高性能的 Python 库，用于 PDF 及其他文档的数据提取、分析、转换和操作。
-logo: ''
 author: Artifex
 ossDate: '2012-10-06T18:54:25Z'
 featured: false

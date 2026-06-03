@@ -12,7 +12,6 @@ tags:
   - Serverless
   - Kubernetes
 description: NVIDIA Cloud Functions（NVCF）是面向 GPU 加速推理和流式工作负载的 serverless 平台，支撑 build.nvidia.com。
-logo: ''
 author: NVIDIA
 ossDate: '2026-04-01T19:22:14Z'
 featured: false

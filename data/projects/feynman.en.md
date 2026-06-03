@@ -11,7 +11,6 @@ tags:
   - AI Research
   - CLI
 description: Open-source AI research agent that automates literature search, paper analysis, and knowledge synthesis.
-logo: ''
 author: Companion Inc
 ossDate: '2026-03-19T00:00:00Z'
 featured: false

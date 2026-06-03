@@ -10,7 +10,6 @@ tags:
   - Dev Tools
   - Utility
 description: 用于为网站快速构建对话接口的开源协议与实现集合，支持 MCP/A2A 与 Schema.org 输出。
-logo: ''
 author: NLWeb Community
 ossDate: '2025-04-28T20:44:02.000Z'
 featured: false

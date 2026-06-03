@@ -3,19 +3,17 @@ name: SearXNG
 slug: searxng
 homepage: https://docs.searxng.org
 repo: https://github.com/searxng/searxng
-license: Unknown
+license: GNU
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:
   - Search
 description: 一个自由的互联网元搜索引擎，聚合多个搜索服务和数据库，保护用户隐私且不开启用户画像。
-logo: ''
 author: searxng
 ossDate: '2021-04-12T15:18:15.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 SearXNG 是一款自由且注重隐私的元搜索引擎，它聚合来自多个搜索服务和数据库的结果，且不会对用户进行追踪或画像。项目支持自托管，适合对隐私有较高要求的组织和个人。

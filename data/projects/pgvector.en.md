@@ -11,24 +11,31 @@ tags:
 description: >-
   pgvector is an open-source PostgreSQL extension that adds vector data types and similarity search, supporting exact
   and approximate search (HNSW, IVFFlat) inside Postgres.
-logo: ''
 author: pgvector
 ossDate: '2021-01-15T00:00:00.000Z'
 featured: false
 status: tracked
 ---
 
-## Overview
+pgvector is an open-source PostgreSQL extension that adds native vector data types and similarity search capabilities directly inside Postgres. It supports multiple distance metrics and indexing strategies, enabling hybrid queries that combine SQL joins, transactions, and filtering with vector similarity search — all within a single database.
 
-pgvector lets you store and query vectors directly in PostgreSQL. It supports multiple distance metrics and indexing strategies, enabling hybrid queries with SQL, transactions, and filtering alongside vector similarity search.
+## Vector Search Capabilities
 
-## Key features
+- Native Postgres vector type and operators for storing and querying embeddings
+- Exact and approximate nearest-neighbor search to balance precision and speed
+- HNSW and IVFFlat index support for scaling to millions of vectors
+- Multiple distance metrics including L2, inner product, and cosine similarity
 
-- Native Postgres vector type and operators.
-- HNSW and IVFFlat index support for approximate search.
-- Broad client support across languages and easy deployment options.
+## Integration & Deployment
 
-## Use cases
+- Broad client library support across Python, Go, JavaScript, Java, and more
+- Works with existing Postgres replication, backup, and operational tooling
+- Easy installation via compile-from-source, Docker, Homebrew, or package managers
+- No separate infrastructure needed — vectors live alongside relational data
 
-- RAG systems that benefit from SQL joins and strong consistency.
-- Applications that require filtering and transactional guarantees with vector search.
+## Use Cases
+
+- RAG systems that benefit from SQL joins and strong consistency guarantees
+- Semantic search with metadata filtering and transactional integrity
+- Applications requiring hybrid queries combining structured filters with vector similarity
+- Recommendation engines, deduplication, and anomaly detection within existing Postgres workloads

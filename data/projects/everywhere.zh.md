@@ -3,20 +3,18 @@ name: Everywhere
 slug: everywhere
 homepage: https://everywhere.sylinko.com
 repo: https://github.com/dearva/everywhere
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:
   - Agent Framework
   - Agents
 description: 一款面向桌面的上下文感知 AI 助手，集成多种本地及远端 LLM 与 MCP 工具以实现智能化交互与自动化。
-logo: ''
 author: DearVa
 ossDate: '2025-04-23T08:19:33.000Z'
 featured: false
 status: tracked
 ---
-
 ## 详细介绍
 
 Everywhere 是一个桌面级的上下文感知 AI 助手，旨在无缝整合多种 LLM 与 MCP 工具，提供即时、智能的交互与自动化功能。该项目支持本地模型与远端服务，通过插件化的工具链在用户桌面环境中提供搜索、摘要、任务自动化与 UI 自动化能力，同时注重隐私与可扩展性。

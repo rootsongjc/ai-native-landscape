@@ -9,7 +9,6 @@ subCategory: foundation-models
 tags:
   - Utility
 description: 完全本地化的网络研究与报告写作助手，支持通过本地 LLM（如 Ollama/LMStudio）进行迭代式检索与摘要。
-logo: ''
 author: LangChain team
 ossDate: '2024-12-04T23:57:20.000Z'
 featured: false

@@ -13,7 +13,6 @@ tags:
 description: >-
   An easy-to-use, high-performance open-source RLHF framework built on Ray, vLLM and DeepSpeed, supporting distributed
   and hybrid-engine training.
-logo: ''
 author: OpenRLHF 团队
 ossDate: '2023-07-30T02:20:13.000Z'
 featured: false

@@ -3,7 +3,7 @@ name: Sim Studio
 slug: sim-studio
 homepage: https://www.simstudio.ai/
 repo: https://github.com/simstudioai/sim
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: workflow-automation
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   A lightweight and user-friendly AI agent workflow building platform supporting both cloud-hosted and self-hosted
   deployment options.
-logo: ''
 author: Sim Studio
 ossDate: '2025-01-05T22:47:49.000Z'
 featured: false
 status: tracked
 ---
-
 Sim Studio is a lightweight and user-friendly platform for building AI agent workflows, offering both cloud-hosted and self-hosted deployment options with extensive technical capabilities.
 
 ## Platform Overview

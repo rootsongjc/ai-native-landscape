@@ -10,7 +10,6 @@ tags:
   - Deployment
   - Inference Service
 description: 'KServe: a Kubernetes-native model inference platform for scalable predictive and generative AI deployments.'
-logo: ''
 author: KServe
 ossDate: '2019-03-27T21:14:14.000Z'
 featured: false

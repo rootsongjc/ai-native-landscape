@@ -11,7 +11,6 @@ tags:
   - Memory
   - RAG
 description: 一个高性能、可扩展的记忆引擎与应用，提供面向 AI 时代的 Memory API，用于存储、检索与对话交互。
-logo: ''
 author: Supermemory
 ossDate: '2024-02-27T20:10:04.000Z'
 featured: false

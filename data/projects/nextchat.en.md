@@ -11,7 +11,6 @@ tags:
 description: >-
   NextChat is a lightweight, fast open-source cross-platform AI chat frontend that supports self-hosting and multiple
   cloud model integrations.
-logo: ''
 author: ChatGPTNextWeb
 ossDate: '2023-03-10T18:27:54.000Z'
 featured: false

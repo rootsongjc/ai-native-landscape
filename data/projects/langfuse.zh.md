@@ -11,7 +11,6 @@ tags:
   - Dev Tools
   - LLM
 description: Langfuse 是一个开源的 LLM 工程平台，支持团队协作开发、监控、评估和调试 AI 应用，具备强大的可观测性和集成能力。
-logo: ''
 author: Langfuse
 ossDate: '2023-05-18T17:47:09.000Z'
 featured: false

@@ -13,7 +13,6 @@ tags:
 description: >-
   Qwen-Agent is an open-source agent framework that provides tool calling, RAG, code interpreter and deployment examples
   to quickly build intelligent assistants and applications.
-logo: ''
 author: QwenLM
 ossDate: '2023-09-22T02:24:56.000Z'
 featured: false

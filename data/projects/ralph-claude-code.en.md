@@ -3,7 +3,7 @@ name: Ralph for Claude
 slug: ralph-claude-code
 homepage: https://frankbria.com
 repo: https://github.com/frankbria/ralph-claude-code
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -13,13 +13,11 @@ tags:
 description: >-
   An open-source autonomous development loop toolkit for Claude Code, providing session continuity, rate limiting and
   circuit breaker protections.
-logo: ''
 author: Frank Bria
 ossDate: '2025-08-27T16:03:45Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Ralph for Claude is an open-source toolkit that implements an autonomous development loop for Claude Code, running iterative coding sessions against project requirements and intelligently stopping when completion conditions are met. It combines session continuity, rate limiting, and a circuit breaker to prevent runaway loops and excessive API usage while maintaining reliability through response analysis and two-stage error filtering.

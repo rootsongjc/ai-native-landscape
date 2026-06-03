@@ -9,7 +9,6 @@ subCategory: llm-routing-gateways
 tags:
   - AI Gateway
 description: 基于 Istio 和 Envoy 的云原生 API 网关，支持 Wasm 插件和 AI Gateway 功能，包括 MCP 托管与多模型集成。
-logo: ''
 author: 阿里巴巴
 ossDate: '2022-10-27T03:53:00.000Z'
 featured: false

@@ -10,7 +10,6 @@ tags:
   - Dev Tools
   - ML Platform
 description: 开源跨平台的 LLM 与生成模型工具，提供一键下载模型、可视化、微调和推理引擎切换功能，便于在本地或云端进行模型实验与开发。
-logo: ''
 author: Transformer Lab
 ossDate: '2023-12-24T22:09:14.000Z'
 featured: false

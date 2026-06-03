@@ -11,7 +11,6 @@ tags:
   - Multimodal
   - Video
 description: 面向实时多模态对话与语音代理的开源框架与生态，提供示例、工具与运行时支持。
-logo: ''
 author: TEN Framework
 ossDate: '2024-06-19T14:26:15.000Z'
 featured: false

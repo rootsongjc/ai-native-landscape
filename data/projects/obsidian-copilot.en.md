@@ -9,7 +9,6 @@ subCategory: productivity-tools
 tags:
   - Utility
 description: AI assistant plugin for Obsidian, providing intelligent assistance for knowledge management and note-taking.
-logo: ''
 author: Logan Yang
 ossDate: '2023-03-31T00:15:29.000Z'
 featured: false

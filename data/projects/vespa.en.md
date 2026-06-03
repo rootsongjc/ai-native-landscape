@@ -13,7 +13,6 @@ tags:
 description: >-
   Vespa is a distributed engine designed for online AI and big-data workloads. It excels at low-latency retrieval and
   inference, supporting vector search, custom scoring, and near-real-time indexing.
-logo: ''
 author: vespa-engine
 ossDate: '2016-06-03T20:54:20Z'
 featured: false

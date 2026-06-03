@@ -3,7 +3,7 @@ name: Deep Chat
 slug: deep-chat
 homepage: https://deepchat.dev/
 repo: https://github.com/ovidijusparsiunas/deep-chat
-license: Unknown
+license: MIT
 category: applications-products
 subCategory: chat-interfaces
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   A one-line-embed AI chat component for websites — supports multiple APIs, voice, file transfer, and browser-hosted
   models
-logo: ''
 author: Ovidijus Parsiunas / Ovi
 ossDate: '2023-02-19T19:44:18.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Deep Chat is a lightweight, embeddable AI chat component that can be integrated into websites with a single line of code. It supports direct connections to OpenAI, HuggingFace, Cohere, and others, offers rich UI features (avatars, file transfer, webcam, microphone, STT/TTS), and can run small models in-browser for reduced backend dependency.

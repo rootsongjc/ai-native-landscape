@@ -14,7 +14,6 @@ tags:
   - Integration
   - Self-Hosted
 description: 具备原生 AI 能力和 MCP 客户端/服务器支持的工作流自动化平台，提供 400+ 集成，支持可视化构建 AI 驱动的自动化工作流。
-logo: ''
 author: n8n GmbH
 ossDate: '2019-06-22'
 featured: true

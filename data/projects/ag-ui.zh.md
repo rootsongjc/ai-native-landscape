@@ -3,20 +3,18 @@ name: AG-UI
 slug: ag-ui
 homepage: https://ag-ui.com
 repo: https://github.com/ag-ui-protocol/ag-ui
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: mcp-tools
 tags:
   - AI Agent
   - Dev Tools
 description: Agent-User Interaction Protocol，将 Agents 带入前端应用程序。
-logo: ''
 author: AG-UI Team
 ossDate: '2025-05-07T12:49:37.000Z'
 featured: false
 status: tracked
 ---
-
 AG-UI（Agent-User Interaction Protocol）是一个创新的协议，旨在将智能代理（Agents）引入前端应用程序。该协议为前端开发者提供了一套标准化的接口和方法，使得在 Web 应用中集成和使用智能体变得更加简单和高效。
 
 ## 核心理念

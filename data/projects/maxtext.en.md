@@ -13,7 +13,6 @@ tags:
 description: >-
   A high-performance, highly scalable open-source LLM library and reference implementation built with Python and JAX,
   targeting Google Cloud TPUs and GPUs.
-logo: ''
 author: AI-Hypercomputer
 ossDate: '2023-02-28T19:47:29.000Z'
 featured: false

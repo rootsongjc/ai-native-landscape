@@ -14,7 +14,6 @@ tags:
   - Orchestration
   - Workflow
 description: 一个面向自然语言描述的智能体运行时与编排平台，支持会话持久化、可观测性与多模型路由。
-logo: ''
 author: VM0.ai
 ossDate: '2025-11-14T03:27:22Z'
 featured: false

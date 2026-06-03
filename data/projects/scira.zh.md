@@ -3,19 +3,17 @@ name: Scira
 slug: scira
 homepage: https://scira.ai
 repo: https://github.com/zaidmukaddam/scira
-license: Unknown
+license: AGPLv3
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:
   - Search
 description: 一款简洁的 AI 驱动搜索引擎，提供基于网络的信息检索并带来源引注，作为开源的 Perplexity 替代方案。
-logo: ''
 author: zaidmukaddam
 ossDate: '2024-08-07T13:29:49.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Scira 是一个轻量且注重可解释性的 AI 搜索引擎，旨在帮助用户在互联网上查找信息并同时提供引用来源。作为开源项目，它使用现代前端与后端技术（TypeScript + Vercel AI SDK）实现，聚焦于检索质量与结果可追溯性。

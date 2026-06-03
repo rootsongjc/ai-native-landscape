@@ -12,7 +12,6 @@ tags:
   - Inference
   - LLM
 description: 基于 MLX 的本地化多模态推理与微调工具，支持图像、音频与视频的视觉语言模型在 Mac 与通用硬件上的高效运行与训练。
-logo: ''
 author: Blaizzy
 ossDate: '2024-04-16T15:10:12.000Z'
 featured: false

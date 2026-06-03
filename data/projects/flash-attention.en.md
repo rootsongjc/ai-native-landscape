@@ -3,19 +3,17 @@ name: Flash Attention
 slug: flash-attention
 homepage: null
 repo: https://github.com/dao-ailab/flash-attention
-license: Unknown
+license: BSD-3-Clause
 category: rag-knowledge
 subCategory: agent-memory-context
 tags:
   - Framework
 description: Fast and memory-efficient exact attention implementation optimized for large Transformer training and inference.
-logo: ''
 author: Dao-AI Lab
 ossDate: '2022-05-19T21:22:06.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Flash Attention is an open-source project that provides a fast, memory-efficient exact attention implementation. It reduces peak memory usage for Transformer attention while maintaining numerical precision, making it suitable for large-scale model training and inference.

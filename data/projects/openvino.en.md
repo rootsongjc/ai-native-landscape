@@ -10,7 +10,6 @@ tags:
   - Dev Tools
   - Inference
 description: OpenVINO is an open-source toolkit from Intel for optimizing and deploying deep learning models for inference.
-logo: ''
 author: OpenVINO
 ossDate: '2018-10-15T10:54:40.000Z'
 featured: false

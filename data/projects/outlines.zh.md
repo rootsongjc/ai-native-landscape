@@ -10,7 +10,6 @@ tags:
   - Dev Tools
   - Utility
 description: 面向结构化生成的库，简化从 LLM 直接生成并验证 JSON/Pydantic 结构化输出的流程。
-logo: ''
 author: .txt / dottxt
 ossDate: '2023-03-17T16:01:18.000Z'
 featured: false

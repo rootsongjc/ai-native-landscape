@@ -13,7 +13,6 @@ tags:
 description: >-
   A machine learning development and observability platform for tracking experiments, managing models and artifacts, and
   visualizing results across the ML lifecycle.
-logo: ''
 author: Weights & Biases
 ossDate: '2017-03-24T05:46:23.000Z'
 featured: false

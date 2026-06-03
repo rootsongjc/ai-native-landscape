@@ -10,7 +10,6 @@ tags:
   - Framework
   - Inference
 description: tinygrad 是一个极简的深度学习库，旨在以最小的代码量演示深度学习的核心原理，适合教学与轻量实验使用。
-logo: ''
 author: geohot
 ossDate: '2020-10-18T16:23:12.000Z'
 featured: false

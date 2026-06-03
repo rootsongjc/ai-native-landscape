@@ -3,7 +3,7 @@ name: DeepChat
 slug: deepchat
 homepage: https://deepchat.thinkinai.xyz/
 repo: https://github.com/thinkinaixyz/deepchat
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: chat-interfaces
 tags:
@@ -13,13 +13,11 @@ tags:
   - Multimodal
   - UI
 description: DeepChat 是一款支持多模型、多模态的开源 AI 聊天平台，集成主流云端与本地大模型，提供统一对话体验。
-logo: ''
 author: ThinkInAIXYZ
 ossDate: '2025-02-14T01:56:51Z'
 featured: false
 status: tracked
 ---
-
 ## 详细介绍
 
 DeepChat 是一款功能强大的开源 AI 聊天平台，支持多种主流云端大模型（如 OpenAI、Gemini、Anthropic）及本地 Ollama 部署，提供统一的多模态对话体验。平台集成搜索增强、工具调用、隐私保护等多项高级功能，适用于个人与企业多场景应用。

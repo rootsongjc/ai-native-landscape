@@ -3,7 +3,7 @@ name: DeepCode
 slug: deepcode
 homepage: https://pypi.org/project/deepcode-hku/
 repo: https://github.com/hkuds/deepcode
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-orchestration
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   An open-source multi-agent platform that converts papers and natural language into production-ready code
   implementations.
-logo: ''
 author: HKU Data Intelligence Lab
 ossDate: '2025-05-14T05:23:02.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 DeepCode is an open-source multi-agent code generation platform developed by the HKU Data Intelligence Lab. It automates the conversion of research papers, textual requirements, and documents into runnable, well-structured code, accelerating research reproduction and prototype development.

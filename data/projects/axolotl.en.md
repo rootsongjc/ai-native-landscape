@@ -3,7 +3,7 @@ name: Axolotl
 slug: axolotl
 homepage: https://docs.axolotl.ai/
 repo: https://github.com/axolotl-ai-cloud/axolotl
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: finetuning-alignment
 tags:
@@ -13,13 +13,11 @@ tags:
 description: >-
   A free and open-source LLM post-training and fine-tuning framework that supports multiple models, training methods,
   and distributed optimizations.
-logo: ''
 author: axolotl-ai-cloud
 ossDate: '2023-04-14T04:25:47.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 Axolotl is a free and open-source framework designed to streamline post-training and fine-tuning for modern LLMs. It offers a unified YAML configuration, extensive examples and end-to-end pipelines to simplify dataset preprocessing, fine-tuning, quantization and inference.

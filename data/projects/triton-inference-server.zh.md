@@ -9,7 +9,6 @@ subCategory: model-serving
 tags:
   - Inference Service
 description: Triton Inference Server：NVIDIA 高性能推理服务器，支持多种模型格式和多样化部署方式。
-logo: ''
 author: NVIDIA
 ossDate: '2018-10-04T21:10:30.000Z'
 featured: false

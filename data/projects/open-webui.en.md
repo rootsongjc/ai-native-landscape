@@ -13,7 +13,6 @@ tags:
 description: >-
   A scalable, feature-rich web interface for interacting with large language models, providing a ChatGPT-like experience
   with support for multiple models and customization options.
-logo: ''
 author: Open WebUI Team
 ossDate: '2023-10-06T22:08:27.000Z'
 featured: false

@@ -11,7 +11,6 @@ tags:
   - Inference
   - Workflow
 description: Roboflow Inference 是一个面向计算机视觉的推理与工作流平台，支持本地与云端部署、视频流工作流与丰富的模型集成。
-logo: ''
 author: Roboflow
 ossDate: '2023-07-31T17:00:40.000Z'
 featured: false

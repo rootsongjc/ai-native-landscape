@@ -3,7 +3,7 @@ name: Agents Towards Production
 slug: agents-towards-production
 homepage: https://www.diamant-ai.com/
 repo: https://github.com/nirdiamant/agents-towards-production
-license: Unknown
+license: Other
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:
@@ -13,13 +13,11 @@ tags:
   - RAG
   - Utility
 description: 开源 AI Agent 生产级落地教程与工具集，覆盖从原型到企业部署的全流程。
-logo: ''
 author: Nir Diamant
 ossDate: '2025-06-16T17:33:44.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Agents Towards Production 是面向开发者的开源 AI Agent 生产级落地教程与工具集，涵盖从原型到企业部署的全流程。通过可运行的教程和代码，帮助用户快速构建、部署和监控 GenAI 智能体。

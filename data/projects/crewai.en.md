@@ -3,7 +3,7 @@ name: CrewAI
 slug: crewai
 homepage: https://crewai.com/
 repo: https://github.com/crewaiinc/crewai
-license: Unknown
+license: Other
 category: agents
 subCategory: agent-orchestration
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   Discover CrewAI, the open-source Python framework for high-performance multi-agent orchestration, enabling seamless
   collaboration and customizable workflows.
-logo: ''
 author: CrewAI Inc.
 ossDate: '2023-10-27T03:26:59.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 CrewAI is an open-source, Python-centric multi-agent orchestration framework designed for minimal overhead, high performance, and highly customizable autonomous agent systems. It combines “Crews” (collaborative multi-agent teams) and “Flows” (event-driven workflows), enabling both agent collaboration and fine-grained control over execution paths. CrewAI is suitable for everything from rapid prototyping to enterprise-grade production environments.

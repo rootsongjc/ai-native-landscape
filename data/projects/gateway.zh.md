@@ -3,20 +3,18 @@ name: AI Gateway (Portkey)
 slug: gateway
 homepage: https://portkey.wiki/gh-10
 repo: https://github.com/portkey-ai/gateway
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: llm-routing-gateways
 tags:
   - AI Gateway
   - Inference
 description: Portkey 的 AI Gateway 是一个高性能、企业级的 LLM 路由与治理平台，支持多种模型提供方与丰富的守护规则。
-logo: ''
 author: Portkey-AI
 ossDate: '2023-08-23T11:52:47.000Z'
 featured: false
 status: tracked
 ---
-
 Portkey 的 AI Gateway 是一个轻量且企业级的路由层，用于将请求路由到 200+ 模型提供方与多种模态模型。它提供快速的请求路由、重试与回退策略、负载均衡、以及可扩展的守护规则和认证授权能力，适合在生产环境中管理大规模 LLM 流量。
 
 ## 主要特性

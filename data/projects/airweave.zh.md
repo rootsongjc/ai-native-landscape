@@ -3,20 +3,18 @@ name: Airweave
 slug: airweave
 homepage: https://airweave.ai/
 repo: https://github.com/airweave-ai/airweave
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:
   - Data
   - RAG
 description: Airweave 是一个让代理可以检索任何应用数据的工具，支持将应用、生产力工具、数据库与文档存储的内容构建成可语义搜索的知识库。
-logo: ''
 author: Airweave
 ossDate: '2024-12-24T10:00:06.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Airweave 让代理能够搜索并检索来自应用、生产力工具、数据库与文档存储的内容。平台覆盖从认证、数据抽取、向量化到搜索服务的全链路，提供统一的检索接口供代理使用。

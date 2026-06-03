@@ -10,7 +10,6 @@ tags:
   - Agent
   - RAG
 description: MaxKB：开源的企业级智能体平台，支持 RAG、Agent 工作流和多模态输入，适用于企业知识库和客服场景。
-logo: ''
 author: 1Panel
 ossDate: '2023-09-14T02:05:12Z'
 featured: false

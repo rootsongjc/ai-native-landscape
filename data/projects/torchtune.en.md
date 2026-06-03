@@ -11,7 +11,6 @@ tags:
 description: >-
   A PyTorch-native post-training and fine-tuning toolkit providing reusable recipes, optimizations, and quantization
   support for LLM training and evaluation.
-logo: ''
 author: torchtune maintainers
 ossDate: '2023-10-20T21:10:49.000Z'
 featured: false

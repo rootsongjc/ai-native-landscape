@@ -10,7 +10,6 @@ tags:
   - Deployment
   - LLM
 description: 高性能的浏览器端 LLM 推理引擎，利用 WebGPU 在浏览器内实现硬件加速和隐私保护。
-logo: ''
 author: mlc-ai
 ossDate: '2023-04-13T18:11:59.000Z'
 featured: false

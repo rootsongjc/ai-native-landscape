@@ -12,7 +12,6 @@ tags:
 description: >-
   A model serving and inference framework that supports multiple backends, distributed deployments, and
   OpenAI-compatible APIs.
-logo: ''
 author: Xorbits
 ossDate: '2023-06-14T07:05:04.000Z'
 featured: false

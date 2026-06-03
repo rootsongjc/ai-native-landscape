@@ -10,7 +10,6 @@ tags:
   - RAG
   - Utility
 description: 将海量文本分块编码进视频文件，实现毫秒级语义检索与离线优先的知识存储。
-logo: ''
 author: Saleban Olow (@Olow304)
 ossDate: '2025-05-27T16:01:08.000Z'
 featured: false

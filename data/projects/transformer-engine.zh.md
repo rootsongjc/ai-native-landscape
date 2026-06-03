@@ -10,7 +10,6 @@ tags:
   - ML Platform
   - Optimization
 description: NVIDIA 的 Transformer Engine，提供针对 Transformer 的高性能内核与混合精度支持。
-logo: ''
 author: NVIDIA
 ossDate: '2022-09-20T15:20:26.000Z'
 featured: false

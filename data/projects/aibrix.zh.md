@@ -3,20 +3,18 @@ name: AIBrix
 slug: aibrix
 homepage: https://aibrix.readthedocs.io/latest/
 repo: https://github.com/vllm-project/aibrix
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: sdk-frameworks
 tags:
   - Middleware
   - Orchestration
 description: AIBrix 是一个面向大规模 LLM 推理的云原生基础设施框架，提供高可扩展性与成本效率的推理组件。
-logo: ''
 author: vllm-project
 ossDate: '2024-06-10T23:06:10.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 AIBrix 是一个面向 GenAI 推理的成本高效、可插拔基础设施框架，专为大规模 LLM 部署设计。作为 vLLM 项目的一部分，它提供路由、自动伸缩、分布式推理和 KV 缓存等生产级组件，便于在 Kubernetes 上构建可扩展的 LLM 服务。

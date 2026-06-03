@@ -3,7 +3,7 @@ name: SemTools
 slug: semtools
 homepage: null
 repo: https://github.com/run-llama/semtools
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:
@@ -11,13 +11,11 @@ tags:
   - Dev Tools
   - Search
 description: A command-line toolkit for semantic search, embedding generation, and document parsing for local and CI workflows.
-logo: ''
 author: run-llama
 ossDate: '2025-08-23T21:56:09Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 SemTools is a developer-focused command-line toolkit for semantic search, embedding generation, and document parsing. It wraps vector search and embedding workflows into simple CLI commands, supporting static embeddings, index construction, and similarity-based retrieval for seamless integration into local development environments and CI pipelines.

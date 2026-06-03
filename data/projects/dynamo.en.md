@@ -3,7 +3,7 @@ name: Dynamo
 slug: dynamo
 homepage: https://docs.nvidia.com/dynamo/latest
 repo: https://github.com/ai-dynamo/dynamo
-license: Unknown
+license: MIT
 category: platform-infra
 subCategory: deployment-operations
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   Explore Dynamo by NVIDIA, an open-source framework for efficient multi-GPU inference, optimizing throughput and
   latency for large-scale deployments.
-logo: ''
 author: ai-dynamo
 ossDate: '2025-03-03T18:40:07.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 Dynamo (NVIDIA) is an open-source framework for datacenter-scale inference, addressing orchestration challenges in multi-GPU and multi-node deployments. It is engine-agnostic and supports backends like vLLM, SGLang, and TensorRT-LLM, focusing on throughput, latency, and efficient KV cache management.

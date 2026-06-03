@@ -3,7 +3,7 @@ name: A2UI
 slug: a2ui
 homepage: https://a2ui.org/
 repo: https://github.com/google/a2ui
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   An open-source declarative UI specification and toolkit that lets agents describe renderable interfaces as safe,
   portable JSON.
-logo: ''
 author: Google
 ossDate: '2025-09-24T23:14:02Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 A2UI (Agent-to-User Interface) is an open-source declarative UI specification and toolkit developed by Google that enables agents to describe renderable interfaces as safe, portable JSON. Agents produce structured JSON payloads describing intent and component trees, while client renderers map those abstract components to native widgets across platforms.

@@ -10,7 +10,6 @@ tags:
   - Benchmark
   - Framework
 description: TileLang 是一个面向高性能 AI 工作负载的领域特定语言，用于简化 GPU/CPU/加速器核的开发。
-logo: ''
 author: Tile AI
 ossDate: '2024-10-03T09:25:45.000Z'
 featured: false

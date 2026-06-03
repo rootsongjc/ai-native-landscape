@@ -12,7 +12,6 @@ tags:
 description: >-
   tinygrad is a minimalist deep learning library that implements tensor operations and autodiff with very little code,
   making it ideal for learning and experimentation.
-logo: ''
 author: geohot
 ossDate: '2020-10-18T16:23:12.000Z'
 featured: false

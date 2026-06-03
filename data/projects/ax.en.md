@@ -13,7 +13,6 @@ tags:
   - Resumability
   - MCP
 description: Google's open source distributed agent runtime that coordinates agentic loops, manages executions with event logging, and provides native recovery and resumption for reliable agent deployments.
-logo: ''
 author: Google
 ossDate: '2026-03-30'
 featured: false

@@ -12,7 +12,6 @@ tags:
 description: >-
   An OpenTelemetry-inspired observability toolkit for LLM/AI, providing request tracing and metrics aggregation for
   diagnostics and monitoring.
-logo: ''
 author: traceloop
 ossDate: '2023-09-02T14:42:59.000Z'
 featured: false

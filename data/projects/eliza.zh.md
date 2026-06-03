@@ -3,20 +3,18 @@ name: ElizaOS
 slug: eliza
 homepage: https://eliza.how/
 repo: https://github.com/elizaos/eliza
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-orchestration
 tags:
   - Agents
   - Application
 description: ElizaOS 是一个面向多智能体与应用部署的开源平台，提供从代理创建、文档摄取到可视化管理的一体化工具链，适用于构建复杂的多智能体系统与线上服务。
-logo: ''
 author: ElizaOS
 ossDate: '2023-08-01T00:00:00.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 ElizaOS 是一个面向多智能体与企业级部署场景的开源平台，提供从智能体创建、文档摄取到实时管理的一体化工具链。平台集合了 CLI、Web 控制台与插件系统，支持多模型提供商与丰富的外部连接器（如 Discord、Telegram、Slack 等），便于在真实业务场景中快速构建可扩展的 RAG + agent 解决方案。

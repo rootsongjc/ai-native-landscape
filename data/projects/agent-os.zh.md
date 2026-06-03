@@ -3,20 +3,18 @@ name: Agent OS
 slug: agent-os
 homepage: https://buildermethods.com/agent-os
 repo: https://github.com/buildermethods/agent-os
-license: Unknown
+license: MIT
 category: applications-products
 subCategory: workflow-automation
 tags:
   - AI Agent
   - Dev Tools
 description: 面向工程团队的规范化 AI Agent 开发与执行框架，提供规范、指令集与插件化工具链，帮助团队把智能体从实验快速推进到可重复的工程流程。
-logo: ''
 author: Brian Casel / Builder Methods
 ossDate: '2025-07-16T21:28:59.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Agent OS 是一个面向开发团队的规范化系统，用于注入代码库标准并编写更好的规范，以驱动规范化开发。它将团队标准、项目上下文与执行指令结合，帮助工程团队将多轮迭代式 AI 助手工作流程制度化，提升智能体在真实代码库中交付结果的稳定性与可重复性。

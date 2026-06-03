@@ -3,7 +3,7 @@ name: Dembrandt
 slug: dembrandt
 homepage: null
 repo: https://github.com/thevangelist/dembrandt
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:
@@ -12,13 +12,11 @@ tags:
   - UI
   - Utility
 description: 一个基于 Playwright 的命令行工具，用于从任意网站自动提取 logo、颜色、排版、间距与组件等设计 tokens 并导出结构化 JSON 文件。
-logo: ''
 author: thevangelist
 ossDate: '2025-11-22T13:49:09Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Dembrandt 是一款基于 Playwright 的命令行工具，能在数秒内从任意公开网站抽取设计系统要素并导出为结构化的 design tokens（JSON）。它会渲染页面、收集计算样式、分析颜色与排版模式，并对结果赋予置信度评分，适合审计与文档化工作流程。

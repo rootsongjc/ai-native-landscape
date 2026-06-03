@@ -11,7 +11,6 @@ tags:
   - Dev Tools
   - Inference
 description: llama.cpp 是一个用 C/C++ 实现的轻量级 LLM 推理库，旨在在不同硬件上实现高效推理。
-logo: ''
 author: ggml-org
 ossDate: '2023-03-10T18:58:00.000Z'
 featured: false

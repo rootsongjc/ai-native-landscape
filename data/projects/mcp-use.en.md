@@ -13,26 +13,45 @@ tags:
 description: >-
   The simplest way to interact with MCP servers and create custom agents, supporting connection of any LLM to MCP
   servers.
-logo: ''
 author: mcp-use
 ossDate: '2025-03-28T10:06:31.000Z'
 featured: false
 status: tracked
 ---
 
-MCP-Use is an open-source solution for connecting any LLM to any MCP server and building custom MCP agents with tool access, without relying on closed-source or application clients.
+MCP-Use is a fullstack MCP framework for building MCP Servers and MCP Apps that work with ChatGPT, Claude, and other AI agents. It provides SDKs for both TypeScript and Python, enabling developers to create, preview, and deploy MCP servers with minimal boilerplate.
 
-This tool enables developers to easily connect any LangChain-supported LLM to tools such as web browsing, file operations, and more.
+## MCP Server Development
 
-## Core Features
+- Create MCP servers in just a few lines of code with the Python or TypeScript SDK
+- Built-in auto-discovery of tools and resources — no manual registration needed
+- Supports both `stdio` and `streamable-http` transports out of the box
+- Conformance-tested against the official Model Context Protocol specification
 
-| Feature | Description |
-|---------|-------------|
-| 🔄 Ease of Use | Create your first MCP-enabled agent with just 6 lines of code |
-| 🤖 LLM Flexibility | Works with any LangChain-supported LLM that supports tool calls (OpenAI, Anthropic, Groq, LLama, etc.) |
-| 🌐 Code Builder | Explore MCP capabilities and generate starter code using the interactive code builder |
-| 🔗 HTTP Support | Connect directly to MCP servers running on specific HTTP ports |
-| ⚙️ Dynamic Server Selection | Agents can dynamically select the most suitable MCP server from the available pool for a given task |
-| 🧩 Multi-Server Support | Use multiple MCP servers simultaneously within a single agent |
-| 🛡️ Tool Restrictions | Restrict potentially dangerous tools, such as file system or network access |
-| 🔧 Custom Agents | Build your own agents or create new adapters using the LangChain adapter |
+## MCP Apps and Widgets
+
+- Build interactive widgets that run across Claude, ChatGPT, and any MCP client — write once, run everywhere
+- React-based widget components with theme support (light/dark) and pending states
+- Auto-discovered from the `resources/` directory — no manual wiring required
+- Ready-to-use templates including Chart Builder, Diagram Builder, Slide Deck, Maps Explorer, and more
+
+## MCP Agent and Client
+
+- Full MCP Agent implementation using LangChain with support for OpenAI, Anthropic, Groq, and local models
+- MCPClient for direct tool calls without an LLM — connect to any MCP server programmatically
+- Dynamic server selection: agents can pick the most suitable MCP server from a pool based on the task
+- Multi-server support: use multiple MCP servers simultaneously within a single agent
+
+## Inspector and Developer Tools
+
+- Web-based Inspector for interactive testing and debugging of MCP servers
+- Auto-included when using `server.listen()` — available at `/inspector` endpoint
+- Online version at inspector.mcp-use.com for testing hosted MCP servers
+- CLI tool with hot reload and one-command deployment to production
+
+## Cross-Language Support
+
+- **Python SDK** (`pip install mcp-use`): Complete server and agent implementation with Pydantic validation
+- **TypeScript SDK** (`npm install mcp-use`): Full framework including server, apps, agents, and client
+- **CLI Tools**: `create-mcp-use-app` for scaffolding, `@mcp-use/cli` for building and deploying
+- Both SDKs follow idiomatic patterns of their respective languages with consistent API design

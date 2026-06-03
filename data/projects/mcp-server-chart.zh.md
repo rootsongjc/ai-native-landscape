@@ -10,7 +10,6 @@ tags:
   - Dev Tools
   - MCP
 description: 基于 @antvis 的可视化 MCP，包含 25 多种可视化图表。用于图表生成和数据分析。
-logo: ''
 author: AntV
 ossDate: '2025-04-25T09:10:06.000Z'
 featured: false

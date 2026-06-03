@@ -13,7 +13,6 @@ tags:
   - LLM
   - PyTorch
 description: 面向大语言模型的参数高效微调库，实现 LoRA、QLoRA 等方法，用极少 GPU 资源即可完成适配器训练。
-logo: ''
 author: Hugging Face
 ossDate: '2022-11-25'
 featured: false

@@ -3,20 +3,18 @@ name: Crush
 slug: crush
 homepage: null
 repo: https://github.com/charmbracelet/crush
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:
   - AI Terminal
   - CLI
 description: 在终端中运行的 AI 助手，支持多模型、会话管理、LSP 强化与可扩展的模型提供器配置。
-logo: ''
 author: Charmbracelet
 ossDate: '2025-05-21T12:14:57.000Z'
 featured: false
 status: tracked
 ---
-
 Crush 是一个在终端中运行的 AI 助手，将工具、代码和工作流与多种 LLM 提供者连接。它支持会话管理、在会话内切换模型、通过 LSP 增强上下文，并可通过 MCP（http、stdio、sse）扩展功能。Crush 可在 macOS、Linux、Windows 与 BSD 系统上运行，提供 Homebrew、npm、二进制包和 go install 等安装方式。
 
 ## 主要特性

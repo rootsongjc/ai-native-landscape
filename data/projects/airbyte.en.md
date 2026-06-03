@@ -13,7 +13,6 @@ tags:
   - Data Connector
   - Self-Hosted
 description: Open-source data movement platform for ELT pipelines and AI agents, moving data from APIs, databases, and files to warehouses, lakes, and AI applications.
-logo: ''
 author: Airbyte
 ossDate: '2020-07-27'
 featured: false

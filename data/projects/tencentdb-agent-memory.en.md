@@ -13,7 +13,6 @@ tags:
 description: >-
   Tencent's local long-term memory system for AI agents, powered by a 4-tier progressive pipeline with zero external API
   dependencies.
-logo: ''
 author: Tencent
 ossDate: '2026-04-07T00:00:00.000Z'
 featured: false

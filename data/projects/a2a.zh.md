@@ -3,19 +3,17 @@ name: A2A
 slug: a2a
 homepage: https://a2a-protocol.org/
 repo: https://github.com/a2aproject/a2a
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: mcp-tools
 tags:
   - AI Agent
 description: 一种开放协议，实现不透明代理应用之间的通信和互操作性。
-logo: ''
 author: Google
 ossDate: '2025-03-25T18:44:21.000Z'
 featured: false
 status: tracked
 ---
-
 A2A（Agent-to-Agent Protocol）是一种开放协议，专门用于实现不透明代理应用之间的通信和互操作性。该协议解决了现代智能体生态系统中的关键挑战，使得不同的智能体能够在保持其内部实现私密性的同时进行有效协作。
 
 ## 协议概述

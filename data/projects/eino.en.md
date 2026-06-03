@@ -13,7 +13,6 @@ tags:
 description: >-
   Eino is a Go-centered framework for building LLM applications, focusing on composability, stream processing, and
   production readiness.
-logo: ''
 author: 字节跳动
 ossDate: '2024-12-04T06:47:27Z'
 featured: false

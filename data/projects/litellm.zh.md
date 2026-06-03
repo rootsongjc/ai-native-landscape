@@ -9,7 +9,6 @@ subCategory: llm-routing-gateways
 tags:
   - AI Gateway
 description: LiteLLM 是一个轻量级的 LLM 支持与代理框架，提供统一的 OpenAI 格式代理、路由、限流与可插拔的模型提供商支持，适合用于构建 LLM Gateway。
-logo: ''
 author: BerriAI
 ossDate: '2023-07-27T00:09:52.000Z'
 featured: false

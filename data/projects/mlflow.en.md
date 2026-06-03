@@ -12,7 +12,6 @@ tags:
 description: >-
   MLflow is an open-source platform for managing the machine learning lifecycle, including experiment tracking,
   packaging, model registry and deployment.
-logo: ''
 author: MLflow
 ossDate: '2018-06-05T16:05:58.000Z'
 featured: false

@@ -3,20 +3,18 @@ name: InsForge
 slug: insforge
 homepage: https://insforge.dev
 repo: https://github.com/insforge/insforge
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: productivity-tools
 tags:
   - Application
   - Dev Tools
 description: 面向 AI 原生的 Supabase 替代方案，提供可被 AI 智能体管理的全栈后端功能与开发体验。
-logo: ''
 author: InsForge
 ossDate: '2025-07-29T05:56:00.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 InsForge 是一个 AI 原生的后端平台，定位为“Agent-Native Supabase Alternative”。它将 Supabase 的功能以 AI 可管理的方式呈现，目标是让 AI 智能体能够自动构建与管理全栈应用。项目支持认证、数据库、存储、无服务器函数等后端能力，并提供与 AI 智能体的集成接口与示例实践。

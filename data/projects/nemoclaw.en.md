@@ -14,7 +14,6 @@ tags:
 description: >-
   NVIDIA NemoClaw is an open source reference stack for running OpenClaw always-on assistants more safely inside NVIDIA
   OpenShell, providing guided onboarding, hardened blueprints, state management, and routed inference.
-logo: ''
 author: NVIDIA
 ossDate: '2026-03-15'
 featured: true

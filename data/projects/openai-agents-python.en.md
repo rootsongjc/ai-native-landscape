@@ -13,7 +13,6 @@ tags:
 description: >-
   OpenAI's lightweight Agents SDK for Python—build multi-agent workflows with agents, handoffs, guardrails, tracing, and
   session management. Provider-agnostic and extensible for production use.
-logo: ''
 author: OpenAI
 ossDate: '2025-03-11T03:42:36.000Z'
 featured: false

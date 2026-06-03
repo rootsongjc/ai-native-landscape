@@ -3,7 +3,7 @@ name: DataTrove
 slug: datatrove
 homepage: null
 repo: https://github.com/huggingface/datatrove
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: data-connectors
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   DataTrove provides composable, platform-agnostic pipelines for large-scale text data processing, including extraction,
   filtering, deduplication and saving.
-logo: ''
 author: Hugging Face
 ossDate: '2023-06-14T12:05:28.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 DataTrove is an open-source library offering composable pipeline blocks to process, filter and deduplicate large-scale text datasets. It supports various executors and runtime backends to scale from local runs to cluster deployments.

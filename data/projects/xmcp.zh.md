@@ -11,7 +11,6 @@ tags:
   - Framework
   - MCP
 description: 一个用于构建和部署 MCP 服务器的 TypeScript 框架，旨在简化开发者体验并降低创建 Model Context Protocol 工具的门槛。
-logo: ''
 author: Basement Studio
 ossDate: '2025-05-17T04:09:27Z'
 featured: false

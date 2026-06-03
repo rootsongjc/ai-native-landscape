@@ -12,7 +12,6 @@ tags:
   - Cloud Native
   - Infrastructure
 description: NVIDIA AI Cluster Runtime（AICR）生成经过优化、验证和可复现的 GPU 加速 Kubernetes 集群配置，用于 AI 训练和推理环境搭建。
-logo: ''
 author: NVIDIA
 ossDate: '2026-01-30T19:02:59Z'
 featured: false

@@ -10,7 +10,6 @@ tags:
   - Application
   - UI
 description: Siyuan 是一款注重隐私、自托管的开源个人知识管理（PKM）软件，支持本地存储与多种导入导出方式。
-logo: ''
 author: Siyuan Team
 ossDate: '2020-08-30T09:21:35Z'
 featured: false

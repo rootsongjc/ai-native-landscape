@@ -11,7 +11,6 @@ tags:
   - Multi-Agent
   - Orchestration
 description: The coordination layer for multi-agent AI, providing orchestration and communication infrastructure for agent teams.
-logo: ''
 author: Sympozium AI
 ossDate: '2026-02-23T09:53:24Z'
 featured: false

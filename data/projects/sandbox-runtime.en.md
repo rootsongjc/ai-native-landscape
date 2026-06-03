@@ -12,7 +12,6 @@ tags:
 description: >-
   A lightweight sandboxing tool for enforcing filesystem and network restrictions on arbitrary processes at the OS
   level, without requiring a container.
-logo: ''
 author: Anthropic
 ossDate: '2025-10-20T02:52:10.000Z'
 featured: false

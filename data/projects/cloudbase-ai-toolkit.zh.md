@@ -3,7 +3,7 @@ name: CloudBase AI ToolKit
 slug: cloudbase-ai-toolkit
 homepage: https://docs.cloudbase.net/ai/cloudbase-ai-toolkit/
 repo: https://github.com/tencentcloudbase/cloudbase-ai-toolkit
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: llm-routing-gateways
 tags:
@@ -11,13 +11,11 @@ tags:
   - Application
   - Dev Tools
 description: CloudBase AI ToolKit 提供开箱即用的 AI IDE、前端与后端示例和部署流水线，帮助开发者快速生成、部署并托管全栈 AI 应用。
-logo: ''
 author: Tencent CloudBase
 ossDate: '2025-05-23T08:31:26.000Z'
 featured: false
 status: tracked
 ---
-
 ## 详细介绍
 
 CloudBase AI ToolKit 是腾讯 CloudBase 提供的一套开源工具集合，面向开发者以最低成本构建和托管 AI 驱动的全栈应用。它集成了 AI IDE、示例前端与后端模板、数据库与托管流水线，旨在将从原型到生产的开发周期显著缩短，使开发者可以通过可视化与脚手架快速启动项目。

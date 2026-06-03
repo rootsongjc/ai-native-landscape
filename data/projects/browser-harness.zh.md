@@ -3,7 +3,7 @@ name: Browser Harness
 slug: browser-harness
 homepage: https://browser-use.com
 repo: https://github.com/browser-use/browser-harness
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -11,13 +11,11 @@ tags:
   - Automation
   - Tool
 description: Browser Harness 是一个基于 CDP 构建的极简自愈式浏览器套件，赋予 LLM 完全的自由来完成任何浏览器任务，代理可以在运行中编写缺失的功能。
-logo: ''
 author: Browser Use
 ossDate: '2026-04-17T01:56:15Z'
 featured: false
 status: tracked
 ---
-
 ## 详细介绍
 
 Browser Harness 是由 Browser Use 团队开源的一款极简浏览器套件，基于 Chrome DevTools Protocol（CDP）直接构建，旨在为 LLM 代理提供完整的浏览器操控能力。其核心理念是"自愈"——当代理在执行浏览器任务时发现缺少某个功能（例如文件上传），代理可以实时编辑套件代码并添加所需函数，无需人工干预。整个实现仅约 592 行 Python 代码，包含安装引导、日常使用说明、运行入口、工具函数以及 CDP 守护进程。

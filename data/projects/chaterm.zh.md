@@ -3,19 +3,17 @@ name: Chaterm
 slug: chaterm
 homepage: https://chaterm.ai/
 repo: https://github.com/chaterm/chaterm
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:
   - Utility
 description: 集成 AI Agent 的开源终端与 SSH 客户端，提供自然语言命令、智能补全、语音命令与可视化编辑等功能，旨在提升运维与开发效率。
-logo: ''
 author: Chaterm
 ossDate: '2025-04-14T04:19:01.000Z'
 featured: false
 status: tracked
 ---
-
 Chaterm 是一个面向开发与运维场景的开源 AI 终端与 SSH 客户端，集成 AI Agent 能力，支持自然语言执行命令、智能补全、语音输入与可视化编辑等功能，致力于简化复杂命令与提升多设备管理效率。
 
 ## 主要特性

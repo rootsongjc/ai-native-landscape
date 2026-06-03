@@ -3,7 +3,7 @@ name: FastGPT
 slug: fastgpt
 homepage: https://fastgpt.io/
 repo: https://github.com/labring/fastgpt
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:
@@ -13,23 +13,33 @@ tags:
 description: >-
   Discover FastGPT: a powerful platform for seamless data processing and AI workflow orchestration, enabling easy
   development of advanced question-answering systems.
-logo: ''
 author: Labring
 ossDate: '2023-02-23T16:53:25.000Z'
 featured: false
 status: tracked
 ---
+FastGPT is an open-source intelligent knowledge base and AI application platform by the Labring team. Built on large language models, it bundles data processing, a RAG retrieval engine, and visual workflow orchestration into an out-of-the-box solution, letting developers create professional Q&A systems without deep AI expertise.
 
-FastGPT is an open-source intelligent knowledge base and AI application building platform developed by the Labring team, designed for rapid development and deployment of AI applications. Built on Large Language Model (LLM) technology, the platform provides a complete suite of out-of-the-box capabilities including intelligent data processing, RAG (Retrieval-Augmented Generation) search engine, and visual AI workflow orchestration. These core features enable developers to easily build and deploy professional-grade intelligent Q&A systems and knowledge base applications without deep knowledge of complex AI technical details.
+## Data Ingestion and Knowledge Base
 
-## Core Features
+- Supports multiple data sources: document uploads, web crawling, and API connections
+- Built-in intelligent text segmentation and vectorization for automatic knowledge processing
+- Efficient semantic search via integrated vector database, even with massive knowledge bases
 
-FastGPT offers rich functional modules covering the complete process from data import to application deployment. The platform supports multiple data source integrations, including document uploads, web crawling, API connections, and features built-in intelligent text segmentation and vectorization processing capabilities. Through a visual workflow orchestration interface, users can design AI application business logic like building blocks, including multi-turn dialogues, conditional branches, external API calls, and other complex scenarios. The platform also provides comprehensive permission management and multi-tenant support, suitable for team collaboration and enterprise-level application deployment.
+## Visual Workflow Orchestration
 
-## Technical Highlights
+- Drag-and-drop interface for designing AI application logic like building blocks
+- Supports multi-turn dialogues, conditional branching, and external API calls
+- Non-technical users can compose complex workflows without writing code
 
-FastGPT adopts a modular architecture design that supports flexible model switching and extension. The platform is compatible with mainstream large language models, including GPT series, Claude, Wenxin Yiyan, Tongyi Qianwen, and others, allowing users to freely choose based on cost and performance requirements. The built-in vector database supports efficient semantic search, enabling fast responses even with massive knowledge bases. Additionally, FastGPT provides rich debugging tools and performance monitoring features to help developers continuously optimize application effectiveness.
+## Multi-Model Compatibility
 
-## Use Cases
+- Compatible with mainstream LLMs including GPT, Claude, Wenxin Yiyan, and Tongyi Qianwen
+- Users can freely switch models based on cost and performance requirements
+- Modular architecture enables flexible extension and customization
 
-FastGPT is widely used in enterprise knowledge bases, intelligent customer service, document Q&A, education and training, and many other fields. By importing enterprise internal documents, product manuals, technical documentation, and other materials into the platform, users can quickly build an intelligent assistant to provide 7×24 hour knowledge query services for employees or customers. The platform's multimodal support and workflow orchestration capabilities enable it to handle not only simple Q&A tasks but also complex business process automation scenarios.
+## Enterprise-Ready Features
+
+- Comprehensive permission management and multi-tenant support for team collaboration
+- Rich debugging tools and performance monitoring for continuous optimization
+- Widely used in enterprise knowledge bases, intelligent customer service, document Q&A, and education

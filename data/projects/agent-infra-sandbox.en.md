@@ -3,7 +3,7 @@ name: AIO Sandbox
 slug: agent-infra-sandbox
 homepage: https://sandbox.agent-infra.com
 repo: https://github.com/agent-infra/sandbox
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: mcp-tools
 tags:
@@ -13,13 +13,11 @@ tags:
 description: >-
   All-in-one sandbox environment for AI agents that combines Browser, Shell, File, MCP and VSCode Server into a single
   containerized runtime.
-logo: ''
 author: Agent Infra
 ossDate: '2025-08-06T14:51:05.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 AIO Sandbox is an all-in-one sandbox environment for AI agents and developers. It integrates a browser (with VNC/CDP), shell, file system, Jupyter, and a VSCode Server into a single container, enabling unified workflows where browser downloads, terminal commands, and file operations are immediately accessible across interfaces. The project aims to simplify development, testing, and demonstrations of multi-step agent workflows.

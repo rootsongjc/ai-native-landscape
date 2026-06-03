@@ -3,7 +3,7 @@ name: Codebuff
 slug: codebuff
 homepage: https://codebuff.com/docs
 repo: https://github.com/codebuffai/codebuff
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-orchestration
 tags:
@@ -13,13 +13,11 @@ tags:
 description: >-
   Discover Codebuff, the open-source AI coding assistant that enhances project management with multi-agent architecture
   for safer, automated code modifications.
-logo: ''
 author: CodebuffAI
 ossDate: '2024-07-09T21:21:56.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Codebuff is an open-source, multi-agent AI coding assistant that analyzes project structure, plans edits, applies precise code changes, and runs verification tests. Its agent-based design (File Explorer, Planner, Editor, Reviewer) enables richer context understanding and safer automated modifications compared to single-model approaches.

@@ -3,19 +3,17 @@ name: Aider
 slug: aider
 homepage: https://aider.chat/
 repo: https://github.com/aider-ai/aider
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: coding-agents
 tags:
   - Vibe Coding
 description: 基于终端的 AI 结对程序员，通过自然语言命令帮助你编写、编辑和管理代码，支持 Git 集成和多种大语言模型。
-logo: ''
 author: Aider
 ossDate: '2023-05-09T18:57:49.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Aider 是一款在终端中运行的 AI 结对编程工具，让你可以与 LLM 结对编程来启动新项目或在已有代码上构建。它支持多种主流模型，包括 Claude、DeepSeek、OpenAI 和本地模型，能够智能地映射和理解整个代码库，支持超过 100 种编程语言。

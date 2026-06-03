@@ -3,7 +3,7 @@ name: Chef
 slug: chef
 homepage: https://chef.convex.dev/
 repo: https://github.com/get-convex/chef
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: low-code-builders
 tags:
@@ -12,25 +12,30 @@ tags:
 description: >-
   An AI app builder that understands the backend: built-in DB, zero-config auth, file uploads, real-time UIs, and
   background workflows to rapidly build full-stack AI apps.
-logo: ''
 author: Convex Team
 ossDate: '2025-03-31T19:00:59.000Z'
 featured: false
 status: tracked
 ---
-
-## Overview
-
 Chef is the only AI app builder that truly understands the backend. Built by Convex, it enables developers to rapidly create full-stack AI applications with a built-in database, zero-config authentication, file uploads, real-time UIs, and background workflows out of the box, eliminating the need to stitch together separate backend services.
 
-## Key Features
+## Backend Integration
 
-Tight integration with Convex provides real-time data synchronization and persistent background workflows without manual infrastructure setup. Built-in agent loop and tooling including system prompts and tool definitions for constructing intelligent assistant flows. Supports both hosted usage at chef.convex.dev and local development with template-driven project bootstrapping.
+- Tight integration with Convex provides real-time data synchronization without manual infrastructure setup
+- Persistent background workflows that run reliably without manual wiring
+- Built-in database with zero-config authentication and file upload support
+- Eliminates the need to assemble separate backend services for AI applications
 
-## Use Cases
+## Agent and Tooling Support
 
-Building generative AI applications that require backend storage and real-time sync, such as code generation platforms, collaborative editors, and stateful chatbots. Rapid prototyping through production using templates and the chefshot CLI to bootstrap full-stack projects in minutes. Educational and demo scenarios demonstrating how AI agent capabilities integrate with databases, auth, file uploads, and real-time interfaces.
+- Built-in agent loop with system prompts and tool definitions for constructing intelligent assistant flows
+- Template-driven project bootstrapping enables quick initialization of new AI applications
+- Supports both hosted usage at chef.convex.dev and local development modes
+- Educational and demo scenarios showing how AI agent capabilities integrate with databases, auth, and real-time interfaces
 
-## Technical Details
+## Development Workflow
 
-TypeScript monorepo architecture with shared client and server code designed for modern frontend integration. Template-driven project bootstrapping enables quick initialization of new AI applications. Lightweight CLI tools including chefshot and test-kitchen support local development iteration and agent-loop testing.
+- TypeScript monorepo architecture with shared client and server code for modern frontend integration
+- Lightweight CLI tools including chefshot and test-kitchen for local development iteration
+- Agent-loop testing support for validating intelligent assistant behaviors
+- Rapid prototyping through production using templates to bootstrap full-stack projects in minutes

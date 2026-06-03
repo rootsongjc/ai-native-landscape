@@ -3,7 +3,7 @@ name: CodeGraph
 slug: codegraph
 homepage: null
 repo: https://github.com/colbymchenry/codegraph
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: knowledge-graphs
 tags:
@@ -13,13 +13,11 @@ tags:
 description: >-
   Pre-indexed code knowledge graph for AI coding agents, supporting Claude Code, Codex, Cursor, and OpenCode with 100%
   local execution.
-logo: ''
 author: colbymchenry
 ossDate: '2026-01-18T00:00:00.000Z'
 featured: false
 status: tracked
 ---
-
 CodeGraph builds a local code knowledge graph for AI coding agents (Claude Code, Cursor, Codex CLI, OpenCode), enabling a single tool call to retrieve entry points, related symbols, and code snippets without expensive exploration scans. Benchmarks show an average 92% reduction in tool calls and 71% faster exploration.
 
 ## Overview

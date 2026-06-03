@@ -14,7 +14,6 @@ tags:
 description: >-
   Select context for coding agents directly from your website. Makes tools like Cursor, Claude Code, and Copilot run up
   to 3x faster with more accurate results.
-logo: ''
 author: Aiden Bai
 ossDate: '2025-01-15'
 featured: true

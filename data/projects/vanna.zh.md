@@ -10,7 +10,6 @@ tags:
   - Data
   - RAG
 description: Vanna 是一个开源的 RAG 框架，支持将自然语言问题转为 SQL 并在本地数据库上执行，适合面向数据的检索增强生成场景。
-logo: ''
 author: Vanna
 ossDate: '2023-05-13T17:26:28.000Z'
 featured: false

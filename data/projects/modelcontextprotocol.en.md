@@ -11,7 +11,6 @@ tags:
 description: >-
   Specification and documentation for the Model Context Protocol, a standardized communication protocol between
   applications and AI models.
-logo: ''
 author: Anthropic
 ossDate: '2024-09-24T20:26:52.000Z'
 featured: false

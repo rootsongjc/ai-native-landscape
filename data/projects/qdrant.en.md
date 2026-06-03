@@ -12,7 +12,6 @@ tags:
 description: >-
   Discover Qdrant, a high-performance vector search engine that enhances similarity search and scalable deployment for
   efficient data retrieval.
-logo: ''
 author: Qdrant
 ossDate: '2019-05-01T00:00:00.000Z'
 featured: false

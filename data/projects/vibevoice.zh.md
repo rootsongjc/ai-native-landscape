@@ -10,7 +10,6 @@ tags:
   - TTS
   - Utility
 description: 用于生成长对话式文本到语音的研究型框架，擅长多说话人长时段合成。仓库目前因安全与滥用风险被项目方暂时禁用，使用时请注意合规与伦理要求。
-logo: ''
 author: Microsoft
 ossDate: '2025-08-25T13:24:01.000Z'
 featured: false

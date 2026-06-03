@@ -9,7 +9,6 @@ subCategory: productivity-tools
 tags:
   - Utility
 description: Obsidian 的 AI 助手插件，为知识管理和笔记记录提供智能辅助功能。
-logo: ''
 author: Logan Yang
 ossDate: '2023-03-31T00:15:29.000Z'
 featured: false

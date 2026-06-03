@@ -14,7 +14,6 @@ tags:
 description: >-
   A high-performance Python library for data extraction, analysis, conversion, and manipulation of PDF and other
   documents.
-logo: ''
 author: Artifex
 ossDate: '2012-10-06T18:54:25Z'
 featured: false

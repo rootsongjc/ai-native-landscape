@@ -3,20 +3,18 @@ name: ComfyUI
 slug: comfyui
 homepage: null
 repo: https://github.com/comfyanonymous/comfyui
-license: Unknown
+license: GPL-3.0
 category: models-modalities
 subCategory: image-video-generation
 tags:
   - Dev Tools
   - Image Generation
 description: 基于节点的可视化 Stable Diffusion 工作流构建器，便于用图形化方式组装与调试图像生成流水线。
-logo: ''
 author: comfyanonymous
 ossDate: '2023-01-17T03:15:56.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 ComfyUI 是一款基于节点的可视化构建器，用于搭建 Stable Diffusion 的图像生成流水线。用户通过拖拽节点组织数据预处理、模型推理与后处理，从而快速实验与调试生成流程。户可以通过连接代表预处理、模型推理和后处理步骤的节点，快速组装和调试图像生成流水线，实现高效原型开发与调试。

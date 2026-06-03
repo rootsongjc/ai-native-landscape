@@ -3,7 +3,7 @@ name: fast-agent
 slug: fast-agent
 homepage: https://fast-agent.ai/
 repo: https://github.com/evalstate/fast-agent
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: workflow-automation
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   fast-agent is an open-source Python framework for quickly building, testing, and running MCP-enabled Agents and
   workflows with minimal boilerplate.
-logo: ''
 author: evalstate
 ossDate: '2025-01-18T20:39:51.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 fast-agent provides a file-centric, declarative way to define Agents and Workflows that integrate with MCP servers and multiple LLM backends. It aims to reduce friction when building complex agent applications by offering simple configuration, model selection, and interactive debugging tools.

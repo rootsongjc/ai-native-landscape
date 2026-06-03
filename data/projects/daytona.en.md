@@ -3,7 +3,7 @@ name: Daytona
 slug: daytona
 homepage: https://www.daytona.io/docs
 repo: https://github.com/daytonaio/daytona
-license: Unknown
+license: AGPL-3.0
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:
@@ -13,13 +13,11 @@ tags:
 description: >-
   Secure and elastic infrastructure for running AI-generated code with isolated sandboxes, concurrency and persistent
   sandbox state.
-logo: ''
 author: Daytona
 ossDate: '2024-02-06T08:21:20.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 Daytona provides secure and elastic infrastructure for running AI-generated code. It offers fast isolated sandboxes, programmatic control via Python and TypeScript SDKs, and support for persistence and concurrent workflows, enabling safe execution of model-generated code in production and research environments.

@@ -3,7 +3,7 @@ name: CC Workflow Studio
 slug: cc-workflow-studio
 homepage: null
 repo: https://github.com/breaking-brake/cc-wf-studio
-license: Unknown
+license: AGPL-3.0
 category: coding-devtools
 subCategory: coding-agents
 tags:
@@ -16,13 +16,11 @@ description: >-
   orchestrations without writing code. It supports multi-agent workflows, sub-agent orchestration, Agent Skills, and MCP
   tool integration, with AI-assisted editing through natural language conversations and one-click export to multiple
   formats with direct execution from the editor.
-logo: ''
 author: breaking-brake
 ossDate: '2025-03-16'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 CC Workflow Studio is a visual workflow editor designed specifically for AI agents, available as a VS Code extension. Through an intuitive drag-and-drop canvas, developers can design complex AI agent orchestrations without writing code. Built on React Flow, it supports core building blocks of agentic engineering including multi-agent workflows, sub-agent orchestration, Agent Skills, and MCP tool integration.

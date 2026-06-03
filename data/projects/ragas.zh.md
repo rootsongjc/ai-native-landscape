@@ -9,7 +9,6 @@ subCategory: evaluation-benchmarks
 tags:
   - Benchmark
 description: Ragas 是一个用于评估与优化 LLM 应用的开源工具包，提供客观度量、测试数据生成与生产级反馈回路。
-logo: ''
 author: ExplodingGradients
 ossDate: '2023-05-08T17:48:04.000Z'
 featured: false

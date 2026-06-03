@@ -12,7 +12,6 @@ tags:
 description: >-
   A high-performance, geo-distributed and federated metadata lake for unified metadata access and governance of data and
   AI assets.
-logo: ''
 author: Apache
 ossDate: '2023-04-23T00:00:00.000Z'
 featured: false

@@ -3,7 +3,7 @@ name: ClawRouter
 slug: clawrouter
 homepage: null
 repo: https://github.com/blockrunai/clawrouter
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: llm-routing-gateways
 tags:
@@ -13,13 +13,11 @@ tags:
 description: >-
   ClawRouter is an agent-native LLM router empowering OpenClaw with smart routing, cost optimization, and micropayments
   support.
-logo: ''
 author: BlockRunAI
 ossDate: '2026-02-03T00:00:00.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 ClawRouter is an agent-native LLM router designed to empower OpenClaw and other AI applications with powerful model routing capabilities. Through intelligent routing algorithms, it automatically distributes requests to the most suitable LLM providers, achieving an optimal balance between performance and cost. ClawRouter supports multiple mainstream LLM providers including OpenAI, Anthropic, Gemini, and DeepSeek, and integrates micropayment functionality supporting stablecoin payments (USDC).

@@ -14,7 +14,6 @@ description: >-
   Paperclip is a Node.js server and React UI that orchestrates a team of AI agents to run a business. It manages org
   charts, budgets, governance, goal alignment, and agent coordination, letting users track their agents' work and costs
   from one dashboard.
-logo: ''
 author: paperclipai
 ossDate: '2026-01-15'
 featured: false

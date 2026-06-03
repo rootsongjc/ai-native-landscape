@@ -12,7 +12,6 @@ tags:
 description: >-
   An open-source collaborative documentation and knowledge platform supporting real-time editing, self-hosting and
   multi-format export.
-logo: ''
 author: La Suite / Suite Numérique
 ossDate: '2024-01-09T14:17:32.000Z'
 featured: false

@@ -10,7 +10,6 @@ tags:
   - Chatbot
   - UI
 description: An LLM frontend for power users featuring a polished chat UI, plugin support, and local/remote model connectivity.
-logo: ''
 author: SillyTavern
 ossDate: '2023-02-09T10:19:24Z'
 featured: false

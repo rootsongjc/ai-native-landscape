@@ -9,7 +9,6 @@ subCategory: evaluation-benchmarks
 tags:
   - Benchmark
 description: lm-evaluation-harness 是一个用于对生成式语言模型进行大规模、可复现评测的框架，支持多种数据集与评测方式，便于研究与基准比较。
-logo: ''
 author: EleutherAI
 ossDate: '2020-08-28T00:09:15.000Z'
 featured: false

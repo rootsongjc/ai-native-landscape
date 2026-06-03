@@ -10,7 +10,6 @@ tags:
   - Dev Tools
   - Workflow
 description: Prefect is a workflow orchestration framework for building resilient data pipelines in Python.
-logo: ''
 author: Prefect
 ossDate: '2018-06-29T21:59:26.000Z'
 featured: false

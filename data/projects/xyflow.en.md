@@ -13,7 +13,6 @@ tags:
 description: >-
   A set of open-source libraries for building node-based UIs with React or Svelte, providing flexible and extensible
   flow editing and rendering capabilities.
-logo: ''
 author: xyflow
 ossDate: '2019-07-15T14:47:30.000Z'
 featured: false

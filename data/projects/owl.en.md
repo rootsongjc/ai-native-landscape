@@ -12,7 +12,6 @@ tags:
 description: >-
   OWL (Optimized Workforce Learning) is an open-source framework for multi-agent collaboration and task automation,
   supporting tool invocation, browser automation, and multimodal processing.
-logo: ''
 author: camel-ai
 ossDate: '2025-03-01T00:00:00.000Z'
 featured: false

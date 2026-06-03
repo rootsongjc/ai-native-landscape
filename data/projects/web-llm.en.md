@@ -12,7 +12,6 @@ tags:
 description: >-
   High-performance in-browser LLM inference engine that leverages WebGPU for hardware-accelerated, privacy-preserving
   inference in the browser.
-logo: ''
 author: mlc-ai
 ossDate: '2023-04-13T18:11:59.000Z'
 featured: false

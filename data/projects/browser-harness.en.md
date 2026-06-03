@@ -3,7 +3,7 @@ name: Browser Harness
 slug: browser-harness
 homepage: https://browser-use.com
 repo: https://github.com/browser-use/browser-harness
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -13,13 +13,11 @@ tags:
 description: >-
   Browser Harness is a minimal self-healing browser harness built on CDP that gives LLMs complete freedom to complete
   any browser task, with agents able to write missing functions at runtime.
-logo: ''
 author: Browser Use
 ossDate: '2026-04-17T01:56:15Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Browser Harness is an open-source, minimal browser harness from the Browser Use team, built directly on the Chrome DevTools Protocol (CDP) to give LLM agents complete browser control. Its core philosophy is "self-healing" — when an agent encounters a missing capability during a browser task (e.g., file upload), it can edit the harness code in real time and add the required function without human intervention. The entire implementation is approximately 592 lines of Python, including installation guides, daily usage instructions, the runtime entry point, helper functions, and the CDP daemon.

@@ -3,7 +3,7 @@ name: Airweave
 slug: airweave
 homepage: https://airweave.ai/
 repo: https://github.com/airweave-ai/airweave
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   Airweave lets agents search any app by connecting to apps, productivity tools, databases and document stores and
   turning their contents into searchable knowledge bases.
-logo: ''
 author: Airweave
 ossDate: '2024-12-24T10:00:06.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 Airweave enables agents to search and retrieve content from apps, productivity tools, databases and document stores. It handles extraction, embedding and serving, exposing a unified search interface via REST API or MCP.

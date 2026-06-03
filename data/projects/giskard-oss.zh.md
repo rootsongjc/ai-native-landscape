@@ -3,19 +3,17 @@ name: Giskard OSS
 slug: giskard-oss
 homepage: https://docs.giskard.ai/en/stable/getting_started/index.html
 repo: https://github.com/giskard-ai/giskard-oss
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: evaluation-benchmarks
 tags:
   - Evaluation
 description: 一款开源的 AI 评估与测试框架，用于自动检测性能、偏差与安全问题。
-logo: ''
 author: Giskard-AI
 ossDate: '2022-03-06T21:45:37.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Giskard 是一个开源的模型评估与测试框架，帮助开发者自动检测 LLM 与传统机器学习模型中的性能、偏差与安全问题，覆盖从 RAG 应用到视觉模型的评估工具链。

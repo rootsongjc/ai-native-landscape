@@ -3,20 +3,18 @@ name: Agent Skills
 slug: agentskills
 homepage: https://agentskills.io
 repo: https://github.com/agentskills/agentskills
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:
   - Agent Framework
   - Reference
 description: 一个用于描述、共享与发现智能体技能（skills）的开源规范与文档集合。
-logo: ''
 author: Anthropic
 ossDate: '2025-12-16T15:47:19Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Agent Skills 提供了一套标准化的规范与文档，用于描述、共享与发现智能体技能。技能是一种为 AI 智能体赋予新能力和专业知识的标准化方式，由说明文档、示例与元数据组成，便于不同智能体实现与复用，提高完成复杂任务时的可组合性与可靠性。

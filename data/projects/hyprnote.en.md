@@ -9,25 +9,31 @@ subCategory: productivity-tools
 tags:
   - Product
 description: Hyprnote is a local-first AI notepad designed for private meetings and privacy-preserving note taking.
-logo: ''
 author: fastrepl
 ossDate: '2024-12-09T02:51:21Z'
 featured: false
 status: tracked
 ---
 
-## Overview
-
-Hyprnote is an open-source AI-powered meeting notes and transcription tool, positioned as a Granola AI alternative that prioritizes privacy and local-first operation. It combines local storage with optional cloud sync to keep sensitive meeting data under user control while providing intelligent features such as automated summaries, transcription, and improved note retrieval for private and professional meetings.
+Hyprnote is an open-source AI-powered meeting notes and transcription tool, positioned as a Granola AI alternative that prioritizes privacy and local-first operation. It combines local storage with optional cloud sync to keep sensitive meeting data under user control while providing intelligent features such as automated summaries and transcription.
 
 ## Key Features
 
-Hyprnote provides local-first storage that keeps data on the user's device by default, an AI meeting assistant that automatically generates concise summaries and highlights, and cross-platform desktop support built with Tauri for a native-like experience. It is fully open-source under GPL-3.0, enabling community contributions and security review.
+- Local-first storage that keeps data on the user's device by default, ensuring sensitive meeting content never leaves the machine
+- AI meeting assistant that automatically generates concise summaries and highlights key discussion points
+- Cross-platform desktop support built with Tauri for a native-like experience on all major operating systems
+- Fully open-source under GPL-3.0, enabling community contributions and independent security review
+- Support for multiple model backends and local inference options to accommodate different privacy requirements
 
 ## Use Cases
 
-Hyprnote is ideal for capturing private meeting notes and generating structured summaries of sensitive discussions, serving as a local-first tool for team collaboration and brainstorming sessions, and organizing academic literature and discussions into searchable, AI-enhanced notes.
+- Capturing private meeting notes and generating structured summaries of sensitive discussions
+- Local-first tool for team collaboration and brainstorming sessions where data sovereignty is critical
+- Organizing academic literature and discussions into searchable, AI-enhanced notes
+- Offline meeting documentation in environments with limited or no internet connectivity
 
-## Technical Details
+## Technical Highlights
 
-Built with modern frontend frameworks and Tauri for native desktop performance, Hyprnote supports multiple model backends and local inference options to accommodate different privacy requirements and performance needs. Its local-first architecture ensures offline availability while optional cloud sync provides flexibility for collaborative workflows.
+- Built with modern frontend frameworks and Tauri for native desktop performance
+- Local-first architecture ensures offline availability with optional cloud sync for collaborative workflows
+- Supports multiple model backends to balance performance needs with privacy constraints

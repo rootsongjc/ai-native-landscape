@@ -11,7 +11,6 @@ tags:
 description: >-
   Suna is the flagship generalist AI worker of the Kortix platform, demonstrating browser automation, document analysis,
   and workflow orchestration for building agent applications.
-logo: ''
 author: Kortix
 ossDate: '2024-10-05T17:01:01.000Z'
 featured: false

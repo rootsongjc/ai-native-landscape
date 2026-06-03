@@ -9,7 +9,6 @@ subCategory: workflow-automation
 tags:
   - Workflow
 description: A library for building stateful, multi-agent applications, creating complex AI workflows based on LangChain.
-logo: ''
 author: LangChain
 ossDate: '2023-08-09T18:33:12.000Z'
 featured: false

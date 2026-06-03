@@ -10,7 +10,6 @@ tags:
   - Application
   - Dev Tools
 description: A single-file, declarative format for defining, distributing, and running reproducible LLM applications.
-logo: ''
 author: Mozilla
 ossDate: '2023-09-10T21:12:32Z'
 featured: false

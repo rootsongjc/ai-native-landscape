@@ -10,7 +10,6 @@ tags:
   - Chatbot
   - Dev Tools
 description: 开源的 ChatGPT 替代品，支持离线运行与多种模型下载与云集成，注重隐私与易用性。
-logo: ''
 author: menloresearch
 ossDate: '2023-08-17T02:17:10.000Z'
 featured: false

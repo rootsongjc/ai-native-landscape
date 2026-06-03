@@ -11,7 +11,6 @@ tags:
 description: >-
   Playwright MCP provides a Playwright-based Model Context Protocol (MCP) server that enables LLMs to interact with web
   pages via structured accessibility snapshots.
-logo: ''
 author: Microsoft
 ossDate: '2025-03-21T17:48:36.000Z'
 featured: false

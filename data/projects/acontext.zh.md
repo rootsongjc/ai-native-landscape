@@ -3,7 +3,7 @@ name: Acontext
 slug: acontext
 homepage: https://acontext.io
 repo: https://github.com/memodb-io/acontext
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: agent-memory-context
 tags:
@@ -13,13 +13,11 @@ tags:
   - Dev Tools
   - Memory
 description: 面向自学习智能体的上下文数据平台，用于存储、观测与沉淀经验。
-logo: ''
 author: MemoDB
 ossDate: '2025-07-16T13:15:48Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Acontext 是一款面向自学习智能体的上下文数据平台，将智能体技能转化为持久化记忆。它统一存储会话上下文、任务记录与产物，通过观测任务行为与用户反馈将经验沉淀为长期记忆，帮助 AI 编码智能体持续自我改进。

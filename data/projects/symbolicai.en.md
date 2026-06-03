@@ -12,7 +12,6 @@ tags:
 description: >-
   SymbolicAI is a neuro-symbolic framework that combines classical Python programming with differentiable, programmable
   LLM capabilities.
-logo: ''
 author: ExtensityAI
 ossDate: '2022-11-30T17:03:09.000Z'
 featured: false

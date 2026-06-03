@@ -11,7 +11,6 @@ tags:
   - Data Lake
   - Table Format
 description: 面向大规模分析表的高性能表格式，提供事务性、快照和多引擎兼容的表存储规范，广泛应用于 AI 数据管线和 ML 特征存储。
-logo: ''
 author: Apache
 ossDate: '2018-11-19T00:00:00.000Z'
 featured: false

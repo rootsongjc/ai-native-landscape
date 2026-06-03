@@ -11,7 +11,6 @@ tags:
   - Inference
   - Search
 description: Vespa 是一个用于 AI 与大数据在线推理与检索的分布式引擎，支持向量搜索、近实时索引与复杂查询。
-logo: ''
 author: vespa-engine
 ossDate: '2016-06-03T20:54:20Z'
 featured: false

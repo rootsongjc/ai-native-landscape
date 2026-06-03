@@ -3,7 +3,7 @@ name: GitHub Copilot CLI
 slug: copilot-cli
 homepage: null
 repo: https://github.com/github/copilot-cli
-license: Unknown
+license: Other
 category: coding-devtools
 subCategory: coding-agents
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   An interactive command-line coding assistant that brings GitHub Copilot into your terminal, improving local
   development efficiency and code understanding.
-logo: ''
 author: GitHub
 ossDate: '2025-09-26T00:00:00.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 GitHub Copilot CLI brings the Copilot coding agent to your terminal. It lets developers collaborate with an AI assistant locally using natural language to build, debug, and refactor code. Deep GitHub integration enables access to repository context, issues, and pull requests, with agentic planning and previewed actions to keep users in control. It is suited for engineers and teams who need rapid prototyping, code navigation, and automation for everyday development workflows.

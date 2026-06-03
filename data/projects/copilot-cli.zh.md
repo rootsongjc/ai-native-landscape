@@ -3,19 +3,17 @@ name: GitHub Copilot CLI
 slug: copilot-cli
 homepage: null
 repo: https://github.com/github/copilot-cli
-license: Unknown
+license: Other
 category: coding-devtools
 subCategory: coding-agents
 tags:
   - Vibe Coding
 description: 在命令行中使用 GitHub Copilot 的交互式编码助手，提升本地开发效率与代码理解能力。
-logo: ''
 author: GitHub
 ossDate: '2025-09-26T00:00:00.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 GitHub Copilot CLI 是将 Copilot 编码代理带入终端的交互式命令行工具，允许开发者在本地通过自然语言与 AI 协作完成编码、调试和重构任务。它与 GitHub 深度集成，可访问仓库上下文、Issue 与 PR，提供计划性、多步骤任务执行能力，同时在执行前展示预览以保持用户对更改的完全控制。该工具适合需要快速原型、代码导航与自动化日常开发流程的工程师和团队。

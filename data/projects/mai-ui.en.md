@@ -16,7 +16,6 @@ tags:
 description: >-
   A GUI-centric agent framework supporting models ranging from 2B to 235B to build interactive agent experiences for
   real-world tasks.
-logo: ''
 author: Tongyi-MAI
 ossDate: '2025-12-15T07:53:22Z'
 featured: false

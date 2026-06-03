@@ -3,20 +3,18 @@ name: Framelink Figma MCP Server
 slug: figma-context-mcp
 homepage: null
 repo: https://github.com/glips/figma-context-mcp
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: mcp-tools
 tags:
   - Dev Tools
   - MCP
 description: An MCP server that simplifies Figma design metadata for AI coding agents like Cursor.
-logo: ''
 author: GLips
 ossDate: '2025-02-13T02:55:06.000Z'
 featured: false
 status: tracked
 ---
-
 The Framelink Figma MCP Server is a Model Context Protocol server implementation that simplifies and translates Figma design metadata for AI coding agents (e.g. Cursor), enabling more accurate one-shot implementation of designs.
 
 ## Key features

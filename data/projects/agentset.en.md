@@ -3,7 +3,7 @@ name: Agentset
 slug: agentset
 homepage: https://agentset.ai
 repo: https://github.com/agentset-ai/agentset
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   An open-source platform for retrieval-augmented generation (RAG) that simplifies multi-format ingestion, partitioning,
   and citation-aware retrieval.
-logo: ''
 author: Agentset
 ossDate: '2025-03-10T04:52:13Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Agentset is an open-source RAG platform that helps developers and researchers build citation-aware agents with deep research capabilities. It supports 22+ file formats out of the box and provides built-in citations, partitions, and an MCP server to streamline connecting external knowledge into an agent's context for improved accuracy and traceability.

@@ -3,19 +3,17 @@ name: Data Prep Kit
 slug: data-prep-kit
 homepage: https://data-prep-kit.github.io/data-prep-kit/
 repo: https://github.com/data-prep-kit/data-prep-kit
-license: Unknown
+license: MIT
 category: models-modalities
 subCategory: foundation-models
 tags:
   - Data
 description: Data Prep Kit 用于为 LLM 应用加速非结构化数据的清洗、转换与增强。
-logo: ''
 author: Data Prep Kit / IBM Research
 ossDate: '2024-04-08T23:43:52.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Data Prep Kit 是一个开源工具包，旨在加速面向生成式 AI 的非结构化数据准备工作，支持从笔记本到数据中心的可扩展处理流程，可用于预训练、微调、指令微调和 RAG 应用的数据处理。

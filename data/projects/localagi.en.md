@@ -11,7 +11,6 @@ tags:
   - Agents
   - Dev Tools
 description: LocalAGI is a self-hostable agent platform focused on privacy, local execution, and extensibility.
-logo: ''
 author: mudler
 ossDate: '2023-07-27T23:21:36Z'
 featured: false

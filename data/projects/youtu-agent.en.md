@@ -10,7 +10,6 @@ tags:
   - Agent Framework
   - Agents
 description: Youtu-Agent is an open-source agent framework published by Tencent Cloud, aimed at research and engineering use.
-logo: ''
 author: Tencent Cloud
 ossDate: '2025-08-21T07:58:13Z'
 featured: false

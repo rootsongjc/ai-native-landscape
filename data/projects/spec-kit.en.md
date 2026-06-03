@@ -9,7 +9,6 @@ subCategory: coding-agents
 tags:
   - Vibe Coding
 description: Build high-quality software faster with Spec-Driven Development.
-logo: ''
 author: GitHub
 ossDate: '2025-08-21T22:54:31.000Z'
 featured: false
@@ -29,11 +28,9 @@ Spec-Driven Development flips the script on traditional software development:
 
 ## Development Phases
 
-| Phase | Description | Use Cases |
-|-------|-------------|-----------|
-| 0-to-1 Development | Generate from scratch | New projects, high-level requirements to specifications |
-| Creative Exploration | Parallel implementations | Diverse solutions, technology stack experimentation |
-| Iterative Enhancement | Brownfield modernization | Feature additions, legacy system modernization |
+- **0-to-1 Development** — Generate from scratch — New projects, high-level requirements to specifications
+- **Creative Exploration** — Parallel implementations — Diverse solutions, technology stack experimentation
+- **Iterative Enhancement** — Brownfield modernization — Feature additions, legacy system modernization
 
 ## Key Features
 

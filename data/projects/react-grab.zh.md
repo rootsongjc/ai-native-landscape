@@ -12,7 +12,6 @@ tags:
   - Plugin
   - Vibe Coding
 description: 直接从网站选择代码上下文，为 AI 编码助手提供精准的元素信息，使 Cursor、Claude Code、Copilot 等工具运行速度提升 3 倍。
-logo: ''
 author: Aiden Bai
 ossDate: '2025-01-15'
 featured: true

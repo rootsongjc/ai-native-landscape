@@ -11,7 +11,6 @@ tags:
 description: >-
   AI's query engine - Platform for building AI that can answer questions over large scale federated data - The only MCP
   Server you'll ever need.
-logo: ''
 author: MindsDB
 ossDate: '2018-08-02T17:56:45.000Z'
 featured: false

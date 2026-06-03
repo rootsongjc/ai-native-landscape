@@ -3,7 +3,7 @@ name: Composio
 slug: composio
 homepage: https://composio.dev/
 repo: https://github.com/composiohq/composio
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   SDKs and a platform that connect agents and LLMs to 500+ integrations, offering TypeScript and Python SDKs plus the
   MCP-based Rube server.
-logo: ''
 author: Composio
 ossDate: '2024-02-23T13:58:27.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 Composio provides SDKs and a platform to enable agentic applications and tool calling. It includes TypeScript and Python SDKs, a tool router, and MCP-based services such as Rube that connect LLMs and agents to 500+ apps (Gmail, Slack, Notion, etc.).

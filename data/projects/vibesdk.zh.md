@@ -9,7 +9,6 @@ subCategory: ide-cli-tools
 tags:
   - Dev Tools
 description: 一个开源的 AI 应用生成与部署平台，允许通过自然语言快速生成、预览并部署前端/后端应用。
-logo: ''
 author: Cloudflare
 ossDate: '2025-08-25T15:07:31.000Z'
 featured: false

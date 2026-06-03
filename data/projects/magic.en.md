@@ -11,7 +11,6 @@ tags:
 description: >-
   The first open-source all-in-one AI productivity platform (Generalist AI Agent + Workflow Engine + IM + Online
   collaborative office system)
-logo: ''
 author: dtyq
 ossDate: '2025-05-14T22:04:29.000Z'
 featured: false

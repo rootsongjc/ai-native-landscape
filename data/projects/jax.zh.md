@@ -11,7 +11,6 @@ tags:
   - Optimization
   - Training
 description: 用于加速数值计算与可微变换的高性能 Python 库，适用于规模化机器学习与研究。
-logo: ''
 author: JAX Community
 ossDate: '2018-01-01T00:00:00.000Z'
 featured: false

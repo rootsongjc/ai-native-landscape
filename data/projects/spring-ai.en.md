@@ -12,7 +12,6 @@ tags:
 description: >-
   An application framework for AI engineering, providing Spring-native integrations for models, vector stores, and
   production-ready observability.
-logo: ''
 author: Spring
 ossDate: '2023-06-27T00:00:00.000Z'
 featured: false

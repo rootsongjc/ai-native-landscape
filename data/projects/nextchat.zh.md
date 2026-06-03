@@ -9,7 +9,6 @@ subCategory: chat-interfaces
 tags:
   - Chatbot
 description: NextChat 是一个轻量且快速的开源跨平台 AI 聊天助手，支持自托管与多种云端模型接入。
-logo: ''
 author: ChatGPTNextWeb
 ossDate: '2023-03-10T18:27:54.000Z'
 featured: false

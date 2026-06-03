@@ -3,20 +3,18 @@ name: DroidRun
 slug: droidrun
 homepage: https://droidrun.ai
 repo: https://github.com/droidrun/droidrun
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:
   - CLI
   - Utility
 description: 一个面向移动设备的开源自动化框架，允许通过自然语言指令驱动手机操作并集成模型与检索。
-logo: ''
 author: DroidRun
 ossDate: '2025-04-12T22:03:47Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 DroidRun 是一个面向移动设备的开源自动化框架，支持通过自然语言指令驱动手机操作，构建 LLM 无关的移动智能体应用。它将模型推理、语义检索与设备控制相结合，实现从自然语言到触控事件的端到端自动化。

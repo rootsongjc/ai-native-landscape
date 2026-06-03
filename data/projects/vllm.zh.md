@@ -11,7 +11,6 @@ tags:
   - Dev Tools
   - LLM
 description: 面向大模型的高吞吐、内存高效推理与服务引擎。
-logo: ''
 author: vLLM Project
 ossDate: '2023-02-09T11:23:20.000Z'
 featured: true

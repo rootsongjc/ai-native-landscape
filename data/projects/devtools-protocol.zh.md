@@ -3,19 +3,17 @@ name: Chrome DevTools Protocol
 slug: devtools-protocol
 homepage: https://chromedevtools.github.io/devtools-protocol/
 repo: https://github.com/chromedevtools/devtools-protocol
-license: Unknown
+license: Other
 category: coding-devtools
 subCategory: developer-utilities
 tags:
   - Dev Tools
 description: Chrome DevTools Protocol 是用于浏览器与调试工具之间通信的开放协议，定义了 DevTools 的命令、事件与类型。
-logo: ''
 author: Google
 ossDate: '2017-03-28T18:01:17.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Chrome DevTools Protocol（CDP）是一个开放且稳定的协议规范，定义了浏览器和调试工具之间交换命令、事件与数据的结构。它为 DevTools、自动化脚本、调试代理和第三方工具提供统一的接口，使得开发者可以以编程方式访问页面元素、网络层、性能分析、DOM/JS 调试等功能，从而构建诊断、测试和自动化工具。

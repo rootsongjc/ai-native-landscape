@@ -14,7 +14,6 @@ tags:
 description: >-
   Weaviate is an open-source, cloud-native vector database for storing objects and vectors, enabling scalable semantic
   search and structured filtering for AI applications.
-logo: ''
 author: Weaviate
 ossDate: '2016-03-30T15:03:17.000Z'
 featured: false

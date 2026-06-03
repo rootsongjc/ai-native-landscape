@@ -3,20 +3,18 @@ name: Claude Code Router
 slug: claude-code-router
 homepage: null
 repo: https://github.com/musistudio/claude-code-router
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: llm-routing-gateways
 tags:
   - Dev Tools
   - Utility
 description: 智能代码路由工具，优化 Claude AI 在代码开发中的请求分发和响应处理，提升开发效率。
-logo: ''
 author: Musi Studio
 ossDate: '2025-02-25T02:17:18.000Z'
 featured: false
 status: tracked
 ---
-
 Claude Code Router 是一个专为 Claude AI 代码开发场景设计的智能路由工具，旨在优化 AI 请求的分发和处理流程。该工具通过智能路由算法，能够根据代码任务的复杂度、类型和优先级，将请求分发到最适合的 Claude 模型实例，从而提升整体开发效率和响应质量。
 
 ## 项目特色

@@ -14,7 +14,6 @@ description: >-
   Hermes Agent is an open-source, self-improving AI agent by Nous Research with a built-in learning loop, autonomous
   skill creation and refinement, cross-session memory retrieval, multi-platform messaging gateway, and scheduled
   automations, deployable from a $5 VPS to GPU clusters.
-logo: ''
 author: Nous Research
 ossDate: '2025-07-22T22:22:28Z'
 featured: false

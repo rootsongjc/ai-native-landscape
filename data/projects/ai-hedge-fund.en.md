@@ -3,7 +3,7 @@ name: AI Hedge Fund
 slug: ai-hedge-fund
 homepage: null
 repo: https://github.com/virattt/ai-hedge-fund
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   A proof-of-concept, agent-driven quantitative research project offering backtesting, CLI, and a web app to explore
   AI-assisted stock selection and risk control.
-logo: ''
 author: virattt
 ossDate: '2024-11-29T16:30:01Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 AI Hedge Fund is a proof-of-concept project demonstrating an AI-powered hedge fund using multiple specialized agents for trading decisions. It showcases how agents focused on valuation, sentiment, fundamentals, and technicals can collaborate to produce trading signals. The project provides both a CLI and an optional web application for backtesting and strategy validation, emphasizing reproducible research and educational exploration.

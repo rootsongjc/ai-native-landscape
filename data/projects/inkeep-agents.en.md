@@ -12,7 +12,6 @@ tags:
 description: >-
   Inkeep Agents is a framework for creating AI agents via a no-code visual builder and a TypeScript SDK, with full
   two-way sync for shipping assistants and multi-agent workflows.
-logo: ''
 author: Inkeep
 ossDate: '2025-09-05T12:23:24.000Z'
 featured: false

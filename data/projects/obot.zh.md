@@ -9,7 +9,6 @@ subCategory: llm-routing-gateways
 tags:
   - AI Gateway
 description: 开源的 MCP 网关与 AI 平台，支持自托管或云端部署，提供聊天、管理与审计功能。
-logo: ''
 author: obot-platform
 ossDate: '2024-09-05T19:50:46.000Z'
 featured: false

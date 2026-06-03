@@ -12,7 +12,6 @@ tags:
 description: >-
   Agent Lightning is an open-source framework from Microsoft Research for training and improving AI agents with minimal
   code changes.
-logo: ''
 author: Microsoft Research
 ossDate: '2025-06-18T07:28:45.000Z'
 featured: false

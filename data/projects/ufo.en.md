@@ -12,7 +12,6 @@ tags:
 description: >-
   UFO is an open-source Desktop AgentOS for Windows that turns natural-language requests into reliable,
   multi-application workflows.
-logo: ''
 author: Microsoft
 ossDate: '2024-01-08T05:07:52.000Z'
 featured: false

@@ -14,7 +14,6 @@ tags:
   - Claude Code
   - AI Agent
 description: 754 structured cybersecurity skills for AI agents mapped to 5 frameworks including MITRE ATT&CK, NIST CSF 2.0, and MITRE ATLAS.
-logo: ''
 author: mukul975
 ossDate: '2026-02-25T09:47:50Z'
 featured: false

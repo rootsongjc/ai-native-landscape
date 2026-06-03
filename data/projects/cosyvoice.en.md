@@ -3,7 +3,7 @@ name: CosyVoice
 slug: cosyvoice
 homepage: https://funaudiollm.github.io/cosyvoice3/
 repo: https://github.com/funaudiollm/cosyvoice
-license: Unknown
+license: Apache-2.0
 category: models-modalities
 subCategory: audio-speech
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   Multilingual, high-quality streaming TTS / speech generation toolkit supporting zero-shot cloning and low-latency
   generation.
-logo: ''
 author: FunAudioLLM
 ossDate: '2024-07-03T02:59:22.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 CosyVoice is a multilingual streaming text-to-speech (TTS) generation library supporting zero-shot voice cloning, low-latency streaming synthesis, and cross-language generation. It is suitable for both online and offline deployment.

@@ -12,7 +12,6 @@ tags:
 description: >-
   A tool to scan MCP servers and tools for potential security issues, using multi-engine analysis and customizable
   reporting.
-logo: ''
 author: Cisco AI Defense
 ossDate: '2025-09-24T01:02:24.000Z'
 featured: false

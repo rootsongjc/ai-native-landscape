@@ -9,7 +9,6 @@ subCategory: retrieval-indexing
 tags:
   - RAG
 description: PandaWiki 是一个基于大模型驱动的开源知识库系统，帮助快速搭建面向文档、FAQ 与博客的智能知识中心。
-logo: ''
 author: Chaitin
 ossDate: '2025-05-15T12:55:40.000Z'
 featured: false

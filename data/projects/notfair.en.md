@@ -12,7 +12,6 @@ tags:
   - Marketing
   - Skills
 description: Open-source Claude Code skills for SEO, GEO, Google Ads, and Meta Ads automation.
-logo: ''
 author: Nowork Studio
 ossDate: '2026-03-27T00:00:00Z'
 featured: false

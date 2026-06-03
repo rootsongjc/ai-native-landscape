@@ -12,7 +12,6 @@ tags:
   - Vibe Coding
   - Workflow
 description: Shotgun 是一个 CLI 工具，能够将您想要开发的内容转化为研究 → 规格 → 计划 → 任务 → 实现的完整流程，具备全面的代码库理解能力。
-logo: ''
 author: shotgun-sh
 ossDate: '2025-08-25T00:00:00.000Z'
 featured: false

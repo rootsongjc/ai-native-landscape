@@ -12,7 +12,6 @@ tags:
 description: >-
   A reactive Python notebook for data work that supports executable scripts, interactive UI, and AI-assisted cell
   generation.
-logo: ''
 author: Marimo Team
 ossDate: '2021-01-01T00:00:00.000Z'
 featured: false

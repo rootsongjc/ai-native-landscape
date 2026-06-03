@@ -12,7 +12,6 @@ tags:
   - Safety
   - Sandbox
 description: NVIDIA OpenShell 是面向自主 AI 智能体的安全、私密运行时环境，通过声明式 YAML 策略提供沙箱隔离执行，保护用户数据、凭证与基础设施免受未授权访问。
-logo: ''
 author: NVIDIA
 ossDate: '2026-02-24'
 featured: true

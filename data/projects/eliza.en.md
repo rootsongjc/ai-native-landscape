@@ -3,7 +3,7 @@ name: ElizaOS
 slug: eliza
 homepage: https://eliza.how/
 repo: https://github.com/elizaos/eliza
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-orchestration
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   ElizaOS is an open-source, extensible platform for building, deploying, and managing multi-agent AI applications,
   offering CLI tooling, a web dashboard, and plugin-based extensibility.
-logo: ''
 author: ElizaOS
 ossDate: '2023-08-01T00:00:00.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 ElizaOS is a comprehensive open-source platform designed for creating and operating multi-agent AI applications. It bundles a CLI, web dashboard, and modular plugins, enabling quick setup of agents, integrations, and document ingestion for RAG scenarios.

@@ -11,7 +11,6 @@ tags:
 description: >-
   VSCode Copilot Chat is an open-source extension from Microsoft that brings Copilot’s conversational coding
   capabilities into Visual Studio Code.
-logo: ''
 author: Microsoft
 ossDate: '2025-06-10T16:21:19Z'
 featured: false

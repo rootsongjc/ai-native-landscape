@@ -15,7 +15,6 @@ tags:
 description: >-
   RTK is a high-performance CLI proxy tool that reduces LLM token consumption by 60-90% through intelligent command-line
   output compression, significantly improving AI coding assistant efficiency and lowering costs.
-logo: ''
 author: rtk-ai
 ossDate: '2026-01-22'
 featured: false

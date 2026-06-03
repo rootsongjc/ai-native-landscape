@@ -13,7 +13,6 @@ tags:
   - Connector
   - Memory
 description: OpenHuman 是一款开源的个人 AI 超级智能助手，注重隐私保护，界面简洁且功能强大，支持 118+ 第三方服务集成、本地记忆树、Obsidian 知识库及原生语音交互。
-logo: ''
 author: senamakel
 ossDate: '2025-04-01'
 featured: false

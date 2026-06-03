@@ -12,7 +12,6 @@ tags:
 description: >-
   memU is an open-source memory framework for AI companions, offering high accuracy, fast retrieval, and low cost for
   personalized AI experiences.
-logo: ''
 author: NevaMind-AI
 ossDate: '2025-07-29T01:54:40.000Z'
 featured: false

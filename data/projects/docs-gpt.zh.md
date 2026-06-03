@@ -3,20 +3,18 @@ name: DocsGPT
 slug: docs-gpt
 homepage: https://app.docsgpt.cloud/
 repo: https://github.com/arc53/docsgpt
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:
   - Agents
   - RAG
 description: 一个开源的企业级文档智能体平台，结合 RAG 与多模型支持以提供带来源引用的文档问答。
-logo: ''
 author: arc53
 ossDate: '2023-02-02T11:03:23Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 DocsGPT 是一个面向企业与研究的私有 AI 平台，内置 Agent Builder、深度研究与文档分析功能，支持智能体、助手与企业搜索场景。它结合检索增强生成（RAG）与大语言模型，跨多种文档格式提供带来源引用的可靠答案。

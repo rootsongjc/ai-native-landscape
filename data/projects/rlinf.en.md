@@ -12,7 +12,6 @@ tags:
 description: >-
   RLinf is a flexible and scalable open-source RL infrastructure designed for Embodied and Agentic AI, supporting PPO,
   GRPO, SAC and more, with seamless scaling to large GPU clusters.
-logo: ''
 author: RLinf Team
 ossDate: '2025-08-15T00:00:00.000Z'
 featured: true

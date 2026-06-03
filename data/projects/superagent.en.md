@@ -10,7 +10,6 @@ tags:
   - Dev Tools
   - Security
 description: A secure proxy between apps, models and tools that enforces runtime protections and validates tool calls.
-logo: ''
 author: Superagent
 ossDate: '2023-05-10T18:50:39.000Z'
 featured: false

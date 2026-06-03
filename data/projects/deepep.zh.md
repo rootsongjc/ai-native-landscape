@@ -3,19 +3,17 @@ name: DeepEP
 slug: deepep
 homepage: null
 repo: https://github.com/deepseek-ai/deepep
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: sdk-frameworks
 tags:
   - Middleware
 description: 用于专家并行（expert-parallel）的高效通信库，提供针对大规模分布式训练的低开销通信原语。
-logo: ''
 author: DeepSeek
 ossDate: '2025-02-17T01:33:04.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 DeepEP 是为专家并行（expert-parallel）训练场景设计的高效通信库，目标是在大规模分布式训练中显著降低通信延迟和带宽成本，从而提高整体训练吞吐量与资源利用率。它提供一组轻量但功能完备的通信原语，便于在复杂并行策略中替换或优化默认的通信层。

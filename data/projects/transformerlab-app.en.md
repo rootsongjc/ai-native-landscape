@@ -12,7 +12,6 @@ tags:
 description: >-
   Explore Transformer Lab, the open-source app for downloading and fine-tuning large models locally or in the cloud with
   powerful tools and multi-engine support.
-logo: ''
 author: Transformer Lab
 ossDate: '2023-12-24T22:09:14.000Z'
 featured: false

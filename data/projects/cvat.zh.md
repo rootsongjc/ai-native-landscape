@@ -3,20 +3,18 @@ name: CVAT
 slug: cvat
 homepage: https://cvat.ai
 repo: https://github.com/cvat-ai/cvat
-license: Unknown
+license: MIT
 category: platform-infra
 subCategory: data-platforms
 tags:
   - Data
   - Dev Tools
 description: CVAT 是行业领先的视觉数据标注引擎，适用于任意规模的数据标注任务。
-logo: ''
 author: CVAT
 ossDate: '2018-06-29T14:02:45.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 CVAT（Computer Vision Annotation Tool）是一个专业的视觉数据标注平台，支持目标检测、语义分割、关键点检测等多种标注任务。它为团队提供了从任务创建、分配、标注到审核与导出的完整工作流，适用于研究和产业级的数据准备场景。

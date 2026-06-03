@@ -3,20 +3,18 @@ name: EasyR1
 slug: easy-r1
 homepage: https://verl.readthedocs.io/en/latest/index.html
 repo: https://github.com/hiyouga/easyr1
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: training-frameworks
 tags:
   - ML Platform
   - Training
 description: EasyR1 是一个高效、可扩展的多模态强化学习训练框架，基于 veRL 设计并支持大模型与视觉 - 语言模型的训练与评估。
-logo: ''
 author: hiyouga
 ossDate: '2025-02-22T04:17:31Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 EasyR1 是一个基于 veRL 的高效、可扩展多模态强化学习训练框架，专为推理模型优化。它集成了 HybridEngine 与 vLLM SPMD 等工程化优化，支持大规模语言模型与视觉-语言模型的 RL 训练与评估。

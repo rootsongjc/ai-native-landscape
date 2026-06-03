@@ -3,19 +3,17 @@ name: Docling
 slug: docling
 homepage: https://docling-project.github.io/docling/
 repo: https://github.com/docling-project/docling
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:
   - Utility
 description: 面向通用文档理解与转换的开源框架，支持 PDF、DOCX、图片、音频等多种格式的解析与结构化输出。
-logo: ''
 author: Docling
 ossDate: '2024-07-09T07:50:26.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Docling 是一个开源的文档解析与理解框架，旨在将异构文档（PDF、DOCX、PPTX、HTML、图像、音频等）转换为统一的结构化表示，便于下游知识抽取、RAG（检索增强生成）与检索索引构建。它集成了 OCR、版面分析、表格识别与多格式转换能力，同时提供本地执行以满足隐私与离线场景需求。

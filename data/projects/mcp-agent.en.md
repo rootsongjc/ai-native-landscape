@@ -12,7 +12,6 @@ tags:
 description: >-
   A lightweight, composable agent framework built around the Model Context Protocol (MCP) to quickly assemble
   multi-agent, tool-enabled workflows.
-logo: ''
 author: lastmile-ai
 ossDate: '2024-12-18T01:55:10.000Z'
 featured: false

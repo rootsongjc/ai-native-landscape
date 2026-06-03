@@ -3,7 +3,7 @@ name: ChatGPT on WeChat
 slug: chatgpt-on-wechat
 homepage: null
 repo: https://github.com/zhayujie/chatgpt-on-wechat
-license: Unknown
+license: Other
 category: applications-products
 subCategory: chat-interfaces
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   An open-source project that integrates ChatGPT into WeChat, enabling LLM-powered interactions within the WeChat
   environment.
-logo: ''
 author: zhayujie
 ossDate: '2022-08-07T08:33:41.000Z'
 featured: false
 status: tracked
 ---
-
 ChatGPT on WeChat is an open-source project that brings ChatGPT-style conversational AI into the WeChat platform. It lets users interact with large language models directly from WeChat messages, making it practical to build chat assistants, automated responders, and lightweight conversational integrations inside the WeChat ecosystem.
 
 ## Key features

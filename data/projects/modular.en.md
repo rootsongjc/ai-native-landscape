@@ -12,7 +12,6 @@ tags:
 description: >-
   An open, production-grade AI platform including the MAX inference server and Mojo libraries to accelerate model
   deployment across hardware.
-logo: ''
 author: Modular
 ossDate: '2023-04-28T22:17:24.000Z'
 featured: false

@@ -11,7 +11,6 @@ tags:
 description: >-
   OpenEvolve is an open-source evolutionary coding and discovery framework that combines evolutionary algorithms with
   LLMs to discover and optimize code and algorithms.
-logo: ''
 author: OpenEvolve
 ossDate: '2025-05-15T11:46:52.000Z'
 featured: false

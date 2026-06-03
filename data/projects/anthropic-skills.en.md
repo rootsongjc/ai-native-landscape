@@ -11,7 +11,6 @@ tags:
   - Agents
   - Tool
 description: An open-source library from Anthropic for defining, sharing, and reusing task-oriented capability modules.
-logo: ''
 author: Anthropic
 ossDate: '2025-09-22T15:53:31Z'
 featured: false

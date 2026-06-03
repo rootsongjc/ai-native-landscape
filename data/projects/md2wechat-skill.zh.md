@@ -14,7 +14,6 @@ tags:
   - Claude Code
   - Go
 description: Markdown 转微信公众号排版工具，支持 40+ 排版样式、AI 配图和批量发布。
-logo: ''
 author: geekjourneyx
 ossDate: '2026-01-11T06:36:13Z'
 featured: false

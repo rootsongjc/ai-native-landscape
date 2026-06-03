@@ -12,7 +12,6 @@ tags:
 description: >-
   Opik is an open-source LLM evaluation and observability platform that helps teams build, evaluate and optimize LLM
   applications.
-logo: ''
 author: Comet
 ossDate: '2023-05-10T12:57:13.000Z'
 featured: false

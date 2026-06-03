@@ -11,7 +11,6 @@ tags:
 description: >-
   An open-source tool that turns natural language into locally executable code and commands, offering an interactive
   terminal and developer assistant capabilities.
-logo: ''
 author: Open Interpreter Contributors
 ossDate: '2023-07-14T07:10:44.000Z'
 featured: false

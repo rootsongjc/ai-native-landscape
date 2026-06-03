@@ -13,7 +13,6 @@ tags:
   - Tool
   - Utility
 description: RTK 是一款高性能 CLI 代理工具，通过智能压缩命令行输出，将 LLM Token 消耗降低 60-90%，显著提升 AI 编程助手的效率并降低成本。
-logo: ''
 author: rtk-ai
 ossDate: '2026-01-22'
 featured: false

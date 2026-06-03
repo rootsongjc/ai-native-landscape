@@ -3,19 +3,17 @@ name: Data Prep Kit
 slug: data-prep-kit
 homepage: https://data-prep-kit.github.io/data-prep-kit/
 repo: https://github.com/data-prep-kit/data-prep-kit
-license: Unknown
+license: MIT
 category: models-modalities
 subCategory: foundation-models
 tags:
   - Data
 description: Data Prep Kit accelerates unstructured data preparation for LLM applications.
-logo: ''
 author: Data Prep Kit / IBM Research
 ossDate: '2024-04-08T23:43:52.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Data Prep Kit is an open-source toolkit designed to accelerate preparation of unstructured data for LLM development. It provides transforms, recipes, and scalable pipelines suitable for pretraining, fine-tuning, instruction tuning, and RAG workflows.

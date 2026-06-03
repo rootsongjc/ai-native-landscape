@@ -3,19 +3,17 @@ name: Chatbox
 slug: chatbox
 homepage: https://chatboxai.app?utm_medium=github
 repo: https://github.com/chatboxai/chatbox
-license: Unknown
+license: GPL-3.0
 category: applications-products
 subCategory: chat-interfaces
 tags:
   - Chatbot
 description: 面向桌面端的用户友好型 AI 模型客户端，支持主流 LLM（如 GPT、Claude、Gemini 等）。
-logo: ''
 author: Chatbox AI
 ossDate: '2023-03-06T12:22:15.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Chatbox 是一款面向桌面端的 AI 模型客户端，旨在为用户提供与多种 LLM（包括 GPT、Claude、Gemini、Ollama 等）交互的统一、易用界面。它聚焦于本地体验与模型兼容性，让用户在桌面环境中便捷地试验与使用多种模型。

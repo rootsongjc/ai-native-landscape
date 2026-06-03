@@ -11,7 +11,6 @@ tags:
   - Self-hosted
   - Productivity
 description: Self-hosted AI workspace for managing and interacting with AI models and tools in a unified interface.
-logo: ''
 author: pewdiepie-archdaemon
 ossDate: '2026-05-31'
 featured: false

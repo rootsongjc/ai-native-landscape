@@ -3,7 +3,7 @@ name: AstrBot
 slug: astrbot
 homepage: https://astrbot.app
 repo: https://github.com/astrbotdevs/astrbot
-license: Unknown
+license: AGPL-3.0
 category: applications-products
 subCategory: chat-interfaces
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   An all-in-one LLM chatbot platform and development framework that supports multi-channel integration, knowledge bases,
   and multiple model backends.
-logo: ''
 author: AstrBotDevs
 ossDate: '2022-12-08T13:27:46.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 AstrBot is a developer- and operator-focused all-in-one LLM chatbot platform and framework that supports integrations with QQ, Telegram, Enterprise WeChat, and other channels. It integrates knowledge bases, MCP server support, and various model backends (OpenAI, Gemini, Ollama, etc.), lowering the barrier for multi-channel bot development and deployment.

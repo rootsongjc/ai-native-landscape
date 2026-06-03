@@ -15,25 +15,33 @@ tags:
 description: >-
   An open-source accelerated engine for time-series and data-grounded AI, offering SQL queries, full-text search, and
   LLM inference.
-logo: ''
 author: Spice.ai
 ossDate: '2021-08-08T23:26:13Z'
 featured: false
 status: tracked
 ---
 
-## Overview
-
 Spice.ai is an open-source data and AI engine written in Rust that provides accelerated SQL queries, full-text search, and LLM inference in a single portable runtime. It is designed to embed data-grounded machine learning and retrieval-augmented generation directly into production applications with minimal latency.
 
 ## Key Features
 
-Spice.ai delivers fast SQL query acceleration and time-series feature processing for building real-time data features from raw sources, alongside integrated LLM inference for data-grounded generation and retrieval-augmented workflows. Its portable, low-latency runtime runs across cloud, containerized, and edge environments, complemented by developer-friendly SDKs and tooling for rapid integration.
+- Fast SQL query acceleration and time-series feature processing from raw data sources
+- Integrated LLM inference for data-grounded generation and retrieval-augmented workflows
+- Portable, low-latency runtime deployable across cloud, containerized, and edge environments
+- Hybrid retrieval and re-ranking capabilities for high-quality search results
+- Developer-friendly SDKs and tooling for rapid integration into existing applications
 
 ## Use Cases
 
-Engineering teams deploy Spice.ai as a real-time decision layer in applications such as monitoring and alerting systems, predictive maintenance, personalized recommendations, and financial risk detection. It is particularly effective when model inference needs to happen close to the data source to meet strict latency requirements.
+- Real-time decision layer in monitoring and alerting systems
+- Predictive maintenance and anomaly detection close to the data source
+- Personalized recommendation engines requiring sub-second inference latency
+- Financial risk detection and fraud prevention with strict latency requirements
+- Retrieval-augmented generation workflows that need co-located data and model inference
 
 ## Technical Details
 
-The engine is built primarily in Rust for high throughput and memory safety, featuring hybrid retrieval and re-ranking capabilities alongside plugin-based inference backends that support multiple model providers. It ships with production-focused deployment guides and container images, and is licensed under Apache-2.0 for broad industrial adoption.
+- Built primarily in Rust for high throughput and memory safety
+- Plugin-based inference backends supporting multiple model providers
+- Ships with production-focused deployment guides and container images
+- Licensed under Apache-2.0 for broad industrial adoption

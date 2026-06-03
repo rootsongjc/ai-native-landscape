@@ -10,7 +10,6 @@ tags:
   - Dev Tools
   - Inference
 description: RamaLama 是一个通过 OCI 容器简化本地与生产环境 AI 模型部署与推理的开源工具。
-logo: ''
 author: containers
 ossDate: '2023-06-01T00:00:00.000Z'
 featured: false

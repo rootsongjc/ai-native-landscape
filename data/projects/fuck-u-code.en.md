@@ -3,19 +3,17 @@ name: fuck-u-code
 slug: fuck-u-code
 homepage: null
 repo: https://github.com/done-0/fuck-u-code
-license: Unknown
+license: MIT
 category: training-optimization
 subCategory: evaluation-benchmarks
 tags:
   - Benchmark
 description: A static analysis tool that assesses codebase 'legacy-mess' and generates readable Markdown reports.
-logo: ''
 author: Done-0
 ossDate: '2025-06-25T16:40:22.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 fuck-u-code is a static analysis tool focused on assessing the "legacy-mess" level of codebases and producing beautiful, Markdown-formatted reports. It supports multiple languages (primarily Go) and is designed for local and CI usage.

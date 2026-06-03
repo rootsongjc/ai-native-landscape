@@ -3,7 +3,7 @@ name: Faiss
 slug: faiss
 homepage: https://faiss.ai/
 repo: https://github.com/facebookresearch/faiss
-license: Unknown
+license: MIT
 category: platform-infra
 subCategory: data-platforms
 tags:
@@ -13,13 +13,11 @@ tags:
 description: >-
   A high-performance library for similarity search and clustering of dense vectors, suitable for large-scale vector
   retrieval.
-logo: ''
 author: Faiss (facebookresearch)
 ossDate: '2017-02-07T16:07:05.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 Faiss is an open-source library by Meta for efficient similarity search and clustering of dense vectors. It provides CPU and GPU implementations, scales from small collections to billions of vectors, and offers both Python and C++ interfaces for integration into retrieval, recommendation, and similarity search systems.

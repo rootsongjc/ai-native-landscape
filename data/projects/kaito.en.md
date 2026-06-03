@@ -15,7 +15,6 @@ tags:
 description: >-
   Kaito is a Kubernetes AI Toolchain Operator that automates deployment and management of large-model inference and
   tuning workflows, with built-in RAG support and node auto-provisioning.
-logo: ''
 author: kaito-project
 ossDate: '2023-09-09T01:53:38.000Z'
 featured: false

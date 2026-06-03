@@ -14,7 +14,6 @@ tags:
 description: >-
   Vibium gives AI agents and developers a lightweight browser automation runtime with CLI, MCP server, and client
   libraries.
-logo: ''
 author: VibiumDev
 ossDate: '2026-02-13T00:00:00Z'
 featured: false

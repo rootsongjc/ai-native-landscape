@@ -3,7 +3,7 @@ name: Docling
 slug: docling
 homepage: https://docling-project.github.io/docling/
 repo: https://github.com/docling-project/docling
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   Docling: an open-source framework for document understanding and conversion, supporting PDFs, DOCX, images, audio and
   more.
-logo: ''
 author: Docling
 ossDate: '2024-07-09T07:50:26.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 Docling is an open-source document parsing and understanding framework designed to convert heterogeneous documents (PDF, DOCX, PPTX, HTML, images, audio, etc.) into a unified, structured representation for downstream knowledge extraction, RAG (retrieval-augmented generation) and search index construction. It bundles OCR, layout analysis, table recognition and multi-format conversion, and supports local execution for privacy-sensitive or air-gapped environments.

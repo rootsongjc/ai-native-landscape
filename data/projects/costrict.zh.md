@@ -3,7 +3,7 @@ name: Costrict
 slug: costrict
 homepage: https://costrict.ai
 repo: https://github.com/zgsm-ai/costrict
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: coding-agents
 tags:
@@ -11,13 +11,11 @@ tags:
   - Code Agent
   - Vibe Coding
 description: Costrict（前身为 Shenma）是深信服开源的企业级 AI 编程助手，以"严肃编程"为核心理念，提供严格模式、代码审查、代码补全等能力，支持私有化部署。
-logo: ''
 author: 深信服 (Sangfor)
 ossDate: '2025-04-10T02:06:51Z'
 featured: false
 status: tracked
 ---
-
 ## 详细介绍
 
 Costrict（前身为 Shenma）是深信服（Sangfor）推出的一款免费、开源的企业级 AI 编程助手，专为"内网开发 + 高质量要求"的严肃开发场景设计。项目自 2025 年 5 月上线以来，已在 GitHub 上获得广泛关注。Costrict 的核心目标是让企业安全、便捷地享受 AI 生产力，通过私有化部署确保代码资产安全，同时提供端到端的规范化 AI 开发流程。

@@ -3,7 +3,7 @@ name: CopilotKit
 slug: copilotkit
 homepage: https://docs.copilotkit.ai
 repo: https://github.com/copilotkit/copilotkit
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -11,13 +11,11 @@ tags:
   - Copilot
   - UI
 description: CopilotKit 是一个开源前端框架，用于在 React 和 Angular 应用中快速集成 AI Copilot、Agent 以及生成式 UI 组件，是 AG-UI 协议的发起者。
-logo: ''
 author: CopilotKit
 ossDate: '2023-06-19T04:08:31Z'
 featured: false
 status: tracked
 ---
-
 ## 详细介绍
 
 CopilotKit 是一个开源前端框架，旨在帮助开发者在 React 和 Angular 应用中快速构建 AI Copilot、自主 Agent 以及生成式 UI。作为 AG-UI（Agent-User Interaction）协议的发起者，CopilotKit 提供了一套完整的工具链，涵盖聊天界面、任务编排、上下文感知和 RAG 集成等核心能力。项目在 GitHub 上拥有超过 30k 星标，已成为 AI 应用前端集成领域最受关注的开源项目之一。

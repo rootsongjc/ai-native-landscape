@@ -10,7 +10,6 @@ tags:
   - Disaggregation
   - Inference
 description: Mooncake 是一个以 KVCache 为中心的分布式 LLM 服务架构，提供高性能的 Transfer Engine 与分布式 KVCache 存储。
-logo: ''
 author: kvcache-ai
 ossDate: '2024-06-25T05:21:05.000Z'
 featured: false

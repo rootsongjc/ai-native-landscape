@@ -11,7 +11,6 @@ tags:
 description: >-
   A reproducible, scalable open-source framework for data science and engineering that streamlines delivery from
   prototype to production.
-logo: ''
 author: Metaflow 社区
 ossDate: '2019-09-17T17:48:25.000Z'
 featured: false

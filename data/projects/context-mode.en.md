@@ -11,7 +11,6 @@ tags:
   - AI Coding
   - Optimization
 description: Context window optimization for AI coding agents with sandboxed tool output and 98% reduction, supporting 15+ platforms.
-logo: ''
 author: mksglu
 ossDate: '2026-02-23T00:00:00Z'
 featured: true

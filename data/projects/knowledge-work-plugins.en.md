@@ -12,7 +12,6 @@ tags:
   - Knowledge Work
   - Plugin
 description: Open source repository of plugins for knowledge workers to use in Claude Cowork, enhancing productivity and workflow automation.
-logo: ''
 author: Anthropic
 ossDate: '2026-01-23T20:11:54Z'
 featured: false

@@ -3,7 +3,7 @@ name: browser-use
 slug: browser-use
 homepage: https://browser-use.com/
 repo: https://github.com/browser-use/browser-use
-license: Unknown
+license: MIT
 category: applications-products
 subCategory: workflow-automation
 tags:
@@ -11,13 +11,11 @@ tags:
   - Dev Tools
   - Utility
 description: A Python library that allows AI to control browsers, suitable for automation tasks and browser-based agents.
-logo: ''
 author: browser-use
 ossDate: '2024-10-31T16:00:56.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 browser-use is a Python library designed to enable AI to control browsers. It supports Playwright, WebRTC backends, and provides a cloud demo service for scenarios such as form filling, web scraping, and end-to-end automation agents.

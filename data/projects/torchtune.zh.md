@@ -9,7 +9,6 @@ subCategory: evaluation-benchmarks
 tags:
   - Benchmark
 description: PyTorch 原生的后训练（post-training）和微调工具集，提供可复用的训练 recipes、优化器和量化支持，适用于大模型微调与评估。
-logo: ''
 author: torchtune maintainers
 ossDate: '2023-10-20T21:10:49.000Z'
 featured: false

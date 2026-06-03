@@ -12,7 +12,6 @@ tags:
 description: >-
   Platform for building stateful agents with advanced memory and self-improvement capabilities, supporting both local
   and cloud deployments.
-logo: ''
 author: letta-ai
 ossDate: '2023-10-11T07:38:37.000Z'
 featured: false

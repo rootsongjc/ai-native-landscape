@@ -9,7 +9,6 @@ subCategory: deployment-operations
 tags:
   - ML Platform
 description: Megatron-LM 是 NVIDIA 提供的大规模语言模型训练参考实现，面向分布式训练与性能优化。
-logo: ''
 author: NVIDIA
 ossDate: '2019-03-21T16:15:52.000Z'
 featured: false

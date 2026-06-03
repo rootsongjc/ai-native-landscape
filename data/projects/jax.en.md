@@ -11,7 +11,6 @@ tags:
   - Optimization
   - Training
 description: High-performance Python library for accelerator-oriented array computation and composable program transformations.
-logo: ''
 author: JAX Community
 ossDate: '2018-01-01T00:00:00.000Z'
 featured: false

@@ -11,7 +11,6 @@ tags:
   - Agents
   - Dev Tools
 description: LocalAGI 是一个可自托管的智能体平台，强调隐私、本地运行与丰富的连接器生态。
-logo: ''
 author: mudler
 ossDate: '2023-07-27T23:21:36Z'
 featured: false

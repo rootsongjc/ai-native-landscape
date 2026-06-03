@@ -10,7 +10,6 @@ tags:
   - Connector
   - Data
 description: An open, multimodal catalog for data and AI that provides unified governance, metadata management, and access control.
-logo: ''
 author: Unity Catalog Community
 ossDate: '2023-01-01T00:00:00.000Z'
 featured: false

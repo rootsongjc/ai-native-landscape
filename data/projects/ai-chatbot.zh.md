@@ -3,19 +3,17 @@ name: AI Chatbot (Vercel Chat SDK)
 slug: ai-chatbot
 homepage: https://chat.vercel.ai/
 repo: https://github.com/vercel/ai-chatbot
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: chat-interfaces
 tags:
   - Chatbot
 description: 由 Vercel 提供的可部署、可扩展的 Next.js 聊天机器人模板，支持多模型与多提供商集成。
-logo: ''
 author: Vercel
 ossDate: '2023-05-19T16:36:23.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 AI Chatbot 是 Vercel 提供的一个开箱即用的 Next.js 聊天机器人模板，适合作为构建对话式应用和客服机器人 的起点。它集成了 Vercel 的 AI Gateway 与 AI SDK，支持多种模型提供商与身份验证配置，便于快速部署与扩展。

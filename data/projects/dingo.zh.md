@@ -3,19 +3,17 @@ name: Dingo
 slug: dingo
 homepage: https://huggingface.co/spaces/DataEval/dingo
 repo: https://github.com/dataeval/dingo
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: evaluation-benchmarks
 tags:
   - Evaluation
 description: 一个用于自动化数据质量评估的工具，支持规则与模型相结合的多维度评估。
-logo: ''
 author: MigoXLab / DataEval
 ossDate: '2024-12-24T05:59:24.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Dingo 是一个面向 AI 数据质量的评估工具，能自动检测数据集中的质量问题并生成可视化报告，适用于预训练、微调与评估数据集。它同时支持规则引擎与基于 LLM 的评估策略，便于集成到 CI、评估流水线与可视化平台。

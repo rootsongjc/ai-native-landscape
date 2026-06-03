@@ -3,7 +3,7 @@ name: Agency Agents
 slug: agency-agents
 homepage: null
 repo: https://github.com/msitarzewski/agency-agents
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:
@@ -13,13 +13,11 @@ description: >-
   Agency Agents is an open-source collection of 147+ specialized AI agent personas spanning 12 divisions including
   engineering, design, marketing, sales, and product, with one-click integration for Claude Code, Cursor, Copilot, and
   more.
-logo: ''
 author: msitarzewski
 ossDate: '2025-03-01T00:00:00.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Agency Agents (The Agency) is a curated open-source collection of 147+ specialized AI agent personas spanning 12 divisions — engineering, design, paid media, sales, marketing, product, project management, testing, support, spatial computing, specialized roles, finance, and game development. Each agent comes with a unique personality, well-defined workflows, and concrete deliverables, ready to install into Claude Code, Cursor, GitHub Copilot, Aider, Windsurf, Gemini CLI, OpenCode, and 10+ other AI coding tools.

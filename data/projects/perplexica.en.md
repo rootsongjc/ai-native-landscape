@@ -10,7 +10,6 @@ tags:
   - Data
   - Search
 description: Perplexica is an open source AI-powered search engine positioned as an alternative to Perplexity AI.
-logo: ''
 author: Perplexica
 ossDate: '2024-04-09T10:51:32Z'
 featured: false

@@ -3,20 +3,18 @@ name: Evidently
 slug: evidently
 homepage: null
 repo: https://github.com/evidentlyai/evidently
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: evaluation-benchmarks
 tags:
   - Evaluation
   - Monitoring
 description: 一个开源的 ML 与 LLM 评估、测试与监控框架，支持从实验到生产的一站式质量检查与仪表盘展示。
-logo: ''
 author: Evidently Team
 ossDate: '2020-11-25T15:20:08.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Evidently 是一个开源的 ML/LLM 可观测性与评估框架，提供报告、测试套件和监控面板，支持表格和文本数据，并内置 100+ 指标，适用于实验分析与生产监控。

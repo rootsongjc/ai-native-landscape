@@ -3,7 +3,7 @@ name: FastMCP
 slug: fastmcp
 homepage: https://gofastmcp.com/
 repo: https://github.com/jlowin/fastmcp
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: mcp-tools
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   FastMCP is a production-ready Python framework for the Model Context Protocol (MCP), providing enterprise
   authentication, deployment tooling, and comprehensive server/client features.
-logo: ''
-author: 'jlowin / FastMCP'
+author: jlowin / FastMCP
 ossDate: '2024-11-30T01:47:40.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 FastMCP is a production-ready Python framework for building MCP (Model Context Protocol) servers and clients. It includes enterprise-grade authentication, deployment tools, OpenAPI/FastAPI generation, and a rich set of patterns for composing and proxying MCP servers. Comprehensive docs are available at gofastmcp.com.

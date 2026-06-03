@@ -3,20 +3,18 @@ name: AstrBot
 slug: astrbot
 homepage: https://astrbot.app
 repo: https://github.com/astrbotdevs/astrbot
-license: Unknown
+license: AGPL-3.0
 category: applications-products
 subCategory: chat-interfaces
 tags:
   - Agents
   - Chatbot
 description: 一站式 LLM 聊天机器人平台与开发框架，支持多渠道接入、知识库和多种模型后端。
-logo: ''
 author: AstrBotDevs
 ossDate: '2022-12-08T13:27:46.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 AstrBot 是一个面向开发者与运营方的一站式 LLM 聊天机器人平台与开发框架，支持 QQ、Telegram、企业微信等多渠道接入，集成知识库、MCP 服务器与常见模型后端（OpenAI、Gemini、Ollama 等）。项目旨在降低多渠道机器人开发与部署的门槛。

@@ -12,7 +12,6 @@ tags:
   - Dev Tools
   - SDK
 description: Lingo.dev 是一个开源的 AI 驱动本地化工具集，支持编译时与运行时的多语言工作流，提高应用的国际化效率与一致性。
-logo: ''
 author: Lingo.dev team
 ossDate: '2024-03-13T11:27:31Z'
 featured: false

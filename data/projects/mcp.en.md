@@ -3,7 +3,7 @@ name: AWS MCP
 slug: mcp
 homepage: https://awslabs.github.io/mcp/
 repo: https://github.com/awslabs/mcp
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -13,13 +13,11 @@ tags:
 description: >-
   MCP defines a standardized protocol for models, tools and hosts to securely exchange context and capability
   descriptions.
-logo: ''
 author: Amazon Web Services
 ossDate: '2025-03-21T00:39:00Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 The Model Context Protocol (MCP) is an open standard that defines how AI assistants connect to external tools, data sources, and services in a secure and structured manner. It provides a universal protocol for models to discover available capabilities, exchange contextual information, and invoke tools through a standardized interface, enabling any AI application to integrate with arbitrary systems without custom adapters for each combination.

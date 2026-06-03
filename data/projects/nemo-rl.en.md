@@ -13,25 +13,28 @@ tags:
 description: >-
   NeMo RL is a scalable post-training reinforcement learning library for large models, supporting high-performance
   distributed training and multiple backends.
-logo: ''
 author: NVIDIA NeMo
 ossDate: '2025-03-16T17:43:21Z'
 featured: false
 status: tracked
 ---
 
-## Overview
-
 NeMo RL is NVIDIA's scalable post-training reinforcement learning toolkit designed for large language models and multimodal models. It delivers high-performance, reproducible training and evaluation pipelines through modular components that support research exploration and production deployment alike.
 
-## Key Features
+## Post-Training Paradigms
 
-Supports multiple post-training paradigms including GRPO, DPO, SFT, and reward modeling with ready-to-use example configurations. Offers multi-backend compatibility across DTensor, Megatron Core, and vLLM for efficient distributed training and generation. Features an extensible modular architecture that allows integration of custom environments, algorithms, and parallelism strategies.
+- Supports multiple post-training paradigms including GRPO, DPO, SFT, and reward modeling with ready-to-use example configurations
+- Extensible modular architecture allows integration of custom environments, algorithms, and parallelism strategies
+- Academic research and benchmarking through reproducible experiment configurations and algorithm comparisons
 
-## Use Cases
+## Distributed Training Backends
 
-Reinforcement fine-tuning of large models to improve performance on multi-turn tasks and tool-use scenarios. Large-scale training experiments on clusters or cloud environments leveraging Megatron or DTensor backends. Academic research and benchmarking through reproducible experiment configurations and algorithm comparisons.
+- Multi-backend compatibility across DTensor, Megatron Core, and vLLM for efficient distributed training and generation
+- Advanced parallelism strategies including tensor, pipeline, context, sequence, and FSDP parallelism
+- Integrates Ray for task scheduling and resource isolation across multi-environment parallel training runs
 
-## Technical Details
+## Research and Production Deployment
 
-Built in Python with support for advanced parallelism strategies including tensor, pipeline, context, sequence, and FSDP parallelism. Integrates Ray for task scheduling and resource isolation across multi-environment parallel training runs. Provides configuration-driven interfaces and CLI tools with example scripts for quickstart and experiment reproducibility.
+- Reinforcement fine-tuning of large models to improve performance on multi-turn tasks and tool-use scenarios
+- Large-scale training experiments on clusters or cloud environments leveraging Megatron or DTensor backends
+- Configuration-driven interfaces and CLI tools with example scripts for quickstart and experiment reproducibility

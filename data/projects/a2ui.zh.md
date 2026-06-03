@@ -3,20 +3,18 @@ name: A2UI
 slug: a2ui
 homepage: https://a2ui.org/
 repo: https://github.com/google/a2ui
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
   - Agent Framework
   - UI
 description: 一个开源的声明式 UI 规范与工具集，使智能体以安全且可移植的 JSON 描述生成可渲染界面。
-logo: ''
 author: Google
 ossDate: '2025-09-24T23:14:02Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 A2UI（Agent-to-User Interface）是由 Google 开发的开源声明式 UI 规范与工具集，使智能体能够以安全、可移植的 JSON 格式描述可渲染界面。智能体生成描述界面意图和组件树的结构化 JSON 载荷，客户端渲染器将其映射为各平台的原生组件。

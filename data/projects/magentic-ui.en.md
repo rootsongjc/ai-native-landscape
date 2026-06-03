@@ -11,7 +11,6 @@ tags:
 description: >-
   A research prototype of a human-centered web agent that can browse and perform actions on the web, generate and
   execute code, and generate and analyze files.
-logo: ''
 author: Microsoft
 ossDate: '2025-05-05T20:24:30.000Z'
 featured: false

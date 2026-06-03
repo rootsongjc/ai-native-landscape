@@ -3,7 +3,7 @@ name: Genesis
 slug: genesis
 homepage: https://genesis-embodied-ai.github.io/
 repo: https://github.com/genesis-embodied-ai/genesis
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: inference-runtimes
 tags:
@@ -11,13 +11,11 @@ tags:
   - Dev Tools
   - Utility
 description: 通用物理仿真与生成式数据平台，面向机器人与具身智能的开源物理引擎。
-logo: ''
 author: Genesis-Embodied-AI
 ossDate: '2023-10-31T03:33:11.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Genesis 是面向机器人、具身智能和物理 AI 应用的通用物理仿真与生成式数据平台。集成多种物理求解器与生成式模块，支持高性能仿真、数据自动生成和多模态渲染。

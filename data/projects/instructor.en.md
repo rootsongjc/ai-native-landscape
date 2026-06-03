@@ -10,7 +10,6 @@ tags:
   - Dev Tools
   - Utility
 description: A Pydantic-based library for reliable structured outputs from any LLM, simplifying JSON extraction and validation.
-logo: ''
 author: Instructor 社区
 ossDate: '2023-06-14T10:42:23.000Z'
 featured: false

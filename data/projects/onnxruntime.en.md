@@ -12,7 +12,6 @@ tags:
 description: >-
   ONNX Runtime is a cross-platform, high-performance machine learning inference and training accelerator that runs
   models exported from PyTorch, TensorFlow/Keras and traditional ML libraries across diverse hardware.
-logo: ''
 author: Microsoft
 ossDate: '2017-05-01T00:00:00.000Z'
 featured: false

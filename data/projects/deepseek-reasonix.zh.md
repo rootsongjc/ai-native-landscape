@@ -13,7 +13,6 @@ tags:
   - TypeScript
   - Terminal
 description: 面向终端的 DeepSeek 原生 AI 编程智能体，围绕前缀缓存稳定性设计，支持长时间运行。
-logo: ''
 author: esengine
 ossDate: '2026-04-21T08:27:02Z'
 featured: false

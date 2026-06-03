@@ -3,7 +3,7 @@ name: Claude Code Agents & Plugins
 slug: agents
 homepage: https://sethhobson.com/
 repo: https://github.com/wshobson/agents
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-orchestration
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   Claude Code Agents is an ecosystem of agents and plugins for the Anthropic Claude Code platform, enabling multi-agent
   orchestration, automation, and efficient collaboration.
-logo: ''
 author: Seth Hobson
 ossDate: '2023-07-19T18:13:13.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Claude Code Agents is a multi-harness agentic plugin marketplace supporting Claude Code, Codex CLI, Cursor, OpenCode, and Gemini CLI. The ecosystem hosts 83 plugins, 191 agents, 155 skills, and 102 commands, providing a comprehensive toolkit for AI-assisted development. Its architecture emphasizes plugin granularity, single responsibility, and efficient context usage across multiple agent platforms.

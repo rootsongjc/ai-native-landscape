@@ -3,7 +3,7 @@ name: GitNexus
 slug: gitnexus
 homepage: https://gitnexus.vercel.app
 repo: https://github.com/abhigyanpatwari/gitnexus
-license: Unknown
+license: Other
 category: coding-devtools
 subCategory: mcp-tools
 tags:
@@ -14,13 +14,11 @@ description: >-
   GitNexus is a client-side knowledge graph creator that runs entirely in your browser, indexing any codebase into an
   interactive knowledge graph with a built-in Graph RAG Agent and deep architectural awareness for AI coding assistants
   via MCP.
-logo: ''
 author: Abhigyan Patwari
 ossDate: '2025-08-02T23:20:31Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 GitNexus is a zero-server code intelligence engine that indexes any codebase into a complete knowledge graph — tracking every dependency, call chain, functional cluster, and execution flow — and exposes deep architectural awareness to AI coding assistants (Cursor, Claude Code, Codex, and more) via the Model Context Protocol. Its Web UI runs entirely in the browser with no server-side components, ensuring code never leaves the local environment. GitNexus precomputes relational intelligence at index time so that a single tool call returns complete context, rather than relying on the LLM to perform multiple rounds of graph queries.

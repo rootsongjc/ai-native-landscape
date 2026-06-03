@@ -3,7 +3,7 @@ name: Dify
 slug: dify
 homepage: https://dify.ai/
 repo: https://github.com/langgenius/dify
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: deployment-operations
 tags:
@@ -14,13 +14,11 @@ tags:
 description: >-
   Open-source LLM application development platform providing visual AI application building tools and enterprise-grade
   deployment solutions.
-logo: ''
 author: LangGenius
 ossDate: '2023-04-12T07:40:24.000Z'
 featured: false
 status: tracked
 ---
-
 Dify is an open-source LLM application development platform designed to simplify the development and deployment of large language model applications. The platform provides visual application building interfaces, rich model integration options, and enterprise-grade deployment solutions, enabling developers and enterprises to quickly build and deploy AI applications.
 
 ## Platform Features

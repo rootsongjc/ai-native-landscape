@@ -3,7 +3,7 @@ name: DB-GPT
 slug: db-gpt
 homepage: null
 repo: https://github.com/eosphoros-ai/db-gpt
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   DB-GPT is an open-source framework focused on data-native applications, integrating RAG, Text2SQL, and multi-backend
   adapters to simplify building intelligent database-driven apps.
-logo: ''
 author: Eosphoros AI
 ossDate: '2023-01-01T00:00:00.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 DB-GPT is a framework that brings large language models together with structured databases. It offers Text2SQL capabilities, vector-based retrieval (RAG), and adapters for multiple vector stores and model backends.

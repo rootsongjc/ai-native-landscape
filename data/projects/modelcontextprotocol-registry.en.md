@@ -14,7 +14,6 @@ tags:
 description: >-
   A community-driven registry service for Model Context Protocol (MCP) servers, providing discovery and publishing
   capabilities for MCP-compatible servers.
-logo: ''
 author: Anthropic
 ossDate: '2025-02-05T17:58:01.000Z'
 featured: false

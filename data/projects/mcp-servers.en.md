@@ -12,7 +12,6 @@ tags:
   - Agent
   - Integration
 description: Official reference implementations of Model Context Protocol servers, providing standardized tool interfaces for AI agents to interact with external systems and data sources.
-logo: ''
 author: Anthropic
 ossDate: '2024-11-19'
 featured: true

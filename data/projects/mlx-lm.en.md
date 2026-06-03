@@ -12,7 +12,6 @@ tags:
 description: >-
   A Python toolkit for running and fine-tuning LLMs on Apple Silicon, with support for quantization, distributed
   inference and Hugging Face integration.
-logo: ''
 author: ml-explore
 ossDate: '2025-03-11T16:38:30.000Z'
 featured: false

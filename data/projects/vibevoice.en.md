@@ -12,7 +12,6 @@ tags:
 description: >-
   Explore VibeVoice, a cutting-edge TTS framework for long, expressive audio synthesis. Ideal for research, media
   prototyping, and academic evaluation.
-logo: ''
 author: Microsoft
 ossDate: '2025-08-25T13:24:01.000Z'
 featured: false

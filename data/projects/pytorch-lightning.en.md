@@ -12,7 +12,6 @@ tags:
 description: >-
   PyTorch Lightning is an open-source framework that streamlines PyTorch training, enabling efficient model development,
   training, and deployment.
-logo: ''
 author: Lightning AI
 ossDate: '2019-03-31T00:45:57.000Z'
 featured: false

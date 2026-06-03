@@ -3,7 +3,7 @@ name: ChatDev
 slug: chatdev
 homepage: null
 repo: https://github.com/openbmb/chatdev
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   A multi-agent collaboration framework powered by large language models to turn natural-language ideas into runnable
   software engineering workflows.
-logo: ''
 author: OpenBMB
 ossDate: '2023-08-28T02:18:13.000Z'
 featured: false
 status: tracked
 ---
-
 ## Summary
 
 ChatDev is a multi-agent collaboration framework for software development. It leverages LLM-driven agents with distinct roles (e.g., product, developer, tester) to collaboratively perform requirement analysis, coding, testing and documentation generation, enabling explorations into collective intelligence and automated software construction.

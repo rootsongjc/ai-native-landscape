@@ -3,7 +3,7 @@ name: Dexter
 slug: dexter
 homepage: null
 repo: https://github.com/virattt/dexter
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   Dexter is an autonomous agent for deep financial research that automates data collection, analysis and strategy
   validation.
-logo: ''
 author: virattt
 ossDate: '2025-10-14T21:02:00.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Dexter is an autonomous agent aimed at deep financial research, capable of automating data ingestion, time-series analysis, signal extraction and strategy backtesting. The project focuses on engineering research workflows to reduce manual repetitive tasks and accelerate iteration. Dexter can integrate multi-source data (e.g., market data, news, financial reports) via adapters or plugins and output structured results for downstream modeling or automated decision systems.

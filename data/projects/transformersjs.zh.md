@@ -9,7 +9,6 @@ subCategory: edge-local-inference
 tags:
   - Dev Tools
 description: Transformers.js：在浏览器与 Node 环境中运行 Hugging Face Transformers 的 JavaScript 实现，支持多模态任务与预编译 WASM/ONNX 加速。
-logo: ''
 author: Xenova
 ossDate: '2023-02-13T13:51:45.000Z'
 featured: false

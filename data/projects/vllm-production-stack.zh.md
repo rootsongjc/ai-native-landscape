@@ -11,7 +11,6 @@ tags:
   - Inference
   - Project
 description: 一个为 vLLM 提供 Kubernetes 原生集群部署与性能优化的参考系统。
-logo: ''
 author: vLLM Project
 ossDate: '2025-01-21T23:09:11Z'
 featured: false

@@ -3,7 +3,7 @@ name: Acontext
 slug: acontext
 homepage: https://acontext.io
 repo: https://github.com/memodb-io/acontext
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: agent-memory-context
 tags:
@@ -13,13 +13,11 @@ tags:
   - Dev Tools
   - Memory
 description: A context data platform for self-learning agents to store, observe, and distill experiences.
-logo: ''
 author: MemoDB
 ossDate: '2025-07-16T13:15:48Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Acontext is a context data platform for self-learning agents that turns agent skills into persistent memory. It centralizes session context, task observations, and artifacts, capturing agent task traces and user feedback to distill experiences into long-term memory for AI coding agents.

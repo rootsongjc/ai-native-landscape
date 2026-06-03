@@ -3,7 +3,7 @@ name: DeepEP
 slug: deepep
 homepage: null
 repo: https://github.com/deepseek-ai/deepep
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: sdk-frameworks
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   An efficient expert-parallel communication library that provides low-overhead communication primitives for large-scale
   distributed training.
-logo: ''
 author: DeepSeek
 ossDate: '2025-02-17T01:33:04.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 DeepEP is an expert-parallel oriented communication library designed to reduce communication latency and bandwidth overhead in large-scale distributed training. It offers a compact set of communication primitives optimized for expert-parallel and hybrid-parallel scenarios.

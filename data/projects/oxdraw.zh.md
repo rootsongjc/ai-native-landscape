@@ -10,7 +10,6 @@ tags:
   - Dev Tools
   - Visualization
 description: oxdraw 是一个以声明式语法驱动、可拖拽编辑的 Diagram-as-Code 工具，旨在将 Mermaid 的可复现性与可视化编辑结合。
-logo: ''
 author: Rohan Adwankar
 ossDate: '2025-10-07T19:59:40.000Z'
 featured: false

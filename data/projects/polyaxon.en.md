@@ -10,7 +10,6 @@ tags:
   - Orchestration
   - Workflow
 description: Polyaxon is an MLOps platform for managing, training and monitoring large-scale machine learning workloads.
-logo: ''
 author: Polyaxon
 ossDate: '2016-12-26T12:48:47.000Z'
 featured: false

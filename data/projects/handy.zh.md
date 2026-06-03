@@ -9,7 +9,6 @@ subCategory: audio-speech
 tags:
   - Utility
 description: 一款开源、本地化且可扩展的跨平台语音转文本桌面应用，注重隐私并支持 Whisper 与 Parakeet 等离线模型。
-logo: ''
 author: cjpais
 ossDate: '2025-02-13T02:42:29.000Z'
 featured: false

@@ -13,7 +13,6 @@ tags:
 description: >-
   A tool that packs an entire repository into an AI-friendly file, making it easy to provide structured code context to
   large models.
-logo: ''
 author: yamadashy
 ossDate: '2024-07-13T07:11:32.000Z'
 featured: false

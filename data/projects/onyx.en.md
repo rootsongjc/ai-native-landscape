@@ -9,7 +9,6 @@ subCategory: chat-interfaces
 tags:
   - Chatbot
 description: Feature-rich, self-hostable AI chat platform that supports Agents, RAG, deep research and 40+ connectors.
-logo: ''
 author: Onyx 社区
 ossDate: '2023-04-27T06:04:01.000Z'
 featured: false

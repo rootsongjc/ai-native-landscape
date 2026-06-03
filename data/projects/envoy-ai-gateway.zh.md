@@ -3,19 +3,17 @@ name: Envoy AI Gateway
 slug: envoy-ai-gateway
 homepage: https://aigateway.envoyproxy.io/
 repo: https://github.com/envoyproxy/ai-gateway
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: llm-routing-gateways
 tags:
   - AI Gateway
 description: 基于 Envoy Proxy 的 AI API 网关，为 AI 服务提供高性能的路由、负载均衡和安全管理。
-logo: ''
 author: Envoy Proxy
 ossDate: '2024-10-21T02:59:59.000Z'
 featured: false
 status: tracked
 ---
-
 Envoy AI Gateway 是基于 Envoy Proxy 构建的专业 AI API 网关解决方案，专为管理和优化 AI 服务的访问而设计。该网关提供了高性能的请求路由、负载均衡、安全控制和监控功能，是构建企业级 AI 服务架构的重要组件。
 
 ## 网关特色

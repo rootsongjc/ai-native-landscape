@@ -12,7 +12,6 @@ tags:
 description: >-
   An open-source, privacy-focused notebook and research platform that supports multi-model integration and multimodal
   content management.
-logo: ''
 author: Luis Novo
 ossDate: '2024-10-21T17:58:46.000Z'
 featured: false

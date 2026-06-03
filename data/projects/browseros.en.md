@@ -3,7 +3,7 @@ name: BrowserOS
 slug: browseros
 homepage: null
 repo: https://github.com/browseros-ai/browseros
-license: Unknown
+license: AGPL-3.0
 category: coding-devtools
 subCategory: browser-automation
 tags:
@@ -13,13 +13,11 @@ tags:
 description: >-
   An open-source, privacy-first Agentic browser that runs AI agents locally — a privacy-first alternative to ChatGPT
   Atlas and Perplexity.
-logo: ''
 author: browseros-ai
 ossDate: '2025-05-18T16:23:54Z'
 featured: false
 status: tracked
 ---
-
 BrowserOS is an open-source, Chromium-based browser designed to run AI agents natively and privately. It aims to empower users with local AI automation while keeping data and API keys under user control.
 
 ## Overview
@@ -47,19 +45,3 @@ BrowserOS combines the familiarity and compatibility of Chromium with an integra
 - Local-model integration: supports Ollama/LMStudio for local inference workflows.
 - Agent orchestration: task decomposition, stateful agents and cross-page workflows.
 - Privacy-first architecture: explicit control over keys and local storage for user data.
-
-## Getting started
-
-1. Download the appropriate installer from releases or the website.
-2. (Optional) Import Chrome data to preserve bookmarks and extensions.
-3. Configure your AI provider or local model in settings.
-4. Try demo agents or install community agents from the repository.
-
-## Resources
-
-- Repository: https://github.com/browseros-ai/BrowserOS
-- Official site: https://BrowserOS.com
-
-## Summary
-
-BrowserOS brings agentic AI to the browser while prioritizing user privacy and local control. It's a strong choice for users who want powerful automation without surrendering their data to cloud services.

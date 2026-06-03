@@ -47,7 +47,6 @@ tags:
 description:
   en: Short English description of the project.
   zh: Short Chinese description of the project.
-logo: ''
 author: Organization
 ossDate: '2025-01-01T00:00:00.000Z'
 featured: false
@@ -74,7 +73,6 @@ tags:
 description:
   en: Short English description of the project.
   zh: Short Chinese description of the project.
-logo: ''
 author: Organization
 ossDate: '2025-01-01T00:00:00.000Z'
 featured: false

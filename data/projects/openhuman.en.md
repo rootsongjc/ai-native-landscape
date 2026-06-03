@@ -15,7 +15,6 @@ tags:
 description: >-
   OpenHuman is an open-source personal AI super intelligence assistant focused on privacy, simplicity, and power,
   featuring 118+ third-party integrations, local memory trees, an Obsidian wiki, and native voice interaction.
-logo: ''
 author: senamakel
 ossDate: '2025-04-01'
 featured: false

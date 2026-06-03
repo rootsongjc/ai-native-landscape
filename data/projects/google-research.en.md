@@ -3,7 +3,7 @@ name: Google Research
 slug: google-research
 homepage: https://research.google/
 repo: https://github.com/google-research/google-research
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: deployment-operations
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   Google Research aggregates open-source research code and datasets from Google, covering machine learning, vision, NLP
   and other research areas.
-logo: ''
 author: Google
 ossDate: '2014-01-01T00:00:00+08:00'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Google Research aggregates thousands of open-source projects, datasets and implementations across machine learning, natural language processing, computer vision and reinforcement learning, enabling reproducibility and further research.

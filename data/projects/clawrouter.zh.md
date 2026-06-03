@@ -3,7 +3,7 @@ name: ClawRouter
 slug: clawrouter
 homepage: null
 repo: https://github.com/blockrunai/clawrouter
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: llm-routing-gateways
 tags:
@@ -11,13 +11,11 @@ tags:
   - Inference
   - LLM Router
 description: ClawRouter 是一个专为 AI 智能体设计的 LLM 路由器，支持智能路由、成本优化和微支付，由 BlockRunAI 为 OpenClaw 打造。
-logo: ''
 author: BlockRunAI
 ossDate: '2026-02-03T00:00:00.000Z'
 featured: false
 status: tracked
 ---
-
 ## 详细介绍
 
 ClawRouter 是一个专为 AI 智能体设计的原生 LLM 路由器，旨在为 OpenClaw 和其他 AI 应用提供强大的模型路由能力。该项目通过智能路由算法，自动将请求分发到最合适的 LLM 提供商，实现性能与成本的最佳平衡。ClawRouter 支持多家主流 LLM 提供商，包括 OpenAI、Anthropic、Gemini、DeepSeek 等，并集成了微支付功能，支持使用稳定币（如 USDC）进行支付。

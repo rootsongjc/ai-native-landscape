@@ -13,7 +13,6 @@ tags:
 description: >-
   An on-device inference SDK that runs multimodal and text models across CPU, GPU and NPUs, with support for multiple
   model formats.
-logo: ''
 author: NexaAI
 ossDate: '2024-08-16T20:13:07.000Z'
 featured: false

@@ -11,7 +11,6 @@ tags:
   - Dev Tools
   - LLM
 description: 开源深度学习框架，支持动态图与高效 GPU 加速，适用于研究与生产部署。
-logo: ''
 author: PyTorch
 ossDate: '2016-08-13T05:26:41.000Z'
 featured: false

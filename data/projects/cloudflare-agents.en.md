@@ -3,7 +3,7 @@ name: Cloudflare Agents
 slug: cloudflare-agents
 homepage: https://developers.cloudflare.com/agents/
 repo: https://github.com/cloudflare/agents
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   Cloudflare Agents: An open-source edge AI agent framework by Cloudflare that provides state management, real-time
   communication, and extensibility.
-logo: ''
 author: Cloudflare
 ossDate: '2025-01-29T23:14:04.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Cloudflare Agents is an open-source framework for building edge-deployed AI agents that maintain state, interact in real time, and integrate with external services. The project includes SDKs, examples, documentation, and deployment guides to help developers create agents with memory, event-driven behaviors, and low-latency interactions on the Cloudflare Edge.

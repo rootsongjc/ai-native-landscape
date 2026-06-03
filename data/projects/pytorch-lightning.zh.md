@@ -10,7 +10,6 @@ tags:
   - Framework
   - Training
 description: PyTorch Lightning 是一个简化 PyTorch 训练流程的开源框架，帮助用户高效构建、训练和部署深度学习模型。
-logo: ''
 author: Lightning AI
 ossDate: '2019-03-31T00:45:57.000Z'
 featured: false

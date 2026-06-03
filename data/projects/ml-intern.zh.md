@@ -11,7 +11,6 @@ tags:
   - CLI
   - Dev Tools
 description: ML Intern 是由 HuggingFace 开发的开源自主 ML 工程师 Agent，能够自主阅读论文、训练模型并交付 ML 代码，深度集成 HuggingFace 生态。
-logo: ''
 author: HuggingFace
 ossDate: '2025-10-30T13:43:09Z'
 featured: false

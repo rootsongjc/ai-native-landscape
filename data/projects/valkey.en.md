@@ -9,7 +9,6 @@ subCategory: data-platforms
 tags:
   - Database
 description: A high-performance distributed key-value database optimized for caching and real-time workloads.
-logo: ''
 author: Valkey Project
 ossDate: '2024-03-22T00:42:17Z'
 featured: false

@@ -11,7 +11,6 @@ tags:
   - Dev Tools
   - RAG
 description: Qwen-Agent 是一个开源的 Agent 框架，提供工具调用、RAG、代码解释器与多种部署示例，便于快速构建智能助理与应用。
-logo: ''
 author: QwenLM
 ossDate: '2023-09-22T02:24:56.000Z'
 featured: false

@@ -11,25 +11,31 @@ tags:
 description: >-
   An open-source web crawling and spidering framework by ProjectDiscovery focused on high concurrency, modularity, and
   integration with security tooling.
-logo: ''
 author: ProjectDiscovery
 ossDate: '2021-01-02T16:56:05Z'
 featured: false
 status: tracked
 ---
 
-## Overview
-
 Katana is a next-generation crawling and spidering framework developed by ProjectDiscovery for automated web data extraction. Built with a modular architecture and a concurrency-driven engine, it provides flexible crawling strategies, dynamic rendering support, and multiple output options for efficient and scalable website crawling.
 
 ## Key Features
 
-Katana delivers high-throughput concurrent crawling with task queue management, along with headless browser and JavaScript rendering support for handling complex modern pages. It offers plugin-based crawling rules with extensible output formats such as JSON and CSV, and integrates tightly with the ProjectDiscovery ecosystem including Nuclei and HTTPx for combined detection and automation.
+- High-throughput concurrent crawling with task queue management for scalable data extraction
+- Headless browser and JavaScript rendering support for handling complex modern single-page applications
+- Plugin-based crawling rules with extensible output formats such as JSON and CSV
+- Tight integration with the ProjectDiscovery ecosystem including Nuclei and HTTPx for combined detection and automation
+- Configurable crawl rates, retry policies, and scope controls for polite and targeted crawling
 
 ## Use Cases
 
-Katana is ideal for asset discovery in the early stages of web security scanning, including passive and active crawling, directory enumeration, and site mapping. Security researchers, penetration testers, and incident response teams use it as an efficient component in their discovery and data collection toolchain.
+- Asset discovery in the early stages of web security scanning, including passive and active crawling
+- Directory enumeration and site mapping for penetration testing and bug bounty reconnaissance
+- Automated data collection pipelines feeding into security analysis and vulnerability detection workflows
+- Integration with CI pipelines for continuous security monitoring and change detection
 
-## Technical Details
+## Technical Highlights
 
-Implemented in Go, Katana provides both a CLI tool and programmatic interfaces with high-concurrency goroutines, configurable crawl rates, and retry policies. Its outputs integrate easily with CI pipelines and other ProjectDiscovery tools, enabling teams to build end-to-end discovery and verification workflows.
+- Implemented in Go with high-concurrency goroutines for efficient resource utilization
+- Provides both a CLI tool and programmatic interfaces for flexible integration
+- Outputs integrate easily with other ProjectDiscovery tools for end-to-end discovery and verification workflows

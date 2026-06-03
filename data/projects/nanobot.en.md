@@ -14,7 +14,6 @@ description: >-
   NanoBot is an open-source ultra-lightweight personal AI agent framework from HKUDS, implementing over 90% of
   OpenClaw's core capabilities in just ~4,000 lines of code, with MCP protocol support, multi-model integration, and
   multi-platform deployment.
-logo: ''
 author: HKUDS
 ossDate: '2026-02-04T12:00:00.000Z'
 featured: false

@@ -13,7 +13,6 @@ tags:
 description: >-
   Vibe Skills is an open-source all-in-one AI skill package that integrates expert-level capabilities and context
   management, enabling any AI agent to instantly upgrade its functionality.
-logo: ''
 author: foryourhealth111-pixel
 ossDate: '2026-02-22T13:51:44Z'
 featured: false

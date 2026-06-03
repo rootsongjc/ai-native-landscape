@@ -3,20 +3,18 @@ name: Amplifier
 slug: amplifier
 homepage: null
 repo: https://github.com/microsoft/amplifier
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: inference-runtimes
 tags:
   - Dev Tools
   - Inference
 description: 微软推出的开发与部署辅助工具，专注于 AI 项目的性能分析、模型部署和流水线支持。
-logo: ''
 author: Microsoft
 ossDate: '2025-09-09T22:21:51.000Z'
 featured: false
 status: tracked
 ---
-
 ## 概述
 
 Amplifier 是微软开源的工具包（仓库：microsoft/amplifier），旨在帮助 AI 项目的开发、部署与性能调优。它为工程团队在真实环境中验证模型性能、构建部署流水线、优化推理流程提供了 CLI 工具、可复用模板以及与主流部署平台的集成能力。

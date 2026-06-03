@@ -3,7 +3,7 @@ name: Apache Spark
 slug: apache-spark
 homepage: https://spark.apache.org/
 repo: https://github.com/apache/spark
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: inference-runtimes
 tags:
@@ -12,25 +12,37 @@ tags:
 description: >-
   A unified analytics engine for large-scale data processing, supporting batch, streaming and machine learning
   workloads.
-logo: ''
 author: Apache Software Foundation
 ossDate: '2014-02-25T08:00:08Z'
 featured: false
 status: tracked
 ---
+Apache Spark is a unified analytics engine for large-scale data processing, widely used in ML pipelines across industry. It provides multi-language APIs for Scala, Java, Python, and R, unifying batch processing, stream processing, and machine learning within a single high-performance distributed platform.
 
-## Overview
+## Key Capabilities
 
-Apache Spark is a unified analytics engine for large-scale data processing, widely used in ML pipelines across industry. It provides multi-language APIs for Scala, Java, Python, and R, unifying batch processing, stream processing, and machine learning within a single high-performance distributed platform. Spark enables developers to build complex data pipelines that scale seamlessly from a single node to large clusters.
+- **Unified DataFrame/SQL API** across Scala, Java, Python, and R with a shared query optimizer
+- **In-memory execution engine** with lazy evaluation and task fusion for high throughput
+- **Structured Streaming** for low-latency, fault-tolerant stream processing
+- **MLlib** providing distributed implementations of classification, regression, clustering, and collaborative filtering
+- **GraphX** for graph-parallel computation and graph analytics
 
-## Key Features
+## Ecosystem Integrations
 
-Spark delivers a unified DataFrame/SQL API across languages, an optimized in-memory execution engine, Structured Streaming for low-latency stream processing, and MLlib for distributed machine learning algorithms. Its rich ecosystem integrates with Hadoop, Kafka, Delta Lake, and numerous other data storage and compute components.
+- Deep connectors for Hadoop HDFS, YARN, and Hive metastores
+- Kafka, Delta Lake, and Apache Iceberg for streaming and lakehouse architectures
+- Integration with cloud object stores (S3, ADLS, GCS) for modern data pipelines
+- Connectors for relational databases, NoSQL stores, and message queues
 
-## Use Cases
+## Common Use Cases
 
-Spark is suitable for large-scale ETL, offline batch analytics, real-time stream processing, interactive SQL querying, and large-scale ML training and inference. Common applications include data engineering pipelines, reporting backends, log analytics, feature engineering for recommendation systems, and model training workloads.
+- Large-scale ETL and data engineering pipelines
+- Interactive SQL querying and ad-hoc analytics on petabyte-scale datasets
+- Real-time stream processing for log analytics and event-driven applications
+- Feature engineering and distributed model training for recommendation systems
 
-## Technical Details
+## Architecture
 
-Spark uses a distributed DAG execution engine with lazy evaluation and task fusion optimizations, backed by scalable resource scheduling and fault tolerance. Its modular architecture (Spark SQL, Streaming, MLlib, GraphX) allows flexible composition, and it benefits from a large open-source community under the Apache Software Foundation with long-term release maintenance.
+- Distributed DAG execution engine with automatic fault recovery and speculative execution
+- Modular design composed of Spark SQL, Streaming, MLlib, and GraphX
+- Maintained by the Apache Software Foundation with a large, active open-source community

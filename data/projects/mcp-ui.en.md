@@ -12,7 +12,6 @@ tags:
 description: >-
   MCP-UI is a collection of UI SDKs for the Model Context Protocol that enables servers to deliver interactive web
   components and remote DOM resources to MCP hosts.
-logo: ''
 author: idosal
 ossDate: '2025-05-13T22:41:43.000Z'
 featured: false

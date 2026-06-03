@@ -3,7 +3,7 @@ name: Agent Skills
 slug: addyosmani-agent-skills
 homepage: null
 repo: https://github.com/addyosmani/agent-skills
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -11,13 +11,11 @@ tags:
   - Dev Tools
   - Vibe Coding
 description: Agent Skills 是由 Google Chrome 团队工程师 Addy Osmani 开源的生产级工程技能集合，包含 20 个结构化工作流和 7 个斜杠命令，覆盖从需求定义到生产发布的完整开发生命周期。
-logo: ''
 author: Addy Osmani
 ossDate: '2026-02-15T20:20:26Z'
 featured: false
 status: tracked
 ---
-
 ## 详细介绍
 
 Agent Skills 是由 Google Chrome 团队资深工程师 Addy Osmani 开发的开源项目，提供了一套生产级的工程技能体系，专为 AI 编码代理设计。项目核心理念是将资深工程师在软件开发中遵循的工作流、质量门控和最佳实践编码为结构化技能，使 AI 代理在开发的每个阶段都能一致地执行这些规范。整个技能集包含 20 个核心技能、7 个斜杠命令、3 个专家代理角色和 4 份参考清单，覆盖从需求定义（Define）、规划（Plan）、构建（Build）、验证（Verify）、审查（Review）到发布（Ship）的完整软件开发生命周期。

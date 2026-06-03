@@ -3,7 +3,7 @@ name: AgentField
 slug: agentfield
 homepage: http://www.agentfield.ai
 repo: https://github.com/agent-field/agentfield
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -14,13 +14,11 @@ tags:
 description: >-
   Brings Kubernetes principles to agent runtimes, offering an identity-aware, observable, and scalable platform for
   agent microservices.
-logo: ''
 author: Agent Field
 ossDate: '2025-11-05T02:04:44Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 AgentField enables building, running, and scaling AI agents like APIs and microservices with observability, auditability, and identity awareness from day one. It abstracts agent lifecycle, identity, and communication as cloud-native objects so multi-agent applications can run on clusters with scalability and built-in operational controls.

@@ -3,7 +3,7 @@ name: agentgateway
 slug: agentgateway
 homepage: https://agentgateway.dev/
 repo: https://github.com/agentgateway/agentgateway
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: llm-routing-gateways
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   A high-performance proxy data plane for agents, providing security, observability, and governance capabilities for
   agent-to-agent and agent-to-tool communication.
-logo: ''
 author: Solo.io
 ossDate: '2025-03-18T20:55:22.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 Agentgateway is a high-performance agent connectivity and governance data plane implemented in Rust, designed to provide multi-tenant RBAC, dynamic configuration, and MCP/A2A protocol support for secure and reliable agent-to-tool connections in production environments.

@@ -3,19 +3,17 @@ name: fast-agent
 slug: fast-agent
 homepage: https://fast-agent.ai/
 repo: https://github.com/evalstate/fast-agent
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: workflow-automation
 tags:
   - Workflow
 description: fast-agent 是一个用于快速构建、测试和运行具备 MCP（Model-Connector-Provider）支持的智能 Agent 与工作流的开源 Python 框架。
-logo: ''
 author: evalstate
 ossDate: '2025-01-18T20:39:51.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 fast-agent 是一个开源的 Python 框架，旨在用最少的样板代码快速定义、运行并调试具备 MCP（Model-Connector-Provider）支持的智能 Agent 与工作流。它支持多模型选择、并行与链式工作流、交互式调试以及与多种 LLM 提供者的集成。

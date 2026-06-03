@@ -3,7 +3,7 @@ name: DeepSpeed
 slug: deepspeed
 homepage: https://www.deepspeed.ai/
 repo: https://github.com/deepspeedai/deepspeed
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: inference-runtimes
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   A high-performance library for training and inference that dramatically speeds up large-scale deep learning while
   reducing cost.
-logo: ''
 author: DeepSpeed 团队
 ossDate: '2020-01-23T18:35:18.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 DeepSpeed is an open-source optimization library from Microsoft that focuses on distributed training, memory and inference efficiency (e.g., ZeRO, DeepSpeed-Inference, compression techniques). It enables researchers and engineers to train models from billions to trillions of parameters at much lower cost.

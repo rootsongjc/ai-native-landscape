@@ -3,7 +3,7 @@ name: EasyEdit
 slug: easyedit
 homepage: https://zjunlp.github.io/project/KnowEdit
 repo: https://github.com/zjunlp/easyedit
-license: Unknown
+license: MIT
 category: training-optimization
 subCategory: evaluation-benchmarks
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   An easy-to-use knowledge editing framework providing multiple editing methods, evaluation metrics and datasets;
   supports LLMs and some multimodal editing scenarios.
-logo: ''
 author: ZJUNLP
 ossDate: '2023-05-09T07:48:02Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 EasyEdit is a toolkit for knowledge editing of large language models (LLMs). It aims to efficiently modify model behavior on specific queries with minimal data while preserving performance on unrelated inputs. The project implements various editing methods (ROME, MEND, MEMIT, WISE, etc.), evaluation metrics (reliability, generalization, locality, portability), and benchmark datasets (KnowEdit / CKnowEdit).

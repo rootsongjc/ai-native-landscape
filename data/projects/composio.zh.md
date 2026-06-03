@@ -3,20 +3,18 @@ name: Composio
 slug: composio
 homepage: https://composio.dev/
 repo: https://github.com/composiohq/composio
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
   - Agent Framework
   - Dev Tools
 description: 为 AI 客户端与代理提供丰富集成与工具的 SDK 与平台，支持 TypeScript 与 Python SDK，以及用于将 AI 与 500+ 应用连接的 MCP 服务 Rube。
-logo: ''
 author: Composio
 ossDate: '2024-02-23T13:58:27.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Composio 是一个面向 Agent 与工具调用的 SDK 与平台，提供 TypeScript 与 Python SDK、工具路由（Tool Router）与 Model Context Protocol（MCP）实现。它能把 LLM/Agent 与 500+ 应用（如 Gmail、Slack、Notion 等）连接起来，支持在多种客户端中无缝执行动作。

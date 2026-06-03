@@ -12,7 +12,6 @@ tags:
 description: >-
   MineContext is a proactive, context-aware AI partner combining Context-Engineering with ChatGPT Pulse to improve
   dialogue coherence and retrieval in RAG scenarios.
-logo: ''
 author: 字节跳动
 ossDate: '2025-06-24T11:15:21.000Z'
 featured: false

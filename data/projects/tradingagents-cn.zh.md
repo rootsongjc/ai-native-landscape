@@ -9,7 +9,6 @@ subCategory: productivity-tools
 tags:
   - Product
 description: 为中文用户量身打造的强大多智能体交易分析平台，具备先进的数据集成与自动化报告能力。
-logo: ''
 author: hsliuping
 ossDate: '2025-06-01T00:00:00+08:00'
 featured: false

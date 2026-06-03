@@ -3,7 +3,7 @@ name: CUA
 slug: cua
 homepage: https://trycua.com
 repo: https://github.com/trycua/cua
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   CUA provides an open-source infrastructure and toolchain for training and evaluating computer-use agents that operate
   full desktop environments (macOS, Linux, Windows).
-logo: ''
 author: TryCUA
 ossDate: '2025-01-31T15:02:49.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 CUA (Computer-Use Agents) is an open-source infrastructure designed to train, evaluate, and deploy agents capable of controlling desktop environments. The project includes sandboxes, an SDK, benchmarks, and tooling to reproduce agents' interactions with real applications and windows on macOS, Linux, and Windows, enabling researchers and engineers to perform experiments in a safe and reproducible environment.

@@ -10,7 +10,6 @@ tags:
   - Agents
   - Alignment
 description: Petri 是一个用于快速探索对齐假设的对齐审计代理，旨在帮助研究者自动化对齐评估流程并发现模型潜在风险。
-logo: ''
 author: Safety Research
 ossDate: '2025-08-19T20:39:05.000Z'
 featured: false

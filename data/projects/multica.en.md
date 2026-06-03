@@ -13,7 +13,6 @@ tags:
 description: >-
   Multica is a native desktop client that brings coding agent capabilities to everyone through a visual interface,
   supporting multi-model and multi-agent collaboration with a local-first approach.
-logo: ''
 author: multica-ai
 ossDate: '2026-01-13T17:59:46Z'
 featured: false

@@ -12,7 +12,6 @@ tags:
 description: >-
   Local large language model runner that enables users to easily run and manage various open-source LLM models in local
   environments.
-logo: ''
 author: Ollama Team
 ossDate: '2023-06-26T19:39:32.000Z'
 featured: true

@@ -13,7 +13,6 @@ tags:
   - Resumability
   - MCP
 description: Google 开源的分布式智能体运行时，协调智能体循环、管理执行日志，提供原生恢复和续域能力，支持可靠的智能体部署。
-logo: ''
 author: Google
 ossDate: '2026-03-30'
 featured: false

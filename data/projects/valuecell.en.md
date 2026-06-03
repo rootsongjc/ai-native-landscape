@@ -13,7 +13,6 @@ tags:
 description: >-
   A community-driven multi-agent platform for finance that offers research, strategy development, and automated trading
   while keeping sensitive data local.
-logo: ''
 author: ValueCell AI
 ossDate: '2025-09-01T09:07:06Z'
 featured: false

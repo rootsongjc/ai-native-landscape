@@ -3,19 +3,17 @@ name: fuck-u-code
 slug: fuck-u-code
 homepage: null
 repo: https://github.com/done-0/fuck-u-code
-license: Unknown
+license: MIT
 category: training-optimization
 subCategory: evaluation-benchmarks
 tags:
   - Benchmark
 description: 一款用于评估代码‘混乱度’并生成可读报告的静态分析工具，支持多语言和 Markdown 输出。
-logo: ''
 author: Done-0
 ossDate: '2025-06-25T16:40:22.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 fuck-u-code 是一款面向代码质量评估的静态分析工具，能够以“混乱度”（legacy-mess）指标评估代码库并生成可视化的 Markdown 报告，支持 Go/JS/TS/Python/Java/C/C++ 等多种语言。工具注重本地运行与输出可读报告，适用于 CI/CD 报告、代码审查与技术债务统计。

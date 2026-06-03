@@ -3,7 +3,7 @@ name: Anything LLM
 slug: anythingllm
 homepage: https://anythingllm.com/
 repo: https://github.com/mintplex-labs/anything-llm
-license: Unknown
+license: MIT
 category: applications-products
 subCategory: chat-interfaces
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   A comprehensive, open-source solution for creating and managing private LLM chatbots with document interaction,
   embedding, and full customization capabilities.
-logo: ''
 author: Mintplex Labs
 ossDate: '2023-06-04T02:29:14.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 AnythingLLM is the all-in-one AI productivity accelerator that runs on-device with a privacy-first approach and no annoying setup or configuration. It supports building private ChatGPT-style experiences using commercial or open-source LLMs and vector databases, organizing documents into independent workspaces for clear context management.

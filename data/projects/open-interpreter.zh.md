@@ -9,7 +9,6 @@ subCategory: ide-cli-tools
 tags:
   - Dev Tools
 description: 一个将自然语言转换为本地可执行代码与命令的开源工具，提供交互式终端和编程助手功能。
-logo: ''
 author: Open Interpreter Contributors
 ossDate: '2023-07-14T07:10:44.000Z'
 featured: false

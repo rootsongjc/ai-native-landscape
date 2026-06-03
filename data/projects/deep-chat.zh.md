@@ -3,19 +3,17 @@ name: Deep Chat
 slug: deep-chat
 homepage: https://deepchat.dev/
 repo: https://github.com/ovidijusparsiunas/deep-chat
-license: Unknown
+license: MIT
 category: applications-products
 subCategory: chat-interfaces
 tags:
   - Chatbot
 description: 可嵌入网站的一行代码 AI 聊天组件，支持多种 API、语音、文件与浏览器端模型运行。
-logo: ''
 author: Ovidijus Parsiunas / Ovi
 ossDate: '2023-02-19T19:44:18.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Deep Chat 是一个可嵌入网页的一行代码 AI 聊天组件，支持直接连接 OpenAI、HuggingFace、Cohere 等 API，也能在浏览器端托管轻量模型。它提供丰富的 UI 功能（头像、文件传输、摄像头与麦克风支持、语音输入/输出）与可扩展的拦截器/连接器机制。

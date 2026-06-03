@@ -11,7 +11,6 @@ tags:
   - Multimodal
   - Video
 description: pyvideotrans 可将视频从一种语言翻译并合成配音，支持端到端的音视频处理流程。
-logo: ''
 author: jianchang512
 ossDate: '2023-10-02T16:13:19Z'
 featured: false

@@ -12,7 +12,6 @@ tags:
   - Safety
   - Sandbox
 description: NVIDIA NemoClaw 是一个开源参考技术栈，用于在 NVIDIA OpenShell 安全运行时中更安全地运行 OpenClaw 常驻智能体，提供引导式入驻、加固蓝图、状态管理和路由推理。
-logo: ''
 author: NVIDIA
 ossDate: '2026-03-15'
 featured: true

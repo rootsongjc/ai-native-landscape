@@ -13,7 +13,6 @@ tags:
 description: >-
   Discover n8n-MCP, the open-source server connecting n8n workflows with AI assistants for efficient automation and
   seamless integration.
-logo: ''
 author: czlonkowski
 ossDate: '2022-12-01T00:00:00.000Z'
 featured: false

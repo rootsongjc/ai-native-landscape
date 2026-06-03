@@ -3,7 +3,7 @@ name: Context Hub
 slug: context-hub
 homepage: null
 repo: https://github.com/andrewyng/context-hub
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: coding-agents
 tags:
@@ -13,13 +13,11 @@ tags:
 description: >-
   Context Hub (Chub) 是由 Andrew Ng（吴恩达）发起的开源项目，为 AI 编码代理提供精选的、版本化的文档，并通过注释和反馈机制使代理能够在每次任务中变得更聪明。所有内容以 Markdown
   格式公开维护，支持版本化和语言特定的文档检索。
-logo: ''
 author: Andrew Ng（吴恩达）
 ossDate: '2025-03-17'
 featured: false
 status: tracked
 ---
-
 ## 详细介绍
 
 Context Hub (Chub) 是由 AI 领域知名专家 Andrew Ng（吴恩达）发起的开源项目，旨在解决 AI 编码代理面临的两个核心问题：API 幻觉和会话知识遗忘。该项目为 AI 编码代理提供精选的、版本化的文档，并通过注释和反馈机制使代理能够在每次任务中变得更聪明。

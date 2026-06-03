@@ -3,7 +3,7 @@ name: Cline
 slug: cline
 homepage: https://cline.bot/
 repo: https://github.com/cline/cline
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: coding-agents
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   A multi-model intelligent programming agent providing autonomous code writing, debugging, terminal execution, and
   workflow planning capabilities in VS Code.
-logo: ''
 author: Cline Team
 ossDate: '2024-07-06T07:28:10.000Z'
 featured: true
 status: tracked
 ---
-
 Cline is one of my favorite AI programming agents in VS Code. I don't treat it as just a completion tool, but rather as a "commandable programming assistant": tell it what to do, and it will first build a plan, then execute step by step, run commands in the terminal, open browsers, and monitor outputs.
 
 ![Cline interface in VS Code](https://assets.jimmysong.io/images/ai/cline/cline.webp)

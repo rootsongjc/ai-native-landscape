@@ -3,7 +3,7 @@ name: AXLearn
 slug: axlearn
 homepage: https://apple.github.io/axlearn
 repo: https://github.com/apple/axlearn
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: deployment-operations
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   An extensible deep learning library built on JAX/XLA, designed for developing, training and deploying large-scale
   models.
-logo: ''
 author: Apple
 ossDate: '2023-02-25T01:33:06.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 AXLearn is an extensible library built on JAX and XLA to support development of large-scale deep learning models. It provides a configuration-based, modular approach to compose models and integrates with libraries like Flax and Hugging Face Transformers.

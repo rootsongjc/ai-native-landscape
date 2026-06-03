@@ -3,7 +3,7 @@ name: FlashInfer
 slug: flashinfer
 homepage: https://flashinfer.ai
 repo: https://github.com/flashinfer-ai/flashinfer
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: inference-runtimes
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   FlashInfer is a kernel library and JIT toolset for LLM serving that implements efficient attention and sampling
   kernels to improve GPU throughput and latency for inference serving.
-logo: ''
 author: flashinfer-ai
 ossDate: '2023-01-01T00:00:00.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 FlashInfer is a kernel library and JIT toolset optimized for LLM serving scenarios. It provides high-performance implementations of attention and sampling, aiming to reduce latency and improve GPU bandwidth utilization. FlashInfer supports integration with PyTorch, TVM, and other frameworks, making it suitable for building high-throughput inference services.

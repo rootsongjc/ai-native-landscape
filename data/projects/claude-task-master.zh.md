@@ -3,7 +3,7 @@ name: Claude Task Master
 slug: claude-task-master
 homepage: https://task-master.dev
 repo: https://github.com/eyaltoledano/claude-task-master
-license: Unknown
+license: MIT
 category: applications-products
 subCategory: workflow-automation
 tags:
@@ -11,13 +11,11 @@ tags:
   - Dev Tools
   - Workflow
 description: Claude Task Master 是一款基于 AI 的任务管理系统，可集成到 Cursor、Lovable、Windsurf 等平台中以提升任务协同与自动化能力。
-logo: ''
 author: eyaltoledano
 ossDate: '2025-03-04T18:54:54.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Claude Task Master 是一款面向任务管理与协同的 AI 驱动系统，设计为可无缝嵌入 Cursor、Lovable、Windsurf 等平台。它利用大模型自动化任务分配、优先级判定与执行建议，帮助团队提高工作效率并减少重复劳动。

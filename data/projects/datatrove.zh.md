@@ -3,20 +3,18 @@ name: DataTrove
 slug: datatrove
 homepage: null
 repo: https://github.com/huggingface/datatrove
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: data-connectors
 tags:
   - Data
   - Tool
 description: DataTrove 提供可扩展、平台无关的数据处理管道，用于大规模文本数据的清洗、去重与转换。
-logo: ''
 author: Hugging Face
 ossDate: '2023-06-14T12:05:28.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 DataTrove 是一个开源库，提供用于大规模文本数据处理的可组合 pipeline 模块，支持读取、提取、过滤、去重与保存多种数据格式，适用于 LLM 训练数据预处理和 RAG 数据管道。

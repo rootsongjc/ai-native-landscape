@@ -3,7 +3,7 @@ name: DeepTutor
 slug: deeptutor
 homepage: https://hkuds.github.io/DeepTutor
 repo: https://github.com/hkuds/deeptutor
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: knowledge-graphs
 tags:
@@ -14,13 +14,11 @@ tags:
   - RAG
   - Visualization
 description: A multi-agent personalized learning system integrating RAG, knowledge graphs, and interactive visualizations.
-logo: ''
 author: HKUDS
 ossDate: '2025-12-28T15:35:54Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 DeepTutor is an agent-native, open-source personalized tutoring platform developed by HKUDS. It combines Retrieval-Augmented Generation (RAG), knowledge graphs, and multi-agent collaborative reasoning to deliver end-to-end learning support from knowledge retrieval to practice and assessment.

@@ -3,7 +3,7 @@ name: Aden Hive
 slug: aden-hive
 homepage: https://docs.adenhq.com/
 repo: https://github.com/aden-hive/hive
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -12,13 +12,11 @@ tags:
   - Automation
   - Observability
 description: 一个面向生产、支持自我演化的智能体开发框架与运行时。
-logo: ''
 author: Aden
 ossDate: '2026-01-12T00:04:22Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Aden Hive 是一个面向生产的多智能体编排平台，通过自然语言目标描述自动生成智能体图谱与连接代码。框架提供运行时、可观测性工具与人机交互节点，使智能体能够采集失败数据、由编码智能体演化并自动重新部署，形成持续自我改进的闭环。

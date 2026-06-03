@@ -11,7 +11,6 @@ tags:
   - Dev Tools
   - Project
 description: A collection that packages reusable skills as instructions and scripts to extend agents' capabilities.
-logo: ''
 author: Vercel
 ossDate: '2025-12-08T19:10:06Z'
 featured: false

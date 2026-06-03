@@ -3,7 +3,7 @@ name: DeerFlow
 slug: deer-flow
 homepage: null
 repo: https://github.com/bytedance/deer-flow
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -12,13 +12,11 @@ tags:
   - Sandbox
   - Workflow
 description: DeerFlow 是字节跳动开源的超级智能体运行时框架，通过沙箱、记忆、工具、技能和子智能体的协同工作，能够处理从几分钟到几小时不同级别的复杂任务。
-logo: ''
 author: ByteDance
 ossDate: '2026-03-23'
 featured: false
 status: tracked
 ---
-
 ## 详细介绍
 
 DeerFlow（Deep Exploration and Efficient Research Flow）是字节跳动开源的超级智能体运行时框架（SuperAgent Harness）。它通过编排子智能体、记忆和沙箱环境，配合可扩展的技能系统，能够处理从几分钟到几小时不同级别的复杂任务。
@@ -28,21 +26,27 @@ DeerFlow 2.0 是从零开始的重写版本，基于 LangGraph 和 LangChain 构
 ## 主要特性
 
 ### 技能与工具
+
 DeerFlow 的技能系统是其核心能力所在。标准智能体技能是一个结构化的能力模块——包含工作流、最佳实践和支持资源引用的 Markdown 文件。DeerFlow 内置了研究、报告生成、幻灯片创建、网页制作、图像和视频生成等技能。更重要的是其强大的可扩展性：你可以添加自己的技能、替换内置技能，或将它们组合成复合工作流。
 
 ### 子智能体
+
 复杂任务很少能一次性完成。DeerFlow 会将它们分解。主导智能体可以动态生成子智能体——每个子智能体都有自己的作用域上下文、工具和终止条件。子智能体尽可能并行运行，报告结构化结果，然后主导智能体将所有内容综合成连贯的输出。
 
 ### 沙箱与文件系统
+
 DeerFlow 不仅"谈论"做事情，它有自己的计算机。每个任务都在隔离的 Docker 容器中运行，拥有完整的文件系统——包括技能、工作区、上传和输出。智能体可以读取、写入和编辑文件，执行 bash 命令和代码，查看图像。所有操作都在沙箱中，可审计，会话之间零污染。
 
 ### 上下文工程
+
 DeerFlow 主动管理上下文——总结已完成的子任务，将中间结果卸载到文件系统，压缩不再直接相关的内容。这使其能够在长多步骤任务中保持敏锐，而不会爆掉上下文窗口。每个子智能体都在自己隔离的上下文中运行，确保子智能体能够专注于手头的任务。
 
 ### 长期记忆
+
 DeerFlow 会在会话之间建立关于你的个人资料、偏好和积累知识的持久记忆。你使用得越多，它就越了解你——你的写作风格、技术栈、循环工作流。记忆存储在本地，始终在你的控制之下。
 
 ### 即时通讯集成
+
 DeerFlow 支持从消息应用接收任务。通道在配置后自动启动——不需要公网 IP。支持 Telegram、Slack、飞书/Lark 等平台。
 
 ## 使用场景

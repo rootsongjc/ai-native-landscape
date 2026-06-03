@@ -3,7 +3,7 @@ name: DLRover
 slug: dlrover
 homepage: https://pypi.org/project/dlrover/
 repo: https://github.com/intelligent-machine-learning/dlrover
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: deployment-operations
 tags:
@@ -11,13 +11,11 @@ tags:
   - Framework
   - ML Platform
 description: DLRover 是一个自动化的分布式深度学习系统，提供弹性调度、闪电检查点与自动伸缩，简化大规模模型在 Kubernetes/Ray 上的训练与运维。
-logo: ''
 author: Intelligent Machine Learning
 ossDate: '2022-06-24T09:31:07.000Z'
 featured: false
 status: tracked
 ---
-
 ## 详细介绍
 
 DLRover 是一款面向工业级大规模训练的自动化分布式深度学习系统，旨在减少训练中断、提高资源利用率并加快故障恢复，支持在 Kubernetes 或 Ray 集群上无缝运行。

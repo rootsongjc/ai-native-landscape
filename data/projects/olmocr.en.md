@@ -12,7 +12,6 @@ tags:
 description: >-
   A toolkit for linearizing PDFs and image-based documents into readable plain text and Markdown, aimed at LLM dataset
   creation and large-scale document processing.
-logo: ''
 author: Allen Institute for AI (AI2)
 ossDate: '2024-09-17T14:53:40.000Z'
 featured: false

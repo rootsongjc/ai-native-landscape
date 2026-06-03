@@ -12,7 +12,6 @@ tags:
 description: >-
   An open-source set of protocols and implementations for quickly adding conversational interfaces to websites, with
   MCP/A2A and Schema.org outputs.
-logo: ''
 author: NLWeb Community
 ossDate: '2025-04-28T20:44:02.000Z'
 featured: false

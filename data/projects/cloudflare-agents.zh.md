@@ -3,20 +3,18 @@ name: Cloudflare Agents
 slug: cloudflare-agents
 homepage: https://developers.cloudflare.com/agents/
 repo: https://github.com/cloudflare/agents
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
   - AI Agent
   - Dev Tools
 description: Cloudflare Agents：Cloudflare 提供的开源边缘 AI Agent 框架，支持状态管理、实时通信与扩展集成。
-logo: ''
 author: Cloudflare
 ossDate: '2025-01-29T23:14:04.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Cloudflare Agents 是一个面向边缘部署的开源 AI Agent 框架，旨在让智能代理具备持久化状态、实时通信和可扩展的集成能力。该项目提供完整的开发套件、示例和文档，支持在 Cloudflare Edge 上构建和运行具备记忆、事件驱动与外部系统交互能力的代理应用。

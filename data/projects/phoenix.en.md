@@ -12,7 +12,6 @@ tags:
 description: >-
   Phoenix is a high-performance web framework built with Elixir, optimized for realtime, distributed, and scalable web
   applications.
-logo: ''
 author: 'Chris McCord '
 ossDate: '2014-01-20T14:14:11.000Z'
 featured: false

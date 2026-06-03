@@ -12,7 +12,6 @@ tags:
   - Claude Code
   - Context Engineering
 description: Persistent memory layer for AI coding agents, enabling cross-session context retention based on real-world benchmarks.
-logo: ''
 author: rohitg00
 ossDate: '2026-02-25T07:32:52Z'
 featured: false

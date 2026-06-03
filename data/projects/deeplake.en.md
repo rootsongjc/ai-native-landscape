@@ -3,7 +3,7 @@ name: Deep Lake
 slug: deeplake
 homepage: https://docs.deeplake.ai/
 repo: https://github.com/activeloopai/deeplake
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: data-platforms
 tags:
@@ -13,13 +13,11 @@ tags:
 description: >-
   A database for AI optimized for storing, querying and versioning vectors and multimodal data (images, video, audio,
   text) for LLM and deep learning workflows.
-logo: ''
 author: Activeloop
 ossDate: '2019-08-09T06:17:59.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 Deep Lake is a database for AI optimized for storing, querying and versioning vectors and multimodal data (images, video, audio, text). It enables building LLM applications, training deep learning models at scale, and streaming data into PyTorch/TensorFlow for efficient training.

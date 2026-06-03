@@ -14,7 +14,6 @@ tags:
 description: >-
   An AI skill that offers design intelligence and component suggestions for building professional UI/UX across multiple
   platforms.
-logo: ''
 author: Next Level Builder
 ossDate: '2025-11-30T11:36:31Z'
 featured: false

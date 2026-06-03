@@ -13,7 +13,6 @@ tags:
 description: >-
   An agentic AI framework for Java developers, supporting multi-agent workflows, MCP integration, and enterprise
   ecosystem connectivity.
-logo: ''
 author: Alibaba
 ossDate: '2024-09-09T01:35:50Z'
 featured: false

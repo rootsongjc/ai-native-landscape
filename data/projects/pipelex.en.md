@@ -11,27 +11,28 @@ tags:
   - Orchestration
   - Workflow
 description: An open-source language and toolkit for building and running reproducible AI agent workflows.
-logo: ''
 author: Pipelex
 ossDate: '2025-05-26T07:21:34Z'
 featured: false
 status: tracked
 ---
 
-## Overview
-
 Pipelex is an open-source declarative language and devtool for building composable AI workflows that both agents and humans can use. It lets developers define multi-step agent pipelines in a readable DSL, with built-in orchestration, observability, and replay so that complex tasks become reproducible and easy to debug.
 
-## Key Features
+## Declarative DSL
 
-- A declarative DSL that makes workflow definitions concise, versionable, and easy to review alongside application code.
-- Built-in orchestration engine with automatic retry and replay mechanisms that ensure workflows are robust and deterministic.
-- Pluggable connector system for external APIs, databases, vector stores, and custom tools, compatible with multiple LLM providers.
+- Concise, versionable workflow definitions that are easy to review alongside application code
+- Human-readable syntax that both developers and AI agents can understand and modify
+- Step-level state tracking for full visibility into pipeline execution progress
 
-## Use Cases
+## Orchestration & Reliability
 
-Teams building RAG pipelines can declaratively chain retrieval, model inference, and post-processing steps into a single reproducible workflow. Content-generation pipelines benefit from step-level logging and replay when iterating on prompts. Long-running orchestration tasks across multiple systems can be modeled, tested, and deployed using the same DSL from prototype to production.
+- Built-in orchestration engine with automatic retry and replay mechanisms
+- Deterministic execution ensuring workflows produce consistent results across runs
+- Structured logs for debugging complex multi-step pipelines
 
-## Technical Details
+## Pluggable Connectors
 
-Pipelex's lightweight DSL compiles to an orchestrated runtime that provides step-level state tracking and structured logs for full observability. A plugin architecture allows any custom action to be exposed as a callable tool, and the system is designed for interoperability with existing model providers and vector libraries.
+- Connectors for external APIs, databases, vector stores, and custom tools
+- Compatible with multiple LLM providers for flexible model selection
+- Plugin architecture allowing any custom action to be exposed as a callable tool

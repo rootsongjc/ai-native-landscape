@@ -11,7 +11,6 @@ tags:
   - Dev Tools
   - Utility
 description: A model-agnostic SDK for building, orchestrating, and deploying scalable AI agents and multi-agent systems.
-logo: ''
 author: Microsoft
 ossDate: '2023-02-27T17:39:42.000Z'
 featured: false

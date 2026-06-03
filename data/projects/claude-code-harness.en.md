@@ -11,7 +11,6 @@ tags:
   - Developer Tools
   - Automation
 description: Claude Code dedicated development harness for achieving high-quality autonomous coding workflows.
-logo: ''
 author: Chachamaru127
 ossDate: '2025-12-12T00:00:00Z'
 featured: false

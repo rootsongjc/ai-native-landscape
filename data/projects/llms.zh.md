@@ -12,7 +12,6 @@ tags:
   - Dev Tools
   - UI
 description: 轻量的多提供商 LLM 客户端，提供兼容 OpenAI 的服务器 API 与可选的聊天 UI。
-logo: ''
 author: ServiceStack
 ossDate: '2025-09-23T11:04:23Z'
 featured: false

@@ -3,7 +3,7 @@ name: Golem
 slug: golem
 homepage: https://learn.golem.cloud/
 repo: https://github.com/golemcloud/golem
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: model-serving
 tags:
@@ -11,25 +11,37 @@ tags:
   - Runtime
   - Serving
 description: An open source durable computing platform that simplifies building and deploying highly reliable distributed systems.
-logo: ''
 author: Golem Cloud
 ossDate: '2023-11-24T08:54:54Z'
 featured: false
 status: tracked
 ---
+Golem Cloud is an agent-native platform for building AI agents and distributed applications that never lose state and never duplicate work. It runs WebAssembly components as durable execution units, enabling developers to build highly reliable stateful services without manually handling distributed systems complexity.
 
-## Overview
+## Durable Execution
 
-Golem Cloud is an agent-native platform for building AI agents and distributed applications that never lose state and never duplicate work. It runs WebAssembly components as durable execution units, enabling developers to build highly reliable stateful services without manually handling distributed systems complexity. Golem's durable execution model ensures that every step of an agent's workflow is persisted and recoverable, making it ideal for mission-critical AI workflows.
+- Every step of an agent's workflow is persisted and recoverable
+- Exactly-once execution semantics guarantee no duplicated work
+- Automatic job recovery from failures with transparent state restoration
+- Built-in support for long-running stateful services that survive restarts
 
-## Key Features
+## WebAssembly Component Model
 
-Golem provides a WebAssembly-based component model with language-agnostic runtime isolation, durable scheduling and recovery mechanisms that guarantee exactly-once execution semantics. It offers a modular control plane with rich SDKs covering orchestration, debugging, and integration, along with built-in support for long-running stateful services that can survive failures transparently.
+- Language-agnostic runtime isolation via WASM components
+- Write agents in any language that compiles to WebAssembly
+- Component lifecycle management with safe hot-swapping
+- Sandbox-isolated execution for security and resource control
 
-## Use Cases
+## Orchestration and SDKs
 
-Golem is well-suited for building durable AI agent workflows that require reliable state management, such as multi-step orchestration pipelines, long-running data processing jobs, and recoverable background tasks. It also fits scenarios involving WASM-based microservices, edge computing workloads, and any cloud-native system that demands fault-tolerant execution with strong observability.
+- Modular control plane with rich SDKs for orchestration and debugging
+- Durable scheduling and recovery mechanisms built into the platform
+- Integration layers for connecting agents with external services and APIs
+- Debugging tools for inspecting and replaying workflow execution
 
-## Technical Details
+## Deployment Flexibility
 
-Built in Rust for performance and safety, Golem combines WebAssembly with durable execution semantics to provide lifecycle management, automatic job recovery, and a scalable scheduler. Its modular architecture supports multiple deployment modes including local development, private cloud, and public cloud, with a language-agnostic component model that allows developers to write agents in their preferred programming language.
+- Built in Rust for performance and memory safety
+- Multiple deployment modes: local development, private cloud, and public cloud
+- Scalable scheduler that handles distributed workloads transparently
+- Ideal for multi-step orchestration pipelines and recoverable background tasks

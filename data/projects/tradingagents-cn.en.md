@@ -9,7 +9,6 @@ subCategory: productivity-tools
 tags:
   - Product
 description: A powerful trading analysis platform with multi-agent collaboration and automated reporting for Chinese users.
-logo: ''
 author: hsliuping
 ossDate: '2025-06-01T00:00:00+08:00'
 featured: false

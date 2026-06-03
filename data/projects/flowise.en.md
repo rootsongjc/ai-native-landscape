@@ -3,7 +3,7 @@ name: Flowise
 slug: flowise
 homepage: null
 repo: https://github.com/flowiseai/flowise
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: workflow-automation
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   A visual, open-source platform for building AI agents and workflows with self-hosting, Docker, and Flowise Cloud
   options.
-logo: ''
 author: Flowise Team
 ossDate: '2023-03-31T12:23:09.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 Flowise is a visual, open-source platform to build AI agents and workflows by connecting model, retrieval, and tool nodes. It focuses on rapid prototyping, RAG applications, and flexible deployment.

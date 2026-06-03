@@ -9,7 +9,6 @@ subCategory: deployment-operations
 tags:
   - Dev Tools
 description: Tabby 是一个可自托管的 AI 编程助手，提供企业级与社区级的本地部署方案，适合在私有网络或对数据隐私有要求的场景中使用。
-logo: ''
 author: TabbyML
 ossDate: '2023-03-16T09:18:01.000Z'
 featured: false

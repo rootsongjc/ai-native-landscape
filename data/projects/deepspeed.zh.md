@@ -3,20 +3,18 @@ name: DeepSpeed
 slug: deepspeed
 homepage: https://www.deepspeed.ai/
 repo: https://github.com/deepspeedai/deepspeed
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: inference-runtimes
 tags:
   - Inference
   - ML Platform
 description: 一个高性能的深度学习训练与推理优化库，可显著加速大规模模型的训练与推理并降低成本。
-logo: ''
 author: DeepSpeed 团队
 ossDate: '2020-01-23T18:35:18.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 DeepSpeed 是微软开源的深度学习优化套件，专注于分布式训练、内存与推理效率（如 ZeRO、DeepSpeed-Inference、压缩技术等），帮助研究者和工程师以更低成本训练数十亿到数万亿参数的模型。

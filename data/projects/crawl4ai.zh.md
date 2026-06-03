@@ -3,31 +3,42 @@ name: Crawl4AI
 slug: crawl4ai
 homepage: https://crawl4ai.com
 repo: https://github.com/unclecode/crawl4ai
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: deployment-operations
 tags:
   - Dev Tools
 description: 一个面向大模型应用的开源网页爬虫与抓取器，输出清洁的 Markdown 与结构化数据，支持浏览器控制、Docker 部署与 LLM 驱动的抽取。
-logo: ''
 author: UncleCode
 ossDate: '2024-05-09T09:48:50Z'
 featured: false
 status: tracked
 ---
-
-## 简介
-
 Crawl4AI 是一个开源的 LLM 友好型网页爬虫与抓取器，能够提取针对大语言模型消费优化的结构化数据。它将网页内容转换为干净的 Markdown 和结构化格式，非常适合 RAG 流水线和下游 AI 工作流使用。
 
-## 主要特性
+## 抽取与输出能力
 
-Crawl4AI 提供 LLM 友好的 Markdown 生成，具备自动去噪和引用格式化能力。它支持 CSS/XPath、Schema 化抽取、BM25 过滤和表格智能分块等多种抽取策略，并集成 Playwright 浏览器管理和 Docker 就绪的生产化部署方案。
+- LLM 友好的 Markdown 生成，具备自动去噪、链接扁平化和引用格式化能力
+- 灵活的抽取策略：CSS/XPath 选择器、JSON Schema 结构化抽取和 BM25 相关性过滤
+- 表格智能分块和结构化数据抽取，保留语义关系
+- 支持在提取文本内容的同时抽取媒体元数据
+
+## 浏览器管理与部署
+
+- 基于 Playwright 的浏览器管理，提供浏览器池支持并发抓取
+- 支持虚拟滚动、延迟加载和 JavaScript 重型单页应用
+- Docker 就绪的生产化部署，提供预构建镜像快速启动
+- FastAPI 服务端，便于编程访问和集成到现有流水线
 
 ## 使用场景
 
-Crawl4AI 用于构建 RAG 数据管道，为向量索引和检索准备干净语料。它还支持对新闻和行业站点的定期抓取与结构化抽取，以及大规模数据提取和语义分块等研究场景。
+- 构建 RAG 数据管道，为向量索引和检索准备干净语料
+- 对新闻和行业站点进行定期抓取与自动化监控报告
+- 大规模数据提取和语义分块等研究场景
+- 按需为 LLM 驱动的应用提供新鲜、结构化的网页数据
 
-## 技术特点
+## 技术亮点
 
-Crawl4AI 采用异步爬虫与浏览器池架构，支持虚拟滚动和延迟加载内容处理。它支持 LLM 驱动的结构化抽取和可扩展钩子，提供 Docker 镜像和 FastAPI 服务用于生产部署，采用 Apache-2.0 许可证并拥有活跃的社区。
+- 异步爬虫架构，专为高吞吐量工作负载设计
+- 支持 LLM 驱动的结构化抽取和可扩展的自定义处理钩子
+- 采用 Apache-2.0 许可证，拥有活跃成长中的开源社区

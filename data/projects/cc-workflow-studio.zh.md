@@ -3,7 +3,7 @@ name: CC Workflow Studio
 slug: cc-workflow-studio
 homepage: null
 repo: https://github.com/breaking-brake/cc-wf-studio
-license: Unknown
+license: AGPL-3.0
 category: coding-devtools
 subCategory: coding-agents
 tags:
@@ -14,13 +14,11 @@ tags:
 description: >-
   CC Workflow Studio 是一个 VS Code 扩展，提供可视化的拖放式画布来设计 AI 智能体编排，无需编写代码。支持多智能体工作流、子智能体编排、Agent Skills 和 MCP 工具集成，可通过自然语言与 AI
   对话来迭代改进工作流，并支持一键导出为多种格式并在编辑器中直接运行。
-logo: ''
 author: breaking-brake
 ossDate: '2025-03-16'
 featured: false
 status: tracked
 ---
-
 ## 详细介绍
 
 CC Workflow Studio 是一个专为 AI 智能体设计的可视化工作流编辑器，以 VS Code 扩展的形式提供。该工具通过直观的拖放式画布，让开发者无需编写代码即可设计复杂的 AI 智能体编排。基于 React Flow 构建，支持多智能体工程的核心构建模块，包括子智能体编排、Agent Skills 和 MCP 工具集成。

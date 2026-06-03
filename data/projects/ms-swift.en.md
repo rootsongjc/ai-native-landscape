@@ -11,7 +11,6 @@ tags:
 description: >-
   SWIFT from ModelScope: a scalable, lightweight infrastructure for fine-tuning, evaluating and deploying large and
   multimodal models, with training, quantization and inference acceleration support.
-logo: ''
 author: ModelScope
 ossDate: '2023-08-01T15:06:39.000Z'
 featured: false

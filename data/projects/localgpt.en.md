@@ -3,7 +3,7 @@ name: LocalGPT
 slug: localgpt
 homepage: null
 repo: https://github.com/promtengineer/localgpt
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   A private, on-premise document intelligence platform that combines hybrid retrieval and multi-model inference while
   keeping all data local.
-logo: ''
 author: PromtEngineer
 ossDate: '2023-05-24T05:32:40.000Z'
 featured: false
 status: tracked
 ---
-
 ## Summary
 
 LocalGPT is a private, on-premise document intelligence platform that blends semantic search, keyword matching and late chunking to enable secure QA, summarization and insight extraction from documents without data leaving the host.

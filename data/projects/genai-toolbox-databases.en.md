@@ -3,32 +3,44 @@ name: GenAI Toolbox for Databases
 slug: genai-toolbox-databases
 homepage: null
 repo: https://github.com/googleapis/genai-toolbox
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: mcp-tools
 tags:
   - Dev Tools
   - Utility
 description: An open-source MCP toolkit by Google that provides standardized AI agent interfaces for database operations.
-logo: ''
 author: Google
 ossDate: '2024-06-07T20:52:54.000Z'
 featured: false
 status: tracked
 ---
-
-## Overview
-
 GenAI Toolbox for Databases is an open-source MCP server developed by Google that provides standardized interfaces for AI agents to interact with databases. It simplifies database tool development and deployment by handling complex operations such as connection pooling, authentication, and query optimization, enabling rapid integration with minimal code.
 
-## Key Features
+## Rapid Integration
 
-The toolkit supports integration in under 10 lines of code with tool reusability across multiple agents and easy versioned deployment. It delivers robust performance through connection pool management, query optimization, and concurrent request handling. Security features include authentication, granular access control, and audit logging, while OpenTelemetry integration provides detailed metrics and request tracing for full observability.
+- Integrates in under 10 lines of code with YAML-based configuration
+- Tool reusability across multiple agents without duplicating logic
+- Easy versioned deployment with centralized tool management
+- Dynamic updates without application redeployment
 
-## Use Cases
+## Performance and Security
 
-GenAI Toolbox is used to enable AI agents to perform intelligent queries, automated data analysis, and complex business logic processing against databases. It supports development tool integration for code generation and test data construction, as well as business automation scenarios such as report generation, cross-system data synchronization, and compliance checking.
+- Connection pool management for efficient database resource utilization
+- Query optimization and concurrent request handling
+- Authentication and granular access control built into the toolkit
+- Audit logging for compliance and security tracking
 
-## Technical Details
+## Observability and Control Plane
 
-The architecture positions the toolkit as a control plane between application orchestration frameworks and databases, enabling centralized tool management, seamless sharing across agents, and dynamic updates without application redeployment. It supports PostgreSQL, MySQL, and SQLite with YAML-based configuration and supports binary, container, and source installation methods.
+- OpenTelemetry integration for detailed metrics and request tracing
+- Positioned as a control plane between orchestration frameworks and databases
+- Centralized tool management with seamless sharing across agents
+- Full visibility into query execution and agent interactions
+
+## Supported Databases and Deployment
+
+- Supports PostgreSQL, MySQL, and SQLite out of the box
+- Binary, container, and source installation methods available
+- Enables AI agents to perform intelligent queries and automated data analysis
+- Supports code generation, test data construction, and report generation workflows

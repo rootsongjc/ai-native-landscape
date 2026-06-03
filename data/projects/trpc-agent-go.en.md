@@ -13,7 +13,6 @@ tags:
 description: >-
   tRPC-Agent-Go is a production-ready Go framework for building intelligent agent systems with multi-agent
   orchestration, tooling, and observability.
-logo: ''
 author: tRPC Group
 ossDate: '2025-05-14T13:51:35Z'
 featured: false

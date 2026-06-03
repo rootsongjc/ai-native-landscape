@@ -3,7 +3,7 @@ name: DocsGPT
 slug: docs-gpt
 homepage: https://app.docsgpt.cloud/
 repo: https://github.com/arc53/docsgpt
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   An open-source enterprise document agent platform combining RAG and multi-model support to provide citation-backed
   answers.
-logo: ''
 author: arc53
 ossDate: '2023-02-02T11:03:23Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 DocsGPT is a private AI platform for agents, assistants, and enterprise search, featuring a built-in Agent Builder, deep research, and document analysis capabilities. It combines retrieval-augmented generation (RAG) with large language models to deliver citation-backed answers across multiple document formats.

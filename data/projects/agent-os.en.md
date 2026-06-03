@@ -3,7 +3,7 @@ name: Agent OS
 slug: agent-os
 homepage: https://buildermethods.com/agent-os
 repo: https://github.com/buildermethods/agent-os
-license: Unknown
+license: MIT
 category: applications-products
 subCategory: workflow-automation
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   Discover Agent OS, a spec-driven system that enhances AI agent workflows for engineering teams, ensuring stability and
   repeatability in codebases.
-logo: ''
 author: Brian Casel / Builder Methods
 ossDate: '2025-07-16T21:28:59.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Agent OS is a spec-driven system for injecting codebase standards and writing better specs for spec-driven development. It combines team standards, project context, and execution instructions to help engineering teams institutionalize iterative AI assistant workflows with higher stability and repeatability.

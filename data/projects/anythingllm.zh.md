@@ -3,19 +3,17 @@ name: Anything LLM
 slug: anythingllm
 homepage: https://anythingllm.com/
 repo: https://github.com/mintplex-labs/anything-llm
-license: Unknown
+license: MIT
 category: applications-products
 subCategory: chat-interfaces
 tags:
   - Chatbot
 description: 全面的开源解决方案，用于创建和管理具有文档交互、嵌入和完全自定义功能的私有 LLM 聊天机器人。
-logo: ''
 author: Mintplex Labs
 ossDate: '2023-06-04T02:29:14.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 AnythingLLM 是一款一体化 AI 生产力加速器，以设备端运行、隐私优先为核心理念，无需繁琐的安装与配置。它支持使用商业或开源大语言模型和向量数据库构建私有化 ChatGPT 体验，通过独立工作区组织文档，确保上下文清晰。

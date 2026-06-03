@@ -3,19 +3,17 @@ name: DSPy
 slug: dspy
 homepage: https://dspy.ai/
 repo: https://github.com/stanfordnlp/dspy
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: data-connectors
 tags:
   - Dev Tools
 description: DSPy 是一个面向将基础模型编程化（而非仅靠提示）的开源框架，便于构建组合化、可自我优化的 AI 流水线。
-logo: ''
 author: DSPy contributors
 ossDate: '2023-01-09T21:01:51.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 DSPy（Declarative Self-improving Python）是一个将“编程”而非“提示”作为与基础模型交互主轴的开源框架。它通过组合化的 Python 接口，把模型调用、检索、评估与自我优化流程编排为可重复的流水线，适合构建分类器、RAG 管道与多步 Agent 循环等复杂应用。

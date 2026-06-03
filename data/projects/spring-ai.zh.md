@@ -10,7 +10,6 @@ tags:
   - Application Framework
   - Dev Tools
 description: 面向 AI 工程的企业级应用框架，提供与 Spring 生态兼容的模型接入、向量存储和可移植的 AI 接口。
-logo: ''
 author: Spring
 ossDate: '2023-06-27T00:00:00.000Z'
 featured: false

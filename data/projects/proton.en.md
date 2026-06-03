@@ -12,7 +12,6 @@ tags:
 description: >-
   Proton is a single-binary C++ high-performance SQL stream processing engine designed for real-time analytics and
   stream ETL.
-logo: ''
 author: TimePlus
 ossDate: '2023-08-14T03:11:43.000Z'
 featured: false

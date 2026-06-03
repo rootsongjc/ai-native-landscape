@@ -12,7 +12,6 @@ tags:
 description: >-
   Transformer Engine is an NVIDIA library focused on low-precision training and inference optimizations for Transformer
   models, supporting formats like FP8 to improve speed and memory efficiency.
-logo: ''
 author: NVIDIA
 ossDate: '2022-09-20T15:20:26.000Z'
 featured: false

@@ -12,7 +12,6 @@ tags:
 description: >-
   A no-code LLM platform to convert unstructured documents into structured data and quickly launch APIs and ETL
   pipelines.
-logo: ''
 author: Zipstack
 ossDate: '2024-02-21T10:34:33.000Z'
 featured: false

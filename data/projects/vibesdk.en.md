@@ -11,7 +11,6 @@ tags:
 description: >-
   An open-source AI app generation and deployment platform that turns natural language descriptions into full-stack apps
   with live previews and one-click deploy.
-logo: ''
 author: Cloudflare
 ossDate: '2025-08-25T15:07:31.000Z'
 featured: false

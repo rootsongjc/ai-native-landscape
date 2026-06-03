@@ -12,7 +12,6 @@ tags:
 description: >-
   workerd is Cloudflare's open-source JavaScript/Wasm server runtime designed to run Workers-compatible nanoservices and
   edge applications in local or self-hosted environments.
-logo: ''
 author: Cloudflare
 ossDate: '2022-09-15T15:15:16.000Z'
 featured: false

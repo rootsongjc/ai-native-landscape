@@ -3,7 +3,7 @@ name: EasyR1
 slug: easy-r1
 homepage: https://verl.readthedocs.io/en/latest/index.html
 repo: https://github.com/hiyouga/easyr1
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: training-frameworks
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   EasyR1 is an efficient, scalable RL training framework for multimodal models, based on veRL and optimized for
   large-model training.
-logo: ''
 author: hiyouga
 ossDate: '2025-02-22T04:17:31Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 EasyR1 is an efficient, scalable, multi-modality reinforcement learning training framework based on veRL, optimized for reasoning models. It incorporates engineering optimizations such as HybridEngine and vLLM SPMD support to enable RL training and evaluation for large language and vision-language models.

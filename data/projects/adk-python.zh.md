@@ -3,7 +3,7 @@ name: Agent Development Kit (ADK)
 slug: adk-python
 homepage: https://google.github.io/adk-docs/
 repo: https://github.com/google/adk-python
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: deployment-operations
 tags:
@@ -11,13 +11,11 @@ tags:
   - Deployment
   - Dev Tools
 description: ADK 是 Google 开源的 Python 工具包，专为灵活构建、评估和部署高阶 AI Agent 设计，支持多模型与多场景。
-logo: ''
 author: Google
 ossDate: '2025-04-01T20:44:40.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Agent Development Kit (ADK) 是一套灵活、模块化的 Python 框架，支持多模型和多平台，助力开发者以软件工程方式构建智能体。

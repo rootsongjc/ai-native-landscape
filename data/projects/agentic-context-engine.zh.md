@@ -3,19 +3,17 @@ name: Agentic Context Engine
 slug: agentic-context-engine
 homepage: https://www.kayba.ai
 repo: https://github.com/kayba-ai/agentic-context-engine
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: agent-memory-context
 tags:
   - AI Agent
 description: Agentic Context Engine（ACE）是一个用于让智能体从经验中学习的上下文工程框架与实现。
-logo: ''
 author: Kayba AI
 ossDate: '2025-10-15T15:36:20.000Z'
 featured: false
 status: tracked
 ---
-
 ## 详细介绍
 
 Agentic Context Engine（ACE）由 Kayba AI 提出并实现，旨在为智能体提供经验驱动的上下文构建与管理能力，使代理能够从历史交互与记忆中学习并改进决策策略。ACE 将上下文工程方法论与可编排的组件结合，便于在多步任务和长期记忆场景下提升智能体表现与一致性。

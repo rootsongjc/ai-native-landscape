@@ -3,20 +3,18 @@ name: FlashInfer
 slug: flashinfer
 homepage: https://flashinfer.ai
 repo: https://github.com/flashinfer-ai/flashinfer
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: inference-runtimes
 tags:
   - Dev Tools
   - Inference
 description: FlashInfer 是一个面向 LLM 推理与服务的高性能内核库，提供高效的 attention 与采样内核以提升 GPU 推理吞吐与延迟表现。
-logo: ''
 author: flashinfer-ai
 ossDate: '2023-01-01T00:00:00.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 FlashInfer 是一个为 LLM 服务场景优化的内核库与 JIT 工具，提供高性能的注意力（Attention）与采样（Sampling）实现，旨在降低延迟并提升 GPU 带宽利用率，支持 PyTorch、TVM 等集成方式，适合构建高吞吐量的推理服务。

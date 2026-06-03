@@ -14,7 +14,6 @@ tags:
 description: >-
   Plannotator is an interactive plan and code review tool for AI coding agents, featuring visual annotations, team
   collaboration, and one-click feedback, compatible with Claude Code, Copilot CLI, Gemini CLI, and more.
-logo: ''
 author: backnotprop
 ossDate: '2025-05-01'
 featured: false

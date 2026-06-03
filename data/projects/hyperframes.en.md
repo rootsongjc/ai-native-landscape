@@ -12,7 +12,6 @@ tags:
   - Agent
   - HeyGen
 description: Write HTML, render video. Built for AI agents to programmatically create videos from code.
-logo: ''
 author: HeyGen
 ossDate: '2026-03-10T00:00:00Z'
 featured: true

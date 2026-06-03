@@ -3,20 +3,18 @@ name: Google Research
 slug: google-research
 homepage: https://research.google/
 repo: https://github.com/google-research/google-research
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: deployment-operations
 tags:
   - ML Platform
   - Research
 description: Google Research 汇集了 Google 的开源研究代码与数据集，涵盖机器学习、计算机视觉、语言模型等多个研究方向。
-logo: ''
 author: Google
 ossDate: '2014-01-01T00:00:00+08:00'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Google Research 是 Google 的开源研究代码仓库，包含数千个项目、数据集与实验实现，覆盖机器学习、自然语言处理、计算机视觉、强化学习等领域，为研究与工程提供大量复现代码与基准资源。

@@ -12,7 +12,6 @@ tags:
   - LLM
   - Utility
 description: 高性能开源大模型推理与服务框架，支持多模态、极致并发与灵活前端编程。
-logo: ''
 author: SGLang
 ossDate: '2024-01-08T04:15:52.000Z'
 featured: true

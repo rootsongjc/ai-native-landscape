@@ -3,19 +3,17 @@ name: ChatDev
 slug: chatdev
 homepage: null
 repo: https://github.com/openbmb/chatdev
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:
   - Agent Framework
 description: 基于大模型的多智能体协作框架，用于将自然语言想法自动化为可运行的软件工程流程。
-logo: ''
 author: OpenBMB
 ossDate: '2023-08-28T02:18:13.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 ChatDev 是一个面向软件开发的多智能体协作框架，利用大语言模型驱动不同角色（例如产品、开发、测试）的智能代理协作完成需求分析、编码、测试与文档生成，旨在探索群体智能与自动化软件构建流程。

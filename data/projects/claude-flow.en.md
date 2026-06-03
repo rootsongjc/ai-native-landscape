@@ -3,7 +3,7 @@ name: 'Claude-Flow: Orchestration Platform for Claude'
 slug: claude-flow
 homepage: https://flow-nexus.ruv.io/
 repo: https://github.com/ruvnet/claude-flow
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   Claude-Flow is an orchestration and multi-agent coordination framework for the Claude platform, supporting
   high-concurrency agent scheduling, Hooks automation, and Flow Nexus cloud integration.
-logo: ''
 author: ruvnet
 ossDate: '2023-06-01T00:00:00+08:00'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Claude-Flow is a developer-focused orchestration platform for Claude that provides hive-mind and swarm multi-agent modes, runtime session forking for high parallelism, a Hooks automation system, and deep integration with the Flow Nexus cloud.

@@ -10,7 +10,6 @@ tags:
   - Framework
   - Training
 description: RLinf 是一个灵活可扩展的开源强化学习基础设施，专为具身智能和智能体 AI 设计，支持 PPO、GRPO、SAC 等多种 RL 训练流程，可无缝扩展至大规模 GPU 集群。
-logo: ''
 author: RLinf Team
 ossDate: '2025-08-15T00:00:00.000Z'
 featured: true

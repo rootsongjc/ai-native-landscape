@@ -12,7 +12,6 @@ tags:
   - Open Source
   - Multi-model
 description: Open-source alternative to AI video platforms with 200+ models including Flux, Midjourney-style generation, and video creation studio.
-logo: ''
 author: Anil Matcha
 ossDate: '2023-05-09T00:00:00Z'
 featured: true

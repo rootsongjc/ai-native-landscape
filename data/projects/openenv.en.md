@@ -12,7 +12,6 @@ tags:
 description: >-
   An end-to-end framework for creating, deploying and using isolated execution environments, aimed at agentic RL
   training and environment development.
-logo: ''
 author: Meta PyTorch
 ossDate: '2025-10-01T16:13:38.000Z'
 featured: false

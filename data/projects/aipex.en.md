@@ -3,7 +3,7 @@ name: AIPex
 slug: aipex
 homepage: https://claudechrome.com
 repo: https://github.com/aipexstudio/aipex
-license: Unknown
+license: MIT
 category: applications-products
 subCategory: workflow-automation
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   AIPex is an open-source browser automation extension that turns your browser into an intelligent automation platform
   via natural language commands.
-logo: ''
 author: AIPexStudio
 ossDate: '2024-08-22T03:02:28.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 AIPex is an open-source browser automation extension that enables users to perform complex, multi-step browser tasks using natural language instead of code. It supports major browsers, multi-tab and multi-window workflows, intelligent data extraction, form automation, and interactive page manipulation—useful for office automation, research scraping, and monitoring.

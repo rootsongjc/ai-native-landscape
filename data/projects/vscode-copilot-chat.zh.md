@@ -9,7 +9,6 @@ subCategory: coding-agents
 tags:
   - Vibe Coding
 description: VSCode Copilot Chat 是微软提供的用于在 Visual Studio Code 中集成 Copilot 对话功能的开源扩展。
-logo: ''
 author: Microsoft
 ossDate: '2025-06-10T16:21:19Z'
 featured: false

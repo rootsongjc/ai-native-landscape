@@ -10,7 +10,6 @@ tags:
   - Chatbot
   - UI
 description: 面向高级用户的 LLM 前端，提供直观的聊天界面、插件支持与本地/远程模型接入选项。
-logo: ''
 author: SillyTavern
 ossDate: '2023-02-09T10:19:24Z'
 featured: false

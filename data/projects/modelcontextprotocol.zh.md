@@ -9,7 +9,6 @@ subCategory: mcp-tools
 tags:
   - MCP
 description: 模型上下文协议的规范和文档，用于在应用程序和 AI 模型之间建立标准化的通信协议。
-logo: ''
 author: Anthropic
 ossDate: '2024-09-24T20:26:52.000Z'
 featured: false

@@ -12,7 +12,6 @@ tags:
   - Dev Tools
   - UI
 description: Lightweight multi-provider LLM client with an OpenAI-compatible server API and optional chat UI.
-logo: ''
 author: ServiceStack
 ossDate: '2025-09-23T11:04:23Z'
 featured: false

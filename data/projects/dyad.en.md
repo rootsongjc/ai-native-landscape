@@ -3,7 +3,7 @@ name: Dyad
 slug: dyad
 homepage: https://dyad.sh
 repo: https://github.com/dyad-sh/dyad
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: coding-agents
 tags:
@@ -13,13 +13,11 @@ tags:
 description: >-
   A free, open-source platform for building local and cloud AI applications, streamlining generative app and prototype
   development.
-logo: ''
 author: Dyad
 ossDate: '2025-04-11T06:33:48Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Dyad is a local, open-source AI app builder for power users, positioned as an alternative to v0, Lovable, Replit, and Bolt. It helps developers and creators quickly assemble interactive generative apps and agent-like services with a local-first experience for privacy-sensitive and low-latency scenarios.

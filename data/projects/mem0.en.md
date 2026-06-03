@@ -12,7 +12,6 @@ tags:
 description: >-
   Mem0 is a scalable memory layer for AI agents that provides long-term, personalized, and efficient memory storage and
   retrieval.
-logo: ''
 author: Mem0
 ossDate: '2023-06-20T08:58:36.000Z'
 featured: false

@@ -13,7 +13,6 @@ tags:
 description: >-
   ML Intern is an open-source autonomous ML engineer agent by HuggingFace that reads papers, trains models, and ships ML
   code with deep integration into the HuggingFace ecosystem.
-logo: ''
 author: HuggingFace
 ossDate: '2025-10-30T13:43:09Z'
 featured: false

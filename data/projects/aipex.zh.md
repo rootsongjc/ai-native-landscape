@@ -3,19 +3,17 @@ name: AIPex
 slug: aipex
 homepage: https://claudechrome.com
 repo: https://github.com/aipexstudio/aipex
-license: Unknown
+license: MIT
 category: applications-products
 subCategory: workflow-automation
 tags:
   - Automation
 description: AIPex 是一款开源的浏览器自动化扩展，通过自然语言指令把浏览器变为智能化自动化平台。
-logo: ''
 author: AIPexStudio
 ossDate: '2024-08-22T03:02:28.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 AIPex 是一款开源的浏览器自动化扩展，旨在通过自然语言指令让用户无需编写代码即可执行复杂的多步骤浏览器任务。它兼容主流浏览器，支持多标签、多窗口协同工作，并提供智能的数据抽取、表单自动化与页面交互能力，适合日常办公自动化、研究采集与数据监控等场景。

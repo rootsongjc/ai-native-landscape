@@ -11,7 +11,6 @@ tags:
   - Dev Tools
   - LLM
 description: High-throughput, memory-efficient inference and serving engine for large language models.
-logo: ''
 author: vLLM Project
 ossDate: '2023-02-09T11:23:20.000Z'
 featured: true

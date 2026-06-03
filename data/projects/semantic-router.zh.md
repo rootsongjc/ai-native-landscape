@@ -11,7 +11,6 @@ tags:
   - Inference
   - LLM Router
 description: 智能的 Mixture-of-Models 路由器，用于提高大模型推理的效率和准确性。
-logo: ''
 author: vLLM Semantic Router 团队
 ossDate: '2025-08-26T21:49:50.000Z'
 featured: false

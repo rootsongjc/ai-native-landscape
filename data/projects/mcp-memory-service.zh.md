@@ -14,7 +14,6 @@ tags:
   - MCP
   - Memory
 description: 一个为 Claude、VS Code、Cursor 等工具提供自动化项目上下文记忆与检索的本地/混合存储服务。
-logo: ''
 author: doobidoo
 ossDate: '2024-12-26T10:15:44Z'
 featured: false

@@ -11,7 +11,6 @@ tags:
   - Supply Chain Security
   - Package Inventory
 description: Read-only developer endpoint scanner for on-disk package, extension, and developer-tool metadata, built to check exposure to known software supply-chain compromises.
-logo: ''
 author: Perplexity AI
 ossDate: '2026-05-20T18:11:37Z'
 featured: false

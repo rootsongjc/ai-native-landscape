@@ -11,7 +11,6 @@ tags:
   - Dev Tools
   - Utility
 description: OpenAI 提供的轻量级 Agents SDK（Python），用于构建多 agent 工作流，支持 handoffs、guardrails、tracing 与 sessions，便于在生产环境中运行可观察且可控的智能代理。
-logo: ''
 author: OpenAI
 ossDate: '2025-03-11T03:42:36.000Z'
 featured: false

@@ -12,7 +12,6 @@ tags:
 description: >-
   Virtualized elastic KV cache that brings OS-style virtual memory to LLM systems, enabling demand-driven KV allocation
   and improved GPU utilization.
-logo: ''
 author: OVG Project
 ossDate: '2025-05-27T17:34:02.000Z'
 featured: false

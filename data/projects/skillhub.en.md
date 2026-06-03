@@ -13,7 +13,6 @@ tags:
 description: >-
   SkillHub is an open-source, enterprise-grade agent skill registry by iFlytek that supports publishing, versioning,
   team namespaces, and RBAC governance for skill packages, deployable on-premise with Docker or Kubernetes.
-logo: ''
 author: iFlytek
 ossDate: '2026-03-11T12:17:05Z'
 featured: false

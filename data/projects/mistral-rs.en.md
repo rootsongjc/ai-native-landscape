@@ -11,7 +11,6 @@ tags:
 description: >-
   mistral.rs is a lightweight, high-performance Rust inference library for running Mistral-family models in
   resource-constrained environments.
-logo: ''
 author: EricLBuehler
 ossDate: '2024-02-26T22:30:06.000Z'
 featured: false

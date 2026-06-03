@@ -13,7 +13,6 @@ tags:
 description: >-
   An innovative AI browser automation framework that combines code and natural language for flexible, reliable
   automation in production environments.
-logo: ''
 author: BrowserBase
 ossDate: '2024-03-24T19:19:44.000Z'
 featured: true

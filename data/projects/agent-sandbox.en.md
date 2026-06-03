@@ -3,7 +3,7 @@ name: Agent Sandbox
 slug: agent-sandbox
 homepage: https://agent-sandbox.sigs.k8s.io
 repo: https://github.com/kubernetes-sigs/agent-sandbox
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: sandboxes-runtimes
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   An experimental sandbox project by Kubernetes SIGs aiming to provide a Kubernetes-native environment for running,
   orchestrating, and managing agent workloads securely and at scale.
-logo: ''
 author: Kubernetes SIGs
 ossDate: '2025-08-12T04:55:05Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Agent Sandbox is an experimental project by Kubernetes SIGs that enables easy management of isolated, stateful, singleton workloads ideal for AI agent runtimes on Kubernetes. It provides a Kubernetes-native sandbox for running, orchestrating, and managing autonomous agent workloads securely and at scale within cluster environments.

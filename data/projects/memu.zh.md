@@ -10,7 +10,6 @@ tags:
   - AI Agent
   - Utility
 description: memU 是开源的 AI 伴侣记忆框架，专注高准确率、快速检索与低成本，适配多种 AI 伴侣场景。
-logo: ''
 author: NevaMind-AI
 ossDate: '2025-07-29T01:54:40.000Z'
 featured: false

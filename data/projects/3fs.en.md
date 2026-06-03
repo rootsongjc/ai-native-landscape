@@ -3,7 +3,7 @@ name: 3FS
 slug: 3fs
 homepage: null
 repo: https://github.com/deepseek-ai/3fs
-license: Unknown
+license: MIT
 category: platform-infra
 subCategory: data-platforms
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   A high-performance distributed file system designed for AI training and inference workloads, optimizing parallel I/O
   and data locality to support large-scale training.
-logo: ''
 author: DeepSeek
 ossDate: '2025-02-27T13:36:53.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 3FS is a high-performance distributed file system designed for AI training and inference workloads. It focuses on improving parallel read/write performance and data locality to reduce I/O costs and accelerate large-scale training jobs.

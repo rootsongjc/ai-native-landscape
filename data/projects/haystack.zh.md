@@ -9,7 +9,6 @@ subCategory: retrieval-indexing
 tags:
   - RAG
 description: Haystack 是一个面向文档检索增强生成（RAG）与搜索应用的开源框架，方便将检索、索引与大模型组合成生产级查询与问答系统。
-logo: ''
 author: deepset-ai
 ossDate: '2019-11-14T09:05:28.000Z'
 featured: false

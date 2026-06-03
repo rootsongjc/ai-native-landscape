@@ -10,7 +10,6 @@ tags:
   - Data
   - Dev Tools
 description: 无代码 LLM 平台，用于将非结构化文档转化为结构化数据并快速发布 API 与 ETL 管道。
-logo: ''
 author: Zipstack
 ossDate: '2024-02-21T10:34:33.000Z'
 featured: false

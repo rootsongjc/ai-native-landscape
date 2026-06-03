@@ -11,7 +11,6 @@ tags:
 description: >-
   Ragas is an open-source toolkit for evaluating and optimizing LLM applications, offering objective metrics, test data
   generation, and production feedback loops.
-logo: ''
 author: ExplodingGradients
 ossDate: '2023-05-08T17:48:04.000Z'
 featured: false

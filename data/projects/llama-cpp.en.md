@@ -13,7 +13,6 @@ tags:
 description: >-
   llama.cpp is a lightweight LLM inference library in C/C++, designed for efficient local and cloud inference across
   diverse hardware.
-logo: ''
 author: ggml-org
 ossDate: '2023-03-10T18:58:00.000Z'
 featured: false

@@ -15,7 +15,6 @@ description: >-
   Open Design is a local-first, open-source AI design intelligence platform that leverages existing coding agents as
   design engines, supporting web, desktop, mobile prototypes, slides, images, and video generation with 71 brand-grade
   design systems and 19 built-in skills.
-logo: ''
 author: nexu-io
 ossDate: '2026-04-28'
 featured: false

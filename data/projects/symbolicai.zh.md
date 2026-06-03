@@ -10,7 +10,6 @@ tags:
   - Dev Tools
   - Framework
 description: SymbolicAI 是一个将经典 Python 编程与可微分、可编程的 LLM 能力结合的神经符号框架。
-logo: ''
 author: ExtensityAI
 ossDate: '2022-11-30T17:03:09.000Z'
 featured: false

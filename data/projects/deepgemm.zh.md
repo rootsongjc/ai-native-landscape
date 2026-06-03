@@ -3,19 +3,17 @@ name: DeepGEMM
 slug: deepgemm
 homepage: null
 repo: https://github.com/deepseek-ai/deepgemm
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: inference-runtimes
 tags:
   - Framework
 description: 实现干净且高效的 FP8 GEMM（矩阵乘加）内核，提供细粒度缩放以支持更高效的低精度矩阵计算。
-logo: ''
 author: DeepSeek
 ossDate: '2025-02-13T09:09:21.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 DeepGEMM 提供针对 FP8 与低精度矩阵乘加（GEMM）的高效内核实现，注重数值稳定性与性能之间的平衡。通过细粒度缩放策略与优化的 GPU 内核，DeepGEMM 在保持较低精度计算优势的同时，尽量降低数值误差。

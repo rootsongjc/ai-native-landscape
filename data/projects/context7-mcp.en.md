@@ -3,7 +3,7 @@ name: Context7 MCP
 slug: context7-mcp
 homepage: https://context7.com/
 repo: https://github.com/upstash/context7
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: mcp-tools
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   Up-to-date code docs for any prompt. Pulls version-specific documentation and code examples straight from the source
   and places them directly into your prompt.
-logo: ''
 author: Upstash
 ossDate: '2025-03-26T23:40:39.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 Context7 MCP is a powerful tool designed to provide developers with up-to-date, version-specific code documentation and examples. It pulls accurate documentation information directly from the source and seamlessly integrates it into your prompts, significantly improving the accuracy and efficiency of AI-assisted programming.

@@ -14,7 +14,6 @@ tags:
 description: >-
   Lingo.dev is an open-source, AI-powered i18n toolkit that enables instant localization workflows both at build time
   and runtime.
-logo: ''
 author: Lingo.dev team
 ossDate: '2024-03-13T11:27:31Z'
 featured: false

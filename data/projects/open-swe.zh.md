@@ -9,7 +9,6 @@ subCategory: coding-agents
 tags:
   - Vibe Coding
 description: 开源的基于云的异步编码代理，能够自主理解代码库、规划解决方案并执行代码更改。
-logo: ''
 author: LangChain AI
 ossDate: '2025-05-21T21:44:24.000Z'
 featured: false

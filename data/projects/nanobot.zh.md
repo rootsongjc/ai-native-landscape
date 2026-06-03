@@ -11,7 +11,6 @@ tags:
   - Assistant
   - MCP
 description: NanoBot 是香港大学数据科学实验室开源的超轻量级个人 AI 智能体框架，仅约 4000 行代码实现了 OpenClaw 90% 以上的核心能力，支持 MCP 协议、多模型接入与多平台部署。
-logo: ''
 author: HKUDS
 ossDate: '2026-02-04T12:00:00.000Z'
 featured: false

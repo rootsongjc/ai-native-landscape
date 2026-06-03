@@ -13,7 +13,6 @@ tags:
 description: >-
   A high-performance, scalable memory engine and app providing a Memory API for storing, retrieving, and interacting
   with content in the AI era.
-logo: ''
 author: Supermemory
 ossDate: '2024-02-27T20:10:04.000Z'
 featured: false

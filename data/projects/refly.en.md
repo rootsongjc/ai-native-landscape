@@ -13,7 +13,6 @@ tags:
 description: >-
   A vibe workflow platform for non-technical creators that simplifies building and running automated content and
   processes.
-logo: ''
 author: Refly AI
 ossDate: '2024-10-01T00:00:00.000Z'
 featured: false

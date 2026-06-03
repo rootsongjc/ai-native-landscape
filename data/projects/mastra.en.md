@@ -10,7 +10,6 @@ tags:
   - AI Agent
   - Dev Tools
 description: TypeScript-based AI agent and assistant framework with workflow, tool, RAG, and observability integration.
-logo: ''
 author: Mastra
 ossDate: '2024-08-06T20:44:31.000Z'
 featured: false

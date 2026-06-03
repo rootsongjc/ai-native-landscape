@@ -3,7 +3,7 @@ name: Agor
 slug: agor
 homepage: https://agor.live
 repo: https://github.com/preset-io/agor
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -14,13 +14,11 @@ tags:
 description: >-
   Agor is a multiplayer spatial canvas from Preset for coordinating parallel AI assistant sessions and Git-linked
   worktrees.
-logo: ''
 author: Preset
 ossDate: '2025-10-04T19:17:32Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Agor is a multiplayer spatial canvas built by Preset for orchestrating parallel AI assistant sessions on a Figma-like board. It coordinates Claude Code, Codex, and Gemini sessions with Git-linked worktrees, enabling teams to manage AI conversations, track agent activities, and visualize collaborative agentic work in real-time. Users create worktrees on a 2D canvas, drop them into zones to trigger templated prompts, and run isolated environments.

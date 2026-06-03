@@ -10,7 +10,6 @@ tags:
   - Deployment
   - Dev Tools
 description: Phoenix 是一个高性能的 Elixir Web 框架，适用于实时、分布式与可扩展的 Web 应用开发。
-logo: ''
 author: 'Chris McCord '
 ossDate: '2014-01-20T14:14:11.000Z'
 featured: false

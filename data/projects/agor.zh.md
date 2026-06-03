@@ -3,7 +3,7 @@ name: Agor
 slug: agor
 homepage: https://agor.live
 repo: https://github.com/preset-io/agor
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -12,13 +12,11 @@ tags:
   - MCP
   - UI
 description: Agor 是 Preset 出品的多人空间，用于在可视化画布上并行管理和编排多路 AI 智能体工作流。
-logo: ''
 author: Preset
 ossDate: '2025-10-04T19:17:32Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Agor 是由 Preset 构建的多人协作空间画布，类似 Figma 的可视化界面，用于编排 Claude Code、Codex 和 Gemini 的并行会话。它通过 Git 关联的工作树管理 AI 对话、跟踪智能体活动，并实时可视化团队的智能体协作。用户可以在二维画布上创建工作树，将其拖放到区域中以触发模板化提示，并在隔离环境中运行。

@@ -3,32 +3,43 @@ name: gtr — Git Worktree Runner
 slug: git-worktree-runner
 homepage: https://www.coderabbit.ai/
 repo: https://github.com/coderabbitai/git-worktree-runner
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:
   - CLI
   - Dev Tools
 description: A portable, cross-platform CLI that simplifies git worktree management, editor integration, and AI tool workflows.
-logo: ''
 author: CodeRabbit
 ossDate: '2025-08-07T21:13:33Z'
 featured: false
 status: tracked
 ---
-
-## Overview
-
 gtr (Git Worktree Runner) is a Bash-based, cross-platform CLI by CodeRabbit that simplifies git worktree management with editor and AI tool integration. It wraps and extends native git worktree functionality to automate per-branch worktree creation, selective config copying, and optional dependency installation, supporting parallel development and review workflows.
 
-## Key Features
+## Worktree Management
 
-gtr provides intuitive subcommands such as `gtr new`, `gtr editor`, and `gtr ai` for common worktree operations. It integrates with editors including Cursor, VS Code, and Zed to open worktrees with a single command, and supports launching AI tools like Aider and Claude inside worktrees for parallel agent workflows. Configurable file copying, hooks, and optional dependency steps automate the setup process.
+- Intuitive subcommands: `gtr new`, `gtr editor`, `gtr ai` for common operations
+- Automatic per-branch worktree creation with clean isolation
+- Selective config file copying to replicate environment settings
+- Optional dependency installation hooks for automated setup
 
-## Use Cases
+## Editor Integration
 
-gtr is valuable for maintaining multiple concurrent branches in the same repository, such as fixing bugs while developing features or reviewing pull requests without interrupting current work. It supports running parallel CI or test instances and enables multiple AI agents to work on the same project in isolated worktrees simultaneously.
+- One-command worktree opening in Cursor, VS Code, and Zed
+- Pluggable adapter system for adding new editor support
+- Platform-aware path handling across macOS, Linux, and Windows
+- Shell completions for fast command-line interaction
 
-## Technical Details
+## AI Tool Workflows
 
-Implemented in Bash for maximum portability, gtr operates at the repository scope and supports macOS, Linux, and Windows via Git Bash/WSL. It favors configuration over command-line flags, provides shell completions and platform-aware path handling, and uses a pluggable adapter system for editor and AI tool integrations.
+- Launch Aider and Claude inside worktrees for parallel agent workflows
+- Multiple AI agents can work on the same project in isolated worktrees simultaneously
+- Configuration-driven approach favors config files over command-line flags
+
+## Parallel Development
+
+- Maintain multiple concurrent branches without stashing or switching
+- Fix bugs, develop features, and review PRs simultaneously
+- Run parallel CI or test instances across different worktrees
+- Maximum portability via Bash implementation, compatible with Git Bash and WSL

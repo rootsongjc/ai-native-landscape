@@ -9,7 +9,6 @@ subCategory: foundation-models
 tags:
   - LLM
 description: 百度开发的开源深度学习平台，为机器学习和深度学习研究与生产提供全面的生态系统。
-logo: ''
 author: 百度
 ossDate: '2016-08-15T06:59:08.000Z'
 featured: false

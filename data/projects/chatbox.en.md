@@ -3,19 +3,17 @@ name: Chatbox
 slug: chatbox
 homepage: https://chatboxai.app?utm_medium=github
 repo: https://github.com/chatboxai/chatbox
-license: Unknown
+license: GPL-3.0
 category: applications-products
 subCategory: chat-interfaces
 tags:
   - Chatbot
 description: A user-friendly desktop client for interacting with AI models/LLMs (GPT, Claude, Gemini, Ollama, etc.).
-logo: ''
 author: Chatbox AI
 ossDate: '2023-03-06T12:22:15.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Chatbox is a desktop client designed to provide a unified, user-friendly interface for interacting with multiple LLMs (GPT, Claude, Gemini, Ollama, etc.). It focuses on local experience and model compatibility, enabling users to experiment with and use models conveniently from a desktop environment.

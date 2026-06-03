@@ -12,7 +12,6 @@ tags:
 description: >-
   TileLang is a domain-specific language for high-performance AI kernels that simplifies writing GPU/CPU/accelerator
   operators.
-logo: ''
 author: Tile AI
 ossDate: '2024-10-03T09:25:45.000Z'
 featured: false

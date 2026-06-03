@@ -3,19 +3,17 @@ name: Giskard OSS
 slug: giskard-oss
 homepage: https://docs.giskard.ai/en/stable/getting_started/index.html
 repo: https://github.com/giskard-ai/giskard-oss
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: evaluation-benchmarks
 tags:
   - Evaluation
 description: An open-source evaluation and testing framework to detect performance, bias, and security issues in AI systems.
-logo: ''
 author: Giskard-AI
 ossDate: '2022-03-06T21:45:37.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 Giskard is an open-source evaluation and testing framework that helps developers automatically detect performance, bias and security issues in LLM-based and traditional ML models. It includes tooling from RAG evaluation to vision model tests.

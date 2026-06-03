@@ -11,7 +11,6 @@ tags:
 description: >-
   The Language Model Evaluation Harness is a framework for large-scale, reproducible evaluation of generative language
   models across many tasks and datasets.
-logo: ''
 author: EleutherAI
 ossDate: '2020-08-28T00:09:15.000Z'
 featured: false

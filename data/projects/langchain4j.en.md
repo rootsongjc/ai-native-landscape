@@ -14,25 +14,31 @@ tags:
 description: >-
   An open-source Java library that provides a unified API for integrating large language models and vector databases
   into enterprise Java applications.
-logo: ''
 author: LangChain4j
 ossDate: '2023-06-20T15:30:29Z'
 featured: false
 status: tracked
 ---
 
-## Overview
-
 LangChain4j is an idiomatic Java library for building LLM-powered applications on the JVM. It provides a unified API over dozens of LLM providers and vector stores, enabling Java developers to build RAG pipelines, tool-calling agents, and other AI workflows using familiar enterprise engineering practices.
 
-## Key Features
+## Key Capabilities
 
-The library exposes a single, consistent Java API that abstracts away differences between LLM providers and vector database backends. It natively supports RAG patterns, tool calling (including MCP-compatible patterns), and agent-style orchestration. Enterprise adapters for Spring Boot and Jakarta EE make integration into existing Java stacks straightforward.
+- **Unified Java API** that abstracts away differences between LLM providers and vector database backends behind a single consistent interface
+- **Native RAG support** with built-in patterns for retrieval, indexing, and augmentation workflows
+- **Tool calling and agent orchestration** including MCP-compatible patterns for connecting LLMs to external systems
+- **Enterprise framework adapters** for Spring Boot and Jakarta EE that drop into existing Java application stacks
+- **Multiple vector storage backends** including Chroma, Milvus, and PGVector for flexible data layer choices
 
 ## Use Cases
 
-Teams use LangChain4j to add semantic search and question-answering capabilities to backend services without leaving the Java ecosystem. It powers agent workflows that call external tools, databases, and APIs to automate business processes. Organizations also rely on it to integrate summarization, classification, and text generation into compliance-sensitive environments with self-hosted model deployments.
+- Adding semantic search and question-answering capabilities to backend services without leaving the Java ecosystem
+- Building agent workflows that call external tools, databases, and APIs to automate business processes
+- Integrating summarization, classification, and text generation into compliance-sensitive environments with self-hosted models
+- Extending existing enterprise Java applications with LLM features through familiar dependency injection patterns
 
-## Technical Details
+## Technical Highlights
 
-LangChain4j integrates seamlessly with Java build tools and CI/CD pipelines. It supports multiple vector storage backends including Chroma, Milvus, and PGVector. The library emphasizes observability through logging, metrics, and robust error handling, and ships comprehensive documentation with deployment and performance guidance.
+- Integrates seamlessly with Maven, Gradle, and standard Java CI/CD pipelines
+- Emphasizes observability through structured logging, metrics, and robust error handling
+- Ships comprehensive documentation with deployment, tuning, and performance guidance

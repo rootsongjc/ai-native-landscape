@@ -3,20 +3,18 @@ name: Agent Sandbox
 slug: agent-sandbox
 homepage: https://agent-sandbox.sigs.k8s.io
 repo: https://github.com/kubernetes-sigs/agent-sandbox
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: sandboxes-runtimes
 tags:
   - Agents
   - Orchestration
 description: 一个由 Kubernetes SIGs 发起的智能体沙箱项目，旨在提供可扩展、安全的智能体执行与编排平台原型。
-logo: ''
 author: Kubernetes SIGs
 ossDate: '2025-08-12T04:55:05Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Agent Sandbox 是由 Kubernetes SIGs 社区发起的实验性项目，旨在提供易于管理的隔离、有状态、单例工作负载，适合在 Kubernetes 上运行 AI 智能体运行时。它提供 Kubernetes 原生沙箱环境，用于安全、可扩展地运行、编排和管理自治智能体工作负载。

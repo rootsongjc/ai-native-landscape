@@ -3,7 +3,7 @@ name: ElevenLabs UI
 slug: elevenlabs-ui
 homepage: https://ui.elevenlabs.io
 repo: https://github.com/elevenlabs/ui
-license: Unknown
+license: MIT
 category: models-modalities
 subCategory: multimodal
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   ElevenLabs UI is a component library and custom registry built on top of shadcn/ui to help build multimodal agent
   interfaces faster.
-logo: ''
 author: ElevenLabs
 ossDate: '2025-09-03T16:29:41.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 ElevenLabs UI is an open-source component library and custom registry built on top of shadcn/ui, designed to accelerate the development of multimodal agent interfaces. It provides reusable UI components, theming, and examples to help developers quickly assemble interfaces that combine voice, text, and other modalities.

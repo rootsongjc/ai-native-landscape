@@ -3,7 +3,7 @@ name: 5ire
 slug: 5ire
 homepage: https://5ire.app/
 repo: https://github.com/nanbingxyz/5ire
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: mcp-tools
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   5ire is a cross-platform desktop AI assistant and MCP client, supporting major providers, local knowledge base, and
   tool extensions.
-logo: ''
 author: nanbingxyz
 ossDate: '2024-01-06T06:57:15.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 5ire is a cross-platform desktop AI assistant and MCP client compatible with major service providers. It supports local knowledge bases and tool extensions through the Model Context Protocol (MCP), enabling users to connect various data sources and tools for enhanced AI flexibility.

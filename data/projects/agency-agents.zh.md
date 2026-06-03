@@ -3,20 +3,18 @@ name: Agency Agents
 slug: agency-agents
 homepage: null
 repo: https://github.com/msitarzewski/agency-agents
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:
   - Agents
   - Dev Tools
 description: Agency Agents 是一个包含 147+ 个专业化 AI 智能体角色的开源合集，覆盖工程、设计、营销、销售、产品等 12 个部门，可一键集成 Claude Code、Cursor、Copilot 等主流 AI 编程工具。
-logo: ''
 author: msitarzewski
 ossDate: '2025-03-01T00:00:00.000Z'
 featured: false
 status: tracked
 ---
-
 ## 详细介绍
 
 Agency Agents（简称 The Agency）是一个精心策划的开源 AI 智能体角色集合，包含 147+ 个专业化 Agent，横跨工程、设计、付费媒体、销售、营销、产品、项目管理、测试、支持、空间计算、专业化及金融等 12 个部门。每个 Agent 都具备独特的个性、明确的工作流程与可交付成果，可直接安装到 Claude Code、Cursor、GitHub Copilot、Aider、Windsurf、Gemini CLI、OpenCode 等主流 AI 编程工具中使用。

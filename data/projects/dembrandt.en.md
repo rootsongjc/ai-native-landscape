@@ -3,7 +3,7 @@ name: Dembrandt
 slug: dembrandt
 homepage: null
 repo: https://github.com/thevangelist/dembrandt
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:
@@ -14,13 +14,11 @@ tags:
 description: >-
   A Playwright-based CLI tool that extracts logos, colors, typography, spacing, and components from any website and
   exports structured design tokens as JSON.
-logo: ''
 author: thevangelist
 ossDate: '2025-11-22T13:49:09Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Dembrandt is a Playwright-based CLI tool that extracts any website's design system into structured design tokens in seconds. It renders pages, collects computed styles, analyzes color usage and typography patterns, and assigns confidence scores to results for audits and documentation workflows.

@@ -3,19 +3,17 @@ name: Flowise
 slug: flowise
 homepage: null
 repo: https://github.com/flowiseai/flowise
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: workflow-automation
 tags:
   - Workflow
 description: 一个可视化搭建智能体与工作流的开源平台，支持自托管、Docker 部署与 Flowise Cloud 服务。
-logo: ''
 author: Flowise Team
 ossDate: '2023-03-31T12:23:09.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Flowise 是一个以可视化方式构建智能体与工作流的平台，支持通过拖拽节点连接模型、检索与工具，适用于快速原型、RAG 应用与生产部署。

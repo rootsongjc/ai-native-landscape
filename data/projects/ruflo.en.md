@@ -15,7 +15,6 @@ tags:
 description: >-
   ruflo is the leading agent orchestration platform for Claude, enabling deployment of intelligent multi-agent swarms,
   autonomous workflow coordination, and conversational AI systems with enterprise-grade architecture.
-logo: ''
 author: ruvnet
 ossDate: '2025-06-02T00:00:00.000Z'
 featured: false

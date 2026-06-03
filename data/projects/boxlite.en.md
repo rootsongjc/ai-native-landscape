@@ -3,7 +3,7 @@ name: BoxLite
 slug: boxlite
 homepage: https://boxlite.ai
 repo: https://github.com/boxlite-ai/boxlite
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: sandboxes-runtimes
 tags:
@@ -11,25 +11,33 @@ tags:
   - Deployment
   - Sandbox
 description: A lightweight runtime and container tooling for embedding, sandboxing, and shipping AI agents.
-logo: ''
 author: BoxLite Labs
 ossDate: '2025-12-07T22:49:32Z'
 featured: false
 status: tracked
 ---
+BoxLite is a compute substrate for AI agents that is lightweight enough to run on a laptop yet elastic enough to scale into the cloud. It provides an embeddable runtime and containerized sandbox to isolate, debug, and deploy agent workloads in controlled environments. Implemented in Rust, the project focuses on minimal runtime dependencies and strong security boundaries.
 
-## Overview
+## Sandboxed Execution
 
-BoxLite is a compute substrate for AI agents that is lightweight enough to run on a laptop yet elastic enough to scale into the cloud. It provides an embeddable runtime and containerized sandbox to isolate, debug, and deploy agent workloads in controlled environments. Implemented in Rust, the project focuses on minimal runtime dependencies, high performance, and strong security boundaries.
+- Container-based and process isolation to reduce runtime risk in agent workloads
+- Controlled environments for safe execution of untrusted or experimental agent code
+- Strong security boundaries between agent tasks and host systems
 
-## Key Features
+## Embeddable Runtime
 
-BoxLite offers sandboxed execution with container-based and process isolation to reduce runtime risk, along with an embeddable runtime for integrating agent capabilities into existing applications. It provides OCI image compatibility and container workflow support for CI/CD integration, and its Rust implementation minimizes runtime overhead while improving execution efficiency and safety.
+- Integrate agent capabilities directly into existing applications as lightweight components
+- Minimal runtime footprint suitable for constrained and edge environments
+- Run agent inference or automation tasks as small OCI-compatible images
 
-## Use Cases
+## Container Workflow Integration
 
-BoxLite is ideal for sandbox testing of agent behaviors locally and in CI to reproduce and debug issues before production. It also supports running agent inference or automation tasks as small images in constrained or edge environments, and embedding agent features as components for higher-level applications to accelerate prototyping and delivery.
+- OCI image compatibility for seamless CI/CD pipeline integration
+- Image-based delivery for reproducible builds and consistent deployments
+- Supports local testing and CI environments to reproduce and debug issues before production
 
-## Technical Details
+## Technical Foundation
 
-BoxLite is developed in Rust and released under the Apache-2.0 license, emphasizing containerized sandboxing, image-based delivery, and a minimal runtime footprint. Repository topics include ai-agents, sandbox, containers, and serverless, targeting scenarios that require isolation, security boundaries, and lightweight deployment.
+- Developed in Rust for minimal runtime overhead and high execution efficiency
+- Released under the Apache-2.0 license with focus on containerized sandboxing
+- Targets serverless, edge, and lightweight deployment scenarios requiring isolation

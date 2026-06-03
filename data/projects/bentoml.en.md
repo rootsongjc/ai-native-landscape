@@ -3,7 +3,7 @@ name: BentoML
 slug: bentoml
 homepage: https://bentoml.com
 repo: https://github.com/bentoml/bentoml
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: model-serving
 tags:
@@ -13,13 +13,11 @@ tags:
 description: >-
   BentoML is an open-source framework for packaging, containerizing, and deploying machine learning models into
   production-ready services.
-logo: ''
 author: BentoML
 ossDate: '2019-04-02T01:39:27.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 BentoML helps engineers package any ML/AI model into a deployable service (a "Bento"), with one-click container image generation, model versioning, and multi-framework support to streamline development-to-production workflows.

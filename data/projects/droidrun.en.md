@@ -3,7 +3,7 @@ name: DroidRun
 slug: droidrun
 homepage: https://droidrun.ai
 repo: https://github.com/droidrun/droidrun
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   An open-source mobile automation framework that lets you drive device interactions via natural language and integrate
   models and retrieval.
-logo: ''
 author: DroidRun
 ossDate: '2025-04-12T22:03:47Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 DroidRun is an open-source mobile automation framework that enables driving device interactions via natural language commands. It is an LLM-agnostic mobile agent that combines model inference, semantic retrieval, and device control to translate natural language into touch events and workflows.
