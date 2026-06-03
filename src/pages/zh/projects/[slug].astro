@@ -10,6 +10,7 @@ export async function getStaticPaths() {
 }
 
 const { project } = Astro.props;
+const allProjects = getProjects().filter(p => p.slug !== project.slug);
 ---
 
-<ProjectDetail project={project} lang="zh" />
+<ProjectDetail project={project} allProjects={allProjects} lang="zh" />
