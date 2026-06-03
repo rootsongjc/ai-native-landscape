@@ -10,7 +10,6 @@ tags:
   - Dev Tools
   - Inference
 description: ONNX Runtime 是一个跨平台的高性能机器学习推理与训练加速器，支持从 PyTorch、TensorFlow 等导出的模型在多种硬件上高效运行。
-logo: ''
 author: Microsoft
 ossDate: '2017-05-01T00:00:00.000Z'
 featured: false

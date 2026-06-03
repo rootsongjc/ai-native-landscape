@@ -3,20 +3,18 @@ name: AIPyApp
 slug: aipyapp
 homepage: https://aipy.app/
 repo: https://github.com/knownsec/aipyapp
-license: Unknown
+license: Other
 category: platform-infra
 subCategory: data-platforms
 tags:
   - Data
   - Dev Tools
 description: 面向交互式 Python 执行与任务自动化的开源工具，结合 LLM 实现自然语言驱动的 Python 交互。
-logo: ''
 author: knownsec
 ossDate: '2025-04-06T07:04:34.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 AIPyApp（AIPython / aipy）是一个将 Python 运行环境与大模型结合的开源工具，支持以自然语言驱动的 Python 命令输入与自动执行。它可作为命令行交互式助手或任务模式运行，适合数据处理、分析与自动化脚本场景。

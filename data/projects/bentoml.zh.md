@@ -3,7 +3,7 @@ name: BentoML
 slug: bentoml
 homepage: https://bentoml.com
 repo: https://github.com/bentoml/bentoml
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: model-serving
 tags:
@@ -11,13 +11,11 @@ tags:
   - Dev Tools
   - Inference Service
 description: BentoML：用于将机器学习模型打包、容器化并在生产环境中高效部署与服务化的开源框架。
-logo: ''
 author: BentoML
 ossDate: '2019-04-02T01:39:27.000Z'
 featured: false
 status: tracked
 ---
-
 ## 详细介绍
 
 BentoML 致力于将任意机器学习/AI 模型快速包装为可部署的服务（Bento），支持一键生成容器镜像、模型版本管理与多框架兼容，便于从开发到生产的交付与复用。

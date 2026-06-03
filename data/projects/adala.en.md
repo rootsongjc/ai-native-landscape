@@ -3,20 +3,18 @@ name: Adala
 slug: adala
 homepage: https://humansignal.github.io/Adala/
 repo: https://github.com/humansignal/adala
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:
   - Agent Framework
   - RAG
 description: An autonomous data labeling agent framework for building adaptable data pipelines and skills.
-logo: ''
 author: HumanSignal
 ossDate: '2023-08-30T12:06:57.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Adala is an autonomous data (labeling) agent framework designed to build adaptable data pipelines, autonomous skills, and runtime configurations. It aims to streamline dataset creation and annotation workflows by composing agents and skills that can learn and operate with minimal manual intervention.

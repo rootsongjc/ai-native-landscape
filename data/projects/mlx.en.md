@@ -12,7 +12,6 @@ tags:
 description: >-
   An array framework for machine learning optimized for Apple Silicon, offering NumPy-like Python APIs plus C++, C and
   Swift bindings.
-logo: ''
 author: ml-explore
 ossDate: '2023-11-28T23:33:45.000Z'
 featured: false

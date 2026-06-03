@@ -12,7 +12,6 @@ tags:
   - AI Agent
   - Claude Code
 description: 跨 CLI 技能，将 Obsidian 知识库变为 AI 驱动的第二大脑，支持 Claude Code 等多种 Agent。
-logo: ''
 author: eugeniughelbur
 ossDate: '2026-03-24T00:00:00Z'
 featured: false

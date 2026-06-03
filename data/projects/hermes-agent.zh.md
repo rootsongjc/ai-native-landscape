@@ -11,7 +11,6 @@ tags:
   - CLI
   - Dev Tools
 description: Hermes Agent 是由 Nous Research 开源的自改进 AI 智能体，内置学习闭环，支持技能自动创建与自我优化、跨会话记忆检索、多平台消息网关及定时自动化任务，可在 $5 VPS 到 GPU 集群等多种环境部署。
-logo: ''
 author: Nous Research
 ossDate: '2025-07-22T22:22:28Z'
 featured: false

@@ -3,7 +3,7 @@ name: Agent Framework
 slug: agent-framework
 homepage: https://aka.ms/agent-framework
 repo: https://github.com/microsoft/agent-framework
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -11,13 +11,11 @@ tags:
   - Agents
   - Workflow
 description: 微软的多语言智能体框架，用于构建、编排和部署 AI 智能体与多智能体工作流。
-logo: ''
 author: Microsoft
 ossDate: '2025-04-28T19:40:42.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Microsoft Agent Framework 是一个跨语言（Python / .NET）框架，提供从简单对话智能体到复杂多智能体图形编排工作流的端到端能力，支持可观察性、多个模型提供者和开发者友好的调试工具。

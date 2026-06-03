@@ -3,20 +3,18 @@ name: Dagster
 slug: dagster
 homepage: https://dagster.io/
 repo: https://github.com/dagster-io/dagster
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: productivity-tools
 tags:
   - Application
   - Dev Tools
 description: 面向数据资产的云原生编排与开发平台，提供可观测性、血缘与开发友好的编程模型。
-logo: ''
 author: Dagster Labs
 ossDate: '2019-01-01T00:00:00.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Dagster 是一个面向数据资产（assets）的编排平台和开发框架，强调可测试、可观测与模块化的开发流程。它提供一套声明式编程模型，使团队可以专注于数据资产的定义与质量，而由平台负责调度、监控与血缘分析。

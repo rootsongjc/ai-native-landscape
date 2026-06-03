@@ -11,7 +11,6 @@ tags:
 description: >-
   A deep-research multi-agent framework that automates web and local document retrieval to produce sourced research
   reports.
-logo: ''
 author: assafelovic
 ossDate: '2023-05-12T10:33:54.000Z'
 featured: false

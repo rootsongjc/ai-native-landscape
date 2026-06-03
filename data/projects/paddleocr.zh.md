@@ -10,7 +10,6 @@ tags:
   - Application
   - Multimodal
 description: PaddleOCR 是一个轻量且高性能的 OCR 工具包，支持 100+ 语言并可将图片或 PDF 转为结构化数据。
-logo: ''
 author: PaddlePaddle
 ossDate: '2020-05-08T10:38:16.000Z'
 featured: false

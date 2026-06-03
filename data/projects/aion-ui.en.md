@@ -3,7 +3,7 @@ name: AionUi
 slug: aion-ui
 homepage: https://www.aionui.com
 repo: https://github.com/iofficeai/aionui
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -14,13 +14,11 @@ tags:
 description: >-
   A frontend UI framework and component library for LLM and agent interactions, offering customizable components,
   renderers, and CLI tooling for local deployment and integration.
-logo: ''
 author: iOfficeAI
 ossDate: '2025-08-07T10:29:51Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 AionUI is a free, local, open-source 24/7 cowork application for managing and coordinating CLI agents including OpenClaw, Hermes Agent, Claude Code, Codex, OpenCode, Gemini CLI, and 20+ more. It provides a unified interface for running multiple AI agents simultaneously in a privacy-first, on-device environment without requiring complex setup or configuration.

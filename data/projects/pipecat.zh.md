@@ -10,7 +10,6 @@ tags:
   - AI Agent
   - TTS
 description: 面向实时语音与多模态 agent 的开源框架，支持低延迟语音交互与多平台 SDK。
-logo: ''
 author: Pipecat
 ossDate: '2023-12-27T12:59:00.000Z'
 featured: false

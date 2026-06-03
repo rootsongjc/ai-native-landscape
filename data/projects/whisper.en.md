@@ -13,7 +13,6 @@ tags:
   - Multilingual
   - Transformer
 description: Robust speech recognition via large-scale weak supervision, supporting transcription and translation across 100+ languages with state-of-the-art accuracy.
-logo: ''
 author: OpenAI
 ossDate: '2022-09-16'
 featured: true

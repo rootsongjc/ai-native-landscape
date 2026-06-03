@@ -3,7 +3,7 @@ name: AutoSubs
 slug: auto-subs
 homepage: https://tom-moroney.com/auto-subs/
 repo: https://github.com/tmoroney/auto-subs
-license: Unknown
+license: MIT
 category: models-modalities
 subCategory: audio-speech
 tags:
@@ -11,25 +11,37 @@ tags:
   - Audio
   - Video
 description: Generate accurate, editable subtitles locally or integrated with DaVinci Resolve.
-logo: ''
 author: Tom Moroney
 ossDate: '2023-03-15T01:51:06Z'
 featured: false
 status: tracked
 ---
+AutoSubs is an AI-powered desktop application for on-device subtitle generation that connects directly to DaVinci Resolve, Premiere, and After Effects. It offers multilingual transcription, speaker diarization, and a visual subtitle editor, all running locally without cloud dependency for maximum privacy.
 
-## Overview
+## Transcription & Translation
 
-AutoSubs is an AI-powered desktop application for on-device subtitle generation that connects directly to DaVinci Resolve, Premiere, and After Effects. It offers multilingual transcription, speaker diarization, English translation, and a visual subtitle editor with per-speaker styling, all running locally without cloud dependency for maximum privacy.
+- Fast, accurate multilingual speech-to-text with automatic language detection
+- Speaker diarization that identifies and separates different speakers
+- English translation with flexible multi-line subtitle display options
+- Multiple speech recognition and diarization models to choose from
 
-## Key Features
+## Visual Subtitle Editor
 
-AutoSubs provides fast and accurate multilingual transcription with speaker diarization, English translation with flexible multi-line subtitle display, a modern subtitle editor with per-speaker styling and multiple export formats, and one-click installers for Windows, macOS (Intel and Apple Silicon), and Linux.
+- Per-speaker styling with customizable fonts, colors, and positioning
+- Precise timing adjustments with waveform visualization
+- Multiple export formats including SRT, ASS, VTT, and DaVinci Resolve native
+- Batch processing for long-form content and multi-episode projects
 
-## Use Cases
+## Video Editor Integration
 
-Video creators can generate and edit subtitles quickly for publishing, send styled subtitles directly into DaVinci Resolve, transcribe meetings, podcasts, or lectures into timed text, or use offline subtitle generation for privacy-sensitive workflows without any cloud dependency.
+- Direct connection to DaVinci Resolve for sending styled subtitles to timelines
+- Premiere Pro and After Effects plugin support
+- Round-trip workflows preserving subtitle styling and timing
+- Real-time preview within the editing environment
 
-## Technical Details
+## Technical Design
 
-AutoSubs uses a Rust backend for high performance and low memory usage, paired with a Tauri/TypeScript frontend for a cross-platform desktop experience. It integrates various speech recognition and diarization models with flexible model selection and accurate subtitle timing adjustments, all running on-device.
+- Rust backend for high performance and low memory footprint
+- Tauri/TypeScript cross-platform frontend for Windows, macOS (Intel and Apple Silicon), and Linux
+- One-click installers with no Python or command-line setup required
+- Fully on-device processing with no data sent to external servers

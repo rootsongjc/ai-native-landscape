@@ -11,7 +11,6 @@ tags:
 description: >-
   MLC LLM is a machine learning compiler and deployment engine that enables high-performance LLM inference across
   platforms using compilation and runtime optimizations.
-logo: ''
 author: MLC AI
 ossDate: '2023-04-29T01:59:25.000Z'
 featured: false

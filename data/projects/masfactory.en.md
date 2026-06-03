@@ -12,7 +12,6 @@ tags:
   - LLM
   - Agent Framework
 description: A graph-centric framework for orchestrating multi-agent systems with vibe graphing, enabling flexible agent coordination through graph-based workflows.
-logo: ''
 author: BUPT-GAMMA
 ossDate: '2026-02-14'
 featured: false

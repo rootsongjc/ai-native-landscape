@@ -12,7 +12,6 @@ tags:
 description: >-
   An open-source Python library that makes it easy to build and share interactive machine learning and AI web apps with
   minimal code.
-logo: ''
 author: Gradio
 ossDate: '2018-12-19T08:24:04.000Z'
 featured: false

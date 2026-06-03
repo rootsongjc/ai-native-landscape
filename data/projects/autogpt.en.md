@@ -3,19 +3,17 @@ name: AutoGPT
 slug: autogpt
 homepage: https://agpt.co/
 repo: https://github.com/significant-gravitas/autogpt
-license: Unknown
+license: MIT
 category: platform-infra
 subCategory: deployment-operations
 tags:
   - AI Agent
 description: AutoGPT — a platform to build, deploy and run continuous AI agents, supporting self-hosting and platform deployments.
-logo: ''
 author: Significant-Gravitas
 ossDate: '2023-03-16T09:21:07.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 AutoGPT (Significant-Gravitas) is an open-source project and platform for creating, deploying, and managing continuous AI agents. It includes both classic AutoGPT implementations and a full platform with frontend, server, and a marketplace, supporting self-hosting and an upcoming cloud offering.

@@ -11,7 +11,6 @@ tags:
 description: >-
   A fully local web research and report-writing assistant that uses local LLMs (e.g. Ollama/LMStudio) to iteratively
   search, summarize and refine findings.
-logo: ''
 author: LangChain team
 ossDate: '2024-12-04T23:57:20.000Z'
 featured: false

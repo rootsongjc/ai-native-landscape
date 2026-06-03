@@ -10,7 +10,6 @@ tags:
   - Data
   - RAG
 description: An open-source ETL solution to convert complex documents into clean, structured formats for language-model workflows.
-logo: ''
 author: Unstructured
 ossDate: '2022-09-26T21:53:41.000Z'
 featured: false

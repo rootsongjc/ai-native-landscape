@@ -11,7 +11,6 @@ tags:
   - FineTune
   - ML Platform
 description: An extensible, convenient, and efficient toolbox for fine-tuning and inference of large foundation models.
-logo: ''
 author: OptimalScale
 ossDate: '2023-03-27T13:56:29.000Z'
 featured: false

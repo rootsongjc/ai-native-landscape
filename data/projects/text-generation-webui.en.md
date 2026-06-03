@@ -12,7 +12,6 @@ tags:
 description: >-
   A definitive local web UI for text generation, with multi-model support, plugins, and strong focus on privacy and
   offline use cases.
-logo: ''
 author: oobabooga
 ossDate: '2022-12-21T04:17:37Z'
 featured: false

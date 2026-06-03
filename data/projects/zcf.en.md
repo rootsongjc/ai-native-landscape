@@ -12,7 +12,6 @@ tags:
 description: >-
   Zero-Config Code Flow for Claude Code & Codex — a lightweight tool to embed model-driven code flows into developer
   workflows.
-logo: ''
 author: UfoMiao
 ossDate: '2025-07-30T06:09:00.000Z'
 featured: false

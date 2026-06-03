@@ -3,7 +3,7 @@ name: Deep Agents
 slug: deepagents
 homepage: https://docs.langchain.com/oss/python/deepagents/overview
 repo: https://github.com/langchain-ai/deepagents
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   A LangChain library for building deep agents that combine planning, subagents, filesystem tools and persistent memory
   for multi-step reasoning.
-logo: ''
 author: LangChain
 ossDate: '2025-07-27T23:07:53.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Deep Agents is a LangChain library designed to build "deep" agents capable of long-running, multi-step reasoning. It combines planning tools, subagents, filesystem utilities and persistent memory to decompose complex tasks into manageable subtasks and coordinate their execution reliably.

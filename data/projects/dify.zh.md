@@ -3,7 +3,7 @@ name: Dify
 slug: dify
 homepage: https://dify.ai/
 repo: https://github.com/langgenius/dify
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: deployment-operations
 tags:
@@ -12,13 +12,11 @@ tags:
   - LLM
   - Product
 description: 开源的 LLM 应用开发平台，提供可视化的 AI 应用构建工具和企业级部署方案。
-logo: ''
 author: LangGenius
 ossDate: '2023-04-12T07:40:24.000Z'
 featured: false
 status: tracked
 ---
-
 Dify 是一个开源的 LLM 应用开发平台，专为简化大语言模型应用的开发和部署而设计。平台提供了可视化的应用构建界面、丰富的模型集成选项和企业级的部署方案，让开发者和企业能够快速构建和部署 AI 应用。
 
 ## 平台特色

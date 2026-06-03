@@ -10,7 +10,6 @@ tags:
   - Agents
   - RAG
 description: An open-source SQL-native memory engine that provides persistent, queryable context for Large Language Models.
-logo: ''
 author: GibsonAI
 ossDate: '2025-07-24T07:07:51Z'
 featured: false

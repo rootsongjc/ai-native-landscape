@@ -9,31 +9,31 @@ subCategory: data-platforms
 tags:
   - Database
 description: pgvector 是一个为 PostgreSQL 提供向量相似度检索能力的开源扩展，便于在数据库中存储与检索向量并支持近似/精确检索策略。
-logo: ''
 author: pgvector
 ossDate: '2021-01-15T00:00:00.000Z'
 featured: false
 status: tracked
 ---
 
-## 简介
+pgvector 是一个为 PostgreSQL 添加向量数据类型与相似度检索能力的开源扩展，支持多种距离度量（L2、内积、余弦等）与索引结构（HNSW、IVFFlat），可在数据库内高效执行嵌入检索。它使向量搜索与关系型数据无缝结合，充分享受 Postgres 的事务性与生态优势。
 
-pgvector 是一个为 PostgreSQL 添加向量数据类型与相似度检索能力的扩展，支持多种距离度量（L2、内积、余弦等）与索引结构（HNSW、IVFFlat）以在数据库内高效执行嵌入检索。它使得将向量搜索与关系型数据结合成为可能，享受 Postgres 的事务性与生态优势。
+## 向量搜索能力
 
-## 主要特性
+- 原生 Postgres 向量类型与操作符，直接存储和查询嵌入向量
+- 支持精确与近似最近邻搜索，灵活平衡精度与速度
+- HNSW 和 IVFFlat 索引支持，可扩展至百万级向量规模
+- 多种距离度量：L2 距离、内积和余弦相似度
 
-- 原生 Postgres 向量类型与操作符。
-- 支持精确与近似检索、HNSW/IVFFlat 索引。
-- 多语言客户端生态（Python、Go、JS、Java 等）。
-- 易于与现有 Postgres 工作负载集成，支持复制与备份策略。
+## 集成与部署
+
+- 多语言客户端生态（Python、Go、JavaScript、Java 等）
+- 与现有 Postgres 复制、备份和运维工具无缝协作
+- 多种安装方式：编译安装、Docker、Homebrew、包管理器
+- 无需额外基础设施，向量与关系数据共存于同一数据库
 
 ## 使用场景
 
-- 将嵌入存储在业务数据库中以实现语义搜索与混合检索。
-- 构建 RAG 系统时用作持久化向量存储与检索层。
-- 在需要事务、JOIN 与复杂过滤条件下进行相似度检索的场景。
-
-## 技术特点
-
-- 利用 Postgres 的扩展机制与索引能力，兼顾一致性与可扩展性。
-- 提供多种部署方式（编译安装、Docker、Homebrew、包管理器）。
+- 利用 SQL JOIN 和强一致性构建 RAG 系统
+- 结合元数据过滤和事务完整性的语义搜索
+- 需要混合结构化过滤与向量相似度的应用场景
+- 推荐系统、去重和异常检测等现有 Postgres 工作负载中的向量需求

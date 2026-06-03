@@ -3,19 +3,17 @@ name: Apache Doris
 slug: doris
 homepage: https://doris.apache.org
 repo: https://github.com/apache/doris
-license: Unknown
+license: MIT
 category: platform-infra
 subCategory: data-platforms
 tags:
   - Database
 description: Apache Doris is an easy-to-use, high-performance unified analytics database for real-time and offline analysis.
-logo: ''
 author: Apache
 ossDate: '2017-08-10T12:13:30Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Apache Doris is an easy-to-use, high-performance unified analytics database designed for both real-time and offline analysis. It combines columnar storage with an efficient query engine to support OLAP workloads, simplifying data warehouse and analytics platform construction.

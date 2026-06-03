@@ -3,7 +3,7 @@ name: DeepChat
 slug: deepchat
 homepage: https://deepchat.thinkinai.xyz/
 repo: https://github.com/thinkinaixyz/deepchat
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: chat-interfaces
 tags:
@@ -15,13 +15,11 @@ tags:
 description: >-
   DeepChat is an open-source AI chat platform supporting multi-model and multimodal capabilities, integrating mainstream
   cloud and local LLMs for a unified chat experience.
-logo: ''
 author: ThinkInAIXYZ
 ossDate: '2025-02-14T01:56:51Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 DeepChat is a powerful open-source AI chat platform that supports a wide range of mainstream cloud LLMs (such as OpenAI, Gemini, Anthropic) and local Ollama deployment, delivering a unified multimodal chat experience. The platform integrates advanced features like search enhancement, tool calling, and privacy protection, making it suitable for both personal and enterprise scenarios.

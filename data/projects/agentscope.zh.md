@@ -3,7 +3,7 @@ name: AgentScope
 slug: agentscope
 homepage: https://doc.agentscope.io/
 repo: https://github.com/modelscope/agentscope
-license: Unknown
+license: MIT
 category: models-modalities
 subCategory: foundation-models
 tags:
@@ -11,13 +11,11 @@ tags:
   - LLM
   - Utility
 description: 以更简单的方式构建由大语言模型赋能的多智能体应用程序。
-logo: ''
 author: 阿里巴巴
 ossDate: '2024-01-12T03:41:59.000Z'
 featured: false
 status: tracked
 ---
-
 AgentScope 是一个开源框架，旨在简化多智能体应用程序的开发。它提供了一套简洁的接口和强大的功能，让开发者能够以更简单的方式构建由大语言模型（LLM）赋能的多智能体应用程序。
 
 ## 主要特性

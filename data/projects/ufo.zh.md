@@ -10,7 +10,6 @@ tags:
   - Agent Framework
   - Workflow
 description: UFO 是一个面向 Windows 的 Desktop AgentOS，将自然语言请求转换为跨应用的自动化工作流。
-logo: ''
 author: Microsoft
 ossDate: '2024-01-08T05:07:52.000Z'
 featured: false

@@ -12,7 +12,6 @@ tags:
   - MCP
   - Utility
 description: MCP Registry 是一个社区驱动的 Model Context Protocol (MCP) 服务器注册服务，帮助用户发现和发布 MCP 兼容服务器。
-logo: ''
 author: Anthropic
 ossDate: '2025-02-05T17:58:01.000Z'
 featured: false

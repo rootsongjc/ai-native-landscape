@@ -11,7 +11,6 @@ tags:
   - ML Platform
   - Workflow
 description: A unified MLOps framework to develop, evaluate and deploy everything from classical models to multi-agent AI systems.
-logo: ''
 author: ZenML
 ossDate: '2020-11-19T09:25:46.000Z'
 featured: false

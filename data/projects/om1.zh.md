@@ -3,19 +3,17 @@ name: OM1
 slug: om1
 homepage: null
 repo: https://github.com/openmind/om1
-license: Unknown
+license: Other
 category: inference-serving
 subCategory: sandboxes-runtimes
 tags:
   - AI Agent
 description: OpenMind 的模块化 AI 运行时，面向多模态代理与机器人应用，支持传感器、LIDAR、相机与动作执行
-logo: ''
 author: OpenMind
 ossDate: '2025-01-08T21:23:40.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 OM1 是 OpenMind 开发的模块化 AI 运行时，旨在让开发者将多模态代理部署在数字环境与物理机器人上（如 Humanoids、TurtleBot、四足机器人等）。它支持摄像头、LIDAR、社交媒体与 Web 数据输入，并能触发运动、导航与自然对话等物理动作。

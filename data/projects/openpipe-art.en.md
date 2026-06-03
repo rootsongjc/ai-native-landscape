@@ -10,7 +10,6 @@ tags:
   - AI Agent
   - RAG
 description: Open-source reinforcement learning trainer from OpenPipe for training LLM-based agents.
-logo: ''
 author: OpenPipe
 ossDate: '2025-03-10T18:25:47.000Z'
 featured: false

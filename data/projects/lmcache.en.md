@@ -11,7 +11,6 @@ tags:
 description: >-
   A high-performance KV cache layer for LLM serving that reduces time-to-first-token and increases throughput,
   especially for long-context and multi-turn scenarios.
-logo: ''
 author: LMCache
 ossDate: '2024-05-28T21:06:04.000Z'
 featured: false

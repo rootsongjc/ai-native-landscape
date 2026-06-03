@@ -10,7 +10,6 @@ tags:
   - Deployment
   - Inference Service
 description: KServe：Kubernetes 原生的标准化模型推理与生成式 AI 服务平台，支持高可扩展性、自动伸缩与多框架的生产部署。
-logo: ''
 author: KServe
 ossDate: '2019-03-27T21:14:14.000Z'
 featured: false

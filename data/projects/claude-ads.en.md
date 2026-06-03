@@ -12,7 +12,6 @@ tags:
   - SEO
   - Audit
 description: Comprehensive paid advertising audit and optimization skill for Claude Code with 250+ checks across Google and Meta Ads.
-logo: ''
 author: AgriciDaniel
 ossDate: '2026-02-11T00:00:00Z'
 featured: false

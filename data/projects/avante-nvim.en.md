@@ -3,7 +3,7 @@ name: avante.nvim
 slug: avante-nvim
 homepage: https://nix-community.github.io/nixvim/plugins/avante/index.html
 repo: https://github.com/yetone/avante.nvim
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: coding-agents
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   avante.nvim brings a Cursor AI-like experience to Neovim, turning the editor into an intelligent assistant-enabled
   environment.
-logo: ''
 author: yetone
 ossDate: '2024-08-14T16:45:16Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 avante.nvim is a Neovim plugin that provides an in-editor AI assistant experience, integrating context-aware code suggestions, project-level instruction files, and one-click application of edits. It aims to bring Cursor-like workflows into the editor while keeping full compatibility with common Neovim plugin managers and Lua-based configurations.

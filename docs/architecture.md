@@ -112,7 +112,7 @@ Required frontmatter fields:
 | `category` | string | Must match a key in `categories.yaml` |
 | `description` | object | Must contain both `zh` and `en` strings |
 
-Optional fields: `homepage`, `license`, `subCategory`, `tags`, `logo`, `author`, `ossDate`, `featured`, `thumbnail`, `source`, `status`, `score`.
+Optional fields: `homepage`, `license`, `subCategory`, `tags`, `author`, `ossDate`, `featured`, `thumbnail`, `source`, `status`, `score`.
 
 The `score` object contains: `health`, `activity`, `community`, `popularity`, `quality`, `sustainability` -- all 0-100.
 

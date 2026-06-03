@@ -3,20 +3,18 @@ name: Datachain
 slug: datachain
 homepage: https://docs.datachain.ai
 repo: https://github.com/iterative/datachain
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: data-platforms
 tags:
   - Data
   - Dev Tools
 description: ETL, analytics, and versioning for unstructured data to build reproducible and auditable data pipelines.
-logo: ''
 author: Iterative
 ossDate: '2024-06-25T22:29:35.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Datachain delivers ETL, analytics, and versioning capabilities for unstructured data, enabling teams to build reproducible and auditable data pipelines. The project combines data management and version control concepts to maintain consistency and traceability across model training, evaluation, and production workflows.

@@ -3,7 +3,7 @@ name: goose
 slug: goose
 homepage: https://block.github.io/goose/
 repo: https://github.com/block/goose
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: workflow-automation
 tags:
@@ -12,25 +12,37 @@ tags:
 description: >-
   An open-source, locally extensible AI agent for engineering task automation (project scaffolding, code execution,
   testing, and publishing).
-logo: ''
 author: Goose
 ossDate: '2024-08-23T19:03:36.000Z'
 featured: false
 status: tracked
 ---
+Goose is an autonomous AI coding agent developed by Block that can understand and modify codebases with minimal human intervention. It operates as a developer assistant that autonomously handles engineering tasks through an extensible plugin and recipe system, running locally via CLI or desktop client with full developer control over automation workflows.
 
-## Overview
+## Local Agent Runtime
 
-Goose is an autonomous AI coding agent developed by Block that can understand and modify codebases with minimal human intervention. It operates as a developer assistant that autonomously handles engineering tasks such as code generation, debugging, testing, and project scaffolding through an extensible plugin and recipe system. Goose runs locally via CLI or desktop client, giving developers full control over their automation workflows.
+- CLI and desktop client for local execution with full control
+- Multi-model integration supporting multiple LLM providers
+- Understands existing codebases and makes targeted modifications
+- Operates autonomously on code generation, debugging, and testing tasks
 
-## Key Features
+## Extensible Plugin and Recipe System
 
-Goose provides a local CLI and desktop client with multi-model integration, enabling developers to compose common development workflows into reusable recipes. Its orchestratable plugin system supports building automation pipelines for project initialization, code generation, build, test, and publish tasks, with seamless integration for multiple LLM providers.
+- Composable recipes that encode common development workflows into reusable templates
+- Orchestratable plugin system for building automation pipelines
+- Covers project initialization, code generation, build, test, and publish tasks
+- Custom toolkits for extending agent capabilities to domain-specific workflows
 
-## Use Cases
+## Engineering Automation
 
-Goose is ideal for project scaffolding and code generation to jumpstart development, automated test generation and CI helper scripts, and automating repetitive engineering tasks during daily development workflows. It excels at understanding existing codebases and making targeted modifications without requiring constant human oversight.
+- Project scaffolding and code generation to jumpstart development
+- Automated test generation and CI helper script creation
+- Repetitive engineering task automation during daily development
+- Codebase understanding and modification without constant human oversight
 
-## Technical Details
+## Technical Stack
 
-Implemented in Rust and TypeScript for performance and extensibility, Goose interoperates with MCP, VS Code, and related tooling for easy integration into existing development environments. The project uses an Apache-2.0 license with well-documented examples, and its architecture supports both local execution and extensibility through custom toolkits and provider integrations.
+- Implemented in Rust and TypeScript for performance and extensibility
+- Interoperates with MCP, VS Code, and related tooling
+- Apache-2.0 license with well-documented examples
+- Architecture supports local execution and extensibility through custom provider integrations

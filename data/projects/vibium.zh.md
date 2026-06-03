@@ -12,7 +12,6 @@ tags:
   - Dev Tools
   - MCP
 description: Vibium 提供浏览器自动化能力，供 AI 智能体与人类使用，支持 CLI、MCP 与客户端库。
-logo: ''
 author: VibiumDev
 ossDate: '2026-02-13T00:00:00Z'
 featured: false

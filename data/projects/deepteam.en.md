@@ -3,7 +3,7 @@ name: DeepTeam
 slug: deepteam
 homepage: https://trydeepteam.com
 repo: https://github.com/confident-ai/deepteam
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: evaluation-benchmarks
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   An open-source framework for red-teaming large language models and LLM systems, focused on security and robustness
   evaluation.
-logo: ''
 author: Confident AI
 ossDate: '2025-03-05T06:34:21Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 DeepTeam is an open-source framework for red-teaming large language models and LLM systems, focused on security and robustness evaluation. It helps researchers and engineering teams systematically discover adversarial weaknesses and assess model risks before and after deployment.

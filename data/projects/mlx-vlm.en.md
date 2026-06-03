@@ -14,7 +14,6 @@ tags:
 description: >-
   A local-first toolkit for inference and fine-tuning of vision-language and omni models using MLX, optimized for macOS
   and general hardware.
-logo: ''
 author: Blaizzy
 ossDate: '2024-04-16T15:10:12.000Z'
 featured: false

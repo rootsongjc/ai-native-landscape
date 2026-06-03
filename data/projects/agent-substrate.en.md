@@ -13,7 +13,6 @@ tags:
   - Scheduling
   - gVisor
 description: Kubernetes-based system for managing agent workloads at scale, multiplexing many stateful actors onto fewer pods with sub-second activation and persistent state.
-logo: ''
 author: Agent Substrate
 ossDate: '2026-05-13'
 featured: false

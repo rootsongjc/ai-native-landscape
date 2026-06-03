@@ -12,7 +12,6 @@ tags:
   - RAG
   - Utility
 description: Weaviate 是开源云原生向量数据库，支持对象与向量存储，结合语义检索与结构化过滤，适用于大规模 AI 应用。
-logo: ''
 author: Weaviate
 ossDate: '2016-03-30T15:03:17.000Z'
 featured: false

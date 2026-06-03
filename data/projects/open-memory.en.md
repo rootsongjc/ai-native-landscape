@@ -14,7 +14,6 @@ tags:
 description: >-
   OpenMemory is a self-hosted, sectorized semantic memory engine that delivers high-recall, cost-efficient, and
   explainable long-term memory for LLM applications.
-logo: ''
 author: Cavira
 ossDate: '2025-10-19T16:12:49Z'
 featured: false

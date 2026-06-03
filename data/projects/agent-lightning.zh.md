@@ -10,7 +10,6 @@ tags:
   - Agent Framework
   - Training
 description: Agent Lightning 是一个用于训练与优化 AI 智能体的开源框架，旨在通过最小化代码改动提升多智能体系统的长期表现。
-logo: ''
 author: Microsoft Research
 ossDate: '2025-06-18T07:28:45.000Z'
 featured: false

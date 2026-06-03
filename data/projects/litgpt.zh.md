@@ -9,7 +9,6 @@ subCategory: deployment-operations
 tags:
   - ML Platform
 description: 高性能、面向工程的 LLM 工具链，提供从训练到部署的端到端配方与实用教程。
-logo: ''
 author: Lightning-AI
 ossDate: '2023-05-04T17:46:11.000Z'
 featured: false

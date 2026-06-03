@@ -10,7 +10,6 @@ tags:
   - Data
   - RAG
 description: Developer-friendly, embedded retrieval engine for multimodal AI. Search More; Manage Less.
-logo: ''
 author: LanceDB
 ossDate: '2023-04-20'
 featured: false

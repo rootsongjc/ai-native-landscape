@@ -3,19 +3,17 @@ name: 'Claude-Flow: Orchestration Platform for Claude'
 slug: claude-flow
 homepage: https://flow-nexus.ruv.io/
 repo: https://github.com/ruvnet/claude-flow
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
   - Agent Framework
 description: Claude-Flow 是一个面向 Claude 平台的 AI 编排与多智能体协同框架，支持高并发 agent 调度、Hooks 自动化与 Flow Nexus 云集成。
-logo: ''
 author: ruvnet
 ossDate: '2023-06-01T00:00:00+08:00'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Claude-Flow 是一个面向开发者的 AI 编排平台，提供 hive-mind 与 swarm 两种多智能体运行模式，支持实时控制、Hooks 自动化、以及与 Flow Nexus 云平台的深度集成。

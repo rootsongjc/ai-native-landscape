@@ -3,19 +3,17 @@ name: avante.nvim
 slug: avante-nvim
 homepage: https://nix-community.github.io/nixvim/plugins/avante/index.html
 repo: https://github.com/yetone/avante.nvim
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: coding-agents
 tags:
   - Vibe Coding
 description: avante.nvim 将 AI 驱动的代码建议与一键应用能力带入 Neovim 编辑器，实现类似 Cursor 的智能交互体验。
-logo: ''
 author: yetone
 ossDate: '2024-08-14T16:45:16Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 avante.nvim 是一个把 AI 助手深度嵌入 Neovim 的插件，提供上下文感知的代码建议、一键应用编辑、项目级指令文件（`avante.md`）以及多种 LLM provider 的适配能力。它既能在本地直接运行预编译二进制，也支持从源码构建，兼顾开发者工作流与可扩展性。

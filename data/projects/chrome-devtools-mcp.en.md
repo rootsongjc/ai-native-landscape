@@ -3,7 +3,7 @@ name: Chrome DevTools MCP
 slug: chrome-devtools-mcp
 homepage: null
 repo: https://github.com/chromedevtools/chrome-devtools-mcp
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: mcp-tools
 tags:
@@ -13,13 +13,11 @@ tags:
 description: >-
   Chrome DevTools MCP is an MCP server that enables AI coding assistants to control and inspect live Chrome browsers
   with powerful performance analysis and debugging capabilities.
-logo: ''
 author: Google
 ossDate: '2025-09-11T10:39:55.000Z'
 featured: true
 status: tracked
 ---
-
 ## Overview
 
 Chrome DevTools MCP is a powerful Model Context Protocol (MCP) server that provides AI coding assistants (such as Gemini, Claude, Cursor, or Copilot) with the ability to control and inspect live Chrome browsers. By integrating the full functionality of Chrome DevTools, it enables reliable browser automation, in-depth debugging, and comprehensive performance analysis.

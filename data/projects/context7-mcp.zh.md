@@ -3,19 +3,17 @@ name: Context7 MCP
 slug: context7-mcp
 homepage: https://context7.com/
 repo: https://github.com/upstash/context7
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: mcp-tools
 tags:
   - MCP
 description: 为任何提示提供最新的代码文档，直接从源头获取版本特定的文档和代码示例，并将其直接放入您的提示中。
-logo: ''
 author: Upstash
 ossDate: '2025-03-26T23:40:39.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Context7 MCP 是一个强大的工具，专门为开发者提供最新、版本特定的代码文档和示例。它能够直接从源头获取准确的文档信息，并将其无缝集成到您的提示中，大大提升了 AI 辅助编程的准确性和效率。

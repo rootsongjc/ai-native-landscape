@@ -3,19 +3,17 @@ name: LightGBM
 slug: lightgbm
 homepage: https://lightgbm.readthedocs.io/
 repo: https://github.com/microsoft/lightgbm
-license: Unknown
+license: Other
 category: inference-serving
 subCategory: gpu-acceleration
 tags:
   - Utility
 description: 高效的梯度提升树（GBDT）框架，支持分布式训练与 GPU 加速，广泛应用于排序、分类和大规模数据场景。
-logo: ''
 author: Microsoft
 ossDate: '2016-08-05T05:45:50.000Z'
 featured: false
 status: tracked
 ---
-
 LightGBM（Light Gradient Boosting Machine）是微软与社区维护的高性能梯度提升树框架，针对大规模数据与高性能训练进行了优化，支持并行、分布式与 GPU 加速，常用于分类、回归与排序等任务。文档与快速入门详见官方文档站点。
 
 ## 主要特性

@@ -12,7 +12,6 @@ tags:
 description: >-
   ReLE (chinese-llm-benchmark) is a continuously updated Chinese LLM evaluation and leaderboard project covering
   education, medical, finance, legal, reasoning and other capability dimensions.
-logo: ''
 author: jeinlee1991
 ossDate: '2023-06-04T07:23:20.000Z'
 featured: false

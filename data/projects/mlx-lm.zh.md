@@ -10,7 +10,6 @@ tags:
   - LLM
   - Utility
 description: 在 Apple Silicon 上运行与微调 LLM 的 Python 工具包，支持模型量化、分布式推理与 Hugging Face 集成。
-logo: ''
 author: ml-explore
 ossDate: '2025-03-11T16:38:30.000Z'
 featured: false

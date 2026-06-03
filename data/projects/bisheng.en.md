@@ -3,7 +3,7 @@ name: BISHENG
 slug: bisheng
 homepage: http://www.bisheng.ai
 repo: https://github.com/dataelement/bisheng
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:
@@ -14,25 +14,33 @@ tags:
 description: >-
   An open-source LLM DevOps platform for enterprise scenarios, offering workflows, RAG, model management and
   observability.
-logo: ''
 author: DataElement
 ossDate: '2023-08-28T10:00:24Z'
 featured: false
 status: tracked
 ---
+BISHENG is an open-source LLM DevOps platform designed for building next-generation enterprise AI applications. It organizes large-model capabilities into composable, observable, and manageable applications by integrating workflow orchestration, Retrieval-Augmented Generation (RAG), model management, and evaluation tools.
 
-## Overview
+## Workflow Orchestration
 
-BISHENG is an open-source LLM DevOps platform designed for building next-generation enterprise AI applications. It organizes large-model capabilities into composable, observable, and manageable applications by integrating workflow orchestration, Retrieval-Augmented Generation (RAG), model and dataset management, and evaluation tools. The platform supports multi-agent collaboration and human-in-the-loop interventions to help enterprises build reliable generative applications in complex business environments.
+- Visual flowchart-based workflow builder supporting loops, parallelism, conditions, and batch processing
+- Hybrid orchestration engine with sequential, parallel, and loop execution modes
+- Runtime human-in-the-loop interventions for reliable execution in complex business scenarios
 
-## Key Features
+## RAG and Knowledge Management
 
-BISHENG provides visual workflows with a flowchart paradigm that supports loops, parallelism, conditions, and batch processing for complex orchestration. It offers multi-agent support for orchestrating heterogeneous agents and modular components, integrated RAG and knowledge management for improved document understanding, and enterprise-grade operations including RBAC, SSO, auditing, monitoring, and high-availability deployment options.
+- Integrated RAG pipeline for improved document understanding and long-context capabilities
+- High-precision document parsing models for printed text, handwriting, tables, and layout analysis
+- Private deployment options for sensitive enterprise data environments
 
-## Use Cases
+## Multi-Agent and Enterprise Operations
 
-BISHENG is suitable for document review, fixed-layout report generation, customer service and ticket assistance, meeting minutes generation, resume screening, and unstructured data governance. Its deep componentization and parameterization make it a strong fit for deploying complex enterprise workflows across finance, government, manufacturing, and service industries.
+- Multi-agent support for orchestrating heterogeneous agents and modular components
+- RBAC, SSO, auditing, monitoring, and high-availability deployment options
+- Unified model and data management with SFT/finetune workflows and evaluation support
 
-## Technical Details
+## Architecture and Deployment
 
-The platform features a hybrid orchestration engine supporting sequential, parallel, and loop execution modes with runtime human intervention. It includes high-precision document parsing models for printed text, handwriting, tables, and layout analysis that can be deployed privately, along with unified model and data management with SFT/finetune workflows and evaluation support. Its microservice and container-based architecture integrates with external components like Elasticsearch and Milvus for scalability.
+- Microservice and container-based architecture for scalable enterprise deployments
+- Integrates with external components like Elasticsearch and Milvus
+- Deep componentization and parameterization for finance, government, manufacturing, and service industries

@@ -3,7 +3,7 @@ name: AIO Sandbox
 slug: agent-infra-sandbox
 homepage: https://sandbox.agent-infra.com
 repo: https://github.com/agent-infra/sandbox
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: mcp-tools
 tags:
@@ -11,13 +11,11 @@ tags:
   - MCP
   - Sandbox
 description: 面向 AI 智能体的一体化沙箱环境，组合浏览器、Shell、文件系统、MCP 与 VSCode 服务，便于开发与测试。
-logo: ''
 author: Agent Infra
 ossDate: '2025-08-06T14:51:05.000Z'
 featured: false
 status: tracked
 ---
-
 ## 详细介绍
 
 AIO Sandbox 是一个面向 AI 智能体与开发者的一体化沙箱环境，将浏览器、Shell、文件系统、Jupyter、VSCode Server 与 MCP（Model Context Protocol）服务整合到单个可运行的容器内。它为多模态代理、浏览器自动化、代码运行与数据处理提供统一且受控的执行环境，支持快速启动（Docker 镜像或容器化部署）与本地开发调试，适合构建、测试和演示需要跨界协作的智能体工作流。

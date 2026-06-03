@@ -9,7 +9,6 @@ subCategory: coding-agents
 tags:
   - Vibe Coding
 description: 专为终端打造的 AI 编码代理工具，100% 开源且不依赖特定供应商，专注于终端用户界面。
-logo: ''
 author: SST
 ossDate: '2025-04-30T20:08:00.000Z'
 featured: false

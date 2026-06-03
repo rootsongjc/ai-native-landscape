@@ -3,7 +3,7 @@ name: Generative AI on Google Cloud
 slug: google-generative-ai
 homepage: https://cloud.google.com/vertex-ai/docs/generative-ai/learn/overview
 repo: https://github.com/googlecloudplatform/generative-ai
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:
@@ -11,13 +11,11 @@ tags:
   - LLM
   - RAG
 description: Sample code and notebooks demonstrating how to build and deploy generative AI workflows on Vertex AI and Gemini.
-logo: ''
 author: Google
 ossDate: '2023-05-05T12:31:07.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 This repository, maintained by Google Cloud Platform, collects notebooks, sample apps and code demonstrating generative AI workflows on Vertex AI (including Gemini). It covers agent examples, RAG grounding patterns, multimodal generation, and production-oriented deployment and evaluation practices—useful for engineering and product teams validating GenAI solutions on Google Cloud.

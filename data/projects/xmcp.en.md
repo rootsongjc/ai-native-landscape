@@ -13,7 +13,6 @@ tags:
 description: >-
   A TypeScript framework for building and shipping MCP servers that streamlines developer experience and lowers the
   barrier to create tools on the Model Context Protocol ecosystem.
-logo: ''
 author: Basement Studio
 ossDate: '2025-05-17T04:09:27Z'
 featured: false

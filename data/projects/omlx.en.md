@@ -14,7 +14,6 @@ description: >-
   Local LLM server for Apple Silicon with continuous batching and SSD caching. Native macOS menu bar app,
   OpenAI-compatible API, optimized for Claude Code. Supports multiple model types including text LLMs, VLMs, and
   embedding models.
-logo: ''
 author: jundot
 ossDate: '2026-02-13'
 featured: true

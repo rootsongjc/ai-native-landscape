@@ -11,7 +11,6 @@ tags:
   - Project
   - RAG
 description: OpenViking 是为 AI 智能体设计的开源上下文数据库，通过文件系统范式统一管理记忆、资源与技能，提升检索可观察性与分层加载效率。
-logo: ''
 author: Volcengine
 ossDate: '2026-01-15T00:00:00.000Z'
 featured: false

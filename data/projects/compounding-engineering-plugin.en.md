@@ -12,7 +12,6 @@ tags:
   - Claude Code
   - Cursor
 description: Official plugin for Claude Code, Codex, Cursor, and more that brings compounding engineering workflows to AI-powered coding assistants.
-logo: ''
 author: EveryInc
 ossDate: '2025-10-09T19:43:46Z'
 featured: true

@@ -12,7 +12,6 @@ tags:
 description: >-
   An open-source framework for real-time voice and multimodal agents, supporting low-latency voice interaction and
   multi-platform SDKs.
-logo: ''
 author: Pipecat
 ossDate: '2023-12-27T12:59:00.000Z'
 featured: false

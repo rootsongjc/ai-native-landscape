@@ -11,7 +11,6 @@ tags:
 description: >-
   A one-stop platform for evaluating large models, providing benchmarks, evaluation toolkits and leaderboards to
   reproduce and compare model capabilities.
-logo: ''
 author: OpenCompass Contributors
 ossDate: '2023-06-15T12:42:58.000Z'
 featured: false

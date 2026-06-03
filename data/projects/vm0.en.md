@@ -16,7 +16,6 @@ tags:
 description: >-
   A runtime and orchestration platform for natural-language-described agents, offering session persistence,
   observability, and multi-model routing.
-logo: ''
 author: VM0.ai
 ossDate: '2025-11-14T03:27:22Z'
 featured: false

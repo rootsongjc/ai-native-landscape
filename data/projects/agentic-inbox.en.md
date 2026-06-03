@@ -12,7 +12,6 @@ tags:
   - Cloudflare Workers
   - Self-hosted
 description: A self-hosted email client with an AI agent that reads, summarizes, and acts on emails, running entirely on Cloudflare Workers.
-logo: ''
 author: Cloudflare
 ossDate: '2026-04-10T00:00:00Z'
 featured: false

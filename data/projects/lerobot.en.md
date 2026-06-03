@@ -12,7 +12,6 @@ tags:
 description: >-
   An open-source robotics library providing datasets, pretrained policies and simulation environments for reproducible
   robot learning and deployment.
-logo: ''
 author: Hugging Face
 ossDate: '2024-01-26T15:50:41.000Z'
 featured: false

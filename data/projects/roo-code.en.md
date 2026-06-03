@@ -11,7 +11,6 @@ tags:
 description: >-
   An AI-powered code generation and assistance platform that helps developers build applications faster with intelligent
   code suggestions and automated development workflows.
-logo: ''
 author: RooCode Inc
 ossDate: '2024-10-31T17:56:50.000Z'
 featured: false

@@ -3,20 +3,18 @@ name: CrewAI
 slug: crewai
 homepage: https://crewai.com/
 repo: https://github.com/crewaiinc/crewai
-license: Unknown
+license: Other
 category: agents
 subCategory: agent-orchestration
 tags:
   - AI Agent
   - Dev Tools
 description: 轻量、快速的多智能体编排框架，支持 Crews 与 Flows 的协作与流程化执行，适用于构建生产级别的自主代理与事件驱动工作流。
-logo: ''
 author: CrewAI Inc.
 ossDate: '2023-10-27T03:26:59.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 CrewAI 是一个开源的、以 Python 为主的多智能体编排框架，设计目标是以最小开销实现高性能与高度可定制的自主代理系统。它将“Crews”（多代理协作）与“Flows”（事件驱动流程）结合，既支持自治智能体之间的协作，也支持对执行路径进行精细控制，适合从快速原型到企业级生产环境的场景。

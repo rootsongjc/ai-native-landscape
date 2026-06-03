@@ -12,7 +12,6 @@ tags:
   - LLM
   - Agent Framework
 description: 基于图的多智能体系统编排框架，通过 Vibe Graphing 实现灵活的智能体协调与工作流编排。
-logo: ''
 author: BUPT-GAMMA
 ossDate: '2026-02-14'
 featured: false

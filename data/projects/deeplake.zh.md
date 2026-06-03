@@ -3,7 +3,7 @@ name: Deep Lake
 slug: deeplake
 homepage: https://docs.deeplake.ai/
 repo: https://github.com/activeloopai/deeplake
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: data-platforms
 tags:
@@ -11,13 +11,11 @@ tags:
   - Database
   - LLM
 description: 面向 AI 的数据库，提供对向量、图像、视频与文本的数据存储、检索、版本管理与流式加载功能。
-logo: ''
 author: Activeloop
 ossDate: '2019-08-09T06:17:59.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Deep Lake 是一个为深度学习与 LLM 应用设计的数据库，优化了存储与检索向量、多模态数据（图像、视频、音频、文本等）以及数据版本控制与流式加载，便于在训练与推理阶段管理大规模数据集。

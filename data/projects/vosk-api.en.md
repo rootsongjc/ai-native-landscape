@@ -12,7 +12,6 @@ tags:
 description: >-
   Vosk API provides offline speech recognition for Android, iOS, Raspberry Pi and servers with bindings for Python,
   Java, C# and Node.
-logo: ''
 author: alphacep
 ossDate: '2019-09-03T17:48:42.000Z'
 featured: false

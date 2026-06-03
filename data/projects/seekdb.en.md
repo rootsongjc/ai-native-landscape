@@ -12,7 +12,6 @@ tags:
 description: >-
   An AI-native search database that unifies vector, text, and structured data in a single engine to enable hybrid search
   and in-database AI workflows.
-logo: ''
 author: OceanBase
 ossDate: '2025-10-21T11:31:11Z'
 featured: false

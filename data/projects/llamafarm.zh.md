@@ -10,7 +10,6 @@ tags:
   - Dev Tools
   - RAG
 description: LlamaFarm 提供在本地或远程快速部署 AI 模型、代理、向量数据库与 RAG 管道的开源平台。
-logo: ''
 author: Llama Farm
 ossDate: '2025-07-09T23:48:36.000Z'
 featured: false

@@ -10,7 +10,6 @@ tags:
   - ML Platform
   - Product
 description: 面向生产的开放式 AI 平台，包含 MAX 推理服务器与 Mojo 库，用于加速模型部署与跨硬件运行。
-logo: ''
 author: Modular
 ossDate: '2023-04-28T22:17:24.000Z'
 featured: false

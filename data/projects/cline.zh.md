@@ -3,19 +3,17 @@ name: Cline
 slug: cline
 homepage: https://cline.bot/
 repo: https://github.com/cline/cline
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: coding-agents
 tags:
   - Vibe Coding
 description: 基于多模型的智能编程代理，支持 Plan/Act 双模式，使用 API Key 时要悠着点。
-logo: ''
 author: Cline Team
 ossDate: '2024-07-06T07:28:10.000Z'
 featured: true
 status: tracked
 ---
-
 Cline 是我在 VS Code 中最喜欢用的 AI 编程代理之一。我没有把它当成一个补全工具，而是把它当成一个“可指挥的编程助手”：告诉它要做什么，它会先构建计划，再一步步执行，还能在终端跑命令、开浏览器、监控输出。
 
 ![Cline 在 VS Code 中的界面](https://assets.jimmysong.io/images/ai/cline/cline.webp)

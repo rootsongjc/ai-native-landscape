@@ -3,32 +3,44 @@ name: Astron RPA
 slug: astron-rpa
 homepage: http://www.iflyrpa.com
 repo: https://github.com/iflytek/astron-rpa
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:
   - Agent Framework
   - Automation
 description: 面向个人与企业的 Agent-ready RPA 套件，提供开箱即用的自动化工具与企业级集成能力。
-logo: ''
 author: 科大讯飞
 ossDate: '2025-09-20T08:51:40Z'
 featured: false
 status: tracked
 ---
+Astron RPA 是科大讯飞推出的 Agent-ready RPA 套件，面向个人与企业用户，提供开箱即用的自动化工具与企业级集成能力。项目支持与 Astron Agent 等智能体平台深度协作，将规则化自动化与智能决策能力融合。
 
-## 简介
+## 自动化工具集
 
-Astron RPA 是科大讯飞推出的 Agent-ready RPA 套件，面向个人与企业用户，提供开箱即用的自动化工具与企业级集成能力。项目提供可复用的自动化组件、低代码/无代码接入以及与智能体平台的深度集成能力，支持大规模流程自动化、监控与治理，并集成了对外部工具与 LLM 的适配器。
+- **UI 自动化**，支持桌面与 Web 应用的交互操作
+- **文件处理**组件，覆盖文档转换、数据提取与格式化
+- **流程调度**，支持基于 Cron 的定时触发与事件驱动执行
+- **预置模板**，提供常见企业自动化场景的即用方案
 
-## 主要特性
+## 智能体集成
 
-Astron RPA 提供开箱即用的自动化工具集合（包括 UI 自动化、文件处理与流程调度组件），Agent-ready 集成能力（支持与 Astron Agent 等智能体平台协作），低代码/无代码可视化流程构建器，以及企业级治理与监控（权限、审计与运行时监控）。
+- 与 Astron Agent 原生集成，实现 RPA 与智能体的协同工作流
+- MCP 协议适配器，对接 LLM 与外部工具服务
+- 规则驱动的自动化结合 AI 决策能力
+- RPA 流程与智能体编排层之间的双向数据流转
 
-## 使用场景
+## 低代码开发
 
-适用于需要跨应用自动化的企业场景，如财务对账、客服自动化、表单处理与跨系统数据同步。对于希望将 RPA 与 LLM/智能体结合的团队，Astron RPA 可作为桥梁，快速将规则化自动化与智能决策能力融合。
+- 可视化拖拽流程构建器，面向非技术用户
+- 无代码表单设计与数据映射向导
+- 可复用组件库，支持跨团队与跨部门共享
+- SDK 与 API 接口，便于开发者扩展自动化能力
 
-## 技术特点
+## 企业级治理
 
-Astron RPA 基于模块化设计，包含适配器层、流程引擎与可视化编排界面，支持与外部工具和 LLM 的接口（例如通过 MCP 协议）。项目在企业级场景中强调可扩展性、可观测性与安全性，并提供 SDK 与运行时组件以便于生产部署。
+- 基于角色的访问控制与审批工作流
+- 审计日志与合规报告
+- 运行时可观测性，提供执行指标与错误仪表盘
+- 可扩展部署，支持大规模生产环境

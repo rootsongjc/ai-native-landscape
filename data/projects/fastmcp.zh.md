@@ -3,19 +3,17 @@ name: FastMCP
 slug: fastmcp
 homepage: https://gofastmcp.com/
 repo: https://github.com/jlowin/fastmcp
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: mcp-tools
 tags:
   - Dev Tools
 description: FastMCP 是一个面向生产环境的 Python MCP（Model Context Protocol）框架，提供企业级身份认证、部署工具与丰富的客户端/服务端功能。
-logo: ''
 author: jlowin / FastMCP 社区
 ossDate: '2024-11-30T01:47:40.000Z'
 featured: false
 status: tracked
 ---
-
 ## 详细介绍
 
 FastMCP 是一个用于构建 MCP（Model Context Protocol）服务器与客户端的生产级 Python 框架，覆盖认证、部署、工具转换与 OpenAPI/FastAPI 生成等能力。项目文档详见 gofastmcp.com，适合需要将 LLM 与后端系统安全、可扩展集成的团队与企业使用。

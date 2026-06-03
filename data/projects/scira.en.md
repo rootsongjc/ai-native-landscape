@@ -3,7 +3,7 @@ name: Scira
 slug: scira
 homepage: https://scira.ai
 repo: https://github.com/zaidmukaddam/scira
-license: Unknown
+license: AGPLv3
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   A minimalistic AI-powered search engine that finds information on the web and provides citations, serving as an
   open-source Perplexity alternative.
-logo: ''
 author: zaidmukaddam
 ossDate: '2024-08-07T13:29:49.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Scira is a lightweight, explainable AI search engine designed to help users find information on the web with citation support. It's an open-source project built with modern frontend and backend technologies (TypeScript + Vercel AI SDK), focusing on retrieval quality and traceability of results.

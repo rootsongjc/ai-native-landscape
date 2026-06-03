@@ -11,7 +11,6 @@ tags:
 description: >-
   SWE-agent: an academic-developed automated software engineering agent framework for code repair, benchmarking, and
   research workflows.
-logo: ''
 author: SWE-agent
 ossDate: '2024-04-02T04:09:47.000Z'
 featured: false

@@ -14,7 +14,6 @@ tags:
   - Python
   - Stealth
 description: An adaptive web scraping framework with AI-powered element selection, stealth capabilities, and MCP server support for AI agent integration.
-logo: ''
 author: D4Vinci
 ossDate: '2024-10-13'
 featured: false

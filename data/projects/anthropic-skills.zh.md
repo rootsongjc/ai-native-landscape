@@ -11,7 +11,6 @@ tags:
   - Agents
   - Tool
 description: Anthropic 提供的开源智能体技能库，用于定义、共享与复用面向任务的能力模块。
-logo: ''
 author: Anthropic
 ossDate: '2025-09-22T15:53:31Z'
 featured: false

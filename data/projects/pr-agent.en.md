@@ -12,7 +12,6 @@ tags:
 description: >-
   An open-source AI-powered code review and PR assistant that runs locally, in CI, or self-hosted; supports
   multi-platform integrations and customizable prompts.
-logo: ''
 author: Qodo AI
 ossDate: '2023-07-05T21:02:15.000Z'
 featured: false

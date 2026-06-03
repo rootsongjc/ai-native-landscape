@@ -3,20 +3,18 @@ name: Evidently
 slug: evidently
 homepage: null
 repo: https://github.com/evidentlyai/evidently
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: evaluation-benchmarks
 tags:
   - Evaluation
   - Monitoring
 description: An open-source framework for evaluating, testing, and monitoring ML and LLM systems from experiments to production.
-logo: ''
 author: Evidently Team
 ossDate: '2020-11-25T15:20:08.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 Evidently is an open-source ML and LLM observability framework for evaluating, testing, and monitoring models from experiment to production. It provides Reports, Test Suites, and a Monitoring UI, and includes over 100 built-in metrics for data and model quality.

@@ -11,7 +11,6 @@ tags:
   - Dev Tools
   - Utility
 description: Interactive computing environment widely used for data science and machine learning development.
-logo: ''
 author: Project Jupyter
 ossDate: '2015-04-09T06:58:03.000Z'
 featured: false

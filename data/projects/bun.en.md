@@ -3,7 +3,7 @@ name: Bun
 slug: bun
 homepage: https://bun.sh
 repo: https://github.com/oven-sh/bun
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: developer-utilities
 tags:
@@ -13,25 +13,33 @@ tags:
 description: >-
   An integrated high-performance JavaScript platform combining runtime, bundler, package manager, and test runner to
   speed up development and builds.
-logo: ''
 author: Oven
 ossDate: '2021-04-14T00:48:17Z'
 featured: false
 status: tracked
 ---
-
-## Overview
-
 Bun is an incredibly fast JavaScript runtime, bundler, test runner, and package manager combined into a single integrated platform. Distributed as a single binary, it focuses on fast startup, speedy dependency installation, and build performance. Bun is widely used as a high-performance runtime for AI tooling and development workflows.
 
-## Key Features
+## All-in-One Toolchain
 
-Bun provides an integrated platform combining runtime, bundling, package management, and testing in one toolchain with optimized I/O and startup paths. It supports common Node.js APIs and modern ECMAScript features for broad compatibility, and ships as a single binary for easy installation and deployment.
+- Combines runtime, bundling, package management, and testing in one unified toolchain
+- Eliminates the need for separate tools like webpack, jest, or npm/yarn
+- Single binary distribution for easy installation and deployment across platforms
 
-## Use Cases
+## Performance
 
-Bun is suitable for building static sites, running development scripts, accelerating frontend build pipelines, and improving install and test times in CI. It is also a strong fit for running lightweight services on edge or serverless platforms, microservices requiring fast startup, and as a high-performance runtime for AI tooling and development.
+- Optimized I/O and startup paths for significantly faster script execution and build times
+- High-performance JavaScript engine with native networking I/O for improved concurrency
+- Native package installation and bundling workflows with fast resolution of common npm packages
 
-## Technical Details
+## Compatibility
 
-Implemented in modern systems languages like Zig for core components, Bun minimizes runtime overhead and improves concurrency with a high-performance JavaScript engine and native networking I/O. It provides native package installation and bundling workflows with fast resolution of common npm packages. The project is open-source and welcomes community contributions.
+- Supports common Node.js APIs for broad ecosystem compatibility
+- Modern ECMAScript feature support including latest language proposals
+- Seamless migration path for existing Node.js projects and scripts
+
+## AI and Edge Workloads
+
+- High-performance runtime for AI tooling and development workflows
+- Strong fit for running lightweight services on edge or serverless platforms
+- Fast startup makes it ideal for microservices and edge functions requiring quick cold starts

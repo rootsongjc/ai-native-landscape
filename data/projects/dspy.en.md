@@ -3,7 +3,7 @@ name: DSPy
 slug: dspy
 homepage: https://dspy.ai/
 repo: https://github.com/stanfordnlp/dspy
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: data-connectors
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   DSPy is an open-source framework that favors programming over prompting to build composable, self-improving AI
   pipelines.
-logo: ''
 author: DSPy contributors
 ossDate: '2023-01-09T21:01:51.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 DSPy (Declarative Self-improving Python) is a framework that treats programming—not prompting—as the primary interface to foundation models. It provides composable Python primitives to build model calls, retrieval, evaluation, and self-improvement loops, making it suitable for classifiers, RAG pipelines, and multi-step agent systems.

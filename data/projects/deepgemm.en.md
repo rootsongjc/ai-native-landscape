@@ -3,7 +3,7 @@ name: DeepGEMM
 slug: deepgemm
 homepage: null
 repo: https://github.com/deepseek-ai/deepgemm
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: inference-runtimes
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   Clean and efficient FP8 GEMM kernels with fine-grained scaling to support accurate and performant low-precision matrix
   computations.
-logo: ''
 author: DeepSeek
 ossDate: '2025-02-13T09:09:21.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 DeepGEMM provides efficient FP8 and low-precision GEMM kernels focused on balancing numerical stability and performance. Fine-grained scaling strategies and optimized GPU kernels help reduce numerical errors while leveraging low-precision speedups.

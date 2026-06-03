@@ -10,7 +10,6 @@ tags:
   - Framework
   - MCP
 description: MCP-UI 是一个面向 Model Context Protocol 的 UI SDK 集合，旨在将交互式 Web 组件和远程 DOM 功能带入 MCP 平台，以丰富代理交互体验。
-logo: ''
 author: idosal
 ossDate: '2025-05-13T22:41:43.000Z'
 featured: false

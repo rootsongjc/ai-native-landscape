@@ -13,25 +13,32 @@ tags:
 description: >-
   An open-source collection of SDKs and tools from Stripe that help integrate payments and billing into LLMs and agent
   frameworks.
-logo: ''
 author: Stripe
 ossDate: '2024-11-11T17:13:41Z'
 featured: false
 status: tracked
 ---
 
-## Overview
-
 Stripe AI is an open-source collection of SDKs and tools from Stripe that brings payments, billing, and financial APIs directly into LLM and agent workflows. It provides Agent Toolkits for Python and TypeScript, billing utilities such as ai-sdk and token-meter, and Model Context Protocol support for secure access to Stripe services in both hosted and local environments.
 
 ## Key Features
 
-The toolkit integrates with major agent frameworks including OpenAI Agent SDK, LangChain, CrewAI, and Vercel AI SDK, enabling agents to perform payment actions with proper authorization. It supports Stripe-hosted or self-hosted MCP servers with OAuth-based security, offers Python and TypeScript SDKs, and includes billing adapters that connect model token usage directly to Stripe invoicing.
+- Integrates with OpenAI Agent SDK, LangChain, CrewAI, Vercel AI SDK, and other major agent frameworks
+- Supports Stripe-hosted or self-hosted MCP servers with OAuth-based security
+- Offers Python and TypeScript SDKs with billing adapters connecting token usage to Stripe invoicing
+- Provides configurable account context defaults and fine-grained permission settings
+- Includes ai-sdk and token-meter utilities for metered billing of AI API consumption
 
 ## Use Cases
 
-Stripe AI is essential when building AI products that require payment functionality, such as metering token consumption for paid API services or allowing agents to create payment links and manage subscriptions on behalf of users. It also serves as an engineering bridge between LLM-powered applications and enterprise billing systems for usage tracking and reconciliation.
+- Metering token consumption for paid API services and AI-powered products
+- Allowing agents to create payment links and manage subscriptions on behalf of users
+- Bridging LLM-powered applications with enterprise billing systems for usage tracking and reconciliation
+- Building AI products that require payment functionality such as pay-per-query or subscription-gated features
 
 ## Technical Details
 
-The project is open-sourced under the MIT license and ships with comprehensive examples, documentation, and MCP quickstart guides. It is engineered for production deployment with configurable account context defaults, fine-grained permission settings, and direct integration with Stripe Dashboard API keys.
+- Open-sourced under the MIT license with comprehensive examples and MCP quickstart guides
+- Engineered for production deployment with direct integration with Stripe Dashboard API keys
+- Supports both hosted MCP and local server modes for flexible deployment architectures
+- Designed for secure, authorized payment actions within agent workflows

@@ -9,7 +9,6 @@ subCategory: workflow-automation
 tags:
   - Workflow
 description: 用于构建有状态、多参与者应用程序的库，基于 LangChain 构建复杂 AI 工作流。
-logo: ''
 author: LangChain
 ossDate: '2023-08-09T18:33:12.000Z'
 featured: false

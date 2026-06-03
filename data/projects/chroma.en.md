@@ -3,7 +3,7 @@ name: Chroma
 slug: chroma
 homepage: https://www.trychroma.com/
 repo: https://github.com/chroma-core/chroma
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:
@@ -13,13 +13,11 @@ tags:
 description: >-
   Chroma is an open-source embedding database for AI applications, enabling efficient search, storage, and retrieval for
   intelligent RAG systems.
-logo: ''
 author: chroma-core
 ossDate: '2022-10-05T17:58:44.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 Chroma is an open-source vector database designed for AI applications, supporting efficient embedding storage and semantic search. It is widely used in intelligent Q&A, knowledge bases, and RAG systems.

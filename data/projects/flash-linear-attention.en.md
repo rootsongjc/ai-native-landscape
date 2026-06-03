@@ -3,19 +3,17 @@ name: Flash Linear Attention (fla)
 slug: flash-linear-attention
 homepage: https://pypi.org/project/flash-linear-attention/
 repo: https://github.com/fla-org/flash-linear-attention
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: inference-runtimes
 tags:
   - Dev Tools
 description: A Triton-based, PyTorch library of efficient linear-attention kernels and models for scalable sequence modeling.
-logo: ''
 author: fla-org
 ossDate: '2023-12-20T06:50:18.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 `fla` (Flash Linear Attention) is a Triton-based PyTorch library providing efficient implementations of state-of-the-art linear attention kernels, fused modules, and model components. It targets high-performance training and inference across hardware (NVIDIA/AMD/Intel).

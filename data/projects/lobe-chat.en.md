@@ -11,7 +11,6 @@ tags:
 description: >-
   Lobe-Chat: An open-source AI chat framework for seamless multi-model integration, plugin support, and versatile
   deployment across platforms.
-logo: ''
 author: Lobehub
 ossDate: '2023-05-21T07:19:12.000Z'
 featured: false

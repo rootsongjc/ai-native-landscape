@@ -10,7 +10,6 @@ tags:
   - Simulator
   - Training
 description: 面向单智能体强化学习环境的 API 标准，提供参考环境与相关工具（前身为 OpenAI Gym）。
-logo: ''
 author: Farama Foundation
 ossDate: '2022-09-08T01:58:05.000Z'
 featured: false

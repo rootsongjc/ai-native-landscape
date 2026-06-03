@@ -3,19 +3,17 @@ name: Gateway API Inference Extension
 slug: gateway-api-inference-extension
 homepage: https://gateway-api-inference-extension.sigs.k8s.io/
 repo: https://github.com/kubernetes-sigs/gateway-api-inference-extension
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: llm-routing-gateways
 tags:
   - AI Gateway
 description: 将 Gateway API 与外部处理扩展结合，构建 Kubernetes 原生的推理网关以优化生成式 AI 推理部署。
-logo: ''
 author: Kubernetes SIGs
 ossDate: '2024-08-28T20:04:10.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Gateway API Inference Extension（Inference Gateway）将 Gateway API 与 Envoy 的 External Processing 扩展相结合，提供面向 Kubernetes 的推理网关功能，用于管理、调度并优化自托管生成式模型的推理请求。

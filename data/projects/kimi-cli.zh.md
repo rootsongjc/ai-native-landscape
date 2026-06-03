@@ -10,7 +10,6 @@ tags:
   - Dev Tools
   - Vibe Coding
 description: kimi-cli 是一款由 MoonshotAI 推出的开源命令行 AI 智能体工具，支持多种 AI 能力集成，助力开发者高效构建和管理 AI 工作流。
-logo: ''
 author: 月之暗面
 ossDate: '2025-10-15T12:58:03.000Z'
 featured: false

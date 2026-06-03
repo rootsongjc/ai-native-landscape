@@ -3,20 +3,18 @@ name: ChatGPT on WeChat
 slug: chatgpt-on-wechat
 homepage: null
 repo: https://github.com/zhayujie/chatgpt-on-wechat
-license: Unknown
+license: Other
 category: applications-products
 subCategory: chat-interfaces
 tags:
   - Chatbot
   - Tool
 description: 将 ChatGPT 集成到微信的开源项目，提供在微信环境中与大语言模型交互的能力。
-logo: ''
 author: zhayujie
 ossDate: '2022-08-07T08:33:41.000Z'
 featured: false
 status: tracked
 ---
-
 ChatGPT on WeChat 是一个开源项目，旨在把 ChatGPT 的对话能力带入微信平台，让用户在熟悉的聊天环境中调用大语言模型完成问答、写作辅助与自动化交互。项目通过微信公众平台或个人号的消息接口与后端代理服务对接，适合想在微信生态内构建智能助手与自动化工具的开发者与产品团队。
 
 ## 主要特性

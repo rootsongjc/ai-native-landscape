@@ -10,7 +10,6 @@ tags:
   - Application
   - Dev Tools
 description: 面向数据工作的响应式 Python 笔记本，支持可执行脚本、交互式 UI 与 AI 辅助生成功能。
-logo: ''
 author: Marimo Team
 ossDate: '2021-01-01T00:00:00.000Z'
 featured: false

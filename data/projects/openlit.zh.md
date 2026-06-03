@@ -9,7 +9,6 @@ subCategory: evaluation-benchmarks
 tags:
   - Dev Tools
 description: OpenLIT 是一个面向 AI 工程的开源平台，提供 LLM 可观测性、Prompt 管理、评估与 Guardrails 等工具与 SDK。
-logo: ''
 author: OpenLIT
 ossDate: '2024-01-23T17:40:59.000Z'
 featured: false

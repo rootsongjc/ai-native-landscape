@@ -3,20 +3,18 @@ name: Adala
 slug: adala
 homepage: https://humansignal.github.io/Adala/
 repo: https://github.com/humansignal/adala
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:
   - Agent Framework
   - RAG
 description: Adala 是一个面向数据处理与标注任务的自主代理框架，支持多运行时与技能学习。
-logo: ''
 author: HumanSignal
 ossDate: '2023-08-30T12:06:57.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Adala 是一个开源的自主数据（标注）代理框架，旨在通过训练代理技能并在运行时（例如 LLM）中执行这些技能，自动化数据处理与标注工作流。

@@ -3,20 +3,18 @@ name: Datachain
 slug: datachain
 homepage: https://docs.datachain.ai
 repo: https://github.com/iterative/datachain
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: data-platforms
 tags:
   - Data
   - Dev Tools
 description: 面向非结构化数据的 ETL、分析与版本管理平台，帮助团队构建可重复与可追溯的数据流水线。
-logo: ''
 author: Iterative
 ossDate: '2024-06-25T22:29:35.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Datachain 提供面向非结构化数据的 ETL、分析与版本管理能力，使团队能够构建可重复、可追溯的数据流水线。项目集成数据管理与版本控制思想，便于在模型训练、评估与生产化过程中保持数据一致性与可审计性。

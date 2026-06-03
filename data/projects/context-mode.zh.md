@@ -11,7 +11,6 @@ tags:
   - AI Coding
   - Optimization
 description: AI 编码 Agent 的上下文窗口优化工具，沙箱化工具输出，实现 98% 的上下文缩减，支持 15+ 平台。
-logo: ''
 author: mksglu
 ossDate: '2026-02-23T00:00:00Z'
 featured: true

@@ -12,7 +12,6 @@ tags:
   - Dev Tools
   - SDK
 description: Lark CLI 是飞书官方维护的命令行工具，面向人类与 AI Agent 设计，覆盖日历、文档、多维表格、消息、邮件、任务等 17 个业务领域，提供 200+ 命令与 24 个 AI Agent Skill。
-logo: ''
 author: Larksuite
 ossDate: '2026-03-25T07:13:30Z'
 featured: true

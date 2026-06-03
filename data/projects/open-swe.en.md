@@ -11,7 +11,6 @@ tags:
 description: >-
   An open-source cloud-based asynchronous coding agent that autonomously understands codebases, plans solutions, and
   executes code changes.
-logo: ''
 author: LangChain AI
 ossDate: '2025-05-21T21:44:24.000Z'
 featured: false

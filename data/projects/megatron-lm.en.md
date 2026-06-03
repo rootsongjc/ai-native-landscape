@@ -9,7 +9,6 @@ subCategory: deployment-operations
 tags:
   - ML Platform
 description: Reference implementation from NVIDIA for large-scale model training and inference with distributed optimizations.
-logo: ''
 author: NVIDIA
 ossDate: '2019-03-21T16:15:52.000Z'
 featured: false

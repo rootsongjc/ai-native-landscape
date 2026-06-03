@@ -14,7 +14,6 @@ tags:
 description: >-
   Lark CLI is the official command-line tool for Lark/Feishu, maintained by the larksuite team. It covers 17 business
   domains with 200+ commands and 24 AI Agent Skills, designed for both humans and AI agents.
-logo: ''
 author: Larksuite
 ossDate: '2026-03-25T07:13:30Z'
 featured: true

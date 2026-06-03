@@ -9,7 +9,6 @@ subCategory: sdk-frameworks
 tags:
   - Orchestration
 description: 用于扩展 AI 和 Python 应用的统一框架，为机器学习工作负载和通用并行计算提供分布式计算能力。
-logo: ''
 author: Ray Project
 ossDate: '2016-10-25T19:38:30.000Z'
 featured: false

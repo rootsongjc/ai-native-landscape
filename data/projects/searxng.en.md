@@ -3,7 +3,7 @@ name: SearXNG
 slug: searxng
 homepage: https://docs.searxng.org
 repo: https://github.com/searxng/searxng
-license: Unknown
+license: GNU
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   A free, privacy-preserving internet metasearch engine that aggregates results from multiple search services and
   databases without user tracking.
-logo: ''
 author: searxng
 ossDate: '2021-04-12T15:18:15.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 SearXNG is a free, privacy-focused metasearch engine that aggregates results from multiple search services and databases while refraining from tracking or profiling users. It is designed for self-hosting and suits organizations and individuals with strong privacy requirements.

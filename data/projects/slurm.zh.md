@@ -11,7 +11,6 @@ tags:
   - Dev Tools
   - Tool
 description: Slurm 是一个开源的集群资源管理和作业调度系统，具有简单、可扩展、可移植、容错和互连无关的特性，广泛用于高性能计算和 AI 训练集群的作业调度。
-logo: ''
 author: SchedMD
 ossDate: '2009-12-17T00:00:00.000Z'
 featured: false

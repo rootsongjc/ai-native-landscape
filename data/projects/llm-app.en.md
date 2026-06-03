@@ -12,7 +12,6 @@ tags:
 description: >-
   Production-ready templates for RAG and AI pipelines that support live data synchronization and large-scale document
   indexing.
-logo: ''
 author: Pathway
 ossDate: '2023-07-19T08:43:37.000Z'
 featured: false

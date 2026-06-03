@@ -3,7 +3,7 @@ name: Faiss
 slug: faiss
 homepage: https://faiss.ai/
 repo: https://github.com/facebookresearch/faiss
-license: Unknown
+license: MIT
 category: platform-infra
 subCategory: data-platforms
 tags:
@@ -11,13 +11,11 @@ tags:
   - Database
   - Dev Tools
 description: 高性能的向量相似性搜索与聚类库，适用于大规模向量检索与加速近邻搜索。
-logo: ''
 author: Faiss (facebookresearch)
 ossDate: '2017-02-07T16:07:05.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Faiss 是 Meta (facebookresearch) 开源的高性能库，用于密集向量的相似性搜索与聚类。它支持 CPU 与 GPU 实现，能够扩展到数十亿条向量，并提供 Python 与 C++ 接口，适合构建检索与召回系统。

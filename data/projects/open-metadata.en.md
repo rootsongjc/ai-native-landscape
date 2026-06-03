@@ -12,7 +12,6 @@ tags:
 description: >-
   A unified metadata platform for data discovery, observability and governance with rich connectors and collaboration
   features.
-logo: ''
 author: OpenMetadata
 ossDate: '2021-08-01T00:00:00.000Z'
 featured: false

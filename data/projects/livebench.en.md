@@ -12,7 +12,6 @@ tags:
 description: >-
   LiveBench is a contamination-aware, objective LLM benchmark suite that provides reproducible question sets, automatic
   scoring, and an online leaderboard.
-logo: ''
 author: LiveBench
 ossDate: '2024-06-12T12:13:57.000Z'
 featured: false

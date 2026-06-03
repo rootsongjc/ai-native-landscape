@@ -10,7 +10,6 @@ tags:
   - Dev Tools
   - Utility
 description: 高效、灵活且可移植的结构化生成引擎，提供对 JSON/自定义 CFG 的约束解码以保证输出结构正确。
-logo: ''
 author: MLC AI
 ossDate: '2024-06-28T06:34:27.000Z'
 featured: false

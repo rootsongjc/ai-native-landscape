@@ -11,7 +11,6 @@ tags:
 description: >-
   Open-source GenBI agent for querying databases in natural language and producing SQL, charts and AI-generated
   insights.
-logo: ''
 author: Canner
 ossDate: '2024-03-13T06:18:20.000Z'
 featured: false

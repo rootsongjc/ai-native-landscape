@@ -14,7 +14,6 @@ tags:
   - Claude Code
   - AI Agent
 description: 754 个面向 AI 智能体的结构化网络安全技能，映射到 MITRE ATT&CK、NIST CSF 2.0 等 5 大安全框架。
-logo: ''
 author: mukul975
 ossDate: '2026-02-25T09:47:50Z'
 featured: false

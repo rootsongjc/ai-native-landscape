@@ -11,7 +11,6 @@ tags:
 description: >-
   OpenLIT is an open-source platform for AI engineering that provides LLM observability, prompt management, evaluations
   and guardrails.
-logo: ''
 author: OpenLIT
 ossDate: '2024-01-23T17:40:59.000Z'
 featured: false

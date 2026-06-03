@@ -11,7 +11,6 @@ tags:
 description: >-
   Discover Sourcebot: an open-source platform for efficient code search and navigation, empowering developers with
   natural language queries and multi-repo support.
-logo: ''
 author: Sourcebot
 ossDate: '2024-08-23T20:40:37.000Z'
 featured: false

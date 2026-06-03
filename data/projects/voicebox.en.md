@@ -12,7 +12,6 @@ tags:
   - Voice Cloning
   - TTS
 description: Open-source AI voice studio for voice cloning, dictation, and audio creation with a modern web interface.
-logo: ''
 author: Jamie Pine
 ossDate: '2026-01-25T00:00:00Z'
 featured: true

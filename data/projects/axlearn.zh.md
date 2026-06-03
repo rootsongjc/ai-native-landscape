@@ -3,20 +3,18 @@ name: AXLearn
 slug: axlearn
 homepage: https://apple.github.io/axlearn
 repo: https://github.com/apple/axlearn
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: deployment-operations
 tags:
   - Framework
   - ML Platform
 description: 基于 JAX/XLA 的可扩展深度学习库，支持大规模模型的开发、训练与部署。
-logo: ''
 author: Apple
 ossDate: '2023-02-25T01:33:06.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 AXLearn 是一套构建于 JAX 与 XLA 之上的可扩展深度学习库，采用面向对象的配置系统，便于组合模型模块并与 Flax、Hugging Face 等生态集成，支持大规模训练与分布式部署。

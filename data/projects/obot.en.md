@@ -11,7 +11,6 @@ tags:
 description: >-
   An open-source MCP gateway and AI platform for self-hosted or cloud deployments, providing chat, administration, and
   audit capabilities.
-logo: ''
 author: obot-platform
 ossDate: '2024-09-05T19:50:46.000Z'
 featured: false

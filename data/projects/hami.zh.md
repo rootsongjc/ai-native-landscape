@@ -11,7 +11,6 @@ tags:
   - Inference Service
   - Middleware
 description: HAMi 是一款面向异构 AI 计算的虚拟化中间件，提供统一的资源抽象、调度与管理能力，便于在多种加速器与集群环境中部署 AI 工作负载。
-logo: ''
 author: Project-HAMi
 ossDate: '2021-09-14T11:51:49.000Z'
 featured: false

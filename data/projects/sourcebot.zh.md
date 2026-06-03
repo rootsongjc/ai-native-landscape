@@ -9,7 +9,6 @@ subCategory: developer-utilities
 tags:
   - Utility
 description: 开源自托管的代码理解与搜索平台，支持自然语言提问、代码导航和多仓库检索，助力开发者高效理解和管理代码。
-logo: ''
 author: Sourcebot
 ossDate: '2024-08-23T20:40:37.000Z'
 featured: false

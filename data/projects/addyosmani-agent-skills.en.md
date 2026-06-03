@@ -3,7 +3,7 @@ name: Agent Skills
 slug: addyosmani-agent-skills
 homepage: null
 repo: https://github.com/addyosmani/agent-skills
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -14,13 +14,11 @@ description: >-
   Agent Skills is an open-source collection of production-grade engineering skills by Google Chrome engineer Addy
   Osmani, featuring 20 structured workflows and 7 slash commands covering the full development lifecycle from spec to
   ship.
-logo: ''
 author: Addy Osmani
 ossDate: '2026-02-15T20:20:26Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Agent Skills is an open-source project by Google Chrome senior engineer Addy Osmani that provides a production-grade engineering skill system designed specifically for AI coding agents. The core philosophy is to encode the workflows, quality gates, and best practices that senior engineers follow in software development into structured skills, enabling AI agents to consistently execute these standards at every stage of development. The collection includes 20 core skills, 7 slash commands, 3 specialist agent personas, and 4 reference checklists, covering the complete software development lifecycle from Define through Plan, Build, Verify, Review, and Ship.

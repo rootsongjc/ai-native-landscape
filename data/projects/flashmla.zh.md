@@ -3,19 +3,17 @@ name: FlashMLA
 slug: flashmla
 homepage: null
 repo: https://github.com/deepseek-ai/flashmla
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: agent-memory-context
 tags:
   - Framework
 description: 高效的多头潜在注意力（Multi-head Latent Attention）内核，旨在为大规模 Transformer 推理与训练提供更快、更节省内存的注意力实现。
-logo: ''
 author: DeepSeek
 ossDate: '2025-02-21T06:31:27.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 FlashMLA 是一个面向大规模 Transformer 的高性能注意力内核实现，提供高效的多头潜在注意力（Multi-head Latent Attention）算子。

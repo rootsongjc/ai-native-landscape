@@ -10,7 +10,6 @@ tags:
   - Data
   - Dev Tools
 description: 用于大模型的强化学习训练框架，面向大规模 RLHF 与 agent 训练的可扩展项目。
-logo: ''
 author: 字节跳动
 ossDate: '2024-10-31T06:11:15.000Z'
 featured: false

@@ -12,7 +12,6 @@ tags:
   - UI
   - Vibe Coding
 description: Open Design 是一个本地优先的开源 AI 设计智能平台，利用现有编程智能体作为设计引擎，支持生成网页、桌面、移动端原型、幻灯片、图片和视频，提供 71 套品牌级设计系统和 19 种内置技能。
-logo: ''
 author: nexu-io
 ossDate: '2026-04-28'
 featured: false

@@ -10,7 +10,6 @@ tags:
   - Dev Tools
   - Framework
 description: 面向医疗影像的 AI 工具包，专注深度学习在医学图像处理与分析中的应用。
-logo: ''
 author: Project MONAI
 ossDate: '2019-10-11T16:41:38.000Z'
 featured: false

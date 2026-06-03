@@ -13,7 +13,6 @@ tags:
 description: >-
   Multi-agent framework that automates software development processes from requirements to code implementation through
   collaborative AI agent teams.
-logo: ''
 author: Foundation Agents
 ossDate: '2023-06-30T09:04:55.000Z'
 featured: false

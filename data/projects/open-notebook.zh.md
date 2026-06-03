@@ -10,7 +10,6 @@ tags:
   - Application
   - Multimodal
 description: 一个开源且注重隐私的笔记与研究管理平台，支持多模型接入与多模态内容管理。
-logo: ''
 author: Luis Novo
 ossDate: '2024-10-21T17:58:46.000Z'
 featured: false

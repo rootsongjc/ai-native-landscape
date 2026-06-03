@@ -12,7 +12,6 @@ tags:
 description: >-
   Candle by Hugging Face: a minimalist, high-performance ML framework in Rust designed for serverless inference and
   lightweight deployments.
-logo: ''
 author: Hugging Face
 ossDate: '2023-06-19T16:06:31.000Z'
 featured: false

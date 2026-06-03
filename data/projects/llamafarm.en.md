@@ -12,7 +12,6 @@ tags:
 description: >-
   LlamaFarm is an open-source platform for deploying AI models, agents, vector databases, and RAG pipelines locally or
   remotely in minutes.
-logo: ''
 author: Llama Farm
 ossDate: '2025-07-09T23:48:36.000Z'
 featured: false

@@ -11,7 +11,6 @@ tags:
 description: >-
   An open-source deep research agent framework that integrates multi-model providers, search tools and MCP for
   reproducible research pipelines.
-logo: ''
 author: LangChain
 ossDate: '2024-11-20T17:37:22.000Z'
 featured: false

@@ -3,19 +3,17 @@ name: LocalGPT
 slug: localgpt
 homepage: null
 repo: https://github.com/promtengineer/localgpt
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:
   - RAG
 description: 一个本地化的私有文档智能平台，支持混合检索与多模型推理，所有数据保存在本地。
-logo: ''
 author: PromtEngineer
 ossDate: '2023-05-24T05:32:40.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 LocalGPT 是一个私有、可部署在本地的文档智能平台，结合语义检索、关键词匹配与 Late Chunking，能在不将数据泄露到外部的前提下对文档进行问答、摘要与洞察挖掘。

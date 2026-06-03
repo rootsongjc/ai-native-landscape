@@ -12,9 +12,8 @@ tags:
   - Optimization
   - Tool
 description: >-
-  Heretic 是一个完全自动化的工具,可以在不进行昂贵的后训练的情况下,从基于 transformer 的语言模型中移除审查(即"安全对齐")。它结合了定向消融(也称为"abliteration")的高级实现和基于 Optuna 的
-  TPE 参数优化器,能够自动找到高质量的消融参数,同时最小化拒绝次数和与原始模型的 KL 散度,从而保留原始模型的智能水平。
-logo: ''
+  Heretic 是一个完全自动化的工具，可以在不进行昂贵的后训练的情况下，从基于 transformer 的语言模型中移除审查 (即"安全对齐")。它结合了定向消融 (也称为"abliteration") 的高级实现和基于 Optuna 的
+  TPE 参数优化器，能够自动找到高质量的消融参数，同时最小化拒绝次数和与原始模型的 KL 散度，从而保留原始模型的智能水平。
 author: Philipp Emanuel Weidmann
 ossDate: '2025-03-16'
 featured: false
@@ -23,11 +22,12 @@ status: tracked
 
 ## 详细介绍
 
-Heretic 是一个开源的 Python 工具,专门用于从语言模型中移除安全审查机制。它基于先进的定向消融(directional ablation)技术,也被称为"abliteration"。与传统的手动调整不同,Heretic 实现了完全自动化的参数优化流程。
+Heretic 是一个开源的 Python 工具，专门用于从语言模型中移除安全审查机制。它基于先进的定向消融 (directional ablation) 技术，也被称为"abliteration"。与传统的手动调整不同，Heretic 实现了完全自动化的参数优化流程。
 
 该工具的核心创新在于：
+
 - **完全自动化**：无需理解 transformer 内部机制，任何会使用命令行的人都可以操作
-- **智能参数优化**：使用 Optuna 的 TPE(Tree-structured Parzen Estimator)优化器自动寻找最佳消融参数
+- **智能参数优化**：使用 Optuna 的 TPE(Tree-structured Parzen Estimator) 优化器自动寻找最佳消融参数
 - **质量保障**：通过共同最小化拒绝次数和与原始模型的 KL 散度，确保去除审查的同时保留模型智能
 - **组件级优化**：对注意力输出投影和 MLP 下投影等不同组件使用不同的消融权重
 

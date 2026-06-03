@@ -11,7 +11,6 @@ tags:
 description: >-
   Tabby is an open-source, self-hosted AI coding assistant designed for teams that need on-premises deployment and code
   privacy.
-logo: ''
 author: TabbyML
 ossDate: '2023-03-16T09:18:01.000Z'
 featured: false

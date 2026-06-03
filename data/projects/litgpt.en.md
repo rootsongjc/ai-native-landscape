@@ -11,7 +11,6 @@ tags:
 description: >-
   A high-performance, engineering-focused LLM toolkit that provides end-to-end recipes and practical tutorials for
   training and deploying large models.
-logo: ''
 author: Lightning-AI
 ossDate: '2023-05-04T17:46:11.000Z'
 featured: false

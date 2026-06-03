@@ -10,7 +10,6 @@ tags:
   - Dev Tools
   - Security
 description: 为应用、模型与工具之间提供运行时保护与受控代理，检测提示注入并验证工具调用。
-logo: ''
 author: Superagent
 ossDate: '2023-05-10T18:50:39.000Z'
 featured: false

@@ -10,7 +10,6 @@ tags:
   - Dev Tools
   - ML Platform
 description: MLRun 是开放的 MLOps 平台，帮助构建与管理持续的机器学习应用全生命周期。
-logo: ''
 author: MLRun
 ossDate: '2019-09-01T16:59:19.000Z'
 featured: false

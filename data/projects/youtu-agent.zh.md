@@ -10,7 +10,6 @@ tags:
   - Agent Framework
   - Agents
 description: Youtu-Agent 是一个由腾讯发布的开源智能体框架，面向研究与工程实践。
-logo: ''
 author: Tencent Cloud
 ossDate: '2025-08-21T07:58:13Z'
 featured: false

@@ -3,7 +3,7 @@ name: browser-use
 slug: browser-use
 homepage: https://browser-use.com/
 repo: https://github.com/browser-use/browser-use
-license: Unknown
+license: MIT
 category: applications-products
 subCategory: workflow-automation
 tags:
@@ -11,13 +11,11 @@ tags:
   - Dev Tools
   - Utility
 description: 允许 AI 控制浏览器的 Python 库，适合自动化任务与基于浏览器的 agent。
-logo: ''
 author: browser-use
 ossDate: '2024-10-31T16:00:56.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 browser-use 是一个用 Python 构建的库，旨在让 AI 能够控制浏览器，支持 Playwright、WebRTC 等后端并提供云 demo 服务，用于表单填写、网页抓取与端到端自动化 agent 场景。

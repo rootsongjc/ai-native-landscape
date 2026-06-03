@@ -3,20 +3,18 @@ name: Dynamo
 slug: dynamo
 homepage: https://docs.nvidia.com/dynamo/latest
 repo: https://github.com/ai-dynamo/dynamo
-license: Unknown
+license: MIT
 category: platform-infra
 subCategory: deployment-operations
 tags:
   - Deployment
   - LLM
 description: 面向数据中心级分布式推理的开源框架，优化多 GPU / 多节点场景下的大模型推理与调度，支持多种引擎（vLLM、SGLang、TensorRT-LLM）。
-logo: ''
 author: ai-dynamo
 ossDate: '2025-03-03T18:40:07.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Dynamo（由 NVIDIA 社区维护）是一个面向大规模推理的开源框架，解决多 GPU/多节点推理编排、KV 缓存管理和高吞吐低延迟的问题。它设计用于支持不同的推理引擎与部署拓扑，适合需要大规模在线推理的场景。

@@ -13,7 +13,6 @@ tags:
 description: >-
   OpenViking is an open-source context database for AI Agents that unifies memories, resources, and skills with a
   filesystem paradigm for hierarchical retrieval and observability.
-logo: ''
 author: Volcengine
 ossDate: '2026-01-15T00:00:00.000Z'
 featured: false

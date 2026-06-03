@@ -3,19 +3,17 @@ name: Dingo
 slug: dingo
 homepage: https://huggingface.co/spaces/DataEval/dingo
 repo: https://github.com/dataeval/dingo
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: evaluation-benchmarks
 tags:
   - Evaluation
 description: A tool for automated data quality evaluation that combines rule-based and model-based assessments.
-logo: ''
 author: MigoXLab / DataEval
 ossDate: '2024-12-24T05:59:24.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 Dingo is a comprehensive data quality evaluation tool that automatically detects

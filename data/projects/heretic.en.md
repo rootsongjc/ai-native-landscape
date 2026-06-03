@@ -16,7 +16,6 @@ description: >-
   models without expensive post-training. It combines an advanced implementation of directional ablation, also known as
   "abliteration," with a TPE-based parameter optimizer powered by Optuna to automatically find high-quality ablation
   parameters by co-minimizing refusals and KL divergence from the original model.
-logo: ''
 author: Philipp Emanuel Weidmann
 ossDate: '2025-03-16'
 featured: false
@@ -28,6 +27,7 @@ status: tracked
 Heretic is an open-source Python tool designed to remove safety censorship mechanisms from language models. Based on advanced directional ablation techniques (also known as "abliteration"), it implements a fully automated parameter optimization workflow that eliminates the need for manual adjustment.
 
 Key innovations include:
+
 - **Fully Automatic**: No understanding of transformer internals required; anyone who can run a command-line program can use it
 - **Intelligent Parameter Optimization**: Uses Optuna's TPE (Tree-structured Parzen Estimator) optimizer to automatically find optimal ablation parameters
 - **Quality Assurance**: Co-minimizes refusals and KL divergence from original model to preserve model intelligence while removing censorship

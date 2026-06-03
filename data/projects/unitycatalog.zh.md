@@ -10,7 +10,6 @@ tags:
   - Connector
   - Data
 description: 面向数据与 AI 的开放多模态目录，提供统一的治理、元数据管理与访问控制。
-logo: ''
 author: Unity Catalog Community
 ossDate: '2023-01-01T00:00:00.000Z'
 featured: false

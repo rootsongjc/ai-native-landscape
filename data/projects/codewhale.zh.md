@@ -13,7 +13,6 @@ tags:
   - CLI
   - Terminal
 description: 基于 DeepSeek 和 MiMo 模型的终端编程智能体，使用 Rust 构建，注重速度和可靠性。
-logo: ''
 author: Hmbown
 ossDate: '2026-01-19T18:21:01Z'
 featured: false

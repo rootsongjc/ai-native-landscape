@@ -3,7 +3,7 @@ name: AWS MCP
 slug: mcp
 homepage: https://awslabs.github.io/mcp/
 repo: https://github.com/awslabs/mcp
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -11,13 +11,11 @@ tags:
   - Dev Tools
   - MCP
 description: MCP 提供一套标准化协议，帮助模型与外部工具、服务和主机安全、高效地交换上下文信息。
-logo: ''
 author: Amazon Web Services
 ossDate: '2025-03-21T00:39:00Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 模型上下文协议（MCP）是一个开放标准，定义了 AI 助手如何以安全和结构化的方式连接到外部工具、数据源和服务。它提供了一套通用协议，使模型能够发现可用能力、交换上下文信息并通过标准化接口调用工具，让任何 AI 应用都能与各种系统集成，而无需为每种组合编写自定义适配器。

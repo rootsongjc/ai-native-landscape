@@ -3,32 +3,42 @@ name: Coral NPU
 slug: coral-npu
 homepage: https://developers.google.com/coral
 repo: https://github.com/google-coral/coralnpu
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: inference-runtimes
 tags:
   - Edge
   - Inference
 description: Coral NPU is an energy-efficient machine learning accelerator core for edge devices provided by Google Coral.
-logo: ''
 author: Google
 ossDate: '2025-10-02T22:32:37Z'
 featured: false
 status: tracked
 ---
-
-## Overview
-
 Coral NPU is a hardware accelerator for edge AI inference developed by Google Coral, supporting TensorFlow Lite models. It emphasizes co-optimized hardware architecture and software stack to deliver real-time inference under constrained power and compute budgets for edge devices.
 
-## Key Features
+## Hardware Acceleration
 
-Coral NPU provides specialized operators and hardware acceleration that significantly improve inference throughput and latency on battery-powered and embedded devices. It includes SDKs, drivers, and model conversion tools that enable developers to quickly port and deploy machine learning models on edge hardware.
+- Specialized operators and instruction-level optimizations that significantly improve inference throughput on battery-powered and embedded devices
+- Low-latency execution for real-time visual and audio inference tasks
+- Energy-efficient design enabling always-on edge AI workloads without draining device batteries
+
+## Developer Tooling
+
+- SDKs and drivers for rapid integration with existing edge hardware platforms
+- Model conversion and quantization tools for porting TensorFlow Lite models to Coral hardware
+- Compatible toolchain covering the full pipeline from model preparation to on-device deployment
+- Comprehensive documentation maintained by Google and the open-source community
 
 ## Use Cases
 
-Coral NPU is used for local inference on edge AI agents in smart home and industrial sensor applications. It supports low-latency visual inference such as object detection and face recognition, offline speech recognition, and on-site intelligence upgrades for industrial IoT devices.
+- Local inference on edge AI agents in smart home and industrial sensor applications
+- Low-latency visual inference such as object detection, face recognition, and pose estimation
+- Offline speech recognition and keyword spotting without cloud connectivity
+- On-site intelligence upgrades for industrial IoT devices in disconnected environments
 
-## Technical Details
+## Technical Design
 
-The platform features hardware-software co-design with instruction-level optimizations and runtime support for specific operators. It provides a compatible toolchain for model conversion, quantization, and deployment, along with comprehensive developer documentation maintained by Google and the open-source community.
+- Hardware-software co-design with runtime support for specific operators and instruction-level acceleration
+- Optimized for TensorFlow Lite model format with quantization-aware inference paths
+- Supports USB, PCIe, and M.2 form factors for flexible integration into diverse edge platforms

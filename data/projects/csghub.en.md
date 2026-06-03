@@ -3,7 +3,7 @@ name: CSGHub
 slug: csghub
 homepage: https://opencsg.com
 repo: https://github.com/opencsgs/csghub
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: llm-routing-gateways
 tags:
@@ -15,25 +15,36 @@ tags:
 description: >-
   An open-source platform for LLM asset and lifecycle management, offering SaaS and on-premise deployment with Python
   SDK compatibility.
-logo: ''
 author: OpenCSG
 ossDate: '2024-01-12T09:44:48Z'
 featured: false
 status: tracked
 ---
-
-## Overview
-
 CSGHub is an open-source platform developed by OpenCSG for managing large language models and related AI assets including models, datasets, and code. It offers features comparable to Hugging Face with both SaaS and on-premise deployment options for enterprise LLM lifecycle management.
 
-## Key Features
+## Asset Management
 
-CSGHub provides centralized asset management with upload, download, versioning, and access control for models and datasets. It features an extensible microservice framework with plugins for training and inference pipelines, enterprise-grade security for on-premise deployments, and broad model format compatibility.
+- Centralized management with upload, download, versioning, and access control for models and datasets
+- Broad model format compatibility supporting popular frameworks and serving runtimes
+- Space management and asset indexing for organizing team resources at scale
+- Fine-grained permission controls for multi-tenant enterprise environments
+
+## Extensibility and Security
+
+- Extensible microservice framework with plugins for training and inference pipelines
+- Enterprise-grade security features designed for on-premise and air-gapped deployments
+- Pluggable storage backends to integrate with existing infrastructure
+- Standardized OpenAPIs for programmatic access and automation
 
 ## Use Cases
 
-CSGHub is designed for teams and enterprises that need centralized model and data asset management, including internal model registries and distribution auditing. It supports offline inference deployments, private-data fine-tuning pipelines, and production platforms that integrate multiple models and services.
+- Internal model registries and distribution auditing for teams and enterprises
+- Offline inference deployments in environments with strict data sovereignty requirements
+- Private-data fine-tuning pipelines that keep sensitive data on-premise
+- Production platforms integrating multiple models and services with unified governance
 
-## Technical Details
+## Deployment Architecture
 
-CSGHub uses a microservices architecture with standardized OpenAPIs, supporting Docker Compose and Kubernetes/Helm deployment. It integrates model versioning, space management, and asset indexing with pluggable storage backends, providing high-availability deployment patterns for enterprise LLM lifecycle management.
+- Microservices architecture supporting Docker Compose for development and Kubernetes/Helm for production
+- High-availability deployment patterns with horizontal scaling and load balancing
+- Python SDK compatibility for seamless integration into existing ML workflows

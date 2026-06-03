@@ -12,7 +12,6 @@ tags:
   - Agent Skills
   - Vulnerability Scanner
 description: Security scanner for AI agent skills by NVIDIA that detects vulnerabilities, malicious patterns, and security risks across 64 vulnerability patterns in 16 categories.
-logo: ''
 author: NVIDIA
 ossDate: '2026-03-21T00:28:43Z'
 featured: false

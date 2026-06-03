@@ -13,7 +13,6 @@ tags:
 description: >-
   Discover LEANN, the innovative AI platform that transforms your laptop into a powerful semantic search tool with zero
   cloud costs and full privacy.
-logo: ''
 author: yichuan-w
 ossDate: '2025-06-09T06:52:59.000Z'
 featured: false

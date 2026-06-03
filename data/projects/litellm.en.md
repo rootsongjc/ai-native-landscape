@@ -11,7 +11,6 @@ tags:
 description: >-
   LiteLLM is a lightweight LLM gateway and proxy framework providing a unified OpenAI-format API, routing, rate-limits,
   and pluggable provider integrations for production deployments.
-logo: ''
 author: BerriAI
 ossDate: '2023-07-27T00:09:52.000Z'
 featured: false

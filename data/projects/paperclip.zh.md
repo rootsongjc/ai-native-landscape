@@ -11,7 +11,6 @@ tags:
   - Automation
   - Orchestration
 description: Paperclip 是一个 Node.js 服务器和 React UI，用于编排 AI 智能体团队来运营业务。它可以管理组织架构、预算、治理、目标对齐和智能体协调，让用户通过一个仪表板管理所有智能体的工作和成本。
-logo: ''
 author: paperclipai
 ossDate: '2026-01-15'
 featured: false

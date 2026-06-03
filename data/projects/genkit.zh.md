@@ -3,7 +3,7 @@ name: Genkit
 slug: genkit
 homepage: https://genkit.dev/
 repo: https://github.com/firebase/genkit
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:
@@ -11,13 +11,11 @@ tags:
   - Dev Tools
   - RAG
 description: 由 Firebase 开发的开源框架，用于构建面向生产环境的全栈 AI 应用，支持多语言 SDK 与多家模型提供商集成。
-logo: ''
 author: Firebase
 ossDate: '2024-04-29T22:04:42.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Genkit 是由 Firebase 开发的开源框架，旨在简化构建生产级 AI 功能的复杂性。它提供统一的 SDK 与插件体系，支持 JavaScript/TypeScript、Go、Python 等语言，并能接入 Google、OpenAI、Anthropic、Ollama 等模型提供商。

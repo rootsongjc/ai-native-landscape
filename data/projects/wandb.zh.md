@@ -11,7 +11,6 @@ tags:
   - ML Platform
   - Product
 description: 面向机器学习全流程的开发与观测平台，支持实验追踪、模型管理、Artifact 与可视化，帮助团队从试验到生产管理模型生命周期。
-logo: ''
 author: Weights & Biases
 ossDate: '2017-03-24T05:46:23.000Z'
 featured: false

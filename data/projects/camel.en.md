@@ -3,7 +3,7 @@ name: CAMEL
 slug: camel
 homepage: https://www.camel-ai.org/
 repo: https://github.com/camel-ai/camel
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   CAMEL is an open-source framework for large-scale multi-agent research, supporting simulation, data generation, and
   collaborative agent capabilities.
-logo: ''
 author: CAMEL 社区
 ossDate: '2023-03-17T21:41:54.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 CAMEL is a community-driven open-source multi-agent framework designed to study the scaling effects and collaborative behaviors of agents. It supports simulation, data generation, and evaluation workflows from single agents to millions of agents. The project provides extensive examples, toolchains, and cookbooks to help researchers and engineers quickly build multi-agent systems.

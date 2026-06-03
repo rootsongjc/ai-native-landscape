@@ -3,7 +3,7 @@ name: CoPaw
 slug: copaw
 homepage: https://copaw.agentscope.io/
 repo: https://github.com/agentscope-ai/copaw
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: productivity-tools
 tags:
@@ -13,13 +13,11 @@ tags:
 description: >-
   CoPaw is a personal AI assistant that is easy to install and deploy on your own machine or in the cloud, supporting
   multiple chat apps with easily extensible capabilities.
-logo: ''
 author: AgentScope
 ossDate: '2026-02-24T00:00:00.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 CoPaw is a personal AI assistant designed for ease of use and flexibility. It offers simple installation and deployment options, allowing users to run it locally on their own machines or deploy it in the cloud based on their specific needs. CoPaw supports multiple popular chat applications, enabling users to interact with AI through familiar interfaces and significantly lowering the barrier to adoption.

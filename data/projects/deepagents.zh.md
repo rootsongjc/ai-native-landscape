@@ -3,20 +3,18 @@ name: Deep Agents
 slug: deepagents
 homepage: https://docs.langchain.com/oss/python/deepagents/overview
 repo: https://github.com/langchain-ai/deepagents
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
   - Agent Framework
   - Dev Tools
 description: LangChain 提供的深度智能体库，支持规划、子智能体、文件系统工具与持久记忆，用于构建多步骤和长期推理的智能体。
-logo: ''
 author: LangChain
 ossDate: '2025-07-27T23:07:53.000Z'
 featured: false
 status: tracked
 ---
-
 ## 详细介绍
 
 Deep Agents 是 LangChain 提供的通用深度智能体库，设计目标是让智能体在复杂、多步骤任务中具备长期规划与分工能力。它整合了规划工具、子智能体（subagents）、文件系统工具与持久记忆等机制，能够把大型任务拆分为明确的子任务并在运行时协调执行，从而避免“浅层”循环调用带来的短视行为。

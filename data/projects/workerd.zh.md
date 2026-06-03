@@ -10,7 +10,6 @@ tags:
   - Deployment
   - Dev Tools
 description: workerd 是 Cloudflare 提供的开源 JavaScript/Wasm 服务器运行时，旨在本地或自托管环境运行与 Cloudflare Workers 兼容的 nanoservices 与边缘应用。
-logo: ''
 author: Cloudflare
 ossDate: '2022-09-15T15:15:16.000Z'
 featured: false

@@ -10,7 +10,6 @@ tags:
   - Agents
   - Dev Tools
 description: 可视化构建与部署 AI 智能体与工作流的开源平台，支持多模型、多向量库与丰富集成。
-logo: ''
 author: Langflow
 ossDate: '2023-02-08T00:00:00.000Z'
 featured: false

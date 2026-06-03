@@ -3,7 +3,7 @@ name: GitNexus
 slug: gitnexus
 homepage: https://gitnexus.vercel.app
 repo: https://github.com/abhigyanpatwari/gitnexus
-license: Unknown
+license: Other
 category: coding-devtools
 subCategory: mcp-tools
 tags:
@@ -11,13 +11,11 @@ tags:
   - Knowledge Graph
   - MCP
 description: GitNexus 是一个完全在浏览器中运行的客户端知识图谱构建工具，支持将任意代码仓库索引为交互式知识图谱，内置 Graph RAG Agent，可为 AI 编程助手提供深层代码架构感知能力。
-logo: ''
 author: Abhigyan Patwari
 ossDate: '2025-08-02T23:20:31Z'
 featured: false
 status: tracked
 ---
-
 ## 详细介绍
 
 GitNexus 是一个零服务器代码智能引擎，能够将任意代码仓库索引为完整的知识图谱，追踪每个依赖关系、调用链、功能集群和执行流程，并通过 MCP 协议向 AI 编程助手（如 Cursor、Claude Code、Codex 等）暴露深层代码架构感知能力。其 Web UI 版本完全在浏览器中运行，无需安装任何服务端组件，代码不会离开本地环境。GitNexus 的核心理念是在索引阶段预计算关系智能，使工具调用一次即可返回完整上下文，而非依赖 LLM 进行多轮图查询。

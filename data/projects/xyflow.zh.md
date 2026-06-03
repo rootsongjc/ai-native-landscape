@@ -11,7 +11,6 @@ tags:
   - UI
   - Visualization
 description: 用于在 React 或 Svelte 中构建节点式 UI 的开源库套件，提供高度可定制的 Flow 编辑与渲染功能。
-logo: ''
 author: xyflow
 ossDate: '2019-07-15T14:47:30.000Z'
 featured: false

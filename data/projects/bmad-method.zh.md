@@ -3,20 +3,18 @@ name: BMAD-METHOD
 slug: bmad-method
 homepage: null
 repo: https://github.com/bmad-code-org/bmad-method
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
   - Agent Framework
   - Workflow
 description: BMAD-METHOD 是一种面向 AI 的敏捷开发方法与框架，提供用于构建多角色协作智能体和工程化工作流的工具链与最佳实践。
-logo: ''
 author: BMad Code
 ossDate: '2025-04-13T14:54:25.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 BMAD-METHOD（Breakthrough Method for Agile AI Driven Development）是一套面向 AI 的敏捷开发方法与框架，旨在通过定义专用角色（如 Analyst、PM、Dev 等）与上下文工程（context-engineered development）来消除规划与实现之间的上下文损失。该项目为团队提供从规划、需求到实现的闭环流程，包含命令集合、扩展包与多种集成工具，适用于将 AI 能力工程化的场景。

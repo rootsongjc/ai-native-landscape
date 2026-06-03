@@ -12,7 +12,6 @@ tags:
 description: >-
   A developer-centric API and integration testing tool that auto-generates tests and data mocks from real traffic,
   supporting record-and-replay of API calls, database operations, and streaming events.
-logo: ''
 author: Keploy
 ossDate: '2022-01-19T10:40:31.000Z'
 featured: false

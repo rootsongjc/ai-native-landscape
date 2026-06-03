@@ -12,7 +12,6 @@ tags:
 description: >-
   Discover GraphRAG, an open-source project by Microsoft Research for extracting structured knowledge from text,
   enhancing retrieval and enabling advanced temporal queries.
-logo: ''
 author: Microsoft
 ossDate: '2024-03-27T17:57:52.000Z'
 featured: false

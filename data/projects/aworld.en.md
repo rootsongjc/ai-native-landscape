@@ -3,7 +3,7 @@ name: AWorld
 slug: aworld
 homepage: https://inclusionai.github.io/AWorld/
 repo: https://github.com/inclusionai/aworld
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -12,13 +12,11 @@ tags:
   - Tool
   - Training
 description: AWorld is an agent runtime and research platform designed for large-scale multi-agent self-improvement and training.
-logo: ''
 author: inclusionAI
 ossDate: '2025-03-14T08:30:52Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 AWorld is a runtime and training platform for large-scale multi-agent systems, focused on agent self-improvement and collaborative learning. The project exposes modules such as agents, runners, swarms, sandboxes, and tools, and supports high-concurrency execution, experience collection, reward-based training, and observability features suitable for both research and engineering use cases.

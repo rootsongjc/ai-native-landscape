@@ -11,7 +11,6 @@ tags:
   - Inference
   - Serving
 description: 面向 Apple Silicon 的 LLM 推理服务器，支持连续批处理和 SSD 缓存，可直接从 macOS 菜单栏管理。
-logo: ''
 author: jundot
 ossDate: '2026-02-13'
 featured: true

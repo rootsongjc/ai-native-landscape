@@ -3,7 +3,7 @@ name: Coze Loop
 slug: coze-loop
 homepage: https://www.coze.com/
 repo: https://github.com/coze-dev/coze-loop
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: deployment-operations
 tags:
@@ -11,13 +11,11 @@ tags:
   - Dev Tools
   - Utility
 description: 字节跳动开源的面向开发者的 AI Agent 开发与运维平台级解决方案，提供全生命周期管理能力。
-logo: ''
 author: 字节跳动
 ossDate: '2025-06-24T00:26:28.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Coze Loop（扣子罗盘）是字节跳动推出的面向开发者的 AI Agent 开发与运维平台级解决方案。它专注于解决 AI Agent 开发过程中面临的各种挑战，提供从开发、调试、评估到监控的全生命周期管理能力。

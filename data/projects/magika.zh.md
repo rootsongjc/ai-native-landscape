@@ -10,7 +10,6 @@ tags:
   - CLI
   - Tool
 description: Magika 是 Google 安全研究推出的基于深度学习的高效文件类型识别工具。
-logo: ''
 author: Google
 ossDate: '2023-08-22T09:36:55Z'
 featured: false

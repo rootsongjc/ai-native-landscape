@@ -11,7 +11,6 @@ tags:
   - MCP
   - SDK
 description: Klavis 是一个用于 AI 智能体工具集成与 MCP 编排的平台，支持云端托管与自托管部署。
-logo: ''
 author: Klavis AI
 ossDate: '2025-04-14T07:53:36.000Z'
 featured: false

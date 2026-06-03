@@ -3,7 +3,7 @@ name: Chrome DevTools MCP
 slug: chrome-devtools-mcp
 homepage: null
 repo: https://github.com/chromedevtools/chrome-devtools-mcp
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: mcp-tools
 tags:
@@ -11,13 +11,11 @@ tags:
   - Dev Tools
   - MCP
 description: Chrome DevTools MCP 是一个 MCP 服务器，让 AI 编程助手能够控制和检查实时 Chrome 浏览器，提供强大的性能分析和调试功能。
-logo: ''
 author: Google
 ossDate: '2025-09-11T10:39:55.000Z'
 featured: true
 status: tracked
 ---
-
 ## 简介
 
 Chrome DevTools MCP 是一个强大的 Model Context Protocol (MCP) 服务器，它为 AI 编程助手（如 Gemini、Claude、Cursor 或 Copilot）提供了控制和检查实时 Chrome 浏览器的能力。通过集成 Chrome DevTools 的完整功能，它能够实现可靠的浏览器自动化、深度调试和性能分析。

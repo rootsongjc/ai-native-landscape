@@ -9,7 +9,6 @@ subCategory: coding-agents
 tags:
   - Vibe Coding
 description: SuperClaude Framework 是一个面向 Claude Code 的元编程配置框架，提供命令体系、认知角色与工作流编排能力，用于构建可复用的智能体与开发流程。
-logo: ''
 author: SuperClaude Team
 ossDate: '2025-06-22T12:03:53.000Z'
 featured: false

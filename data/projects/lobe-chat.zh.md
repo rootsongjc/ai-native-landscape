@@ -9,7 +9,6 @@ subCategory: chat-interfaces
 tags:
   - Chatbot
 description: Lobe-Chat 是一个开源的多模型 AI 聊天框架，支持插件扩展和多端部署，致力于为用户提供灵活、高效的智能对话体验。
-logo: ''
 author: Lobehub
 ossDate: '2023-05-21T07:19:12.000Z'
 featured: false

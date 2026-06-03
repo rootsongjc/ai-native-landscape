@@ -13,7 +13,6 @@ tags:
 description: >-
   An open-source deep learning framework for fast, flexible research and production, featuring dynamic computation
   graphs and strong GPU acceleration.
-logo: ''
 author: PyTorch
 ossDate: '2016-08-13T05:26:41.000Z'
 featured: false

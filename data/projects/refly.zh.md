@@ -11,7 +11,6 @@ tags:
   - Vibe Coding
   - Workflow
 description: 一款面向非技术创作者的氛围式工作流平台，简化内容与自动化流程的创建与执行。
-logo: ''
 author: Refly AI
 ossDate: '2024-10-01T00:00:00.000Z'
 featured: false

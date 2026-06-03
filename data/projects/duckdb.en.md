@@ -3,20 +3,18 @@ name: DuckDB
 slug: duckdb
 homepage: http://www.duckdb.org
 repo: https://github.com/duckdb/duckdb
-license: Unknown
+license: Other
 category: platform-infra
 subCategory: data-platforms
 tags:
   - Database
   - Dev Tools
 description: An analytical, in-process SQL database suited for interactive queries, ETL, and local analytics.
-logo: ''
 author: DuckDB
 ossDate: '2018-06-26T15:04:45Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 DuckDB is an analytical in-process SQL database management system designed for fast analytics workloads. It runs embedded inside applications or analytical scripts, providing high-performance SQL query execution over local files and columnar data for interactive data exploration and ad-hoc analysis.

@@ -3,7 +3,7 @@ name: FinGPT
 slug: fingpt
 homepage: https://ai4finance.org
 repo: https://github.com/ai4finance-foundation/fingpt
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   Open-source financial large language models with data pipelines, instruction tuning datasets, benchmarks and RAG
   toolkits.
-logo: ''
 author: AI4Finance Foundation
 ossDate: '2023-02-11T20:21:34.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 FinGPT is an open-source ecosystem of financial large language models that provides data pipelines, instruction-tuning datasets, the FinGPT-Benchmark, and a retrieval-augmented (RAG) framework. By leveraging lightweight fine-tuning methods such as LoRA and QLoRA and curated financial task suites, FinGPT lowers the barrier to train and deploy finance-specific models on limited compute while providing reproducible teaching and research materials.

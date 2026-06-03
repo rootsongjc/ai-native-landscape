@@ -9,7 +9,6 @@ subCategory: workflow-automation
 tags:
   - Workflow
 description: Suna 是 Kortix 平台的演示型通用 AI 工作者，展示浏览器自动化、文档分析与工作流能力，便于快速构建与部署多场景代理应用。
-logo: ''
 author: Kortix
 ossDate: '2024-10-05T17:01:01.000Z'
 featured: false

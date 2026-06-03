@@ -3,20 +3,18 @@ name: Agent Skills
 slug: agentskills
 homepage: https://agentskills.io
 repo: https://github.com/agentskills/agentskills
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:
   - Agent Framework
   - Reference
 description: An open format and documentation for describing, sharing, and discovering agent skills.
-logo: ''
 author: Anthropic
 ossDate: '2025-12-16T15:47:19Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Agent Skills provides a standardized specification and documentation for describing, sharing, and discovering agent skills. A skill is a standardized way to give AI agents new capabilities and expertise, consisting of documentation, examples, and metadata that make it easier for different agents to implement and reuse capabilities, improving composability and reliability when solving complex tasks.

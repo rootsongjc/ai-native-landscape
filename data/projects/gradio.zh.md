@@ -10,7 +10,6 @@ tags:
   - Chatbot
   - Dev Tools
 description: Gradio 是一个开源的 Python 库，帮助开发者用最少的代码构建并分享机器学习与 AI 的交互式 Web 应用。
-logo: ''
 author: Gradio
 ossDate: '2018-12-19T08:24:04.000Z'
 featured: false

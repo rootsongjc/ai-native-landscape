@@ -10,7 +10,6 @@ tags:
   - Memory
   - RAG
 description: Mem0 是面向 AI Agent 的可扩展记忆层，旨在为对话与代理提供长期、个性化且高效的记忆存储与检索能力。
-logo: ''
 author: Mem0
 ossDate: '2023-06-20T08:58:36.000Z'
 featured: false

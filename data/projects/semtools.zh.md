@@ -3,7 +3,7 @@ name: SemTools
 slug: semtools
 homepage: null
 repo: https://github.com/run-llama/semtools
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:
@@ -11,13 +11,11 @@ tags:
   - Dev Tools
   - Search
 description: 面向命令行的语义搜索与文档解析工具，方便在本地或流水线中进行嵌入检索与解析处理。
-logo: ''
 author: run-llama
 ossDate: '2025-08-23T21:56:09Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 SemTools 是一套面向开发者的命令行语义搜索和文档解析工具集。它将向量搜索和嵌入工作流封装为简洁的 CLI 命令，支持静态嵌入、索引构建和基于相似度的检索，可轻松集成到本地开发环境和 CI 管道中。

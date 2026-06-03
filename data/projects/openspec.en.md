@@ -11,7 +11,6 @@ tags:
 description: >-
   OpenSpec is a spec-driven development platform for AI coding assistants, enabling definition, validation and execution
   of code-oriented interaction specifications.
-logo: ''
 author: Fission AI
 ossDate: '2025-08-05T10:37:45.000Z'
 featured: false

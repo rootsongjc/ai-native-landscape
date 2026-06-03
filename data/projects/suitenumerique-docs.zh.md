@@ -10,7 +10,6 @@ tags:
   - Application
   - UI
 description: 面向协作文本编辑与知识管理的开源平台，支持实时协作、自托管与多格式导出。
-logo: ''
 author: La Suite / Suite Numérique
 ossDate: '2024-01-09T14:17:32.000Z'
 featured: false

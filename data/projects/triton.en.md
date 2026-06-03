@@ -11,7 +11,6 @@ tags:
 description: >-
   Triton is a language and toolchain for high-performance deep learning kernels and compiler development, designed to
   simplify GPU kernel programming while delivering strong performance.
-logo: ''
 author: Triton Team
 ossDate: '2014-08-30T17:07:16.000Z'
 featured: false

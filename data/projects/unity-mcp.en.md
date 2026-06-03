@@ -12,7 +12,6 @@ tags:
 description: >-
   Discover how Unity MCP enhances productivity with AI integration, natural language control, and automated workflows
   for game development.
-logo: ''
 author: Coplay
 ossDate: '2025-03-18T11:01:58Z'
 featured: false

@@ -3,7 +3,7 @@ name: gpt-oss
 slug: gpt-oss
 homepage: https://openai.com/open-models
 repo: https://github.com/openai/gpt-oss
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: inference-runtimes
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   gpt-oss is an open-weight model series released by OpenAI, designed for high-reasoning and customizable developer use
   cases.
-logo: ''
 author: OpenAI
 ossDate: '2025-06-23T16:43:33.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 gpt-oss is OpenAI's open-weight model series (including gpt-oss-120b and gpt-oss-20b) that provides publicly available weights for research and engineering reproduction. The project is released under the Apache-2.0 license and targets high-reasoning, customizable deployments with support for multiple inference backends and tool integrations. This page summarizes its purpose, main features, and common application scenarios.

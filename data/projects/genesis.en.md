@@ -3,7 +3,7 @@ name: Genesis
 slug: genesis
 homepage: https://genesis-embodied-ai.github.io/
 repo: https://github.com/genesis-embodied-ai/genesis
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: inference-runtimes
 tags:
@@ -11,13 +11,11 @@ tags:
   - Dev Tools
   - Utility
 description: Universal physics simulation and generative data platform for robotics and embodied AI, open-source physics engine.
-logo: ''
 author: Genesis-Embodied-AI
 ossDate: '2023-10-31T03:33:11.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 Genesis is a universal physics simulation and generative data platform for robotics, embodied AI, and physical AI applications. It integrates multiple physics solvers and generative modules, supporting high-performance simulation, automated data generation, and multimodal rendering.

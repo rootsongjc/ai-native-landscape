@@ -12,7 +12,6 @@ tags:
 description: >-
   Volcano is a Kubernetes-native batch scheduling system (a CNCF project) that enhances kube-scheduler with advanced
   features for batch, HPC, and AI workloads.
-logo: ''
 author: volcano-sh
 ossDate: '2019-06-01T00:00:00.000Z'
 featured: false

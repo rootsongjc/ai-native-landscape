@@ -3,19 +3,17 @@ name: Flash Linear Attention (fla)
 slug: flash-linear-attention
 homepage: https://pypi.org/project/flash-linear-attention/
 repo: https://github.com/fla-org/flash-linear-attention
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: inference-runtimes
 tags:
   - Dev Tools
 description: 基于 Triton 的 PyTorch 库，提供高效线性注意力内核与模型组件。
-logo: ''
 author: fla-org
 ossDate: '2023-12-20T06:50:18.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 `fla` 提供一套 Triton 优化的线性注意力实现与模型组件，面向高效训练与推理，兼容 NVIDIA/AMD/Intel 平台，适用于需要长上下文或低内存占用的场景。

@@ -11,7 +11,6 @@ tags:
   - Dev Tools
   - LLM
 description: A command-line and Python toolkit for interacting with remote and local large language models.
-logo: ''
 author: Simon Willison
 ossDate: '2023-04-01T21:16:57.000Z'
 featured: false

@@ -3,7 +3,7 @@ name: Dyad
 slug: dyad
 homepage: https://dyad.sh
 repo: https://github.com/dyad-sh/dyad
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: coding-agents
 tags:
@@ -11,13 +11,11 @@ tags:
   - LLM
   - Vibe Coding
 description: 一个免费且可本地运行的开源 AI 应用构建平台，简化生成式应用与原型的搭建流程。
-logo: ''
 author: Dyad
 ossDate: '2025-04-11T06:33:48Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Dyad 是一个面向高级用户的本地开源 AI 应用构建器，定位为 v0、Lovable、Replit 和 Bolt 的替代方案。它帮助开发者与创作者快速搭建交互式生成应用与智能体服务，强调本地优先体验以满足隐私敏感与低延迟场景需求。

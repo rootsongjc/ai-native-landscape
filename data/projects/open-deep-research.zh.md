@@ -9,7 +9,6 @@ subCategory: agent-frameworks
 tags:
   - Agent Framework
 description: 一个开源的深度研究智能体框架，支持多模型、多检索工具与 MCP 集成，适用于自动化学术级研究流程。
-logo: ''
 author: LangChain
 ossDate: '2024-11-20T17:37:22.000Z'
 featured: false

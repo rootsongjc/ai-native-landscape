@@ -13,7 +13,6 @@ tags:
 description: >-
   Discover HAMi, the middleware that simplifies AI resource management across diverse hardware, enhancing performance
   and cluster utilization in cloud-native environments.
-logo: ''
 author: Project-HAMi
 ossDate: '2021-09-14T11:51:49.000Z'
 featured: false

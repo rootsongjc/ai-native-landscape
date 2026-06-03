@@ -3,7 +3,7 @@ name: Tongyi DeepResearch
 slug: deep-research
 homepage: https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/
 repo: https://github.com/alibaba-nlp/deepresearch
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:
@@ -13,13 +13,11 @@ tags:
 description: >-
   An open research agent and toolset for long-horizon information-seeking and agentic tasks, developed by Tongyi Lab
   (Alibaba-NLP).
-logo: ''
 author: 阿里巴巴
 ossDate: '2025-01-09T11:07:35.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 Tongyi DeepResearch is an open-source agentic large language model and toolkit from Tongyi Lab / Alibaba-NLP, designed for long-horizon information-seeking and deep research tasks (family includes 30.5B parameters with efficient activation). The project provides synthetic data pipelines, agent training and inference frameworks, benchmark scripts, and example code for reproducibility and evaluation.

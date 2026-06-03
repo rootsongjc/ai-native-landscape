@@ -3,7 +3,7 @@ name: ArchGW
 slug: archgw
 homepage: https://docs.archgw.com/
 repo: https://github.com/katanemo/archgw
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: llm-routing-gateways
 tags:
@@ -11,13 +11,11 @@ tags:
   - Observability
   - Orchestration
 description: ArchGW 是一个面向 agent 的模型原生代理服务器，提供路由、护栏、工具调用与端到端可观测能力。
-logo: ''
 author: Arch (katanemo)
 ossDate: '2024-07-09T20:25:56Z'
 featured: false
 status: tracked
 ---
-
 ## 详细介绍
 
 ArchGW（Arch）是一个面向 agent 的模型原生代理服务器，旨在把构建 agentic 应用所需的低级管道（如路由、护栏、工具调用与统一模型接入）从应用代码中抽离出来。基于 Envoy 架构，Arch 提供对多模型提供方的统一访问、偏好化路由策略、函数调用转换以及端到端的日志与追踪，帮助团队更快地将 agent 能力工程化并保证可观测性与安全性。

@@ -3,7 +3,7 @@ name: AI Chatbot (Vercel Chat SDK)
 slug: ai-chatbot
 homepage: https://chat.vercel.ai/
 repo: https://github.com/vercel/ai-chatbot
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: chat-interfaces
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   A deployable and extendable Next.js chatbot template from Vercel that integrates multiple model providers and the
   Vercel AI Gateway.
-logo: ''
 author: Vercel
 ossDate: '2023-05-19T16:36:23.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 AI Chatbot is a ready-to-use Next.js chatbot template from Vercel, suitable as a starting point for conversational apps and assistants. It integrates the Vercel AI Gateway and AI SDK, supporting multiple model providers and authentication flows for quick deployment and scalability.

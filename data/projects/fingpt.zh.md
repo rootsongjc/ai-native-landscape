@@ -3,19 +3,17 @@ name: FinGPT
 slug: fingpt
 homepage: https://ai4finance.org
 repo: https://github.com/ai4finance-foundation/fingpt
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:
   - Data
 description: 开源的金融大语言模型项目，提供金融领域定制的数据管道、指令微调与 RAG 工具链。
-logo: ''
 author: AI4Finance Foundation
 ossDate: '2023-02-11T20:21:34.000Z'
 featured: false
 status: tracked
 ---
-
 ## 详细介绍
 
 FinGPT 是一个面向金融场景的开源大语言模型生态，包含金融数据管道、指令微调数据集、FinGPT-Benchmark、以及基于检索的 RAG 框架。项目通过轻量化微调（如 LoRA/QLoRA）和专用的金融任务集，降低了在有限算力下训练与部署金融下游模型的门槛，同时提供可复现的教学与实验材料。

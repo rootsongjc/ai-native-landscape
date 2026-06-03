@@ -3,7 +3,7 @@ name: Chroma
 slug: chroma
 homepage: https://www.trychroma.com/
 repo: https://github.com/chroma-core/chroma
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:
@@ -11,13 +11,11 @@ tags:
   - RAG
   - Utility
 description: Chroma 是开源的嵌入式向量数据库，专为 AI 应用设计，支持高效检索与存储，助力构建智能搜索与 RAG 系统。
-logo: ''
 author: chroma-core
 ossDate: '2022-10-05T17:58:44.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Chroma 是专为 AI 应用打造的开源向量数据库，支持高效嵌入存储与语义检索，广泛用于智能问答、知识库、RAG 系统等场景。

@@ -3,7 +3,7 @@ name: FlashMLA
 slug: flashmla
 homepage: null
 repo: https://github.com/deepseek-ai/flashmla
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: agent-memory-context
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   Efficient multi-head latent attention kernels designed to accelerate large-scale Transformer training and inference
   with reduced memory footprint.
-logo: ''
 author: DeepSeek
 ossDate: '2025-02-21T06:31:27.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 FlashMLA implements high-performance multi-head latent attention kernels for large Transformer models. It focuses on lowering memory usage and improving throughput through optimized GPU code paths.

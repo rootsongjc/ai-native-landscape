@@ -11,7 +11,6 @@ tags:
 description: >-
   PandaWiki is an open-source knowledge base system driven by large models, enabling fast building of intelligent
   documentation, FAQ and blog centers.
-logo: ''
 author: Chaitin
 ossDate: '2025-05-15T12:55:40.000Z'
 featured: false

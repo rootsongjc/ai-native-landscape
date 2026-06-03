@@ -13,7 +13,6 @@ tags:
 description: >-
   LlamaIndex is a data framework for LLM applications that helps structure and connect private data sources to models
   for retrieval-augmented generation.
-logo: ''
 author: run-llama
 ossDate: '2022-11-02T04:24:54.000Z'
 featured: false

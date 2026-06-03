@@ -12,7 +12,6 @@ tags:
 description: >-
   A flexible framework for LLM inference optimizations, offering kernel injection, prefix caching and multi-level
   acceleration strategies.
-logo: ''
 author: KVCACHE / MADSys
 ossDate: '2024-07-26T00:00:00.000Z'
 featured: false

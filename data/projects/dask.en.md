@@ -3,7 +3,7 @@ name: Dask
 slug: dask
 homepage: https://dask.org
 repo: https://github.com/dask/dask
-license: Unknown
+license: BSD-3-Clause
 category: platform-infra
 subCategory: deployment-operations
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   Dask is a Python library for parallel computing and task scheduling, suited for scaling NumPy, Pandas and machine
   learning workloads across clusters.
-logo: ''
 author: dask
 ossDate: '2015-01-04T18:50:00Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Dask is a Python library for parallel and distributed computing. It provides task scheduling and delayed execution that scale NumPy, Pandas, and Scikit-learn workflows from a single machine to a cluster. Dask is widely used for data processing, feature engineering, and preparing large datasets for model training.

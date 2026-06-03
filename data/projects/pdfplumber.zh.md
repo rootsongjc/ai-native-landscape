@@ -10,7 +10,6 @@ tags:
   - Dev Tools
   - Tool
 description: 基于 pdfminer.six 的开源 Python 库，提供详细的 PDF 对象访问、表格抽取与可视化调试功能。
-logo: ''
 author: jsvine
 ossDate: '2015-08-24T03:14:48.000Z'
 featured: false

@@ -9,26 +9,31 @@ subCategory: multimodal
 tags:
   - Framework
 description: NVIDIA's NeMo framework for speech, TTS, multimodal and LLM training & fine-tuning.
-logo: ''
 author: NVIDIA
 ossDate: '2019-08-05T20:16:42.000Z'
 featured: false
 status: tracked
 ---
 
-## Overview
+NeMo is NVIDIA's open-source multi-domain AI framework focused on speech recognition (ASR), text-to-speech (TTS), multimodal, and large language model training and deployment. It provides end-to-end tooling from data preprocessing through model training to inference, helping researchers and engineers rapidly build production-grade AI applications.
 
-NeMo is a multi-domain AI toolkit from NVIDIA that covers ASR, TTS, vision, and NLP, with modular tools for training and deploying large language models.
+## Model Collections
 
-## Key features
+- Speech recognition models including Conformer and Citrinet for multilingual ASR tasks
+- TTS models such as FastPitch and HiFi-GAN for natural-sounding speech synthesis
+- NLP support for training, fine-tuning, and quantizing GPT, T5, BERT, and other LLM architectures
+- Multimodal capabilities for vision-language tasks combining image understanding with text generation
 
-- Collections for speech, vision and NLP tasks.
-- Tooling for training, evaluation and model export.
+## Training & Infrastructure
 
-## Use cases
+- Built on PyTorch Lightning for consistent API design and configuration management
+- Multi-GPU and multi-node distributed training out of the box
+- Mixed precision training, gradient accumulation, and checkpoint management for efficiency
+- Container-friendly deployment with Docker images and Kubernetes configurations
 
-- Multimodal AI research and production deployments.
+## Ecosystem Integration
 
-## Technical highlights
-
-- Modular collections and container-friendly tooling with comprehensive docs.
+- Deep integration with NVIDIA TAO Toolkit and Triton Inference Server for complete AI workflows
+- Pre-trained models and comprehensive tutorials for rapid onboarding
+- Efficient data loaders and training management tools for large-scale experiments
+- Supports billion-parameter model training and fine-tuning for enterprise LLM customization

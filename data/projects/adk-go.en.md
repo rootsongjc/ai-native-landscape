@@ -3,7 +3,7 @@ name: adk-go
 slug: adk-go
 homepage: https://google.github.io/adk-docs/
 repo: https://github.com/google/adk-go
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -12,13 +12,11 @@ tags:
   - MCP
   - SDK
 description: A code-first Go toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control.
-logo: ''
 author: Google
 ossDate: '2025-05-05T17:16:26Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 adk-go is an open-source, code-first Go toolkit developed by Google for building, evaluating, and deploying sophisticated AI agents. It abstracts model backends, tool invocation, retrieval components, and policy engines behind consistent interfaces, providing testing utilities and supporting packaging workflows as deployable services for production environments.

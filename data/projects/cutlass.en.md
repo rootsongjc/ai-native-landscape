@@ -3,7 +3,7 @@ name: CUTLASS
 slug: cutlass
 homepage: null
 repo: https://github.com/nvidia/cutlass
-license: Unknown
+license: Other
 category: inference-serving
 subCategory: gpu-acceleration
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   CUDA Templates for Linear Algebra Subroutines (CUTLASS), a high-performance matrix computation template library
   provided by NVIDIA.
-logo: ''
 author: NVIDIA
 ossDate: '2017-11-30T00:11:24.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 CUTLASS is a CUDA template library from NVIDIA for linear algebra subroutines (such as GEMM), designed to help developers build high-performance, reusable matrix computation kernels. It includes various optimization strategies and examples, making it easy to achieve efficient computation across different GPU architectures.

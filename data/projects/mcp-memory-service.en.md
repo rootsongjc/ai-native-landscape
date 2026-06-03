@@ -14,7 +14,6 @@ tags:
   - MCP
   - Memory
 description: Automatic, persistent project context memory and retrieval for Claude, VS Code, Cursor and other tools.
-logo: ''
 author: doobidoo
 ossDate: '2024-12-26T10:15:44Z'
 featured: false

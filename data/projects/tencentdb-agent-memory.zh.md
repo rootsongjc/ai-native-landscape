@@ -11,7 +11,6 @@ tags:
   - Database
   - Memory
 description: 腾讯推出的 AI 智能体本地长期记忆系统，通过四层渐进式管线实现全本地化记忆，零外部 API 依赖。
-logo: ''
 author: Tencent
 ossDate: '2026-04-07T00:00:00.000Z'
 featured: false

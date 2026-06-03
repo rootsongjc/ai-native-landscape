@@ -3,20 +3,18 @@ name: Claude Agent SDK for Python
 slug: claude-agent-sdk-python
 homepage: https://docs.anthropic.com/en/docs/claude-code/sdk/sdk-python
 repo: https://github.com/anthropics/claude-agent-sdk-python
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
   - AI Agent
   - Dev Tools
 description: Anthropic 的 Claude Agent Python SDK 提供用于构建可与 Claude Agent 交互的工具与客户端库，适用于工具调用与交互式会话。
-logo: ''
 author: Anthropic
 ossDate: '2025-06-11T21:33:43.000Z'
 featured: false
 status: tracked
 ---
-
 Claude Agent SDK for Python 是 Anthropics 提供的官方 Python 工具库，用于与 Claude Agent（Claude Code）进行交互式查询、工具调用与集成。该 SDK 提供异步流式接口、内置的工具/Hook 支持以及在进程内运行的 MCP 服务器示例，方便将自定义工具以安全且高性能的方式暴露给模型。
 
 ## 主要特性

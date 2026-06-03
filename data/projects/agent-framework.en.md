@@ -3,7 +3,7 @@ name: Agent Framework
 slug: agent-framework
 homepage: https://aka.ms/agent-framework
 repo: https://github.com/microsoft/agent-framework
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -11,13 +11,11 @@ tags:
   - Agents
   - Workflow
 description: Microsoft's multi-language framework for building, orchestrating, and deploying AI agents and multi-agent workflows.
-logo: ''
 author: Microsoft
 ossDate: '2025-04-28T19:40:42.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Microsoft Agent Framework is a cross-language (Python/.NET) framework that provides end-to-end capabilities for building everything from simple chat agents to complex multi-agent graph-based workflows, with support for observability, multiple model providers, and developer tooling for debugging.

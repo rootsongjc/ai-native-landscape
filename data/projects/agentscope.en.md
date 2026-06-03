@@ -3,7 +3,7 @@ name: AgentScope
 slug: agentscope
 homepage: https://doc.agentscope.io/
 repo: https://github.com/modelscope/agentscope
-license: Unknown
+license: MIT
 category: models-modalities
 subCategory: foundation-models
 tags:
@@ -11,13 +11,11 @@ tags:
   - LLM
   - Utility
 description: Start building LLM-empowered multi-agent applications in an easier way.
-logo: ''
 author: 阿里巴巴
 ossDate: '2024-01-12T03:41:59.000Z'
 featured: false
 status: tracked
 ---
-
 AgentScope is an open-source framework designed to simplify the development of multi-agent applications. It provides a set of concise interfaces and powerful features, enabling developers to build LLM-empowered multi-agent applications in an easier way.
 
 ## Key Features

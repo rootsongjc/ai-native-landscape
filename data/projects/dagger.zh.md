@@ -3,20 +3,18 @@ name: Dagger
 slug: dagger
 homepage: https://dagger.io/
 repo: https://github.com/dagger/dagger
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: workflow-automation
 tags:
   - AI Agent
   - Dev Tools
 description: 可组合工作流的开源运行时，支持在任意语言中以可编程方式构建可重现、可观察的 CI/CD 与 AI Agent 工作流。适合需要可重现性、可组合性和可观察性的平台级自动化。
-logo: ''
 author: Dagger
 ossDate: '2019-11-20T01:31:51.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Dagger 是一个面向可组合工作流的开源运行时，允许开发者使用熟悉的编程语言（Go、Python、TypeScript 等）将容器、文件、仓库等抽象为可组装的对象，从而以可编程、可缓存、可追踪的方式定义 CI/CD 与 AI Agent 工作流。

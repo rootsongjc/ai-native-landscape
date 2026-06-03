@@ -3,7 +3,7 @@ name: Beta9
 slug: beta9
 homepage: https://beam.cloud/
 repo: https://github.com/beam-cloud/beta9
-license: Unknown
+license: AGPL-3.0
 category: inference-serving
 subCategory: model-serving
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   An open-source serverless runtime for AI workloads providing ultrafast container startup, GPU support, and
   scale-to-zero capabilities.
-logo: ''
 author: Beam
 ossDate: '2023-11-15T00:53:21.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Beta9 is the open-source engine behind Beam, offering ultrafast serverless GPU inference, isolated sandboxes, and background job execution. It supports high concurrency, rapid container startup, and heterogeneous hardware environments, and can be self-hosted or used via Beam's managed platform.

@@ -13,7 +13,6 @@ tags:
   - Data Connector
   - Self-Hosted
 description: 开源数据移动平台，用于 ELT 管道和 AI 智能体数据接入，支持从 API、数据库和文件迁移数据到数据仓库、数据湖和 AI 应用。
-logo: ''
 author: Airbyte
 ossDate: '2020-07-27'
 featured: false

@@ -12,7 +12,6 @@ tags:
 description: >-
   Graphiti is an open-source framework for building real-time knowledge graphs tailored for AI agents, designed for
   dynamic data, agent memory, and low-latency hybrid retrieval.
-logo: ''
 author: Zep / getzep
 ossDate: '2024-08-08T22:08:30.000Z'
 featured: false

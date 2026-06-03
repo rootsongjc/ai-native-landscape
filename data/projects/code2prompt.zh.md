@@ -3,7 +3,7 @@ name: Code2Prompt
 slug: code2prompt
 homepage: https://code2prompt.dev/
 repo: https://github.com/mufeedvh/code2prompt
-license: Unknown
+license: MIT
 category: training-optimization
 subCategory: prompt-quality
 tags:
@@ -11,13 +11,11 @@ tags:
   - Prompt Engineering
   - Utility
 description: 将代码库转换为单一 LLM 提示的工具，便于代码分析、生成与自动化工作流整合。
-logo: ''
 author: mufeedvh
 ossDate: '2024-03-09T12:42:06.000Z'
 featured: false
 status: tracked
 ---
-
 Code2Prompt 是一个将代码库转换为结构化 LLM 提示的开源工具，适用于代码分析、自动化审查与生成任务。它能遍历项目目录、构建文件树并收集文件元信息，从而生成面向大模型的上下文提示，简化人工整理代码上下文的工作流程。
 
 ## 主要特性

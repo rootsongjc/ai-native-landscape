@@ -12,7 +12,6 @@ tags:
 description: >-
   An open-source Python library built on pdfminer.six that exposes detailed PDF objects, table extraction, and visual
   debugging features.
-logo: ''
 author: jsvine
 ossDate: '2015-08-24T03:14:48.000Z'
 featured: false

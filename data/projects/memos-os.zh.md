@@ -12,7 +12,6 @@ tags:
   - RAG
   - SDK
 description: MemOS 是一个为大语言模型（LLM）提供长期记忆能力的开源 Memory OS，旨在提升模型的上下文感知与长期一致性。
-logo: ''
 author: MemTensor
 ossDate: '2025-07-06T09:51:27Z'
 featured: false

@@ -3,19 +3,17 @@ name: CUTLASS
 slug: cutlass
 homepage: null
 repo: https://github.com/nvidia/cutlass
-license: Unknown
+license: Other
 category: inference-serving
 subCategory: gpu-acceleration
 tags:
   - Framework
 description: CUDA Templates for Linear Algebra Subroutines（CUTLASS），NVIDIA 提供的高性能矩阵运算模板库。
-logo: ''
 author: NVIDIA
 ossDate: '2017-11-30T00:11:24.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 CUTLASS 是 NVIDIA 提供的一套用于线性代数子例程（GEMM 等）的 CUDA 模板库，旨在帮助开发者构建高性能、可重用的矩阵运算内核。它包含多种优化策略与示例，便于在不同 GPU 架构上实现高效计算。

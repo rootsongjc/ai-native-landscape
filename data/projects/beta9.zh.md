@@ -3,19 +3,17 @@ name: Beta9
 slug: beta9
 homepage: https://beam.cloud/
 repo: https://github.com/beam-cloud/beta9
-license: Unknown
+license: AGPL-3.0
 category: inference-serving
 subCategory: model-serving
 tags:
   - Dev Tools
 description: 面向大规模 AI 工作负载的开源无服务器推理引擎，支持快速容器启动与 GPU 支持。
-logo: ''
 author: Beam
 ossDate: '2023-11-15T00:53:21.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Beta9 是 Beam 项目的开源引擎，提供超快的无服务器 GPU 推理、沙盒与后台任务能力，支持并发扩展、快速镜像启动与异构硬件。该项目既可自托管，也作为 Beam 云平台的底层运行时使用，适合生产与研究场景。

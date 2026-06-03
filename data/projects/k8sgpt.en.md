@@ -12,7 +12,6 @@ tags:
 description: >-
   An AI tool that provides diagnostic and analysis capabilities for Kubernetes, using LLM to locate and explain cluster
   issues.
-logo: ''
 author: K8sGPT
 ossDate: '2023-03-21T19:58:16.000Z'
 featured: false

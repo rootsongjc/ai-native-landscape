@@ -11,7 +11,6 @@ tags:
 description: >-
   Triton Inference Server: NVIDIA's high-performance inference server supporting multiple model formats and deployment
   options.
-logo: ''
 author: NVIDIA
 ossDate: '2018-10-04T21:10:30.000Z'
 featured: false

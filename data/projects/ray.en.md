@@ -11,7 +11,6 @@ tags:
 description: >-
   A unified framework for scaling AI and Python applications, providing distributed computing capabilities for machine
   learning workloads and general-purpose parallel computing.
-logo: ''
 author: Ray Project
 ossDate: '2016-10-25T19:38:30.000Z'
 featured: false

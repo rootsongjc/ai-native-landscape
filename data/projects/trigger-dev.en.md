@@ -11,25 +11,31 @@ tags:
 description: >-
   An open-source platform for building and deploying scalable AI agents and workflows with durable tasks, retries,
   observability, and elastic scaling.
-logo: ''
 author: trigger.dev
 ossDate: '2022-11-30T14:59:07.000Z'
 featured: false
 status: tracked
 ---
 
-## Overview
-
 Trigger.dev is an open-source platform for building and deploying durable AI agents and background workflows that run without timeout constraints. It provides retries, queues, observability, and elastic scaling out of the box, enabling teams to build complex, long-running tasks that are resilient to failures and easy to monitor in production.
 
-## Key Features
+## Durable Task Execution
 
-The platform supports long-running tasks with built-in checkpointing, automatic retries, and idempotency guarantees, ensuring that complex multi-step workflows complete reliably. Full observability is provided through distributed tracing, structured logs, and real-time streaming of task output for debugging and monitoring. TypeScript and JavaScript SDKs with extension points and frontend integration hooks allow developers to embed workflow logic directly into their applications.
+- Long-running tasks with built-in checkpointing, automatic retries, and idempotency guarantees
+- Complex multi-step workflows complete reliably even under failure conditions
+- Configurable resource limits for CPU and memory per task
+- Task versioning for safe, gradual rollouts
 
-## Use Cases
+## Observability and Monitoring
 
-Teams deploy LLM-powered agents as production services that handle multi-step workflows such as document processing, data enrichment, and customer communication. Organizations replace short-lived serverless functions with Trigger.dev when workloads require durability, retries, and idempotency guarantees. It supports both self-hosted and cloud-hosted deployment models for teams that need to iterate quickly and scale background processing.
+- Distributed tracing, structured logs, and real-time streaming of task output
+- Debugging and monitoring tools for production workflows
+- Concurrency controls to manage parallel execution
+- TypeScript-first runtime with ergonomic async and streaming patterns
 
-## Technical Details
+## Developer Experience
 
-Trigger.dev is built on a TypeScript-first runtime with configurable resource limits for CPU and memory per task. It offers real-time streaming support, concurrency controls to manage parallel execution, and task versioning for safe, gradual rollouts. The platform is open-source under the Apache-2.0 license with an active community and comprehensive documentation.
+- TypeScript and JavaScript SDKs with extension points and frontend integration hooks
+- Embed workflow logic directly into applications
+- Self-hosted and cloud-hosted deployment models
+- Teams deploy LLM-powered agents as production services for document processing, data enrichment, and customer communication

@@ -14,7 +14,6 @@ tags:
 description: >-
   Shotgun is a CLI tool that transforms what you want to work on into a complete flow of research to specs to plans to
   tasks to implementation with full codebase understanding.
-logo: ''
 author: shotgun-sh
 ossDate: '2025-08-25T00:00:00.000Z'
 featured: false

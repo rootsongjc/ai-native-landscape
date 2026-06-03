@@ -10,7 +10,6 @@ tags:
   - Application
   - Multimodal
 description: 面向真实世界机器学习与机器人学的开源库，提供数据集、预训练策略与仿真环境，方便复现实验与工程化部署。
-logo: ''
 author: Hugging Face
 ossDate: '2024-01-26T15:50:41.000Z'
 featured: false

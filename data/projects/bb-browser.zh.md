@@ -12,7 +12,6 @@ tags:
   - AI Agent
   - Chrome
 description: AI Agent 控制浏览器的 CLI 和 MCP server，复用用户登录态——你的浏览器就是 API。
-logo: ''
 author: epiral
 ossDate: '2026-01-31T03:55:42Z'
 featured: false

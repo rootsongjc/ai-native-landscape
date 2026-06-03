@@ -3,7 +3,7 @@ name: Dagger
 slug: dagger
 homepage: https://dagger.io/
 repo: https://github.com/dagger/dagger
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: workflow-automation
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   An open-source runtime for composable workflows—build reproducible, modular, and observable CI/CD and AI Agent
   workflows using familiar programming languages.
-logo: ''
 author: Dagger
 ossDate: '2019-11-20T01:31:51.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 Dagger is an open-source runtime for composable workflows. It lets developers treat containers, files, repositories, and more as programmable, cacheable objects and compose them into reproducible workflows using Go, Python, or TypeScript. Dagger is well-suited for CI/CD, platform automation, and AI agentic workflows.

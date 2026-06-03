@@ -3,7 +3,7 @@ name: Costrict
 slug: costrict
 homepage: https://costrict.ai
 repo: https://github.com/zgsm-ai/costrict
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: coding-agents
 tags:
@@ -13,13 +13,11 @@ tags:
 description: >-
   Costrict (formerly Shenma) is an open-source enterprise-grade AI coding assistant by Sangfor, centered on "serious
   programming" with Strict Mode, Code Review, Code Completion, and private deployment support.
-logo: ''
 author: 深信服 (Sangfor)
 ossDate: '2025-04-10T02:06:51Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Costrict (formerly Shenma) is a free, open-source enterprise-grade AI coding assistant developed by Sangfor, designed specifically for "intranet development + high-quality requirements" scenarios. Since its launch in May 2025, the project has gained significant traction on GitHub. Costrict's core mission is to help enterprises safely and conveniently leverage AI productivity through private deployment that ensures code asset security, while providing an end-to-end standardized AI development workflow.

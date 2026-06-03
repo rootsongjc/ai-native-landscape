@@ -3,20 +3,18 @@ name: Agentset
 slug: agentset
 homepage: https://agentset.ai
 repo: https://github.com/agentset-ai/agentset
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
   - Agent Framework
   - RAG
 description: 一个面向检索增强生成（RAG）的开源平台，提供多文件格式支持、内置引用与分区能力以简化知识库构建。
-logo: ''
 author: Agentset
 ossDate: '2025-03-10T04:52:13Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Agentset 是一个开源 RAG 平台，帮助开发者与研究者构建具备引用能力和深度研究能力的智能体。开箱即用支持 22+ 种文件格式，提供内置引用、分区和 MCP 服务器，便于将外部知识高效接入智能体上下文，提升回答的准确性与可溯源性。

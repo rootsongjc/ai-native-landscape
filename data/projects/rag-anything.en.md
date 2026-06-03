@@ -12,7 +12,6 @@ tags:
 description: >-
   A multimodal document processing and Retrieval-Augmented Generation (RAG) system supporting unified parsing and
   intelligent retrieval of text, images, tables, formulas, and more.
-logo: ''
 author: HKUDS
 ossDate: '2025-06-06T06:47:29.000Z'
 featured: false

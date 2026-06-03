@@ -3,20 +3,18 @@ name: ElevenLabs UI
 slug: elevenlabs-ui
 homepage: https://ui.elevenlabs.io
 repo: https://github.com/elevenlabs/ui
-license: Unknown
+license: MIT
 category: models-modalities
 subCategory: multimodal
 tags:
   - Dev Tools
   - UI
 description: ElevenLabs UI 是基于 shadcn/ui 构建的组件库与注册表，帮助更快构建多模态智能体界面组件。
-logo: ''
 author: ElevenLabs
 ossDate: '2025-09-03T16:29:41.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 ElevenLabs UI 是一个开源的组件库和自定义注册表，构建在 shadcn/ui 之上，旨在加速多模态智能体界面与工具的开发。它提供了一套可复用的 UI 组件、主题与示例，帮助开发者快速搭建集成语音、文本与其他模态的交互界面。

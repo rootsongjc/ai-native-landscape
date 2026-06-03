@@ -12,7 +12,6 @@ tags:
   - Voice Cloning
   - TTS
 description: 开源 AI 语音工作室，支持声音克隆、听写和音频创作，提供现代化 Web 界面。
-logo: ''
 author: Jamie Pine
 ossDate: '2026-01-25T00:00:00Z'
 featured: true

@@ -3,20 +3,18 @@ name: DeepTeam
 slug: deepteam
 homepage: https://trydeepteam.com
 repo: https://github.com/confident-ai/deepteam
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: evaluation-benchmarks
 tags:
   - Evaluation
   - Tool
 description: 一个用于对大语言模型与 LLM 系统进行红队测试的开源框架，聚焦安全性与稳健性评估。
-logo: ''
 author: Confident AI
 ossDate: '2025-03-05T06:34:21Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 DeepTeam 是一个面向大语言模型与 LLM 系统的开源红队测试框架，聚焦安全性与稳健性评估。它帮助研究者与工程团队系统性地发现对抗性弱点，并在模型部署前后评估潜在风险。

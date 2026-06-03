@@ -12,7 +12,6 @@ tags:
   - Tool
   - UI
 description: Plannotator 是一款面向 AI 编码智能体的交互式计划与代码审查工具，支持可视化标注、团队协作和一键反馈，兼容 Claude Code、Copilot CLI、Gemini CLI 等主流智能体。
-logo: ''
 author: backnotprop
 ossDate: '2025-05-01'
 featured: false

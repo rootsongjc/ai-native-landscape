@@ -9,7 +9,6 @@ subCategory: coding-agents
 tags:
   - Vibe Coding
 description: 微软开发的现代代码编辑器，通过丰富的 AI 扩展生态系统提供智能编程体验。
-logo: ''
 author: Microsoft
 ossDate: '2015-09-03T20:23:38.000Z'
 featured: true

@@ -14,7 +14,6 @@ tags:
 description: >-
   NVIDIA's open-source toolbox for optimized LLM inference, designed for efficient GPU serving and enterprise
   deployment.
-logo: ''
 author: NVIDIA
 ossDate: '2023-08-16T17:14:27.000Z'
 featured: false

@@ -3,19 +3,17 @@ name: Apache Doris
 slug: doris
 homepage: https://doris.apache.org
 repo: https://github.com/apache/doris
-license: Unknown
+license: MIT
 category: platform-infra
 subCategory: data-platforms
 tags:
   - Database
 description: Apache Doris 是一款易用、高性能且统一的分析型数据库，适用于实时与离线分析场景。
-logo: ''
 author: Apache
 ossDate: '2017-08-10T12:13:30Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Apache Doris 是一款易用、高性能且统一的分析型数据库，适用于实时与离线分析场景。它结合列式存储与高效查询引擎支持 OLAP 工作负载，致力于简化数据仓库与分析平台建设。

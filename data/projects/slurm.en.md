@@ -13,7 +13,6 @@ tags:
 description: >-
   Slurm is an open-source cluster resource management and job scheduling system that is simple, scalable, portable,
   fault-tolerant, and interconnect agnostic, widely used in high-performance computing and AI training clusters.
-logo: ''
 author: SchedMD
 ossDate: '2009-12-17T00:00:00.000Z'
 featured: false

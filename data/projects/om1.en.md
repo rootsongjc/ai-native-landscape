@@ -3,19 +3,17 @@ name: OM1
 slug: om1
 homepage: null
 repo: https://github.com/openmind/om1
-license: Unknown
+license: Other
 category: inference-serving
 subCategory: sandboxes-runtimes
 tags:
   - AI Agent
 description: OpenMind's modular AI runtime for deploying multimodal agents across digital environments and physical robots
-logo: ''
 author: OpenMind
 ossDate: '2025-01-08T21:23:40.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 OM1 is a modular AI runtime developed by OpenMind for creating and deploying multimodal agents on digital platforms and physical robots (Humanoids, TurtleBot, quadrupeds, etc.). It ingests diverse inputs—camera, LIDAR, web data—and can produce actions like navigation, manipulation, and conversational responses.

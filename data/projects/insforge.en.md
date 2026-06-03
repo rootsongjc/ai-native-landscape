@@ -3,7 +3,7 @@ name: InsForge
 slug: insforge
 homepage: https://insforge.dev
 repo: https://github.com/insforge/insforge
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: productivity-tools
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   An agent-native Supabase alternative that exposes backend features in a way AI agents can build and manage full-stack
   applications autonomously.
-logo: ''
 author: InsForge
 ossDate: '2025-07-29T05:56:00.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 InsForge is an agent-native backend platform positioned as a Supabase alternative. It exposes features such as authentication, database, storage, and serverless functions in an AI-manageable way, enabling AI agents to build, operate, and extend full-stack applications. The project provides documentation, examples, and quickstart flows to get started with Docker and connect AI agents.

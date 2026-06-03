@@ -11,7 +11,6 @@ tags:
   - CLI
   - Dev Tools
 description: SkillHub 是由科大讯飞开源的企业级智能体技能注册中心，支持技能包的发布、版本管理、团队命名空间与 RBAC 权限治理，可私有化部署于 Docker 或 Kubernetes 环境。
-logo: ''
 author: iFlytek
 ossDate: '2026-03-11T12:17:05Z'
 featured: false

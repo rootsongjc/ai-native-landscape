@@ -9,7 +9,6 @@ subCategory: inference-runtimes
 tags:
   - Inference
 description: mistral.rs 是一个用 Rust 实现的轻量级、高性能的 Mistral 模型推理库，适合在资源受限环境中运行小到中等规模模型。
-logo: ''
 author: EricLBuehler
 ossDate: '2024-02-26T22:30:06.000Z'
 featured: false

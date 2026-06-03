@@ -3,20 +3,18 @@ name: DocuTranslate
 slug: docutranslate
 homepage: https://pypi.org/project/docutranslate/
 repo: https://github.com/xunbu/docutranslate
-license: Unknown
+license: MPL-2.0
 category: platform-infra
 subCategory: data-platforms
 tags:
   - Data
   - Dev Tools
 description: DocuTranslate is a lightweight document translation tool leveraging LLMs and multiple parsing engines.
-logo: ''
 author: xunbu
 ossDate: '2025-05-08T08:16:40Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 DocuTranslate is a lightweight document translation tool that leverages LLMs and multiple parsing engines to translate PDF, Word, Excel, JSON, EPUB, and SRT formats. It provides an end-to-end pipeline from file parsing and semantic translation to export, suitable for novels, theses, and subtitles.

@@ -12,7 +12,6 @@ tags:
 description: >-
   XLA (Accelerated Linear Algebra) is a compiler for machine learning that generates optimized code for CPUs, GPUs, and
   accelerators to improve model execution performance.
-logo: ''
 author: OpenXLA
 ossDate: '2017-01-01T00:00:00.000Z'
 featured: false

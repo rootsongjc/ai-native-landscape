@@ -3,7 +3,7 @@ name: Claude Task Master
 slug: claude-task-master
 homepage: https://task-master.dev
 repo: https://github.com/eyaltoledano/claude-task-master
-license: Unknown
+license: MIT
 category: applications-products
 subCategory: workflow-automation
 tags:
@@ -13,13 +13,11 @@ tags:
 description: >-
   Claude Task Master is an AI-powered task management system that can be integrated into platforms such as Cursor,
   Lovable, and Windsurf to enhance task collaboration and automation capabilities.
-logo: ''
 author: eyaltoledano
 ossDate: '2025-03-04T18:54:54.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 Claude Task Master is an AI-driven system for task management and collaboration, designed to seamlessly embed into platforms like Cursor, Lovable, and Windsurf. Leveraging large language models, it automates task assignment, prioritization, and execution suggestions, helping teams improve efficiency and reduce repetitive work.

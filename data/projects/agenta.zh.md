@@ -3,20 +3,18 @@ name: Agenta
 slug: agenta
 homepage: https://docs.agenta.ai/
 repo: https://github.com/agenta-ai/agenta
-license: Unknown
+license: MIT
 category: training-optimization
 subCategory: evaluation-benchmarks
 tags:
   - Evaluation
   - Prompt Engineering
 description: Agenta 是一个开源的 LLMOps 平台，集成提示管理、评测与可观测性，帮助团队快速构建可靠的 LLM 应用。
-logo: ''
 author: Agenta-AI
 ossDate: '2023-04-26T09:54:28.000Z'
 featured: false
 status: tracked
 ---
-
 ## 详细介绍
 
 Agenta 是一个面向生产的开源 LLMOps 平台，旨在将提示工程、自动化评测与运行时可观测性整合为一套可复用的工具链，帮助工程与产品团队在复杂业务场景中快速迭代并稳定交付 LLM 驱动的功能。平台既提供托管的 Agenta Cloud 体验，也提供完整的自托管方案，以满足不同的合规和成本需求。

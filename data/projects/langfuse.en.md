@@ -13,7 +13,6 @@ tags:
 description: >-
   Discover Langfuse, the open-source platform for LLM development, enhancing collaboration, monitoring, and debugging
   for AI applications.
-logo: ''
 author: Langfuse
 ossDate: '2023-05-18T17:47:09.000Z'
 featured: false

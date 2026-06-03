@@ -3,7 +3,7 @@ name: CopilotKit
 slug: copilotkit
 homepage: https://docs.copilotkit.ai
 repo: https://github.com/copilotkit/copilotkit
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -13,13 +13,11 @@ tags:
 description: >-
   CopilotKit is an open-source frontend framework for rapidly integrating AI copilots, agents, and generative UI
   components into React and Angular applications, and the creator of the AG-UI Protocol.
-logo: ''
 author: CopilotKit
 ossDate: '2023-06-19T04:08:31Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 CopilotKit is an open-source frontend framework for building AI copilots, autonomous agents, and generative UI within React and Angular applications. As the creator of the AG-UI (Agent-User Interaction) Protocol, CopilotKit provides a comprehensive toolkit covering chat interfaces, task orchestration, context awareness, and RAG integration. With over 30k GitHub stars, it has become one of the most popular open-source projects in the AI application frontend space, adopted by Google, LangChain, AWS, and Microsoft.

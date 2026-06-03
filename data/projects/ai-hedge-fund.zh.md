@@ -3,20 +3,18 @@ name: AI Hedge Fund
 slug: ai-hedge-fund
 homepage: null
 repo: https://github.com/virattt/ai-hedge-fund
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:
   - Application
   - CLI
 description: 一个以智能体为中心的量化研究示例，提供回测、CLI 与可视化 Web 应用以探索 AI 在选股与风控中的应用。
-logo: ''
 author: virattt
 ossDate: '2024-11-29T16:30:01Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 AI Hedge Fund 是一个概念验证项目，展示如何使用多个专业化智能体实现 AI 驱动的对冲基金交易决策。它展示了专注于估值、情绪、基本面和技术面的智能体如何协同生成交易信号。项目提供 CLI 和可选的 Web 应用于回测与策略验证，强调可复现的研究与教育探索。

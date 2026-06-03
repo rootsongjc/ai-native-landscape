@@ -12,7 +12,6 @@ tags:
 description: >-
   Vanna is an open-source RAG framework that converts natural language questions into executable SQL and runs them
   against local databases.
-logo: ''
 author: Vanna
 ossDate: '2023-05-13T17:26:28.000Z'
 featured: false

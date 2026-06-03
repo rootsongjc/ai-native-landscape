@@ -14,7 +14,6 @@ tags:
 description: >-
   NVIDIA OpenShell is a safe, private runtime for autonomous AI agents, providing sandboxed execution environments with
   declarative YAML policies to protect data, credentials, and infrastructure from unauthorized access.
-logo: ''
 author: NVIDIA
 ossDate: '2026-02-24'
 featured: true

@@ -3,20 +3,18 @@ name: cuDF
 slug: cudf
 homepage: https://docs.rapids.ai/api/cudf/stable/
 repo: https://github.com/rapidsai/cudf
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: data-platforms
 tags:
   - Data
   - Dev Tools
 description: 基于 GPU 的 DataFrame 库，用于加速数据分析与表格计算的开源工具。
-logo: ''
 author: RAPIDS (NVIDIA)
 ossDate: '2017-05-07T03:43:37.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 cuDF 是 RAPIDS 生态中用于高性能数据处理的 GPU DataFrame 库，目标是把表格型计算从 CPU 转移到 GPU，从而显著加速数据清洗、聚合与变换等常见分析任务。该库广泛用于数据科学、ETL 与实时分析场景。

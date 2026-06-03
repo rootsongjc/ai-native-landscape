@@ -3,20 +3,18 @@ name: Blades
 slug: blades
 homepage: null
 repo: https://github.com/go-kratos/blades
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
   - AI Agent
   - Framework
 description: A multimodal AI Agent framework in Go providing pluggable components for models, tools, memory, and middleware.
-logo: ''
 author: go-kratos
 ossDate: '2025-09-15T16:43:22.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Blades is a Go-native multimodal AI Agent framework that emphasizes decoupling and extensibility. Through unified interfaces and pluggable components (ModelProvider, Tool, Memory, Middleware, etc.), it enables building multi-turn conversations, chain reasoning, and structured outputs with clear and maintainable code.

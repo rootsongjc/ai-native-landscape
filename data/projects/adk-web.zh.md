@@ -3,20 +3,18 @@ name: Agent Development Kit Web (ADK Web)
 slug: adk-web
 homepage: https://google.github.io/adk-docs/
 repo: https://github.com/google/adk-web
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:
   - Dev Tools
   - UI
 description: Google 提供的内置开发者界面，用于结合 Agent Development Kit 进行智能体开发与调试。
-logo: ''
 author: Google
 ossDate: '2025-05-05T17:16:28Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Agent Development Kit Web（ADK Web）是 Google 为 Agent Development Kit 提供的内置开发者界面，旨在简化智能体开发与调试流程。它与 ADK 后端组件配合使用，提供可视化任务流展示、交互式调试面板和示例工程，帮助开发者快速验证智能体行为。

@@ -3,7 +3,7 @@ name: AIBrix
 slug: aibrix
 homepage: https://aibrix.readthedocs.io/latest/
 repo: https://github.com/vllm-project/aibrix
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: sdk-frameworks
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   AIBrix is a cloud-native infrastructure framework for large-scale LLM inference, providing scalable and cost-efficient
   inference components.
-logo: ''
 author: vllm-project
 ossDate: '2024-06-10T23:06:10.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 AIBrix is a cost-efficient and pluggable infrastructure framework for GenAI inference, designed for large-scale LLM deployment. Built under the vLLM project, it provides production-grade components including routing, autoscaling, distributed inference, and KV caching to build scalable LLM services on Kubernetes.

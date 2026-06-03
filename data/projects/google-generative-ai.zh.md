@@ -3,7 +3,7 @@ name: Generative AI on Google Cloud
 slug: google-generative-ai
 homepage: https://cloud.google.com/vertex-ai/docs/generative-ai/learn/overview
 repo: https://github.com/googlecloudplatform/generative-ai
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:
@@ -11,13 +11,11 @@ tags:
   - LLM
   - RAG
 description: Google Cloud 的 Generative AI 示例与笔记，展示如何在 Vertex AI 与 Gemini 上构建和部署生成式 AI 工作流。
-logo: ''
 author: Google
 ossDate: '2023-05-05T12:31:07.000Z'
 featured: false
 status: tracked
 ---
-
 ## 详细介绍
 
 本仓库由 Google Cloud Platform 维护，收集了面向生成式 AI 的示例代码、Notebook 与示范应用，重点展示如何在 Vertex AI（含 Gemini 模型）上构建端到端工作流。内容涵盖智能体样例、RAG（检索增强生成）示例、图像与音频生成，以及面向生产环境的部署与评估实践，适合希望在 Google Cloud 上快速验证与落地生成式 AI 方案的工程与产品团队。

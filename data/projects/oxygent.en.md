@@ -12,27 +12,29 @@ tags:
 description: >-
   A multi-agent collaboration framework for enterprise applications that emphasizes local-first workflow composition and
   tool integration.
-logo: ''
 author: 京东
 ossDate: '2025-07-18T02:40:42Z'
 featured: false
 status: tracked
 ---
 
-## Overview
-
 OxyGent is a multi-agent collaboration framework from JD's open-source team that introduces the Oxy Abstraction to make multi-agent systems modular, observable, and evolvable. It enables developers to compose cooperative workflows by defining agents, tools, and permission boundaries while a built-in runtime engine handles scheduling and inter-agent communication.
 
-## Key Features
+## Oxy Abstraction Layer
 
-- Oxy Abstraction layer that decouples agent logic from infrastructure, enabling independent evolution of each component in a multi-agent system.
-- Built-in observability primitives for tracing agent interactions, monitoring task progress, and auditing decisions across the full workflow lifecycle.
-- Plugin-based tool integration with fine-grained permission controls, allowing enterprise teams to safely connect databases, APIs, and external services.
+- Decouples agent logic from infrastructure so each component in a multi-agent system evolves independently
+- Composable agent definitions with finite-state control for testability and replayability
+- Plugin-based tool integration supporting databases, APIs, and external services
 
-## Use Cases
+## Observability & Governance
 
-Enterprise teams can use OxyGent to automate customer support pipelines that coordinate multiple specialized agents across different systems. It also fits cross-system data processing, business process orchestration, and intelligent operations where auditability and compliance are required.
+- Built-in tracing primitives for monitoring agent interactions across the full workflow lifecycle
+- Structured audit logs for compliance and decision auditing
+- Runtime metrics and configurable permission models for production-grade control
+- Fine-grained permission controls ensuring enterprise teams safely connect to internal systems
 
-## Technical Details
+## Enterprise Use Cases
 
-Implemented in Python for seamless integration with enterprise backends, OxyGent supports composable agent definitions and finite-state control for testability and replayability. Runtime metrics, structured audit logs, and a configurable permission model give operations teams the controls needed for production compliance.
+- Automated customer support pipelines coordinating multiple specialized agents across systems
+- Cross-system data processing and business process orchestration
+- Intelligent operations where auditability, compliance, and traceability are required

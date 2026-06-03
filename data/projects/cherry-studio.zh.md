@@ -3,20 +3,18 @@ name: Cherry Studio
 slug: cherry-studio
 homepage: https://www.cherry-ai.com/
 repo: https://github.com/cherryhq/cherry-studio
-license: Unknown
+license: AGPL-3.0
 category: models-modalities
 subCategory: foundation-models
 tags:
   - LLM
   - Utility
 description: AI 对话客户端，支持多种服务提供商集成。注重隐私和安全，所有数据都存储在本地。
-logo: ''
 author: CherryHQ
 ossDate: '2024-05-24T01:56:26.000Z'
 featured: false
 status: tracked
 ---
-
 Cherry Studio 是一款功能丰富的 AI 对话客户端，支持集成多种服务提供商，并兼容 OpenAI/Anthropic 等 API 格式的服务。
 
 ## 多服务提供商支持

@@ -3,7 +3,7 @@ name: Everywhere
 slug: everywhere
 homepage: https://everywhere.sylinko.com
 repo: https://github.com/dearva/everywhere
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   A context-aware desktop AI assistant that integrates multiple local and remote LLMs and MCP tools for intelligent
   interaction and automation.
-logo: ''
 author: DearVa
 ossDate: '2025-04-23T08:19:33.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Everywhere is a context-aware desktop AI assistant designed to seamlessly integrate multiple local and remote LLMs alongside MCP tools to deliver intelligent interactions and automation. It supports local model usage and remote backends, offers a plugin-based tooling ecosystem for retrieval, browser/UI automation, and task orchestration, while emphasizing privacy and extensibility.

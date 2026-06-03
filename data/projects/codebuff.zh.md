@@ -3,7 +3,7 @@ name: Codebuff
 slug: codebuff
 homepage: https://codebuff.com/docs
 repo: https://github.com/codebuffai/codebuff
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-orchestration
 tags:
@@ -11,13 +11,11 @@ tags:
   - Dev Tools
   - Utility
 description: 多智能体 AI 编程助手，通过协调专用代理执行代码修改、运行测试并生成高质量提交。适用于自动化代码修复、重构与增强开发流程。
-logo: ''
 author: CodebuffAI
 ossDate: '2024-07-09T21:21:56.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Codebuff 是一个开源的多智能体 AI 编程助手，能够在本地代码库中执行文件扫描、规划修改、精确编辑并运行测试。相比单模型工具，Codebuff 采用可组合的代理（File Explorer、Planner、Editor、Reviewer 等）协同工作，提高了对项目上下文的理解和修改准确性。

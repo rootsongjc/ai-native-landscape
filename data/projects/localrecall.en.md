@@ -11,7 +11,6 @@ tags:
   - Memory
   - RAG
 description: LocalRecall provides a local memory layer and knowledge base management API for agents and RAG scenarios.
-logo: ''
 author: mudler
 ossDate: '2025-02-12T21:07:04Z'
 featured: false

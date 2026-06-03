@@ -10,7 +10,6 @@ tags:
   - LLM
   - Utility
 description: 本地大语言模型运行工具，让用户能够在本地环境中轻松运行和管理各种开源 LLM 模型。
-logo: ''
 author: Ollama Team
 ossDate: '2023-06-26T19:39:32.000Z'
 featured: true

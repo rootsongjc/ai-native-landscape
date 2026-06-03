@@ -12,7 +12,6 @@ tags:
 description: >-
   Mooncake is a KVCache-centric disaggregated architecture for LLM serving, providing a high-performance Transfer Engine
   and distributed KVCache storage.
-logo: ''
 author: kvcache-ai
 ossDate: '2024-06-25T05:21:05.000Z'
 featured: false

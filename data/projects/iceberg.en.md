@@ -13,7 +13,6 @@ tags:
 description: >-
   A high-performance table format for huge analytic tables, offering snapshots, transactions and multi-engine
   compatibility. Widely used in AI data pipelines and ML feature stores.
-logo: ''
 author: Apache
 ossDate: '2018-11-19T00:00:00.000Z'
 featured: false

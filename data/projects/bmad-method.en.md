@@ -3,7 +3,7 @@ name: BMAD-METHOD
 slug: bmad-method
 homepage: null
 repo: https://github.com/bmad-code-org/bmad-method
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   BMAD-METHOD is an Agile AI-driven development method and framework that provides a toolset and best practices for
   building multi-role collaborative agents and engineering workflows.
-logo: ''
 author: BMad Code
 ossDate: '2025-04-13T14:54:25.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 BMAD-METHOD (Breakthrough Method for Agile AI Driven Development) is an Agile, AI-focused development framework that eliminates context loss between planning and implementation by defining specialized agent roles (Analyst, PM, Dev, etc.) and context-engineered development. The project provides a closed-loop process from planning and requirements to implementation, including command sets, expansion packs, and integrations to help teams industrialize AI capabilities.

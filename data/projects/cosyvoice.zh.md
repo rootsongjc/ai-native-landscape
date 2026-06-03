@@ -3,20 +3,18 @@ name: CosyVoice
 slug: cosyvoice
 homepage: https://funaudiollm.github.io/cosyvoice3/
 repo: https://github.com/funaudiollm/cosyvoice
-license: Unknown
+license: Apache-2.0
 category: models-modalities
 subCategory: audio-speech
 tags:
   - TTS
   - Utility
 description: 多语种、高质量的流式 TTS / 语音生成工具包，支持零样本克隆与低延迟生成。
-logo: ''
 author: FunAudioLLM
 ossDate: '2024-07-03T02:59:22.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 CosyVoice 是一个面向多语种的流式文本到语音（TTS）生成库，支持零样本语音克隆、低延迟流式合成与跨语言合成，适合在线与离线部署。

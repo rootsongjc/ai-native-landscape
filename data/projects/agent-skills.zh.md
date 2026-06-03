@@ -11,7 +11,6 @@ tags:
   - Dev Tools
   - Project
 description: 一个将可复用技能（SKILL）打包为指令与脚本，让智能体扩展能力的开源集合。
-logo: ''
 author: Vercel
 ossDate: '2025-12-08T19:10:06Z'
 featured: false

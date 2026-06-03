@@ -10,7 +10,6 @@ tags:
   - Data
   - Dev Tools
 description: A reinforcement learning training framework for large models, designed for scalable RLHF and agent training.
-logo: ''
 author: 字节跳动
 ossDate: '2024-10-31T06:11:15.000Z'
 featured: false

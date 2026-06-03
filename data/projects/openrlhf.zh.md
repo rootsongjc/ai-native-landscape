@@ -11,7 +11,6 @@ tags:
   - ML Platform
   - Training
 description: 基于 Ray、vLLM 与 DeepSpeed 的高性能开源 RLHF 框架，提供分布式训练与多种 RL 算法支持。
-logo: ''
 author: OpenRLHF 团队
 ossDate: '2023-07-30T02:20:13.000Z'
 featured: false

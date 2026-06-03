@@ -11,7 +11,6 @@ tags:
   - Dev Tools
   - Framework
 description: Vibe Skills 是一个开源的一站式 AI 技能包，将专家级能力和上下文管理集成到通用技能包中，让任何 AI Agent 即刻升级功能，消除碎片化工具的摩擦。
-logo: ''
 author: foryourhealth111-pixel
 ossDate: '2026-02-22T13:51:44Z'
 featured: false

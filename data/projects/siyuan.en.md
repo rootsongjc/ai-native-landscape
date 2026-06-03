@@ -10,7 +10,6 @@ tags:
   - Application
   - UI
 description: Siyuan is a privacy-first, self-hosted open source personal knowledge management (PKM) software.
-logo: ''
 author: Siyuan Team
 ossDate: '2020-08-30T09:21:35Z'
 featured: false

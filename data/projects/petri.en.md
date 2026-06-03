@@ -12,7 +12,6 @@ tags:
 description: >-
   Petri is an alignment auditing agent designed to quickly explore alignment hypotheses and help researchers automate
   evaluation workflows.
-logo: ''
 author: Safety Research
 ossDate: '2025-08-19T20:39:05.000Z'
 featured: false

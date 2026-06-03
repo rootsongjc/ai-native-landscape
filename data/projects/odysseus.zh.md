@@ -11,7 +11,6 @@ tags:
   - Self-hosted
   - Productivity
 description: 自托管的 AI 工作空间，在统一界面中管理和使用多种 AI 模型与工具。
-logo: ''
 author: pewdiepie-archdaemon
 ossDate: '2026-05-31'
 featured: false

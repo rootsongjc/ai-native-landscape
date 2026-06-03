@@ -3,20 +3,18 @@ name: Dask
 slug: dask
 homepage: https://dask.org
 repo: https://github.com/dask/dask
-license: Unknown
+license: BSD-3-Clause
 category: platform-infra
 subCategory: deployment-operations
 tags:
   - Dev Tools
   - ML Platform
 description: Dask 是用于并行计算与任务调度的 Python 库，适合处理大规模数据与分布式计算任务。
-logo: ''
 author: dask
 ossDate: '2015-01-04T18:50:00Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Dask 是一个用于 Python 的并行计算框架，提供与 NumPy、Pandas 和 Scikit-learn 兼容的延迟计算与分布式任务调度能力，方便将单机代码扩展到集群环境。它在数据处理、科学计算与模型训练的预处理阶段非常常见。

@@ -3,20 +3,18 @@ name: Dexter
 slug: dexter
 homepage: null
 repo: https://github.com/virattt/dexter
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
   - Agent Framework
   - Application
 description: Dexter 是一个面向深度金融研究的自治智能体，旨在自动化数据收集、分析与策略验证。
-logo: ''
 author: virattt
 ossDate: '2025-10-14T21:02:00.000Z'
 featured: false
 status: tracked
 ---
-
 ## 详细介绍
 
 Dexter 是一个面向深度金融研究的自治智能体，能够自动化执行数据抓取、时间序列分析、信号提取与策略回测工作流。项目聚焦于将复杂的研究流程工程化，减少人工重复劳动，提高研究与迭代效率。Dexter 可通过插件或连接器整合多源数据（例如行情、新闻、财报），并将处理结果输出为结构化数据以供后续建模或自动化决策使用。

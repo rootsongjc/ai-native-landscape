@@ -13,7 +13,6 @@ tags:
 description: >-
   Roboflow Inference is a computer-vision inference and workflow platform that supports local and cloud deployment,
   video stream workflows, and rich model integrations.
-logo: ''
 author: Roboflow
 ossDate: '2023-07-31T17:00:40.000Z'
 featured: false

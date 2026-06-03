@@ -12,7 +12,6 @@ tags:
   - Agent
   - HeyGen
 description: HeyGen 出品的 HTML 转视频工具，专为 AI Agent 设计，通过代码即可程序化生成视频。
-logo: ''
 author: HeyGen
 ossDate: '2026-03-10T00:00:00Z'
 featured: true

@@ -12,7 +12,6 @@ tags:
 description: >-
   An open-source ChatGPT alternative that runs locally or in the cloud, supporting model downloads, cloud integrations,
   and privacy-first workflows.
-logo: ''
 author: menloresearch
 ossDate: '2023-08-17T02:17:10.000Z'
 featured: false

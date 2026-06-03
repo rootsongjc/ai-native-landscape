@@ -14,7 +14,6 @@ tags:
 description: >-
   ZeroClaw is a fast, small, and fully autonomous AI assistant infrastructure built in Rust — deploy anywhere, swap
   everything.
-logo: ''
 author: zeroclaw-labs
 ossDate: '2026-02-19T00:00:00Z'
 featured: false

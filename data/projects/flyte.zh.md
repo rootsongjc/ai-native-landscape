@@ -3,7 +3,7 @@ name: Flyte
 slug: flyte
 homepage: https://flyte.org/
 repo: https://github.com/flyteorg/flyte
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: workflow-automation
 tags:
@@ -11,13 +11,11 @@ tags:
   - ML Platform
   - Workflow
 description: 可扩展且可重复的开源工作流编排平台，适用于数据、ML 与分析管道的生产化部署。
-logo: ''
 author: Flyte 社区
 ossDate: '2019-10-21T17:40:04.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Flyte 是一个面向生产环境的开源工作流编排与调度平台，专注于可扩展性、类型化接口与可重复性，支持在 Kubernetes 上运行复杂的数据与机器学习工作流。

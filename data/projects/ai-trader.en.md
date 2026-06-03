@@ -12,7 +12,6 @@ tags:
 description: >-
   An open-source intelligent trading system for backtesting and live-simulated execution, integrating strategy
   simulation, execution, and visualization.
-logo: ''
 author: HKUDS
 ossDate: '2025-10-23T12:45:00.000Z'
 featured: false

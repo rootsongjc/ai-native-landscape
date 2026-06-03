@@ -13,7 +13,6 @@ tags:
   - Scheduling
   - gVisor
 description: 基于 Kubernetes 的智能体工作负载管理系统，通过将大量有状态 actor 复用到少量 Pod 上实现规模化运行，支持亚秒级激活和持久化状态。
-logo: ''
 author: Agent Substrate
 ossDate: '2026-05-13'
 featured: false

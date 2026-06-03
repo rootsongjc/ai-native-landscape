@@ -3,7 +3,7 @@ name: Chaterm
 slug: chaterm
 homepage: https://chaterm.ai/
 repo: https://github.com/chaterm/chaterm
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   An open-source AI-integrated terminal and SSH client that provides natural-language command execution, smart
   completion, voice input, and visual editing to streamline ops and developer workflows.
-logo: ''
 author: Chaterm
 ossDate: '2025-04-14T04:19:01.000Z'
 featured: false
 status: tracked
 ---
-
 Chaterm is an open-source AI terminal and SSH client designed for ops and developer workflows. It integrates AI agents to allow natural-language command execution, offers context-aware smart completion, voice commands, and a visual editor to simplify complex tasks across many hosts.
 
 ## Features

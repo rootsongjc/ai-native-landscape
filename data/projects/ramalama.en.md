@@ -12,7 +12,6 @@ tags:
 description: >-
   RamaLama simplifies running and serving AI models by packaging them as OCI container images and choosing
   hardware-optimized images for the host automatically.
-logo: ''
 author: containers
 ossDate: '2023-06-01T00:00:00.000Z'
 featured: false

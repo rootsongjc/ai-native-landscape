@@ -11,7 +11,6 @@ tags:
 description: >-
   A free, open-source, extensible offline speech-to-text desktop application that runs Whisper and Parakeet models
   locally.
-logo: ''
 author: cjpais
 ossDate: '2025-02-13T02:42:29.000Z'
 featured: false

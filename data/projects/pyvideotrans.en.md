@@ -11,7 +11,6 @@ tags:
   - Multimodal
   - Video
 description: pyvideotrans translates videos between languages and generates dubbing audio.
-logo: ''
 author: jianchang512
 ossDate: '2023-10-02T16:13:19Z'
 featured: false

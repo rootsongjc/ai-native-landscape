@@ -3,7 +3,7 @@ name: Aider
 slug: aider
 homepage: https://aider.chat/
 repo: https://github.com/aider-ai/aider
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: coding-agents
 tags:
@@ -11,13 +11,11 @@ tags:
 description: >-
   A terminal-based AI pair programmer that helps you write, edit, and manage code through natural language commands,
   supporting Git integration and multiple LLMs.
-logo: ''
 author: Aider
 ossDate: '2023-05-09T18:57:49.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Aider is an AI pair programming tool that runs in your terminal, letting you pair program with LLMs to start new projects or build on existing code. It supports multiple mainstream models including Claude, DeepSeek, OpenAI, and local models, while intelligently mapping and understanding your entire codebase across over 100 programming languages.

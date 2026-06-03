@@ -3,20 +3,18 @@ name: CAMEL
 slug: camel
 homepage: https://www.camel-ai.org/
 repo: https://github.com/camel-ai/camel
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:
   - AI Agent
   - Agent Framework
 description: CAMEL 是一个面向大规模多智能体研究的开源框架，支持模拟、数据生成与协作式代理能力。
-logo: ''
 author: CAMEL 社区
 ossDate: '2023-03-17T21:41:54.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 CAMEL 是一个社区驱动的开源多智能体框架，旨在研究智能体的规模效应与协作行为，支持从单个代理到百万级代理的模拟、数据生成与评测工作流。该项目提供丰富的示例、工具链与 Cookbooks，便于在研究和工程场景中快速构建多智能体系统。

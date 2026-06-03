@@ -10,7 +10,6 @@ tags:
   - Data
   - RAG
 description: 对开发者友好的嵌入式多模态 AI 检索引擎。搜索更多，管理更少。
-logo: ''
 author: LanceDB
 ossDate: '2023-04-20'
 featured: false

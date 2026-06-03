@@ -10,7 +10,6 @@ tags:
   - Dev Tools
   - Sandbox
 description: 一个轻量级的沙箱工具，用于在操作系统层面对任意进程实施文件系统与网络访问限制。
-logo: ''
 author: Anthropic
 ossDate: '2025-10-20T02:52:10.000Z'
 featured: false

@@ -12,7 +12,6 @@ tags:
 description: >-
   oxdraw is a diagram-as-code tool that combines declarative Mermaid sources with a draggable visual editor for
   reproducible, editable diagrams.
-logo: ''
 author: Rohan Adwankar
 ossDate: '2025-10-07T19:59:40.000Z'
 featured: false

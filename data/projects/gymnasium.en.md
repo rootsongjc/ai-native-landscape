@@ -12,7 +12,6 @@ tags:
 description: >-
   An API standard for single-agent reinforcement learning environments, with popular reference environments and related
   utilities (formerly Gym).
-logo: ''
 author: Farama Foundation
 ossDate: '2022-09-08T01:58:05.000Z'
 featured: false

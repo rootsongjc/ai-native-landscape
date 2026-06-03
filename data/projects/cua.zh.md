@@ -3,20 +3,18 @@ name: CUA
 slug: cua
 homepage: https://trycua.com
 repo: https://github.com/trycua/cua
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
   - Agent Framework
   - Dev Tools
 description: CUA 提供用于训练和评估可操作完整桌面（macOS、Linux、Windows）智能体的开源基础设施和工具链。
-logo: ''
 author: TryCUA
 ossDate: '2025-01-31T15:02:49.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 CUA（Computer-Use Agents）是一个开源基础设施，旨在训练、评估并部署能够控制桌面环境的智能体。项目包含沙箱、SDK、基准与工具，支持在 macOS、Linux 与 Windows 上复现智能体对真实应用和窗口的操作能力，帮助研究者和工程师在安全可控的环境中开展实验。

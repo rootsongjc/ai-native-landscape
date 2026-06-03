@@ -3,7 +3,7 @@ name: Daytona
 slug: daytona
 homepage: https://www.daytona.io/docs
 repo: https://github.com/daytonaio/daytona
-license: Unknown
+license: AGPL-3.0
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:
@@ -11,13 +11,11 @@ tags:
   - Dev Tools
   - Sandbox
 description: 用于安全执行 AI 生成代码的弹性基础设施，提供隔离沙箱、并发执行与持久化沙箱能力。
-logo: ''
 author: Daytona
 ossDate: '2024-02-06T08:21:20.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Daytona 是一个面向运行 AI 生成代码的安全且弹性的基础设施平台，提供快速创建隔离沙箱来执行代码、程序化控制以及持久化沙箱状态，适用于需要在受控环境中运行模型生成代码的产品与研究场景。

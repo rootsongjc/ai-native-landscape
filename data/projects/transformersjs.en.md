@@ -11,7 +11,6 @@ tags:
 description: >-
   Transformers.js: a JavaScript implementation of Hugging Face Transformers for the browser and Node, with WASM/ONNX
   backends for optimized on-device inference.
-logo: ''
 author: Xenova
 ossDate: '2023-02-13T13:51:45.000Z'
 featured: false

@@ -14,7 +14,6 @@ tags:
   - Python
   - Stealth
 description: 自适应 Web 爬虫框架，具备 AI 智能元素选择、反检测隐身能力和 MCP Server 支持，可无缝集成到 AI Agent 工作流中。
-logo: ''
 author: D4Vinci
 ossDate: '2024-10-13'
 featured: false

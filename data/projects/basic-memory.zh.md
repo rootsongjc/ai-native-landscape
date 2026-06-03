@@ -3,7 +3,7 @@ name: Basic Memory
 slug: basic-memory
 homepage: https://basicmemory.com
 repo: https://github.com/basicmachines-co/basic-memory
-license: Unknown
+license: AGPL-3.0
 category: rag-knowledge
 subCategory: agent-memory-context
 tags:
@@ -12,25 +12,37 @@ tags:
   - Dev Tools
   - Memory
 description: 一种以本地 Markdown 为中心的记忆系统，允许 LLM 通过模型上下文协议（MCP）读写你的知识库。
-logo: ''
 author: Basic Machines
 ossDate: '2024-12-02T22:40:43Z'
 featured: false
 status: tracked
 ---
+Basic Memory 是一个本地优先的知识记忆系统，将用户知识以结构化 Markdown 文件保存，并通过模型上下文协议（MCP）让兼容的 LLM 读写这些文件。它实现了可写入的记忆层，默认本地存储保护隐私，同时提供可选的云同步，确保 AI 对话真正记住上下文。
 
-## 简介
+## Markdown 即知识
 
-Basic Memory 是一个本地优先的知识记忆系统，将用户知识以结构化 Markdown 文件保存，并通过模型上下文协议（MCP）让兼容的 LLM 读写这些文件。它实现了可写入的记忆层，默认本地存储保护隐私，同时提供可选的云同步与多设备协同功能，确保 AI 对话真正记住上下文，无需反复解释项目背景。
+- 结构化 Markdown 文件作为主要存储格式，人类可直接阅读与编辑
+- 自动将文件解析为实体（Entity）、观察（Observation）与关系（Relation）
+- 本地 SQLite 索引，支持快速全文搜索与图谱遍历
+- 所有数据由用户控制，无厂商锁定
 
-## 主要特性
+## 通过 MCP 集成 LLM
 
-Basic Memory 提供本地优先的 Markdown 存储（数据由用户控制）、LLM 与用户双向读写构建可追溯的记忆图谱、MCP 协议支持实现跨工具互操作、轻量 SQLite 索引实现快速搜索与遍历，以及 CLI 工具与 VS Code、Claude Desktop 等编辑器和应用的集成。
+- MCP 服务端组件，支持任何兼容的 LLM 读写记忆
+- 人类与 AI 协作构建可追溯的双向知识图谱
+- 基于本地索引的语义搜索与检索
+- 事件驱动 API，实时响应知识变更
 
-## 使用场景
+## 跨工具与跨设备
 
-适用于需要长期上下文的对话式应用场景，例如开发者在本地维护项目知识库、研究笔记的语义搜索、直播或会议的实时笔记同步，以及具备持续记忆与上下文增强的个人助手。它也可作为私有化 RAG 加可写记忆的轻量替代方案。
+- CLI 工具，支持终端下的知识管理与查询
+- 集成 VS Code 与 Claude Desktop，在编辑器和对话中直接访问
+- 可选云同步，支持多设备协同
+- 与现有笔记工具和知识管理系统并行使用，无需替换
 
-## 技术特点
+## 适用场景
 
-系统通过将 Markdown 文件解析为实体（Entity）、观察（Observation）与关系（Relation），并建立本地 SQLite 索引支持检索与遍历。提供 MCP 服务端组件、事件驱动 API 与双向同步，允许在保证数据可控性的前提下实现 LLM 驱动的知识写入与实时同步。
+- 开发者在本地维护项目知识库，跨越 LLM 会话持久化
+- 研究笔记的语义搜索，覆盖长期项目积累
+- 个人 AI 助手保持长期记忆，无需依赖云端
+- 作为云 RAG 与记忆服务的私有化替代方案

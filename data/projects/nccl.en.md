@@ -10,7 +10,6 @@ tags:
   - AI Kernel Library
   - Inference
 description: High-performance collective communication primitives for GPUs, optimized for PCIe, NVLink, NVSwitch and RDMA networks.
-logo: ''
 author: NVIDIA
 ossDate: '2015-06-01T00:00:00.000Z'
 featured: false

@@ -10,7 +10,6 @@ tags:
   - Deployment
   - Inference
 description: 面向模型部署的推理与服务框架，支持多后端、分布式和 OpenAI 兼容接口，便于在云端或本地快速部署模型。
-logo: ''
 author: Xorbits
 ossDate: '2023-06-14T07:05:04.000Z'
 featured: false

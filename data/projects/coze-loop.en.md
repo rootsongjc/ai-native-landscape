@@ -3,7 +3,7 @@ name: Coze Loop
 slug: coze-loop
 homepage: https://www.coze.com/
 repo: https://github.com/coze-dev/coze-loop
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: deployment-operations
 tags:
@@ -13,13 +13,11 @@ tags:
 description: >-
   ByteDance's open-source platform-level solution for AI Agent development and operations, providing full lifecycle
   management capabilities.
-logo: ''
 author: 字节跳动
 ossDate: '2025-06-24T00:26:28.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 Coze Loop is ByteDance's developer-focused platform-level solution for AI Agent development and operations. It focuses on solving various challenges faced in AI Agent development, providing full lifecycle management capabilities from development, debugging, evaluation, to monitoring.

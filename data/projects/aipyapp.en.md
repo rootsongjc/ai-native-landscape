@@ -3,7 +3,7 @@ name: AIPyApp
 slug: aipyapp
 homepage: https://aipy.app/
 repo: https://github.com/knownsec/aipyapp
-license: Unknown
+license: Other
 category: platform-infra
 subCategory: data-platforms
 tags:
@@ -12,13 +12,11 @@ tags:
 description: >-
   An open-source tool that integrates an interactive Python environment with LLMs for natural-language-driven Python
   execution and automation.
-logo: ''
 author: knownsec
 ossDate: '2025-04-06T07:04:34.000Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 AIPyApp (AIPython / aipy) integrates a Python execution environment with LLMs, enabling natural-language-driven Python command generation and execution. It supports both a simple task mode and a full Python mode, making it suitable for data processing, automation, and interactive demos.

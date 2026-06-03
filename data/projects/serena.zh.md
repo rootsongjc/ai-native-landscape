@@ -9,7 +9,6 @@ subCategory: coding-agents
 tags:
   - Vibe Coding
 description: Serena 是一个强大的开源编码智能体工具包，提供语义检索与代码编辑能力，能将 LLM 转变为可在代码库中高效工作的智能体。
-logo: ''
 author: Oraios AI
 ossDate: '2025-03-23T22:35:24.000Z'
 featured: false

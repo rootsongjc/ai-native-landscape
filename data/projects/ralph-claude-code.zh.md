@@ -3,7 +3,7 @@ name: Ralph for Claude
 slug: ralph-claude-code
 homepage: https://frankbria.com
 repo: https://github.com/frankbria/ralph-claude-code
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -11,13 +11,11 @@ tags:
   - Agents
   - Dev Tools
 description: 一个针对 Claude Code 的开源自治开发循环工具集，提供会话连续性、速率限制与断路器等保障。
-logo: ''
 author: Frank Bria
 ossDate: '2025-08-27T16:03:45Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Ralph for Claude 是一个面向 Claude Code 的开源工具集，实现自治开发循环，能够对项目需求持续执行编码会话，并在满足完成条件时智能停止。它通过会话连续性、速率限制和断路器机制防止无限循环和超额 API 调用，同时通过响应分析和多阶段错误过滤保障执行稳定性。

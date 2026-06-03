@@ -3,7 +3,7 @@ name: DeepTutor
 slug: deeptutor
 homepage: https://hkuds.github.io/DeepTutor
 repo: https://github.com/hkuds/deeptutor
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: knowledge-graphs
 tags:
@@ -14,13 +14,11 @@ tags:
   - RAG
   - Visualization
 description: 一个面向个性化学习的多智能体教学系统，集成检索增强生成、知识图谱与交互式可视化。
-logo: ''
 author: HKUDS
 ossDate: '2025-12-28T15:35:54Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 DeepTutor 是由 HKUDS 开发的智能体原生开源个性化辅导平台，结合检索增强生成（RAG）、知识图谱与多智能体协同推理，为学习者提供从知识检索到练习评估的一体化学习体验。

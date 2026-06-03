@@ -11,7 +11,6 @@ tags:
   - Multimodal
   - Video
 description: An open-source framework and ecosystem for real-time, multimodal conversational voice and agent applications.
-logo: ''
 author: TEN Framework
 ossDate: '2024-06-19T14:26:15.000Z'
 featured: false

@@ -3,20 +3,18 @@ name: Agent Zero
 slug: agent-zero
 homepage: https://agent-zero.ai/
 repo: https://github.com/agent0ai/agent-zero
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
   - AI Agent
   - Agent Framework
 description: 一个开源、可扩展的智能体框架，支持多代理协作、持久记忆与工具化执行。
-logo: ''
 author: Jan Tomášek / agent0ai
 ossDate: '2024-06-10T09:10:45.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Agent Zero 是一个以提示为中心、面向扩展的开源智能体框架，强调代理间协作与可定制性。它提供持久记忆、工具化代码执行与多种模型提供器接入，旨在把计算机作为完成任务的工具。

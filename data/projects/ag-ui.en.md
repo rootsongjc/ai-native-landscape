@@ -3,20 +3,18 @@ name: AG-UI
 slug: ag-ui
 homepage: https://ag-ui.com
 repo: https://github.com/ag-ui-protocol/ag-ui
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: mcp-tools
 tags:
   - AI Agent
   - Dev Tools
 description: 'AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.'
-logo: ''
 author: AG-UI Team
 ossDate: '2025-05-07T12:49:37.000Z'
 featured: false
 status: tracked
 ---
-
 AG-UI (Agent-User Interaction Protocol) is an innovative protocol designed to bring intelligent agents into frontend applications. The protocol provides a standardized set of interfaces and methods for frontend developers, making it easier and more efficient to integrate and use AI agents in web applications.
 
 ## Core Concept

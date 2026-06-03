@@ -3,7 +3,7 @@ name: AgentField
 slug: agentfield
 homepage: http://www.agentfield.ai
 repo: https://github.com/agent-field/agentfield
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -12,13 +12,11 @@ tags:
   - Automation
   - Orchestration
 description: 将 Kubernetes 的理念带入智能体运行时，提供可扩展、可观测且具身份感知的智能体微服务平台。
-logo: ''
 author: Agent Field
 ossDate: '2025-11-05T02:04:44Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 AgentField 支持像构建 API 和微服务一样构建、运行与扩展 AI 智能体，从第一天起即具备可观测、可审计与身份感知能力。它将智能体的生命周期、身份与通信抽象为云原生对象，使多智能体应用能够以可扩展的方式运行在集群上。

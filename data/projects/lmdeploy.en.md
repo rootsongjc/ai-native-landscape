@@ -12,7 +12,6 @@ tags:
 description: >-
   LMDeploy is a toolkit for compressing, deploying and serving large language models, providing optimized inference
   engines, quantization and distribution features.
-logo: ''
 author: InternLM
 ossDate: '2023-06-15T12:38:06.000Z'
 featured: false

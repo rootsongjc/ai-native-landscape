@@ -11,7 +11,6 @@ tags:
   - MCP
   - Utility
 description: 创新的 AI 浏览器自动化框架，将代码与自然语言结合，实现生产环境下灵活可靠的自动化。
-logo: ''
 author: BrowserBase
 ossDate: '2024-03-24T19:19:44.000Z'
 featured: true
@@ -37,12 +36,3 @@ Stagehand 是一个创新的 AI 浏览器自动化框架，专为生产环境下
 - 智能表单填写与数据采集
 - 跨平台自动化测试
 - 结合 AI 实现智能化办公流程
-
-## 项目资源
-
-- 官网：[https://stagehand.dev](https://stagehand.dev)
-- GitHub：[https://github.com/browserbase/stagehand](https://github.com/browserbase/stagehand)
-
-## 总结
-
-Stagehand 让浏览器自动化变得更智能、更灵活，适合需要高可靠性和可控性的生产环境。

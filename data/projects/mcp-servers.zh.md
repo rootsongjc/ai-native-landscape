@@ -12,7 +12,6 @@ tags:
   - Agent
   - Integration
 description: Model Context Protocol 官方参考服务器实现集合，为 AI 智能体提供标准化的工具接口以连接外部系统和数据源。
-logo: ''
 author: Anthropic
 ossDate: '2024-11-19'
 featured: true

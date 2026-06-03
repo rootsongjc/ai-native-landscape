@@ -14,7 +14,6 @@ tags:
 description: >-
   Tunix is a JAX-native post-training library for LLMs providing efficient fine-tuning, RL training, and distillation
   tools.
-logo: ''
 author: Google
 ossDate: '2025-09-30T00:00:00+08:00'
 featured: false

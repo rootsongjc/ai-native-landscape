@@ -10,7 +10,6 @@ tags:
   - Dev Tools
   - Utility
 description: 面向质性研究和记者的本地化音频转录与编辑工具，基于 Whisper 与 Pyannote 提供说话人分离与可视化编辑功能。
-logo: ''
 author: Kai Dröge
 ossDate: '2023-05-12T06:25:03.000Z'
 featured: false

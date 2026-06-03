@@ -11,7 +11,6 @@ tags:
 description: >-
   A lightweight, reproducible ChatGPT-like project designed to train and run an end-to-end LLM pipeline on a modest
   budget.
-logo: ''
 author: Andrej Karpathy
 ossDate: '2025-10-13T13:46:35.000Z'
 featured: false

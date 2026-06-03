@@ -13,7 +13,6 @@ tags:
   - Multilingual
   - Transformer
 description: 基于大规模弱监督训练的鲁棒语音识别系统，支持 100+ 语言的转录和翻译，达到业界领先的准确率。
-logo: ''
 author: OpenAI
 ossDate: '2022-09-16'
 featured: true

@@ -3,19 +3,17 @@ name: Detectron2
 slug: detectron2
 homepage: https://detectron2.readthedocs.io/
 repo: https://github.com/facebookresearch/detectron2
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: agent-memory-context
 tags:
   - Dev Tools
 description: Facebook AI Research 的下一代目标检测与分割库，提供高性能的检测/分割算法与丰富的基准模型。
-logo: ''
 author: Facebook
 ossDate: '2019-09-05T21:30:20.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 Detectron2 是 Facebook AI Research（FAIR）提供的下一代目标检测与分割库，支持包括 panoptic segmentation、DensePose、Cascade R-CNN、PointRend、ViTDet 等在内的多种先进算法，兼顾研究与工程化部署。

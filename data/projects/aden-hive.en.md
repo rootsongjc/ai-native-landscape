@@ -3,7 +3,7 @@ name: Aden Hive
 slug: aden-hive
 homepage: https://docs.adenhq.com/
 repo: https://github.com/aden-hive/hive
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -12,13 +12,11 @@ tags:
   - Automation
   - Observability
 description: A production-ready framework and runtime for building self-evolving AI agents.
-logo: ''
 author: Aden
 ossDate: '2026-01-12T00:04:22Z'
 featured: false
 status: tracked
 ---
-
 ## Overview
 
 Aden Hive is a production-grade multi-agent orchestration platform that generates agent graphs and connection code from natural-language goals. It provides a runtime, observability tools, and human-in-the-loop nodes so agents can capture failure data, evolve via a coding agent, and redeploy automatically in a continuous self-improvement loop.

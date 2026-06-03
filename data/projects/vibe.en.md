@@ -11,7 +11,6 @@ tags:
 description: >-
   A privacy-first, cross-platform audio/video transcription tool that supports fully offline operation and batch
   processing.
-logo: ''
 author: thewh1teagle
 ossDate: '2024-01-08T03:29:06.000Z'
 featured: false

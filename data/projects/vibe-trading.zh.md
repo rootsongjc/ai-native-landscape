@@ -12,7 +12,6 @@ tags:
   - Quantitative Finance
   - MCP
 description: 个人 AI 交易 Agent，多 Agent 架构，内置回测和 MCP 集成，支持算法化交易。
-logo: ''
 author: HKUDS
 ossDate: '2026-04-01T09:52:20Z'
 featured: false

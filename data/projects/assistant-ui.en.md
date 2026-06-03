@@ -3,7 +3,7 @@ name: Assistant UI
 slug: assistant-ui
 homepage: https://www.assistant-ui.com
 repo: https://github.com/assistant-ui/assistant-ui
-license: Unknown
+license: MIT
 category: applications-products
 subCategory: chat-interfaces
 tags:
@@ -12,25 +12,37 @@ tags:
   - Frontend
   - UI
 description: A TypeScript + React open-source component library for building customizable chat interfaces for AI assistants.
-logo: ''
 author: Assistant UI
 ossDate: '2023-11-22T16:01:17Z'
 featured: false
 status: tracked
 ---
+Assistant UI is an open-source TypeScript/React component library for building customizable chat interfaces with LLM backends. It provides composable UI components covering message streams, input composers, rich media rendering, and plugin extension points, making it straightforward to integrate with any inference backend or agent layer.
 
-## Overview
+## Component Library
 
-Assistant UI is an open-source TypeScript/React component library for building customizable chat interfaces with LLM backends. It provides composable UI components covering message streams, input composers, rich media rendering, and plugin extension points, making it straightforward to integrate with inference backends, model gateways, or agent layers for production-ready chat frontends.
+- **Message lists** with custom renderers for markdown, code blocks, and rich media
+- **Input composers** with file attachments, image uploads, and tool invocation UI
+- **Toolbar components** for branching conversations, editing messages, and thread management
+- **Thread panels** for multi-conversation navigation and session management
 
-## Key Features
+## Backend Integration
 
-Assistant UI offers componentized chat elements (message lists, composers, toolbars) with custom renderers and style overrides, multi-model support via backend gateways, plugin extensibility for file uploads and tool invocation, and built-in theming with accessibility best practices. The library is designed for flexible composition and production delivery.
+- Multi-model support via backend gateways for switching between providers
+- Streaming response rendering with real-time token display
+- Plugin extensibility for custom tool calls, function results, and inline actions
+- Compatible with OpenAI, Anthropic, Vercel AI SDK, and custom agent endpoints
 
-## Use Cases
+## Theming & Accessibility
 
-Developers can quickly build customer support, product assistant, or internal collaboration chat interfaces. It is also useful for presenting different backend inference services through a unified chat UI, prototyping conversational interactions and comparing multi-model strategies, or embedding as a component library in low-code platforms and enterprise intranet applications.
+- Built-in theme system with dark/light mode and CSS variable overrides
+- Accessible markup following WAI-ARIA best practices for screen readers
+- Responsive layout adapting to desktop, tablet, and mobile viewports
+- Bundle-size conscious design compatible with modern bundlers and SSR frameworks
 
-## Technical Details
+## When to Choose Assistant UI
 
-Built with TypeScript and React for type safety and extensibility, Assistant UI provides a customizable rendering pipeline for messages with rich media and card-style presentations. It is performance-minded and bundle-size conscious, compatible with modern bundlers and server-side rendering, and MIT-licensed for community contributions and commercial integration.
+- Building customer support, product assistant, or internal collaboration chat interfaces
+- Presenting different backend inference services through a unified chat UI
+- Prototyping conversational interactions and comparing multi-model strategies
+- Embedding chat components in low-code platforms and enterprise intranet applications

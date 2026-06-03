@@ -11,7 +11,6 @@ tags:
 description: >-
   Holistic Evaluation of Language Models (HELM) from Stanford CRFM: an open framework for reproducible, transparent
   model evaluation and benchmark management.
-logo: ''
 author: Stanford CRFM
 ossDate: '2021-11-29T08:53:17.000Z'
 featured: false

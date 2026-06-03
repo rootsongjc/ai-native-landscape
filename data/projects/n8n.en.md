@@ -14,7 +14,6 @@ tags:
   - Integration
   - Self-Hosted
 description: Fair-code workflow automation platform with native AI capabilities, 400+ integrations, and MCP client/server support for building AI-powered workflows visually.
-logo: ''
 author: n8n GmbH
 ossDate: '2019-06-22'
 featured: true

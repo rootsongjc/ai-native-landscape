@@ -3,7 +3,7 @@ name: Flyte
 slug: flyte
 homepage: https://flyte.org/
 repo: https://github.com/flyteorg/flyte
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: workflow-automation
 tags:
@@ -11,13 +11,11 @@ tags:
   - ML Platform
   - Workflow
 description: A scalable, reproducible open-source workflow orchestration platform for data, ML and analytics pipelines.
-logo: ''
 author: Flyte 社区
 ossDate: '2019-10-21T17:40:04.000Z'
 featured: false
 status: tracked
 ---
-
 ## Introduction
 
 Flyte is an open-source, production-grade workflow orchestration platform focused on scalability, strong typing and reproducibility. It enables teams to build and run complex data and ML pipelines on Kubernetes.

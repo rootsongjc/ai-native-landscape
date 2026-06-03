@@ -12,7 +12,6 @@ tags:
   - ML Platform
   - Training
 description: Tunix 是一个基于 JAX 的 LLM 后训练库，提供高效的微调、强化学习训练与知识蒸馏工具。
-logo: ''
 author: Google
 ossDate: '2025-09-30T00:00:00+08:00'
 featured: false

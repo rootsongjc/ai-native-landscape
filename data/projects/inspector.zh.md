@@ -3,20 +3,18 @@ name: Inspector
 slug: inspector
 homepage: https://modelcontextprotocol.io
 repo: https://github.com/modelcontextprotocol/inspector
-license: Unknown
+license: MIT
 category: training-optimization
 subCategory: evaluation-benchmarks
 tags:
   - Dev Tools
   - Evaluation
 description: Inspector 是一款用于 MCP（Model Context Protocol）服务器的可视化测试工具，帮助开发者验证与展示 MCP 服务的行为与可视化输出。
-logo: ''
 author: Model Context Protocol
 ossDate: '2024-10-03T21:47:42.000Z'
 featured: false
 status: tracked
 ---
-
 ## 详细介绍
 
 Inspector 是面向 MCP（Model Context Protocol）服务器的可视化测试与验证工具。它通过可交互的界面展示模型上下文响应、请求 - 响应流程与行为差异，便于开发者在局部环境或 CI 流程中直观地调试与回归测试 MCP 服务。

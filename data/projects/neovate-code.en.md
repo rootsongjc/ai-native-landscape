@@ -9,7 +9,6 @@ subCategory: coding-agents
 tags:
   - Vibe Coding
 description: Neovate Code is an open-source coding agent designed to boost developer productivity and code quality.
-logo: ''
 author: 蚂蚁集团
 ossDate: '2025-03-11T08:32:54.000Z'
 featured: false

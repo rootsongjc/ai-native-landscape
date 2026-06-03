@@ -3,19 +3,17 @@ name: AutoGPT
 slug: autogpt
 homepage: https://agpt.co/
 repo: https://github.com/significant-gravitas/autogpt
-license: Unknown
+license: MIT
 category: platform-infra
 subCategory: deployment-operations
 tags:
   - AI Agent
 description: 用于构建、部署与运行连续智能体的平台，支持自托管与平台化部署。
-logo: ''
 author: Significant-Gravitas
 ossDate: '2023-03-16T09:21:07.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 AutoGPT 是 Significant-Gravitas 社区推动的开源平台，旨在让用户快速创建、部署并管理连续运行的智能体（agents）。项目同时包含传统 AutoGPT 实现与面向平台的前端/后端组件，支持自托管与即将推出的云平台服务。

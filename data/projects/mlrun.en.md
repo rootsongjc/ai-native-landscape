@@ -10,7 +10,6 @@ tags:
   - Dev Tools
   - ML Platform
 description: MLRun is an open-source MLOps platform for building and managing continuous ML applications across their lifecycle.
-logo: ''
 author: MLRun
 ossDate: '2019-09-01T16:59:19.000Z'
 featured: false

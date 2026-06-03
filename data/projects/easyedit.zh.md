@@ -3,19 +3,17 @@ name: EasyEdit
 slug: easyedit
 homepage: https://zjunlp.github.io/project/KnowEdit
 repo: https://github.com/zjunlp/easyedit
-license: Unknown
+license: MIT
 category: training-optimization
 subCategory: evaluation-benchmarks
 tags:
   - Framework
 description: 一个易用的知识编辑（model editing）框架，提供多种编辑方法、评估指标与数据集，支持 LLM 与部分多模态模型的知识插入、更新与擦除。
-logo: ''
 author: ZJUNLP
 ossDate: '2023-05-09T07:48:02Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 EasyEdit 是一个面向大语言模型的知识编辑工具包，目标是在有限样本下高效地修改模型在特定查询上的行为，同时尽量保持模型在无关输入上的原有表现。项目包含多种编辑方法（如 ROME、MEND、MEMIT、WISE 等）、评估指标（可靠性、泛化性、局部性、可迁移性）以及用于比较的基准数据集（如 KnowEdit / CKnowEdit）。

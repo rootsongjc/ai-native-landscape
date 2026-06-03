@@ -12,7 +12,6 @@ tags:
   - Multilingual
   - Voice Cloning
 description: State-of-the-art open source text-to-speech system with voice cloning capabilities, supporting multiple languages with natural-sounding output.
-logo: ''
 author: Fish Audio
 ossDate: '2023-10-10'
 featured: false

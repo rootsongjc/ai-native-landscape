@@ -12,7 +12,6 @@ tags:
 description: >-
   PaddleOCR is a lightweight, high-performance open-source OCR toolkit that supports 100+ languages and converts images
   or PDFs into structured data.
-logo: ''
 author: PaddlePaddle
 ossDate: '2020-05-08T10:38:16.000Z'
 featured: false

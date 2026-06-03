@@ -11,7 +11,6 @@ tags:
 description: >-
   Helicone is an open-source LLM observability and analytics platform that captures requests, traces and sessions to
   help developers debug, evaluate and optimize model usage.
-logo: ''
 author: Helicone
 ossDate: '2023-01-31T22:34:44.000Z'
 featured: false

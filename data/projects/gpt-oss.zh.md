@@ -3,20 +3,18 @@ name: gpt-oss
 slug: gpt-oss
 homepage: https://openai.com/open-models
 repo: https://github.com/openai/gpt-oss
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: inference-runtimes
 tags:
   - Inference
   - LLM
 description: gpt-oss 是 OpenAI 发布的开源权重系列模型，面向高推理能力与可定制化的开发场景。
-logo: ''
 author: OpenAI
 ossDate: '2025-06-23T16:43:33.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 gpt-oss 是 OpenAI 发布的开源模型系列（包含 gpt-oss-120b 与 gpt-oss-20b），提供开放权重以便研究与工程复现。该项目以 Apache-2.0 许可发布，面向高推理能力与可定制化场景，支持多种推理后端与工具链集成。本文简要介绍其定位、主要功能与典型应用场景。

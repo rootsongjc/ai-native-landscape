@@ -10,7 +10,6 @@ tags:
   - Data
   - RAG
 description: GraphRAG 是微软研究提出的用于将知识图谱与 RAG 技术结合的开源工具集，旨在从文本中抽取结构化信息并支持复杂时序查询。
-logo: ''
 author: Microsoft
 ossDate: '2024-03-27T17:57:52.000Z'
 featured: false

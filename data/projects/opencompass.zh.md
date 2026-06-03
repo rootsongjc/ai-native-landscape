@@ -9,7 +9,6 @@ subCategory: evaluation-benchmarks
 tags:
   - Benchmark
 description: 面向大模型评估的一站式平台，提供丰富的基准、评估工具与排行榜，便于复现与比较模型能力。
-logo: ''
 author: OpenCompass Contributors
 ossDate: '2023-06-15T12:42:58.000Z'
 featured: false

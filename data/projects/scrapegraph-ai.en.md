@@ -14,7 +14,6 @@ tags:
 description: >-
   ScrapeGraphAI is an LLM-powered scraping library that converts websites and documents into structured data, offering
   SDKs, pipelines, and integrations for production workflows.
-logo: ''
 author: ScrapeGraph AI
 ossDate: '2024-01-27T16:54:38.000Z'
 featured: false

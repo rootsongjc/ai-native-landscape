@@ -3,19 +3,17 @@ name: DeepCode
 slug: deepcode
 homepage: https://pypi.org/project/deepcode-hku/
 repo: https://github.com/hkuds/deepcode
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-orchestration
 tags:
   - AI Agent
 description: 基于多智能体系统的代码生成与研究复现平台，能将论文与自然语言转化为可运行代码。
-logo: ''
 author: HKU Data Intelligence Lab
 ossDate: '2025-05-14T05:23:02.000Z'
 featured: false
 status: tracked
 ---
-
 ## 简介
 
 DeepCode 是一个由香港大学 Data Intelligence Lab 开发的开源多智能体代码生成平台，旨在将学术论文、文本描述和文档自动转换为高质量、可运行的代码实现，显著加速研究复现与原型开发。
