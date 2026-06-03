@@ -62,15 +62,29 @@ jobs:
       - name: Wait for Cloudflare Pages deployment
         if: steps.detect.outputs.changed == 'true'
         run: |
+          SLUGS="${{ steps.detect.outputs.slugs }}"
+          FIRST_SLUG=$(echo "$SLUGS" | awk '{print $1}')
           echo "Waiting 120s for Cloudflare Pages deployment..."
           sleep 120
-          for i in 1 2 3; do
+          for i in 1 2 3 4 5; do
             HTTP=$(curl -s -o /dev/null -w "%{http_code}" "https://landscape.jimmysong.io/data/ai-projects-manifest.json")
             if [ "$HTTP" = "200" ]; then
-              echo "Manifest is live"
-              break
+              echo "Manifest is live (attempt $i)"
             fi
-            echo "Attempt $i: manifest not yet live (HTTP $HTTP), retrying in 30s..."
+            # Verify projects.json contains the new slug
+            if [ -n "$FIRST_SLUG" ]; then
+              FOUND=$(curl -s "https://landscape.jimmysong.io/data/projects.json" 2>/dev/null | \
+                python3 -c "import sys,json;data=json.load(sys.stdin);print('yes' if any(p.get('slug')=='$FIRST_SLUG' for p in data) else 'no')" 2>/dev/null || echo "error")
+              if [ "$FOUND" = "yes" ]; then
+                echo "✅ projects.json confirmed live with slug: $FIRST_SLUG"
+                break
+              else
+                echo "Attempt $i: projects.json not yet updated (slug $FIRST_SLUG $FOUND), retrying in 30s..."
+              fi
+            else
+              [ "$HTTP" = "200" ] && break
+              echo "Attempt $i: manifest not yet live (HTTP $HTTP), retrying in 30s..."
+            fi
             sleep 30
           done
 
@@ -87,12 +101,12 @@ jobs:
           for slug in $SLUGS; do
             echo "  → $slug"
             REPO=$(curl -sf "https://landscape.jimmysong.io/data/projects.json" 2>/dev/null | \
-              python3 -c "import sys,json;[print(p.get('repo','').replace('https://github.com/',''))for p in json.load(sys.stdin)if p.get('slug')=='$slug']" 2>/dev/null)
+              python3 -c "import sys,json;[print(p.get('repo','').replace('https://github.com/',''))for p in json.load(sys.stdin)if p.get('slug')=='$slug']" 2>/dev/null || true)
             if [ -n "$REPO" ]; then
               echo "    Repo: $REPO"
               curl -sf "https://ai-oss-rank-worker.jimmysong.io/recalculate?repo=$REPO" -o /dev/null 2>&1 && \
                 echo "    ✅ Scoring generated" || echo "    ⚠️ Scoring failed"
             else
-              echo "    ⚠️ Could not resolve repo for slug: $slug"
+              echo "    ⚠️ Could not resolve repo for slug: $slug — deployment may not be live yet"
             fi
           done
