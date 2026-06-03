@@ -100,6 +100,9 @@ const relatedProjects = allProjects
         <aside class="detail-hero__side" aria-label="Project score and actions">
           <div class="detail-score-panel" data-reference-status={project.status} data-lang={lang}>
             <div class="detail-score" data-score-repo={repoSlug}>
+              <button class="score-info-btn" type="button" aria-label={lang === 'zh' ? '评分详情' : 'Score details'} data-score-info-toggle>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+              </button>
               <div class="score-ring" data-score-ring>
                 <svg viewBox="0 0 64 64" aria-hidden="true">
                   <circle class="score-ring__bg" cx="32" cy="32" r="26" />
@@ -111,6 +114,58 @@ const relatedProjects = allProjects
                 <span class="score-kicker">{copy.overallHealth}</span>
                 <span class="score-label" data-score-label>{copy.scoreLoading}</span>
               </div>
+            </div>
+            <div class="score-popover" data-score-popover>
+              <div class="score-popover__header">
+                <span class="score-popover__title">{copy.scoreBreakdown}</span>
+                <span class="score-popover__total" data-score-repo={repoSlug} data-score-value-total>--</span>
+              </div>
+              <div class="score-popover__rows">
+                <div class="score-popover__row">
+                  <span class="score-popover__icon" style="--dot-color:#3b82f6">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                  </span>
+                  <div class="score-popover__meta">
+                    <span class="score-popover__label">{copy.activity}</span>
+                    <div class="score-popover__bar"><div class="score-popover__fill" data-score-repo={repoSlug} data-score-dimension="activity" style="--fill-color:linear-gradient(90deg,#3b82f6,#60a5fa);width:0%"></div></div>
+                  </div>
+                  <span class="score-popover__val" data-score-repo={repoSlug} data-score-activity>--</span>
+                </div>
+                <div class="score-popover__row">
+                  <span class="score-popover__icon" style="--dot-color:#8b5cf6">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  </span>
+                  <div class="score-popover__meta">
+                    <span class="score-popover__label">{copy.community}</span>
+                    <div class="score-popover__bar"><div class="score-popover__fill" data-score-repo={repoSlug} data-score-dimension="community" style="--fill-color:linear-gradient(90deg,#8b5cf6,#a78bfa);width:0%"></div></div>
+                  </div>
+                  <span class="score-popover__val" data-score-repo={repoSlug} data-score-community>--</span>
+                </div>
+                <div class="score-popover__row">
+                  <span class="score-popover__icon" style="--dot-color:#10b981">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  </span>
+                  <div class="score-popover__meta">
+                    <span class="score-popover__label">{copy.quality}</span>
+                    <div class="score-popover__bar"><div class="score-popover__fill" data-score-repo={repoSlug} data-score-dimension="quality" style="--fill-color:linear-gradient(90deg,#10b981,#34d399);width:0%"></div></div>
+                  </div>
+                  <span class="score-popover__val" data-score-repo={repoSlug} data-score-quality>--</span>
+                </div>
+                <div class="score-popover__row">
+                  <span class="score-popover__icon" style="--dot-color:#f59e0b">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+                  </span>
+                  <div class="score-popover__meta">
+                    <span class="score-popover__label">{copy.sustainability}</span>
+                    <div class="score-popover__bar"><div class="score-popover__fill" data-score-repo={repoSlug} data-score-dimension="sustainability" style="--fill-color:linear-gradient(90deg,#f59e0b,#fbbf24);width:0%"></div></div>
+                  </div>
+                  <span class="score-popover__val" data-score-repo={repoSlug} data-score-sustainability>--</span>
+                </div>
+              </div>
+              <a class="score-popover__link" href={localizedPath('/methodology/', lang)}>
+                {lang === 'zh' ? '查看评分方法' : 'View methodology'}
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
             </div>
           </div>
 
@@ -320,38 +375,6 @@ const relatedProjects = allProjects
           </div>
         </div>
 
-        <!-- Score Breakdown -->
-        <div class="sidebar-card score-card">
-          <h3>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
-            {copy.scoreBreakdown}
-          </h3>
-          <div class="score-row">
-            <span class="score-row__dot" style="background:linear-gradient(135deg,#3b82f6,#60a5fa)"></span>
-            <span>{copy.activity}</span>
-            <div class="score-row__bar"><div class="score-fill fill-activity" data-score-repo={repoSlug} data-score-dimension="activity" style="width:0%"></div></div>
-            <span class="score-row__val" data-score-repo={repoSlug} data-score-activity>--</span>
-          </div>
-          <div class="score-row">
-            <span class="score-row__dot" style="background:linear-gradient(135deg,#8b5cf6,#a78bfa)"></span>
-            <span>{copy.community}</span>
-            <div class="score-row__bar"><div class="score-fill fill-community" data-score-repo={repoSlug} data-score-dimension="community" style="width:0%"></div></div>
-            <span class="score-row__val" data-score-repo={repoSlug} data-score-community>--</span>
-          </div>
-          <div class="score-row">
-            <span class="score-row__dot" style="background:linear-gradient(135deg,#10b981,#34d399)"></span>
-            <span>{copy.quality}</span>
-            <div class="score-row__bar"><div class="score-fill fill-quality" data-score-repo={repoSlug} data-score-dimension="quality" style="width:0%"></div></div>
-            <span class="score-row__val" data-score-repo={repoSlug} data-score-quality>--</span>
-          </div>
-          <div class="score-row">
-            <span class="score-row__dot" style="background:linear-gradient(135deg,#f59e0b,#fbbf24)"></span>
-            <span>{copy.sustainability}</span>
-            <div class="score-row__bar"><div class="score-fill fill-sustainability" data-score-repo={repoSlug} data-score-dimension="sustainability" style="width:0%"></div></div>
-            <span class="score-row__val" data-score-repo={repoSlug} data-score-sustainability>--</span>
-          </div>
-        </div>
-
         <!-- Related Projects -->
         {relatedProjects.length > 0 && (
           <div class="sidebar-card related-card">
@@ -449,7 +472,7 @@ const relatedProjects = allProjects
   .detail-hero {
     grid-area: hero;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(240px, 300px);
+    grid-template-columns: minmax(0, 1fr) clamp(280px, 28vw, 340px);
     gap: clamp(14px, 2.2vw, 24px);
     align-items: stretch;
     border: 1px solid var(--border);
@@ -472,7 +495,7 @@ const relatedProjects = allProjects
     display: grid;
     gap: 10px;
     align-content: center;
-    padding-left: 14px;
+    padding-left: 28px;
     border-left: 1px solid var(--border);
   }
 
@@ -575,6 +598,7 @@ const relatedProjects = allProjects
   }
 
   .detail-score-panel {
+    position: relative;
     display: grid;
     padding: 10px 12px;
     border: 1px solid rgba(10, 132, 255, 0.22);
@@ -586,6 +610,7 @@ const relatedProjects = allProjects
   }
 
   .detail-score {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -663,6 +688,153 @@ const relatedProjects = allProjects
     font-size: clamp(0.82rem, 0.84rem + 0.24vw, 0.98rem);
     line-height: 1.03;
   }
+
+  /* Score info button — top-right corner */
+  .score-info-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: grid;
+    place-items: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 99px;
+    border: 1px solid rgba(10, 132, 255, 0.2);
+    background: rgba(10, 132, 255, 0.06);
+    color: var(--accent);
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 0;
+    z-index: 2;
+  }
+  .score-info-btn:hover {
+    background: rgba(10, 132, 255, 0.14);
+    border-color: rgba(10, 132, 255, 0.4);
+  }
+  .score-info-btn svg { width: 12px; height: 12px; }
+
+  /* Score popover — redesigned */
+  .score-popover {
+    position: fixed;
+    z-index: 9999;
+    padding: 0;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: var(--surface);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12), 0 0 0 1px rgba(0,0,0,0.04);
+    display: none;
+    flex-direction: column;
+    width: 260px;
+    overflow: hidden;
+    animation: popover-in 0.18s ease-out;
+  }
+  @keyframes popover-in {
+    from { opacity: 0; transform: translateY(-4px) scale(0.97); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  html[data-theme='dark'] .score-popover { box-shadow: 0 8px 30px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.06); }
+  .score-popover--visible { display: flex; }
+
+  .score-popover__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  .score-popover__title {
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+  }
+  .score-popover__total {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1;
+  }
+
+  .score-popover__rows {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 6px 0;
+  }
+  .score-popover__row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px;
+    transition: background 0.15s;
+  }
+  .score-popover__row:hover { background: rgba(10,132,255,0.04); }
+  html[data-theme='dark'] .score-popover__row:hover { background: rgba(255,255,255,0.04); }
+
+  .score-popover__icon {
+    display: grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background: color-mix(in srgb, var(--dot-color) 10%, transparent);
+    color: var(--dot-color);
+  }
+  html[data-theme='dark'] .score-popover__icon { background: color-mix(in srgb, var(--dot-color) 15%, transparent); }
+
+  .score-popover__meta {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+  }
+  .score-popover__label {
+    font-size: 0.74rem;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1;
+  }
+  .detail-score-panel[data-lang='zh'] .score-popover__label { }
+  .score-popover__bar {
+    height: 4px;
+    border-radius: 99px;
+    background: var(--surface-soft);
+    overflow: hidden;
+  }
+  html[data-theme='dark'] .score-popover__bar { background: rgba(255,255,255,0.08); }
+  .score-popover__fill {
+    height: 100%;
+    border-radius: 99px;
+    background: var(--fill-color);
+    transition: width 0.5s ease;
+  }
+  .score-popover__val {
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-align: right;
+    min-width: 28px;
+    color: var(--text);
+    line-height: 1;
+  }
+
+  .score-popover__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    border-top: 1px solid var(--border);
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--accent);
+    text-decoration: none;
+    transition: background 0.15s;
+  }
+  .score-popover__link:hover { background: rgba(10,132,255,0.05); }
+  .score-popover__link svg { width: 12px; height: 12px; }
 
   .reference-status {
     display: inline-flex;
@@ -901,31 +1073,6 @@ const relatedProjects = allProjects
 
   .score-card { border-left: 3px solid var(--accent); }
   .github-card { border-left: 3px solid var(--accent); }
-
-  .score-row {
-    display: grid;
-    grid-template-columns: 26px 80px 1fr 36px;
-    align-items: center;
-    gap: 8px;
-    padding: 9px 8px;
-    border-bottom: 1px solid rgba(0,0,0,0.04);
-    font-size: 0.8rem;
-  }
-  html[data-theme='dark'] .score-row { border-bottom-color: rgba(255,255,255,0.06); }
-  .score-row:last-child { border-bottom: none; }
-  .score-row__dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 99px;
-    margin: 0 auto;
-  }
-  .score-row span:nth-child(2) { color: var(--muted); font-weight: 400; font-size: 0.8rem; }
-  .score-row__bar { height: 8px; border-radius: 99px; background: var(--surface-soft); overflow: hidden; }
-  .score-row__val { font-weight: 700; text-align: right; font-size: 0.84rem; }
-  .fill-activity { background: linear-gradient(90deg, #3b82f6, #60a5fa); height: 100%; border-radius: 99px; transition: width 0.5s; }
-  .fill-community { background: linear-gradient(90deg, #8b5cf6, #a78bfa); height: 100%; border-radius: 99px; transition: width 0.5s; }
-  .fill-quality { background: linear-gradient(90deg, #10b981, #34d399); height: 100%; border-radius: 99px; transition: width 0.5s; }
-  .fill-sustainability { background: linear-gradient(90deg, #f59e0b, #fbbf24); height: 100%; border-radius: 99px; transition: width 0.5s; }
 
   /* Related Projects Card */
   .related-card { border-left: 3px solid var(--ok); }
@@ -1481,6 +1628,8 @@ const relatedProjects = allProjects
       const circumference = 2 * Math.PI * 26; // r=26
       const filled = (overall / 100) * circumference;
       scoreArcEl.style.strokeDasharray = `${filled} ${circumference}`;
+      // Update popover total
+      document.querySelectorAll('[data-score-value-total]').forEach(el => el.textContent = overall);
     }
 
     document.querySelectorAll('[data-score-dimension]').forEach(el => {
@@ -1520,6 +1669,48 @@ const relatedProjects = allProjects
     }
   }, 500);
   setTimeout(() => clearInterval(check), 10000);
+
+  // Score popover toggle — position relative to button
+  document.addEventListener('click', (e) => {
+    const toggle = e.target.closest('[data-score-info-toggle]');
+    if (toggle) {
+      e.stopPropagation();
+      const popover = document.querySelector('[data-score-popover]');
+      if (!popover) return;
+      const isVisible = popover.classList.contains('score-popover--visible');
+      // Close first
+      popover.classList.remove('score-popover--visible');
+      if (!isVisible) {
+        // Temporarily show off-screen to measure height
+        popover.style.visibility = 'hidden';
+        popover.style.display = 'flex';
+        popover.style.top = '-9999px';
+        popover.style.left = '-9999px';
+        const popH = popover.offsetHeight;
+        const popW = 260; // fixed width
+        popover.style.display = '';
+        popover.style.visibility = '';
+
+        const rect = toggle.getBoundingClientRect();
+        const gap = 8;
+        // Prefer right-aligned with button
+        let top = rect.bottom + gap;
+        let left = rect.right - popW;
+        // Flip above if overflows bottom
+        if (top + popH > window.innerHeight) top = rect.top - popH - gap;
+        // Clamp to viewport
+        if (left < 8) left = 8;
+        if (left + popW > window.innerWidth - 8) left = window.innerWidth - popW - 8;
+        if (top < 8) top = 8;
+        popover.style.top = top + 'px';
+        popover.style.left = left + 'px';
+        popover.classList.add('score-popover--visible');
+      }
+      return;
+    }
+    // Close on outside click
+    document.querySelectorAll('.score-popover--visible').forEach(p => p.classList.remove('score-popover--visible'));
+  });
 
   // ── Share Card Logic ──
   (function() {
