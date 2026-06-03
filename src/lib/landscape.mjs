@@ -633,7 +633,6 @@ export function githubAvatarUrl(project, size = 96) {
 }
 
 export function projectIconUrl(project, size = 96) {
-  if (project.logo) return project.logo;
   const githubAvatar = githubAvatarUrl(project, size);
   if (githubAvatar) return githubAvatar;
   if (project.homepage) {

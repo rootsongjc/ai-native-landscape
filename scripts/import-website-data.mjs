@@ -66,7 +66,6 @@ for (const record of byRepo.values()) {
       zh: firstNonEmpty(existing.content?.zh, zh?.content, zh?.description, en?.content, en?.description),
       en: firstNonEmpty(existing.content?.en, en?.content, en?.description, zh?.content, zh?.description),
     },
-    logo: firstNonEmpty(existing.logo),
     author: firstNonEmpty(primary.author, fallback.author),
     ossDate: firstNonEmpty(primary.oss_date, fallback.oss_date),
     featured: Boolean(primary.featured || fallback.featured),
