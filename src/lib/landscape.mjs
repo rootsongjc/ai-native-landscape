@@ -283,6 +283,7 @@ export const UI = {
     copyLink: '复制链接',
     linkCopied: '链接已复制',
     generating: '生成中...',
+    relatedProjects: '相关项目',
   },
   en: {
     htmlLang: 'en',
@@ -545,6 +546,7 @@ export const UI = {
     copyLink: 'Copy Link',
     linkCopied: 'Link Copied',
     generating: 'Generating...',
+    relatedProjects: 'Related Projects',
   },
 };
 

@@ -12,7 +12,7 @@ import {
   ui,
 } from '../lib/landscape.mjs';
 
-const { lang = 'en', project } = Astro.props;
+const { lang = 'en', project, allProjects = [] } = Astro.props;
 const copy = ui(lang);
 const category = getCategories().find((item) => item.key === project.category);
 const description = projectDescription(project, lang);
@@ -21,6 +21,21 @@ const avatar = projectIconUrl(project, 128);
 const avatarLarge = projectIconUrl(project, 400);
 const repoSlug = project.repoSlug || '';
 const repoOwner = repoSlug.split('/')[0] || '';
+
+// Compute related projects: score by subCategory > category > shared tags
+const relatedProjects = allProjects
+  .filter(p => p.slug !== project.slug)
+  .map(p => {
+    let score = 0;
+    if (p.subCategory === project.subCategory) score += 50;
+    if (p.category === project.category) score += 20;
+    const sharedTags = (p.tags || []).filter(t => (project.tags || []).includes(t)).length;
+    score += sharedTags * 5;
+    return { project: p, score };
+  })
+  .sort((a, b) => b.score - a.score)
+  .slice(0, 3)
+  .map(r => r.project);
 ---
 
 <BaseLayout title={project.name} description={description} canonical={localizedPath(`/projects/${project.slug}/`, lang)} lang={lang}>
@@ -336,6 +351,36 @@ const repoOwner = repoSlug.split('/')[0] || '';
             <span class="score-row__val" data-score-repo={repoSlug} data-score-sustainability>--</span>
           </div>
         </div>
+
+        <!-- Related Projects -->
+        {relatedProjects.length > 0 && (
+          <div class="sidebar-card related-card">
+            <h3>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 3h5v5"/><path d="M21 3l-7 7"/><path d="M8 21H3v-5"/><path d="M3 21l7-7"/></svg>
+              {copy.relatedProjects}
+            </h3>
+            <div class="related-list">
+              {relatedProjects.map(rp => {
+                const rpIcon = projectIconUrl(rp, 64);
+                const rpDesc = projectDescription(rp, lang);
+                return (
+                  <a class="related-item" href={localizedPath(`/projects/${rp.slug}/`, lang)}>
+                    <div class="related-item__logo">
+                      {rpIcon ? (
+                        <img src={rpIcon} alt="" loading="lazy" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false" />
+                      ) : null}
+                      <span hidden={Boolean(rpIcon)}>{rp.name.slice(0, 2).toUpperCase()}</span>
+                    </div>
+                    <div class="related-item__info">
+                      <strong class="related-item__name">{rp.name}</strong>
+                      <span class="related-item__desc">{rpDesc}</span>
+                    </div>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        )}
       </aside>
     </section>
   </main>
@@ -881,6 +926,61 @@ const repoOwner = repoSlug.split('/')[0] || '';
   .fill-community { background: linear-gradient(90deg, #8b5cf6, #a78bfa); height: 100%; border-radius: 99px; transition: width 0.5s; }
   .fill-quality { background: linear-gradient(90deg, #10b981, #34d399); height: 100%; border-radius: 99px; transition: width 0.5s; }
   .fill-sustainability { background: linear-gradient(90deg, #f59e0b, #fbbf24); height: 100%; border-radius: 99px; transition: width 0.5s; }
+
+  /* Related Projects Card */
+  .related-card { border-left: 3px solid var(--ok); }
+  .related-list { display: flex; flex-direction: column; gap: 2px; }
+  .related-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.15s;
+  }
+  .related-item:hover {
+    background: var(--surface-soft);
+  }
+  .related-item__logo {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    background: var(--accent-soft);
+    border: 1px solid var(--border);
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: var(--accent);
+  }
+  .related-item__logo img { width: 100%; height: 100%; object-fit: cover; }
+  .related-item__info {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .related-item__name {
+    font-size: 0.84rem;
+    font-weight: 700;
+    color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .related-item__desc {
+    font-size: 0.74rem;
+    color: var(--muted);
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 
   /* Share Bar */
   .share-bar {
