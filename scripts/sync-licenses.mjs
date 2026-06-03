@@ -31,6 +31,60 @@ function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
 }
 
+function normalizeLicenseName(value) {
+  const text = String(value || '').trim();
+  if (!text) return null;
+
+  const normalized = text
+    .replace(/^the\s+/i, '')
+    .replace(/\s+license$/i, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  const lower = normalized.toLowerCase();
+  if (lower === 'view license') return 'Other';
+  if (lower === 'mit') return 'MIT';
+  if (lower === 'apache 2.0' || lower === 'apache-2.0' || lower === 'apache license 2.0') return 'Apache-2.0';
+  if (lower === 'other') return 'Other';
+
+  return normalized;
+}
+
+function extractLicenseFromRepoPage(html) {
+  if (!html) return null;
+
+  const patterns = [
+    /### License\s+([A-Za-z0-9.+\- ]+?)\s+license/i,
+    /This project is licensed under the\s+(?:\[[^\]]*\]\()?([A-Za-z0-9.+\- ]+?)(?:\s+License)?(?:\)|\.|\s|<)/i,
+    /\[License:\s*([A-Za-z0-9.+\- ]+?)\]/i,
+    /- \[([A-Za-z0-9.+\- ]+?) license\]\(https:\/\/github\.com\/[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+#/i,
+  ];
+
+  for (const pattern of patterns) {
+    const match = html.match(pattern);
+    const license = normalizeLicenseName(match?.[1]);
+    if (license) return license;
+  }
+
+  if (/### License\s+View license/i.test(html) || />View license</i.test(html)) {
+    return 'Other';
+  }
+
+  return null;
+}
+
+async function fetchGitHubLicenseFromPage(repoSlug) {
+  const res = await fetch(`https://github.com/${repoSlug}`, {
+    headers: {
+      'User-Agent': 'ai-native-landscape-sync',
+    },
+  });
+  if (!res.ok) return null;
+
+  const html = await res.text();
+  return extractLicenseFromRepoPage(html);
+}
+
 async function fetchGitHubLicense(repoSlug) {
   const headers = {
     Accept: 'application/vnd.github+json',
@@ -43,23 +97,22 @@ async function fetchGitHubLicense(repoSlug) {
   const res = await fetch(`https://api.github.com/repos/${repoSlug}`, { headers });
   if (res.status === 403) {
     const remaining = res.headers.get('x-ratelimit-remaining');
-    const resetAt = res.headers.get('x-ratelimit-reset');
-    if (remaining === '0' && resetAt) {
-      const waitMs = Math.max(0, Number(resetAt) * 1000 - Date.now()) + 1000;
-      console.warn(`  ⏳ Rate limited. Waiting ${Math.round(waitMs / 1000)}s until reset...`);
-      await sleep(waitMs);
-      return fetchGitHubLicense(repoSlug); // retry once
+    if (remaining === '0') {
+      return fetchGitHubLicenseFromPage(repoSlug);
     }
-    return null;
+    return fetchGitHubLicenseFromPage(repoSlug);
   }
-  if (!res.ok) return null;
+  if (!res.ok) return fetchGitHubLicenseFromPage(repoSlug);
 
   const data = await res.json();
   const license = data.license;
-  if (!license) return null;
-  if (license.spdx_id && license.spdx_id !== 'NOASSERTION') return license.spdx_id;
-  if (license.name) return license.name;
-  return null;
+  if (!license) return fetchGitHubLicenseFromPage(repoSlug);
+
+  const apiLicense = normalizeLicenseName(
+    license.spdx_id && license.spdx_id !== 'NOASSERTION' ? license.spdx_id : license.name,
+  );
+
+  return apiLicense || fetchGitHubLicenseFromPage(repoSlug);
 }
 
 function updateLicenseInFile(filePath, newLicense) {
