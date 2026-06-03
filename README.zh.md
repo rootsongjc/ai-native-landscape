@@ -60,7 +60,6 @@ ai-landscape/
 | `homepage` | | 项目官网 |
 | `license` | | 开源协议 |
 | `tags` | | 标签数组 |
-| `logo` | | Logo 图片 URL |
 | `author` | | 作者或组织 |
 | `ossDate` | | 开源日期 |
 | `status` | | 参考状态（`tracked`、`recommended` 等） |

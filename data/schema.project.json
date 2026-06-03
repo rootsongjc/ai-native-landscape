@@ -34,7 +34,6 @@
         "en": { "type": "string" }
       }
     },
-    "logo": { "type": "string" },
     "author": { "type": "string" },
     "ossDate": { "type": "string" },
     "featured": { "type": "boolean" },

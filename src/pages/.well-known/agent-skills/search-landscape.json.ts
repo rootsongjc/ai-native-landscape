@@ -4,7 +4,7 @@ export async function GET() {
     name: "search-landscape",
     version: "1.0.0",
     description:
-      "Search the AI Native Landscape project catalog by name, description, or category. Returns matching projects with metadata including category, description, homepage, and logo.",
+      "Search the AI Native Landscape project catalog by name, description, or category. Returns matching projects with metadata including category, description, and homepage.",
     input: {
       type: "object",
       properties: {
@@ -36,7 +36,6 @@ export async function GET() {
               description: { type: "string" },
               category: { type: "string" },
               homepage_url: { type: "string" },
-              logo: { type: "string" },
             },
           },
         },

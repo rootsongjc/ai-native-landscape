@@ -60,7 +60,6 @@ Each project is a pair of Markdown files with YAML frontmatter:
 | `homepage` | | Project website URL |
 | `license` | | Open source license |
 | `tags` | | String array of tags |
-| `logo` | | Logo image URL |
 | `author` | | Author or organization |
 | `ossDate` | | Date open-sourced |
 | `status` | | Reference status (`tracked`, `recommended`, etc.) |
