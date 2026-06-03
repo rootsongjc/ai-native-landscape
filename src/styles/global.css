@@ -76,7 +76,8 @@ summary {
 main,
 .site-header,
 .site-footer {
-  width: min(1380px, calc(100% - 32px));
+  width: calc(100% - 32px);
+  max-width: 1380px;
   margin: 0 auto;
 }
 
@@ -2056,7 +2057,8 @@ meter {
   main,
   .site-header,
   .site-footer {
-    width: min(100%, calc(100% - 18px));
+    width: calc(100% - 18px);
+    max-width: none;
   }
 
   .site-header {
@@ -2398,11 +2400,12 @@ meter {
   main,
   .site-header,
   .site-footer {
-    width: min(100%, calc(100% - 16px));
+    width: calc(100% - 16px);
+    max-width: none;
   }
 
   .site-footer {
-    width: min(100%, calc(100% - 24px));
+    width: calc(100% - 24px);
   }
 
   .site-header {

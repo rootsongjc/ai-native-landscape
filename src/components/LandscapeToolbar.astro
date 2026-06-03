@@ -227,9 +227,15 @@ const copy = ui(lang);
 
   @media (max-width: 720px) {
     .landscape-toolbar {
-      padding: 6px 8px;
-      gap: 6px;
+      padding: 8px;
+      gap: 0;
       flex-wrap: nowrap;
+    }
+
+    .landscape-toolbar__select {
+      flex: 1 1 100%;
+      width: 100%;
+      min-width: 0;
     }
 
     .landscape-toolbar__divider,
@@ -247,14 +253,15 @@ const copy = ui(lang);
 
   @media (max-width: 480px) {
     .landscape-toolbar {
-      padding: 5px 6px;
-      gap: 4px;
+      padding: 8px;
     }
 
     .landscape-toolbar__select {
-      height: 30px;
-      font-size: 0.76rem;
-      padding: 0 18px 0 6px;
+      height: 42px;
+      font-size: 0.82rem;
+      padding: 0 30px 0 10px;
+      border-radius: 12px;
+      background-position: right 10px center;
     }
   }
 </style>
