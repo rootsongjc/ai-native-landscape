@@ -3,7 +3,7 @@ name: LangChain Go
 slug: langchaingo
 homepage: https://tmc.github.io/langchaongo/
 repo: https://github.com/tmc/langchaongo
-license: {"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/repos#get-a-repository","status":"404"}
+license: Unknown
 category: coding-devtools
 subCategory: sdk-frameworks
 tags:
