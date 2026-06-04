@@ -4,8 +4,8 @@ slug: roll
 homepage: https://alibaba.github.io/ROLL/
 repo: https://github.com/alibaba/roll
 license: Unknown
-category: rag-knowledge
-subCategory: data-connectors
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - Framework
 description: 用于大规模强化学习优化与训练流水线的框架，支持多后端与 Agentic 训练。

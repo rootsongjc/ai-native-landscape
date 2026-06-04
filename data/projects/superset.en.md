@@ -5,7 +5,7 @@ homepage: https://superset.apache.org/
 repo: https://github.com/apache/superset
 license: Unknown
 category: platform-infra
-subCategory: deployment-operations
+subCategory: data-platforms
 tags:
   - Application
   - Data

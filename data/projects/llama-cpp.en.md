@@ -4,8 +4,8 @@ slug: llama-cpp
 homepage: https://huggingface.co/models?library=gguf
 repo: https://github.com/ggml-org/llama.cpp
 license: Unknown
-category: coding-devtools
-subCategory: ide-cli-tools
+category: inference-serving
+subCategory: inference-runtimes
 tags:
   - CLI
   - Dev Tools

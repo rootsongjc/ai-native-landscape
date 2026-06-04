@@ -4,8 +4,8 @@ slug: transformerlab-app
 homepage: https://transformerlab.ai/docs/intro
 repo: https://github.com/transformerlab/transformerlab-app
 license: Unknown
-category: platform-infra
-subCategory: deployment-operations
+category: training-optimization
+subCategory: finetuning-alignment
 tags:
   - Dev Tools
   - ML Platform

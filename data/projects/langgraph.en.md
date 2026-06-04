@@ -4,8 +4,8 @@ slug: langgraph
 homepage: https://langchain-ai.github.io/langgraph/
 repo: https://github.com/langchain-ai/langgraph
 license: Unknown
-category: applications-products
-subCategory: workflow-automation
+category: agents
+subCategory: agent-frameworks
 tags:
   - Workflow
 description: A library for building stateful, multi-agent applications, creating complex AI workflows based on LangChain.

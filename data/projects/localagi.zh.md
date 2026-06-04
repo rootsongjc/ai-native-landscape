@@ -4,8 +4,8 @@ slug: localagi
 homepage: https://localai.io
 repo: https://github.com/mudler/localagi
 license: Unknown
-category: inference-serving
-subCategory: llm-routing-gateways
+category: agents
+subCategory: agent-frameworks
 tags:
   - AI Gateways
   - Agents

@@ -4,8 +4,8 @@ slug: tilelang
 homepage: https://tilelang.com/
 repo: https://github.com/tile-ai/tilelang
 license: Unknown
-category: training-optimization
-subCategory: evaluation-benchmarks
+category: inference-serving
+subCategory: gpu-acceleration
 tags:
   - Benchmark
   - Framework

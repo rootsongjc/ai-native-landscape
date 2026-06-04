@@ -4,8 +4,8 @@ slug: obot
 homepage: https://obot.ai/
 repo: https://github.com/obot-platform/obot
 license: Unknown
-category: inference-serving
-subCategory: llm-routing-gateways
+category: applications-products
+subCategory: chat-interfaces
 tags:
   - AI Gateway
 description: 开源的 MCP 网关与 AI 平台，支持自托管或云端部署，提供聊天、管理与审计功能。

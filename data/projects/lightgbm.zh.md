@@ -4,8 +4,8 @@ slug: lightgbm
 homepage: https://lightgbm.readthedocs.io/
 repo: https://github.com/microsoft/lightgbm
 license: Other
-category: inference-serving
-subCategory: gpu-acceleration
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - Utility
 description: 高效的梯度提升树（GBDT）框架，支持分布式训练与 GPU 加速，广泛应用于排序、分类和大规模数据场景。

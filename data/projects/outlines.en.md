@@ -4,8 +4,8 @@ slug: outlines
 homepage: https://dottxt-ai.github.io/outlines/
 repo: https://github.com/dottxt-ai/outlines
 license: Unknown
-category: coding-devtools
-subCategory: sdk-frameworks
+category: inference-serving
+subCategory: inference-runtimes
 tags:
   - Dev Tools
   - Utility

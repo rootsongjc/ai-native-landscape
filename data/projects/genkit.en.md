@@ -4,8 +4,8 @@ slug: genkit
 homepage: https://genkit.dev/
 repo: https://github.com/firebase/genkit
 license: Apache-2.0
-category: rag-knowledge
-subCategory: retrieval-indexing
+category: coding-devtools
+subCategory: sdk-frameworks
 tags:
   - AI Agent
   - Dev Tools

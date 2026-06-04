@@ -4,8 +4,8 @@ slug: leann
 homepage: null
 repo: https://github.com/yichuan-w/leann
 license: Unknown
-category: coding-devtools
-subCategory: mcp-tools
+category: rag-knowledge
+subCategory: retrieval-indexing
 tags:
   - MCP
   - RAG

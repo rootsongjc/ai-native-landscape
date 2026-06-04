@@ -4,8 +4,8 @@ slug: mcp
 homepage: https://awslabs.github.io/mcp/
 repo: https://github.com/awslabs/mcp
 license: Apache-2.0
-category: agents
-subCategory: agent-frameworks
+category: coding-devtools
+subCategory: mcp-tools
 tags:
   - Agent Framework
   - Dev Tools

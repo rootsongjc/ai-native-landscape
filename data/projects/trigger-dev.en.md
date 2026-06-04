@@ -4,8 +4,8 @@ slug: trigger-dev
 homepage: https://trigger.dev/docs
 repo: https://github.com/triggerdotdev/trigger.dev
 license: Unknown
-category: applications-products
-subCategory: workflow-automation
+category: agents
+subCategory: agent-orchestration
 tags:
   - Workflow
 description: >-

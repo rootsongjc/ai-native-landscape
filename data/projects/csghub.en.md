@@ -4,8 +4,8 @@ slug: csghub
 homepage: https://opencsg.com
 repo: https://github.com/opencsgs/csghub
 license: Apache-2.0
-category: inference-serving
-subCategory: llm-routing-gateways
+category: platform-infra
+subCategory: deployment-operations
 tags:
   - AI Gateway
   - Deployment

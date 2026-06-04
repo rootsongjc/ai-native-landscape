@@ -4,8 +4,8 @@ slug: sglang
 homepage: https://docs.sglang.ai/
 repo: https://github.com/sgl-project/sglang
 license: Unknown
-category: platform-infra
-subCategory: deployment-operations
+category: inference-serving
+subCategory: inference-runtimes
 tags:
   - Deployment
   - Dev Tools

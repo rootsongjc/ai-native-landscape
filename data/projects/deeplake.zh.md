@@ -4,8 +4,8 @@ slug: deeplake
 homepage: https://docs.deeplake.ai/
 repo: https://github.com/activeloopai/deeplake
 license: Apache-2.0
-category: platform-infra
-subCategory: data-platforms
+category: rag-knowledge
+subCategory: vector-databases
 tags:
   - Data
   - Database

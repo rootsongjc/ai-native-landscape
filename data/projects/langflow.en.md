@@ -4,8 +4,8 @@ slug: langflow
 homepage: https://langflow.org/
 repo: https://github.com/langflow-ai/langflow
 license: Unknown
-category: rag-knowledge
-subCategory: vector-databases
+category: applications-products
+subCategory: low-code-builders
 tags:
   - Agents
   - Dev Tools

@@ -4,8 +4,8 @@ slug: faiss
 homepage: https://faiss.ai/
 repo: https://github.com/facebookresearch/faiss
 license: MIT
-category: platform-infra
-subCategory: data-platforms
+category: rag-knowledge
+subCategory: vector-databases
 tags:
   - Data
   - Database

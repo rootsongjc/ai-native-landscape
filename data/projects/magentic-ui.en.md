@@ -4,8 +4,8 @@ slug: magentic-ui
 homepage: null
 repo: https://github.com/microsoft/magentic-ui
 license: Unknown
-category: applications-products
-subCategory: chat-interfaces
+category: coding-devtools
+subCategory: browser-automation
 tags:
   - AI Agent
 description: >-

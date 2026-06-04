@@ -4,8 +4,8 @@ slug: crawl4ai
 homepage: https://crawl4ai.com
 repo: https://github.com/unclecode/crawl4ai
 license: Apache-2.0
-category: platform-infra
-subCategory: deployment-operations
+category: rag-knowledge
+subCategory: data-connectors
 tags:
   - Dev Tools
 description: >-

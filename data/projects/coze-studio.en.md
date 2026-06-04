@@ -4,8 +4,8 @@ slug: coze-studio
 homepage: https://www.coze.com/
 repo: https://github.com/coze-dev/coze-studio
 license: Unknown
-category: coding-devtools
-subCategory: sdk-frameworks
+category: agents
+subCategory: agent-frameworks
 tags:
   - AI Agent
   - Dev Tools

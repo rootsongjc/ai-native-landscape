@@ -5,7 +5,7 @@ homepage: https://projectdiscovery.io/open-source
 repo: https://github.com/projectdiscovery/katana
 license: Unknown
 category: coding-devtools
-subCategory: ide-cli-tools
+subCategory: developer-utilities
 tags:
   - CLI
 description: >-

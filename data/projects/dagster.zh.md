@@ -4,8 +4,8 @@ slug: dagster
 homepage: https://dagster.io/
 repo: https://github.com/dagster-io/dagster
 license: Apache-2.0
-category: applications-products
-subCategory: productivity-tools
+category: platform-infra
+subCategory: data-platforms
 tags:
   - Application
   - Dev Tools

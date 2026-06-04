@@ -4,8 +4,8 @@ slug: keploy
 homepage: https://keploy.io/
 repo: https://github.com/keploy/keploy
 license: Unknown
-category: rag-knowledge
-subCategory: retrieval-indexing
+category: training-optimization
+subCategory: evaluation-benchmarks
 tags:
   - Dev Tools
   - RAG

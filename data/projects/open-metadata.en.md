@@ -4,8 +4,8 @@ slug: open-metadata
 homepage: https://open-metadata.org/
 repo: https://github.com/open-metadata/openmetadata
 license: Unknown
-category: applications-products
-subCategory: productivity-tools
+category: rag-knowledge
+subCategory: data-connectors
 tags:
   - Application
   - Data

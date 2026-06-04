@@ -4,8 +4,8 @@ slug: nlweb
 homepage: null
 repo: https://github.com/nlweb-ai/nlweb
 license: Unknown
-category: coding-devtools
-subCategory: mcp-tools
+category: applications-products
+subCategory: chat-interfaces
 tags:
   - Dev Tools
   - Utility

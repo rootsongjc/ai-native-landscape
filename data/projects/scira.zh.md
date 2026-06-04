@@ -4,8 +4,8 @@ slug: scira
 homepage: https://scira.ai
 repo: https://github.com/zaidmukaddam/scira
 license: AGPLv3
-category: rag-knowledge
-subCategory: retrieval-indexing
+category: applications-products
+subCategory: chat-interfaces
 tags:
   - Search
 description: 一款简洁的 AI 驱动搜索引擎，提供基于网络的信息检索并带来源引注，作为开源的 Perplexity 替代方案。

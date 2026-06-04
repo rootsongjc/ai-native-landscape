@@ -4,8 +4,8 @@ slug: vllm
 homepage: https://docs.vllm.ai/
 repo: https://github.com/vllm-project/vllm
 license: Apache-2.0
-category: platform-infra
-subCategory: deployment-operations
+category: inference-serving
+subCategory: model-serving
 tags:
   - Deployment
   - Dev Tools

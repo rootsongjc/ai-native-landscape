@@ -5,7 +5,7 @@ homepage: https://huggingface.co/blog/introduction-to-ggml
 repo: https://github.com/ggml-org/ggml
 license: MIT
 category: inference-serving
-subCategory: inference-runtimes
+subCategory: edge-local-inference
 tags:
   - Inference
 description: ggml 是一个面向机器学习的轻量级张量库，适配多种硬件与量化方案。

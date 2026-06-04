@@ -5,7 +5,7 @@ homepage: https://spacy.io
 repo: https://github.com/explosion/spacy
 license: Unknown
 category: rag-knowledge
-subCategory: data-connectors
+subCategory: document-processing
 tags:
   - Dev Tools
 description: >-

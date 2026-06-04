@@ -4,8 +4,8 @@ slug: newton
 homepage: https://newton-physics.github.io/newton/
 repo: https://github.com/newton-physics/newton
 license: Unknown
-category: inference-serving
-subCategory: inference-runtimes
+category: training-optimization
+subCategory: optimization-simulation
 tags:
   - Framework
   - Simulator

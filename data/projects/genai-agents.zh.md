@@ -4,8 +4,8 @@ slug: genai-agents
 homepage: null
 repo: https://github.com/nirdiamant/genai_agents
 license: Other
-category: models-modalities
-subCategory: foundation-models
+category: agents
+subCategory: agent-frameworks
 tags:
   - AI Agent
   - LLM

@@ -4,8 +4,8 @@ slug: monty
 homepage: https://pypi.org/project/pydantic-monty/
 repo: https://github.com/pydantic/monty
 license: Unknown
-category: agents
-subCategory: agent-frameworks
+category: inference-serving
+subCategory: sandboxes-runtimes
 tags:
   - Agent Framework
   - Dev Tools

@@ -4,8 +4,8 @@ slug: shapash
 homepage: https://maif.github.io/shapash/
 repo: https://github.com/maif/shapash
 license: Unknown
-category: applications-products
-subCategory: productivity-tools
+category: training-optimization
+subCategory: evaluation-benchmarks
 tags:
   - Application
   - Dev Tools

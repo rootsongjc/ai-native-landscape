@@ -4,8 +4,8 @@ slug: transformer-engine
 homepage: https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/index.html
 repo: https://github.com/nvidia/transformerengine
 license: Unknown
-category: platform-infra
-subCategory: deployment-operations
+category: inference-serving
+subCategory: gpu-acceleration
 tags:
   - ML Platform
   - Optimization

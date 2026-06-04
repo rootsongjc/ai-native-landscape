@@ -4,8 +4,8 @@ slug: picoclaw
 homepage: null
 repo: https://github.com/sipeed/picoclaw
 license: Unknown
-category: coding-devtools
-subCategory: ide-cli-tools
+category: agents
+subCategory: agent-frameworks
 tags:
   - Application
   - CLI

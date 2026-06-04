@@ -4,8 +4,8 @@ slug: dspy
 homepage: https://dspy.ai/
 repo: https://github.com/stanfordnlp/dspy
 license: MIT
-category: rag-knowledge
-subCategory: data-connectors
+category: agents
+subCategory: agent-frameworks
 tags:
   - Dev Tools
 description: DSPy 是一个面向将基础模型编程化（而非仅靠提示）的开源框架，便于构建组合化、可自我优化的 AI 流水线。

@@ -4,8 +4,8 @@ slug: next-ai-draw-io
 homepage: https://next-ai-drawio.jiang.jp/
 repo: https://github.com/dayuanjiang/next-ai-draw-io
 license: Unknown
-category: models-modalities
-subCategory: multimodal
+category: applications-products
+subCategory: productivity-tools
 tags:
   - Application
   - Multimodal

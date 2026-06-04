@@ -4,8 +4,8 @@ slug: toolhive
 homepage: https://toolhive.dev
 repo: https://github.com/stacklok/toolhive
 license: Unknown
-category: inference-serving
-subCategory: llm-routing-gateways
+category: coding-devtools
+subCategory: mcp-tools
 tags:
   - AI Gateway
   - CLI

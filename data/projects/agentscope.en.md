@@ -4,8 +4,8 @@ slug: agentscope
 homepage: https://doc.agentscope.io/
 repo: https://github.com/modelscope/agentscope
 license: MIT
-category: models-modalities
-subCategory: foundation-models
+category: agents
+subCategory: agent-frameworks
 tags:
   - AI Agent
   - LLM

@@ -4,8 +4,8 @@ slug: litebox
 homepage: https://aka.ms/litebox
 repo: https://github.com/microsoft/litebox
 license: Unknown
-category: training-optimization
-subCategory: safety-guardrails
+category: inference-serving
+subCategory: sandboxes-runtimes
 tags:
   - Dev Tools
   - Runtime

@@ -4,8 +4,8 @@ slug: pydantic-ai
 homepage: null
 repo: https://github.com/pydantic/pydantic-ai
 license: Unknown
-category: models-modalities
-subCategory: foundation-models
+category: agents
+subCategory: agent-frameworks
 tags:
   - AI Agent
   - Dev Tools

@@ -4,8 +4,8 @@ slug: adk-python
 homepage: https://google.github.io/adk-docs/
 repo: https://github.com/google/adk-python
 license: Apache-2.0
-category: platform-infra
-subCategory: deployment-operations
+category: agents
+subCategory: agent-frameworks
 tags:
   - AI Agent
   - Deployment

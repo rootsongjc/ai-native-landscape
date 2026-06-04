@@ -4,8 +4,8 @@ slug: llama-factory
 homepage: https://llamafactory.readthedocs.io/
 repo: https://github.com/hiyouga/llama-factory
 license: Unknown
-category: models-modalities
-subCategory: foundation-models
+category: training-optimization
+subCategory: finetuning-alignment
 tags:
   - Data
   - LLM

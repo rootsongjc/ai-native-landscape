@@ -4,8 +4,8 @@ slug: verl
 homepage: https://verl.readthedocs.io/en/latest/
 repo: https://github.com/volcengine/verl
 license: Unknown
-category: platform-infra
-subCategory: data-platforms
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - Data
   - Dev Tools

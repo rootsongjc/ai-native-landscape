@@ -4,8 +4,8 @@ slug: data-prep-kit
 homepage: https://data-prep-kit.github.io/data-prep-kit/
 repo: https://github.com/data-prep-kit/data-prep-kit
 license: MIT
-category: models-modalities
-subCategory: foundation-models
+category: rag-knowledge
+subCategory: data-connectors
 tags:
   - Data
 description: Data Prep Kit accelerates unstructured data preparation for LLM applications.

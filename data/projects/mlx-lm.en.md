@@ -4,8 +4,8 @@ slug: mlx-lm
 homepage: null
 repo: https://github.com/ml-explore/mlx-lm
 license: Unknown
-category: models-modalities
-subCategory: foundation-models
+category: inference-serving
+subCategory: inference-runtimes
 tags:
   - LLM
   - Utility

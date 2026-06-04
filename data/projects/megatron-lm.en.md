@@ -4,8 +4,8 @@ slug: megatron-lm
 homepage: https://developer.nvidia.com/
 repo: https://github.com/nvidia/megatron-lm
 license: Unknown
-category: platform-infra
-subCategory: deployment-operations
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - ML Platform
 description: Reference implementation from NVIDIA for large-scale model training and inference with distributed optimizations.

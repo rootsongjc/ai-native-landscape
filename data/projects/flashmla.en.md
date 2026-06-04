@@ -4,8 +4,8 @@ slug: flashmla
 homepage: null
 repo: https://github.com/deepseek-ai/flashmla
 license: MIT
-category: rag-knowledge
-subCategory: agent-memory-context
+category: inference-serving
+subCategory: gpu-acceleration
 tags:
   - Framework
 description: >-

@@ -4,8 +4,8 @@ slug: free-llm-api-resources
 homepage: null
 repo: https://github.com/cheahjs/free-llm-api-resources
 license: Unknown
-category: models-modalities
-subCategory: foundation-models
+category: coding-devtools
+subCategory: developer-utilities
 tags:
   - LLM
   - Models

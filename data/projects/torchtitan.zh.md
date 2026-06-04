@@ -4,8 +4,8 @@ slug: torchtitan
 homepage: https://pytorch.org/
 repo: https://github.com/pytorch/torchtitan
 license: Unknown
-category: platform-infra
-subCategory: deployment-operations
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - ML Platform
 description: 面向生成式模型预训练与分布式优化的 PyTorch 平台参考实现。

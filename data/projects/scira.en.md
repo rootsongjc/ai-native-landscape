@@ -4,8 +4,8 @@ slug: scira
 homepage: https://scira.ai
 repo: https://github.com/zaidmukaddam/scira
 license: AGPLv3
-category: rag-knowledge
-subCategory: retrieval-indexing
+category: applications-products
+subCategory: chat-interfaces
 tags:
   - Search
 description: >-

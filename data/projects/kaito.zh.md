@@ -4,8 +4,8 @@ slug: kaito
 homepage: https://kaito-project.github.io/kaito/docs/
 repo: https://github.com/kaito-project/kaito
 license: Unknown
-category: rag-knowledge
-subCategory: retrieval-indexing
+category: inference-serving
+subCategory: model-serving
 tags:
   - AI
   - Automation

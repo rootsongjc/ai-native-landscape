@@ -4,8 +4,8 @@ slug: trigger-dev
 homepage: https://trigger.dev/docs
 repo: https://github.com/triggerdotdev/trigger.dev
 license: Unknown
-category: applications-products
-subCategory: workflow-automation
+category: agents
+subCategory: agent-orchestration
 tags:
   - Workflow
 description: 用于构建与部署可扩展 AI Agent 与工作流的开源平台，提供任务持久化、重试、可观测性与弹性伸缩能力。

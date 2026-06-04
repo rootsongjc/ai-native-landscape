@@ -5,7 +5,7 @@ homepage: https://huggingface.co/blog/introduction-to-ggml
 repo: https://github.com/ggml-org/ggml
 license: MIT
 category: inference-serving
-subCategory: inference-runtimes
+subCategory: edge-local-inference
 tags:
   - Inference
 description: ggml is a lightweight tensor library for machine learning optimized for efficient model inference across hardware.

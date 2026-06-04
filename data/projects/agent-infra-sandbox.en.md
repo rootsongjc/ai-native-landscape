@@ -4,8 +4,8 @@ slug: agent-infra-sandbox
 homepage: https://sandbox.agent-infra.com
 repo: https://github.com/agent-infra/sandbox
 license: Apache-2.0
-category: coding-devtools
-subCategory: mcp-tools
+category: inference-serving
+subCategory: sandboxes-runtimes
 tags:
   - Agents
   - MCP

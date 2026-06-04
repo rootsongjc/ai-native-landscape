@@ -4,8 +4,8 @@ slug: tabby
 homepage: https://tabby.tabbyml.com
 repo: https://github.com/tabbyml/tabby
 license: Unknown
-category: platform-infra
-subCategory: deployment-operations
+category: coding-devtools
+subCategory: coding-agents
 tags:
   - Dev Tools
 description: >-

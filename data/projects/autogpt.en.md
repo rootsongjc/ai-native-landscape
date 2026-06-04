@@ -4,8 +4,8 @@ slug: autogpt
 homepage: https://agpt.co/
 repo: https://github.com/significant-gravitas/autogpt
 license: MIT
-category: platform-infra
-subCategory: deployment-operations
+category: agents
+subCategory: agent-frameworks
 tags:
   - AI Agent
 description: AutoGPT — a platform to build, deploy and run continuous AI agents, supporting self-hosting and platform deployments.

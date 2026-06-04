@@ -4,8 +4,8 @@ slug: pandas
 homepage: https://pandas.pydata.org
 repo: https://github.com/pandas-dev/pandas
 license: Unknown
-category: coding-devtools
-subCategory: developer-utilities
+category: rag-knowledge
+subCategory: data-connectors
 tags:
   - Data Processing
   - Python

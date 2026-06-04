@@ -5,7 +5,7 @@ homepage: https://pytorch.org/torchtune/main/
 repo: https://github.com/meta-pytorch/torchtune
 license: Unknown
 category: training-optimization
-subCategory: evaluation-benchmarks
+subCategory: finetuning-alignment
 tags:
   - Benchmark
 description: >-

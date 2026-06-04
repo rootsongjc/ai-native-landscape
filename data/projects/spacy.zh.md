@@ -5,7 +5,7 @@ homepage: https://spacy.io
 repo: https://github.com/explosion/spacy
 license: Unknown
 category: rag-knowledge
-subCategory: data-connectors
+subCategory: document-processing
 tags:
   - Dev Tools
 description: 高性能、面向生产的开源自然语言处理库，提供预训练流水线、训练系统与丰富的语言组件。

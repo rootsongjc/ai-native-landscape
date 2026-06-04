@@ -4,8 +4,8 @@ slug: web-llm
 homepage: https://webllm.mlc.ai/
 repo: https://github.com/mlc-ai/web-llm
 license: Unknown
-category: platform-infra
-subCategory: deployment-operations
+category: inference-serving
+subCategory: edge-local-inference
 tags:
   - Deployment
   - LLM

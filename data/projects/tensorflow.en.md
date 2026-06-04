@@ -4,8 +4,8 @@ slug: tensorflow
 homepage: https://tensorflow.org
 repo: https://github.com/tensorflow/tensorflow
 license: Unknown
-category: platform-infra
-subCategory: data-platforms
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - Data
   - Dev Tools

@@ -4,8 +4,8 @@ slug: local-deep-researcher
 homepage: null
 repo: https://github.com/langchain-ai/local-deep-researcher
 license: Unknown
-category: models-modalities
-subCategory: foundation-models
+category: agents
+subCategory: agent-frameworks
 tags:
   - Utility
 description: >-

@@ -4,8 +4,8 @@ slug: pipecat
 homepage: https://docs.pipecat.ai/
 repo: https://github.com/pipecat-ai/pipecat
 license: Unknown
-category: models-modalities
-subCategory: audio-speech
+category: agents
+subCategory: agent-frameworks
 tags:
   - AI Agent
   - TTS

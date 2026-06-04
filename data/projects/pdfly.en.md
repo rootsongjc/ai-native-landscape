@@ -4,8 +4,8 @@ slug: pdfly
 homepage: https://pdfly.readthedocs.io
 repo: https://github.com/py-pdf/pdfly
 license: Unknown
-category: coding-devtools
-subCategory: ide-cli-tools
+category: rag-knowledge
+subCategory: document-processing
 tags:
   - Application
   - CLI

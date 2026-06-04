@@ -5,7 +5,7 @@ homepage: https://projectdiscovery.io/open-source
 repo: https://github.com/projectdiscovery/katana
 license: Unknown
 category: coding-devtools
-subCategory: ide-cli-tools
+subCategory: developer-utilities
 tags:
   - CLI
 description: 一款由 ProjectDiscovery 开发的开源爬虫与蜘蛛框架，侧重高并发、模块化与与安全工具链集成。

@@ -4,8 +4,8 @@ slug: magentic-ui
 homepage: null
 repo: https://github.com/microsoft/magentic-ui
 license: Unknown
-category: applications-products
-subCategory: chat-interfaces
+category: coding-devtools
+subCategory: browser-automation
 tags:
   - AI Agent
 description: 以人为本的网页智能体研究原型，可在网页上浏览和执行操作、生成和执行代码，以及生成和分析文件。

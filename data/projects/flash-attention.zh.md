@@ -4,8 +4,8 @@ slug: flash-attention
 homepage: null
 repo: https://github.com/dao-ailab/flash-attention
 license: BSD-3-Clause
-category: rag-knowledge
-subCategory: agent-memory-context
+category: inference-serving
+subCategory: inference-runtimes
 tags:
   - Framework
 description: 高性能且节省内存的精确注意力实现，专为大规模 Transformer 的训练与推理场景优化。

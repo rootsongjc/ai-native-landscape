@@ -4,8 +4,8 @@ slug: pixeltable
 homepage: https://docs.pixeltable.com
 repo: https://github.com/pixeltable/pixeltable
 license: Unknown
-category: models-modalities
-subCategory: multimodal
+category: rag-knowledge
+subCategory: data-connectors
 tags:
   - Data
   - Dev Tools

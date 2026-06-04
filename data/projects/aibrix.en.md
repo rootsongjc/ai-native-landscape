@@ -4,8 +4,8 @@ slug: aibrix
 homepage: https://aibrix.readthedocs.io/latest/
 repo: https://github.com/vllm-project/aibrix
 license: Apache-2.0
-category: coding-devtools
-subCategory: sdk-frameworks
+category: inference-serving
+subCategory: model-serving
 tags:
   - Middleware
   - Orchestration

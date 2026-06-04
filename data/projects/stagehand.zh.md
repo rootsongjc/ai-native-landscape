@@ -5,7 +5,7 @@ homepage: https://stagehand.dev
 repo: https://github.com/browserbase/stagehand
 license: Unknown
 category: coding-devtools
-subCategory: mcp-tools
+subCategory: browser-automation
 tags:
   - AI Agent
   - MCP

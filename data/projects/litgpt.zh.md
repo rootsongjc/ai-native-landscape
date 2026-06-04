@@ -4,8 +4,8 @@ slug: litgpt
 homepage: https://lightning.ai/
 repo: https://github.com/lightning-ai/litgpt
 license: Unknown
-category: platform-infra
-subCategory: deployment-operations
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - ML Platform
 description: 高性能、面向工程的 LLM 工具链，提供从训练到部署的端到端配方与实用教程。

@@ -4,8 +4,8 @@ slug: openshell
 homepage: null
 repo: https://github.com/nvidia/openshell
 license: Unknown
-category: training-optimization
-subCategory: safety-guardrails
+category: inference-serving
+subCategory: sandboxes-runtimes
 tags:
   - Agents
   - CLI

@@ -4,8 +4,8 @@ slug: skypilot
 homepage: https://skypilot.ai/
 repo: https://github.com/skypilot-org/skypilot
 license: Unknown
-category: applications-products
-subCategory: workflow-automation
+category: training-optimization
+subCategory: experiment-mlops
 tags:
   - Dev Tools
   - Workflow

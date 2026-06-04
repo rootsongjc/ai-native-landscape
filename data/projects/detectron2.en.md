@@ -4,8 +4,8 @@ slug: detectron2
 homepage: https://detectron2.readthedocs.io/
 repo: https://github.com/facebookresearch/detectron2
 license: Apache-2.0
-category: rag-knowledge
-subCategory: agent-memory-context
+category: models-modalities
+subCategory: model-toolkits
 tags:
   - Dev Tools
 description: >-

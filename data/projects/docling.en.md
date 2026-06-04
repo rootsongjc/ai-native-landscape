@@ -4,8 +4,8 @@ slug: docling
 homepage: https://docling-project.github.io/docling/
 repo: https://github.com/docling-project/docling
 license: MIT
-category: coding-devtools
-subCategory: ide-cli-tools
+category: rag-knowledge
+subCategory: document-processing
 tags:
   - Utility
 description: >-

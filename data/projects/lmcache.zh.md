@@ -4,8 +4,8 @@ slug: lmcache
 homepage: https://lmcache.ai/
 repo: https://github.com/lmcache/lmcache
 license: Unknown
-category: rag-knowledge
-subCategory: agent-memory-context
+category: inference-serving
+subCategory: model-serving
 tags:
   - Utility
 description: 面向 LLM 服务的高性能 KV 缓存层，旨在降低首次响应时间并提升吞吐量，特别适用于长上下文场景和多轮对话。

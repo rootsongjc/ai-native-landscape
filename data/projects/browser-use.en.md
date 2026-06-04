@@ -4,8 +4,8 @@ slug: browser-use
 homepage: https://browser-use.com/
 repo: https://github.com/browser-use/browser-use
 license: MIT
-category: applications-products
-subCategory: workflow-automation
+category: coding-devtools
+subCategory: browser-automation
 tags:
   - AI Agent
   - Dev Tools

@@ -4,8 +4,8 @@ slug: docling
 homepage: https://docling-project.github.io/docling/
 repo: https://github.com/docling-project/docling
 license: MIT
-category: coding-devtools
-subCategory: ide-cli-tools
+category: rag-knowledge
+subCategory: document-processing
 tags:
   - Utility
 description: 面向通用文档理解与转换的开源框架，支持 PDF、DOCX、图片、音频等多种格式的解析与结构化输出。

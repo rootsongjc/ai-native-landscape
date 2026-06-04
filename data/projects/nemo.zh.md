@@ -4,8 +4,8 @@ slug: nemo
 homepage: https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/main/
 repo: https://github.com/nvidia/nemo
 license: Unknown
-category: models-modalities
-subCategory: multimodal
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - Framework
 description: NVIDIA 的 NeMo 框架，覆盖语音、语音合成、多模态和大语言模型训练与微调。

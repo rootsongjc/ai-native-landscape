@@ -4,8 +4,8 @@ slug: deepspeed
 homepage: https://www.deepspeed.ai/
 repo: https://github.com/deepspeedai/deepspeed
 license: Apache-2.0
-category: inference-serving
-subCategory: inference-runtimes
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - Inference
   - ML Platform

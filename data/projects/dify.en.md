@@ -4,8 +4,8 @@ slug: dify
 homepage: https://dify.ai/
 repo: https://github.com/langgenius/dify
 license: Apache-2.0
-category: platform-infra
-subCategory: deployment-operations
+category: applications-products
+subCategory: low-code-builders
 tags:
   - Deployment
   - Dev Tools

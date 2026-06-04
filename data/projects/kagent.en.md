@@ -4,8 +4,8 @@ slug: kagent
 homepage: https://kagent.dev/
 repo: https://github.com/kagent-dev/kagent
 license: Unknown
-category: coding-devtools
-subCategory: mcp-tools
+category: agents
+subCategory: agent-frameworks
 tags:
   - AI Agent
   - Dev Tools

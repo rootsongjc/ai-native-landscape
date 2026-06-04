@@ -4,8 +4,8 @@ slug: local-deep-researcher
 homepage: null
 repo: https://github.com/langchain-ai/local-deep-researcher
 license: Unknown
-category: models-modalities
-subCategory: foundation-models
+category: agents
+subCategory: agent-frameworks
 tags:
   - Utility
 description: 完全本地化的网络研究与报告写作助手，支持通过本地 LLM（如 Ollama/LMStudio）进行迭代式检索与摘要。

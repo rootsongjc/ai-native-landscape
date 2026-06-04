@@ -4,8 +4,8 @@ slug: daytona
 homepage: https://www.daytona.io/docs
 repo: https://github.com/daytonaio/daytona
 license: AGPL-3.0
-category: coding-devtools
-subCategory: ide-cli-tools
+category: inference-serving
+subCategory: sandboxes-runtimes
 tags:
   - AI Terminal
   - Dev Tools

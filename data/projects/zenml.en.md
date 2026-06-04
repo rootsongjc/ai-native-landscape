@@ -4,8 +4,8 @@ slug: zenml
 homepage: https://docs.zenml.io/
 repo: https://github.com/zenml-io/zenml
 license: Unknown
-category: platform-infra
-subCategory: deployment-operations
+category: training-optimization
+subCategory: experiment-mlops
 tags:
   - AI Agent
   - ML Platform

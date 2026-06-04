@@ -4,8 +4,8 @@ slug: eino
 homepage: https://www.cloudwego.io/docs/eino/
 repo: https://github.com/cloudwego/eino
 license: Unknown
-category: models-modalities
-subCategory: foundation-models
+category: agents
+subCategory: agent-frameworks
 tags:
   - Dev Tools
   - Framework

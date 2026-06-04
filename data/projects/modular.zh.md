@@ -4,8 +4,8 @@ slug: modular
 homepage: https://www.modular.com/
 repo: https://github.com/modular/modular
 license: Unknown
-category: platform-infra
-subCategory: deployment-operations
+category: inference-serving
+subCategory: model-serving
 tags:
   - ML Platform
   - Product

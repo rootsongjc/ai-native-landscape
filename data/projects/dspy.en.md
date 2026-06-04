@@ -4,8 +4,8 @@ slug: dspy
 homepage: https://dspy.ai/
 repo: https://github.com/stanfordnlp/dspy
 license: MIT
-category: rag-knowledge
-subCategory: data-connectors
+category: agents
+subCategory: agent-frameworks
 tags:
   - Dev Tools
 description: >-

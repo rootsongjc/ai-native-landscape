@@ -4,8 +4,8 @@ slug: crawl4ai
 homepage: https://crawl4ai.com
 repo: https://github.com/unclecode/crawl4ai
 license: Apache-2.0
-category: platform-infra
-subCategory: deployment-operations
+category: rag-knowledge
+subCategory: data-connectors
 tags:
   - Dev Tools
 description: 一个面向大模型应用的开源网页爬虫与抓取器，输出清洁的 Markdown 与结构化数据，支持浏览器控制、Docker 部署与 LLM 驱动的抽取。

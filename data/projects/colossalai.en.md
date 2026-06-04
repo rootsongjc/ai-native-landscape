@@ -4,8 +4,8 @@ slug: colossalai
 homepage: https://www.colossalai.org/
 repo: https://github.com/hpcaitech/colossalai
 license: MIT
-category: rag-knowledge
-subCategory: agent-memory-context
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - Dev Tools
 description: >-

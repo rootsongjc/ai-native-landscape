@@ -4,8 +4,8 @@ slug: motia
 homepage: null
 repo: https://github.com/motiadev/motia
 license: Unknown
-category: inference-serving
-subCategory: model-serving
+category: applications-products
+subCategory: workflow-automation
 tags:
   - AI Agent
   - Dev Tools

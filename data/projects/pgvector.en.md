@@ -4,8 +4,8 @@ slug: pgvector
 homepage: https://pgvector.org
 repo: https://github.com/pgvector/pgvector
 license: Unknown
-category: platform-infra
-subCategory: data-platforms
+category: rag-knowledge
+subCategory: vector-databases
 tags:
   - Database
 description: >-

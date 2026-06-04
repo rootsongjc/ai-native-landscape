@@ -4,8 +4,8 @@ slug: superagent
 homepage: https://superagent.sh/
 repo: https://github.com/superagent-ai/superagent
 license: Unknown
-category: training-optimization
-subCategory: safety-guardrails
+category: inference-serving
+subCategory: llm-routing-gateways
 tags:
   - Dev Tools
   - Security

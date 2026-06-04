@@ -4,8 +4,8 @@ slug: agno
 homepage: null
 repo: https://github.com/agno-agi/agno
 license: Apache-2.0
-category: models-modalities
-subCategory: foundation-models
+category: agents
+subCategory: agent-frameworks
 tags:
   - AI Agent
   - LLM

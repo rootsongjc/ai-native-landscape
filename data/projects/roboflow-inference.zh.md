@@ -4,8 +4,8 @@ slug: roboflow-inference
 homepage: https://inference.roboflow.com/
 repo: https://github.com/roboflow/inference
 license: Unknown
-category: applications-products
-subCategory: workflow-automation
+category: inference-serving
+subCategory: model-serving
 tags:
   - Dev Tools
   - Inference

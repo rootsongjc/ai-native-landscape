@@ -4,8 +4,8 @@ slug: roll
 homepage: https://alibaba.github.io/ROLL/
 repo: https://github.com/alibaba/roll
 license: Unknown
-category: rag-knowledge
-subCategory: data-connectors
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - Framework
 description: Reinforcement Learning Optimization platform for large-scale training and pipelines.

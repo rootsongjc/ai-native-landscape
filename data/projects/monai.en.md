@@ -4,8 +4,8 @@ slug: monai
 homepage: https://monai.io/
 repo: https://github.com/project-monai/monai
 license: Unknown
-category: coding-devtools
-subCategory: sdk-frameworks
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - Dev Tools
   - Framework

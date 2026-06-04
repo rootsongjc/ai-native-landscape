@@ -4,8 +4,8 @@ slug: maxkb
 homepage: https://maxkb.cn
 repo: https://github.com/1panel-dev/maxkb
 license: Unknown
-category: rag-knowledge
-subCategory: retrieval-indexing
+category: applications-products
+subCategory: low-code-builders
 tags:
   - Agent
   - RAG

@@ -4,8 +4,8 @@ slug: ollama
 homepage: https://ollama.ai/
 repo: https://github.com/ollama/ollama
 license: Unknown
-category: models-modalities
-subCategory: foundation-models
+category: inference-serving
+subCategory: inference-runtimes
 tags:
   - LLM
   - Utility

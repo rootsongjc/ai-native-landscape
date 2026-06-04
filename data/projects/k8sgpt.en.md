@@ -4,8 +4,8 @@ slug: k8sgpt
 homepage: https://k8sgpt.ai/
 repo: https://github.com/k8sgpt-ai/k8sgpt
 license: Unknown
-category: models-modalities
-subCategory: foundation-models
+category: platform-infra
+subCategory: cloud-native-ai
 tags:
   - Dev Tools
   - LLM

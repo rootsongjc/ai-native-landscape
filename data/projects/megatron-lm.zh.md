@@ -4,8 +4,8 @@ slug: megatron-lm
 homepage: https://developer.nvidia.com/
 repo: https://github.com/nvidia/megatron-lm
 license: Unknown
-category: platform-infra
-subCategory: deployment-operations
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - ML Platform
 description: Megatron-LM 是 NVIDIA 提供的大规模语言模型训练参考实现，面向分布式训练与性能优化。

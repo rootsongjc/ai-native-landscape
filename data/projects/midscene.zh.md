@@ -4,8 +4,8 @@ slug: midscene
 homepage: https://midscenejs.com
 repo: https://github.com/web-infra-dev/midscene
 license: Unknown
-category: models-modalities
-subCategory: multimodal
+category: coding-devtools
+subCategory: browser-automation
 tags:
   - Automation
   - Browser Automation

@@ -4,8 +4,8 @@ slug: dynamo
 homepage: https://docs.nvidia.com/dynamo/latest
 repo: https://github.com/ai-dynamo/dynamo
 license: MIT
-category: platform-infra
-subCategory: deployment-operations
+category: inference-serving
+subCategory: model-serving
 tags:
   - Deployment
   - LLM

@@ -4,8 +4,8 @@ slug: coze-loop
 homepage: https://www.coze.com/
 repo: https://github.com/coze-dev/coze-loop
 license: Apache-2.0
-category: platform-infra
-subCategory: deployment-operations
+category: agents
+subCategory: agent-frameworks
 tags:
   - AI Agent
   - Dev Tools

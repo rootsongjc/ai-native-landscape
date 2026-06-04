@@ -5,7 +5,7 @@ homepage: https://swift.readthedocs.io/en/latest/
 repo: https://github.com/modelscope/ms-swift
 license: Unknown
 category: training-optimization
-subCategory: evaluation-benchmarks
+subCategory: finetuning-alignment
 tags:
   - Benchmark
 description: ModelScope 社区提供的 SWIFT 框架，面向大模型与多模态模型的轻量化微调、评估与部署，支持丰富训练方法、量化与推理加速。

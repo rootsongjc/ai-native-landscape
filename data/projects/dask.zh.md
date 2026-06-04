@@ -5,7 +5,7 @@ homepage: https://dask.org
 repo: https://github.com/dask/dask
 license: BSD-3-Clause
 category: platform-infra
-subCategory: deployment-operations
+subCategory: data-platforms
 tags:
   - Dev Tools
   - ML Platform

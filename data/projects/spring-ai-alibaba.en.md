@@ -4,8 +4,8 @@ slug: spring-ai-alibaba
 homepage: https://java2ai.com
 repo: https://github.com/alibaba/spring-ai-alibaba
 license: Unknown
-category: coding-devtools
-subCategory: sdk-frameworks
+category: agents
+subCategory: agent-frameworks
 tags:
   - Dev Tools
   - Frameworks

@@ -4,8 +4,8 @@ slug: colossalai
 homepage: https://www.colossalai.org/
 repo: https://github.com/hpcaitech/colossalai
 license: MIT
-category: rag-knowledge
-subCategory: agent-memory-context
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - Dev Tools
 description: 面向大规模并行训练与推理的系统，提供多种并行策略、内存管理与高性能推理组件，旨在让大模型训练与推理更高效、可复现。

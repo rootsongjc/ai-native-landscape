@@ -4,8 +4,8 @@ slug: nanobot
 homepage: null
 repo: https://github.com/hkuds/nanobot
 license: Unknown
-category: coding-devtools
-subCategory: mcp-tools
+category: agents
+subCategory: agent-frameworks
 tags:
   - AI Agent
   - Assistant

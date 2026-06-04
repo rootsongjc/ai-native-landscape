@@ -4,8 +4,8 @@ slug: dlrover
 homepage: https://pypi.org/project/dlrover/
 repo: https://github.com/intelligent-machine-learning/dlrover
 license: Apache-2.0
-category: platform-infra
-subCategory: deployment-operations
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - Dev Tools
   - Framework

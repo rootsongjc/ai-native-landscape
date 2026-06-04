@@ -4,8 +4,8 @@ slug: lmcache
 homepage: https://lmcache.ai/
 repo: https://github.com/lmcache/lmcache
 license: Unknown
-category: rag-knowledge
-subCategory: agent-memory-context
+category: inference-serving
+subCategory: model-serving
 tags:
   - Utility
 description: >-

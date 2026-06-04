@@ -5,7 +5,7 @@ homepage: https://cognitum.one/
 repo: https://github.com/ruvnet/ruflo
 license: Unknown
 category: agents
-subCategory: agent-frameworks
+subCategory: agent-orchestration
 tags:
   - Agent Framework
   - Agents

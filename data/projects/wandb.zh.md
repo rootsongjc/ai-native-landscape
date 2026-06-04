@@ -4,8 +4,8 @@ slug: wandb
 homepage: https://wandb.ai/
 repo: https://github.com/wandb/wandb
 license: Unknown
-category: platform-infra
-subCategory: deployment-operations
+category: training-optimization
+subCategory: experiment-mlops
 tags:
   - Data
   - ML Platform

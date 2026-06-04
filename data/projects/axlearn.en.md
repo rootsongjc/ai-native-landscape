@@ -4,8 +4,8 @@ slug: axlearn
 homepage: https://apple.github.io/axlearn
 repo: https://github.com/apple/axlearn
 license: Apache-2.0
-category: platform-infra
-subCategory: deployment-operations
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - Framework
   - ML Platform

@@ -4,8 +4,8 @@ slug: swanlab
 homepage: https://swanlab.cn
 repo: https://github.com/swanhubx/swanlab
 license: Unknown
-category: platform-infra
-subCategory: deployment-operations
+category: training-optimization
+subCategory: experiment-mlops
 tags:
   - Dashboard
   - ML Platform

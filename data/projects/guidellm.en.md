@@ -4,8 +4,8 @@ slug: guidellm
 homepage: null
 repo: https://github.com/vllm-project/guidellm
 license: Unknown
-category: models-modalities
-subCategory: foundation-models
+category: training-optimization
+subCategory: prompt-quality
 tags:
   - Control
   - LLM

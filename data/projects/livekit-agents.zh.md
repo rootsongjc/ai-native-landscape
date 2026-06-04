@@ -4,8 +4,8 @@ slug: livekit-agents
 homepage: https://docs.livekit.io/agents/
 repo: https://github.com/livekit/agents
 license: Unknown
-category: models-modalities
-subCategory: audio-speech
+category: agents
+subCategory: agent-frameworks
 tags:
   - AI Agent
   - TTS

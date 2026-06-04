@@ -4,8 +4,8 @@ slug: maxtext
 homepage: https://maxtext.readthedocs.io/en/latest/
 repo: https://github.com/ai-hypercomputer/maxtext
 license: Unknown
-category: platform-infra
-subCategory: deployment-operations
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - Framework
   - LLM

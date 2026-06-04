@@ -4,8 +4,8 @@ slug: mindsdb
 homepage: https://mindsdb.com
 repo: https://github.com/mindsdb/mindsdb
 license: Unknown
-category: coding-devtools
-subCategory: mcp-tools
+category: rag-knowledge
+subCategory: data-connectors
 tags:
   - MCP
 description: AI 查询引擎 - 构建能在大规模联合数据上回答问题的 AI 平台 - 你唯一需要的 MCP 服务器。

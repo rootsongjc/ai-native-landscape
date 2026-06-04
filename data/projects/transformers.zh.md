@@ -4,8 +4,8 @@ slug: transformers
 homepage: 'https://huggingface.co/transformers'
 repo: https://github.com/huggingface/transformers
 license: Apache-2.0
-category: coding-devtools
-subCategory: sdk-frameworks
+category: models-modalities
+subCategory: model-toolkits
 tags:
   - NLP
   - LLM

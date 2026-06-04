@@ -4,8 +4,8 @@ slug: candle
 homepage: https://huggingface.github.io/candle/guide/installation.html
 repo: https://github.com/huggingface/candle
 license: Unknown
-category: platform-infra
-subCategory: deployment-operations
+category: inference-serving
+subCategory: inference-runtimes
 tags:
   - Framework
   - ML Platform

@@ -4,8 +4,8 @@ slug: deepep
 homepage: null
 repo: https://github.com/deepseek-ai/deepep
 license: MIT
-category: coding-devtools
-subCategory: sdk-frameworks
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - Middleware
 description: >-

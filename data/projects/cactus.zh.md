@@ -4,8 +4,8 @@ slug: cactus
 homepage: https://cactuscompute.com/docs
 repo: https://github.com/cactus-compute/cactus
 license: Other
-category: applications-products
-subCategory: productivity-tools
+category: inference-serving
+subCategory: edge-local-inference
 tags:
   - Dev Tools
   - LLM

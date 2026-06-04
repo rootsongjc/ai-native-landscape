@@ -4,8 +4,8 @@ slug: tensorrt-llm
 homepage: https://nvidia.github.io/TensorRT-LLM/
 repo: https://github.com/nvidia/tensorrt-llm
 license: Unknown
-category: platform-infra
-subCategory: deployment-operations
+category: inference-serving
+subCategory: model-serving
 tags:
   - Deployment
   - Dev Tools

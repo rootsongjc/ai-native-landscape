@@ -4,8 +4,8 @@ slug: pyvideotrans
 homepage: https://pyvideotrans.com
 repo: https://github.com/jianchang512/pyvideotrans
 license: Unknown
-category: models-modalities
-subCategory: audio-speech
+category: applications-products
+subCategory: productivity-tools
 tags:
   - Audio
   - Multimodal

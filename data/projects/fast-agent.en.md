@@ -4,8 +4,8 @@ slug: fast-agent
 homepage: https://fast-agent.ai/
 repo: https://github.com/evalstate/fast-agent
 license: Apache-2.0
-category: applications-products
-subCategory: workflow-automation
+category: agents
+subCategory: agent-frameworks
 tags:
   - Workflow
 description: >-

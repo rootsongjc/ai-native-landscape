@@ -4,8 +4,8 @@ slug: parlant
 homepage: https://www.parlant.io
 repo: https://github.com/emcie-co/parlant
 license: Unknown
-category: platform-infra
-subCategory: deployment-operations
+category: agents
+subCategory: agent-frameworks
 tags:
   - AI Agent
   - Deployment

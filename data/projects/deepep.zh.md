@@ -4,8 +4,8 @@ slug: deepep
 homepage: null
 repo: https://github.com/deepseek-ai/deepep
 license: MIT
-category: coding-devtools
-subCategory: sdk-frameworks
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - Middleware
 description: 用于专家并行（expert-parallel）的高效通信库，提供针对大规模分布式训练的低开销通信原语。

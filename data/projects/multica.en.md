@@ -4,8 +4,8 @@ slug: multica
 homepage: https://multica.ai
 repo: https://github.com/multica-ai/multica
 license: Unknown
-category: coding-devtools
-subCategory: coding-agents
+category: applications-products
+subCategory: desktop-clients
 tags:
   - Application
   - Code Agent

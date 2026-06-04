@@ -4,8 +4,8 @@ slug: pytorch
 homepage: https://pytorch.org/
 repo: https://github.com/pytorch/pytorch
 license: Unknown
-category: platform-infra
-subCategory: deployment-operations
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - Deployment
   - Dev Tools

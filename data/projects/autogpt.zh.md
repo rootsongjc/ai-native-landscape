@@ -4,8 +4,8 @@ slug: autogpt
 homepage: https://agpt.co/
 repo: https://github.com/significant-gravitas/autogpt
 license: MIT
-category: platform-infra
-subCategory: deployment-operations
+category: agents
+subCategory: agent-frameworks
 tags:
   - AI Agent
 description: 用于构建、部署与运行连续智能体的平台，支持自托管与平台化部署。

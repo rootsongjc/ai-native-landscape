@@ -4,8 +4,8 @@ slug: nvidia-gpu-operator
 homepage: https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/
 repo: https://github.com/nvidia/gpu-operator
 license: Unknown
-category: inference-serving
-subCategory: inference-runtimes
+category: platform-infra
+subCategory: cloud-native-ai
 tags:
   - Deployment
   - Inference

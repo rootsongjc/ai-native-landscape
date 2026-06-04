@@ -4,8 +4,8 @@ slug: apache-spark
 homepage: https://spark.apache.org/
 repo: https://github.com/apache/spark
 license: MIT
-category: inference-serving
-subCategory: inference-runtimes
+category: platform-infra
+subCategory: data-platforms
 tags:
   - Data
   - Framework

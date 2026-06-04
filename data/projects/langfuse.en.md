@@ -4,8 +4,8 @@ slug: langfuse
 homepage: https://langfuse.com/
 repo: https://github.com/langfuse/langfuse
 license: Unknown
-category: models-modalities
-subCategory: foundation-models
+category: training-optimization
+subCategory: observability-monitoring
 tags:
   - AI Agent
   - Dev Tools

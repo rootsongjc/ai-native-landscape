@@ -5,7 +5,7 @@ homepage: https://swift.readthedocs.io/en/latest/
 repo: https://github.com/modelscope/ms-swift
 license: Unknown
 category: training-optimization
-subCategory: evaluation-benchmarks
+subCategory: finetuning-alignment
 tags:
   - Benchmark
 description: >-

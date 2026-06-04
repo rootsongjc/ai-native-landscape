@@ -4,8 +4,8 @@ slug: langextract
 homepage: null
 repo: https://github.com/google/langextract
 license: Unknown
-category: models-modalities
-subCategory: foundation-models
+category: rag-knowledge
+subCategory: document-processing
 tags:
   - Framework
   - LLM

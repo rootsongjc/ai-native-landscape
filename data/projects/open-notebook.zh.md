@@ -4,8 +4,8 @@ slug: open-notebook
 homepage: https://www.open-notebook.ai
 repo: https://github.com/lfnovo/open-notebook
 license: Unknown
-category: models-modalities
-subCategory: multimodal
+category: applications-products
+subCategory: productivity-tools
 tags:
   - Application
   - Multimodal

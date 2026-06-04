@@ -4,8 +4,8 @@ slug: repomix
 homepage: https://repomix.com/
 repo: https://github.com/yamadashy/repomix
 license: Unknown
-category: training-optimization
-subCategory: prompt-quality
+category: coding-devtools
+subCategory: developer-utilities
 tags:
   - Dev Tools
   - Prompt Engineering

@@ -4,8 +4,8 @@ slug: planning-with-files
 homepage: https://www.aikux.ai
 repo: https://github.com/othmanadi/planning-with-files
 license: Unknown
-category: agents
-subCategory: agent-frameworks
+category: coding-devtools
+subCategory: mcp-tools
 tags:
   - Agent Framework
   - Agents

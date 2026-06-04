@@ -4,8 +4,8 @@ slug: nemoclaw
 homepage: null
 repo: https://github.com/nvidia/nemoclaw
 license: Unknown
-category: training-optimization
-subCategory: safety-guardrails
+category: agents
+subCategory: agent-frameworks
 tags:
   - Agents
   - CLI

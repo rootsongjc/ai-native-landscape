@@ -4,8 +4,8 @@ slug: obot
 homepage: https://obot.ai/
 repo: https://github.com/obot-platform/obot
 license: Unknown
-category: inference-serving
-subCategory: llm-routing-gateways
+category: applications-products
+subCategory: chat-interfaces
 tags:
   - AI Gateway
 description: >-

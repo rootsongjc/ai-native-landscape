@@ -4,8 +4,8 @@ slug: google-research
 homepage: https://research.google/
 repo: https://github.com/google-research/google-research
 license: Apache-2.0
-category: platform-infra
-subCategory: deployment-operations
+category: training-optimization
+subCategory: experiment-mlops
 tags:
   - ML Platform
   - Research

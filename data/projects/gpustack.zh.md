@@ -4,8 +4,8 @@ slug: gpustack
 homepage: https://gpustack.ai
 repo: https://github.com/gpustack/gpustack
 license: Unknown
-category: platform-infra
-subCategory: deployment-operations
+category: inference-serving
+subCategory: model-serving
 tags:
   - Dev Tools
   - ML Platform

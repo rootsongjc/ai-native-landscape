@@ -4,8 +4,8 @@ slug: refly
 homepage: https://refly.ai
 repo: https://github.com/refly-ai/refly
 license: Unknown
-category: coding-devtools
-subCategory: coding-agents
+category: applications-products
+subCategory: low-code-builders
 tags:
   - Application
   - Vibe Coding

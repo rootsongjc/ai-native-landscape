@@ -4,8 +4,8 @@ slug: mindsdb
 homepage: https://mindsdb.com
 repo: https://github.com/mindsdb/mindsdb
 license: Unknown
-category: coding-devtools
-subCategory: mcp-tools
+category: rag-knowledge
+subCategory: data-connectors
 tags:
   - MCP
 description: >-

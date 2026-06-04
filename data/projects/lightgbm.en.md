@@ -4,8 +4,8 @@ slug: lightgbm
 homepage: https://lightgbm.readthedocs.io/
 repo: https://github.com/microsoft/lightgbm
 license: Other
-category: inference-serving
-subCategory: gpu-acceleration
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - Utility
 description: >-

@@ -5,7 +5,7 @@ homepage: null
 repo: https://github.com/pewdiepie-archdaemon/odysseus
 license: MIT
 category: applications-products
-subCategory: productivity-tools
+subCategory: chat-interfaces
 tags:
   - AI Workspace
   - Self-hosted

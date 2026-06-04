@@ -5,7 +5,7 @@ homepage: https://safety-research.github.io/petri/
 repo: https://github.com/safety-research/petri
 license: Unknown
 category: training-optimization
-subCategory: finetuning-alignment
+subCategory: evaluation-benchmarks
 tags:
   - Agents
   - Alignment

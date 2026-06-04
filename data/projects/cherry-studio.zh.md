@@ -4,8 +4,8 @@ slug: cherry-studio
 homepage: https://www.cherry-ai.com/
 repo: https://github.com/cherryhq/cherry-studio
 license: AGPL-3.0
-category: models-modalities
-subCategory: foundation-models
+category: applications-products
+subCategory: desktop-clients
 tags:
   - LLM
   - Utility

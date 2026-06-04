@@ -4,8 +4,8 @@ slug: pymupdf
 homepage: https://pymupdf.io
 repo: https://github.com/pymupdf/pymupdf
 license: Unknown
-category: platform-infra
-subCategory: data-platforms
+category: rag-knowledge
+subCategory: document-processing
 tags:
   - Data
   - Dev Tools

@@ -4,8 +4,8 @@ slug: paperclip
 homepage: null
 repo: https://github.com/paperclipai/paperclip
 license: Unknown
-category: coding-devtools
-subCategory: ide-cli-tools
+category: agents
+subCategory: agent-orchestration
 tags:
   - Agents
   - Automation

@@ -4,8 +4,8 @@ slug: agents-towards-production
 homepage: https://www.diamant-ai.com/
 repo: https://github.com/nirdiamant/agents-towards-production
 license: Other
-category: rag-knowledge
-subCategory: retrieval-indexing
+category: agents
+subCategory: agent-frameworks
 tags:
   - AI Agent
   - Deployment

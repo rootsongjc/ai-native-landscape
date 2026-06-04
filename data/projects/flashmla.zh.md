@@ -4,8 +4,8 @@ slug: flashmla
 homepage: null
 repo: https://github.com/deepseek-ai/flashmla
 license: MIT
-category: rag-knowledge
-subCategory: agent-memory-context
+category: inference-serving
+subCategory: gpu-acceleration
 tags:
   - Framework
 description: 高效的多头潜在注意力（Multi-head Latent Attention）内核，旨在为大规模 Transformer 推理与训练提供更快、更节省内存的注意力实现。
