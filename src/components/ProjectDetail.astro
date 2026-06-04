@@ -434,14 +434,15 @@ const relatedProjects = allProjects
     display: inline-flex;
     align-items: center;
     gap: 6px;
-  }
-  .detail-breadcrumb__home {
     color: var(--accent);
     font-weight: 700;
+    text-decoration: none;
   }
-  .detail-breadcrumb__current {
-    color: var(--text);
-    font-weight: 700;
+  .detail-breadcrumb__home:hover,
+  .detail-breadcrumb__current:hover,
+  .detail-breadcrumb__home:focus-visible,
+  .detail-breadcrumb__current:focus-visible {
+    color: color-mix(in srgb, var(--accent) 72%, white);
   }
   .detail-breadcrumb__home svg,
   .breadcrumb-sep svg {
