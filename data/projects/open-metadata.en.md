@@ -3,7 +3,7 @@ name: OpenMetadata
 slug: open-metadata
 homepage: https://open-metadata.org/
 repo: https://github.com/open-metadata/openmetadata
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: data-connectors
 tags:

@@ -3,7 +3,7 @@ name: MaxKB
 slug: maxkb
 homepage: https://maxkb.cn
 repo: https://github.com/1panel-dev/maxkb
-license: Unknown
+license: GPL-3.0
 category: applications-products
 subCategory: low-code-builders
 tags:

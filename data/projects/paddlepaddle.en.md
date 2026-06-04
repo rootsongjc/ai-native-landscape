@@ -3,7 +3,7 @@ name: PaddlePaddle
 slug: paddlepaddle
 homepage: https://www.paddlepaddle.org/
 repo: https://github.com/paddlepaddle/paddle
-license: Unknown
+license: Apache-2.0
 category: models-modalities
 subCategory: foundation-models
 tags:

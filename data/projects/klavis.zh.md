@@ -3,7 +3,7 @@ name: Klavis
 slug: klavis
 homepage: https://www.klavis.ai/
 repo: https://github.com/klavis-ai/klavis
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: mcp-tools
 tags:

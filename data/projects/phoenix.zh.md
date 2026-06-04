@@ -3,7 +3,7 @@ name: Phoenix
 slug: phoenix
 homepage: https://www.phoenixframework.org/
 repo: https://github.com/phoenixframework/phoenix
-license: Unknown
+license: MIT
 category: training-optimization
 subCategory: observability-monitoring
 tags:

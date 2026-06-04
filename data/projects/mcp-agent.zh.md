@@ -3,7 +3,7 @@ name: mcp-agent
 slug: mcp-agent
 homepage: null
 repo: https://github.com/lastmile-ai/mcp-agent
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:

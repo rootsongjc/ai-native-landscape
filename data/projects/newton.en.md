@@ -3,7 +3,7 @@ name: Newton
 slug: newton
 homepage: https://newton-physics.github.io/newton/
 repo: https://github.com/newton-physics/newton
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: optimization-simulation
 tags:

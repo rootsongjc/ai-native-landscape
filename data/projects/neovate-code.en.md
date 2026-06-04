@@ -3,7 +3,7 @@ name: Neovate Code
 slug: neovate-code
 homepage: https://neovateai.dev/
 repo: https://github.com/neovateai/neovate-code
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: coding-agents
 tags:

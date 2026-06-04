@@ -3,7 +3,7 @@ name: Ollama
 slug: ollama
 homepage: https://ollama.ai/
 repo: https://github.com/ollama/ollama
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: inference-runtimes
 tags:

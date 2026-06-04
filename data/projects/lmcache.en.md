@@ -3,7 +3,7 @@ name: LMCache
 slug: lmcache
 homepage: https://lmcache.ai/
 repo: https://github.com/lmcache/lmcache
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: model-serving
 tags:

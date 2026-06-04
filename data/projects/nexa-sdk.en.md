@@ -3,7 +3,7 @@ name: Nexa SDK
 slug: nexa-sdk
 homepage: https://docs.nexa.ai/
 repo: https://github.com/nexaai/nexa-sdk
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:

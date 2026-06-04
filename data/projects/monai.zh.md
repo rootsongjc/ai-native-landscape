@@ -3,7 +3,7 @@ name: MONAI
 slug: monai
 homepage: https://monai.io/
 repo: https://github.com/project-monai/monai
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: training-frameworks
 tags:

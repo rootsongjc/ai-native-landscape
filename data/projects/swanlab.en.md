@@ -3,7 +3,7 @@ name: SwanLab
 slug: swanlab
 homepage: https://swanlab.cn
 repo: https://github.com/swanhubx/swanlab
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: experiment-mlops
 tags:

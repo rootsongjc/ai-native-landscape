@@ -3,7 +3,7 @@ name: Jan
 slug: jan
 homepage: https://jan.ai/
 repo: https://github.com/menloresearch/jan
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: chat-interfaces
 tags:

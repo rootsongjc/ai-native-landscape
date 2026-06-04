@@ -3,7 +3,7 @@ name: NanoBot
 slug: nanobot
 homepage: null
 repo: https://github.com/hkuds/nanobot
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:

@@ -3,7 +3,7 @@ name: Monty
 slug: monty
 homepage: https://pypi.org/project/pydantic-monty/
 repo: https://github.com/pydantic/monty
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: sandboxes-runtimes
 tags:

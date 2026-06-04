@@ -3,7 +3,7 @@ name: Volcano
 slug: volcano
 homepage: https://volcano.sh/
 repo: https://github.com/volcano-sh/volcano
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: cloud-native-ai
 tags:

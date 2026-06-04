@@ -3,7 +3,7 @@ name: OpenManus
 slug: openmanus
 homepage: https://openmanus.github.io/
 repo: https://github.com/foundationagents/openmanus
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:

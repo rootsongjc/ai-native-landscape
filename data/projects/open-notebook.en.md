@@ -3,7 +3,7 @@ name: Open Notebook
 slug: open-notebook
 homepage: https://www.open-notebook.ai
 repo: https://github.com/lfnovo/open-notebook
-license: Unknown
+license: MIT
 category: applications-products
 subCategory: productivity-tools
 tags:

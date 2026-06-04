@@ -3,7 +3,7 @@ name: LMFlow
 slug: lmflow
 homepage: https://optimalscale.github.io/LMFlow/
 repo: https://github.com/optimalscale/lmflow
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: finetuning-alignment
 tags:

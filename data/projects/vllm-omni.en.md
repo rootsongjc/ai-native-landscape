@@ -3,7 +3,7 @@ name: vLLM-Omni
 slug: vllm-omni
 homepage: https://docs.vllm.ai/projects/vllm-omni
 repo: https://github.com/vllm-project/vllm-omni
-license: Unknown
+license: Apache-2.0
 category: models-modalities
 subCategory: multimodal
 tags:

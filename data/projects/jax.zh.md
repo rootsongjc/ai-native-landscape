@@ -3,7 +3,7 @@ name: JAX
 slug: jax
 homepage: https://docs.jax.dev/
 repo: https://github.com/jax-ml/jax
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: training-frameworks
 tags:

@@ -3,7 +3,7 @@ name: Wren AI
 slug: wrenai
 homepage: https://docs.getwren.ai/oss/overview/introduction
 repo: https://github.com/canner/wrenai
-license: Unknown
+license: AGPL-3.0
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

@@ -3,7 +3,7 @@ name: Katana
 slug: katana
 homepage: https://projectdiscovery.io/open-source
 repo: https://github.com/projectdiscovery/katana
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: developer-utilities
 tags:

@@ -3,7 +3,7 @@ name: LitGPT
 slug: litgpt
 homepage: https://lightning.ai/
 repo: https://github.com/lightning-ai/litgpt
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: training-frameworks
 tags:

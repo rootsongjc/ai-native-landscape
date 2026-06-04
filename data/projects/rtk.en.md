@@ -3,7 +3,7 @@ name: RTK
 slug: rtk
 homepage: https://www.rtk-ai.app/
 repo: https://github.com/rtk-ai/rtk
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:

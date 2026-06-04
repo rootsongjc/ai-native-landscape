@@ -3,7 +3,7 @@ name: WebLLM
 slug: web-llm
 homepage: https://webllm.mlc.ai/
 repo: https://github.com/mlc-ai/web-llm
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: edge-local-inference
 tags:

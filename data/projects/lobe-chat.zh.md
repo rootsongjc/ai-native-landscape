@@ -3,7 +3,7 @@ name: Lobe-Chat
 slug: lobe-chat
 homepage: https://lobehub.com/
 repo: https://github.com/lobehub/lobe-chat
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: chat-interfaces
 tags:

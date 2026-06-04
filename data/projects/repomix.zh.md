@@ -3,7 +3,7 @@ name: Repomix
 slug: repomix
 homepage: https://repomix.com/
 repo: https://github.com/yamadashy/repomix
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: developer-utilities
 tags:

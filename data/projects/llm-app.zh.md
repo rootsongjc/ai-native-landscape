@@ -3,7 +3,7 @@ name: Pathway LLM App
 slug: llm-app
 homepage: https://pathway.com/developers/templates/
 repo: https://github.com/pathwaycom/llm-app
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

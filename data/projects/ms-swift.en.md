@@ -3,7 +3,7 @@ name: MS-SWIFT
 slug: ms-swift
 homepage: https://swift.readthedocs.io/en/latest/
 repo: https://github.com/modelscope/ms-swift
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: finetuning-alignment
 tags:

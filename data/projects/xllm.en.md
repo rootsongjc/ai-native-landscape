@@ -3,7 +3,7 @@ name: xLLM
 slug: xllm
 homepage: https://xllm.readthedocs.io/zh-cn/latest/
 repo: https://github.com/jd-opensource/xllm
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: training-frameworks
 tags:

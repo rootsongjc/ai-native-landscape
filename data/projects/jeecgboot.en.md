@@ -3,7 +3,7 @@ name: JeecgBoot
 slug: jeecgboot
 homepage: https://jeecgboot.github.io/JeecgBoot/
 repo: https://github.com/jeecgboot/jeecgboot
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: low-code-builders
 tags:

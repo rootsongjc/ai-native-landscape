@@ -3,7 +3,7 @@ name: Label Studio
 slug: label-studio
 homepage: https://labelstud.io
 repo: https://github.com/humansignal/label-studio
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: data-platforms
 tags:

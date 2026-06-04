@@ -3,7 +3,7 @@ name: json-render
 slug: json-render
 homepage: https://json-render.dev
 repo: https://github.com/vercel-labs/json-render
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: productivity-tools
 tags:

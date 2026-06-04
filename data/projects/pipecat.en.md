@@ -3,7 +3,7 @@ name: Pipecat
 slug: pipecat
 homepage: https://docs.pipecat.ai/
 repo: https://github.com/pipecat-ai/pipecat
-license: Unknown
+license: BSD-2-Clause
 category: agents
 subCategory: agent-frameworks
 tags:

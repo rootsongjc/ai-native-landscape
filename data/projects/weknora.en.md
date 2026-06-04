@@ -3,7 +3,7 @@ name: WeKnora
 slug: weknora
 homepage: https://weknora.weixin.qq.com
 repo: https://github.com/tencent/weknora
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

@@ -3,7 +3,7 @@ name: Hermes Agent
 slug: hermes-agent
 homepage: https://hermes-agent.nousresearch.com/docs
 repo: https://github.com/nousresearch/hermes-agent
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:

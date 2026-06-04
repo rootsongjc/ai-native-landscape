@@ -3,7 +3,7 @@ name: Stirling PDF
 slug: stirling-pdf
 homepage: https://stirlingpdf.com/
 repo: https://github.com/stirling-tools/stirling-pdf
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: document-processing
 tags:

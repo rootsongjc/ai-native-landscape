@@ -3,7 +3,7 @@ name: Worktrunk
 slug: worktrunk
 homepage: https://worktrunk.dev
 repo: https://github.com/max-sixty/worktrunk
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:

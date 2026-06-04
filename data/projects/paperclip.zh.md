@@ -3,7 +3,7 @@ name: Paperclip
 slug: paperclip
 homepage: null
 repo: https://github.com/paperclipai/paperclip
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-orchestration
 tags:

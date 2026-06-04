@@ -3,7 +3,7 @@ name: Mem0
 slug: mem0
 homepage: https://mem0.ai/
 repo: https://github.com/mem0ai/mem0
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: agent-memory-context
 tags:

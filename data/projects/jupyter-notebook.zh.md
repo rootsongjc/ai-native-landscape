@@ -3,7 +3,7 @@ name: Jupyter Notebook
 slug: jupyter-notebook
 homepage: https://jupyter.org
 repo: https://github.com/jupyter/notebook
-license: Unknown
+license: BSD-3-Clause
 category: platform-infra
 subCategory: data-platforms
 tags:

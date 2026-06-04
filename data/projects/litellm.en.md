@@ -3,7 +3,7 @@ name: LiteLLM
 slug: litellm
 homepage: https://docs.litellm.ai/docs/
 repo: https://github.com/berriai/litellm
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: llm-routing-gateways
 tags:

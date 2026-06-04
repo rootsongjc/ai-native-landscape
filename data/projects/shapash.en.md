@@ -3,7 +3,7 @@ name: Shapash
 slug: shapash
 homepage: https://maif.github.io/shapash/
 repo: https://github.com/maif/shapash
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: evaluation-benchmarks
 tags:

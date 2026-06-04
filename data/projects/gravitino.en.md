@@ -3,7 +3,7 @@ name: Gravitino
 slug: gravitino
 homepage: https://gravitino.apache.org
 repo: https://github.com/apache/gravitino
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: data-connectors
 tags:

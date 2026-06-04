@@ -3,7 +3,7 @@ name: Vibe
 slug: vibe
 homepage: https://thewh1teagle.github.io/vibe/
 repo: https://github.com/thewh1teagle/vibe
-license: Unknown
+license: MIT
 category: models-modalities
 subCategory: audio-speech
 tags:

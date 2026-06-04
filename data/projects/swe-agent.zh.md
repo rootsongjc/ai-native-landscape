@@ -3,7 +3,7 @@ name: SWE-agent
 slug: swe-agent
 homepage: https://swe-agent.com/latest/
 repo: https://github.com/swe-agent/swe-agent
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:

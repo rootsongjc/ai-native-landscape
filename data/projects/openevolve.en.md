@@ -3,7 +3,7 @@ name: OpenEvolve
 slug: openevolve
 homepage: null
 repo: https://github.com/codelion/openevolve
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: sdk-frameworks
 tags:

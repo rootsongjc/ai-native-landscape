@@ -3,7 +3,7 @@ name: Plano
 slug: plano
 homepage: https://docs.planoai.dev/
 repo: https://github.com/katanemo/plano
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: llm-routing-gateways
 tags:

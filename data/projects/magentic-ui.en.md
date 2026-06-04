@@ -3,7 +3,7 @@ name: Magentic-UI
 slug: magentic-ui
 homepage: null
 repo: https://github.com/microsoft/magentic-ui
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: browser-automation
 tags:

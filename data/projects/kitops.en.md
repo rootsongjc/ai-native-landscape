@@ -3,7 +3,7 @@ name: KitOps
 slug: kitops
 homepage: https://kitops.org
 repo: https://github.com/kitops-ml/kitops
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: deployment-operations
 tags:

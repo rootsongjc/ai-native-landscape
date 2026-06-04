@@ -3,7 +3,7 @@ name: PyMuPDF
 slug: pymupdf
 homepage: https://pymupdf.io
 repo: https://github.com/pymupdf/pymupdf
-license: Unknown
+license: AGPL-3.0
 category: rag-knowledge
 subCategory: document-processing
 tags:

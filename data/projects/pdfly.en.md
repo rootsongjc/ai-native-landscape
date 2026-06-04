@@ -3,7 +3,7 @@ name: pdfly
 slug: pdfly
 homepage: https://pdfly.readthedocs.io
 repo: https://github.com/py-pdf/pdfly
-license: Unknown
+license: BSD-3-Clause
 category: rag-knowledge
 subCategory: document-processing
 tags:

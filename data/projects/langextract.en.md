@@ -3,7 +3,7 @@ name: LangExtract
 slug: langextract
 homepage: null
 repo: https://github.com/google/langextract
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: document-processing
 tags:

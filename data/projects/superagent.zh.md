@@ -3,7 +3,7 @@ name: Superagent
 slug: superagent
 homepage: https://superagent.sh/
 repo: https://github.com/superagent-ai/superagent
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: llm-routing-gateways
 tags:

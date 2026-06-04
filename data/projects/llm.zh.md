@@ -3,7 +3,7 @@ name: LLM
 slug: llm
 homepage: https://llm.datasette.io/
 repo: https://github.com/simonw/llm
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:

@@ -3,7 +3,7 @@ name: Trigger.dev
 slug: trigger-dev
 homepage: https://trigger.dev/docs
 repo: https://github.com/triggerdotdev/trigger.dev
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-orchestration
 tags:

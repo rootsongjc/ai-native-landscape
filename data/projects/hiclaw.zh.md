@@ -3,7 +3,7 @@ name: HiClaw
 slug: hiclaw
 homepage: null
 repo: https://github.com/higress-group/hiclaw
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-orchestration
 tags:

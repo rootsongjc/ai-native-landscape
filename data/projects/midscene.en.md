@@ -3,7 +3,7 @@ name: Midscene.js
 slug: midscene
 homepage: https://midscenejs.com
 repo: https://github.com/web-infra-dev/midscene
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: browser-automation
 tags:

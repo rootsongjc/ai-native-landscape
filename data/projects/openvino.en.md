@@ -3,7 +3,7 @@ name: OpenVINO
 slug: openvino
 homepage: https://docs.openvino.ai/
 repo: https://github.com/openvinotoolkit/openvino
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: inference-runtimes
 tags:

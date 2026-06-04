@@ -3,7 +3,7 @@ name: Langflow
 slug: langflow
 homepage: https://langflow.org/
 repo: https://github.com/langflow-ai/langflow
-license: Unknown
+license: MIT
 category: applications-products
 subCategory: low-code-builders
 tags:

@@ -3,7 +3,7 @@ name: Torchtune
 slug: torchtune
 homepage: https://pytorch.org/torchtune/main/
 repo: https://github.com/meta-pytorch/torchtune
-license: Unknown
+license: BSD-3-Clause
 category: training-optimization
 subCategory: finetuning-alignment
 tags:

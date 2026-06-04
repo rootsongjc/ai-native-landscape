@@ -3,7 +3,7 @@ name: SkyRL
 slug: skyrl
 homepage: https://skyrl.readthedocs.io/en/latest/
 repo: https://github.com/novasky-ai/skyrl
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: training-frameworks
 tags:

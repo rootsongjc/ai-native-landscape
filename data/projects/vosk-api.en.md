@@ -3,7 +3,7 @@ name: Vosk API
 slug: vosk-api
 homepage: null
 repo: https://github.com/alphacep/vosk-api
-license: Unknown
+license: Apache-2.0
 category: models-modalities
 subCategory: audio-speech
 tags:

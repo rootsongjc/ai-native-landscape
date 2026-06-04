@@ -3,7 +3,7 @@ name: Pixeltable
 slug: pixeltable
 homepage: https://docs.pixeltable.com
 repo: https://github.com/pixeltable/pixeltable
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: data-connectors
 tags:

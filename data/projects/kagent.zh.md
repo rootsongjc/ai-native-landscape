@@ -3,7 +3,7 @@ name: kagent
 slug: kagent
 homepage: https://kagent.dev/
 repo: https://github.com/kagent-dev/kagent
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:

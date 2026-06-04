@@ -3,7 +3,7 @@ name: Superpowers
 slug: superpowers
 homepage: https://blog.fsck.com/2025/10/09/superpowers/
 repo: https://github.com/obra/superpowers
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:

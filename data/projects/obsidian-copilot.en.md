@@ -3,7 +3,7 @@ name: Obsidian Copilot
 slug: obsidian-copilot
 homepage: null
 repo: https://github.com/logancyang/obsidian-copilot
-license: Unknown
+license: AGPL-3.0
 category: applications-products
 subCategory: productivity-tools
 tags:

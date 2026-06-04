@@ -3,7 +3,7 @@ name: xyflow
 slug: xyflow
 homepage: https://xyflow.com
 repo: https://github.com/xyflow/xyflow
-license: Unknown
+license: MIT
 category: applications-products
 subCategory: productivity-tools
 tags:

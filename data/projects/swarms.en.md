@@ -3,7 +3,7 @@ name: Swarms
 slug: swarms
 homepage: https://swarms.ai
 repo: https://github.com/kyegomez/swarms
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:

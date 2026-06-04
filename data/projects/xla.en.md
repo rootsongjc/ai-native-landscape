@@ -3,7 +3,7 @@ name: XLA
 slug: xla
 homepage: null
 repo: https://github.com/openxla/xla
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: gpu-acceleration
 tags:

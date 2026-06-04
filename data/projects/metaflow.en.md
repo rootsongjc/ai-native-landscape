@@ -3,7 +3,7 @@ name: Metaflow
 slug: metaflow
 homepage: https://metaflow.org/
 repo: https://github.com/netflix/metaflow
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: workflow-automation
 tags:

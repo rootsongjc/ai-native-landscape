@@ -3,7 +3,7 @@ name: Refly
 slug: refly
 homepage: https://refly.ai
 repo: https://github.com/refly-ai/refly
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: low-code-builders
 tags:

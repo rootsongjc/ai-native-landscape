@@ -3,7 +3,7 @@ name: RAG-Anything
 slug: rag-anything
 homepage: null
 repo: https://github.com/hkuds/rag-anything
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

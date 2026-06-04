@@ -3,7 +3,7 @@ name: PaddleOCR
 slug: paddleocr
 homepage: https://www.paddleocr.ai
 repo: https://github.com/paddlepaddle/paddleocr
-license: Unknown
+license: Apache-2.0
 category: models-modalities
 subCategory: multimodal
 tags:

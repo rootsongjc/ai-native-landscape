@@ -3,7 +3,7 @@ name: Petri
 slug: petri
 homepage: https://safety-research.github.io/petri/
 repo: https://github.com/safety-research/petri
-license: Unknown
+license: MIT
 category: training-optimization
 subCategory: evaluation-benchmarks
 tags:

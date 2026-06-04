@@ -3,7 +3,7 @@ name: Stagehand
 slug: stagehand
 homepage: https://stagehand.dev
 repo: https://github.com/browserbase/stagehand
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: browser-automation
 tags:

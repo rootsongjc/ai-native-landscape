@@ -3,7 +3,7 @@ name: PyTorch Lightning
 slug: pytorch-lightning
 homepage: https://lightning.ai/pytorch-lightning/
 repo: https://github.com/lightning-ai/pytorch-lightning
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: training-frameworks
 tags:

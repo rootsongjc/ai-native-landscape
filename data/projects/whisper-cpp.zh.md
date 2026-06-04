@@ -3,7 +3,7 @@ name: whisper.cpp
 slug: whisper-cpp
 homepage: null
 repo: https://github.com/ggml-org/whisper.cpp
-license: Unknown
+license: MIT
 category: models-modalities
 subCategory: audio-speech
 tags:

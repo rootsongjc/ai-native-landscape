@@ -3,7 +3,7 @@ name: Xinference (Xorbits Inference)
 slug: xorbits-inference
 homepage: https://inference.readthedocs.io/
 repo: https://github.com/xorbitsai/inference
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: inference-runtimes
 tags:

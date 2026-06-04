@@ -3,7 +3,7 @@ name: HAMi
 slug: hami
 homepage: https://project-hami.io
 repo: https://github.com/project-hami/hami
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: model-serving
 tags:

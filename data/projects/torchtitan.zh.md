@@ -3,7 +3,7 @@ name: TorchTitan
 slug: torchtitan
 homepage: https://pytorch.org/
 repo: https://github.com/pytorch/torchtitan
-license: Unknown
+license: BSD-3-Clause
 category: training-optimization
 subCategory: training-frameworks
 tags:

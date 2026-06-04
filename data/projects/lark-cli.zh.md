@@ -3,7 +3,7 @@ name: Lark CLI
 slug: lark-cli
 homepage: null
 repo: https://github.com/larksuite/cli
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:

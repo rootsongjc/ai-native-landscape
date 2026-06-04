@@ -3,7 +3,7 @@ name: LangChain
 slug: langchain
 homepage: https://python.langchain.com/docs/
 repo: https://github.com/langchain-ai/langchain
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

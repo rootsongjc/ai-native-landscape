@@ -3,7 +3,7 @@ name: LightEval
 slug: lighteval
 homepage: https://huggingface.co/docs/lighteval/main/en/index
 repo: https://github.com/huggingface/lighteval
-license: Unknown
+license: MIT
 category: training-optimization
 subCategory: evaluation-benchmarks
 tags:

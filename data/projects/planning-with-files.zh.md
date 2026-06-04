@@ -3,7 +3,7 @@ name: Planning with Files
 slug: planning-with-files
 homepage: https://www.aikux.ai
 repo: https://github.com/othmanadi/planning-with-files
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: mcp-tools
 tags:

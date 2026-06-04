@@ -3,7 +3,7 @@ name: MLC LLM
 slug: mlc-llm
 homepage: https://llm.mlc.ai/
 repo: https://github.com/mlc-ai/mlc-llm
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: deployment-operations
 tags:

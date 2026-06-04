@@ -3,7 +3,7 @@ name: OpenAgents
 slug: openagents
 homepage: https://openagents.org
 repo: https://github.com/openagents-org/openagents
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:

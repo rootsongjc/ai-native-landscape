@@ -3,7 +3,7 @@ name: Triton Inference Server
 slug: triton-inference-server
 homepage: https://developer.nvidia.com/nvidia-triton-inference-server
 repo: https://github.com/triton-inference-server/server
-license: Unknown
+license: BSD-3-Clause
 category: inference-serving
 subCategory: model-serving
 tags:

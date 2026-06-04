@@ -3,7 +3,7 @@ name: Gradio
 slug: gradio
 homepage: https://gradio.app/
 repo: https://github.com/gradio-app/gradio
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: chat-interfaces
 tags:

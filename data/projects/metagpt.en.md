@@ -3,7 +3,7 @@ name: MetaGPT
 slug: metagpt
 homepage: https://mgx.dev/
 repo: https://github.com/foundationagents/metagpt
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-orchestration
 tags:

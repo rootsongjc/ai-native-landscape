@@ -3,7 +3,7 @@ name: Spring AI Alibaba
 slug: spring-ai-alibaba
 homepage: https://java2ai.com
 repo: https://github.com/alibaba/spring-ai-alibaba
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:

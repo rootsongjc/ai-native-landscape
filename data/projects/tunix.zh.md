@@ -3,7 +3,7 @@ name: Tunix
 slug: tunix
 homepage: https://pypi.org/project/tunix/
 repo: https://github.com/google/tunix
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: finetuning-alignment
 tags:

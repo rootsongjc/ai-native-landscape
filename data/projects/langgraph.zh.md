@@ -3,7 +3,7 @@ name: LangGraph
 slug: langgraph
 homepage: https://langchain-ai.github.io/langgraph/
 repo: https://github.com/langchain-ai/langgraph
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:

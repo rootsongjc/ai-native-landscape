@@ -3,7 +3,7 @@ name: MCP-UI
 slug: mcp-ui
 homepage: null
 repo: https://github.com/idosal/mcp-ui
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: mcp-tools
 tags:

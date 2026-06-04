@@ -3,7 +3,7 @@ name: text-embeddings-inference
 slug: text-embeddings-inference
 homepage: https://huggingface.co/docs/text-embeddings-inference
 repo: https://github.com/huggingface/text-embeddings-inference
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

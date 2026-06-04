@@ -3,7 +3,7 @@ name: Heretic
 slug: heretic
 homepage: null
 repo: https://github.com/p-e-w/heretic
-license: Unknown
+license: AGPL-3.0
 category: training-optimization
 subCategory: finetuning-alignment
 tags:

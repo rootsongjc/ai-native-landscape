@@ -3,7 +3,7 @@ name: GPT-SoVITS
 slug: gpt-sovits
 homepage: https://rentry.co/GPT-SoVITS-guide#/
 repo: https://github.com/rvc-boss/gpt-sovits
-license: Unknown
+license: MIT
 category: models-modalities
 subCategory: audio-speech
 tags:

@@ -3,7 +3,7 @@ name: pandas
 slug: pandas
 homepage: https://pandas.pydata.org
 repo: https://github.com/pandas-dev/pandas
-license: Unknown
+license: BSD-3-Clause
 category: rag-knowledge
 subCategory: data-connectors
 tags:

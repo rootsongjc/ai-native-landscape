@@ -3,7 +3,7 @@ name: TRL
 slug: trl
 homepage: http://hf.co/docs/trl
 repo: https://github.com/huggingface/trl
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: finetuning-alignment
 tags:

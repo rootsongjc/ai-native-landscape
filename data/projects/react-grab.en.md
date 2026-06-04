@@ -3,7 +3,7 @@ name: React Grab
 slug: react-grab
 homepage: https://react-grab.com
 repo: https://github.com/aidenybai/react-grab
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: coding-agents
 tags:

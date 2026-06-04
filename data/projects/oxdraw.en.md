@@ -3,7 +3,7 @@ name: oxdraw
 slug: oxdraw
 homepage: null
 repo: https://github.com/rohanadwankar/oxdraw
-license: Unknown
+license: MIT
 category: applications-products
 subCategory: productivity-tools
 tags:

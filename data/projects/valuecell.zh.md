@@ -3,7 +3,7 @@ name: ValueCell
 slug: valuecell
 homepage: https://valuecell.ai
 repo: https://github.com/valuecell-ai/valuecell
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-orchestration
 tags:

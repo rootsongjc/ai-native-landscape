@@ -3,7 +3,7 @@ name: Xiaozhi ESP32
 slug: xiaozhi-esp32
 homepage: https://xiaozhi.me/
 repo: https://github.com/78/xiaozhi-esp32
-license: Unknown
+license: MIT
 category: applications-products
 subCategory: chat-interfaces
 tags:

@@ -3,7 +3,7 @@ name: ART (Agent Reinforcement Trainer)
 slug: openpipe-art
 homepage: https://art.openpipe.ai
 repo: https://github.com/openpipe/art
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

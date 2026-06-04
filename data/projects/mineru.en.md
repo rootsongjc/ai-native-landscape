@@ -3,7 +3,7 @@ name: MinerU
 slug: mineru
 homepage: https://mineru.net/
 repo: https://github.com/opendatalab/mineru
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: document-processing
 tags:

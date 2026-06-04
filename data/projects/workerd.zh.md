@@ -3,7 +3,7 @@ name: workerd
 slug: workerd
 homepage: null
 repo: https://github.com/cloudflare/workerd
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: deployment-operations
 tags:

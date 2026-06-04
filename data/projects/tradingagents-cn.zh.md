@@ -3,7 +3,7 @@ name: TradingAgents Enhanced Chinese Edition
 slug: tradingagents-cn
 homepage: https://hsliuping.github.io/TradingAgents-CN/
 repo: https://github.com/hsliuping/tradingagents-cn
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: productivity-tools
 tags:

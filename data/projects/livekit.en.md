@@ -3,7 +3,7 @@ name: LiveKit
 slug: livekit
 homepage: https://docs.livekit.io
 repo: https://github.com/livekit/livekit
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: sdk-frameworks
 tags:

@@ -3,7 +3,7 @@ name: AntV MCP Server Chart
 slug: mcp-server-chart
 homepage: null
 repo: https://github.com/antvis/mcp-server-chart
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: mcp-tools
 tags:

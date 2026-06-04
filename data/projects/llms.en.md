@@ -3,7 +3,7 @@ name: llms.py
 slug: llms
 homepage: https://servicestack.net/posts/llms-py-ui
 repo: https://github.com/servicestack/llms
-license: Unknown
+license: BSD-3-Clause
 category: inference-serving
 subCategory: llm-routing-gateways
 tags:

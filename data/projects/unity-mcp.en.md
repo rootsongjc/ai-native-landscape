@@ -3,7 +3,7 @@ name: Unity MCP
 slug: unity-mcp
 homepage: https://www.coplay.dev/?ref=unity-mcp
 repo: https://github.com/coplaydev/unity-mcp
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: mcp-tools
 tags:

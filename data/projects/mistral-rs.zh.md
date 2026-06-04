@@ -3,7 +3,7 @@ name: mistral.rs
 slug: mistral-rs
 homepage: null
 repo: https://github.com/ericlbuehler/mistral.rs
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: inference-runtimes
 tags:

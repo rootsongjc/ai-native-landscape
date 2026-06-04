@@ -3,7 +3,7 @@ name: OpenLLMetry
 slug: openllmetry
 homepage: https://traceloop.github.io/openllmetry
 repo: https://github.com/traceloop/openllmetry
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: observability-monitoring
 tags:

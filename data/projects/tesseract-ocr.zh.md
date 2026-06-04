@@ -3,7 +3,7 @@ name: Tesseract OCR
 slug: tesseract-ocr
 homepage: https://tesseract-ocr.github.io/
 repo: https://github.com/tesseract-ocr/tesseract
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: document-processing
 tags:

@@ -3,7 +3,7 @@ name: OpenClaw
 slug: openclaw
 homepage: https://openclaw.ai
 repo: https://github.com/openclaw/openclaw
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:

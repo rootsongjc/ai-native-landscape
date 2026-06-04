@@ -3,7 +3,7 @@ name: Apache Superset
 slug: superset
 homepage: https://superset.apache.org/
 repo: https://github.com/apache/superset
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: data-platforms
 tags:

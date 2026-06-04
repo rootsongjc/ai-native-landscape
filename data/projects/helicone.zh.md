@@ -3,7 +3,7 @@ name: Helicone
 slug: helicone
 homepage: null
 repo: https://github.com/helicone/helicone
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: observability-monitoring
 tags:

@@ -3,7 +3,7 @@ name: Instructor
 slug: instructor
 homepage: https://python.useinstructor.com/
 repo: https://github.com/567-labs/instructor
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: sdk-frameworks
 tags:

@@ -3,7 +3,7 @@ name: OpenCode
 slug: opencode
 homepage: https://opencode.ai
 repo: https://github.com/sst/opencode
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: coding-agents
 tags:

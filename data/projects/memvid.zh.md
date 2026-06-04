@@ -3,7 +3,7 @@ name: Memvid
 slug: memvid
 homepage: https://www.memvid.com/
 repo: https://github.com/olow304/memvid
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

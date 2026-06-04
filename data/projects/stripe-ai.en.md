@@ -3,7 +3,7 @@ name: Stripe AI
 slug: stripe-ai
 homepage: https://docs.stripe.com/agents
 repo: https://github.com/stripe/ai
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:

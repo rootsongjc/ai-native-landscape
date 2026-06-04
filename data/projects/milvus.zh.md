@@ -3,7 +3,7 @@ name: Milvus
 slug: milvus
 homepage: https://milvus.io
 repo: https://github.com/milvus-io/milvus
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: vector-databases
 tags:

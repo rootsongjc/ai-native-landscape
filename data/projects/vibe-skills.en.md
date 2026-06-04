@@ -3,7 +3,7 @@ name: Vibe Skills
 slug: vibe-skills
 homepage: null
 repo: https://github.com/foryourhealth111-pixel/vibe-skills
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:

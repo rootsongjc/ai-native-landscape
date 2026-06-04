@@ -3,7 +3,7 @@ name: Unsloth
 slug: unsloth
 homepage: https://docs.unsloth.ai/
 repo: https://github.com/unslothai/unsloth
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: finetuning-alignment
 tags:

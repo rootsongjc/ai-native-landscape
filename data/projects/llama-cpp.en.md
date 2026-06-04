@@ -3,7 +3,7 @@ name: llama.cpp
 slug: llama-cpp
 homepage: https://huggingface.co/models?library=gguf
 repo: https://github.com/ggml-org/llama.cpp
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: inference-runtimes
 tags:

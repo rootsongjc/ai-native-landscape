@@ -3,7 +3,7 @@ name: TOON
 slug: toon
 homepage: https://toonformat.dev
 repo: https://github.com/toon-format/toon
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: sdk-frameworks
 tags:

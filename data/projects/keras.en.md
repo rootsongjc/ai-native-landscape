@@ -3,7 +3,7 @@ name: Keras
 slug: keras
 homepage: https://keras.io/
 repo: https://github.com/keras-team/keras
-license: Unknown
+license: Apache-2.0
 category: models-modalities
 subCategory: foundation-models
 tags:

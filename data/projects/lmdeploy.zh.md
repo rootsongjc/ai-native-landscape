@@ -3,7 +3,7 @@ name: LMDeploy
 slug: lmdeploy
 homepage: https://lmdeploy.readthedocs.io/en/latest/
 repo: https://github.com/internlm/lmdeploy
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: deployment-operations
 tags:

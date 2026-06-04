@@ -3,7 +3,7 @@ name: Outlines
 slug: outlines
 homepage: https://dottxt-ai.github.io/outlines/
 repo: https://github.com/dottxt-ai/outlines
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: inference-runtimes
 tags:

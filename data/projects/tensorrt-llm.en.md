@@ -3,7 +3,7 @@ name: TensorRT-LLM
 slug: tensorrt-llm
 homepage: https://nvidia.github.io/TensorRT-LLM/
 repo: https://github.com/nvidia/tensorrt-llm
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: model-serving
 tags:

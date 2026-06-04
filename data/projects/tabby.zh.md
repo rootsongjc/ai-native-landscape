@@ -3,7 +3,7 @@ name: Tabby
 slug: tabby
 homepage: https://tabby.tabbyml.com
 repo: https://github.com/tabbyml/tabby
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: coding-agents
 tags:

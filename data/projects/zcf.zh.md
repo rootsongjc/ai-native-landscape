@@ -3,7 +3,7 @@ name: zcf
 slug: zcf
 homepage: null
 repo: https://github.com/ufomiao/zcf
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:

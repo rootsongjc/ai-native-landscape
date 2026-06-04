@@ -3,7 +3,7 @@ name: Mini-SGLang
 slug: mini-sglang
 homepage: null
 repo: https://github.com/sgl-project/mini-sglang
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: inference-runtimes
 tags:

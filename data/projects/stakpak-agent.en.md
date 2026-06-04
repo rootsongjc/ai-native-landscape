@@ -3,7 +3,7 @@ name: Stakpak Agent
 slug: stakpak-agent
 homepage: https://stakpak.dev
 repo: https://github.com/stakpak/agent
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:

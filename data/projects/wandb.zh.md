@@ -3,7 +3,7 @@ name: Weights & Biases (W&B)
 slug: wandb
 homepage: https://wandb.ai/
 repo: https://github.com/wandb/wandb
-license: Unknown
+license: MIT
 category: training-optimization
 subCategory: experiment-mlops
 tags:

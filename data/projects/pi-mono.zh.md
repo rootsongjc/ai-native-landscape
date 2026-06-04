@@ -3,7 +3,7 @@ name: Pi Monorepo
 slug: pi-mono
 homepage: https://pi.dev/
 repo: https://github.com/badlogic/pi-mono
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:

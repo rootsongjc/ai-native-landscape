@@ -3,7 +3,7 @@ name: Infinity
 slug: infinity
 homepage: https://infiniflow.org
 repo: https://github.com/infiniflow/infinity
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: vector-databases
 tags:

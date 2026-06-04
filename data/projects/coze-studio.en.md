@@ -3,7 +3,7 @@ name: Coze Studio
 slug: coze-studio
 homepage: https://www.coze.com/
 repo: https://github.com/coze-dev/coze-studio
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:

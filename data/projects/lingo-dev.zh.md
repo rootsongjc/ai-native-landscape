@@ -3,7 +3,7 @@ name: Lingo.dev
 slug: lingo-dev
 homepage: https://lingo.dev
 repo: https://github.com/lingodotdev/lingo.dev
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:

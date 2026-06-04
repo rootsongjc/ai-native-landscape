@@ -3,7 +3,7 @@ name: MockingBird
 slug: mockingbird
 homepage: null
 repo: https://github.com/babysor/mockingbird
-license: Unknown
+license: MIT
 category: models-modalities
 subCategory: audio-speech
 tags:

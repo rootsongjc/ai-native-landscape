@@ -3,7 +3,7 @@ name: Siyuan
 slug: siyuan
 homepage: https://b3log.org/siyuan
 repo: https://github.com/siyuan-note/siyuan
-license: Unknown
+license: AGPL-3.0
 category: applications-products
 subCategory: productivity-tools
 tags:

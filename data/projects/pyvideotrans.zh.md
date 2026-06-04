@@ -3,7 +3,7 @@ name: pyvideotrans
 slug: pyvideotrans
 homepage: https://pyvideotrans.com
 repo: https://github.com/jianchang512/pyvideotrans
-license: Unknown
+license: GPL-3.0
 category: applications-products
 subCategory: productivity-tools
 tags:

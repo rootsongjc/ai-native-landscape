@@ -3,7 +3,7 @@ name: Presenton
 slug: presenton
 homepage: https://presenton.ai
 repo: https://github.com/presenton/presenton
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: productivity-tools
 tags:

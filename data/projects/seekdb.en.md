@@ -3,7 +3,7 @@ name: SeekDB
 slug: seekdb
 homepage: https://oceanbase.ai/
 repo: https://github.com/oceanbase/seekdb
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: vector-databases
 tags:

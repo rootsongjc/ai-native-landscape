@@ -3,7 +3,7 @@ name: GuideLLM
 slug: guidellm
 homepage: null
 repo: https://github.com/vllm-project/guidellm
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: prompt-quality
 tags:

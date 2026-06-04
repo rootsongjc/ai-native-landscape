@@ -3,7 +3,7 @@ name: GPT Researcher
 slug: gpt-researcher
 homepage: https://gptr.dev/
 repo: https://github.com/assafelovic/gpt-researcher
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-orchestration
 tags:

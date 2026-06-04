@@ -3,7 +3,7 @@ name: Next AI Draw.io
 slug: next-ai-draw-io
 homepage: https://next-ai-drawio.jiang.jp/
 repo: https://github.com/dayuanjiang/next-ai-draw-io
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: productivity-tools
 tags:

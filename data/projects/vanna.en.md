@@ -3,7 +3,7 @@ name: Vanna
 slug: vanna
 homepage: https://vanna.ai/
 repo: https://github.com/vanna-ai/vanna
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

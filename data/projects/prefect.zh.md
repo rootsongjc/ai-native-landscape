@@ -3,7 +3,7 @@ name: Prefect
 slug: prefect
 homepage: https://prefect.io
 repo: https://github.com/prefecthq/prefect
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: workflow-automation
 tags:

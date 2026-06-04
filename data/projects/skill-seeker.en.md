@@ -3,7 +3,7 @@ name: Skill Seeker
 slug: skill-seeker
 homepage: null
 repo: https://github.com/yusufkaraaslan/skill_seekers
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:

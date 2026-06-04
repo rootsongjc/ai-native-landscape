@@ -3,7 +3,7 @@ name: OpenCompass
 slug: opencompass
 homepage: https://opencompass.org.cn/
 repo: https://github.com/open-compass/opencompass
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: evaluation-benchmarks
 tags:

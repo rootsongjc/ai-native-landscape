@@ -3,7 +3,7 @@ name: KAI Scheduler
 slug: kai-scheduler
 homepage: https://github.com/NVIDIA/KAI-Scheduler
 repo: https://github.com/nvidia/kai-scheduler
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: inference-runtimes
 tags:

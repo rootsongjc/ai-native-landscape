@@ -3,7 +3,7 @@ name: vLLM Semantic Router
 slug: semantic-router
 homepage: https://vllm-semantic-router.com/
 repo: https://github.com/vllm-project/semantic-router
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: llm-routing-gateways
 tags:

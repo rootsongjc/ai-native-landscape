@@ -3,7 +3,7 @@ name: Shotgun
 slug: shotgun
 homepage: null
 repo: https://github.com/shotgun-sh/shotgun
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: coding-agents
 tags:

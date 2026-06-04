@@ -3,7 +3,7 @@ name: Pipelex
 slug: pipelex
 homepage: https://pipelex.com
 repo: https://github.com/pipelex/pipelex
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:

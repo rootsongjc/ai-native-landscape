@@ -3,7 +3,7 @@ name: MCP Scanner
 slug: mcp-scanner
 homepage: https://www.cisco.com/site/us/en/products/security/ai-defense/index.html
 repo: https://github.com/cisco-ai-defense/mcp-scanner
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: safety-guardrails
 tags:

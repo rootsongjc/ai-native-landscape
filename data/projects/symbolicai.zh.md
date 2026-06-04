@@ -3,7 +3,7 @@ name: SymbolicAI
 slug: symbolicai
 homepage: https://extensityai.gitbook.io/symbolicai
 repo: https://github.com/extensityai/symbolicai
-license: Unknown
+license: BSD-3-Clause
 category: coding-devtools
 subCategory: sdk-frameworks
 tags:

@@ -3,7 +3,7 @@ name: mgrep
 slug: mgrep
 homepage: https://demo.mgrep.mixedbread.com
 repo: https://github.com/mixedbread-ai/mgrep
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

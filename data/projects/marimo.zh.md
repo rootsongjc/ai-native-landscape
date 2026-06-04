@@ -3,7 +3,7 @@ name: Marimo
 slug: marimo
 homepage: https://marimo.io/
 repo: https://github.com/marimo-team/marimo
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: productivity-tools
 tags:

@@ -3,7 +3,7 @@ name: LLaMA Factory
 slug: llama-factory
 homepage: https://llamafactory.readthedocs.io/
 repo: https://github.com/hiyouga/llama-factory
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: finetuning-alignment
 tags:

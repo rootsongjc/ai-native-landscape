@@ -3,7 +3,7 @@ name: Ray
 slug: ray
 homepage: https://ray.io/
 repo: https://github.com/ray-project/ray
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: sdk-frameworks
 tags:

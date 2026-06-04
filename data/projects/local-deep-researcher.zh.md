@@ -3,7 +3,7 @@ name: Local Deep Researcher
 slug: local-deep-researcher
 homepage: null
 repo: https://github.com/langchain-ai/local-deep-researcher
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:

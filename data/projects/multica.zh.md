@@ -3,7 +3,7 @@ name: Multica
 slug: multica
 homepage: https://multica.ai
 repo: https://github.com/multica-ai/multica
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: desktop-clients
 tags:

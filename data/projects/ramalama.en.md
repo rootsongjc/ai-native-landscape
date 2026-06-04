@@ -3,7 +3,7 @@ name: RamaLama
 slug: ramalama
 homepage: https://ramalama.ai
 repo: https://github.com/containers/ramalama
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: inference-runtimes
 tags:

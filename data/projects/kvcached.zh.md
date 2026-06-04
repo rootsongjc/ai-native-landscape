@@ -3,7 +3,7 @@ name: kvcached
 slug: kvcached
 homepage: https://yifanqiao.notion.site/Solve-the-GPU-Cost-Crisis-with-kvcached-289da9d1f4d68034b17bf2774201b141
 repo: https://github.com/ovg-project/kvcached
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: model-serving
 tags:

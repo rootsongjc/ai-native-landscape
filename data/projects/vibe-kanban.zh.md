@@ -3,7 +3,7 @@ name: Vibe Kanban
 slug: vibe-kanban
 homepage: https://www.vibekanban.com/
 repo: https://github.com/bloopai/vibe-kanban
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: coding-agents
 tags:

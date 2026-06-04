@@ -3,7 +3,7 @@ name: TensorFlow
 slug: tensorflow
 homepage: https://tensorflow.org
 repo: https://github.com/tensorflow/tensorflow
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: training-frameworks
 tags:

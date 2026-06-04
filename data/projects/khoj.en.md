@@ -3,7 +3,7 @@ name: Khoj
 slug: khoj
 homepage: https://khoj.dev
 repo: https://github.com/khoj-ai/khoj
-license: Unknown
+license: AGPL-3.0
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

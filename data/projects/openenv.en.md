@@ -3,7 +3,7 @@ name: OpenEnv — Agentic Execution Environments
 slug: openenv
 homepage: https://pypi.org/project/openenv-core/
 repo: https://github.com/meta-pytorch/openenv
-license: Unknown
+license: BSD-3-Clause
 category: training-optimization
 subCategory: training-frameworks
 tags:

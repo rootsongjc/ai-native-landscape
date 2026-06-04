@@ -3,7 +3,7 @@ name: OpenAI Agents (Python)
 slug: openai-agents-python
 homepage: https://openai.github.io/openai-agents-python/
 repo: https://github.com/openai/openai-agents-python
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-orchestration
 tags:

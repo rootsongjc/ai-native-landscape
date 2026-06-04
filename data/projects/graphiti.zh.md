@@ -3,7 +3,7 @@ name: Graphiti
 slug: graphiti
 homepage: null
 repo: https://github.com/getzep/graphiti
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:

@@ -3,7 +3,7 @@ name: ruflo
 slug: ruflo
 homepage: https://cognitum.one/
 repo: https://github.com/ruvnet/ruflo
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-orchestration
 tags:

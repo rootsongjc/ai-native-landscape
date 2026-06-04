@@ -3,7 +3,7 @@ name: Magika
 slug: magika
 homepage: https://securityresearch.google/magika/
 repo: https://github.com/google/magika
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:

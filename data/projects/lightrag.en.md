@@ -3,7 +3,7 @@ name: LightRAG
 slug: lightrag
 homepage: https://pypi.org/project/lightrag-hku/
 repo: https://github.com/hkuds/lightrag
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

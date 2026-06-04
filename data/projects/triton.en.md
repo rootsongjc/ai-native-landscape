@@ -3,7 +3,7 @@ name: Triton
 slug: triton
 homepage: https://triton-lang.org/
 repo: https://github.com/triton-lang/triton
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: inference-runtimes
 tags:

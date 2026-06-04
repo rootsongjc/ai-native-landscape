@@ -3,7 +3,7 @@ name: OxyGent
 slug: oxygent
 homepage: https://oxygent.jd.com
 repo: https://github.com/jd-opensource/oxygent
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:

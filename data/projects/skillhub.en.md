@@ -3,7 +3,7 @@ name: SkillHub
 slug: skillhub
 homepage: null
 repo: https://github.com/iflytek/skillhub
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:

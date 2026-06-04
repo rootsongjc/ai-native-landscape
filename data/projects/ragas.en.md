@@ -3,7 +3,7 @@ name: Ragas
 slug: ragas
 homepage: https://docs.ragas.io/
 repo: https://github.com/explodinggradients/ragas
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: evaluation-benchmarks
 tags:

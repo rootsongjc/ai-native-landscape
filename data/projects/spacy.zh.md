@@ -3,7 +3,7 @@ name: spaCy
 slug: spacy
 homepage: https://spacy.io
 repo: https://github.com/explosion/spacy
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: document-processing
 tags:

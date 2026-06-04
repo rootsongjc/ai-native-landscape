@@ -3,7 +3,7 @@ name: MCP Registry
 slug: modelcontextprotocol-registry
 homepage: https://registry.modelcontextprotocol.io/
 repo: https://github.com/modelcontextprotocol/registry
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: mcp-tools
 tags:

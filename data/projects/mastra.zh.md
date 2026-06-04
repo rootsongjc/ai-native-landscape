@@ -3,7 +3,7 @@ name: Mastra
 slug: mastra
 homepage: https://mastra.ai/
 repo: https://github.com/mastra-ai/mastra
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:

@@ -3,7 +3,7 @@ name: nanoGPT
 slug: nanogpt
 homepage: null
 repo: https://github.com/karpathy/nanogpt
-license: Unknown
+license: MIT
 category: training-optimization
 subCategory: training-frameworks
 tags:

@@ -3,7 +3,7 @@ name: Vercel AI
 slug: vercel-ai
 homepage: https://ai-sdk.dev
 repo: https://github.com/vercel/ai
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: developer-utilities
 tags:

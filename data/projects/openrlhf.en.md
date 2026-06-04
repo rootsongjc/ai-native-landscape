@@ -3,7 +3,7 @@ name: OpenRLHF
 slug: openrlhf
 homepage: https://openrlhf.readthedocs.io/
 repo: https://github.com/openrlhf/openrlhf
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: finetuning-alignment
 tags:

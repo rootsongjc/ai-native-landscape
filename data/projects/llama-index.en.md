@@ -3,7 +3,7 @@ name: LlamaIndex
 slug: llama-index
 homepage: https://docs.llamaindex.ai/en/stable/
 repo: https://github.com/run-llama/llama_index
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

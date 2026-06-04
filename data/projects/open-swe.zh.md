@@ -3,7 +3,7 @@ name: Open SWE
 slug: open-swe
 homepage: https://swe.langchain.com/
 repo: https://github.com/langchain-ai/open-swe
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: coding-agents
 tags:

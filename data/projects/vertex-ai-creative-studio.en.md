@@ -3,7 +3,7 @@ name: GenMedia Creative Studio
 slug: vertex-ai-creative-studio
 homepage: https://cloud.google.com/vertex-ai
 repo: https://github.com/googlecloudplatform/vertex-ai-creative-studio
-license: Unknown
+license: Apache-2.0
 category: models-modalities
 subCategory: audio-speech
 tags:

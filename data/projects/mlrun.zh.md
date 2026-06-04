@@ -3,7 +3,7 @@ name: MLRun
 slug: mlrun
 homepage: https://mlrun.org
 repo: https://github.com/mlrun/mlrun
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: deployment-operations
 tags:

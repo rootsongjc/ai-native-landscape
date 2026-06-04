@@ -3,7 +3,7 @@ name: OpenSpec
 slug: openspec
 homepage: https://openspec.dev/
 repo: https://github.com/fission-ai/openspec
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: coding-agents
 tags:

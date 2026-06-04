@@ -3,7 +3,7 @@ name: Haystack
 slug: haystack
 homepage: null
 repo: https://github.com/deepset-ai/haystack
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

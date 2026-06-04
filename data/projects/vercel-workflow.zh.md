@@ -3,7 +3,7 @@ name: Workflow DevKit
 slug: vercel-workflow
 homepage: https://useworkflow.dev
 repo: https://github.com/vercel/workflow
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: workflow-automation
 tags:

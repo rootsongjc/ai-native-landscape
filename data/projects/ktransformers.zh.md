@@ -3,7 +3,7 @@ name: KTransformers
 slug: ktransformers
 homepage: https://kvcache-ai.github.io/ktransformers/
 repo: https://github.com/kvcache-ai/ktransformers
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: inference-runtimes
 tags:

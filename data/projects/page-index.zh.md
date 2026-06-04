@@ -3,7 +3,7 @@ name: PageIndex
 slug: page-index
 homepage: https://pageindex.ai
 repo: https://github.com/vectifyai/pageindex
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

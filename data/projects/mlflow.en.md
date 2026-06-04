@@ -3,7 +3,7 @@ name: MLflow
 slug: mlflow
 homepage: https://mlflow.org/
 repo: https://github.com/mlflow/mlflow
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: deployment-operations
 tags:

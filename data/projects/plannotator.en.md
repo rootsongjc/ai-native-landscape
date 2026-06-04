@@ -3,7 +3,7 @@ name: Plannotator
 slug: plannotator
 homepage: https://plannotator.ai
 repo: https://github.com/backnotprop/plannotator
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: coding-agents
 tags:

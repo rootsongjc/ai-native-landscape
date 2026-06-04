@@ -3,7 +3,7 @@ name: OpenLIT
 slug: openlit
 homepage: https://docs.openlit.io/
 repo: https://github.com/openlit/openlit
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: evaluation-benchmarks
 tags:

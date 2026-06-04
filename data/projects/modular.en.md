@@ -3,7 +3,7 @@ name: Modular Platform
 slug: modular
 homepage: https://www.modular.com/
 repo: https://github.com/modular/modular
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: model-serving
 tags:

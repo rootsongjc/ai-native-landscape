@@ -3,7 +3,7 @@ name: tinygrad
 slug: tinygrad
 homepage: null
 repo: https://github.com/geohot/tinygrad
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: inference-runtimes
 tags:

@@ -3,7 +3,7 @@ name: MLX LM
 slug: mlx-lm
 homepage: null
 repo: https://github.com/ml-explore/mlx-lm
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: inference-runtimes
 tags:

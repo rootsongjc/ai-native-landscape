@@ -3,7 +3,7 @@ name: LiveBench
 slug: livebench
 homepage: https://livebench.ai/
 repo: https://github.com/livebench/livebench
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: evaluation-benchmarks
 tags:

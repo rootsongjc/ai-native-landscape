@@ -3,7 +3,7 @@ name: NLWeb
 slug: nlweb
 homepage: null
 repo: https://github.com/nlweb-ai/nlweb
-license: Unknown
+license: MIT
 category: applications-products
 subCategory: chat-interfaces
 tags:

@@ -3,7 +3,7 @@ name: Skyvern
 slug: skyvern
 homepage: https://www.skyvern.com
 repo: https://github.com/skyvern-ai/skyvern
-license: Unknown
+license: AGPL-3.0
 category: agents
 subCategory: agent-frameworks
 tags:

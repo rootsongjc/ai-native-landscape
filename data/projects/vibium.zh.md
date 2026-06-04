@@ -3,7 +3,7 @@ name: Vibium
 slug: vibium
 homepage: https://vibium.com/
 repo: https://github.com/vibiumdev/vibium
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: mcp-tools
 tags:

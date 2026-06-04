@@ -3,7 +3,7 @@ name: NeMo RL
 slug: nemo-rl
 homepage: https://docs.nvidia.com/nemo/rl/latest/index.html
 repo: https://github.com/nvidia-nemo/rl
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: training-frameworks
 tags:

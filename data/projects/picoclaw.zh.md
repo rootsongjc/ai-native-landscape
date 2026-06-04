@@ -3,7 +3,7 @@ name: PicoClaw
 slug: picoclaw
 homepage: null
 repo: https://github.com/sipeed/picoclaw
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:

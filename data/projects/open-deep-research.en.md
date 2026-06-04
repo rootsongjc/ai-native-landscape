@@ -3,7 +3,7 @@ name: Open Deep Research
 slug: open-deep-research
 homepage: null
 repo: https://github.com/langchain-ai/open_deep_research
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:

@@ -3,7 +3,7 @@ name: MemOS
 slug: memos-os
 homepage: https://memos.openmem.net/
 repo: https://github.com/memtensor/memos
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: agent-memory-context
 tags:

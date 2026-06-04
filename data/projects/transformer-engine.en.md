@@ -3,7 +3,7 @@ name: Transformer Engine
 slug: transformer-engine
 homepage: https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/index.html
 repo: https://github.com/nvidia/transformerengine
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: gpu-acceleration
 tags:

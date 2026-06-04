@@ -3,7 +3,7 @@ name: Keploy
 slug: keploy
 homepage: https://keploy.io/
 repo: https://github.com/keploy/keploy
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: evaluation-benchmarks
 tags:

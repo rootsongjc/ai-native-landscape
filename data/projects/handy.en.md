@@ -3,7 +3,7 @@ name: Handy
 slug: handy
 homepage: https://handy.computer/
 repo: https://github.com/cjpais/handy
-license: Unknown
+license: MIT
 category: models-modalities
 subCategory: audio-speech
 tags:

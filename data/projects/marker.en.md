@@ -3,7 +3,7 @@ name: Marker
 slug: marker
 homepage: null
 repo: https://github.com/datalab-to/marker
-license: Unknown
+license: GPL-3.0
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

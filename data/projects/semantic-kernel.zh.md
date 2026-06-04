@@ -3,7 +3,7 @@ name: Semantic Kernel
 slug: semantic-kernel
 homepage: https://aka.ms/semantic-kernel
 repo: https://github.com/microsoft/semantic-kernel
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-orchestration
 tags:

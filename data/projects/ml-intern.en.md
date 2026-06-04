@@ -3,7 +3,7 @@ name: ML Intern
 slug: ml-intern
 homepage: null
 repo: https://github.com/huggingface/ml-intern
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:

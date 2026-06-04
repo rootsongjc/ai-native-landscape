@@ -3,7 +3,7 @@ name: Playwright MCP
 slug: playwright-mcp
 homepage: https://playwright.dev/
 repo: https://github.com/microsoft/playwright-mcp
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: mcp-tools
 tags:

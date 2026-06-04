@@ -3,7 +3,7 @@ name: GraphRAG
 slug: graphrag
 homepage: null
 repo: https://github.com/microsoft/graphrag
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

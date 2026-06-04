@@ -3,7 +3,7 @@ name: Hyprnote
 slug: hyprnote
 homepage: https://hyprnote.com
 repo: https://github.com/fastrepl/hyprnote
-license: Unknown
+license: MIT
 category: applications-products
 subCategory: productivity-tools
 tags:

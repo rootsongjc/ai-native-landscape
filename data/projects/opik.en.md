@@ -3,7 +3,7 @@ name: Opik
 slug: opik
 homepage: https://www.comet.com/docs/opik/
 repo: https://github.com/comet-ml/opik
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: evaluation-benchmarks
 tags:

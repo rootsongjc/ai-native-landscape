@@ -3,7 +3,7 @@ name: IronClaw
 slug: ironclaw
 homepage: null
 repo: https://github.com/nearai/ironclaw
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:

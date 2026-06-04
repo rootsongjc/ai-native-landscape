@@ -3,7 +3,7 @@ name: Apache Iceberg
 slug: iceberg
 homepage: https://iceberg.apache.org/
 repo: https://github.com/apache/iceberg
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: data-platforms
 tags:

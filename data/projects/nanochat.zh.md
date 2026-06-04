@@ -3,7 +3,7 @@ name: nanochat
 slug: nanochat
 homepage: null
 repo: https://github.com/karpathy/nanochat
-license: Unknown
+license: MIT
 category: applications-products
 subCategory: productivity-tools
 tags:

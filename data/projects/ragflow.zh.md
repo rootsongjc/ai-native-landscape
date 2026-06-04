@@ -3,7 +3,7 @@ name: RAGFlow
 slug: ragflow
 homepage: https://ragflow.io
 repo: https://github.com/infiniflow/ragflow
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

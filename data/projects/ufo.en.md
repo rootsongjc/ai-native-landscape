@@ -3,7 +3,7 @@ name: 'UFO: Desktop AgentOS'
 slug: ufo
 homepage: https://microsoft.github.io/UFO/
 repo: https://github.com/microsoft/ufo
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:

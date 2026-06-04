@@ -3,7 +3,7 @@ name: noScribe
 slug: no-scribe
 homepage: null
 repo: https://github.com/kaixxx/noscribe
-license: Unknown
+license: GPL-3.0
 category: models-modalities
 subCategory: audio-speech
 tags:

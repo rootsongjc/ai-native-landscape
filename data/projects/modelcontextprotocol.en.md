@@ -3,7 +3,7 @@ name: Model Context Protocol (MCP)
 slug: modelcontextprotocol
 homepage: https://modelcontextprotocol.io
 repo: https://github.com/modelcontextprotocol/modelcontextprotocol
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: mcp-tools
 tags:

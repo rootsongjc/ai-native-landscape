@@ -3,7 +3,7 @@ name: Spec-Kit
 slug: spec-kit
 homepage: null
 repo: https://github.com/github/spec-kit
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: coding-agents
 tags:

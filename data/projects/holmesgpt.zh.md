@@ -3,7 +3,7 @@ name: HolmesGPT
 slug: holmesgpt
 homepage: https://holmesgpt.dev/
 repo: https://github.com/holmesgpt/holmesgpt
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: cloud-native-ai
 tags:

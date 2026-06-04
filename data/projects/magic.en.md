@@ -3,7 +3,7 @@ name: Super Magic
 slug: magic
 homepage: https://www.letsmagic.ai/
 repo: https://github.com/dtyq/magic
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: workflow-automation
 tags:

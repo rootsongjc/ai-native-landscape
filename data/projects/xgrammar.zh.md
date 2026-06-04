@@ -3,7 +3,7 @@ name: XGrammar
 slug: xgrammar
 homepage: https://xgrammar.mlc.ai/docs/
 repo: https://github.com/mlc-ai/xgrammar
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: inference-runtimes
 tags:

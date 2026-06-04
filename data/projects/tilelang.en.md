@@ -3,7 +3,7 @@ name: TileLang
 slug: tilelang
 homepage: https://tilelang.com/
 repo: https://github.com/tile-ai/tilelang
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: gpu-acceleration
 tags:

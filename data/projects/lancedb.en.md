@@ -3,7 +3,7 @@ name: LanceDB
 slug: lancedb
 homepage: https://lancedb.github.io/lancedb/
 repo: https://github.com/lancedb/lancedb
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

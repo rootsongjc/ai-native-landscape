@@ -3,7 +3,7 @@ name: NextChat
 slug: nextchat
 homepage: https://nextchat.club/
 repo: https://github.com/chatgptnextweb/nextchat
-license: Unknown
+license: MIT
 category: applications-products
 subCategory: chat-interfaces
 tags:

@@ -3,7 +3,7 @@ name: LiteBox
 slug: litebox
 homepage: https://aka.ms/litebox
 repo: https://github.com/microsoft/litebox
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: sandboxes-runtimes
 tags:

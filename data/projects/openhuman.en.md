@@ -3,7 +3,7 @@ name: OpenHuman
 slug: openhuman
 homepage: https://tinyhumans.ai/openhuman
 repo: https://github.com/tinyhumansai/openhuman
-license: Unknown
+license: GPL-3.0
 category: rag-knowledge
 subCategory: agent-memory-context
 tags:

@@ -3,7 +3,7 @@ name: ScrapeGraphAI
 slug: scrapegraph-ai
 homepage: https://scrapegraphai.com
 repo: https://github.com/scrapegraphai/scrapegraph-ai
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: browser-automation
 tags:

@@ -3,7 +3,7 @@ name: LocalRecall
 slug: localrecall
 homepage: https://quay.io/mudler/localrecall
 repo: https://github.com/mudler/localrecall
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: agent-memory-context
 tags:

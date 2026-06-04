@@ -3,7 +3,7 @@ name: n8n-MCP
 slug: n8n-mcp
 homepage: null
 repo: https://github.com/czlonkowski/n8n-mcp
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: mcp-tools
 tags:

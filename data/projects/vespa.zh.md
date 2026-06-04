@@ -3,7 +3,7 @@ name: Vespa
 slug: vespa
 homepage: https://vespa.ai
 repo: https://github.com/vespa-engine/vespa
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

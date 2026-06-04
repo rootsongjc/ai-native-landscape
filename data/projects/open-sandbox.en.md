@@ -3,7 +3,7 @@ name: OpenSandbox
 slug: open-sandbox
 homepage: null
 repo: https://github.com/alibaba/opensandbox
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: sandboxes-runtimes
 tags:

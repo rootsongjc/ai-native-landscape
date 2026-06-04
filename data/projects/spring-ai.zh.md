@@ -3,7 +3,7 @@ name: Spring AI
 slug: spring-ai
 homepage: https://docs.spring.io/spring-ai/reference/index.html
 repo: https://github.com/spring-projects/spring-ai
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: sdk-frameworks
 tags:

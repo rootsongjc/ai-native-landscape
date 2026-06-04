@@ -3,7 +3,7 @@ name: MAI-UI
 slug: mai-ui
 homepage: https://tongyi-mai.github.io/MAI-UI-blog
 repo: https://github.com/tongyi-mai/mai-ui
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:

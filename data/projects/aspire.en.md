@@ -3,7 +3,7 @@ name: Aspire
 slug: aspire
 homepage: https://aspire.dev
 repo: https://github.com/dotnet/aspire
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:

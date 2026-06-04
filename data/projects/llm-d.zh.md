@@ -3,7 +3,7 @@ name: llm-d
 slug: llm-d
 homepage: https://www.llm-d.ai/
 repo: https://github.com/llm-d/llm-d
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: inference-runtimes
 tags:

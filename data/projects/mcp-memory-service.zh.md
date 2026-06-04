@@ -3,7 +3,7 @@ name: MCP Memory Service
 slug: mcp-memory-service
 homepage: null
 repo: https://github.com/doobidoo/mcp-memory-service
-license: Unknown
+license: {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
 category: coding-devtools
 subCategory: mcp-tools
 tags:

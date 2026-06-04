@@ -3,7 +3,7 @@ name: MindsDB
 slug: mindsdb
 homepage: https://mindsdb.com
 repo: https://github.com/mindsdb/mindsdb
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: data-connectors
 tags:

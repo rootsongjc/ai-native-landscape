@@ -3,7 +3,7 @@ name: kimi-cli
 slug: kimi-cli
 homepage: https://kimi.moonshot.cn/cli
 repo: https://github.com/moonshotai/kimi-cli
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: coding-agents
 tags:

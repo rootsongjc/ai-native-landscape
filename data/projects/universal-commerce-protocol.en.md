@@ -3,7 +3,7 @@ name: Universal Commerce Protocol (UCP)
 slug: universal-commerce-protocol
 homepage: https://ucp.dev
 repo: https://github.com/universal-commerce-protocol/ucp
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:

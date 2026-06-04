@@ -3,7 +3,7 @@ name: JoyAgent-JDGenie
 slug: joyagent-jdgenie
 homepage: null
 repo: https://github.com/jd-opensource/joyagent-jdgenie
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-orchestration
 tags:

@@ -3,7 +3,7 @@ name: gpustack
 slug: gpustack
 homepage: https://gpustack.ai
 repo: https://github.com/gpustack/gpustack
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: model-serving
 tags:

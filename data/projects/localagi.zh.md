@@ -3,7 +3,7 @@ name: LocalAGI
 slug: localagi
 homepage: https://localai.io
 repo: https://github.com/mudler/localagi
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:

@@ -3,7 +3,7 @@ name: MCP Use
 slug: mcp-use
 homepage: https://mcp-use.com
 repo: https://github.com/mcp-use/mcp-use
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: mcp-tools
 tags:

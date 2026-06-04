@@ -3,7 +3,7 @@ name: Gymnasium
 slug: gymnasium
 homepage: https://gymnasium.farama.org
 repo: https://github.com/farama-foundation/gymnasium
-license: Unknown
+license: MIT
 category: training-optimization
 subCategory: training-frameworks
 tags:

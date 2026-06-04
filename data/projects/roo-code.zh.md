@@ -3,7 +3,7 @@ name: Roo Code
 slug: roo-code
 homepage: https://roocode.com/
 repo: https://github.com/roocodeinc/roo-code
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: coding-agents
 tags:

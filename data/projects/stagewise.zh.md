@@ -3,7 +3,7 @@ name: Stagewise
 slug: stagewise
 homepage: https://stagewise.io
 repo: https://github.com/stagewise-io/stagewise
-license: Unknown
+license: AGPL-3.0
 category: coding-devtools
 subCategory: coding-agents
 tags:

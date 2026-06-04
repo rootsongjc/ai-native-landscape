@@ -3,7 +3,7 @@ name: SillyTavern
 slug: sillytavern
 homepage: https://sillytavern.app
 repo: https://github.com/sillytavern/sillytavern
-license: Unknown
+license: AGPL-3.0
 category: applications-products
 subCategory: chat-interfaces
 tags:

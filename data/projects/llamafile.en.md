@@ -3,7 +3,7 @@ name: Llamafile
 slug: llamafile
 homepage: https://mozilla-ai.github.io/llamafile/
 repo: https://github.com/mozilla-ai/llamafile
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: productivity-tools
 tags:

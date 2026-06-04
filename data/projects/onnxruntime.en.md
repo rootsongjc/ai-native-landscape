@@ -3,7 +3,7 @@ name: ONNX Runtime
 slug: onnxruntime
 homepage: https://onnxruntime.ai
 repo: https://github.com/microsoft/onnxruntime
-license: Unknown
+license: MIT
 category: inference-serving
 subCategory: inference-runtimes
 tags:

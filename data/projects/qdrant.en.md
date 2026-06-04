@@ -3,7 +3,7 @@ name: Qdrant
 slug: qdrant
 homepage: https://qdrant.tech
 repo: https://github.com/qdrant/qdrant
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: vector-databases
 tags:

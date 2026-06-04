@@ -3,7 +3,7 @@ name: La Suite Docs
 slug: suitenumerique-docs
 homepage: https://docs.numerique.gouv.fr
 repo: https://github.com/suitenumerique/docs
-license: Unknown
+license: MIT
 category: applications-products
 subCategory: productivity-tools
 tags:

@@ -3,7 +3,7 @@ name: ZenML
 slug: zenml
 homepage: https://docs.zenml.io/
 repo: https://github.com/zenml-io/zenml
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: experiment-mlops
 tags:

@@ -3,7 +3,7 @@ name: PandaWiki
 slug: pandawiki
 homepage: https://pandawiki.docs.baizhi.cloud/
 repo: https://github.com/chaitin/pandawiki
-license: Unknown
+license: AGPL-3.0
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

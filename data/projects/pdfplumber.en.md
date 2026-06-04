@@ -3,7 +3,7 @@ name: pdfplumber
 slug: pdfplumber
 homepage: null
 repo: https://github.com/jsvine/pdfplumber
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: document-processing
 tags:

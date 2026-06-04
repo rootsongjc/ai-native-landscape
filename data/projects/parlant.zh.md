@@ -3,7 +3,7 @@ name: Parlant
 slug: parlant
 homepage: https://www.parlant.io
 repo: https://github.com/emcie-co/parlant
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:

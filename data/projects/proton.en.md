@@ -3,7 +3,7 @@ name: Proton
 slug: proton
 homepage: https://timeplus.com
 repo: https://github.com/timeplus-io/proton
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: data-platforms
 tags:

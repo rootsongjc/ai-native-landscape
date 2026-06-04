@@ -3,7 +3,7 @@ name: VibeVoice
 slug: vibevoice
 homepage: null
 repo: https://github.com/microsoft/vibevoice
-license: Unknown
+license: MIT
 category: models-modalities
 subCategory: audio-speech
 tags:

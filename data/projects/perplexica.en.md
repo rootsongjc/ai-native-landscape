@@ -3,7 +3,7 @@ name: Perplexica
 slug: perplexica
 homepage: null
 repo: https://github.com/itzcrazykns/perplexica
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

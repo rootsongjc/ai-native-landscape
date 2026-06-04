@@ -3,7 +3,7 @@ name: LiveKit Agents
 slug: livekit-agents
 homepage: https://docs.livekit.io/agents/
 repo: https://github.com/livekit/agents
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:

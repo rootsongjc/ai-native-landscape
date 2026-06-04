@@ -3,7 +3,7 @@ name: VSCode Copilot Chat
 slug: vscode-copilot-chat
 homepage: https://code.visualstudio.com
 repo: https://github.com/microsoft/vscode-copilot-chat
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: coding-agents
 tags:

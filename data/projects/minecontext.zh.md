@@ -3,7 +3,7 @@ name: MineContext
 slug: minecontext
 homepage: null
 repo: https://github.com/volcengine/minecontext
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

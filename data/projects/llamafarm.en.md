@@ -3,7 +3,7 @@ name: LlamaFarm
 slug: llamafarm
 homepage: https://llamafarm.dev
 repo: https://github.com/llama-farm/llamafarm
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

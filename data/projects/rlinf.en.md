@@ -3,7 +3,7 @@ name: RLinf
 slug: rlinf
 homepage: null
 repo: https://github.com/rlinf/rlinf
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: training-frameworks
 tags:

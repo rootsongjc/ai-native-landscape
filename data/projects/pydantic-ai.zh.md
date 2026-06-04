@@ -3,7 +3,7 @@ name: Pydantic AI
 slug: pydantic-ai
 homepage: null
 repo: https://github.com/pydantic/pydantic-ai
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:

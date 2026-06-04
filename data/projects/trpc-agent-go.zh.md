@@ -3,7 +3,7 @@ name: tRPC-Agent-Go
 slug: trpc-agent-go
 homepage: https://trpc.group/trpc-go/trpc-agent-go/
 repo: https://github.com/trpc-group/trpc-agent-go
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:

@@ -3,7 +3,7 @@ name: OpenSkills
 slug: openskills
 homepage: null
 repo: https://github.com/numman-ali/openskills
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:

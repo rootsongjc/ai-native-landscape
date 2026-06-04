@@ -3,7 +3,7 @@ name: huggingface diffusers
 slug: huggingface-diffusers
 homepage: https://huggingface.co/docs/diffusers
 repo: https://github.com/huggingface/diffusers
-license: Unknown
+license: Apache-2.0
 category: models-modalities
 subCategory: image-video-generation
 tags:

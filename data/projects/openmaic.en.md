@@ -3,7 +3,7 @@ name: OpenMAIC
 slug: openmaic
 homepage: null
 repo: https://github.com/thu-maic/openmaic
-license: Unknown
+license: AGPL-3.0
 category: agents
 subCategory: agent-orchestration
 tags:

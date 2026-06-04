@@ -3,7 +3,7 @@ name: SuperClaude Framework
 slug: superclaude-framework
 homepage: https://superclaude.netlify.app/
 repo: https://github.com/superclaude-org/superclaude_framework
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: coding-agents
 tags:

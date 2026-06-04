@@ -3,7 +3,7 @@ name: TradingAgents
 slug: trading-agents
 homepage: https://arxiv.org/pdf/2412.20138
 repo: https://github.com/tauricresearch/tradingagents
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:

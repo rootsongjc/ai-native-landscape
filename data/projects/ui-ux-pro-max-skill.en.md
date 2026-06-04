@@ -3,7 +3,7 @@ name: UI/UX Pro Max Skill
 slug: ui-ux-pro-max-skill
 homepage: https://ui-ux-pro-max-skill.nextlevelbuilder.io
 repo: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: coding-agents
 tags:

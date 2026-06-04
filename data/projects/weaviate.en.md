@@ -3,7 +3,7 @@ name: Weaviate
 slug: weaviate
 homepage: https://weaviate.io/developers/weaviate/
 repo: https://github.com/weaviate/weaviate
-license: Unknown
+license: BSD-3-Clause
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

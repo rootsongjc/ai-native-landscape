@@ -3,7 +3,7 @@ name: k8sgpt
 slug: k8sgpt
 homepage: https://k8sgpt.ai/
 repo: https://github.com/k8sgpt-ai/k8sgpt
-license: Unknown
+license: Apache-2.0
 category: platform-infra
 subCategory: cloud-native-ai
 tags:

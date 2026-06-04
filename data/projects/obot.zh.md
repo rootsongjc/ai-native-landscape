@@ -3,7 +3,7 @@ name: Obot
 slug: obot
 homepage: https://obot.ai/
 repo: https://github.com/obot-platform/obot
-license: Unknown
+license: MIT
 category: applications-products
 subCategory: chat-interfaces
 tags:

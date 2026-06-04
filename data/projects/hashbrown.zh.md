@@ -3,7 +3,7 @@ name: Hashbrown
 slug: hashbrown
 homepage: https://www.hashbrown.dev
 repo: https://github.com/liveloveapp/hashbrown
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:

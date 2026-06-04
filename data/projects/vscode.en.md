@@ -3,7 +3,7 @@ name: VS Code
 slug: vscode
 homepage: https://code.visualstudio.com/
 repo: https://github.com/microsoft/vscode
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: coding-agents
 tags:

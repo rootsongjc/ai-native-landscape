@@ -3,7 +3,7 @@ name: MaxText
 slug: maxtext
 homepage: https://maxtext.readthedocs.io/en/latest/
 repo: https://github.com/ai-hypercomputer/maxtext
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: training-frameworks
 tags:

@@ -3,7 +3,7 @@ name: ZeroClaw
 slug: zeroclaw
 homepage: https://www.zeroclawlabs.ai/
 repo: https://github.com/zeroclaw-labs/zeroclaw
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:

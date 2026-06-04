@@ -3,7 +3,7 @@ name: NemoClaw
 slug: nemoclaw
 homepage: null
 repo: https://github.com/nvidia/nemoclaw
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:

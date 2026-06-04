@@ -3,7 +3,7 @@ name: OpenViking
 slug: open-viking
 homepage: https://www.openviking.ai/
 repo: https://github.com/volcengine/openviking
-license: Unknown
+license: AGPL-3.0
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

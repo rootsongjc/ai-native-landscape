@@ -3,7 +3,7 @@ name: NOFX
 slug: nofx
 homepage: https://x.com/nofx_official
 repo: https://github.com/nofxaios/nofx
-license: Unknown
+license: AGPL-3.0
 category: agents
 subCategory: agent-frameworks
 tags:

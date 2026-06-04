@@ -3,7 +3,7 @@ name: LangChain4j
 slug: langchain4j
 homepage: https://docs.langchain4j.dev
 repo: https://github.com/langchain4j/langchain4j
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

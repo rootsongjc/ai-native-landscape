@@ -3,7 +3,7 @@ name: Eino
 slug: eino
 homepage: https://www.cloudwego.io/docs/eino/
 repo: https://github.com/cloudwego/eino
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:

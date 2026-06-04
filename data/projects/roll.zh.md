@@ -3,7 +3,7 @@ name: ROLL
 slug: roll
 homepage: https://alibaba.github.io/ROLL/
 repo: https://github.com/alibaba/roll
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: training-frameworks
 tags:

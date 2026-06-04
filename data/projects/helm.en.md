@@ -3,7 +3,7 @@ name: HELM
 slug: helm
 homepage: https://crfm.stanford.edu/helm/
 repo: https://github.com/stanford-crfm/helm
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: evaluation-benchmarks
 tags:

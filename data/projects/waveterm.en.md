@@ -3,7 +3,7 @@ name: Wave Terminal
 slug: waveterm
 homepage: null
 repo: https://github.com/wavetermdev/waveterm
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: coding-agents
 tags:

@@ -3,7 +3,7 @@ name: Sandbox Runtime
 slug: sandbox-runtime
 homepage: null
 repo: https://github.com/anthropic-experimental/sandbox-runtime
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: sandboxes-runtimes
 tags:

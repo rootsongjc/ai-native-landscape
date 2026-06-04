@@ -3,7 +3,7 @@ name: MLX
 slug: mlx
 homepage: https://ml-explore.github.io/mlx/
 repo: https://github.com/ml-explore/mlx
-license: Unknown
+license: MIT
 category: platform-infra
 subCategory: deployment-operations
 tags:

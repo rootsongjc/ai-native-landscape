@@ -3,7 +3,7 @@ name: KubeAI
 slug: kubeai
 homepage: https://www.kubeai.org/
 repo: https://github.com/substratusai/kubeai
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: inference-runtimes
 tags:

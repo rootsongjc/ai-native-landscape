@@ -3,7 +3,7 @@ name: NanoClaw
 slug: nanoclaw
 homepage: https://nanoclaw.dev
 repo: https://github.com/gavrielc/nanoclaw
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:

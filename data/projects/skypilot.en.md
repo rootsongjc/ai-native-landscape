@@ -3,7 +3,7 @@ name: Skypilot
 slug: skypilot
 homepage: https://skypilot.ai/
 repo: https://github.com/skypilot-org/skypilot
-license: Unknown
+license: Apache-2.0
 category: training-optimization
 subCategory: experiment-mlops
 tags:

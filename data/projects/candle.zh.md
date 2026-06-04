@@ -3,7 +3,7 @@ name: Candle
 slug: candle
 homepage: https://huggingface.github.io/candle/guide/installation.html
 repo: https://github.com/huggingface/candle
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: inference-runtimes
 tags:

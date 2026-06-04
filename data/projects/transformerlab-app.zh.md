@@ -3,7 +3,7 @@ name: Transformer Lab
 slug: transformerlab-app
 homepage: https://transformerlab.ai/docs/intro
 repo: https://github.com/transformerlab/transformerlab-app
-license: Unknown
+license: AGPL-3.0
 category: training-optimization
 subCategory: finetuning-alignment
 tags:

@@ -3,7 +3,7 @@ name: lm-evaluation-harness
 slug: lm-evaluation-harness
 homepage: null
 repo: https://github.com/eleutherai/lm-evaluation-harness
-license: Unknown
+license: MIT
 category: training-optimization
 subCategory: evaluation-benchmarks
 tags:

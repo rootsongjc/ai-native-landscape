@@ -3,7 +3,7 @@ name: Mindcraft
 slug: mindcraft
 homepage: null
 repo: https://github.com/mindcraft-bots/mindcraft
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:

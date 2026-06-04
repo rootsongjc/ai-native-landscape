@@ -3,7 +3,7 @@ name: Kaito
 slug: kaito
 homepage: https://kaito-project.github.io/kaito/docs/
 repo: https://github.com/kaito-project/kaito
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: model-serving
 tags:

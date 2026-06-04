@@ -3,7 +3,7 @@ name: Unstract
 slug: unstract
 homepage: https://unstract.com
 repo: https://github.com/zipstack/unstract
-license: Unknown
+license: AGPL-3.0
 category: platform-infra
 subCategory: data-platforms
 tags:

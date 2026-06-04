@@ -3,7 +3,7 @@ name: Open Design
 slug: open-design
 homepage: https://open-design.ai/
 repo: https://github.com/nexu-io/open-design
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: coding-agents
 tags:

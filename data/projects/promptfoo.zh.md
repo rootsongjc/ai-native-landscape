@@ -3,7 +3,7 @@ name: Promptfoo
 slug: promptfoo
 homepage: https://www.promptfoo.dev/
 repo: https://github.com/promptfoo/promptfoo
-license: Unknown
+license: MIT
 category: training-optimization
 subCategory: evaluation-benchmarks
 tags:

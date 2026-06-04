@@ -3,7 +3,7 @@ name: Letta
 slug: letta
 homepage: https://docs.letta.com/
 repo: https://github.com/letta-ai/letta
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: agent-memory-context
 tags:

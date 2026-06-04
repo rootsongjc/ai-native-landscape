@@ -3,7 +3,7 @@ name: VM0
 slug: vm0
 homepage: https://vm0.ai
 repo: https://github.com/vm0-ai/vm0
-license: Unknown
+license: BSL-1.1
 category: agents
 subCategory: agent-frameworks
 tags:

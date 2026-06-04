@@ -3,7 +3,7 @@ name: SearXNG
 slug: searxng
 homepage: https://docs.searxng.org
 repo: https://github.com/searxng/searxng
-license: GNU
+license: GPL-3.0
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:

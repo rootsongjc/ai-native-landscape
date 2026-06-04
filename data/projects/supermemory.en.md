@@ -3,7 +3,7 @@ name: Supermemory
 slug: supermemory
 homepage: https://supermemory.ai
 repo: https://github.com/supermemoryai/supermemory
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: agent-memory-context
 tags:

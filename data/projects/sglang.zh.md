@@ -3,7 +3,7 @@ name: SGLang
 slug: sglang
 homepage: https://docs.sglang.ai/
 repo: https://github.com/sgl-project/sglang
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: inference-runtimes
 tags:

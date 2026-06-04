@@ -3,7 +3,7 @@ name: Cloudflare VibeSDK
 slug: vibesdk
 homepage: https://build.cloudflare.dev/
 repo: https://github.com/cloudflare/vibesdk
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:

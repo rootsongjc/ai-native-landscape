@@ -3,7 +3,7 @@ name: SuperSonic
 slug: supersonic
 homepage: null
 repo: https://github.com/tencentmusic/supersonic
-license: Unknown
+license: Apache-2.0
 category: applications-products
 subCategory: productivity-tools
 tags:

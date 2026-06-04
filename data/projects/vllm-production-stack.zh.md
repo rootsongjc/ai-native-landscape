@@ -3,7 +3,7 @@ name: vLLM Production Stack
 slug: vllm-production-stack
 homepage: https://docs.vllm.ai/projects/production-stack
 repo: https://github.com/vllm-project/production-stack
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: inference-runtimes
 tags:

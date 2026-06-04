@@ -3,7 +3,7 @@ name: LightX2V
 slug: lightx2v
 homepage: https://lightx2v-en.readthedocs.io/en/latest/
 repo: https://github.com/modeltc/lightx2v
-license: Unknown
+license: Apache-2.0
 category: models-modalities
 subCategory: multimodal
 tags:

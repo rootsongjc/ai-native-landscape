@@ -3,7 +3,7 @@ name: Serena
 slug: serena
 homepage: null
 repo: https://github.com/oraios/serena
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: coding-agents
 tags:

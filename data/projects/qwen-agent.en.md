@@ -3,7 +3,7 @@ name: Qwen-Agent
 slug: qwen-agent
 homepage: https://qwen.readthedocs.io/
 repo: https://github.com/qwenlm/qwen-agent
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-frameworks
 tags:

@@ -3,7 +3,7 @@ name: olmOCR
 slug: olmocr
 homepage: https://olmocr.allenai.org/
 repo: https://github.com/allenai/olmocr
-license: Unknown
+license: Apache-2.0
 category: models-modalities
 subCategory: multimodal
 tags:

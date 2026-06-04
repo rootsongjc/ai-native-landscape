@@ -3,7 +3,7 @@ name: LeRobot
 slug: lerobot
 homepage: https://huggingface.co/docs/lerobot
 repo: https://github.com/huggingface/lerobot
-license: Unknown
+license: Apache-2.0
 category: models-modalities
 subCategory: multimodal
 tags:
