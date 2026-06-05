@@ -13,6 +13,7 @@ description: >-
   code suggestions and automated development workflows.
 author: RooCode Inc
 ossDate: '2024-10-31T17:56:50.000Z'
+archivedDate: '2026-05-15T18:41:13.000Z'
 featured: false
 status: archived
 ---

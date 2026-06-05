@@ -11,6 +11,7 @@ tags:
 description: 由 AI 驱动的代码生成和辅助平台，通过智能代码建议和自动化开发工作流程帮助开发人员更快地构建应用程序。
 author: RooCode Inc
 ossDate: '2024-10-31T17:56:50.000Z'
+archivedDate: '2026-05-15T18:41:13.000Z'
 featured: false
 status: archived
 ---

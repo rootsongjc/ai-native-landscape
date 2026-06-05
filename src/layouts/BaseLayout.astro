@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { alternatePath, localizedPath, SITE, ui } from '../lib/landscape.mjs';
+import SearchModalGlobal from '../components/SearchModalGlobal.astro';
 
 const {
   title = SITE.title,
@@ -9,6 +10,7 @@ const {
   lang = 'en',
   alternate = alternatePath(Astro.url.pathname, lang),
 } = Astro.props;
+
 const copy = ui(lang);
 const siteTitle = lang === 'zh' ? copy.landscapeTitle : SITE.title;
 const isHomePage = !title || title === SITE.title;
@@ -324,6 +326,10 @@ const structuredData = {
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/><path d="M4 4h16v16H4z"/></svg>
             <span>{copy.navSubmit}</span>
           </a>
+          <a class="site-nav__link" href={localizedPath('/tomb/', lang)}>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V7l8-4 8 4v14"/><path d="M9 21v-4a3 3 0 0 1 6 0v4"/><path d="M10 10h4"/></svg>
+            <span>{copy.navTomb}</span>
+          </a>
           <a class="site-nav__link" href={localizedPath('/about/', lang)}>
             <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 10v5"/><path d="M12 7h.01"/></svg>
             <span>{copy.navAbout}</span>
@@ -628,5 +634,6 @@ const structuredData = {
         }
       });
     </script>
+    {!isHomePage && <SearchModalGlobal lang={lang} />}
   </body>
 </html>

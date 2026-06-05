@@ -13,6 +13,7 @@ description: >-
   capabilities into Visual Studio Code.
 author: Microsoft
 ossDate: '2025-06-10T16:21:19Z'
+archivedDate: '2026-05-20T10:35:44.000Z'
 featured: false
 status: archived
 ---

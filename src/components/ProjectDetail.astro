@@ -21,6 +21,9 @@ const avatar = projectIconUrl(project, 128);
 const avatarLarge = projectIconUrl(project, 400);
 const repoSlug = project.repoSlug || '';
 const repoOwner = repoSlug.split('/')[0] || '';
+const formattedArchivedDate = project.archivedDate ? new Date(project.archivedDate).toISOString().slice(0, 10) : copy.unknown;
+const activityMetricLabel = project.status === 'archived' ? copy.archivedDate : copy.lastCommit;
+const activityMetricValue = project.status === 'archived' ? formattedArchivedDate : copy.unknown;
 
 // Compute related projects: score by subCategory > category > shared tags
 const relatedProjects = allProjects
@@ -55,7 +58,7 @@ const relatedProjects = allProjects
       <section class="detail-hero">
         <div class="detail-hero__main">
           <div class="detail-hero__top">
-            <div class="detail-logo">
+            <div class="detail-logo" data-logo-status={project.status}>
               {avatar ? (
                 <img src={avatar} alt="" loading="eager" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false" />
               ) : null}
@@ -89,23 +92,30 @@ const relatedProjects = allProjects
               <span class="hero-metric">
                 <span class="hero-metric__label">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="10"/></svg>
-                  {copy.lastCommit}
+                  {activityMetricLabel}
                 </span>
-                <strong data-metric-last-commit>{copy.unknown}</strong>
+                <strong data-metric-last-commit={project.status === 'archived' ? undefined : ''}>{activityMetricValue}</strong>
               </span>
             </div>
           </div>
         </div>
 
         <aside class="detail-hero__side" aria-label="Project score and actions">
-          {project.status === 'unavailable' && (
-            <div class="detail-unavailable-warning">
+          {project.status !== 'tracked' && (
+            <div class="detail-unavailable-warning" data-warning-status={project.status}>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-              <strong>{lang === 'zh' ? '此项目已不可用' : 'This project is unavailable'}</strong>
-              <p>{lang === 'zh' ? '项目仓库已无法访问，可能已被删除或暂时封禁。请谨慎参考以下信息。' : 'The repository is no longer accessible. It may have been deleted or temporarily suspended. Use the information below with caution.'}</p>
+              <strong>{lang === 'zh' ? statusLabel(project.status, lang) : statusLabel(project.status, lang)}</strong>
+              <p>
+                {project.status === 'unavailable'
+                  ? (lang === 'zh' ? '项目仓库已无法访问，可能已被删除或暂时封禁。请谨慎参考以下信息。' : 'The repository is no longer accessible. It may have been deleted or temporarily suspended. Use the information below with caution.')
+                  : project.status === 'archived'
+                  ? (lang === 'zh' ? '项目已被归档或停止维护。以下信息仅作历史参考。' : 'This project has been archived or is no longer maintained. The information below is for historical reference only.')
+                  : (lang === 'zh' ? '项目长期不活跃，可能已停止更新。请谨慎参考以下信息。' : 'This project has been inactive for an extended period. Use the information below with caution.')
+                }
+              </p>
             </div>
           )}
-          {project.status !== 'unavailable' && (
+          {project.status === 'tracked' && (
           <div class="detail-score-panel" data-reference-status={project.status} data-lang={lang}>
             <div class="detail-score" data-score-repo={repoSlug}>
               <button class="score-info-btn" type="button" aria-label={lang === 'zh' ? '评分详情' : 'Score details'} data-score-info-toggle>
@@ -176,12 +186,20 @@ const relatedProjects = allProjects
               </a>
             </div>
           </div>
+          )}
 
           <div class="detail-actions">
-            <a class="btn-primary" href={project.repo} target="_blank" rel="noopener noreferrer">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-              GitHub
-            </a>
+            {project.status === 'unavailable' ? (
+              <div class="repo-record" aria-label={copy.originalRepository}>
+                <span class="repo-record__label">{copy.originalRepository}</span>
+                <span class="repo-record__value">{project.repo}</span>
+              </div>
+            ) : (
+              <a class="btn-primary" href={project.repo} target="_blank" rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            )}
             {project.homepage && (
               <a class="btn-secondary" href={project.homepage} target="_blank" rel="noopener noreferrer">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
@@ -189,7 +207,6 @@ const relatedProjects = allProjects
               </a>
             )}
           </div>
-          )}
         </aside>
       </section>
 
@@ -325,6 +342,7 @@ const relatedProjects = allProjects
       </div>
 
       <aside class="detail-sidebar">
+        {project.status === 'tracked' && (
         <div class="sidebar-card github-card">
           <h3>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
@@ -383,6 +401,7 @@ const relatedProjects = allProjects
             </div>
           </div>
         </div>
+        )}
 
         <!-- Related Projects -->
         {relatedProjects.length > 0 && (
@@ -535,6 +554,8 @@ const relatedProjects = allProjects
     color: var(--accent);
   }
   .detail-logo img { width: 100%; height: 100%; object-fit: cover; }
+  .detail-logo[data-logo-status="archived"] img { filter: grayscale(1) opacity(0.5); }
+  .detail-logo[data-logo-status="inactive"] img { filter: grayscale(0.6) opacity(0.7); }
   .detail-hero__info {
     grid-area: info;
     min-width: 0;
@@ -618,6 +639,16 @@ const relatedProjects = allProjects
     background: rgba(239,68,68,0.06);
     text-align: center;
     color: #ef4444;
+  }
+  .detail-unavailable-warning[data-warning-status="archived"] {
+    border-color: rgba(148,163,184,0.25);
+    background: rgba(148,163,184,0.08);
+    color: #94a3b8;
+  }
+  .detail-unavailable-warning[data-warning-status="inactive"] {
+    border-color: rgba(245,158,11,0.25);
+    background: rgba(245,158,11,0.06);
+    color: #f59e0b;
   }
   .detail-unavailable-warning svg { opacity: 0.8; }
   .detail-unavailable-warning strong { font-size: 1rem; }
@@ -902,6 +933,10 @@ const relatedProjects = allProjects
   .detail-score-panel[data-reference-status="unavailable"] .reference-status__dot { background: #ef4444; }
   .detail-title-status[data-reference-status="unavailable"] { border-color: rgba(239,68,68,0.3); background: rgba(239,68,68,0.08); color: #ef4444; }
   .detail-title-status[data-reference-status="unavailable"] .reference-status__dot { background: #ef4444; }
+  .detail-title-status[data-reference-status="archived"] { border-color: rgba(148,163,184,0.3); background: rgba(148,163,184,0.08); color: #94a3b8; }
+  .detail-title-status[data-reference-status="archived"] .reference-status__dot { background: #94a3b8; }
+  .detail-title-status[data-reference-status="inactive"] { border-color: rgba(245,158,11,0.3); background: rgba(245,158,11,0.08); color: #f59e0b; }
+  .detail-title-status[data-reference-status="inactive"] .reference-status__dot { background: #f59e0b; }
 
   .detail-meta {
     display: flex;
@@ -983,6 +1018,32 @@ const relatedProjects = allProjects
     margin-top: 0;
     justify-content: flex-start;
     flex-wrap: wrap;
+  }
+  .repo-record {
+    display: grid;
+    gap: 3px;
+    min-width: min(100%, 260px);
+    max-width: 100%;
+    padding: 8px 10px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: color-mix(in srgb, var(--surface-soft) 88%, var(--surface) 12%);
+    color: var(--muted);
+  }
+  .repo-record__label {
+    font-size: 0.66rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  .repo-record__value {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    font-size: 0.78rem;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    line-height: 1.25;
+    color: var(--text);
   }
   .btn-primary, .btn-secondary {
     display: inline-flex;
@@ -1404,6 +1465,10 @@ const relatedProjects = allProjects
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 8px;
       margin-top: 0;
+    }
+    .repo-record {
+      grid-column: 1 / -1;
+      min-width: 0;
     }
     .btn-primary,
     .btn-secondary {

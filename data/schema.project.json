@@ -36,6 +36,7 @@
     },
     "author": { "type": "string" },
     "ossDate": { "type": "string" },
+    "archivedDate": { "type": "string" },
     "featured": { "type": "boolean" },
     "thumbnail": { "type": "string" },
     "source": {

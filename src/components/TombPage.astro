@@ -1,0 +1,305 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getProjects, localizedPath, projectIconUrl, statusLabel, SITE, ui, DEFAULT_PROJECT_LOGO } from '../lib/landscape.mjs';
+
+const { lang = 'en' } = Astro.props;
+const copy = ui(lang);
+const isZh = lang === 'zh';
+
+const allProjects = getProjects();
+const tombProjects = allProjects.filter(p => ['archived', 'unavailable', 'inactive'].includes(p.status));
+
+const statusOrder = { unavailable: 0, archived: 1, inactive: 2 };
+tombProjects.sort((a, b) => (statusOrder[a.status] ?? 9) - (statusOrder[b.status] ?? 9) || a.name.localeCompare(b.name));
+
+const pageTitle = isZh ? '项目墓地 — 致敬逝去的开源项目' : 'Tomb — In Memory of Open Source Projects';
+const pageDesc = isZh
+  ? '铭记那些曾经存在过的 AI 开源项目。项目可能因归档、删除或长期不活跃而进入墓地。'
+  : 'Remembering AI open-source projects that are no longer active. Projects enter the tomb when archived, deleted, or inactive.';
+
+function statusColor(status) {
+  if (status === 'unavailable') return '#ef4444';
+  if (status === 'archived') return '#94a3b8';
+  if (status === 'inactive') return '#f59e0b';
+  return 'var(--muted)';
+}
+---
+
+<BaseLayout title={pageTitle} description={pageDesc} canonical={localizedPath('/tomb/', lang)} lang={lang}>
+  <main class="tomb-page">
+    <section class="tomb-hero">
+      <div class="tomb-hero__icon">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18"/><path d="M5 21V7l8-4 8 4v14"/><path d="M9 21v-4a3 3 0 0 1 6 0v4"/><path d="M10 10h4"/></svg>
+      </div>
+      <h1>{pageTitle}</h1>
+      <p>{pageDesc}</p>
+      <div class="tomb-stats">
+        <span class="tomb-stats__item">
+          <strong>{tombProjects.filter(p => p.status === 'unavailable').length}</strong>
+          <span>{isZh ? '不可访问' : 'Unavailable'}</span>
+        </span>
+        <span class="tomb-stats__item">
+          <strong>{tombProjects.filter(p => p.status === 'archived').length}</strong>
+          <span>{isZh ? '已归档' : 'Archived'}</span>
+        </span>
+        <span class="tomb-stats__item">
+          <strong>{tombProjects.filter(p => p.status === 'inactive').length}</strong>
+          <span>{isZh ? '不活跃' : 'Inactive'}</span>
+        </span>
+        <span class="tomb-stats__total">
+          <strong>{tombProjects.length}</strong>
+          <span>{isZh ? '总计' : 'Total'}</span>
+        </span>
+      </div>
+    </section>
+
+    {tombProjects.length === 0 ? (
+      <section class="tomb-empty">
+        <p>{isZh ? '暂无已归档的项目。' : 'No archived projects yet.'}</p>
+      </section>
+    ) : (
+      <section class="tomb-list">
+        {tombProjects.map(project => {
+          const icon = projectIconUrl(project);
+          const desc = isZh ? project.description?.zh : project.description?.en;
+          return (
+            <a class="tomb-card" href={localizedPath(`/projects/${project.slug}/`, lang)} data-status={project.status}>
+              <div class="tomb-card__icon">
+                <img src={icon || DEFAULT_PROJECT_LOGO} alt="" loading="lazy" decoding="async" onerror={`this.src='${DEFAULT_PROJECT_LOGO}'`} />
+              </div>
+              <div class="tomb-card__body">
+                <div class="tomb-card__header">
+                  <h3>{project.name}</h3>
+                  <span class="tomb-card__status" style={`--status-color: ${statusColor(project.status)}`}>
+                    <span class="tomb-card__dot"></span>
+                    {statusLabel(project.status, lang)}
+                  </span>
+                </div>
+                <p class="tomb-card__desc">{desc}</p>
+                <div class="tomb-card__meta">
+                  <span class="tomb-card__repo">{project.repoSlug || ''}</span>
+                  {project.ossDate && (
+                    <span class="tomb-card__date">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                      {project.ossDate.slice(0, 10)}
+                    </span>
+                  )}
+                </div>
+              </div>
+            </a>
+          );
+        })}
+      </section>
+    )}
+
+    <section class="tomb-note">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+      <p>{isZh ? '墓地中的项目数据仍保留，归档状态可随时恢复。项目通过 GitHub Action 自动巡检更新状态。' : 'Projects in the tomb retain their data and can be restored. Status is automatically checked via GitHub Actions.'}</p>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .tomb-page {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  /* Hero */
+  .tomb-hero {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .tomb-hero__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background: var(--surface-soft);
+    color: var(--muted);
+    margin-bottom: 20px;
+  }
+  .tomb-hero h1 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin: 0 0 12px;
+  }
+  .tomb-hero p {
+    font-size: 0.95rem;
+    color: var(--muted);
+    max-width: 520px;
+    margin: 0 auto 24px;
+    line-height: 1.6;
+  }
+
+  /* Stats */
+  .tomb-stats {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .tomb-stats__item,
+  .tomb-stats__total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+  .tomb-stats__item strong,
+  .tomb-stats__total strong {
+    font-size: 1.4rem;
+    font-weight: 800;
+  }
+  .tomb-stats__item span,
+  .tomb-stats__total span {
+    font-size: 0.72rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .tomb-stats__total {
+    padding-left: 24px;
+    border-left: 1px solid var(--border);
+  }
+
+  /* List */
+  .tomb-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* Card */
+  .tomb-card {
+    display: flex;
+    gap: 16px;
+    padding: 16px 20px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s, box-shadow 0.15s;
+    cursor: pointer;
+  }
+  .tomb-card:hover {
+    border-color: color-mix(in srgb, var(--accent) 30%, var(--border));
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .tomb-card__icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--surface-soft);
+  }
+  .tomb-card__icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .tomb-card[data-status="archived"] .tomb-card__icon img { filter: grayscale(1) opacity(0.5); }
+  .tomb-card[data-status="inactive"] .tomb-card__icon img { filter: grayscale(0.6) opacity(0.7); }
+  .tomb-card__body {
+    flex: 1;
+    min-width: 0;
+  }
+  .tomb-card__header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 4px;
+  }
+  .tomb-card__header h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .tomb-card__status {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: var(--status-color);
+    background: color-mix(in srgb, var(--status-color) 10%, transparent);
+    padding: 2px 8px;
+    border-radius: 999px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .tomb-card__dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: var(--status-color);
+  }
+  .tomb-card__desc {
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.5;
+    margin: 0 0 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .tomb-card__meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.72rem;
+    color: var(--muted);
+  }
+  .tomb-card__repo {
+    opacity: 0.7;
+  }
+  .tomb-card__date {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    opacity: 0.7;
+  }
+
+  /* Empty */
+  .tomb-empty {
+    text-align: center;
+    padding: 60px 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+
+  /* Note */
+  .tomb-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 40px;
+    padding: 16px 20px;
+    border-radius: 12px;
+    background: var(--surface-soft);
+    color: var(--muted);
+    font-size: 0.82rem;
+    line-height: 1.6;
+  }
+  .tomb-note svg { flex-shrink: 0; margin-top: 2px; }
+  .tomb-note p { margin: 0; }
+
+  @media (max-width: 640px) {
+    .tomb-page { padding: 24px 16px 60px; }
+    .tomb-hero h1 { font-size: 1.4rem; }
+    .tomb-card { padding: 12px 14px; gap: 12px; }
+    .tomb-card__icon { width: 40px; height: 40px; border-radius: 10px; }
+    .tomb-card__header h3 { font-size: 0.88rem; }
+    .tomb-stats { gap: 16px; }
+  }
+</style>

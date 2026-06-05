@@ -28,11 +28,12 @@ export const UI = {
     subsiteLabel: 'jimmysong.io 出品',
     navMainSite: '主站',
     navLandscape: '全景图',
-      navCategories: '分类',
+    navCategories: '分类',
     navMethodology: '评分体系',
     navSubmit: '提交项目',
     navAbout: '关于',
-      navGithub: 'GitHub',
+    navTomb: '项目墓地',
+    navGithub: 'GitHub',
     navRepository: '开源仓库',
     footer: '© jimmysong.io',
     heroDescription: '探索 AI Native 时代经过人工精选与多维评分的开源工具、Agent、运行时、平台与基础设施生态。',
@@ -78,6 +79,7 @@ export const UI = {
     author: '作者',
     openSourced: '开源时间',
     repository: '仓库',
+    originalRepository: '原仓库地址',
     source: '数据来源',
     scoreBreakdown: '评分拆解',
     scoreLoading: '评分加载中',
@@ -108,6 +110,7 @@ export const UI = {
     owner: '所属组织',
     primaryLanguage: '主语言',
     lastCommit: '最近提交',
+    archivedDate: '归档时间',
     commitsLastYear: '年度提交',
     repoCreatedAt: '创建时间',
     daysAgo: '天前',
@@ -293,11 +296,12 @@ export const UI = {
     subsiteLabel: 'by jimmysong.io',
     navMainSite: 'Main Site',
     navLandscape: 'Landscape',
-      navCategories: 'Categories',
+    navCategories: 'Categories',
     navMethodology: 'Methodology',
     navSubmit: 'Submit',
     navAbout: 'About',
-      navGithub: 'GitHub',
+    navTomb: 'Tomb',
+    navGithub: 'GitHub',
     navRepository: 'Repository',
     footer: '© jimmysong.io',
     heroDescription: 'Explore the ecosystem of open source tools, agents, runtimes, platforms, and infrastructure for the AI Native era, curated by hand and evaluated across multiple dimensions.',
@@ -343,6 +347,7 @@ export const UI = {
     author: 'Author',
     openSourced: 'Open Sourced',
     repository: 'Repository',
+    originalRepository: 'Original repository',
     source: 'Source',
     scoreBreakdown: 'Score Breakdown',
     scoreLoading: 'Loading score',
@@ -373,6 +378,7 @@ export const UI = {
     owner: 'Owner',
     primaryLanguage: 'Language',
     lastCommit: 'Last Commit',
+    archivedDate: 'Archived',
     commitsLastYear: 'Commits/Year',
     repoCreatedAt: 'Created',
     daysAgo: 'days ago',
@@ -637,7 +643,7 @@ export function githubAvatarUrl(project, size = 96) {
 export const DEFAULT_PROJECT_LOGO = '/images/default-project-logo.svg';
 
 export function projectIconUrl(project, size = 96) {
-  if (project.status === 'archived' || project.status === 'unavailable') return DEFAULT_PROJECT_LOGO;
+  if (project.status === 'unavailable') return DEFAULT_PROJECT_LOGO;
   const githubAvatar = githubAvatarUrl(project, size);
   if (githubAvatar) return githubAvatar;
   if (project.homepage) {

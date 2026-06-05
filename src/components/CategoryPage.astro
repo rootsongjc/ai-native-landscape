@@ -28,6 +28,8 @@ const grouped = (category.subcategories || []).map((subCategory) => ({
 
 const allTags = Array.from(new Set(projects.flatMap((project) => project.tags || []))).sort();
 const usedStatuses = [...new Set(projects.map((p) => p.status).filter(Boolean))];
+const statusOrder = ['tracked', 'unavailable', 'archived', 'inactive'];
+const legendStatuses = [...statusOrder, ...usedStatuses.filter((status) => !statusOrder.includes(status))];
 const title = `${categoryName(category, lang)}`;
 const description = categoryDescription(category, lang);
 ---
@@ -62,7 +64,7 @@ const description = categoryDescription(category, lang);
         </span>
       </div>
       <div class="status-legend">
-        {usedStatuses.map((s) => (
+        {legendStatuses.map((s) => (
           <span class="status-legend__item"><span class={`status-dot status-dot--${s}`} />{statusLabel(s, lang)}</span>
         ))}
       </div>
@@ -88,10 +90,7 @@ const description = categoryDescription(category, lang);
           <span>{copy.status}</span>
           <select data-filter-status>
             <option value="">{copy.allStatus}</option>
-            <option value="graduated">{statusLabel('graduated', lang)}</option>
-            <option value="incubating">{statusLabel('incubating', lang)}</option>
-            <option value="sandbox">{statusLabel('sandbox', lang)}</option>
-            <option value="archived">{statusLabel('archived', lang)}</option>
+            {statusOrder.map((status) => <option value={status}>{statusLabel(status, lang)}</option>)}
           </select>
         </label>
         <label>
@@ -110,18 +109,23 @@ const description = categoryDescription(category, lang);
           </select>
         </label>
       </div>
-      <div class="category-toolbar__actions">
+      <div class="category-toolbar__actions" style="align-self: end;">
         <button class="button button-secondary" type="button" data-reset>{copy.resetFilters}</button>
       </div>
     </section>
 
-    <section class="subcategory-board" data-board>
+    <section
+      class="subcategory-board"
+      data-board
+      data-project-label-one={lang === 'zh' ? copy.projects.toLowerCase() : 'project'}
+      data-project-label-many={copy.projects.toLowerCase()}
+    >
       {grouped.map((subCategory) => (
         <section class="subcategory-group" data-group data-subcategory={subCategory.key}>
           <button class="subcategory-heading" type="button" data-toggle aria-expanded="true">
             <span>
               <strong>{subCategoryName(subCategory.key, lang)}</strong>
-              <small>{subCategory.projects.length} {copy.projects.toLowerCase()}</small>
+              <small data-group-count>{subCategory.projects.length} {copy.projects.toLowerCase()}</small>
             </span>
             <span class="chevron">⌄</span>
           </button>
@@ -194,7 +198,15 @@ const description = categoryDescription(category, lang);
     const tag = document.querySelector('[data-filter-tag]');
     const sort = document.querySelector('[data-filter-sort]');
     const empty = document.querySelector('[data-empty]');
+    const board = document.querySelector('[data-board]');
+    const projectLabelOne = board?.dataset.projectLabelOne || 'project';
+    const projectLabelMany = board?.dataset.projectLabelMany || 'projects';
     const groups = Array.from(document.querySelectorAll('[data-group]'));
+
+    function formatProjectCount(count) {
+      const label = count === 1 ? projectLabelOne : projectLabelMany;
+      return `${count} ${label}`;
+    }
 
     function applyFilters() {
       const q = search.value.trim().toLowerCase();
@@ -220,6 +232,7 @@ const description = categoryDescription(category, lang);
             && (!statusValue || card.dataset.status === statusValue)
             && (!tagValue || card.dataset.tags.includes(tagValue));
           card.hidden = !match;
+          card.style.display = match ? '' : 'none';
           if (match) {
             visible += 1;
             groupVisible += 1;
@@ -227,9 +240,13 @@ const description = categoryDescription(category, lang);
         });
 
         group.hidden = groupVisible === 0;
+        group.style.display = groupVisible === 0 ? 'none' : '';
+        const count = group.querySelector('[data-group-count]');
+        if (count) count.textContent = formatProjectCount(groupVisible);
       });
 
       empty.hidden = visible > 0;
+      empty.style.display = visible > 0 ? 'none' : '';
     }
 
     document.querySelectorAll('[data-toggle]').forEach((button) => {

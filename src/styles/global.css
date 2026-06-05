@@ -15,6 +15,10 @@
   font-family: "IBM Plex Sans", "Source Sans 3", "Segoe UI", sans-serif;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 html[data-theme='dark'] {
   --bg: #0f131a;
   --surface: #141b25;
@@ -37,6 +41,11 @@ html[data-theme='dark'] {
 html,
 body {
   min-height: 100%;
+}
+
+html {
+  scrollbar-gutter: stable;
+  overflow-y: scroll;
 }
 
 body {
@@ -1562,6 +1571,8 @@ html[data-theme='dark'] .methodology-grid article {
 .category-page--grouped {
   display: grid;
   gap: 18px;
+  align-content: start;
+  grid-auto-rows: max-content;
 }
 
 .category-page .page-heading {
@@ -1572,7 +1583,7 @@ html[data-theme='dark'] .methodology-grid article {
 }
 
 .category-page .page-heading h1 {
-  font-size: clamp(2rem, 3.2vw, 3rem);
+  font-size: 3rem;
   line-height: 1.02;
   max-width: none;
 }
@@ -1658,7 +1669,7 @@ html[data-theme='dark'] .category-page__meta-item {
 }
 
 .category-toolbar__actions {
-  align-self: stretch;
+  align-self: end;
 }
 
 .toolbar--category .button {
@@ -1817,10 +1828,11 @@ html[data-theme='dark'] .project-list-item {
 .status-dot--sandbox { background: #7c3aed; }
 .status-dot--archived { background: #6b7280; }
 .status-dot--tracked { background: #0a84ff; }
+.status-dot--unavailable { background: #ef4444; }
+.status-dot--inactive { background: #f59e0b; }
 .status-dot--recommended { background: #0f9f6e; }
 .status-dot--worthWatching { background: #d97706; }
 .status-dot--newlyAdded { background: #06b6d4; }
-.status-dot--inactive { background: #9ca3af; }
 
 .card-actions {
   gap: 4px;
@@ -2023,14 +2035,35 @@ meter {
     grid-template-columns: 1fr 1fr;
   }
 
+  .toolbar--category {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
   .category-toolbar__search,
   .category-toolbar__filters,
   .category-toolbar__actions {
     grid-column: 1 / -1;
   }
 
+  .toolbar--category .category-toolbar__search {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .toolbar--category .category-toolbar__actions {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
+  }
+
   .category-toolbar__filters {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .toolbar--category .category-toolbar__filters {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .project-list-side {
