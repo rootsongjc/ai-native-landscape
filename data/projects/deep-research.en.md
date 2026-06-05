@@ -13,7 +13,7 @@ tags:
 description: >-
   An open research agent and toolset for long-horizon information-seeking and agentic tasks, developed by Tongyi Lab
   (Alibaba-NLP).
-author: 阿里巴巴
+author: Alibaba
 ossDate: '2025-01-09T11:07:35.000Z'
 featured: false
 status: tracked

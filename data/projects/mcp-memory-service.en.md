@@ -17,7 +17,7 @@ description: Automatic, persistent project context memory and retrieval for Clau
 author: doobidoo
 ossDate: '2024-12-26T10:15:44Z'
 featured: false
-status: tracked
+status: unavailable
 ---
 
 ## Overview

@@ -13,7 +13,7 @@ tags:
 description: >-
   ByteDance's open-source platform-level solution for AI Agent development and operations, providing full lifecycle
   management capabilities.
-author: 字节跳动
+author: ByteDance
 ossDate: '2025-06-24T00:26:28.000Z'
 featured: false
 status: tracked

@@ -11,7 +11,7 @@ tags:
   - ML Platform
   - Workflow
 description: A scalable, reproducible open-source workflow orchestration platform for data, ML and analytics pipelines.
-author: Flyte 社区
+author: Flyte Community
 ossDate: '2019-10-21T17:40:04.000Z'
 featured: false
 status: tracked

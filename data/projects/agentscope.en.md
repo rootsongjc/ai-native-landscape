@@ -11,7 +11,7 @@ tags:
   - LLM
   - Utility
 description: Start building LLM-empowered multi-agent applications in an easier way.
-author: 阿里巴巴
+author: Alibaba
 ossDate: '2024-01-12T03:41:59.000Z'
 featured: false
 status: tracked

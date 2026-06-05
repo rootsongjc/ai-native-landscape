@@ -13,7 +13,7 @@ tags:
 description: >-
   Costrict (formerly Shenma) is an open-source enterprise-grade AI coding assistant by Sangfor, centered on "serious
   programming" with Strict Mode, Code Review, Code Completion, and private deployment support.
-author: 深信服 (Sangfor)
+author: Sangfor
 ossDate: '2025-04-10T02:06:51Z'
 featured: false
 status: tracked

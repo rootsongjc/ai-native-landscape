@@ -9,7 +9,7 @@ subCategory: agent-orchestration
 tags:
   - AI Agent
 description: JoyAgent-JDGenie is an open-source end-to-end multi-agent framework for task orchestration and report generation.
-author: 京东
+author: JD.com
 ossDate: '2025-07-16T02:59:53.000Z'
 featured: false
 status: tracked

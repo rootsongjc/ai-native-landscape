@@ -11,7 +11,7 @@ tags:
 description: >-
   A cloud-native API gateway based on Istio and Envoy that supports Wasm plugins and AI Gateway features including MCP
   hosting and multi-model integrations.
-author: 阿里巴巴
+author: Alibaba
 ossDate: '2022-10-27T03:53:00.000Z'
 featured: false
 status: tracked

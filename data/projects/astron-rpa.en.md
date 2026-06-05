@@ -10,7 +10,7 @@ tags:
   - Agent Framework
   - Automation
 description: An agent-ready RPA suite providing out-of-the-box automation tools and enterprise integration capabilities.
-author: 科大讯飞
+author: iFlytek
 ossDate: '2025-09-20T08:51:40Z'
 featured: false
 status: tracked

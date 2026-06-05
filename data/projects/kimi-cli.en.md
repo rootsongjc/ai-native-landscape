@@ -12,7 +12,7 @@ tags:
 description: >-
   kimi-cli is an open-source command-line AI agent tool by MoonshotAI, enabling developers to efficiently build and
   manage AI workflows with rich integration capabilities.
-author: 月之暗面
+author: Moonshot AI
 ossDate: '2025-10-15T12:58:03.000Z'
 featured: false
 status: tracked

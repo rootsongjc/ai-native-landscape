@@ -12,7 +12,7 @@ tags:
 description: >-
   An enterprise orchestration platform for building next-generation SuperAgents with agent workflows and low-code
   integration.
-author: 科大讯飞
+author: iFlytek
 ossDate: '2025-09-19T08:46:01Z'
 featured: false
 status: tracked

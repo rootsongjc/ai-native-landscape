@@ -11,7 +11,7 @@ tags:
 description: >-
   Kanban board to manage your AI coding agents. Easily orchestrate, review, and track tasks for Claude Code, Gemini CLI,
   Codex, Amp and more.
-author: BloopAI 团队
+author: BloopAI Team
 ossDate: '2025-06-14T19:10:21.000Z'
 featured: false
 status: tracked

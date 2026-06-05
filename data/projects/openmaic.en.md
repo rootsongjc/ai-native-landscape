@@ -15,7 +15,7 @@ description: >-
   experience through multi-agent orchestration. It features one-click lesson generation, AI teachers and classmates for
   real-time interaction, rich scene types (slides, quizzes, interactive simulations, and project-based learning),
   whiteboard drawing, voice explanations, and export to PPTX or HTML formats.
-author: THU-MAIC (清华大学)
+author: THU-MAIC
 ossDate: '2025-03-16'
 featured: false
 status: tracked

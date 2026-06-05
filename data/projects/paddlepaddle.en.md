@@ -11,7 +11,7 @@ tags:
 description: >-
   An open-source deep learning platform developed by Baidu, providing a comprehensive ecosystem for machine learning and
   deep learning research and production.
-author: 百度
+author: Baidu
 ossDate: '2016-08-15T06:59:08.000Z'
 featured: false
 status: tracked

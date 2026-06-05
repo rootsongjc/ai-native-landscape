@@ -12,7 +12,7 @@ tags:
 description: >-
   A high-performance library for training and inference that dramatically speeds up large-scale deep learning while
   reducing cost.
-author: DeepSpeed 团队
+author: DeepSpeed Team
 ossDate: '2020-01-23T18:35:18.000Z'
 featured: false
 status: tracked

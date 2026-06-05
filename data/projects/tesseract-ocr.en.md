@@ -11,7 +11,7 @@ tags:
 description: >-
   Tesseract is a powerful open-source Optical Character Recognition (OCR) engine supporting over 100 languages, widely
   used for text extraction and document digitization.
-author: Stefan Weil, Zdenko Podobny 等
+author: Stefan Weil, Zdenko Podobny et al.
 ossDate: '2014-08-12T18:04:59.000Z'
 featured: false
 status: tracked

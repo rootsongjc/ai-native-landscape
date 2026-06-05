@@ -13,7 +13,7 @@ tags:
 description: >-
   High-performance toolkit for fine-tuning and reinforcement learning of large models, with memory-efficient kernels and
   wide model support.
-author: Unsloth 团队
+author: Unsloth Team
 ossDate: '2023-11-29T16:50:09.000Z'
 featured: false
 status: tracked

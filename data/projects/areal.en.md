@@ -13,7 +13,7 @@ tags:
 description: >-
   A fully asynchronous reinforcement learning system for large reasoning and agentic models that emphasizes scalability
   and reproducibility.
-author: 蚂蚁集团
+author: Ant Group
 ossDate: '2025-02-24T07:23:43Z'
 featured: false
 status: tracked

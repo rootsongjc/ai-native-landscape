@@ -12,7 +12,7 @@ tags:
 description: >-
   WeKnora — an open-source document understanding and retrieval framework from Tencent that combines LLMs and RAG for
   multimodal document search and knowledge graph construction.
-author: 腾讯
+author: Tencent
 ossDate: '2025-07-22T08:01:23.000Z'
 featured: false
 status: tracked

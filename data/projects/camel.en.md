@@ -12,7 +12,7 @@ tags:
 description: >-
   CAMEL is an open-source framework for large-scale multi-agent research, supporting simulation, data generation, and
   collaborative agent capabilities.
-author: CAMEL 社区
+author: CAMEL AI
 ossDate: '2023-03-17T21:41:54.000Z'
 featured: false
 status: tracked

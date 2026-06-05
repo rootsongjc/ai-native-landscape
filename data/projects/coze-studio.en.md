@@ -13,7 +13,7 @@ tags:
 description: >-
   ByteDance's open-source one-stop AI Agent development tool, providing various latest large models and tools, multiple
   development modes and frameworks.
-author: 字节跳动
+author: ByteDance
 ossDate: '2025-06-26T02:19:21.000Z'
 featured: false
 status: tracked

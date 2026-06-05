@@ -14,7 +14,7 @@ description: >-
   Context Hub (Chub) is an open-source project initiated by Andrew Ng that provides curated, versioned documentation for
   AI coding agents, making them smarter with every task through annotations and feedback mechanisms. All content is
   openly maintained in Markdown format with support for versioned and language-specific documentation retrieval.
-author: Andrew Ng（吴恩达）
+author: Andrew Ng
 ossDate: '2025-03-17'
 featured: false
 status: tracked

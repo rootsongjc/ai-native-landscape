@@ -13,7 +13,7 @@ tags:
 description: >-
   An intelligent Mixture-of-Models router that directs requests to the most suitable models to improve inference
   accuracy and efficiency.
-author: vLLM Semantic Router 团队
+author: vLLM Semantic Router Team
 ossDate: '2025-08-26T21:49:50.000Z'
 featured: false
 status: tracked

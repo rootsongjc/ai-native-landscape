@@ -12,7 +12,7 @@ tags:
 description: >-
   A multi-agent collaboration framework for enterprise applications that emphasizes local-first workflow composition and
   tool integration.
-author: 京东
+author: JD.com
 ossDate: '2025-07-18T02:40:42Z'
 featured: false
 status: tracked

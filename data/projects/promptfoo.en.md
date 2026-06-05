@@ -11,7 +11,7 @@ tags:
 description: >-
   Promptfoo is a developer-first, local LLM testing and red-teaming tool for automated evaluations, vulnerability
   scanning, and CI integration.
-author: Promptfoo 社区
+author: Promptfoo Community
 ossDate: '2023-04-28T15:48:49.000Z'
 featured: false
 status: tracked
