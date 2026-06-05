@@ -2,15 +2,17 @@
 import ProjectDetail from '../../components/ProjectDetail.astro';
 import { getProjects } from '../../lib/landscape.mjs';
 
+const allProjects = getProjects();
+
 export async function getStaticPaths() {
-  return getProjects().map((project) => ({
+  const projects = getProjects();
+  return projects.map((project) => ({
     params: { slug: project.slug },
     props: { project },
   }));
 }
 
 const { project } = Astro.props;
-const allProjects = getProjects().filter(p => p.slug !== project.slug);
 ---
 
-<ProjectDetail project={project} allProjects={allProjects} lang="en" />
+<ProjectDetail project={project} allProjects={allProjects.filter(p => p.slug !== project.slug)} lang="en" />
