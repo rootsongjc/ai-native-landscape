@@ -48,7 +48,7 @@
     },
     "status": {
       "type": "string",
-      "enum": ["tracked", "inactive", "archived"]
+      "enum": ["tracked", "inactive", "archived", "unavailable"]
     },
     "score": {
       "type": "object",

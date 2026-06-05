@@ -64,7 +64,7 @@ const relatedProjects = allProjects
             <div class="detail-hero__info">
               <div class="detail-title-row">
                 <h1>{project.name}</h1>
-                <strong class="reference-status detail-title-status">
+                <strong class="reference-status detail-title-status" data-reference-status={project.status}>
                   <span class="reference-status__dot"></span>
                   {statusLabel(project.status, lang)}
                 </strong>
@@ -98,6 +98,14 @@ const relatedProjects = allProjects
         </div>
 
         <aside class="detail-hero__side" aria-label="Project score and actions">
+          {project.status === 'unavailable' && (
+            <div class="detail-unavailable-warning">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <strong>{lang === 'zh' ? '此项目已不可用' : 'This project is unavailable'}</strong>
+              <p>{lang === 'zh' ? '项目仓库已无法访问，可能已被删除或暂时封禁。请谨慎参考以下信息。' : 'The repository is no longer accessible. It may have been deleted or temporarily suspended. Use the information below with caution.'}</p>
+            </div>
+          )}
+          {project.status !== 'unavailable' && (
           <div class="detail-score-panel" data-reference-status={project.status} data-lang={lang}>
             <div class="detail-score" data-score-repo={repoSlug}>
               <button class="score-info-btn" type="button" aria-label={lang === 'zh' ? '评分详情' : 'Score details'} data-score-info-toggle>
@@ -181,6 +189,7 @@ const relatedProjects = allProjects
               </a>
             )}
           </div>
+          )}
         </aside>
       </section>
 
@@ -598,6 +607,27 @@ const relatedProjects = allProjects
     text-overflow: ellipsis;
   }
 
+  .detail-unavailable-warning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 28px 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(239,68,68,0.25);
+    background: rgba(239,68,68,0.06);
+    text-align: center;
+    color: #ef4444;
+  }
+  .detail-unavailable-warning svg { opacity: 0.8; }
+  .detail-unavailable-warning strong { font-size: 1rem; }
+  .detail-unavailable-warning p {
+    margin: 0;
+    font-size: 0.82rem;
+    line-height: 1.5;
+    color: var(--muted);
+  }
+
   .detail-score-panel {
     position: relative;
     display: grid;
@@ -869,6 +899,9 @@ const relatedProjects = allProjects
   .detail-score-panel[data-reference-status="incubating"] .reference-status__dot { background: #8b5cf6; }
   .detail-score-panel[data-reference-status="sandbox"] .reference-status__dot { background: #f59e0b; }
   .detail-score-panel[data-reference-status="archived"] .reference-status__dot { background: #94a3b8; }
+  .detail-score-panel[data-reference-status="unavailable"] .reference-status__dot { background: #ef4444; }
+  .detail-title-status[data-reference-status="unavailable"] { border-color: rgba(239,68,68,0.3); background: rgba(239,68,68,0.08); color: #ef4444; }
+  .detail-title-status[data-reference-status="unavailable"] .reference-status__dot { background: #ef4444; }
 
   .detail-meta {
     display: flex;

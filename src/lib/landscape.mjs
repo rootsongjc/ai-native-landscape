@@ -98,6 +98,7 @@ export const UI = {
       newlyAdded: '新收录',
       inactive: '不活跃',
       archived: '已归档',
+      unavailable: '不可访问',
     },
     githubMetrics: 'GitHub 指标',
     stars: 'Stars',
@@ -362,6 +363,7 @@ export const UI = {
       newlyAdded: 'Newly Added',
       inactive: 'Inactive',
       archived: 'Archived',
+      unavailable: 'Unavailable',
     },
     githubMetrics: 'GitHub Metrics',
     stars: 'Stars',
@@ -632,7 +634,10 @@ export function githubAvatarUrl(project, size = 96) {
   return owner ? `https://github.com/${encodeURIComponent(owner)}.png?size=${size}` : '';
 }
 
+export const DEFAULT_PROJECT_LOGO = '/images/default-project-logo.svg';
+
 export function projectIconUrl(project, size = 96) {
+  if (project.status === 'archived' || project.status === 'unavailable') return DEFAULT_PROJECT_LOGO;
   const githubAvatar = githubAvatarUrl(project, size);
   if (githubAvatar) return githubAvatar;
   if (project.homepage) {
