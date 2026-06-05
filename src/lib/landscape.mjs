@@ -5,6 +5,13 @@ marked.use({
   gfm: true,
 });
 
+// Cache expensive data loads — getProjects() reads/parse 1288+ md files each call
+let _projectsCache = null;
+let _categoriesCache = null;
+let _taxonomyCache = null;
+let _landscapeIndexCache = null;
+const _markdownCache = new Map();
+
 export const SITE = {
   title: 'AI Native Landscape',
   description: 'The ecosystem map for building AI Native systems.',
@@ -36,7 +43,22 @@ export const UI = {
     navGithub: 'GitHub',
     navRepository: '开源仓库',
     footer: '© jimmysong.io',
-    heroDescription: '探索 AI Native 时代经过人工精选与多维评分的开源工具、Agent、运行时、平台与基础设施生态。',
+    heroDescription: '探索 AI 原生时代经过人工精选与多维评分的开源工具、Agent、运行时、平台与基础设施生态。',
+    homeSearchPrompt: '搜索项目、标签、分类或技术方向',
+    homeSearchHelp: '试试：MCP server、RAG、coding agent、local inference。',
+    homeStartTitle: '从这里开始',
+    homeStartDescription: '先搜索，再按技术域、评分方法和项目生命周期继续探索。',
+    homeStartSearchTitle: '搜索项目',
+    homeStartSearchBody: '输入项目、标签或技术问题。',
+    homeStartCategoriesTitle: '按技术域浏览',
+    homeStartCategoriesBody: '按生态结构快速缩小范围。',
+    homeStartMethodologyTitle: '查看评分方法',
+    homeStartMethodologyBody: '了解评分和收录规则。',
+    homeStartTombTitle: '查看项目墓地',
+    homeStartTombBody: '归档、不可访问和不活跃项目留档。',
+    homeCategoryOverviewTitle: '热门技术域',
+    homeCategoryOverviewDescription: '用主要技术域建立地图感，再进入完整目录。',
+    homeDirectorySummary: '展开后可筛选、排序、切换热力图并查看所有项目。',
     scopeFeatureEngineering: 'AI Native',
     scopeFeatureOpenSource: '完全开源',
     scopeFeatureCurated: '人工精选',
@@ -305,6 +327,21 @@ export const UI = {
     navRepository: 'Repository',
     footer: '© jimmysong.io',
     heroDescription: 'Explore the ecosystem of open source tools, agents, runtimes, platforms, and infrastructure for the AI Native era, curated by hand and evaluated across multiple dimensions.',
+    homeSearchPrompt: 'Search projects, tags, categories, or use cases',
+    homeSearchHelp: 'Try MCP server, RAG, coding agent, local inference.',
+    homeStartTitle: 'Start Here',
+    homeStartDescription: 'Search first, then explore by domain, methodology, and lifecycle status.',
+    homeStartSearchTitle: 'Search projects',
+    homeStartSearchBody: 'Type a project, tag, or technical need.',
+    homeStartCategoriesTitle: 'Browse technical domains',
+    homeStartCategoriesBody: 'Narrow the ecosystem by structure.',
+    homeStartMethodologyTitle: 'Read the methodology',
+    homeStartMethodologyBody: 'See scoring and inclusion rules.',
+    homeStartTombTitle: 'Open the Tomb',
+    homeStartTombBody: 'Archived, unavailable, and inactive projects.',
+    homeCategoryOverviewTitle: 'Popular Technical Domains',
+    homeCategoryOverviewDescription: 'Use the main domains as a map before opening the full directory.',
+    homeDirectorySummary: 'Expand to filter, sort, switch to heatmap, and inspect every project.',
     scopeFeatureEngineering: 'AI Native',
     scopeFeatureOpenSource: 'Open Source Only',
     scopeFeatureCurated: 'Human Curated',
@@ -584,19 +621,23 @@ export function alternatePath(path, lang = 'en') {
 }
 
 export function getLandscape() {
-  return buildLandscapeIndex();
+  if (!_landscapeIndexCache) _landscapeIndexCache = buildLandscapeIndex();
+  return _landscapeIndexCache;
 }
 
 export function getProjects() {
-  return loadProjects();
+  if (!_projectsCache) _projectsCache = loadProjects();
+  return _projectsCache;
 }
 
 export function getCategories() {
-  return loadCategories();
+  if (!_categoriesCache) _categoriesCache = loadCategories();
+  return _categoriesCache;
 }
 
 export function getTaxonomy() {
-  return loadTaxonomy();
+  if (!_taxonomyCache) _taxonomyCache = loadTaxonomy();
+  return _taxonomyCache;
 }
 
 export function getCategoryByKey(key) {
@@ -653,7 +694,11 @@ export function projectIconUrl(project, size = 96) {
 }
 
 export function markdownToHtml(markdown) {
-  return marked.parse(markdown || '');
+  const key = markdown || '';
+  if (_markdownCache.has(key)) return _markdownCache.get(key);
+  const html = marked.parse(key);
+  _markdownCache.set(key, html);
+  return html;
 }
 
 export function scoreLabel(scorePercent, lang = 'en') {

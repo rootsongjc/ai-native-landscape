@@ -373,11 +373,6 @@ const relatedProjects = allProjects
             </div>
             <div class="metric-separator"></div>
             <div class="metric-group">
-              <span class="metric-row">
-                <span class="metric-row__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
-                <span class="metric-row__label">{copy.owner}</span>
-                <strong data-metrics-owner>{repoOwner || copy.unknown}</strong>
-              </span>
               <span class="metric-row" data-github-language-card hidden>
                 <span class="metric-row__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="m18 20-6-6-6 6"/></svg></span>
                 <span class="metric-row__label">{copy.primaryLanguage}</span>
@@ -1603,11 +1598,6 @@ const relatedProjects = allProjects
     return license.name || '';
   }
 
-  function formatOwner(owner) {
-    if (!owner?.login) return '';
-    return owner.login;
-  }
-
   async function fetchGitHubRepo(repo) {
     if (!repo) return null;
     if (!repoMetadataRequests.has(repo)) {
@@ -1662,12 +1652,10 @@ const relatedProjects = allProjects
     if (!repo) return;
 
     const licenseNodes = document.querySelectorAll('[data-metrics-license]');
-    const ownerNodes = document.querySelectorAll('[data-metrics-owner]');
     const languageNodes = document.querySelectorAll('[data-metrics-language]');
     const languageCards = document.querySelectorAll('[data-github-language-card]');
     if (
       licenseNodes.length === 0 &&
-      ownerNodes.length === 0 &&
       languageNodes.length === 0
     ) {
       return;
@@ -1683,13 +1671,6 @@ const relatedProjects = allProjects
     if (license) {
       licenseNodes.forEach((el) => {
         el.textContent = license;
-      });
-    }
-
-    const owner = formatOwner(payload.owner);
-    if (owner) {
-      ownerNodes.forEach((el) => {
-        el.textContent = owner;
       });
     }
 

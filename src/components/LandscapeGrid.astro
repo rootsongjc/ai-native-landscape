@@ -5,10 +5,13 @@ import LandscapeHeatmap from './LandscapeHeatmap.astro';
 import LandscapeToolbar from './LandscapeToolbar.astro';
 import SearchModal from './SearchModal.astro';
 import {
+  categoryName,
   getLandscape,
   localizedPath,
   projectDescription,
   SITE,
+  statusLabel,
+  subCategoryName,
   ui,
 } from '../lib/landscape.mjs';
 
@@ -26,6 +29,26 @@ const badgeItems = [
   copy.scopeFeatureMaintained,
 ];
 const directoryProjectStat = { value: landscape.projectCount, label: copy.projects };
+const categoryHighlights = categories.slice(0, 6).map((category) => {
+  const projects = landscape.byCategory[category.key] || [];
+  const subcategories = (category.subcategories || [])
+    .map((subcategory) => ({
+      key: subcategory.key,
+      name: subCategoryName(subcategory.key, lang),
+      count: (landscape.bySubCategory[subcategory.key] || []).length,
+    }))
+    .filter((subcategory) => subcategory.count > 0)
+    .sort((a, b) => b.count - a.count)
+    .slice(0, 4);
+  return { category, projects, subcategories };
+});
+const tombProjects = landscape.projects.filter((project) => ['archived', 'unavailable', 'inactive'].includes(project.status));
+const tombStats = {
+  total: tombProjects.length,
+  unavailable: tombProjects.filter((project) => project.status === 'unavailable').length,
+  archived: tombProjects.filter((project) => project.status === 'archived').length,
+  inactive: tombProjects.filter((project) => project.status === 'inactive').length,
+};
 
 const searchIndex = landscape.projects.map((project) => ({
   slug: project.slug,
@@ -47,66 +70,116 @@ const canonical = localizedPath('/', lang);
         <div class="landscape-hero__text">
           <h1 id="landscape-title">{copy.landscapeTitle}</h1>
           <p class="landscape-hero__desc">{copy.heroDescription}</p>
-          <div class="landscape-hero__badges" aria-label={copy.scopeBoundary}>
-            {badgeItems.map((item) => (
-              <span>{item}</span>
-            ))}
+          <div class="landscape-hero__search-wrap" data-home-search>
+            <form class="landscape-hero__search" role="search" aria-label={copy.search}>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              </svg>
+              <input
+                id="home-search-input"
+                type="search"
+                placeholder={copy.homeSearchPrompt}
+                autocomplete="off"
+                data-home-search-input
+              />
+              <kbd>/</kbd>
+            </form>
+            <div class="landscape-hero__results" data-home-search-panel hidden>
+              <div class="landscape-hero__results-list" data-home-search-results></div>
+              <div class="landscape-hero__empty" data-home-search-empty hidden>{copy.searchModalNoResults}</div>
+            </div>
+          </div>
+          <p class="landscape-hero__help">{copy.homeSearchHelp}</p>
+          <div class="landscape-hero__actions">
+            <a class="landscape-hero__cta landscape-hero__cta--primary" href={SITE.starRepo || SITE.repo} target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              {copy.starCta}
+            </a>
+            <a class="landscape-hero__cta" href={localizedPath('/submit/', lang)}>{copy.submitProject}</a>
+          </div>
+          <div class="landscape-hero__signals" aria-label={copy.scopeBoundary}>
+            <div class="landscape-hero__signal landscape-hero__signal--projects">
+              <strong>{landscape.projectCount}</strong>
+              <span>{copy.projects}</span>
+            </div>
+            <div class="landscape-hero__signal landscape-hero__signal--categories">
+              <strong>{categories.length}</strong>
+              <span>{copy.categories}</span>
+            </div>
+            <div class="landscape-hero__signal landscape-hero__signal--tomb">
+              <strong>{tombStats.total}</strong>
+              <span>{copy.navTomb}</span>
+            </div>
           </div>
         </div>
-        <div class="landscape-hero__visual" aria-hidden="true">
-          <svg class="landscape-hero__constellation" viewBox="0 0 320 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle class="lc-node lc-node--1" cx="40" cy="60" r="6" fill="var(--accent)" opacity="0.9"/>
-            <circle class="lc-node lc-node--2" cx="100" cy="30" r="5" fill="var(--accent)" opacity="0.7"/>
-            <circle class="lc-node lc-node--3" cx="160" cy="80" r="8" fill="var(--accent)" opacity="0.9"/>
-            <circle class="lc-node lc-node--4" cx="220" cy="40" r="5" fill="var(--accent)" opacity="0.6"/>
-            <circle class="lc-node lc-node--5" cx="280" cy="70" r="6" fill="var(--accent)" opacity="0.8"/>
-            <circle class="lc-node lc-node--6" cx="70" cy="130" r="5" fill="var(--accent)" opacity="0.7"/>
-            <circle class="lc-node lc-node--7" cx="130" cy="150" r="7" fill="var(--accent)" opacity="0.9"/>
-            <circle class="lc-node lc-node--8" cx="200" cy="140" r="5" fill="var(--accent)" opacity="0.6"/>
-            <circle class="lc-node lc-node--9" cx="260" cy="160" r="6" fill="var(--accent)" opacity="0.8"/>
-            <circle class="lc-node lc-node--10" cx="40" cy="170" r="4" fill="var(--accent)" opacity="0.5"/>
-            <circle class="lc-node lc-node--11" cx="300" cy="130" r="4" fill="var(--accent)" opacity="0.6"/>
-            <circle class="lc-node lc-node--12" cx="160" cy="25" r="4" fill="var(--accent)" opacity="0.5"/>
-            <line class="lc-line" x1="40" y1="60" x2="100" y2="30" stroke="var(--accent)" stroke-width="0.8" opacity="0.2"/>
-            <line class="lc-line" x1="100" y1="30" x2="160" y2="80" stroke="var(--accent)" stroke-width="0.8" opacity="0.2"/>
-            <line class="lc-line" x1="160" y1="80" x2="220" y2="40" stroke="var(--accent)" stroke-width="0.8" opacity="0.2"/>
-            <line class="lc-line" x1="220" y1="40" x2="280" y2="70" stroke="var(--accent)" stroke-width="0.8" opacity="0.2"/>
-            <line class="lc-line" x1="40" y1="60" x2="70" y2="130" stroke="var(--accent)" stroke-width="0.8" opacity="0.15"/>
-            <line class="lc-line" x1="70" y1="130" x2="130" y2="150" stroke="var(--accent)" stroke-width="0.8" opacity="0.2"/>
-            <line class="lc-line" x1="130" y1="150" x2="200" y2="140" stroke="var(--accent)" stroke-width="0.8" opacity="0.2"/>
-            <line class="lc-line" x1="200" y1="140" x2="260" y2="160" stroke="var(--accent)" stroke-width="0.8" opacity="0.2"/>
-            <line class="lc-line" x1="160" y1="80" x2="130" y2="150" stroke="var(--accent)" stroke-width="0.8" opacity="0.15"/>
-            <line class="lc-line" x1="280" y1="70" x2="300" y2="130" stroke="var(--accent)" stroke-width="0.8" opacity="0.15"/>
-            <line class="lc-line" x1="260" y1="160" x2="300" y2="130" stroke="var(--accent)" stroke-width="0.8" opacity="0.15"/>
-            <line class="lc-line" x1="40" y1="170" x2="70" y2="130" stroke="var(--accent)" stroke-width="0.8" opacity="0.15"/>
-            <line class="lc-line" x1="160" y1="25" x2="100" y2="30" stroke="var(--accent)" stroke-width="0.8" opacity="0.15"/>
-            <line class="lc-line" x1="160" y1="25" x2="220" y2="40" stroke="var(--accent)" stroke-width="0.8" opacity="0.15"/>
-            <circle class="lc-pulse" cx="160" cy="80" r="8" stroke="var(--accent)" stroke-width="1" fill="none" opacity="0"/>
-            <circle class="lc-pulse" cx="130" cy="150" r="7" stroke="var(--accent)" stroke-width="1" fill="none" opacity="0"/>
-            <circle class="lc-pulse" cx="280" cy="70" r="6" stroke="var(--accent)" stroke-width="1" fill="none" opacity="0"/>
-          </svg>
-        </div>
       </div>
     </section>
 
-    <div class="landscape-skill-guide" aria-label={copy.skillGuideTitle}>
-      <span class="landscape-skill-guide__title">{copy.skillGuideTitle}</span>
-      <code class="landscape-skill-guide__cmd">npx skills add rootsongjc/ai-native-landscape --skill landscape-search</code>
-      <span class="landscape-skill-guide__sep">|</span>
-      <code class="landscape-skill-guide__cmd">npx landscape-search</code>
-      <a class="landscape-skill-guide__link" href={SITE.repo} target="_blank" rel="noopener">{copy.skillGuideCta} →</a>
-    </div>
-
-    <section class="landscape-search" aria-labelledby="landscape-search-title">
+    <section class="landscape-start" aria-labelledby="landscape-start-title">
       <div class="landscape-section__head">
-        <h2 id="landscape-search-title">{copy.browseFilterTitle}</h2>
-        <p>{copy.searchSectionDescription}</p>
+        <h2 id="landscape-start-title">{copy.homeStartTitle}</h2>
+        <p>{copy.homeStartDescription}</p>
       </div>
-      <LandscapeToolbar lang={lang} categories={categories} />
+      <div class="landscape-start__grid">
+        <button class="landscape-start-card landscape-start-card--button landscape-start-card--search" type="button" data-focus-home-search>
+          <span class="landscape-start-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          </span>
+          <strong>{copy.homeStartSearchTitle}</strong>
+          <span>{copy.homeStartSearchBody}</span>
+        </button>
+        <a class="landscape-start-card landscape-start-card--browse" href="#landscape-categories">
+          <span class="landscape-start-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+          </span>
+          <strong>{copy.homeStartCategoriesTitle}</strong>
+          <span>{copy.homeStartCategoriesBody}</span>
+        </a>
+        <a class="landscape-start-card landscape-start-card--method" href={localizedPath('/methodology/', lang)}>
+          <span class="landscape-start-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+          </span>
+          <strong>{copy.homeStartMethodologyTitle}</strong>
+          <span>{copy.homeStartMethodologyBody}</span>
+        </a>
+        <a class="landscape-start-card landscape-start-card--tomb" href={localizedPath('/tomb/', lang)}>
+          <span class="landscape-start-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M10 10h4"/></svg>
+          </span>
+          <strong>{copy.homeStartTombTitle}</strong>
+          <span>{copy.homeStartTombBody}</span>
+          <small>{tombStats.total} {copy.projects} · {tombStats.unavailable} {statusLabel('unavailable', lang)} · {tombStats.archived} {statusLabel('archived', lang)} · {tombStats.inactive} {statusLabel('inactive', lang)}</small>
+        </a>
+      </div>
     </section>
 
-    <section class="landscape-directory" id="landscape-directory" aria-labelledby="landscape-directory-title">
-      <div class="landscape-section__head landscape-directory__heading">
+    <section class="landscape-categories" id="landscape-categories" aria-labelledby="landscape-categories-title">
+      <div class="landscape-section__head">
+        <h2 id="landscape-categories-title">{copy.homeCategoryOverviewTitle}</h2>
+        <p>{copy.homeCategoryOverviewDescription}</p>
+      </div>
+      <div class="landscape-category-overview">
+        {categoryHighlights.map(({ category, projects, subcategories }, index) => (
+          <article class="landscape-category-overview__card">
+            <div class="landscape-category-overview__main">
+              <span class="landscape-category-overview__index">{String(index + 1).padStart(2, '0')}</span>
+              <h3><a href={localizedPath(`/categories/${category.key}/`, lang)}>{categoryName(category, lang)}</a></h3>
+              <span>{projects.length} {copy.projects}</span>
+            </div>
+            <div class="landscape-category-overview__subcats">
+              {subcategories.map((subcategory) => (
+                <a href={localizedPath(`/categories/${category.key}/?sub=${subcategory.key}`, lang)}>
+                  {subcategory.name} <span>{subcategory.count}</span>
+                </a>
+              ))}
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <details class="landscape-directory" id="landscape-directory">
+      <summary class="landscape-directory__summary">
         <h2 id="landscape-directory-title">
           <span>{copy.directoryTitle}</span>
           <span class="landscape-directory__meta" aria-label={copy.scopeBoundary}>
@@ -114,16 +187,34 @@ const canonical = localizedPath('/', lang);
             <small>{directoryProjectStat.label}</small>
           </span>
         </h2>
-        <p>{copy.directoryDescription}</p>
-      </div>
+        <p>{copy.homeDirectorySummary}</p>
+      </summary>
+
+      <section class="landscape-search" aria-labelledby="landscape-search-title">
+        <div class="landscape-section__head">
+          <h2 id="landscape-search-title">{copy.browseFilterTitle}</h2>
+          <p>{copy.searchSectionDescription}</p>
+        </div>
+        <LandscapeToolbar lang={lang} categories={categories} />
+      </section>
 
       <div class="landscape-category-grid" data-landscape-grid>
-        {categories.map((cat, i) => (
-          <LandscapeCategory category={cat} lang={lang} index={i} />
-        ))}
+        {categories.map((cat, i) => <LandscapeCategory category={cat} lang={lang} index={i} />)}
       </div>
 
       <LandscapeHeatmap lang={lang} />
+    </details>
+
+    <section class="landscape-skill-guide" aria-labelledby="landscape-skill-guide-title">
+      <div>
+        <h2 id="landscape-skill-guide-title">{copy.skillGuideTitle}</h2>
+        <p>{copy.skillGuideDescription}</p>
+      </div>
+      <div class="landscape-skill-guide__commands">
+        <code class="landscape-skill-guide__cmd">npx skills add rootsongjc/ai-native-landscape --skill landscape-search</code>
+        <code class="landscape-skill-guide__cmd">npx landscape-search</code>
+      </div>
+      <a class="landscape-skill-guide__link" href={SITE.repo} target="_blank" rel="noopener">{copy.skillGuideCta} →</a>
     </section>
   </main>
 
@@ -135,6 +226,95 @@ const canonical = localizedPath('/', lang);
     const categorySelect = document.querySelector('[data-landscape-category]');
     const statusSelect = document.querySelector('[data-landscape-status]');
     const sortSelect = document.querySelector('[data-landscape-sort]');
+    const homeSearch = document.querySelector('[data-home-search]');
+    const homeSearchInput = document.querySelector('[data-home-search-input]');
+    const homeSearchPanel = document.querySelector('[data-home-search-panel]');
+    const homeSearchResults = document.querySelector('[data-home-search-results]');
+    const homeSearchEmpty = document.querySelector('[data-home-search-empty]');
+    let homeSearchCurrentResults = [];
+
+    function projectHref(project) {
+      const prefix = lang === 'zh' ? '/zh/projects/' : '/projects/';
+      return prefix + project.slug + '/';
+    }
+
+    function esc(s) {
+      const d = document.createElement('div');
+      d.textContent = s || '';
+      return d.innerHTML;
+    }
+
+    function renderHomeSearch(query) {
+      if (!homeSearchPanel || !homeSearchResults || !homeSearchEmpty) return;
+      if (!query) {
+        homeSearchCurrentResults = [];
+        homeSearchPanel.hidden = true;
+        homeSearchResults.innerHTML = '';
+        homeSearchEmpty.hidden = true;
+        return;
+      }
+
+      const q = query.toLowerCase();
+      const results = searchIndex.filter(p => {
+        const name = (p.name || '').toLowerCase();
+        const desc = (p.description || '').toLowerCase();
+        const tags = (p.tags || []).join(' ').toLowerCase();
+        const cat = (p.categoryKey || '').toLowerCase();
+        const subcat = (p.subCategoryKey || '').toLowerCase();
+        return name.includes(q) || desc.includes(q) || tags.includes(q) || cat.includes(q) || subcat.includes(q);
+      }).slice(0, 8);
+      homeSearchCurrentResults = results;
+      homeSearchPanel.hidden = false;
+
+      if (results.length === 0) {
+        homeSearchResults.innerHTML = '';
+        homeSearchEmpty.hidden = false;
+        return;
+      }
+
+      homeSearchEmpty.hidden = true;
+      homeSearchResults.innerHTML = results.map(p => {
+        const tags = (p.tags || []).slice(0, 3);
+        const meta = [p.categoryKey, p.subCategoryKey].filter(Boolean).join(' / ');
+        return `<a class="landscape-hero__result" href="${projectHref(p)}">
+          <span class="landscape-hero__result-main">
+            <span class="landscape-hero__result-name">${esc(p.name)}</span>
+            ${meta ? `<span class="landscape-hero__result-category">${esc(meta)}</span>` : ''}
+          </span>
+          <span class="landscape-hero__result-desc">${esc((p.description || '').substring(0, 132))}</span>
+          ${tags.length ? `<span class="landscape-hero__result-tags">${tags.map(tag => `<span>${esc(tag)}</span>`).join('')}</span>` : ''}
+        </a>`;
+      }).join('');
+    }
+
+    if (homeSearchInput) {
+      homeSearch?.querySelector('form')?.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (homeSearchCurrentResults[0]) {
+          window.location.href = projectHref(homeSearchCurrentResults[0]);
+        }
+      });
+      homeSearchInput.addEventListener('input', () => renderHomeSearch(homeSearchInput.value.trim()));
+      homeSearchInput.addEventListener('focus', () => renderHomeSearch(homeSearchInput.value.trim()));
+      homeSearchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          homeSearchInput.value = '';
+          renderHomeSearch('');
+          return;
+        }
+        if (e.key === 'Enter' && homeSearchCurrentResults[0]) {
+          e.preventDefault();
+          window.location.href = projectHref(homeSearchCurrentResults[0]);
+        }
+      });
+    }
+
+    document.querySelectorAll('[data-focus-home-search]').forEach(button => {
+      button.addEventListener('click', () => {
+        homeSearch?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        requestAnimationFrame(() => homeSearchInput?.focus());
+      });
+    });
 
     // View toggle
     const viewBtns = document.querySelectorAll('[data-view]');
@@ -716,6 +896,908 @@ const canonical = localizedPath('/', lang);
 
     .landscape-directory__meta {
       margin-left: 0;
+    }
+  }
+
+  /* Homepage IA redesign */
+  .landscape-page {
+    gap: 30px;
+  }
+
+  .landscape-start,
+  .landscape-categories,
+  .landscape-directory,
+  .landscape-skill-guide {
+    display: grid;
+    gap: 16px;
+  }
+
+  .landscape-hero__card {
+    justify-content: center;
+    min-height: min(560px, calc(100vh - 150px));
+    padding: clamp(36px, 7vw, 76px) clamp(18px, 5vw, 72px);
+    text-align: center;
+  }
+
+  .landscape-hero__text {
+    max-width: 900px;
+    justify-items: center;
+    gap: 18px;
+  }
+
+  .landscape-hero h1 {
+    font-size: clamp(2.35rem, 7vw, 5.2rem);
+    letter-spacing: 0;
+  }
+
+  .landscape-hero__desc {
+    max-width: 760px;
+    font-size: clamp(1rem, 1.7vw, 1.22rem);
+  }
+
+  .landscape-hero__search {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 12px;
+    width: min(100%, 720px);
+    min-height: 68px;
+    margin-top: 8px;
+    padding: 0 16px 0 20px;
+    border: 1px solid color-mix(in srgb, var(--accent) 32%, var(--border));
+    border-radius: 18px;
+    background: color-mix(in srgb, var(--surface-soft) 78%, var(--surface) 22%);
+    color: var(--text);
+    box-shadow: 0 16px 48px rgba(10, 132, 255, 0.12);
+    text-align: left;
+    transition: border-color 0.16s, box-shadow 0.16s, transform 0.16s;
+  }
+
+  .landscape-hero__search:hover,
+  .landscape-hero__search:focus-within {
+    border-color: var(--accent);
+    box-shadow: 0 20px 58px rgba(10, 132, 255, 0.18);
+    transform: translateY(-1px);
+    outline: none;
+  }
+
+  .landscape-hero__search svg {
+    width: 24px;
+    height: 24px;
+    color: var(--accent);
+  }
+
+  .landscape-hero__search input {
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: var(--muted);
+    font-size: clamp(1rem, 1.8vw, 1.22rem);
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .landscape-hero__search input::placeholder {
+    color: var(--muted);
+    opacity: 1;
+  }
+
+  .landscape-hero__search kbd {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    height: 32px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    background: var(--surface);
+    color: var(--muted);
+    font-size: 0.86rem;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  .landscape-hero__help {
+    margin: -4px 0 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .landscape-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .landscape-hero__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 42px;
+    padding: 0 16px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface-soft);
+    color: var(--text);
+    font-size: 0.9rem;
+    font-weight: 800;
+    text-decoration: none;
+    transition: border-color 0.16s, background 0.16s, transform 0.16s;
+  }
+
+  .landscape-hero__cta:hover {
+    border-color: var(--accent);
+    transform: translateY(-1px);
+  }
+
+  .landscape-hero__cta svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .landscape-hero__cta--primary {
+    border-color: color-mix(in srgb, var(--accent) 50%, var(--border));
+    background: var(--accent);
+    color: white;
+  }
+
+  .landscape-hero__badges {
+    justify-content: center;
+    max-width: 740px;
+  }
+
+  .landscape-start__grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .landscape-start-card {
+    display: grid;
+    align-content: start;
+    gap: 8px;
+    min-height: 168px;
+    padding: 18px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    color: inherit;
+    text-align: left;
+    text-decoration: none;
+    box-shadow: var(--shadow);
+    transition: border-color 0.16s, transform 0.16s, box-shadow 0.16s;
+  }
+
+  .landscape-start-card--button {
+    font: inherit;
+    cursor: pointer;
+  }
+
+  .landscape-start-card:hover,
+  .landscape-start-card:focus-visible {
+    border-color: color-mix(in srgb, var(--accent) 42%, var(--border));
+    box-shadow: 0 10px 28px rgba(10, 132, 255, 0.11);
+    transform: translateY(-1px);
+    outline: none;
+  }
+
+  .landscape-start-card__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: color-mix(in srgb, var(--accent-soft) 80%, var(--surface) 20%);
+    color: var(--accent);
+  }
+
+  .landscape-start-card__icon svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .landscape-start-card strong {
+    font-size: 0.98rem;
+    line-height: 1.2;
+  }
+
+  .landscape-start-card span:not(.landscape-start-card__icon) {
+    color: var(--muted);
+    font-size: 0.86rem;
+    line-height: 1.45;
+  }
+
+  .landscape-start-card small {
+    margin-top: auto;
+    color: var(--muted);
+    font-size: 0.72rem;
+    font-weight: 700;
+    line-height: 1.45;
+  }
+
+  .landscape-start-card--tomb {
+    border-color: color-mix(in srgb, #94a3b8 36%, var(--border));
+  }
+
+  .landscape-category-overview {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .landscape-category-overview__card {
+    display: grid;
+    gap: 14px;
+    padding: 18px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+  }
+
+  .landscape-category-overview__main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .landscape-category-overview__main h3 {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  .landscape-category-overview__main a {
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .landscape-category-overview__main a:hover {
+    color: var(--accent);
+  }
+
+  .landscape-category-overview__main > span {
+    flex-shrink: 0;
+    color: var(--muted);
+    font-size: 0.76rem;
+    font-weight: 800;
+  }
+
+  .landscape-category-overview__subcats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .landscape-category-overview__subcats a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    min-height: 28px;
+    padding: 4px 9px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface-soft);
+    color: var(--muted);
+    font-size: 0.76rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .landscape-category-overview__subcats a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .landscape-category-overview__subcats span {
+    color: var(--accent);
+  }
+
+  .landscape-directory {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    padding: 0;
+  }
+
+  .landscape-directory__summary {
+    position: relative;
+    display: grid;
+    gap: 8px;
+    padding: 22px;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .landscape-directory__summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .landscape-directory__summary::after {
+    content: '+';
+    position: absolute;
+    right: 24px;
+    margin-top: 2px;
+    color: var(--accent);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .landscape-directory[open] .landscape-directory__summary::after {
+    content: '-';
+  }
+
+  .landscape-directory__summary h2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding-right: 36px;
+    font-size: 1.36rem;
+    letter-spacing: -0.02em;
+  }
+
+  .landscape-directory__summary p {
+    max-width: 720px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  .landscape-directory .landscape-search,
+  .landscape-directory .landscape-category-grid,
+  .landscape-directory :global(.heatmap) {
+    margin: 0 22px 22px;
+  }
+
+  .landscape-skill-guide {
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    align-items: center;
+    padding: 18px;
+  }
+
+  .landscape-skill-guide h2 {
+    margin: 0 0 4px;
+    font-size: 1rem;
+  }
+
+  .landscape-skill-guide p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.86rem;
+    line-height: 1.45;
+  }
+
+  .landscape-skill-guide__commands {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-end;
+    min-width: 0;
+  }
+
+  .landscape-skill-guide .landscape-skill-guide__link {
+    margin-left: 0;
+    justify-self: end;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 980px) {
+    .landscape-start__grid,
+    .landscape-category-overview {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .landscape-skill-guide {
+      grid-template-columns: 1fr;
+    }
+
+    .landscape-skill-guide__commands {
+      justify-content: flex-start;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .landscape-hero__card {
+      min-height: 0;
+      padding: 30px 18px;
+    }
+
+    .landscape-hero__search {
+      min-height: 60px;
+      border-radius: 15px;
+    }
+
+    .landscape-start__grid,
+    .landscape-category-overview {
+      grid-template-columns: 1fr;
+    }
+
+    .landscape-start-card {
+      min-height: 0;
+    }
+
+    .landscape-directory__summary {
+      padding: 18px;
+    }
+
+    .landscape-directory__summary::after {
+      right: 18px;
+    }
+
+    .landscape-directory .landscape-search,
+    .landscape-directory .landscape-category-grid,
+    .landscape-directory :global(.heatmap) {
+      margin: 0 14px 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .landscape-hero h1 {
+      font-size: 2.05rem;
+    }
+
+    .landscape-hero__search {
+      grid-template-columns: auto minmax(0, 1fr);
+      padding-right: 14px;
+    }
+
+    .landscape-hero__search kbd {
+      display: none;
+    }
+
+    .landscape-hero__actions {
+      width: 100%;
+    }
+
+    .landscape-hero__cta {
+      flex: 1 1 150px;
+    }
+
+    .landscape-skill-guide__cmd {
+      max-width: 100%;
+      white-space: normal;
+      overflow-wrap: anywhere;
+    }
+  }
+
+  /* Visual focus refinement */
+  .landscape-hero__card {
+    position: relative;
+    overflow: hidden;
+    border-color: color-mix(in srgb, var(--accent) 22%, var(--border));
+    background:
+      linear-gradient(180deg, color-mix(in srgb, var(--surface-soft) 76%, transparent), var(--surface) 72%),
+      radial-gradient(circle at 50% 0%, rgba(10, 132, 255, 0.18), transparent 34%);
+  }
+
+  .landscape-hero__text {
+    position: relative;
+    z-index: 1;
+  }
+
+  .landscape-hero__desc {
+    max-width: 650px;
+  }
+
+  .landscape-hero__search {
+    min-height: 78px;
+    border-width: 2px;
+    border-color: color-mix(in srgb, var(--accent) 48%, var(--border));
+    background: color-mix(in srgb, var(--surface) 88%, white 12%);
+    box-shadow:
+      0 0 0 6px color-mix(in srgb, var(--accent) 10%, transparent),
+      0 26px 70px rgba(10, 132, 255, 0.2);
+  }
+
+  html[data-theme='dark'] .landscape-hero__search {
+    background: color-mix(in srgb, var(--surface-soft) 84%, white 3%);
+  }
+
+  .landscape-hero__search svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .landscape-hero__search input {
+    color: var(--text);
+    font-size: clamp(1.08rem, 2vw, 1.34rem);
+  }
+
+  .landscape-hero__search-wrap {
+    display: grid;
+    gap: 10px;
+    width: min(100%, 720px);
+    text-align: left;
+  }
+
+  .landscape-hero__search-wrap .landscape-hero__search {
+    width: 100%;
+  }
+
+  .landscape-hero__results {
+    overflow: hidden;
+    border: 1px solid color-mix(in srgb, var(--accent) 28%, var(--border));
+    border-radius: 18px;
+    background: var(--surface);
+    box-shadow: 0 22px 56px rgba(2, 6, 23, 0.22);
+  }
+
+  .landscape-hero__results[hidden] {
+    display: none;
+  }
+
+  .landscape-hero__results-list {
+    display: grid;
+    gap: 4px;
+    max-height: min(460px, 52vh);
+    overflow-y: auto;
+    padding: 8px;
+  }
+
+  :global(.landscape-hero__result) {
+    display: grid;
+    gap: 7px;
+    padding: 12px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    color: var(--text);
+    text-decoration: none;
+    transition: border-color 0.15s, background 0.15s, transform 0.15s;
+  }
+
+  :global(.landscape-hero__result:hover),
+  :global(.landscape-hero__result:focus) {
+    border-color: color-mix(in srgb, var(--accent) 30%, var(--border));
+    background: color-mix(in srgb, var(--accent-soft) 48%, var(--surface) 52%);
+    outline: none;
+    transform: translateY(-1px);
+  }
+
+  :global(.landscape-hero__result-main) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    min-width: 0;
+  }
+
+  :global(.landscape-hero__result-name) {
+    min-width: 0;
+    overflow: hidden;
+    color: var(--text);
+    font-size: 0.95rem;
+    font-weight: 800;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  :global(.landscape-hero__result-category) {
+    flex: 0 1 auto;
+    min-width: 90px;
+    overflow: hidden;
+    color: var(--muted);
+    font-size: 0.68rem;
+    font-weight: 800;
+    text-align: right;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  :global(.landscape-hero__result-desc) {
+    overflow: hidden;
+    color: var(--muted);
+    font-size: 0.8rem;
+    line-height: 1.4;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  :global(.landscape-hero__result-tags) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  :global(.landscape-hero__result-tags span) {
+    display: inline-flex;
+    align-items: center;
+    min-height: 21px;
+    padding: 0 7px;
+    border-radius: 999px;
+    background: var(--surface-soft);
+    color: var(--muted);
+    font-size: 0.68rem;
+    font-weight: 800;
+  }
+
+  .landscape-hero__empty {
+    padding: 24px 16px;
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .landscape-hero__signals {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    width: min(100%, 520px);
+    margin-top: 4px;
+  }
+
+  .landscape-hero__signal {
+    display: grid;
+    gap: 2px;
+    min-height: 66px;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: color-mix(in srgb, var(--surface) 72%, transparent);
+    text-align: center;
+  }
+
+  .landscape-hero__signal strong {
+    color: var(--text);
+    font-size: 1.12rem;
+    line-height: 1;
+  }
+
+  .landscape-hero__signal span {
+    color: var(--muted);
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .landscape-hero__signal--projects {
+    border-color: color-mix(in srgb, #0ea5e9 36%, var(--border));
+  }
+
+  .landscape-hero__signal--categories {
+    border-color: color-mix(in srgb, #22c55e 34%, var(--border));
+  }
+
+  .landscape-hero__signal--tomb {
+    border-color: color-mix(in srgb, #f97316 34%, var(--border));
+  }
+
+  .landscape-start__grid {
+    grid-template-columns: minmax(0, 1.45fr) repeat(3, minmax(0, 1fr));
+  }
+
+  .landscape-start-card {
+    --start-accent: var(--accent);
+    --start-soft: color-mix(in srgb, var(--start-accent) 10%, var(--surface));
+    position: relative;
+    overflow: hidden;
+    min-height: 142px;
+    border-color: color-mix(in srgb, var(--start-accent) 28%, var(--border));
+    background:
+      linear-gradient(180deg, var(--start-soft), var(--surface) 82%);
+  }
+
+  .landscape-start-card::after {
+    content: '→';
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    color: color-mix(in srgb, var(--start-accent) 76%, var(--muted));
+    font-size: 1.1rem;
+    font-weight: 900;
+  }
+
+  .landscape-start-card__icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: var(--start-accent);
+    color: white;
+  }
+
+  .landscape-start-card strong {
+    padding-right: 24px;
+    font-size: 1.03rem;
+  }
+
+  .landscape-start-card--search {
+    --start-accent: #0ea5e9;
+    min-height: 176px;
+    padding: 22px;
+  }
+
+  .landscape-start-card--search strong {
+    font-size: clamp(1.2rem, 2vw, 1.48rem);
+  }
+
+  .landscape-start-card--search span:not(.landscape-start-card__icon) {
+    max-width: 360px;
+    font-size: 0.96rem;
+  }
+
+  .landscape-start-card--browse {
+    --start-accent: #22c55e;
+  }
+
+  .landscape-start-card--method {
+    --start-accent: #f59e0b;
+  }
+
+  .landscape-start-card--tomb {
+    --start-accent: #f97316;
+  }
+
+  .landscape-start-card--tomb small {
+    max-width: 100%;
+    overflow: hidden;
+    color: color-mix(in srgb, var(--start-accent) 72%, var(--muted));
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .landscape-category-overview__card {
+    position: relative;
+    overflow: hidden;
+    border-color: color-mix(in srgb, var(--category-accent, var(--accent)) 24%, var(--border));
+    background:
+      linear-gradient(180deg, color-mix(in srgb, var(--category-accent, var(--accent)) 9%, var(--surface)), var(--surface) 72%);
+  }
+
+  .landscape-category-overview__card:nth-child(1) { --category-accent: #0ea5e9; }
+  .landscape-category-overview__card:nth-child(2) { --category-accent: #22c55e; }
+  .landscape-category-overview__card:nth-child(3) { --category-accent: #f59e0b; }
+  .landscape-category-overview__card:nth-child(4) { --category-accent: #14b8a6; }
+  .landscape-category-overview__card:nth-child(5) { --category-accent: #ef4444; }
+  .landscape-category-overview__card:nth-child(6) { --category-accent: #8b5cf6; }
+
+  .landscape-category-overview__main {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+  }
+
+  .landscape-category-overview__index {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    border: 1px solid color-mix(in srgb, var(--category-accent, var(--accent)) 68%, white);
+    background: color-mix(in srgb, var(--category-accent, var(--accent)) 82%, white);
+    color: #04111f;
+    box-shadow:
+      0 0 0 3px color-mix(in srgb, var(--category-accent, var(--accent)) 16%, transparent),
+      0 10px 24px color-mix(in srgb, var(--category-accent, var(--accent)) 24%, transparent);
+    font-size: 0.82rem;
+    font-weight: 900;
+  }
+
+  .landscape-category-overview__main > .landscape-category-overview__index {
+    color: #04111f;
+    font-weight: 900;
+  }
+
+  .landscape-category-overview__main h3 {
+    font-size: 1.04rem;
+  }
+
+  .landscape-category-overview__main a {
+    color: color-mix(in srgb, var(--text) 96%, white);
+  }
+
+  .landscape-category-overview__main > span:not(.landscape-category-overview__index) {
+    padding-top: 4px;
+    color: color-mix(in srgb, var(--text) 74%, var(--muted));
+    font-size: 0.78rem;
+  }
+
+  .landscape-category-overview__subcats a {
+    border-color: color-mix(in srgb, var(--category-accent, var(--accent)) 24%, var(--border));
+    background: color-mix(in srgb, var(--category-accent, var(--accent)) 14%, var(--surface-soft));
+    color: color-mix(in srgb, var(--text) 72%, var(--muted));
+    font-weight: 800;
+  }
+
+  .landscape-category-overview__subcats a:hover,
+  .landscape-category-overview__subcats span {
+    border-color: var(--category-accent, var(--accent));
+    color: color-mix(in srgb, var(--category-accent, var(--accent)) 82%, white);
+  }
+
+  .landscape-category-overview__subcats span {
+    color: color-mix(in srgb, var(--category-accent, var(--accent)) 78%, white);
+  }
+
+  html[data-theme='dark'] .landscape-category-overview__main a {
+    color: #f8fafc;
+  }
+
+  html[data-theme='dark'] .landscape-category-overview__main > span:not(.landscape-category-overview__index) {
+    color: #cbd5e1;
+  }
+
+  html[data-theme='dark'] .landscape-category-overview__subcats a {
+    background: color-mix(in srgb, var(--category-accent, var(--accent)) 18%, #172033);
+    color: #dbeafe;
+  }
+
+  html[data-theme='dark'] .landscape-category-overview__subcats span {
+    color: color-mix(in srgb, var(--category-accent, var(--accent)) 70%, #ffffff);
+  }
+
+  .landscape-section__head {
+    max-width: 620px;
+  }
+
+  .landscape-section__head p {
+    max-width: 560px;
+  }
+
+  @media (max-width: 980px) {
+    .landscape-start__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .landscape-start-card--search {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .landscape-hero__card {
+      background:
+        linear-gradient(180deg, color-mix(in srgb, var(--surface-soft) 72%, transparent), var(--surface) 70%);
+    }
+
+    .landscape-hero__search {
+      min-height: 64px;
+      box-shadow:
+        0 0 0 4px color-mix(in srgb, var(--accent) 10%, transparent),
+        0 16px 38px rgba(10, 132, 255, 0.16);
+    }
+
+    .landscape-hero__signals {
+      grid-template-columns: 1fr;
+      width: min(100%, 320px);
+    }
+
+    .landscape-hero__signal {
+      min-height: 52px;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      text-align: left;
+    }
+
+    .landscape-start__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .landscape-start-card--search {
+      grid-column: auto;
+      min-height: 0;
+    }
+
+    .landscape-category-overview__main {
+      grid-template-columns: auto minmax(0, 1fr);
+    }
+
+    .landscape-category-overview__main > span:not(.landscape-category-overview__index) {
+      grid-column: 2;
+      padding-top: 0;
     }
   }
 

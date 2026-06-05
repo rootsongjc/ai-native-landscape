@@ -103,7 +103,7 @@ const structuredData = {
           const langKey = 'ai-landscape-lang';
           if (!localStorage.getItem(langKey)) {
             const p = location.pathname.replace(/\/+$/, '');
-            if (p === '' || p === '/en') {
+            if (p === '') {
               const nav = (navigator.language || '').toLowerCase();
               if (nav.startsWith('zh')) {
                 localStorage.setItem(langKey, 'zh');
