@@ -13,7 +13,7 @@ description: LangChain Go 是 LangChain 在 Go 语言中的实现，提供可组
 author: tmc
 ossDate: '2023-02-18T20:04:54Z'
 featured: false
-status: tracked
+status: unavailable
 ---
 
 LangChain Go 是 LangChain 在 Go 语言中的实现，为在 Go 中编写基于 LLM 的程序提供了最简便的方式。它提供链、工具、回调、向量存储和文档加载器等模块化组件，使开发者能够使用惯用的 Go 语言从提示词拼接到多步智能体编排构建生产级应用。

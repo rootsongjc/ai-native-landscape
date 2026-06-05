@@ -12,7 +12,7 @@ description: 由 AI 驱动的代码生成和辅助平台，通过智能代码建
 author: RooCode Inc
 ossDate: '2024-10-31T17:56:50.000Z'
 featured: false
-status: tracked
+status: archived
 ---
 
 ## 简介

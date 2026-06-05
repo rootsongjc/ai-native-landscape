@@ -15,7 +15,7 @@ description: >-
 author: tmc
 ossDate: '2023-02-18T20:04:54Z'
 featured: false
-status: tracked
+status: unavailable
 ---
 
 LangChain Go is the Go implementation of LangChain, providing the easiest way to write LLM-based programs in Go. It offers modular components including chains, tools, callbacks, vector stores, and document loaders, enabling developers to build production-grade applications from prompt assembly to multi-step agent orchestration using idiomatic Go.

@@ -12,7 +12,7 @@ description: VSCode Copilot Chat 是微软提供的用于在 Visual Studio Code 
 author: Microsoft
 ossDate: '2025-06-10T16:21:19Z'
 featured: false
-status: tracked
+status: archived
 ---
 
 ## 详细介绍

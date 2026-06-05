@@ -12,7 +12,7 @@ description: 一个为缓存和实时工作负载优化的高性能分布式键�
 author: Valkey Project
 ossDate: '2024-03-22T00:42:17Z'
 featured: false
-status: archived
+status: tracked
 ---
 
 ## 详细介绍
