@@ -16,13 +16,7 @@ AI Native Landscape is a curated map of open source projects for the AI Native s
 
 ## About Jimmy Song
 
-Jimmy Song focuses on research and open source practice in AI-Native Infrastructure and cloud native application architecture.
-
-He is currently Open Source Ecosystem VP at [Dynamia.ai](https://dynamia.ai/), a CNCF Ambassador, and the founder of the Cloud Native Community (China).
-
-His long-term work centers on AI-Native Infrastructure, GPU virtualization, heterogeneous computing scheduling, cloud native architecture evolution, and open source ecosystem collaboration.
-
-AI Native Landscape reflects that same long-term approach to ecosystem curation: structured information, explicit taxonomy, and engineering-verifiable signals instead of trend chasing.
+Jimmy Song focuses on research and open source practice in AI-Native Infrastructure and cloud native application architecture. Visit [jimmysong.io](https://jimmysong.io) for more.
 
 ## Why This Project Exists
 
