@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 import { alternatePath, localizedPath, SITE, ui } from '../lib/landscape.mjs';
-import SearchModalGlobal from '../components/SearchModalGlobal.astro';
+import SearchModal from '../components/SearchModal.astro';
 
 const {
   title = SITE.title,
@@ -630,6 +630,6 @@ const structuredData = {
         }
       });
     </script>
-    {!isHomePage && <SearchModalGlobal lang={lang} />}
+    {!isHomePage && <SearchModal lang={lang} />}
   </body>
 </html>
