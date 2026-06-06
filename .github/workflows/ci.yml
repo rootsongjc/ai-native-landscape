@@ -73,7 +73,7 @@ jobs:
             fi
             # Verify projects.json contains the new slug
             if [ -n "$FIRST_SLUG" ]; then
-              FOUND=$(curl -s "https://landscape.jimmysong.io/data/projects.json" 2>/dev/null | \
+              FOUND=$(curl -s "https://landscape.jimmysong.io/exports/projects.json" 2>/dev/null | \
                 python3 -c "import sys,json;data=json.load(sys.stdin);print('yes' if any(p.get('slug')=='$FIRST_SLUG' for p in data) else 'no')" 2>/dev/null || echo "error")
               if [ "$FOUND" = "yes" ]; then
                 echo "✅ projects.json confirmed live with slug: $FIRST_SLUG"
@@ -100,7 +100,7 @@ jobs:
           echo "Generating scoring data for: $SLUGS"
           for slug in $SLUGS; do
             echo "  → $slug"
-            REPO=$(curl -sf "https://landscape.jimmysong.io/data/projects.json" 2>/dev/null | \
+            REPO=$(curl -sf "https://landscape.jimmysong.io/exports/projects.json" 2>/dev/null | \
               python3 -c "import sys,json;[print(p.get('repo','').replace('https://github.com/',''))for p in json.load(sys.stdin)if p.get('slug')=='$slug']" 2>/dev/null || true)
             if [ -n "$REPO" ]; then
               echo "    Repo: $REPO"
