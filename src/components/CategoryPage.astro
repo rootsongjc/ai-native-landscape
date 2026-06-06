@@ -73,9 +73,11 @@ const description = categoryDescription(category, lang);
 
     <section class="toolbar toolbar--category" aria-label="Category filters">
       <div class="category-toolbar__search">
-        <label class="search-field">
-          <span>{copy.search}</span>
-          <input data-filter-search type="search" placeholder={copy.searchPlaceholder} />
+        <label class="search-field search-field--filter">
+          <svg class="filter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
+          </svg>
+          <input data-filter-search type="search" placeholder={copy.filterPlaceholder} />
         </label>
       </div>
       <div class="category-toolbar__filters">
@@ -293,4 +295,22 @@ const description = categoryDescription(category, lang);
 
     hydrateCategoryScores();
   </script>
+
+  <style>
+    .filter-icon {
+      width: 16px;
+      height: 16px;
+      color: var(--muted);
+      flex-shrink: 0;
+    }
+    .search-field--filter {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .search-field--filter input {
+      flex: 1;
+      min-width: 0;
+    }
+  </style>
 </BaseLayout>
