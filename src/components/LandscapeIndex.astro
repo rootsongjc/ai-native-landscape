@@ -84,10 +84,12 @@ const canonical = localizedPath('/', lang);
       <div class="section-head">
         <h2>{copy.searchResults}</h2>
       </div>
-      <div class="toolbar toolbar--search-simple" aria-label="Search controls">
-        <label class="search-field">
-          <span>{copy.search}</span>
-          <input data-search-input type="search" placeholder={copy.searchPlaceholder} />
+      <div class="toolbar toolbar--search-simple" aria-label="Filter controls">
+        <label class="search-field search-field--filter">
+          <svg class="filter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
+          </svg>
+          <input data-search-input type="search" placeholder={copy.filterPlaceholder} />
         </label>
         <label>
           <span>{copy.category}</span>
@@ -106,6 +108,7 @@ const canonical = localizedPath('/', lang);
             <option value="inactive">{statusLabel('inactive', lang)}</option>
           </select>
         </label>
+        <span class="filter-count" data-filter-count></span>
       </div>
       <p class="search-empty" data-search-empty data-empty-text={copy.noProjects}>{copy.searchPlaceholder}</p>
       <div class="search-results" data-search-results></div>
@@ -322,4 +325,31 @@ const canonical = localizedPath('/', lang);
 
     hydrateSearchScores();
   </script>
+
+  <style>
+    .filter-icon {
+      width: 16px;
+      height: 16px;
+      color: var(--muted);
+      flex-shrink: 0;
+    }
+    .search-field--filter {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .search-field--filter input {
+      flex: 1;
+      min-width: 0;
+    }
+    .filter-count {
+      font-size: 0.78rem;
+      color: var(--muted);
+      white-space: nowrap;
+      padding: 0 4px;
+    }
+    .filter-count:empty {
+      display: none;
+    }
+  </style>
 </BaseLayout>
