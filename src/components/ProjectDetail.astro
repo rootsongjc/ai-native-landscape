@@ -1132,6 +1132,13 @@ const relatedProjects = allProjects
   .content-body :global(li) { margin-bottom: 0.4rem; }
   .content-body :global(li)::marker { color: var(--accent); }
   .content-body :global(strong) { color: var(--text); }
+  .content-body :global(pre) { position: relative; background: var(--surface-soft); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; margin: 0 0 1rem; overflow-x: auto; }
+  .content-body :global(pre code) { background: none; border: none; padding: 0; font-size: 0.85rem; line-height: 1.65; color: var(--text); display: block; }
+  .content-body :global(code) { font-family: var(--mono, ui-monospace, monospace); font-size: 0.85em; background: var(--surface-soft); border: 1px solid var(--border); border-radius: 4px; padding: 0.15em 0.4em; color: var(--text); }
+  .content-body :global(.code-block-copy) { position: absolute; top: 0.5rem; right: 0.5rem; background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 4px 10px; cursor: pointer; font-size: 0.72rem; font-weight: 600; color: var(--muted); line-height: 1; opacity: 0; transition: opacity 0.15s, background 0.15s, color 0.15s; font-family: var(--sans, system-ui, sans-serif); }
+  .content-body :global(pre:hover .code-block-copy) { opacity: 1; }
+  .content-body :global(.code-block-copy:hover) { background: var(--accent-soft); color: var(--accent); }
+  .content-body :global(.code-block-copy--copied) { opacity: 1; color: #16a34a; border-color: #16a34a; }
   .content-body :global(> :last-child) { margin-bottom: 0; }
 
   .detail-sidebar {
@@ -2016,5 +2023,38 @@ const relatedProjects = allProjects
         toast.classList.remove('share-toast--visible');
       }, duration);
     }
+  })();
+
+  // Code block copy buttons
+  (function initCodeCopy() {
+    const content = document.querySelector('.content-body');
+    if (!content) return;
+    const pres = content.querySelectorAll('pre');
+    if (!pres.length) return;
+
+    const COPY_TEXT = document.documentElement.lang?.startsWith('zh') ? '复制' : 'Copy';
+    const COPIED_TEXT = document.documentElement.lang?.startsWith('zh') ? '已复制' : 'Copied';
+
+    pres.forEach((pre) => {
+      const btn = document.createElement('button');
+      btn.className = 'code-block-copy';
+      btn.type = 'button';
+      btn.textContent = COPY_TEXT;
+      btn.setAttribute('aria-label', COPY_TEXT);
+      pre.appendChild(btn);
+
+      btn.addEventListener('click', () => {
+        const code = pre.querySelector('code');
+        const text = code ? code.textContent : pre.textContent;
+        navigator.clipboard.writeText(text).then(() => {
+          btn.textContent = COPIED_TEXT;
+          btn.classList.add('code-block-copy--copied');
+          setTimeout(() => {
+            btn.textContent = COPY_TEXT;
+            btn.classList.remove('code-block-copy--copied');
+          }, 2000);
+        });
+      });
+    });
   })();
 </script>
