@@ -38,6 +38,49 @@ const copy = ui(lang);
   const emptyEl = document.getElementById('search-modal-empty');
   const hintEl = document.getElementById('search-modal-hint');
   if (!modal || !input) return;
+
+  const CACHE_KEY = 'landscape-search-index';
+  let index = searchIndex && searchIndex.length > 0 ? searchIndex : null;
+  let loaded = !!index;
+  let loading = false;
+
+  async function ensureIndex() {
+    if (loaded) return;
+    if (loading) return;
+    loading = true;
+
+    try {
+      const cached = sessionStorage.getItem(CACHE_KEY);
+      if (cached) {
+        index = JSON.parse(cached);
+        loaded = true;
+        loading = false;
+        return;
+      }
+    } catch (_) {}
+
+    try {
+      const res = await fetch('/exports/projects.json');
+      const data = await res.json();
+      const langCode = lang === 'zh' ? 'zh' : 'en';
+      index = data.map(p => ({
+        slug: p.slug,
+        name: p.name,
+        repoSlug: p.repoSlug,
+        statusKey: p.status,
+        categoryKey: p.category,
+        subCategoryKey: p.subCategory,
+        tags: p.tags || [],
+        description: (langCode === 'zh' ? p.description?.zh : p.description?.en) || '',
+      }));
+      try { sessionStorage.setItem(CACHE_KEY, JSON.stringify(index)); } catch (_) {}
+      loaded = true;
+    } catch (e) {
+      console.warn('Failed to load search index:', e);
+    }
+    loading = false;
+  }
+
   let currentResults = [];
 
   function open() {
@@ -46,6 +89,7 @@ const copy = ui(lang);
     modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
     requestAnimationFrame(() => input.focus());
+    if (!loaded) ensureIndex();
   }
 
   function close() {
@@ -59,10 +103,8 @@ const copy = ui(lang);
     hintEl.hidden = false;
   }
 
-  // Listen for open events
   document.addEventListener('open-search-modal', open);
 
-  // Close triggers
   modal.querySelector('[data-search-modal-close]')?.addEventListener('click', close);
   input.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
@@ -78,17 +120,16 @@ const copy = ui(lang);
     if (e.key === 'Escape' && !modal.hidden) close();
   });
 
-  // Search logic
   function search(query) {
-    if (!query) {
+    if (!query || !index) {
       currentResults = [];
       resultsEl.innerHTML = '';
       emptyEl.hidden = true;
-      hintEl.hidden = false;
+      hintEl.hidden = !loaded;
       return;
     }
     const q = query.toLowerCase();
-    const results = searchIndex.filter(p => {
+    const results = index.filter(p => {
       const name = (p.name || '').toLowerCase();
       const desc = (p.description || '').toLowerCase();
       const tags = (p.tags || []).join(' ').toLowerCase();
