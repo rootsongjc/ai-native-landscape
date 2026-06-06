@@ -629,6 +629,16 @@ const structuredData = {
           openSearch();
         }
       });
+
+      // Sticky header frosted glass on scroll
+      {
+        const header = document.querySelector('.site-header');
+        if (header) {
+          const toggle = () => header.classList.toggle('is-scrolled', window.scrollY > 20);
+          toggle();
+          window.addEventListener('scroll', toggle, { passive: true });
+        }
+      }
     </script>
     {!isHomePage && <SearchModal lang={lang} />}
   </body>

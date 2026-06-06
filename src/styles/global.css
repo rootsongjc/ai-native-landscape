@@ -119,6 +119,11 @@ main {
     linear-gradient(135deg, rgba(10, 132, 255, 0.08), rgba(255, 255, 255, 0.72)),
     var(--surface);
   box-shadow: 0 14px 34px rgba(15, 38, 74, 0.08);
+  position: sticky;
+  top: 8px;
+  z-index: 800;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 html[data-theme='dark'] .site-header {
@@ -127,6 +132,21 @@ html[data-theme='dark'] .site-header {
     linear-gradient(135deg, rgba(110, 168, 255, 0.12), rgba(20, 27, 37, 0.92)),
     var(--surface);
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
+}
+
+/* Frosted glass effect when scrolled */
+.site-header.is-scrolled {
+  border-color: rgba(10, 132, 255, 0.1);
+  background: rgba(255, 255, 255, 0.62);
+  backdrop-filter: blur(20px) saturate(1.4);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  box-shadow: 0 8px 32px rgba(15, 38, 74, 0.1);
+}
+
+html[data-theme='dark'] .site-header.is-scrolled {
+  border-color: rgba(110, 168, 255, 0.1);
+  background: rgba(15, 20, 30, 0.58);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
 }
 
 .site-header__bar {
