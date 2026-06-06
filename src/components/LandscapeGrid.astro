@@ -309,6 +309,19 @@ const canonical = localizedPath('/', lang);
       });
     }
 
+    // Global slash key listener to focus search
+    document.addEventListener('keydown', (e) => {
+      // Only trigger if not typing in an input/textarea
+      const isInputFocused = document.activeElement?.tagName === 'INPUT' || 
+                            document.activeElement?.tagName === 'TEXTAREA' ||
+                            document.activeElement?.isContentEditable;
+      if (!isInputFocused && e.key === '/' && homeSearchInput) {
+        e.preventDefault();
+        homeSearch?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        requestAnimationFrame(() => homeSearchInput.focus());
+      }
+    });
+
     document.querySelectorAll('[data-focus-home-search]').forEach(button => {
       button.addEventListener('click', () => {
         homeSearch?.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -557,9 +570,7 @@ const canonical = localizedPath('/', lang);
 
   .landscape-hero h1 {
     margin: 0;
-    font-size: clamp(1.5rem, 2.8vw, 2.2rem);
     line-height: 1.1;
-    letter-spacing: -0.03em;
     font-weight: 800;
   }
 
@@ -826,11 +837,6 @@ const canonical = localizedPath('/', lang);
       border-radius: 16px;
     }
 
-    .landscape-hero h1 {
-      font-size: 1.55rem;
-      letter-spacing: 0;
-    }
-
     .landscape-hero__desc {
       font-size: 0.92rem;
       line-height: 1.55;
@@ -926,8 +932,8 @@ const canonical = localizedPath('/', lang);
   }
 
   .landscape-hero h1 {
-    font-size: clamp(2.35rem, 7vw, 5.2rem);
-    letter-spacing: 0;
+    font-size: clamp(1.75rem, 4vw, 2.8rem);
+    letter-spacing: -0.02em;
   }
 
   .landscape-hero__desc {
@@ -974,7 +980,7 @@ const canonical = localizedPath('/', lang);
     background: transparent;
     color: var(--muted);
     font-size: clamp(1rem, 1.8vw, 1.22rem);
-    font-weight: 700;
+    font-weight: 400;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -1349,8 +1355,19 @@ const canonical = localizedPath('/', lang);
     }
 
     .landscape-hero__search {
+      min-height: 56px;
       grid-template-columns: auto minmax(0, 1fr);
-      padding-right: 14px;
+      padding: 0 14px 0 16px;
+      border-width: 1.5px;
+    }
+
+    .landscape-hero__search svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .landscape-hero__search input {
+      font-size: 0.95rem;
     }
 
     .landscape-hero__search kbd {
@@ -1363,6 +1380,24 @@ const canonical = localizedPath('/', lang);
 
     .landscape-hero__cta {
       flex: 1 1 150px;
+      padding: 0 12px;
+      font-size: 0.8rem;
+    }
+
+    /* Show shorter text for GitHub button on mobile */
+    .landscape-hero__cta--primary {
+      font-size: 0;
+    }
+
+    .landscape-hero__cta--primary svg {
+      margin-right: 6px;
+    }
+
+    .landscape-hero__cta--primary::after {
+      content: 'Star';
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: white;
     }
 
     .landscape-skill-guide__cmd {
@@ -1405,6 +1440,17 @@ const canonical = localizedPath('/', lang);
     background: color-mix(in srgb, var(--surface-soft) 84%, white 3%);
   }
 
+  /* Dark mode primary button with deeper, more saturated color */
+  html[data-theme='dark'] .landscape-hero__cta--primary {
+    background: #3b82f6;
+    border-color: #3b82f6;
+  }
+
+  html[data-theme='dark'] .landscape-hero__cta--primary:hover {
+    background: #2563eb;
+    border-color: #2563eb;
+  }
+
   .landscape-hero__search svg {
     width: 30px;
     height: 30px;
@@ -1412,7 +1458,7 @@ const canonical = localizedPath('/', lang);
 
   .landscape-hero__search input {
     color: var(--text);
-    font-size: clamp(1.08rem, 2vw, 1.34rem);
+    font-size: clamp(0.95rem, 1.5vw, 1.1rem);
   }
 
   .landscape-hero__search-wrap {
@@ -1771,15 +1817,14 @@ const canonical = localizedPath('/', lang);
     }
 
     .landscape-hero__signals {
-      grid-template-columns: 1fr;
-      width: min(100%, 320px);
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+      width: 100%;
     }
 
     .landscape-hero__signal {
       min-height: 52px;
-      grid-template-columns: auto 1fr;
-      align-items: center;
-      text-align: left;
+      padding: 10px 8px;
     }
 
     .landscape-start__grid {
