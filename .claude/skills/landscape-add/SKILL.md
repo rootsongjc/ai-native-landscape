@@ -98,12 +98,9 @@ tags:
   - <tag1>
   - <tag2>
 description: <English description, 1-2 sentences>
-logo: ''
 author: <org or author name>
 ossDate: '<ISO date from repo createdAt>'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 
@@ -141,12 +138,9 @@ tags:
   - <tag1>
   - <tag2>
 description: <中文描述，1-2 句话>
-logo: ''
 author: <org or author name>
 ossDate: '<ISO date from repo createdAt>'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 
