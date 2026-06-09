@@ -161,7 +161,8 @@ const structuredData = {
           const url = new URL('/api/health', scoreApiBase);
           url.searchParams.set('repos', repos.join(','));
           url.searchParams.set('locale', locale);
-          const response = await fetch(url.toString());
+          url.searchParams.set('v', String(Math.floor(Date.now() / 300000)));
+          const response = await fetch(url.toString(), { cache: 'no-store' });
           if (!response.ok) {
             throw new Error(`Score API request failed with ${response.status}`);
           }
