@@ -65,7 +65,7 @@ function statusColor(status) {
           return (
             <a class="tomb-card" href={localizedPath(`/projects/${project.slug}/`, lang)} data-status={project.status}>
               <div class="tomb-card__icon">
-                <img src={icon || DEFAULT_PROJECT_LOGO} alt="" loading="lazy" decoding="async" onerror={`this.src='${DEFAULT_PROJECT_LOGO}'`} />
+                <img src={icon || DEFAULT_PROJECT_LOGO} alt={`${project.name} logo`} loading="lazy" decoding="async" onerror={`this.src='${DEFAULT_PROJECT_LOGO}'`} />
               </div>
               <div class="tomb-card__body">
                 <div class="tomb-card__header">

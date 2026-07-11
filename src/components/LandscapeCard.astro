@@ -23,7 +23,7 @@ const scoreStateText = scoreLabel(project.scores?.health, lang);
 >
   <div class="landscape-card__logo">
     {avatar ? (
-      <img src={avatar} alt="" loading="lazy" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false" />
+      <img src={avatar} alt={`${project.name} logo`} loading="lazy" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false" />
     ) : null}
     <span class="landscape-card__initial" hidden={Boolean(avatar)}>
       {project.name.slice(0, 2).toUpperCase()}

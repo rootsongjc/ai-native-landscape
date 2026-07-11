@@ -54,7 +54,7 @@ const tierMeta = SCORE_TIERS;
                 title={`${p.name}${desc ? ' – ' + desc : ''}`}
               >
                 {icon ? (
-                  <img src={icon} alt="" loading="lazy" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false" />
+                  <img src={icon} alt={`${p.name} logo`} loading="lazy" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false" />
                 ) : null}
                 <span class="heatmap__chip-initial" hidden={Boolean(icon)}>
                   {p.name.slice(0, 1).toUpperCase()}

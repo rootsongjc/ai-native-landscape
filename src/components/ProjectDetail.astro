@@ -60,7 +60,7 @@ const relatedProjects = allProjects
           <div class="detail-hero__top">
             <div class="detail-logo" data-logo-status={project.status}>
               {avatar ? (
-                <img src={avatar} alt="" loading="eager" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false" />
+                <img src={avatar} alt={`${project.name} logo`} loading="eager" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false" />
               ) : null}
               <span hidden={Boolean(avatar)}>{project.name.slice(0, 2).toUpperCase()}</span>
             </div>
@@ -413,7 +413,7 @@ const relatedProjects = allProjects
                   <a class="related-item" href={localizedPath(`/projects/${rp.slug}/`, lang)}>
                     <div class="related-item__logo">
                       {rpIcon ? (
-                        <img src={rpIcon} alt="" loading="lazy" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false" />
+                        <img src={rpIcon} alt={`${rp.name} logo`} loading="lazy" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false" />
                       ) : null}
                       <span hidden={Boolean(rpIcon)}>{rp.name.slice(0, 2).toUpperCase()}</span>
                     </div>
