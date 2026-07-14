@@ -558,17 +558,20 @@ export function listProjectFilesBySlug(slug) {
 
 function stripMarkdownFrontMatter(source) {
   const normalized = source.replace(/^\uFEFF/, '');
-  if (!normalized.startsWith('---\n')) {
+  if (!normalized.startsWith('---\n') && !normalized.startsWith('---\r\n')) {
     return { data: {}, body: normalized };
   }
 
   const endIndex = normalized.indexOf('\n---\n', 4);
-  if (endIndex === -1) {
+  const crlfEndIndex = normalized.indexOf('\r\n---\r\n', 4);
+  const actualEndIndex = endIndex !== -1 ? endIndex : crlfEndIndex;
+
+  if (actualEndIndex === -1) {
     throw new Error('Invalid markdown front matter: missing closing delimiter');
   }
 
-  const frontMatter = normalized.slice(4, endIndex);
-  const body = normalized.slice(endIndex + 5);
+  const frontMatter = normalized.slice(4, actualEndIndex);
+  const body = normalized.slice(actualEndIndex + (endIndex !== -1 ? 5 : 7));
   return {
     data: yaml.load(frontMatter) || {},
     body,
