@@ -35,6 +35,14 @@
       }
     },
     "author": { "type": "string" },
+    "authorLocalized": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "zh": { "type": "string" },
+        "en": { "type": "string" }
+      }
+    },
     "ossDate": { "type": "string" },
     "archivedDate": { "type": "string" },
     "featured": { "type": "boolean" },

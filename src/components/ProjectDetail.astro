@@ -80,7 +80,7 @@ const relatedProjects = allProjects
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                   {copy.author}
                 </span>
-                <strong>{project.author || copy.unknown}</strong>
+                <strong>{project.authorLocalized?.[lang] || project.author || copy.unknown}</strong>
               </span>
               <span class="hero-metric">
                 <span class="hero-metric__label">
@@ -256,7 +256,7 @@ const relatedProjects = allProjects
                 <div style="width:1px;height:18px;background:#cbd5e1;"></div>
                 <div style="display:flex;align-items:center;gap:6px;">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                  <span style="font-size:16px;color:#64748b;font-weight:500;">{project.author || (lang === 'zh' ? '未知' : 'Unknown')}</span>
+                  <span style="font-size:16px;color:#64748b;font-weight:500;">{project.authorLocalized?.[lang] || project.author || (lang === 'zh' ? '未知' : 'Unknown')}</span>
                 </div>
                 {project.ossDate && (
                   <div style="display:flex;align-items:center;gap:6px;">

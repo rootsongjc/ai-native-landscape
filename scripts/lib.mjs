@@ -633,6 +633,7 @@ export function readProjectFile(filePath) {
         source: typeof data.source === 'string'
           ? { [localized.lang]: data.source }
           : (data.source?.[localized.lang] ? { [localized.lang]: data.source[localized.lang] } : {}),
+        authorLocalized: data.author ? { [localized.lang]: data.author } : {},
         content: body.trim() ? { [localized.lang]: body.trim() } : {},
       };
     }
@@ -658,19 +659,27 @@ function preferValue(current, next) {
   return current;
 }
 
+function localizedAuthorString(authorLocalized, fallback = '') {
+  if (!authorLocalized || typeof authorLocalized !== 'object') return fallback;
+  return authorLocalized.en || authorLocalized.zh || fallback;
+}
+
 function mergeProjectDocumentsEntry(base, incoming) {
   if (!base) {
-    return {
+    const doc = {
       ...incoming,
       tags: [...(incoming.tags || [])],
       description: { ...(incoming.description || {}) },
       content: { ...(incoming.content || {}) },
       source: { ...(incoming.source || {}) },
+      authorLocalized: { ...(incoming.authorLocalized || {}) },
       score: { ...(incoming.score || {}) },
     };
+    doc.author = localizedAuthorString(doc.authorLocalized, incoming.author || '');
+    return doc;
   }
 
-  return {
+  const merged = {
     ...base,
     name: preferValue(base.name, incoming.name),
     slug: preferValue(base.slug, incoming.slug),
@@ -682,7 +691,7 @@ function mergeProjectDocumentsEntry(base, incoming) {
     tags: Array.from(new Set([...(base.tags || []), ...(incoming.tags || [])])),
     description: mergeLocalizedObject(base.description, incoming.description),
     content: mergeLocalizedObject(base.content, incoming.content),
-    author: preferValue(base.author, incoming.author),
+    authorLocalized: mergeLocalizedObject(base.authorLocalized, incoming.authorLocalized),
     ossDate: preferValue(base.ossDate, incoming.ossDate),
     archivedDate: preferValue(base.archivedDate, incoming.archivedDate),
     featured: preferValue(base.featured, incoming.featured),
@@ -694,6 +703,8 @@ function mergeProjectDocumentsEntry(base, incoming) {
       ...(incoming.score || {}),
     },
   };
+  merged.author = localizedAuthorString(merged.authorLocalized, base.author || '');
+  return merged;
 }
 
 export function loadProjectDocuments() {
@@ -727,7 +738,7 @@ function projectFrontMatterForLang(project, lang) {
     subCategory: project.subCategory,
     tags: project.tags || [],
     description: project.description?.[lang] || project.description?.en || project.description?.zh || '',
-    author: project.author || '',
+    author: project.authorLocalized?.[lang] || project.authorLocalized?.en || project.author || '',
     ossDate: project.ossDate || '',
     archivedDate: project.archivedDate || '',
     featured: Boolean(project.featured),
