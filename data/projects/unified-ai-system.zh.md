@@ -12,7 +12,7 @@ tags:
   - Model Routing
   - Agent Orchestration
   - Self-hosted
-description: Unified AI System 是一个终端优先的自托管 AI 网关，提供模型路由基础、受治理的智能体工作流、包含八个工具的 Codex MCP Server，以及无需凭据的 Docker 演示。
+description: Unified AI System 是一个终端优先的自托管 AI 网关，提供模型路由基础、受治理的智能体工作流、九个 MCP 工具、无需 Provider 的自然语言增强，以及无需凭据的 Docker 演示。
 author: happy520ai
 ossDate: '2026-04-27T15:45:42.000Z'
 featured: false
@@ -26,7 +26,7 @@ Unified AI System 是一个采用 Apache-2.0 许可证的 AI 控制平面，用�
 ## 主要特性
 
 - 提供终端、HTTP API、共享 SDK 与 MCP 接口，默认不依赖浏览器 UI。
-- 提供包含八个工具的 stdio MCP Server，覆盖网关健康、就绪状态、假 Provider 对话、知识、工作流与智能体团队状态。
+- 提供九个 stdio MCP 工具，覆盖无需 Provider 的自然语言增强、网关健康、就绪状态、假 Provider 对话、知识、工作流与智能体团队状态。
 - 提供显式 Provider 选择与模型路由基础，真实 Provider 调用必须主动启用。
 - 将审批、权限、中断控制与执行证据纳入受治理的执行路径。
 - 提供无需账号或 API Key 的一条命令 Docker 演示。
