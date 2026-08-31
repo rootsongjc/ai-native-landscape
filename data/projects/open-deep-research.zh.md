@@ -12,7 +12,7 @@ description: 一个开源的深度研究智能体框架，支持多模型、多�
 author: LangChain
 ossDate: '2024-11-20T17:37:22.000Z'
 featured: false
-status: tracked
+status: archived
 ---
 
 ## 详细介绍
