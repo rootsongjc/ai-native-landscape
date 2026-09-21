@@ -15,7 +15,7 @@ description: 基于即时通讯的开源 Agent Teams 系统，支持多 Agent �
 author: Higress Group
 ossDate: '2026-02-21'
 featured: false
-status: tracked
+status: unavailable
 ---
 
 ## 详细介绍

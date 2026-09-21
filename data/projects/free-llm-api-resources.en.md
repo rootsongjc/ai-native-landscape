@@ -13,7 +13,7 @@ description: A community-maintained list of LLM providers and gateways offering 
 author: cheahjs
 ossDate: '2024-07-04T20:10:17Z'
 featured: false
-status: tracked
+status: unavailable
 ---
 
 Free LLM API Resources is a community-curated directory that lists free LLM inference resources accessible via API. The repository aggregates providers and gateway platforms, organizing them with notes on free quotas, rate limits, available models, and access links to help developers quickly discover and compare options for prototyping and experimentation.

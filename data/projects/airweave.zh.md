@@ -13,7 +13,7 @@ description: Airweave 是一个让代理可以检索任何应用数据的工具�
 author: Airweave
 ossDate: '2024-12-24T10:00:06.000Z'
 featured: false
-status: tracked
+status: archived
 ---
 ## 简介
 

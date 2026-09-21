@@ -12,7 +12,7 @@ description: 一个可视化搭建智能体与工作流的开源平台，支持�
 author: Flowise Team
 ossDate: '2023-03-31T12:23:09.000Z'
 featured: false
-status: tracked
+status: archived
 ---
 ## 简介
 
