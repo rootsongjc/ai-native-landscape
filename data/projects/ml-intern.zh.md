@@ -14,7 +14,7 @@ description: ML Intern 是由 HuggingFace 开发的开源自主 ML 工程师 Age
 author: HuggingFace
 ossDate: '2025-10-30T13:43:09Z'
 featured: false
-status: tracked
+status: archived
 ---
 
 ## 详细介绍

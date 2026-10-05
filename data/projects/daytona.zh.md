@@ -14,7 +14,7 @@ description: 用于安全执行 AI 生成代码的弹性基础设施，提供隔
 author: Daytona
 ossDate: '2024-02-06T08:21:20.000Z'
 featured: false
-status: tracked
+status: archived
 ---
 ## 简介
 

@@ -13,7 +13,7 @@ description: kimi-cli 是一款由 MoonshotAI 推出的开源命令行 AI 智能
 author: 月之暗面
 ossDate: '2025-10-15T12:58:03.000Z'
 featured: false
-status: tracked
+status: archived
 ---
 
 ## 简介
