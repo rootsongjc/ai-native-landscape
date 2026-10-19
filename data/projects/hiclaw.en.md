@@ -15,7 +15,7 @@ description: Open-source Agent Teams system with IM-based multi-Agent collaborat
 author: Higress Group
 ossDate: '2026-02-21'
 featured: false
-status: tracked
+status: unavailable
 ---
 
 ## Overview

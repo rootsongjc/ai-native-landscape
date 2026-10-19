@@ -13,7 +13,7 @@ description: 一个社区维护的清单，汇集可通过 API 访问的免费�
 author: cheahjs
 ossDate: '2024-07-04T20:10:17Z'
 featured: false
-status: tracked
+status: unavailable
 ---
 
 Free LLM API Resources 是一个由社区策展维护的目录，汇总了可通过 API 访问的免费 LLM 推理资源。该仓库汇集了多家提供商和网关平台，以免费额度、速率限制、可用模型和接入链接等信息进行组织，帮助开发者快速发现和比较各种低成本方案。

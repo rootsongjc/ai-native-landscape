@@ -15,7 +15,7 @@ description: >-
 author: Moonshot AI
 ossDate: '2025-10-15T12:58:03.000Z'
 featured: false
-status: tracked
+status: archived
 ---
 
 ## Introduction
