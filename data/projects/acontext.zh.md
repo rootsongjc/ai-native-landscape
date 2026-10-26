@@ -16,7 +16,7 @@ description: 面向自学习智能体的上下文数据平台，用于存储、�
 author: MemoDB
 ossDate: '2025-07-16T13:15:48Z'
 featured: false
-status: tracked
+status: archived
 ---
 ## 简介
 
