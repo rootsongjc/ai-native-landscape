@@ -16,7 +16,7 @@ description: A context data platform for self-learning agents to store, observe,
 author: MemoDB
 ossDate: '2025-07-16T13:15:48Z'
 featured: false
-status: tracked
+status: archived
 ---
 ## Overview
 
