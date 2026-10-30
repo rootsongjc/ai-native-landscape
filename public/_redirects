@@ -44,3 +44,9 @@
 /zh/categories/vibe_coding/  /zh/categories/coding-devtools/  301
 /zh/categories/ui_integration  /zh/categories/applications-products/  301
 /zh/categories/ui_integration/  /zh/categories/applications-products/  301
+
+# Envoy AI Gateway renamed to Agent Router (repo moved to theagentrouter/agent-router).
+/projects/envoy-ai-gateway  /projects/agent-router/  301
+/projects/envoy-ai-gateway/*  /projects/agent-router/:splat  301
+/zh/projects/envoy-ai-gateway  /zh/projects/agent-router/  301
+/zh/projects/envoy-ai-gateway/*  /zh/projects/agent-router/:splat  301
