@@ -25,3 +25,4 @@ WebsiteBench 评测智能体在浏览器中探索参考网站后重建其前端�
 
 - [项目文档](https://github.com/TIGER-AI-Lab/WebsiteBench)
 - [运行指南](https://github.com/TIGER-AI-Lab/WebsiteBench/blob/main/docs/running.md)
+- [任务与参考内容（Hugging Face）](https://huggingface.co/datasets/TIGER-Lab/WBArtifacts)

@@ -25,3 +25,4 @@ The public code is licensed under Apache-2.0. Complete task and reference artifa
 
 - [Project documentation](https://github.com/TIGER-AI-Lab/WebsiteBench)
 - [Running guide](https://github.com/TIGER-AI-Lab/WebsiteBench/blob/main/docs/running.md)
+- [Task and reference artifacts (Hugging Face)](https://huggingface.co/datasets/TIGER-Lab/WBArtifacts)
