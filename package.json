@@ -11,6 +11,7 @@
     "export": "node scripts/export-data.mjs",
     "import:website": "node scripts/import-website-data.mjs",
     "build:worker-manifest": "node scripts/generate-worker-manifest.mjs",
+    "refresh:scores": "node --use-env-proxy scripts/refresh-scores.mjs",
     "build": "npm run validate && npm run build:index && npm run export && npm run build:worker-manifest && astro build",
     "dev": "astro dev --host --port 4173",
     "dev:fresh": "astro dev --host --port 4173 --force",

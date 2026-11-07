@@ -86,9 +86,26 @@ Scores (0–100) are fetched at runtime from an external API and cached client-s
 | `npm run validate` | Validate all project data against JSON Schema |
 | `npm run build:index` | Build search index |
 | `npm run export` | Export projects as JSON/CSV |
+| `npm run refresh:scores` | Refresh scoring data older than 7 days or missing in either language, then verify persisted results |
 | `npm run generate:og` | Generate OG images for all projects |
 | `npm run build` | Full build pipeline (validate → index → export → OG → astro build) |
 | `npm run dev` | Start dev server at `127.0.0.1:4173` |
+
+### Keeping GitHub metrics current
+
+The refresh command uses Node.js 24.5+ (CI uses Node.js 24) and honors proxy environment variables.
+`npm run refresh:scores -- --dry-run` audits collection dates without changing data.
+Run `npm run refresh:scores` to refresh stale or missing GitHub metrics and scores
+through the scoring worker. Curated descriptions, classifications, and project statuses
+are not modified. Use `--repo project-hami/hami` to check one repository,
+`--max-age-days 3` to change the freshness threshold, or `--report result.json`
+to save a resumable audit/result report. Rerunning skips successfully refreshed entries.
+
+The `Refresh stale project scores` workflow checks both languages daily at 03:00 UTC
+and also supports manual dispatch. Each collection is verified against the read API;
+failed or skipped repositories cause a nonzero exit and appear in the uploaded JSON
+report. A repository absent from the deployed worker manifest must be published to
+the manifest before it can be collected.
 
 ## Deployment (Cloudflare Pages)
 

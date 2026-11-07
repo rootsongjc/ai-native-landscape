@@ -86,9 +86,24 @@ ai-landscape/
 | `npm run validate` | 校验所有项目数据 |
 | `npm run build:index` | 构建搜索索引 |
 | `npm run export` | 导出项目为 JSON/CSV |
+| `npm run refresh:scores` | 补采超过 7 天或任一语言缺失的指标与评分，并验证持久化结果 |
 | `npm run generate:og` | 生成所有项目的 OG 图片 |
 | `npm run build` | 完整构建流程（校验 → 索引 → 导出 → OG → Astro 构建） |
 | `npm run dev` | 启动开发服务器 `127.0.0.1:4173` |
+
+### 保持 GitHub 指标及时更新
+
+补采命令使用 Node.js 24.5+（CI 使用 Node.js 24），并支持代理环境变量。
+`npm run refresh:scores -- --dry-run` 仅检查采集时间，不修改数据。
+执行 `npm run refresh:scores` 会通过评分 Worker 补采过时或缺失的 GitHub
+指标及评分，不改变人工维护的介绍、分类和项目状态。可使用
+`--repo project-hami/hami` 检查单个仓库、`--max-age-days 3` 调整时效阈值，
+或 `--report result.json` 保存检查与执行结果；重新运行会跳过已成功刷新的项目。
+
+`Refresh stale project scores` 工作流每天 UTC 03:00（北京时间 11:00）
+检查中英文数据，也支持手动触发。每次采集后都会通过读取接口确认数据已经更新；
+失败或未实际处理的仓库会导致非零退出，并记录在上传的 JSON 报告中。
+未包含在已部署 Worker 清单中的仓库，需要先发布清单才能采集。
 
 ## 部署（Cloudflare Pages）
 
