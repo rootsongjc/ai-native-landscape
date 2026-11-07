@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectListItem from './ProjectListItem.astro';
+import { localizedPath, ui } from '../lib/landscape.mjs';
+
+const { author, lang = 'en' } = Astro.props;
+const copy = ui(lang);
+const name = author.names[lang] || author.name;
+---
+
+<BaseLayout
+  title={`${name} · ${copy.authorProjects}`}
+  description={copy.browseAuthorProjects.replace('{author}', name)}
+  canonical={localizedPath(`/authors/${author.slug}/`, lang)}
+  lang={lang}
+>
+  <main class="author-page">
+    <nav class="back-link" aria-label="Breadcrumb">
+      <a class="back-link__home" href={localizedPath('/', lang)}>{copy.navLandscape}</a>
+      <span class="back-link__sep" aria-hidden="true">/</span>
+      <span class="back-link__current">{name}</span>
+    </nav>
+    <section class="page-heading">
+      <h1>{name}</h1>
+      <p>{copy.authorProjectsDescription}</p>
+      <p><strong>{author.projects.length}</strong> {copy.projects}</p>
+    </section>
+    <section class="subcategory-group" aria-label={copy.authorProjects}>
+      <div class="project-list">
+        {author.projects.map((project) => <ProjectListItem project={project} lang={lang} />)}
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .author-page {
+    display: grid;
+    gap: 24px;
+    padding: 24px 0 64px;
+  }
+  .page-heading h1 {
+    overflow-wrap: anywhere;
+  }
+  .project-list {
+    margin-top: 0;
+  }
+</style>

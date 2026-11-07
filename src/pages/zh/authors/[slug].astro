@@ -1,0 +1,15 @@
+---
+import AuthorPage from '../../../components/AuthorPage.astro';
+import { getAuthors } from '../../../lib/landscape.mjs';
+
+export function getStaticPaths() {
+  return getAuthors().map((author) => ({
+    params: { slug: author.slug },
+    props: { author },
+  }));
+}
+
+const { author } = Astro.props;
+---
+
+<AuthorPage author={author} lang="zh" />

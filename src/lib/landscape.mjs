@@ -1,4 +1,5 @@
 import { marked } from 'marked';
+import { buildAuthors, projectAuthorKey } from './authors.mjs';
 import { buildLandscapeIndex, loadCategories, loadProjects, loadTaxonomy } from '../../scripts/lib.mjs';
 
 marked.use({
@@ -7,6 +8,7 @@ marked.use({
 
 // Cache expensive data loads — getProjects() reads/parse 1288+ md files each call
 let _projectsCache = null;
+let _authorsCache = null;
 let _categoriesCache = null;
 let _taxonomyCache = null;
 let _landscapeIndexCache = null;
@@ -103,6 +105,9 @@ export const UI = {
     projectFacts: '项目信息',
     license: '许可证',
     author: '作者',
+    authorProjects: '作者项目',
+    authorProjectsDescription: '该作者在本站收录的开源项目，涵盖所有技术分类和项目状态。',
+    browseAuthorProjects: '查看 {author} 的所有收录项目',
     openSourced: '开源时间',
     repository: '仓库',
     originalRepository: '原仓库地址',
@@ -390,6 +395,9 @@ export const UI = {
     projectFacts: 'Project Facts',
     license: 'License',
     author: 'Author',
+    authorProjects: 'Author projects',
+    authorProjectsDescription: 'Open-source projects by this author in the catalog, across all categories and statuses.',
+    browseAuthorProjects: 'Browse all catalogued projects by {author}',
     openSourced: 'Open Sourced',
     repository: 'Repository',
     originalRepository: 'Original repository',
@@ -636,6 +644,16 @@ export function getLandscape() {
 export function getProjects() {
   if (!_projectsCache) _projectsCache = loadProjects();
   return _projectsCache;
+}
+
+export function getAuthors() {
+  if (!_authorsCache) _authorsCache = buildAuthors(getProjects());
+  return _authorsCache;
+}
+
+export function getProjectAuthor(project) {
+  const key = projectAuthorKey(project);
+  return key ? getAuthors().find((author) => author.key === key) : undefined;
 }
 
 export function getCategories() {

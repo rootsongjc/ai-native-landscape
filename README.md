@@ -10,6 +10,7 @@
 
 - **Landscape browsing** — Grid and heatmap views with category filtering
 - **Project detail pages** — Scores, GitHub metrics, bilingual descriptions (`/projects/<slug>/`)
+- **Author pages** — Click an author on a project detail page to browse all their catalogued projects (`/authors/<slug>/`), including archived projects. Matching uses the canonical author field (case-insensitive, whitespace-normalized), not GitHub repository ownership.
 - **Category pages** — Browse by technology domain (`/categories/<key>/`)
 - **Scoring system** — 5-dimension evaluation (activity, community, quality, sustainability → health)
 - **Bilingual** — Full Chinese (zh) and English (en) support
