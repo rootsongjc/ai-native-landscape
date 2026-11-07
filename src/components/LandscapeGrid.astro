@@ -21,13 +21,6 @@ const landscape = getLandscape();
 const categories = landscape.categories
   .filter((cat) => (landscape.byCategory[cat.key] || []).length > 0)
   .sort((a, b) => (landscape.byCategory[b.key] || []).length - (landscape.byCategory[a.key] || []).length);
-const badgeItems = [
-  copy.scopeFeatureOpenSource,
-  copy.scopeFeatureCurated,
-  copy.scopeFeatureScored,
-  copy.scopeFeatureNoModels,
-  copy.scopeFeatureMaintained,
-];
 const directoryProjectStat = { value: landscape.projectCount, label: copy.projects };
 const categoryHighlights = categories.slice(0, 6).map((category) => {
   const projects = landscape.byCategory[category.key] || [];
@@ -68,7 +61,7 @@ const canonical = localizedPath('/', lang);
     <section class="landscape-hero" aria-labelledby="landscape-title">
       <div class="landscape-hero__card">
         <div class="landscape-hero__text">
-          <h1 id="landscape-title">{copy.landscapeTitle}</h1>
+          <h1 id="landscape-title">{copy.homeHeroHeadline}</h1>
           <p class="landscape-hero__desc">{copy.heroDescription}</p>
           <div class="landscape-hero__search-wrap" data-home-search>
             <form class="landscape-hero__search" role="search" aria-label={copy.search}>
@@ -112,6 +105,31 @@ const canonical = localizedPath('/', lang);
             </div>
           </div>
         </div>
+        <aside class="landscape-atlas" aria-label={copy.homeAtlasTitle}>
+          <div class="landscape-atlas__heading">
+            <span>{copy.homeAtlasTitle}</span>
+            <span>{categories.length} {copy.categories}</span>
+          </div>
+          <ol class="landscape-atlas__list">
+            {categoryHighlights.map(({ category, projects }, index) => (
+              <li>
+                <a
+                  href={localizedPath(`/categories/${category.key}/`, lang)}
+                  aria-label={`${categoryName(category, lang)}, ${projects.length} ${copy.projects}`}
+                >
+                  <span class="landscape-atlas__index" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+                  <span class="landscape-atlas__domain">
+                    <span>{categoryName(category, lang)}</span>
+                    <span class="landscape-atlas__track" aria-hidden="true">
+                      <span style={`--atlas-share: ${Math.round(projects.length / categoryHighlights[0].projects.length * 100)}%;`}></span>
+                    </span>
+                  </span>
+                  <span class="landscape-atlas__count">{projects.length}</span>
+                </a>
+              </li>
+            ))}
+          </ol>
+        </aside>
       </div>
     </section>
 
@@ -199,7 +217,7 @@ const canonical = localizedPath('/', lang);
       </section>
 
       <div class="landscape-category-grid" data-landscape-grid>
-        {categories.map((cat, i) => <LandscapeCategory category={cat} lang={lang} index={i} />)}
+        {categories.map((cat) => <LandscapeCategory category={cat} lang={lang} />)}
       </div>
 
       <LandscapeHeatmap lang={lang} />
@@ -537,9 +555,9 @@ const canonical = localizedPath('/', lang);
 
 <style>
   .landscape-page {
-    padding: 20px 0 48px;
+    padding: 24px 0 64px;
     display: grid;
-    gap: 28px;
+    gap: 48px;
   }
 
   .landscape-hero,
@@ -549,29 +567,27 @@ const canonical = localizedPath('/', lang);
     gap: 16px;
   }
 
-  /* Hero card with border */
   .landscape-hero__card {
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
     align-items: center;
-    gap: 40px;
-    padding: 28px 32px;
+    gap: 48px;
+    padding: 48px;
     border: 1px solid var(--border);
-    border-radius: var(--radius);
+    border-radius: 20px;
     background: var(--surface);
-    box-shadow: var(--shadow);
   }
 
   .landscape-hero__text {
     display: grid;
-    gap: 14px;
-    flex: 1 1 auto;
+    gap: 16px;
     min-width: 0;
   }
 
   .landscape-hero h1 {
     margin: 0;
     line-height: 1.1;
-    font-weight: 800;
+    font-weight: 500;
   }
 
   .landscape-hero__desc {
@@ -581,82 +597,6 @@ const canonical = localizedPath('/', lang);
     line-height: 1.6;
     max-width: 520px;
   }
-
-  .landscape-hero__badges {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-  }
-
-  .landscape-hero__badges span {
-    display: inline-flex;
-    align-items: center;
-    min-height: 26px;
-    padding: 3px 10px;
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    background: var(--surface-soft);
-    color: var(--muted);
-    font-size: 0.74rem;
-    font-weight: 700;
-    line-height: 1;
-    transition: border-color 0.15s, color 0.15s;
-  }
-
-  .landscape-hero__badges span:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-  }
-
-  /* Constellation visual */
-  .landscape-hero__visual {
-    flex: 0 0 260px;
-    min-width: 200px;
-  }
-
-  .landscape-hero__constellation {
-    width: 100%;
-    height: auto;
-  }
-
-  /* Node float animation */
-  @keyframes lc-float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-4px); }
-  }
-
-  .lc-node { animation: lc-float 3s ease-in-out infinite; }
-  .lc-node--1 { animation-delay: 0s; }
-  .lc-node--2 { animation-delay: 0.3s; }
-  .lc-node--3 { animation-delay: 0.6s; }
-  .lc-node--4 { animation-delay: 0.9s; }
-  .lc-node--5 { animation-delay: 1.2s; }
-  .lc-node--6 { animation-delay: 0.15s; }
-  .lc-node--7 { animation-delay: 0.45s; }
-  .lc-node--8 { animation-delay: 0.75s; }
-  .lc-node--9 { animation-delay: 1.05s; }
-  .lc-node--10 { animation-delay: 0.5s; }
-  .lc-node--11 { animation-delay: 0.8s; }
-  .lc-node--12 { animation-delay: 1.1s; }
-
-  /* Line fade animation */
-  @keyframes lc-line-fade {
-    0%, 100% { opacity: 0.15; }
-    50% { opacity: 0.35; }
-  }
-
-  .lc-line { animation: lc-line-fade 4s ease-in-out infinite; }
-  .lc-line:nth-child(odd) { animation-delay: 0.5s; }
-
-  /* Pulse ring animation */
-  @keyframes lc-pulse-ring {
-    0% { r: 8; opacity: 0.6; }
-    100% { r: 20; opacity: 0; }
-  }
-
-  .lc-pulse { animation: lc-pulse-ring 2.5s ease-out infinite; }
-  .lc-pulse:nth-of-type(2) { animation-delay: 0.8s; }
-  .lc-pulse:nth-of-type(3) { animation-delay: 1.6s; }
 
   /* Skill guide — compact inline banner */
   .landscape-skill-guide {
@@ -672,7 +612,7 @@ const canonical = localizedPath('/', lang);
 
   .landscape-skill-guide__title {
     font-size: 0.82rem;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--text);
   }
 
@@ -718,35 +658,25 @@ const canonical = localizedPath('/', lang);
     }
   }
 
-  @media (prefers-reduced-motion: reduce) {
-    .lc-node, .lc-line, .lc-pulse { animation: none; }
-  }
-
   @media (max-width: 720px) {
     .landscape-hero__card {
-      flex-direction: column;
-      gap: 20px;
-      padding: 20px;
-    }
-    .landscape-hero__visual {
-      flex: 0 0 auto;
-      width: 100%;
-      max-width: 280px;
-      align-self: center;
+      grid-template-columns: 1fr;
+      gap: 32px;
+      padding: 24px;
     }
   }
 
   .landscape-section__head {
     display: grid;
-    gap: 6px;
+    gap: 8px;
     max-width: 720px;
   }
 
   .landscape-section__head h2 {
     margin: 0;
-    font-size: 1.36rem;
-    line-height: 1.08;
-    letter-spacing: -0.02em;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
   }
 
   .landscape-section__head p {
@@ -760,12 +690,7 @@ const canonical = localizedPath('/', lang);
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    min-height: 28px;
     margin-left: 10px;
-    padding: 4px 10px;
-    border: 1px solid rgba(10, 132, 255, 0.12);
-    border-radius: 999px;
-    background: rgba(10, 132, 255, 0.04);
     color: var(--muted);
     vertical-align: middle;
   }
@@ -780,19 +705,12 @@ const canonical = localizedPath('/', lang);
   .landscape-directory__meta strong {
     color: var(--text);
     font-size: 0.82rem;
-    font-weight: 800;
+    font-weight: 600;
   }
 
   .landscape-directory__meta small {
     font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  }
-
-  html[data-theme='dark'] .landscape-directory__meta {
-    border-color: rgba(110,168,255,0.14);
-    background: rgba(110,168,255,0.07);
+    font-weight: 500;
   }
 
   .landscape-category-grid,
@@ -803,28 +721,19 @@ const canonical = localizedPath('/', lang);
 
   @media (max-width: 720px) {
     .landscape-page {
-      gap: 24px;
+      gap: 40px;
     }
 
     .landscape-hero {
       padding-top: 10px;
     }
 
-    .landscape-hero__badges {
-      gap: 7px;
-    }
-
-    .landscape-hero__badges span {
-      min-height: 32px;
-      padding: 5px 11px;
-      font-size: 0.76rem;
-    }
   }
 
   @media (max-width: 480px) {
     .landscape-page {
-      padding: 12px 0 36px;
-      gap: 22px;
+      padding: 16px 0 48px;
+      gap: 32px;
     }
 
     .landscape-hero {
@@ -832,8 +741,8 @@ const canonical = localizedPath('/', lang);
     }
 
     .landscape-hero__card {
-      gap: 16px;
-      padding: 18px 16px;
+      gap: 24px;
+      padding: 24px 20px;
       border-radius: 16px;
     }
 
@@ -841,20 +750,6 @@ const canonical = localizedPath('/', lang);
       font-size: 0.92rem;
       line-height: 1.55;
       max-width: none;
-    }
-
-    .landscape-hero__badges {
-      gap: 6px;
-    }
-
-    .landscape-hero__badges span {
-      min-height: 28px;
-      padding: 4px 9px;
-      font-size: 0.7rem;
-    }
-
-    .landscape-hero__visual {
-      max-width: 220px;
     }
 
     .landscape-skill-guide {
@@ -907,7 +802,7 @@ const canonical = localizedPath('/', lang);
 
   /* Homepage IA redesign */
   .landscape-page {
-    gap: 30px;
+    gap: 48px;
   }
 
   .landscape-start,
@@ -919,26 +814,25 @@ const canonical = localizedPath('/', lang);
   }
 
   .landscape-hero__card {
-    justify-content: center;
-    min-height: min(560px, calc(100vh - 150px));
-    padding: clamp(36px, 7vw, 76px) clamp(18px, 5vw, 72px);
-    text-align: center;
+    min-height: 520px;
+    padding: clamp(32px, 4vw, 64px);
+    text-align: left;
   }
 
   .landscape-hero__text {
-    max-width: 900px;
-    justify-items: center;
-    gap: 18px;
+    max-width: 620px;
+    justify-items: start;
+    gap: 16px;
   }
 
   .landscape-hero h1 {
-    font-size: clamp(1.75rem, 4vw, 2.8rem);
+    font-size: clamp(2.5rem, 4vw, 3.75rem);
     letter-spacing: -0.02em;
   }
 
   .landscape-hero__desc {
-    max-width: 760px;
-    font-size: clamp(1rem, 1.7vw, 1.22rem);
+    max-width: 50ch;
+    font-size: clamp(1rem, 1.4vw, 1.125rem);
   }
 
   .landscape-hero__search {
@@ -946,31 +840,30 @@ const canonical = localizedPath('/', lang);
     grid-template-columns: auto minmax(0, 1fr) auto;
     align-items: center;
     gap: 12px;
-    width: min(100%, 720px);
-    min-height: 68px;
-    margin-top: 8px;
-    padding: 0 16px 0 20px;
-    border: 1px solid color-mix(in srgb, var(--accent) 32%, var(--border));
-    border-radius: 18px;
-    background: color-mix(in srgb, var(--surface-soft) 78%, var(--surface) 22%);
+    width: 100%;
+    min-height: 56px;
+    padding: 0 16px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--surface-soft);
     color: var(--text);
-    box-shadow: 0 16px 48px rgba(10, 132, 255, 0.12);
     text-align: left;
-    transition: border-color 0.16s, box-shadow 0.16s, transform 0.16s;
+    transition: border-color 0.16s, background-color 0.16s;
   }
 
-  .landscape-hero__search:hover,
+  .landscape-hero__search:hover {
+    border-color: var(--muted);
+  }
+
   .landscape-hero__search:focus-within {
-    border-color: var(--accent);
-    box-shadow: 0 20px 58px rgba(10, 132, 255, 0.18);
-    transform: translateY(-1px);
-    outline: none;
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
   }
 
   .landscape-hero__search svg {
-    width: 24px;
-    height: 24px;
-    color: var(--accent);
+    width: 18px;
+    height: 18px;
+    color: var(--muted);
   }
 
   .landscape-hero__search input {
@@ -978,8 +871,8 @@ const canonical = localizedPath('/', lang);
     border: 0;
     outline: 0;
     background: transparent;
-    color: var(--muted);
-    font-size: clamp(1rem, 1.8vw, 1.22rem);
+    color: var(--text);
+    font-size: 1rem;
     font-weight: 400;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -995,19 +888,19 @@ const canonical = localizedPath('/', lang);
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 32px;
-    height: 32px;
+    min-width: 24px;
+    height: 24px;
     border: 1px solid var(--border);
-    border-radius: 9px;
+    border-radius: 4px;
     background: var(--surface);
     color: var(--muted);
-    font-size: 0.86rem;
-    font-weight: 800;
+    font-size: 0.75rem;
+    font-weight: 500;
     line-height: 1;
   }
 
   .landscape-hero__help {
-    margin: -4px 0 0;
+    margin: -8px 0 0;
     color: var(--muted);
     font-size: 0.9rem;
   }
@@ -1015,8 +908,8 @@ const canonical = localizedPath('/', lang);
   .landscape-hero__actions {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+    justify-content: flex-start;
+    gap: 12px;
   }
 
   .landscape-hero__cta {
@@ -1024,21 +917,20 @@ const canonical = localizedPath('/', lang);
     align-items: center;
     justify-content: center;
     gap: 8px;
-    min-height: 42px;
+    min-height: 44px;
     padding: 0 16px;
     border: 1px solid var(--border);
-    border-radius: 12px;
+    border-radius: 8px;
     background: var(--surface-soft);
     color: var(--text);
     font-size: 0.9rem;
-    font-weight: 800;
+    font-weight: 600;
     text-decoration: none;
-    transition: border-color 0.16s, background 0.16s, transform 0.16s;
+    transition: border-color 0.16s, background-color 0.16s;
   }
 
   .landscape-hero__cta:hover {
-    border-color: var(--accent);
-    transform: translateY(-1px);
+    border-color: var(--muted);
   }
 
   .landscape-hero__cta svg {
@@ -1047,36 +939,36 @@ const canonical = localizedPath('/', lang);
   }
 
   .landscape-hero__cta--primary {
-    border-color: color-mix(in srgb, var(--accent) 50%, var(--border));
+    border-color: var(--accent);
     background: var(--accent);
-    color: white;
-  }
-
-  .landscape-hero__badges {
-    justify-content: center;
-    max-width: 740px;
+    color: var(--accent-contrast);
   }
 
   .landscape-start__grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 12px;
+    gap: 0;
+    border-block: 1px solid var(--border);
   }
 
   .landscape-start-card {
     display: grid;
     align-content: start;
     gap: 8px;
-    min-height: 168px;
-    padding: 18px;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    background: var(--surface);
+    min-height: 144px;
+    padding: 20px;
+    border: 0;
+    border-right: 1px solid var(--border);
+    border-radius: 0;
+    background: transparent;
     color: inherit;
     text-align: left;
     text-decoration: none;
-    box-shadow: var(--shadow);
-    transition: border-color 0.16s, transform 0.16s, box-shadow 0.16s;
+    transition: background-color 0.16s;
+  }
+
+  .landscape-start-card:last-child {
+    border-right: 0;
   }
 
   .landscape-start-card--button {
@@ -1086,26 +978,21 @@ const canonical = localizedPath('/', lang);
 
   .landscape-start-card:hover,
   .landscape-start-card:focus-visible {
-    border-color: color-mix(in srgb, var(--accent) 42%, var(--border));
-    box-shadow: 0 10px 28px rgba(10, 132, 255, 0.11);
-    transform: translateY(-1px);
-    outline: none;
+    background: var(--surface-soft);
   }
 
   .landscape-start-card__icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 10px;
-    background: color-mix(in srgb, var(--accent-soft) 80%, var(--surface) 20%);
-    color: var(--accent);
+    width: 24px;
+    height: 24px;
+    color: var(--muted);
   }
 
   .landscape-start-card__icon svg {
-    width: 19px;
-    height: 19px;
+    width: 18px;
+    height: 18px;
   }
 
   .landscape-start-card strong {
@@ -1123,12 +1010,8 @@ const canonical = localizedPath('/', lang);
     margin-top: auto;
     color: var(--muted);
     font-size: 0.72rem;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.45;
-  }
-
-  .landscape-start-card--tomb {
-    border-color: color-mix(in srgb, #94a3b8 36%, var(--border));
   }
 
   .landscape-category-overview {
@@ -1139,12 +1022,11 @@ const canonical = localizedPath('/', lang);
 
   .landscape-category-overview__card {
     display: grid;
-    gap: 14px;
-    padding: 18px;
+    gap: 16px;
+    padding: 20px;
     border: 1px solid var(--border);
     border-radius: var(--radius);
     background: var(--surface);
-    box-shadow: var(--shadow);
   }
 
   .landscape-category-overview__main {
@@ -1173,37 +1055,33 @@ const canonical = localizedPath('/', lang);
     flex-shrink: 0;
     color: var(--muted);
     font-size: 0.76rem;
-    font-weight: 800;
+    font-weight: 500;
   }
 
   .landscape-category-overview__subcats {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 8px 12px;
   }
 
   .landscape-category-overview__subcats a {
     display: inline-flex;
     align-items: center;
-    gap: 5px;
-    min-height: 28px;
-    padding: 4px 9px;
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    background: var(--surface-soft);
+    gap: 4px;
+    min-height: 24px;
     color: var(--muted);
     font-size: 0.76rem;
-    font-weight: 700;
+    font-weight: 400;
     text-decoration: none;
   }
 
   .landscape-category-overview__subcats a:hover {
-    border-color: var(--accent);
     color: var(--accent);
+    text-decoration: underline;
   }
 
   .landscape-category-overview__subcats span {
-    color: var(--accent);
+    color: var(--muted);
   }
 
   .landscape-directory {
@@ -1218,7 +1096,7 @@ const canonical = localizedPath('/', lang);
     position: relative;
     display: grid;
     gap: 8px;
-    padding: 22px;
+    padding: 24px;
     cursor: pointer;
     list-style: none;
   }
@@ -1234,7 +1112,7 @@ const canonical = localizedPath('/', lang);
     margin-top: 2px;
     color: var(--accent);
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1;
   }
 
@@ -1250,7 +1128,7 @@ const canonical = localizedPath('/', lang);
     margin: 0;
     padding-right: 36px;
     font-size: 1.36rem;
-    letter-spacing: -0.02em;
+    font-weight: 500;
   }
 
   .landscape-directory__summary p {
@@ -1264,13 +1142,13 @@ const canonical = localizedPath('/', lang);
   .landscape-directory .landscape-search,
   .landscape-directory .landscape-category-grid,
   .landscape-directory :global(.heatmap) {
-    margin: 0 22px 22px;
+    margin: 0 24px 24px;
   }
 
   .landscape-skill-guide {
     grid-template-columns: minmax(0, 1fr) auto auto;
     align-items: center;
-    padding: 18px;
+    padding: 20px;
   }
 
   .landscape-skill-guide h2 {
@@ -1305,6 +1183,14 @@ const canonical = localizedPath('/', lang);
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    .landscape-start-card:nth-child(2) {
+      border-right: 0;
+    }
+
+    .landscape-start-card:nth-child(-n + 2) {
+      border-bottom: 1px solid var(--border);
+    }
+
     .landscape-skill-guide {
       grid-template-columns: 1fr;
     }
@@ -1317,12 +1203,12 @@ const canonical = localizedPath('/', lang);
   @media (max-width: 720px) {
     .landscape-hero__card {
       min-height: 0;
-      padding: 30px 18px;
+      padding: 24px;
     }
 
     .landscape-hero__search {
-      min-height: 60px;
-      border-radius: 15px;
+      min-height: 56px;
+      border-radius: 10px;
     }
 
     .landscape-start__grid,
@@ -1332,38 +1218,43 @@ const canonical = localizedPath('/', lang);
 
     .landscape-start-card {
       min-height: 0;
+      border-right: 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .landscape-start-card:last-child {
+      border-bottom: 0;
     }
 
     .landscape-directory__summary {
-      padding: 18px;
+      padding: 20px;
     }
 
     .landscape-directory__summary::after {
-      right: 18px;
+      right: 20px;
     }
 
     .landscape-directory .landscape-search,
     .landscape-directory .landscape-category-grid,
     .landscape-directory :global(.heatmap) {
-      margin: 0 14px 16px;
+      margin: 0 16px 16px;
     }
   }
 
   @media (max-width: 480px) {
     .landscape-hero h1 {
-      font-size: 2.05rem;
+      font-size: 2.25rem;
     }
 
     .landscape-hero__search {
       min-height: 56px;
       grid-template-columns: auto minmax(0, 1fr);
-      padding: 0 14px 0 16px;
-      border-width: 1.5px;
+      padding: 0 16px;
     }
 
     .landscape-hero__search svg {
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
     }
 
     .landscape-hero__search input {
@@ -1384,22 +1275,6 @@ const canonical = localizedPath('/', lang);
       font-size: 0.8rem;
     }
 
-    /* Show shorter text for GitHub button on mobile */
-    .landscape-hero__cta--primary {
-      font-size: 0;
-    }
-
-    .landscape-hero__cta--primary svg {
-      margin-right: 6px;
-    }
-
-    .landscape-hero__cta--primary::after {
-      content: 'Star';
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: white;
-    }
-
     .landscape-skill-guide__cmd {
       max-width: 100%;
       white-space: normal;
@@ -1407,64 +1282,10 @@ const canonical = localizedPath('/', lang);
     }
   }
 
-  /* Visual focus refinement */
-  .landscape-hero__card {
-    position: relative;
-    overflow: hidden;
-    border-color: color-mix(in srgb, var(--accent) 22%, var(--border));
-    background:
-      linear-gradient(180deg, color-mix(in srgb, var(--surface-soft) 76%, transparent), var(--surface) 72%),
-      radial-gradient(circle at 50% 0%, rgba(10, 132, 255, 0.18), transparent 34%);
-  }
-
-  .landscape-hero__text {
-    position: relative;
-    z-index: 1;
-  }
-
-  .landscape-hero__desc {
-    max-width: 650px;
-  }
-
-  .landscape-hero__search {
-    min-height: 78px;
-    border-width: 2px;
-    border-color: color-mix(in srgb, var(--accent) 48%, var(--border));
-    background: color-mix(in srgb, var(--surface) 88%, white 12%);
-    box-shadow:
-      0 0 0 6px color-mix(in srgb, var(--accent) 10%, transparent),
-      0 26px 70px rgba(10, 132, 255, 0.2);
-  }
-
-  html[data-theme='dark'] .landscape-hero__search {
-    background: color-mix(in srgb, var(--surface-soft) 84%, white 3%);
-  }
-
-  /* Dark mode primary button with deeper, more saturated color */
-  html[data-theme='dark'] .landscape-hero__cta--primary {
-    background: #3b82f6;
-    border-color: #3b82f6;
-  }
-
-  html[data-theme='dark'] .landscape-hero__cta--primary:hover {
-    background: #2563eb;
-    border-color: #2563eb;
-  }
-
-  .landscape-hero__search svg {
-    width: 30px;
-    height: 30px;
-  }
-
-  .landscape-hero__search input {
-    color: var(--text);
-    font-size: clamp(0.95rem, 1.5vw, 1.1rem);
-  }
-
   .landscape-hero__search-wrap {
     display: grid;
-    gap: 10px;
-    width: min(100%, 720px);
+    gap: 8px;
+    width: 100%;
     text-align: left;
   }
 
@@ -1474,10 +1295,10 @@ const canonical = localizedPath('/', lang);
 
   .landscape-hero__results {
     overflow: hidden;
-    border: 1px solid color-mix(in srgb, var(--accent) 28%, var(--border));
-    border-radius: 18px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
     background: var(--surface);
-    box-shadow: 0 22px 56px rgba(2, 6, 23, 0.22);
+    box-shadow: var(--shadow);
   }
 
   .landscape-hero__results[hidden] {
@@ -1494,21 +1315,18 @@ const canonical = localizedPath('/', lang);
 
   :global(.landscape-hero__result) {
     display: grid;
-    gap: 7px;
+    gap: 8px;
     padding: 12px;
     border: 1px solid transparent;
     border-radius: 12px;
     color: var(--text);
     text-decoration: none;
-    transition: border-color 0.15s, background 0.15s, transform 0.15s;
+    transition: background-color 0.16s;
   }
 
   :global(.landscape-hero__result:hover),
-  :global(.landscape-hero__result:focus) {
-    border-color: color-mix(in srgb, var(--accent) 30%, var(--border));
-    background: color-mix(in srgb, var(--accent-soft) 48%, var(--surface) 52%);
-    outline: none;
-    transform: translateY(-1px);
+  :global(.landscape-hero__result:focus-visible) {
+    background: var(--surface-soft);
   }
 
   :global(.landscape-hero__result-main) {
@@ -1524,7 +1342,7 @@ const canonical = localizedPath('/', lang);
     overflow: hidden;
     color: var(--text);
     font-size: 0.95rem;
-    font-weight: 800;
+    font-weight: 600;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
@@ -1535,10 +1353,9 @@ const canonical = localizedPath('/', lang);
     overflow: hidden;
     color: var(--muted);
     font-size: 0.68rem;
-    font-weight: 800;
+    font-weight: 500;
     text-align: right;
     text-overflow: ellipsis;
-    text-transform: uppercase;
     white-space: nowrap;
   }
 
@@ -1554,46 +1371,42 @@ const canonical = localizedPath('/', lang);
   :global(.landscape-hero__result-tags) {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 4px;
   }
 
   :global(.landscape-hero__result-tags span) {
     display: inline-flex;
     align-items: center;
-    min-height: 21px;
-    padding: 0 7px;
-    border-radius: 999px;
+    min-height: 20px;
+    padding: 0 8px;
+    border-radius: 4px;
     background: var(--surface-soft);
     color: var(--muted);
     font-size: 0.68rem;
-    font-weight: 800;
+    font-weight: 500;
   }
 
   .landscape-hero__empty {
     padding: 24px 16px;
     color: var(--muted);
     font-size: 0.9rem;
-    font-weight: 700;
+    font-weight: 500;
     text-align: center;
   }
 
   .landscape-hero__signals {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 10px;
-    width: min(100%, 520px);
-    margin-top: 4px;
+    gap: 16px;
+    width: 100%;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
   }
 
   .landscape-hero__signal {
     display: grid;
     gap: 2px;
-    min-height: 66px;
-    padding: 12px;
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    background: color-mix(in srgb, var(--surface) 72%, transparent);
-    text-align: center;
+    text-align: left;
   }
 
   .landscape-hero__signal strong {
@@ -1605,109 +1418,8 @@ const canonical = localizedPath('/', lang);
   .landscape-hero__signal span {
     color: var(--muted);
     font-size: 0.72rem;
-    font-weight: 800;
-    text-transform: uppercase;
+    font-weight: 500;
   }
-
-  .landscape-hero__signal--projects {
-    border-color: color-mix(in srgb, #0ea5e9 36%, var(--border));
-  }
-
-  .landscape-hero__signal--categories {
-    border-color: color-mix(in srgb, #22c55e 34%, var(--border));
-  }
-
-  .landscape-hero__signal--tomb {
-    border-color: color-mix(in srgb, #f97316 34%, var(--border));
-  }
-
-  .landscape-start__grid {
-    grid-template-columns: minmax(0, 1.45fr) repeat(3, minmax(0, 1fr));
-  }
-
-  .landscape-start-card {
-    --start-accent: var(--accent);
-    --start-soft: color-mix(in srgb, var(--start-accent) 10%, var(--surface));
-    position: relative;
-    overflow: hidden;
-    min-height: 142px;
-    border-color: color-mix(in srgb, var(--start-accent) 28%, var(--border));
-    background:
-      linear-gradient(180deg, var(--start-soft), var(--surface) 82%);
-  }
-
-  .landscape-start-card::after {
-    content: '→';
-    position: absolute;
-    right: 16px;
-    top: 16px;
-    color: color-mix(in srgb, var(--start-accent) 76%, var(--muted));
-    font-size: 1.1rem;
-    font-weight: 900;
-  }
-
-  .landscape-start-card__icon {
-    width: 42px;
-    height: 42px;
-    border-radius: 12px;
-    background: var(--start-accent);
-    color: white;
-  }
-
-  .landscape-start-card strong {
-    padding-right: 24px;
-    font-size: 1.03rem;
-  }
-
-  .landscape-start-card--search {
-    --start-accent: #0ea5e9;
-    min-height: 176px;
-    padding: 22px;
-  }
-
-  .landscape-start-card--search strong {
-    font-size: clamp(1.2rem, 2vw, 1.48rem);
-  }
-
-  .landscape-start-card--search span:not(.landscape-start-card__icon) {
-    max-width: 360px;
-    font-size: 0.96rem;
-  }
-
-  .landscape-start-card--browse {
-    --start-accent: #22c55e;
-  }
-
-  .landscape-start-card--method {
-    --start-accent: #f59e0b;
-  }
-
-  .landscape-start-card--tomb {
-    --start-accent: #f97316;
-  }
-
-  .landscape-start-card--tomb small {
-    max-width: 100%;
-    overflow: hidden;
-    color: color-mix(in srgb, var(--start-accent) 72%, var(--muted));
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  .landscape-category-overview__card {
-    position: relative;
-    overflow: hidden;
-    border-color: color-mix(in srgb, var(--category-accent, var(--accent)) 24%, var(--border));
-    background:
-      linear-gradient(180deg, color-mix(in srgb, var(--category-accent, var(--accent)) 9%, var(--surface)), var(--surface) 72%);
-  }
-
-  .landscape-category-overview__card:nth-child(1) { --category-accent: #0ea5e9; }
-  .landscape-category-overview__card:nth-child(2) { --category-accent: #22c55e; }
-  .landscape-category-overview__card:nth-child(3) { --category-accent: #f59e0b; }
-  .landscape-category-overview__card:nth-child(4) { --category-accent: #14b8a6; }
-  .landscape-category-overview__card:nth-child(5) { --category-accent: #ef4444; }
-  .landscape-category-overview__card:nth-child(6) { --category-accent: #8b5cf6; }
 
   .landscape-category-overview__main {
     display: grid;
@@ -1716,124 +1428,120 @@ const canonical = localizedPath('/', lang);
   }
 
   .landscape-category-overview__index {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 38px;
-    height: 38px;
-    border-radius: 10px;
-    border: 1px solid color-mix(in srgb, var(--category-accent, var(--accent)) 68%, white);
-    background: color-mix(in srgb, var(--category-accent, var(--accent)) 82%, white);
-    color: #04111f;
-    box-shadow:
-      0 0 0 3px color-mix(in srgb, var(--category-accent, var(--accent)) 16%, transparent),
-      0 10px 24px color-mix(in srgb, var(--category-accent, var(--accent)) 24%, transparent);
-    font-size: 0.82rem;
-    font-weight: 900;
+    min-width: 24px;
+    color: var(--muted);
+    font-family: var(--mono, ui-monospace, monospace);
+    font-size: 0.75rem;
+    font-weight: 500;
   }
 
   .landscape-category-overview__main > .landscape-category-overview__index {
-    color: #04111f;
-    font-weight: 900;
-  }
-
-  .landscape-category-overview__main h3 {
-    font-size: 1.04rem;
-  }
-
-  .landscape-category-overview__main a {
-    color: color-mix(in srgb, var(--text) 96%, white);
+    color: var(--muted);
+    font-weight: 500;
   }
 
   .landscape-category-overview__main > span:not(.landscape-category-overview__index) {
-    padding-top: 4px;
-    color: color-mix(in srgb, var(--text) 74%, var(--muted));
+    color: var(--muted);
     font-size: 0.78rem;
   }
 
-  .landscape-category-overview__subcats a {
-    border-color: color-mix(in srgb, var(--category-accent, var(--accent)) 24%, var(--border));
-    background: color-mix(in srgb, var(--category-accent, var(--accent)) 14%, var(--surface-soft));
-    color: color-mix(in srgb, var(--text) 72%, var(--muted));
-    font-weight: 800;
+  .landscape-atlas {
+    min-width: 0;
+    padding: 24px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: var(--surface-soft);
   }
 
-  .landscape-category-overview__subcats a:hover,
-  .landscape-category-overview__subcats span {
-    border-color: var(--category-accent, var(--accent));
-    color: color-mix(in srgb, var(--category-accent, var(--accent)) 82%, white);
+  .landscape-atlas__heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    padding-bottom: 16px;
+    color: var(--muted);
+    font-size: 0.8rem;
   }
 
-  .landscape-category-overview__subcats span {
-    color: color-mix(in srgb, var(--category-accent, var(--accent)) 78%, white);
+  .landscape-atlas__heading span:first-child {
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 600;
   }
 
-  html[data-theme='dark'] .landscape-category-overview__main a {
-    color: #f8fafc;
+  .landscape-atlas__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 
-  html[data-theme='dark'] .landscape-category-overview__main > span:not(.landscape-category-overview__index) {
-    color: #cbd5e1;
+  .landscape-atlas__list a {
+    display: grid;
+    grid-template-columns: 24px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 0;
+    border-top: 1px solid var(--border);
+    color: var(--text);
+    font-size: 0.875rem;
+    transition: color 0.16s;
   }
 
-  html[data-theme='dark'] .landscape-category-overview__subcats a {
-    background: color-mix(in srgb, var(--category-accent, var(--accent)) 18%, #172033);
-    color: #dbeafe;
+  .landscape-atlas__list a:hover {
+    color: var(--accent);
   }
 
-  html[data-theme='dark'] .landscape-category-overview__subcats span {
-    color: color-mix(in srgb, var(--category-accent, var(--accent)) 70%, #ffffff);
+  .landscape-atlas__index,
+  .landscape-atlas__count {
+    color: var(--muted);
+    font-family: var(--mono, ui-monospace, monospace);
+    font-size: 0.75rem;
   }
 
-  .landscape-section__head {
-    max-width: 620px;
+  .landscape-atlas__count {
+    text-align: right;
   }
 
-  .landscape-section__head p {
-    max-width: 560px;
+  .landscape-atlas__domain {
+    display: grid;
+    gap: 8px;
+    min-width: 0;
   }
 
-  @media (max-width: 980px) {
-    .landscape-start__grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+  .landscape-atlas__track {
+    display: block;
+    height: 4px;
+    overflow: hidden;
+    border-radius: 4px;
+    background: var(--border);
+  }
 
-    .landscape-start-card--search {
-      grid-column: 1 / -1;
+  .landscape-atlas__track > span {
+    display: block;
+    width: var(--atlas-share);
+    height: 100%;
+    border-radius: inherit;
+    background: color-mix(in srgb, var(--accent) 45%, var(--muted));
+  }
+
+  .landscape-atlas__list li:first-child .landscape-atlas__track > span {
+    background: var(--accent);
+  }
+
+  @media (max-width: 900px) {
+    .landscape-hero__card {
+      grid-template-columns: 1fr;
+      min-height: 0;
     }
   }
 
   @media (max-width: 720px) {
-    .landscape-hero__card {
-      background:
-        linear-gradient(180deg, color-mix(in srgb, var(--surface-soft) 72%, transparent), var(--surface) 70%);
-    }
-
-    .landscape-hero__search {
-      min-height: 64px;
-      box-shadow:
-        0 0 0 4px color-mix(in srgb, var(--accent) 10%, transparent),
-        0 16px 38px rgba(10, 132, 255, 0.16);
+    .landscape-page {
+      gap: 40px;
     }
 
     .landscape-hero__signals {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 8px;
-      width: 100%;
-    }
-
-    .landscape-hero__signal {
-      min-height: 52px;
-      padding: 10px 8px;
-    }
-
-    .landscape-start__grid {
-      grid-template-columns: 1fr;
-    }
-
-    .landscape-start-card--search {
-      grid-column: auto;
-      min-height: 0;
     }
 
     .landscape-category-overview__main {
@@ -1843,6 +1551,12 @@ const canonical = localizedPath('/', lang);
     .landscape-category-overview__main > span:not(.landscape-category-overview__index) {
       grid-column: 2;
       padding-top: 0;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .landscape-page {
+      gap: 32px;
     }
   }
 

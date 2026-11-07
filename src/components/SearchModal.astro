@@ -193,7 +193,6 @@ const copy = ui(lang);
     position: absolute;
     inset: 0;
     background: color-mix(in srgb, #020617 58%, transparent);
-    backdrop-filter: blur(6px);
   }
 
   .search-modal__panel {
@@ -210,8 +209,8 @@ const copy = ui(lang);
   }
 
   @keyframes search-modal-in {
-    from { opacity: 0; transform: scale(0.97) translateY(-8px); }
-    to { opacity: 1; transform: scale(1) translateY(0); }
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 
   .search-modal__input-wrap {
@@ -222,6 +221,11 @@ const copy = ui(lang);
     padding: 0 16px;
     border-bottom: 1px solid var(--border);
     background: var(--surface);
+  }
+
+  .search-modal__input-wrap:focus-within {
+    outline: 2px solid var(--accent);
+    outline-offset: -2px;
   }
 
   .search-modal__icon {
@@ -274,7 +278,7 @@ const copy = ui(lang);
     border: 1px solid transparent;
     text-decoration: none;
     color: var(--text);
-    transition: border-color 0.15s, background 0.15s, transform 0.15s;
+    transition: background-color 0.16s;
   }
 
   :global(.search-modal__result + .search-modal__result) {
@@ -282,11 +286,8 @@ const copy = ui(lang);
   }
 
   :global(.search-modal__result:hover),
-  :global(.search-modal__result:focus) {
-    border-color: color-mix(in srgb, var(--accent) 24%, var(--border));
-    background: color-mix(in srgb, var(--accent-soft) 52%, var(--surface) 48%);
-    outline: none;
-    transform: translateY(-1px);
+  :global(.search-modal__result:focus-visible) {
+    background: var(--surface-soft);
   }
 
   :global(.search-modal__result-main) {
@@ -303,7 +304,7 @@ const copy = ui(lang);
     text-overflow: ellipsis;
     white-space: nowrap;
     font-size: 0.9rem;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--text);
   }
 
@@ -316,8 +317,7 @@ const copy = ui(lang);
     text-align: right;
     color: var(--muted);
     font-size: 0.68rem;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-weight: 500;
   }
 
   :global(.search-modal__result-desc) {
@@ -332,19 +332,19 @@ const copy = ui(lang);
   :global(.search-modal__result-tags) {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 4px;
   }
 
   :global(.search-modal__result-tags span) {
     display: inline-flex;
     align-items: center;
     min-height: 20px;
-    padding: 0 7px;
-    border-radius: 999px;
+    padding: 0 8px;
+    border-radius: 4px;
     background: var(--surface-soft);
     color: var(--muted);
     font-size: 0.68rem;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1;
   }
 

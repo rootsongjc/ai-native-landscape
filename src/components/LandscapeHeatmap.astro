@@ -103,7 +103,7 @@ const tierMeta = SCORE_TIERS;
     gap: 6px;
     padding: 10px 6px;
     font-size: 0.75rem;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--text);
     text-align: center;
     border-right: 1px solid var(--border);
@@ -175,14 +175,12 @@ const tierMeta = SCORE_TIERS;
     background: #fff;
     border: 1px solid var(--border);
     overflow: hidden;
-    transition: all 0.15s;
+    transition: border-color 0.16s;
     text-decoration: none;
     flex-shrink: 0;
   }
   .heatmap__chip:hover {
-    transform: scale(1.25);
     z-index: 5;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     border-color: var(--accent);
   }
   .heatmap__chip img {
@@ -194,7 +192,7 @@ const tierMeta = SCORE_TIERS;
   }
   .heatmap__chip-initial {
     font-size: 0.7rem;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--muted);
   }
 

@@ -7,7 +7,7 @@ import {
   subCategoryName,
 } from '../lib/landscape.mjs';
 
-const { category, lang = 'en', index = 0 } = Astro.props;
+const { category, lang = 'en' } = Astro.props;
 const landscape = getLandscape();
 const projects = landscape.byCategory[category.key] || [];
 const subCategories = category.subcategories || [];
@@ -28,33 +28,19 @@ const categoryIcons = {
 };
 const catIcon = categoryIcons[category.key] || '';
 
-const palette = [
-  { accent: '#3b82f6', bg: 'rgba(59,130,246,0.04)', bgDark: 'rgba(59,130,246,0.08)', header: 'rgba(59,130,246,0.10)', headerDark: 'rgba(59,130,246,0.22)' },
-  { accent: '#8b5cf6', bg: 'rgba(139,92,246,0.04)', bgDark: 'rgba(139,92,246,0.08)', header: 'rgba(139,92,246,0.10)', headerDark: 'rgba(139,92,246,0.22)' },
-  { accent: '#10b981', bg: 'rgba(16,185,129,0.04)', bgDark: 'rgba(16,185,129,0.08)', header: 'rgba(16,185,129,0.10)', headerDark: 'rgba(16,185,129,0.22)' },
-  { accent: '#f59e0b', bg: 'rgba(245,158,11,0.04)', bgDark: 'rgba(245,158,11,0.08)', header: 'rgba(245,158,11,0.10)', headerDark: 'rgba(245,158,11,0.22)' },
-  { accent: '#ef4444', bg: 'rgba(239,68,68,0.04)', bgDark: 'rgba(239,68,68,0.08)', header: 'rgba(239,68,68,0.10)', headerDark: 'rgba(239,68,68,0.22)' },
-  { accent: '#06b6d4', bg: 'rgba(6,182,212,0.04)', bgDark: 'rgba(6,182,212,0.08)', header: 'rgba(6,182,212,0.10)', headerDark: 'rgba(6,182,212,0.22)' },
-  { accent: '#ec4899', bg: 'rgba(236,72,153,0.04)', bgDark: 'rgba(236,72,153,0.08)', header: 'rgba(236,72,153,0.10)', headerDark: 'rgba(236,72,153,0.22)' },
-  { accent: '#14b8a6', bg: 'rgba(20,184,166,0.04)', bgDark: 'rgba(20,184,166,0.08)', header: 'rgba(20,184,166,0.10)', headerDark: 'rgba(20,184,166,0.22)' },
-  { accent: '#f97316', bg: 'rgba(249,115,22,0.04)', bgDark: 'rgba(249,115,22,0.08)', header: 'rgba(249,115,22,0.10)', headerDark: 'rgba(249,115,22,0.22)' },
-  { accent: '#6366f1', bg: 'rgba(99,102,241,0.04)', bgDark: 'rgba(99,102,241,0.08)', header: 'rgba(99,102,241,0.10)', headerDark: 'rgba(99,102,241,0.22)' },
-];
-const color = palette[index % palette.length];
 ---
 
 <section
   class="landscape-cat"
   data-category={category.key}
-  style={`--cat-accent: ${color.accent}; --cat-bg: ${color.bg}; --cat-bg-dark: ${color.bgDark}; --cat-header: ${color.header}; --cat-header-dark: ${color.headerDark};`}
 >
   <div class="landscape-cat__header">
     <a class="landscape-cat__title" href={categoryHref}>
-      <span class="landscape-cat__icon" style={`background: ${color.accent};`} set:html={catIcon} />
+      <span class="landscape-cat__icon" set:html={catIcon} />
       {name}
     </a>
     <span class="landscape-cat__meta">{subCategories.map((sc) => subCategoryName(sc.key, lang)).join(' · ')}</span>
-    <span class="landscape-cat__count" style={`background: ${color.accent};`}>{projects.length}</span>
+    <span class="landscape-cat__count">{projects.length}</span>
     <button
       class="landscape-cat__toggle"
       data-cat-toggle
@@ -78,7 +64,7 @@ const color = palette[index % palette.length];
     const rest = scProjects.slice(INITIAL_COUNT);
     return (
       <div class="landscape-subcat" data-subcategory={sc.key}>
-        <span class="landscape-subcat__label" style={`color: var(--cat-accent);`}>{scName}</span>
+        <span class="landscape-subcat__label">{scName}</span>
         <div class="landscape-subcat__grid">
           {initial.map((p) => <LandscapeCard project={p} lang={lang} />)}
         </div>
@@ -105,25 +91,18 @@ const color = palette[index % palette.length];
 <style>
   .landscape-cat {
     border: 1px solid var(--border);
-    border-left: 4px solid var(--cat-accent);
     border-radius: var(--radius);
     background: var(--surface);
-    box-shadow: var(--shadow);
     padding: 0;
-    transition: box-shadow 0.25s, transform 0.25s;
+    transition: border-color 0.16s;
     overflow: visible;
     position: relative;
     z-index: 0;
   }
   .landscape-cat:hover,
   .landscape-cat:focus-within {
-    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-    transform: translateY(-1px);
+    border-color: var(--muted);
     z-index: 20;
-  }
-  html[data-theme='dark'] .landscape-cat:hover,
-  html[data-theme='dark'] .landscape-cat:focus-within {
-    box-shadow: 0 8px 30px rgba(0,0,0,0.35);
   }
 
   .landscape-cat__header {
@@ -131,11 +110,8 @@ const color = palette[index % palette.length];
     align-items: center;
     gap: 12px;
     padding: 16px 20px;
-    background: var(--cat-header);
+    background: var(--surface);
     border-bottom: 1px solid var(--border);
-  }
-  html[data-theme='dark'] .landscape-cat__header {
-    background: var(--cat-header-dark);
   }
 
   .landscape-cat__title {
@@ -143,7 +119,7 @@ const color = palette[index % palette.length];
     align-items: center;
     gap: 10px;
     font-size: 1.1rem;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--text);
     text-decoration: none;
     transition: color 0.2s;
@@ -151,7 +127,7 @@ const color = palette[index % palette.length];
     border-radius: 4px;
   }
   .landscape-cat__title:hover {
-    color: var(--cat-accent);
+    color: var(--accent);
   }
 
   .landscape-cat__toggle {
@@ -161,7 +137,7 @@ const color = palette[index % palette.length];
     color: var(--muted);
     cursor: pointer;
     border-radius: 4px;
-    transition: all 0.2s;
+    transition: background-color 0.16s, color 0.16s;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -173,8 +149,8 @@ const color = palette[index % palette.length];
   }
 
   .landscape-cat__toggle:hover {
-    background: var(--accent-soft);
-    color: var(--cat-accent);
+    background: var(--surface-soft);
+    color: var(--text);
   }
   .landscape-cat__toggle svg {
     transition: transform 0.25s;
@@ -183,9 +159,8 @@ const color = palette[index % palette.length];
     transform: rotate(-90deg);
   }
   .landscape-cat__body {
-    transition: max-height 0.3s ease;
     overflow: visible;
-    padding-top: 18px;
+    padding-top: 20px;
   }
   .landscape-cat[data-collapsed] .landscape-cat__body {
     max-height: 0 !important;
@@ -196,10 +171,9 @@ const color = palette[index % palette.length];
   .landscape-cat__icon {
     display: grid;
     place-items: center;
-    width: 32px;
-    height: 32px;
-    border-radius: 8px;
-    color: white;
+    width: 24px;
+    height: 24px;
+    color: var(--muted);
     flex-shrink: 0;
   }
   .landscape-cat__icon :global(svg) {
@@ -210,13 +184,9 @@ const color = palette[index % palette.length];
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 26px;
-    height: 22px;
-    padding: 0 7px;
-    border-radius: 999px;
-    color: white;
+    color: var(--muted);
     font-size: 0.72rem;
-    font-weight: 700;
+    font-weight: 500;
     margin-left: auto;
   }
 
@@ -231,19 +201,18 @@ const color = palette[index % palette.length];
   }
 
   .landscape-subcat {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     padding: 0 20px;
   }
   .landscape-subcat:last-child {
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
 
   .landscape-subcat__label {
     display: block;
     font-size: 0.74rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
+    font-weight: 600;
+    color: var(--muted);
     margin-bottom: 8px;
     padding-left: 2px;
   }
@@ -266,17 +235,14 @@ const color = palette[index % palette.length];
     font-size: 0.72rem;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: border-color 0.16s, color 0.16s, background-color 0.16s;
     width: 100%;
     text-align: center;
   }
   .landscape-subcat__more:hover {
-    border-color: var(--cat-accent);
-    color: var(--cat-accent);
-    background: var(--cat-bg);
-  }
-  html[data-theme='dark'] .landscape-subcat__more:hover {
-    background: var(--cat-bg-dark);
+    border-color: var(--muted);
+    color: var(--text);
+    background: var(--surface-soft);
   }
 
   .landscape-subcat__hidden .landscape-subcat__grid {
@@ -289,7 +255,7 @@ const color = palette[index % palette.length];
       grid-template-columns: minmax(0, 1fr) auto;
       align-items: center;
       gap: 8px 10px;
-      padding: 14px;
+      padding: 16px;
     }
 
     .landscape-cat__title {
@@ -304,9 +270,9 @@ const color = palette[index % palette.length];
       grid-row: 1;
       justify-self: end;
       margin-left: 0;
-      min-width: 34px;
+      min-width: 0;
       width: auto;
-      height: 26px;
+      height: auto;
       font-size: 0.78rem;
     }
 
@@ -323,16 +289,12 @@ const color = palette[index % palette.length];
       min-height: 34px;
       margin-top: 2px;
       gap: 6px;
-      border: 1px solid color-mix(in srgb, var(--cat-accent) 26%, var(--border));
-      border-radius: 10px;
-      background: rgba(255, 255, 255, 0.38);
-      color: var(--cat-accent);
-      font-weight: 700;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface-soft);
+      color: var(--muted);
+      font-weight: 500;
       font-size: 0.82rem;
-    }
-
-    html[data-theme='dark'] .landscape-cat__toggle {
-      background: rgba(15, 23, 42, 0.24);
     }
 
     .landscape-cat__toggle:hover {
@@ -344,7 +306,7 @@ const color = palette[index % palette.length];
     }
 
     .landscape-subcat {
-      padding: 0 14px;
+      padding: 0 16px;
     }
   }
 </style>

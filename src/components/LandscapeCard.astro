@@ -48,27 +48,21 @@ const scoreStateText = scoreLabel(project.scores?.health, lang);
     flex-direction: column;
     align-items: center;
     gap: 4px;
-    padding: 10px 6px 8px;
+    padding: 8px;
     border-radius: 10px;
     border: 1px solid transparent;
     text-align: center;
     text-decoration: none;
     color: var(--text);
-    transition: all 0.2s;
+    transition: background-color 0.16s, border-color 0.16s;
     cursor: pointer;
     min-width: 0;
     position: relative;
   }
   .landscape-card:hover {
-    background: var(--accent-soft);
-    border-color: rgba(10, 132, 255, 0.2);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    background: var(--surface-soft);
+    border-color: var(--border);
     z-index: 10;
-  }
-  html[data-theme='dark'] .landscape-card:hover {
-    background: rgba(110,168,255,0.1);
-    border-color: rgba(110,168,255,0.25);
   }
   .landscape-card--archived {
     opacity: 0.4;
@@ -96,13 +90,13 @@ const scoreStateText = scoreLabel(project.scores?.health, lang);
   }
   .landscape-card__initial {
     font-size: 0.6rem;
-    font-weight: 800;
+    font-weight: 600;
     color: var(--accent);
     line-height: 1;
   }
 
   .landscape-card__name {
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     font-weight: 600;
     line-height: 1.2;
     overflow: hidden;
@@ -153,13 +147,14 @@ const scoreStateText = scoreLabel(project.scores?.health, lang);
   :global(html[data-theme='dark'] .landscape-card__tooltip::after) {
     border-top-color: #1e293b;
   }
-  :global(.landscape-card:hover .landscape-card__tooltip) {
+  :global(.landscape-card:hover .landscape-card__tooltip),
+  :global(.landscape-card:focus-visible .landscape-card__tooltip) {
     opacity: 1;
     transform: translateX(calc(-50% + var(--tooltip-offset))) translateY(0);
   }
   :global(.landscape-card__tooltip-name) {
     font-size: 0.82rem;
-    font-weight: 700;
+    font-weight: 600;
     display: block;
   }
   :global(.landscape-card__tooltip-desc) {
@@ -182,13 +177,10 @@ const scoreStateText = scoreLabel(project.scores?.health, lang);
     display: inline-flex;
     align-items: center;
     min-height: 22px;
-    padding: 0 8px;
-    border-radius: 999px;
     font-size: 0.68rem;
-    font-weight: 700;
+    font-weight: 500;
     white-space: nowrap;
-    color: #047857;
-    background: rgba(16,185,129,0.16);
+    color: inherit;
   }
 
   @media (max-width: 720px) {

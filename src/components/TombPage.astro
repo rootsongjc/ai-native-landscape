@@ -108,23 +108,25 @@ function statusColor(status) {
 
   /* Hero */
   .tomb-hero {
-    text-align: center;
+    text-align: left;
     margin-bottom: 48px;
   }
   .tomb-hero__icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 80px;
-    height: 80px;
-    border-radius: 20px;
-    background: var(--surface-soft);
+    width: 32px;
+    height: 32px;
     color: var(--muted);
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+  }
+  .tomb-hero__icon svg {
+    width: 32px;
+    height: 32px;
   }
   .tomb-hero h1 {
     font-size: 1.8rem;
-    font-weight: 800;
+    font-weight: 500;
     letter-spacing: -0.02em;
     margin: 0 0 12px;
   }
@@ -132,14 +134,14 @@ function statusColor(status) {
     font-size: 0.95rem;
     color: var(--muted);
     max-width: 520px;
-    margin: 0 auto 24px;
+    margin: 0 0 24px;
     line-height: 1.6;
   }
 
   /* Stats */
   .tomb-stats {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 24px;
     flex-wrap: wrap;
   }
@@ -147,20 +149,18 @@ function statusColor(status) {
   .tomb-stats__total {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 2px;
   }
   .tomb-stats__item strong,
   .tomb-stats__total strong {
     font-size: 1.4rem;
-    font-weight: 800;
+    font-weight: 600;
   }
   .tomb-stats__item span,
   .tomb-stats__total span {
     font-size: 0.72rem;
     color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
   }
   .tomb-stats__total {
     padding-left: 24px;
@@ -184,12 +184,12 @@ function statusColor(status) {
     background: var(--surface);
     text-decoration: none;
     color: inherit;
-    transition: border-color 0.15s, box-shadow 0.15s;
+    transition: border-color 0.16s, background-color 0.16s;
     cursor: pointer;
   }
   .tomb-card:hover {
-    border-color: color-mix(in srgb, var(--accent) 30%, var(--border));
-    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-color: var(--muted);
+    background: var(--surface-soft);
   }
   .tomb-card__icon {
     flex-shrink: 0;
@@ -218,7 +218,7 @@ function statusColor(status) {
   }
   .tomb-card__header h3 {
     font-size: 0.95rem;
-    font-weight: 700;
+    font-weight: 600;
     margin: 0;
     white-space: nowrap;
     overflow: hidden;
@@ -229,11 +229,8 @@ function statusColor(status) {
     align-items: center;
     gap: 4px;
     font-size: 0.68rem;
-    font-weight: 700;
-    color: var(--status-color);
-    background: color-mix(in srgb, var(--status-color) 10%, transparent);
-    padding: 2px 8px;
-    border-radius: 999px;
+    font-weight: 500;
+    color: var(--muted);
     white-space: nowrap;
     flex-shrink: 0;
   }
@@ -297,7 +294,7 @@ function statusColor(status) {
   @media (max-width: 640px) {
     .tomb-page { padding: 24px 16px 60px; }
     .tomb-hero h1 { font-size: 1.4rem; }
-    .tomb-card { padding: 12px 14px; gap: 12px; }
+    .tomb-card { padding: 16px; gap: 12px; }
     .tomb-card__icon { width: 40px; height: 40px; border-radius: 10px; }
     .tomb-card__header h3 { font-size: 0.88rem; }
     .tomb-stats { gap: 16px; }

@@ -140,42 +140,42 @@ const relatedProjects = allProjects
               </div>
               <div class="score-popover__rows">
                 <div class="score-popover__row">
-                  <span class="score-popover__icon" style="--dot-color:#3b82f6">
+                  <span class="score-popover__icon">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
                   </span>
                   <div class="score-popover__meta">
                     <span class="score-popover__label">{copy.activity}</span>
-                    <div class="score-popover__bar"><div class="score-popover__fill" data-score-repo={repoSlug} data-score-dimension="activity" style="--fill-color:linear-gradient(90deg,#3b82f6,#60a5fa);width:0%"></div></div>
+                    <div class="score-popover__bar"><div class="score-popover__fill" data-score-repo={repoSlug} data-score-dimension="activity" style="width:0%"></div></div>
                   </div>
                   <span class="score-popover__val" data-score-repo={repoSlug} data-score-activity>--</span>
                 </div>
                 <div class="score-popover__row">
-                  <span class="score-popover__icon" style="--dot-color:#8b5cf6">
+                  <span class="score-popover__icon">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                   </span>
                   <div class="score-popover__meta">
                     <span class="score-popover__label">{copy.community}</span>
-                    <div class="score-popover__bar"><div class="score-popover__fill" data-score-repo={repoSlug} data-score-dimension="community" style="--fill-color:linear-gradient(90deg,#8b5cf6,#a78bfa);width:0%"></div></div>
+                    <div class="score-popover__bar"><div class="score-popover__fill" data-score-repo={repoSlug} data-score-dimension="community" style="width:0%"></div></div>
                   </div>
                   <span class="score-popover__val" data-score-repo={repoSlug} data-score-community>--</span>
                 </div>
                 <div class="score-popover__row">
-                  <span class="score-popover__icon" style="--dot-color:#10b981">
+                  <span class="score-popover__icon">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                   </span>
                   <div class="score-popover__meta">
                     <span class="score-popover__label">{copy.quality}</span>
-                    <div class="score-popover__bar"><div class="score-popover__fill" data-score-repo={repoSlug} data-score-dimension="quality" style="--fill-color:linear-gradient(90deg,#10b981,#34d399);width:0%"></div></div>
+                    <div class="score-popover__bar"><div class="score-popover__fill" data-score-repo={repoSlug} data-score-dimension="quality" style="width:0%"></div></div>
                   </div>
                   <span class="score-popover__val" data-score-repo={repoSlug} data-score-quality>--</span>
                 </div>
                 <div class="score-popover__row">
-                  <span class="score-popover__icon" style="--dot-color:#f59e0b">
+                  <span class="score-popover__icon">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
                   </span>
                   <div class="score-popover__meta">
                     <span class="score-popover__label">{copy.sustainability}</span>
-                    <div class="score-popover__bar"><div class="score-popover__fill" data-score-repo={repoSlug} data-score-dimension="sustainability" style="--fill-color:linear-gradient(90deg,#f59e0b,#fbbf24);width:0%"></div></div>
+                    <div class="score-popover__bar"><div class="score-popover__fill" data-score-repo={repoSlug} data-score-dimension="sustainability" style="width:0%"></div></div>
                   </div>
                   <span class="score-popover__val" data-score-repo={repoSlug} data-score-sustainability>--</span>
                 </div>
@@ -233,9 +233,9 @@ const relatedProjects = allProjects
 
       <!-- Hidden share card template -->
       <div class="share-card-template" data-share-card-template style="position:fixed;left:-9999px;top:0;z-index:-1;">
-        <div class="sc" style="width:1200px;height:630px;display:flex;flex-direction:column;font-family:'Inter',system-ui,-apple-system,sans-serif;overflow:hidden;background:#ffffff;">
+        <div class="sc" style="width:1200px;height:630px;display:flex;flex-direction:column;font-family:'IBM Plex Sans',system-ui,-apple-system,sans-serif;overflow:hidden;background:#ffffff;">
           <!-- Top accent bar -->
-          <div style="height:6px;background:linear-gradient(90deg,#0a84ff,#60a5fa,#a78bfa);flex-shrink:0;"></div>
+          <div style="height:6px;background:#17639b;flex-shrink:0;"></div>
 
           <!-- Header -->
           <div style="display:flex;padding:44px 56px 0;gap:24px;">
@@ -243,7 +243,7 @@ const relatedProjects = allProjects
               <!-- Row 1: Logo + Name -->
               <div style="display:flex;align-items:center;gap:14px;">
                 <canvas data-sc-logo-canvas data-sc-logo-src={avatarLarge || ''} width="192" height="192" style="width:48px;height:48px;border-radius:12px;object-fit:cover;flex-shrink:0;"></canvas>
-                <div data-sc-name style="font-size:36px;font-weight:700;color:#0f172a;line-height:1.1;letter-spacing:-0.03em;">{project.name}</div>
+                <div data-sc-name style="font-size:36px;font-weight:600;color:#0f172a;line-height:1.1;">{project.name}</div>
               </div>
               <!-- Row 2: Description -->
               <div data-sc-desc style="font-size:20px;line-height:1.5;color:#475569;margin-top:14px;max-width:680px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">{description}</div>
@@ -268,9 +268,9 @@ const relatedProjects = allProjects
             </div>
             <!-- Health score badge -->
             <div style="flex-shrink:0;text-align:center;padding:24px 32px;min-width:150px;background:#eff6ff;border-radius:20px;">
-              <div style="font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#0a84ff;margin-bottom:6px;">{copy.overallHealth}</div>
-              <div data-sc-health style="font-size:60px;font-weight:900;line-height:1;color:#0a84ff;">--</div>
-              <div data-sc-health-label style="font-size:16px;font-weight:700;margin-top:6px;color:#059669;"></div>
+              <div style="font-size:13px;font-weight:600;color:#17639b;margin-bottom:6px;">{copy.overallHealth}</div>
+              <div data-sc-health style="font-size:60px;font-weight:500;line-height:1;color:#17639b;">--</div>
+              <div data-sc-health-label style="font-size:16px;font-weight:600;margin-top:6px;color:#24744f;"></div>
             </div>
           </div>
 
@@ -279,24 +279,24 @@ const relatedProjects = allProjects
             <!-- GitHub metrics -->
             <div style="display:flex;gap:44px;">
               <div style="display:flex;align-items:center;gap:10px;">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                <span data-sc-stars style="font-size:24px;font-weight:800;color:#0f172a;">--</span>
-                <span style="font-size:16px;color:#94a3b8;">Stars</span>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="#64748b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span data-sc-stars style="font-size:24px;font-weight:600;color:#0f172a;">--</span>
+                <span style="font-size:16px;color:#64748b;">Stars</span>
               </div>
               <div style="display:flex;align-items:center;gap:10px;">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2"><circle cx="12" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><path d="M18 9v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9"/><path d="M12 12v3"/></svg>
-                <span data-sc-forks style="font-size:24px;font-weight:800;color:#0f172a;">--</span>
-                <span style="font-size:16px;color:#94a3b8;">Forks</span>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2"><circle cx="12" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><path d="M18 9v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9"/><path d="M12 12v3"/></svg>
+                <span data-sc-forks style="font-size:24px;font-weight:600;color:#0f172a;">--</span>
+                <span style="font-size:16px;color:#64748b;">Forks</span>
               </div>
               <div style="display:flex;align-items:center;gap:10px;">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 15h8M9 9h.01M15 9h.01"/></svg>
-                <span data-sc-issues style="font-size:24px;font-weight:800;color:#0f172a;">--</span>
-                <span style="font-size:16px;color:#94a3b8;">Issues</span>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 15h8M9 9h.01M15 9h.01"/></svg>
+                <span data-sc-issues style="font-size:24px;font-weight:600;color:#0f172a;">--</span>
+                <span style="font-size:16px;color:#64748b;">Issues</span>
               </div>
               <div style="display:flex;align-items:center;gap:10px;">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                <span data-sc-contributors style="font-size:24px;font-weight:800;color:#0f172a;">--</span>
-                <span style="font-size:16px;color:#94a3b8;">Contributors</span>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <span data-sc-contributors style="font-size:24px;font-weight:600;color:#0f172a;">--</span>
+                <span style="font-size:16px;color:#64748b;">Contributors</span>
               </div>
             </div>
 
@@ -306,20 +306,20 @@ const relatedProjects = allProjects
             <!-- Score dimensions - progress bars -->
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px 40px;">
               <div>
-                <div style="display:flex;justify-content:space-between;font-size:15px;margin-bottom:5px;"><span style="color:#64748b;font-weight:600;">{copy.activity}</span><span data-sc-activity style="font-weight:800;color:#0f172a;">--</span></div>
-                <div style="height:8px;border-radius:99px;background:#e2e8f0;overflow:hidden;"><div data-sc-bar-activity style="height:100%;border-radius:99px;background:linear-gradient(90deg,#3b82f6,#60a5fa);width:0%;"></div></div>
+                <div style="display:flex;justify-content:space-between;font-size:15px;margin-bottom:5px;"><span style="color:#64748b;font-weight:600;">{copy.activity}</span><span data-sc-activity style="font-weight:600;color:#0f172a;">--</span></div>
+                <div style="height:8px;border-radius:99px;background:#e2e8f0;overflow:hidden;"><div data-sc-bar-activity style="height:100%;border-radius:99px;background:#17639b;width:0%;"></div></div>
               </div>
               <div>
-                <div style="display:flex;justify-content:space-between;font-size:15px;margin-bottom:5px;"><span style="color:#64748b;font-weight:600;">{copy.community}</span><span data-sc-community style="font-weight:800;color:#0f172a;">--</span></div>
-                <div style="height:8px;border-radius:99px;background:#e2e8f0;overflow:hidden;"><div data-sc-bar-community style="height:100%;border-radius:99px;background:linear-gradient(90deg,#8b5cf6,#a78bfa);width:0%;"></div></div>
+                <div style="display:flex;justify-content:space-between;font-size:15px;margin-bottom:5px;"><span style="color:#64748b;font-weight:600;">{copy.community}</span><span data-sc-community style="font-weight:600;color:#0f172a;">--</span></div>
+                <div style="height:8px;border-radius:99px;background:#e2e8f0;overflow:hidden;"><div data-sc-bar-community style="height:100%;border-radius:99px;background:#17639b;width:0%;"></div></div>
               </div>
               <div>
-                <div style="display:flex;justify-content:space-between;font-size:15px;margin-bottom:5px;"><span style="color:#64748b;font-weight:600;">{copy.quality}</span><span data-sc-quality style="font-weight:800;color:#0f172a;">--</span></div>
-                <div style="height:8px;border-radius:99px;background:#e2e8f0;overflow:hidden;"><div data-sc-bar-quality style="height:100%;border-radius:99px;background:linear-gradient(90deg,#10b981,#34d399);width:0%;"></div></div>
+                <div style="display:flex;justify-content:space-between;font-size:15px;margin-bottom:5px;"><span style="color:#64748b;font-weight:600;">{copy.quality}</span><span data-sc-quality style="font-weight:600;color:#0f172a;">--</span></div>
+                <div style="height:8px;border-radius:99px;background:#e2e8f0;overflow:hidden;"><div data-sc-bar-quality style="height:100%;border-radius:99px;background:#17639b;width:0%;"></div></div>
               </div>
             <div>
-              <div style="display:flex;justify-content:space-between;font-size:15px;margin-bottom:5px;"><span style="color:#64748b;font-weight:600;">{copy.sustainability}</span><span data-sc-sustainability style="font-weight:800;color:#0f172a;">--</span></div>
-              <div style="height:8px;border-radius:99px;background:#e2e8f0;overflow:hidden;"><div data-sc-bar-sustainability style="height:100%;border-radius:99px;background:linear-gradient(90deg,#f59e0b,#fbbf24);width:0%;"></div></div>
+              <div style="display:flex;justify-content:space-between;font-size:15px;margin-bottom:5px;"><span style="color:#64748b;font-weight:600;">{copy.sustainability}</span><span data-sc-sustainability style="font-weight:600;color:#0f172a;">--</span></div>
+              <div style="height:8px;border-radius:99px;background:#e2e8f0;overflow:hidden;"><div data-sc-bar-sustainability style="height:100%;border-radius:99px;background:#17639b;width:0%;"></div></div>
             </div>
             </div>
           </div>
@@ -329,12 +329,12 @@ const relatedProjects = allProjects
             <div style="display:flex;align-items:center;gap:14px;">
               <svg width="36" height="36" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#0a84ff"/><path d="M16 45 32 17l16 28" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="36" r="6" fill="none" stroke="#fff" stroke-width="4"/><path d="M24 45h16" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/></svg>
               <div>
-                <div style="font-size:17px;font-weight:800;color:#0f172a;">AI Native Landscape</div>
-                <div style="font-size:13px;color:#94a3b8;">landscape.jimmysong.io</div>
+                <div style="font-size:17px;font-weight:600;color:#0f172a;">AI Native Landscape</div>
+                <div style="font-size:13px;color:#64748b;">landscape.jimmysong.io</div>
               </div>
             </div>
             <div style="text-align:center;">
-              <div style="font-size:12px;color:#94a3b8;margin-bottom:6px;">{lang === 'zh' ? '扫码查看详情' : 'Scan to view'}</div>
+              <div style="font-size:12px;color:#64748b;margin-bottom:6px;">{lang === 'zh' ? '扫码查看详情' : 'Scan to view'}</div>
               <canvas data-sc-qrcode width="88" height="88" style="border-radius:10px;"></canvas>
             </div>
           </div>
@@ -442,11 +442,8 @@ const relatedProjects = allProjects
     align-items: center;
     gap: 8px;
     width: fit-content;
-    padding: 8px 12px;
-    margin-bottom: 8px;
-    border: 1px solid color-mix(in srgb, var(--accent) 18%, var(--border));
-    border-radius: 999px;
-    background: color-mix(in srgb, var(--accent-soft) 42%, var(--surface) 58%);
+    padding: 8px 0;
+    margin-bottom: 12px;
     font-size: 0.82rem;
     line-height: 1;
     color: var(--muted);
@@ -457,15 +454,15 @@ const relatedProjects = allProjects
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    color: var(--accent);
-    font-weight: 700;
+    color: var(--muted);
+    font-weight: 500;
     text-decoration: none;
   }
   .detail-breadcrumb__home:hover,
   .detail-breadcrumb__current:hover,
   .detail-breadcrumb__home:focus-visible,
   .detail-breadcrumb__current:focus-visible {
-    color: color-mix(in srgb, var(--accent) 72%, white);
+    color: var(--accent);
   }
   .detail-breadcrumb__home svg,
   .breadcrumb-sep svg {
@@ -497,16 +494,14 @@ const relatedProjects = allProjects
     grid-area: hero;
     display: grid;
     grid-template-columns: minmax(0, 1fr) clamp(280px, 28vw, 340px);
-    gap: clamp(14px, 2.2vw, 24px);
+    gap: 24px;
     align-items: stretch;
     border: 1px solid var(--border);
     border-radius: var(--radius);
     background: var(--surface);
     box-shadow: var(--shadow);
-    padding: clamp(18px, 2vw, 24px);
-    border-top: 2px solid rgba(10, 132, 255, 0.64);
+    padding: 24px;
   }
-  html[data-theme='dark'] .detail-hero { border-top-color: rgba(10,132,255,0.58); }
 
   .detail-hero__main {
     min-width: 0;
@@ -545,7 +540,7 @@ const relatedProjects = allProjects
     background: var(--accent-soft);
     border: 1px solid var(--border);
     font-size: 1.1rem;
-    font-weight: 800;
+    font-weight: 600;
     color: var(--accent);
   }
   .detail-logo img { width: 100%; height: 100%; object-fit: cover; }
@@ -581,7 +576,7 @@ const relatedProjects = allProjects
     grid-area: highlights;
     display: flex;
     flex-wrap: wrap;
-    gap: 7px;
+    gap: 8px;
     margin-top: 0;
     max-width: 68ch;
   }
@@ -592,10 +587,10 @@ const relatedProjects = allProjects
     align-items: center;
     width: auto;
     max-width: 100%;
-    gap: 7px;
-    padding: 6px 10px;
-    border-radius: 999px;
-    background: rgba(10, 132, 255, 0.055);
+    gap: 8px;
+    padding: 8px;
+    border-radius: 6px;
+    background: var(--surface-soft);
   }
   .detail-highlights .hero-metric__label {
     grid-column: auto;
@@ -633,17 +628,15 @@ const relatedProjects = allProjects
     border: 1px solid rgba(239,68,68,0.25);
     background: rgba(239,68,68,0.06);
     text-align: center;
-    color: #ef4444;
+    color: var(--text);
   }
   .detail-unavailable-warning[data-warning-status="archived"] {
     border-color: rgba(148,163,184,0.25);
     background: rgba(148,163,184,0.08);
-    color: #94a3b8;
   }
   .detail-unavailable-warning[data-warning-status="inactive"] {
     border-color: rgba(245,158,11,0.25);
     background: rgba(245,158,11,0.06);
-    color: #f59e0b;
   }
   .detail-unavailable-warning svg { opacity: 0.8; }
   .detail-unavailable-warning strong { font-size: 1rem; }
@@ -657,13 +650,10 @@ const relatedProjects = allProjects
   .detail-score-panel {
     position: relative;
     display: grid;
-    padding: 10px 12px;
-    border: 1px solid rgba(10, 132, 255, 0.22);
-    border-radius: 14px;
-    background:
-      radial-gradient(circle at top left, rgba(96, 165, 250, 0.2), transparent 52%),
-      linear-gradient(135deg, rgba(10, 132, 255, 0.12), rgba(80, 181, 124, 0.1));
-    box-shadow: 0 8px 18px rgba(10, 132, 255, 0.06);
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--surface-soft);
   }
 
   .detail-score {
@@ -676,10 +666,9 @@ const relatedProjects = allProjects
 
   .score-ring {
     position: relative;
-    width: 62px;
-    height: 62px;
+    width: 64px;
+    height: 64px;
     flex-shrink: 0;
-    filter: drop-shadow(0 6px 14px rgba(59, 130, 246, 0.12));
   }
   .score-ring svg {
     width: 100%;
@@ -699,7 +688,6 @@ const relatedProjects = allProjects
     stroke: var(--accent);
     stroke-width: 5;
     stroke-linecap: round;
-    transition: stroke-dasharray 0.6s ease;
   }
   .score-ring__value {
     position: absolute;
@@ -708,7 +696,7 @@ const relatedProjects = allProjects
     align-items: center;
     justify-content: center;
     font-size: 1.18rem;
-    font-weight: 800;
+    font-weight: 600;
     color: var(--text);
     line-height: 1;
   }
@@ -721,24 +709,21 @@ const relatedProjects = allProjects
   }
 
   .score-kicker {
-    font-size: 0.62rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 500;
     color: var(--muted);
     line-height: 1;
   }
 
   .score-label {
     font-size: clamp(0.9rem, 0.92rem + 0.36vw, 1.14rem);
-    font-weight: 800;
+    font-weight: 600;
     color: var(--ok);
     line-height: 1;
   }
 
   .detail-score-panel[data-lang='en'] .score-kicker {
-    font-size: 0.58rem;
-    letter-spacing: 0.04em;
+    font-size: 0.72rem;
   }
 
   .detail-score-panel[data-lang='en'] .score-label {
@@ -753,20 +738,20 @@ const relatedProjects = allProjects
     right: 8px;
     display: grid;
     place-items: center;
-    width: 22px;
-    height: 22px;
-    border-radius: 99px;
-    border: 1px solid rgba(10, 132, 255, 0.2);
-    background: rgba(10, 132, 255, 0.06);
-    color: var(--accent);
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--muted);
     cursor: pointer;
-    transition: all 0.2s;
+    transition: border-color 0.16s, color 0.16s;
     padding: 0;
     z-index: 2;
   }
   .score-info-btn:hover {
-    background: rgba(10, 132, 255, 0.14);
-    border-color: rgba(10, 132, 255, 0.4);
+    border-color: var(--muted);
+    color: var(--text);
   }
   .score-info-btn svg { width: 12px; height: 12px; }
 
@@ -786,8 +771,8 @@ const relatedProjects = allProjects
     animation: popover-in 0.18s ease-out;
   }
   @keyframes popover-in {
-    from { opacity: 0; transform: translateY(-4px) scale(0.97); }
-    to { opacity: 1; transform: translateY(0) scale(1); }
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
   }
   html[data-theme='dark'] .score-popover { box-shadow: 0 8px 30px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.06); }
   .score-popover--visible { display: flex; }
@@ -802,13 +787,11 @@ const relatedProjects = allProjects
   .score-popover__title {
     font-size: 0.72rem;
     font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
     color: var(--muted);
   }
   .score-popover__total {
     font-size: 1.1rem;
-    font-weight: 800;
+    font-weight: 600;
     color: var(--text);
     line-height: 1;
   }
@@ -836,10 +819,9 @@ const relatedProjects = allProjects
     height: 28px;
     border-radius: 8px;
     flex-shrink: 0;
-    background: color-mix(in srgb, var(--dot-color) 10%, transparent);
-    color: var(--dot-color);
+    background: var(--surface-soft);
+    color: var(--muted);
   }
-  html[data-theme='dark'] .score-popover__icon { background: color-mix(in srgb, var(--dot-color) 15%, transparent); }
 
   .score-popover__meta {
     flex: 1;
@@ -865,12 +847,11 @@ const relatedProjects = allProjects
   .score-popover__fill {
     height: 100%;
     border-radius: 99px;
-    background: var(--fill-color);
-    transition: width 0.5s ease;
+    background: var(--accent);
   }
   .score-popover__val {
     font-size: 0.82rem;
-    font-weight: 700;
+    font-weight: 600;
     text-align: right;
     min-width: 28px;
     color: var(--text);
@@ -904,7 +885,7 @@ const relatedProjects = allProjects
     background: rgba(110, 168, 255, 0.08);
     color: var(--text);
     font-size: 0.72rem;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1;
     white-space: nowrap;
   }
@@ -926,11 +907,11 @@ const relatedProjects = allProjects
   .detail-score-panel[data-reference-status="sandbox"] .reference-status__dot { background: #f59e0b; }
   .detail-score-panel[data-reference-status="archived"] .reference-status__dot { background: #94a3b8; }
   .detail-score-panel[data-reference-status="unavailable"] .reference-status__dot { background: #ef4444; }
-  .detail-title-status[data-reference-status="unavailable"] { border-color: rgba(239,68,68,0.3); background: rgba(239,68,68,0.08); color: #ef4444; }
+  .detail-title-status[data-reference-status="unavailable"] { border-color: rgba(239,68,68,0.3); background: rgba(239,68,68,0.08); }
   .detail-title-status[data-reference-status="unavailable"] .reference-status__dot { background: #ef4444; }
-  .detail-title-status[data-reference-status="archived"] { border-color: rgba(148,163,184,0.3); background: rgba(148,163,184,0.08); color: #94a3b8; }
+  .detail-title-status[data-reference-status="archived"] { border-color: rgba(148,163,184,0.3); background: rgba(148,163,184,0.08); }
   .detail-title-status[data-reference-status="archived"] .reference-status__dot { background: #94a3b8; }
-  .detail-title-status[data-reference-status="inactive"] { border-color: rgba(245,158,11,0.3); background: rgba(245,158,11,0.08); color: #f59e0b; }
+  .detail-title-status[data-reference-status="inactive"] { border-color: rgba(245,158,11,0.3); background: rgba(245,158,11,0.08); }
   .detail-title-status[data-reference-status="inactive"] .reference-status__dot { background: #f59e0b; }
 
   .detail-meta {
@@ -985,7 +966,7 @@ const relatedProjects = allProjects
   .metric-row strong {
     margin-left: auto;
     font-size: 0.84rem;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--text);
     white-space: nowrap;
   }
@@ -1027,10 +1008,8 @@ const relatedProjects = allProjects
   }
   .repo-record__label {
     font-size: 0.66rem;
-    font-weight: 800;
-    letter-spacing: 0.05em;
+    font-weight: 600;
     line-height: 1;
-    text-transform: uppercase;
   }
   .repo-record__value {
     min-width: 0;
@@ -1047,66 +1026,27 @@ const relatedProjects = allProjects
     min-height: 36px;
     padding: 7px 12px;
     border-radius: 10px;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 0.82rem;
     text-decoration: none;
-    transition: all 0.2s;
+    transition: color 0.16s, border-color 0.16s, background-color 0.16s;
   }
   .btn-primary {
-    color: var(--accent);
-    border: 1px solid color-mix(in srgb, var(--accent) 28%, var(--border));
-    background: color-mix(in srgb, var(--accent-soft) 82%, var(--surface) 18%);
-    box-shadow: 0 1px 2px rgba(11, 18, 32, 0.06);
+    color: var(--accent-contrast);
+    border: 1px solid var(--accent);
+    background: var(--accent);
   }
   .btn-primary:hover {
-    color: var(--text);
-    border-color: var(--accent);
-    background: color-mix(in srgb, var(--accent-soft) 64%, var(--surface) 36%);
-    box-shadow: 0 6px 16px rgba(10, 132, 255, 0.12);
-    transform: translateY(-1px);
-  }
-  .btn-primary:active {
-    transform: translateY(0);
-    box-shadow: 0 1px 3px rgba(10, 132, 255, 0.1);
-  }
-  html[data-theme='dark'] .btn-primary {
-    color: #cfe2ff;
-    border-color: color-mix(in srgb, var(--accent) 34%, var(--border));
-    background: color-mix(in srgb, var(--accent-soft) 88%, var(--surface) 12%);
-    box-shadow: 0 1px 2px rgba(2, 6, 23, 0.24);
-  }
-  html[data-theme='dark'] .btn-primary:hover {
-    color: #f3f7ff;
-    background: color-mix(in srgb, var(--accent-soft) 70%, var(--surface) 30%);
-    box-shadow: 0 8px 20px rgba(8, 25, 48, 0.28);
+    background: color-mix(in srgb, var(--accent) 86%, var(--text));
   }
   .btn-secondary {
-    color: var(--accent);
-    border: 1px solid color-mix(in srgb, var(--accent) 22%, var(--border));
-    background: color-mix(in srgb, var(--surface-soft) 84%, var(--surface) 16%);
-    box-shadow: 0 1px 2px rgba(11, 18, 32, 0.05);
+    color: var(--text);
+    border: 1px solid var(--border);
+    background: var(--surface-soft);
   }
   .btn-secondary:hover {
-    color: var(--text);
-    border-color: color-mix(in srgb, var(--accent) 34%, var(--border));
-    background: color-mix(in srgb, var(--accent-soft) 58%, var(--surface) 42%);
-    box-shadow: 0 6px 16px rgba(10, 132, 255, 0.1);
-    transform: translateY(-1px);
-  }
-  .btn-secondary:active {
-    transform: translateY(0);
-    box-shadow: 0 1px 3px rgba(10, 132, 255, 0.08);
-  }
-  html[data-theme='dark'] .btn-secondary {
-    color: #cfe2ff;
-    border-color: color-mix(in srgb, var(--accent) 28%, var(--border));
-    background: color-mix(in srgb, var(--surface-soft) 88%, var(--surface) 12%);
-    box-shadow: 0 1px 2px rgba(2, 6, 23, 0.22);
-  }
-  html[data-theme='dark'] .btn-secondary:hover {
-    color: #f3f7ff;
-    background: color-mix(in srgb, var(--accent-soft) 62%, var(--surface) 38%);
-    box-shadow: 0 8px 18px rgba(8, 25, 48, 0.24);
+    border-color: var(--muted);
+    background: var(--surface);
   }
 
   .content-card {
@@ -1115,16 +1055,9 @@ const relatedProjects = allProjects
     border-radius: var(--radius);
     background: var(--surface);
     box-shadow: var(--shadow);
-    border-top: 3px solid transparent;
-    background-image: linear-gradient(var(--surface), var(--surface)), linear-gradient(135deg, var(--accent), var(--ok));
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-  }
-  html[data-theme='dark'] .content-card {
-    background-image: linear-gradient(var(--surface), var(--surface)), linear-gradient(135deg, rgba(110,168,255,0.4), rgba(80,181,124,0.4));
   }
   .content-body { padding: 28px; }
-  .content-body :global(h2) { font-size: 1.4rem; font-weight: 700; margin: 2rem 0 0.8rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+  .content-body :global(h2) { font-size: 1.4rem; font-weight: 600; margin: 2rem 0 0.8rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
   .content-body :global(h2:first-child) { margin-top: 0; }
   .content-body :global(h3) { font-size: 1.15rem; font-weight: 600; margin: 1.5rem 0 0.6rem; }
   .content-body :global(p) { color: var(--muted); line-height: 1.75; margin: 0 0 1rem; font-size: 0.95rem; }
@@ -1154,7 +1087,7 @@ const relatedProjects = allProjects
     border-radius: var(--radius);
     background: var(--surface);
     box-shadow: var(--shadow);
-    padding: 18px;
+    padding: 20px;
   }
   .sidebar-card h3 {
     display: flex;
@@ -1162,17 +1095,13 @@ const relatedProjects = allProjects
     gap: 8px;
     margin: 0 0 14px;
     font-size: 0.92rem;
-    font-weight: 700;
+    font-weight: 600;
     padding-bottom: 10px;
     border-bottom: 1px solid var(--border);
   }
   .sidebar-card h3 svg { color: var(--accent); flex-shrink: 0; }
 
-  .score-card { border-left: 3px solid var(--accent); }
-  .github-card { border-left: 3px solid var(--accent); }
-
   /* Related Projects Card */
-  .related-card { border-left: 3px solid var(--ok); }
   .related-list { display: flex; flex-direction: column; gap: 2px; }
   .related-item {
     display: flex;
@@ -1198,7 +1127,7 @@ const relatedProjects = allProjects
     background: var(--accent-soft);
     border: 1px solid var(--border);
     font-size: 0.7rem;
-    font-weight: 800;
+    font-weight: 600;
     color: var(--accent);
   }
   .related-item__logo img { width: 100%; height: 100%; object-fit: cover; }
@@ -1210,7 +1139,7 @@ const relatedProjects = allProjects
   }
   .related-item__name {
     font-size: 0.84rem;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--text);
     white-space: nowrap;
     overflow: hidden;
@@ -1253,17 +1182,12 @@ const relatedProjects = allProjects
     color: var(--muted);
     cursor: pointer;
     text-decoration: none;
-    transition: all 0.2s;
+    transition: color 0.16s, border-color 0.16s, background-color 0.16s;
   }
   .share-btn:hover {
     color: var(--accent);
     border-color: color-mix(in srgb, var(--accent) 34%, var(--border));
     background: color-mix(in srgb, var(--accent-soft) 58%, var(--surface) 42%);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 10px rgba(10, 132, 255, 0.08);
-  }
-  .share-btn:active {
-    transform: translateY(0);
   }
 
   /* Share card template background */
@@ -1285,7 +1209,7 @@ const relatedProjects = allProjects
     font-weight: 600;
     box-shadow: 0 8px 24px rgba(0,0,0,0.18);
     opacity: 0;
-    transition: all 0.3s ease;
+    transition: opacity 0.2s, transform 0.2s;
     z-index: 9999;
     pointer-events: none;
   }
@@ -1343,7 +1267,7 @@ const relatedProjects = allProjects
       width: min(100% - 16px, 720px);
     }
     .detail-breadcrumb {
-      padding: 7px 10px;
+      padding: 8px 0;
       margin-bottom: 6px;
       font-size: 0.78rem;
     }
@@ -1351,7 +1275,6 @@ const relatedProjects = allProjects
       grid-template-columns: 1fr;
       gap: 10px;
       padding: 12px;
-      border-top-width: 2px;
     }
     .detail-hero__top {
       grid-template-columns: 56px minmax(0, 1fr);
@@ -1403,8 +1326,8 @@ const relatedProjects = allProjects
       width: auto;
       max-width: 100%;
       padding: 5px 8px;
-      border-radius: 999px;
-      background: rgba(10, 132, 255, 0.06);
+      border-radius: 6px;
+      background: var(--surface-soft);
     }
     .detail-highlights .hero-metric__label {
       display: inline-flex;
@@ -1553,13 +1476,13 @@ const relatedProjects = allProjects
       font-size: 1.02rem;
     }
     .score-kicker {
-      font-size: 0.58rem;
+      font-size: 0.72rem;
     }
     .score-label {
       font-size: 0.8rem;
     }
     .detail-score-panel[data-lang='en'] .score-kicker {
-      font-size: 0.54rem;
+      font-size: 0.72rem;
     }
     .detail-score-panel[data-lang='en'] .score-label {
       font-size: 0.74rem;
@@ -1921,7 +1844,7 @@ const relatedProjects = allProjects
               : overall >= 40
                 ? (lang === 'zh' ? '一般' : 'Fair')
                 : (lang === 'zh' ? '待改进' : 'Needs Work');
-          healthLabelEl.style.color = overall >= 80 ? '#34d399' : overall >= 60 ? '#60a5fa' : overall >= 40 ? '#fbbf24' : '#f87171';
+          healthLabelEl.style.color = overall >= 80 ? '#24744f' : overall >= 60 ? '#17639b' : overall >= 40 ? '#8f5a13' : '#ad3434';
         }
 
         const dims = ['activity', 'community', 'quality', 'sustainability'];
@@ -1994,15 +1917,12 @@ const relatedProjects = allProjects
         }
 
         if (!drawn) {
-          const gradient = ctx.createLinearGradient(0, 0, 192, 192);
-          gradient.addColorStop(0, '#3b82f6');
-          gradient.addColorStop(1, '#8b5cf6');
-          ctx.fillStyle = gradient;
+          ctx.fillStyle = '#17639b';
           ctx.beginPath();
           ctx.roundRect(0, 0, 192, 192, 48);
           ctx.fill();
           ctx.fillStyle = '#fff';
-          ctx.font = 'bold 64px system-ui, sans-serif';
+          ctx.font = '600 64px system-ui, sans-serif';
           ctx.textAlign = 'center';
           ctx.textBaseline = 'middle';
           ctx.fillText((projectName || '?').slice(0, 2).toUpperCase(), 96, 99);

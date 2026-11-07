@@ -89,8 +89,9 @@ const copy = ui(lang);
     background-position: right 7px center;
   }
 
-  .landscape-toolbar__select:focus {
-    outline: none;
+  .landscape-toolbar__select:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
     border-color: var(--accent);
   }
 
@@ -126,10 +127,10 @@ const copy = ui(lang);
     background: transparent;
     color: var(--muted);
     cursor: pointer;
-    transition: all 0.15s;
+    transition: color 0.16s, background-color 0.16s;
     font: inherit;
     font-size: 0.78rem;
-    font-weight: 700;
+    font-weight: 600;
     white-space: nowrap;
   }
 
@@ -166,7 +167,7 @@ const copy = ui(lang);
     font-size: 0.82rem;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.15s;
+    transition: border-color 0.16s, color 0.16s;
     box-sizing: border-box;
   }
 

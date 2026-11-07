@@ -24,28 +24,28 @@ const isZh = lang === 'zh';
       <div class="method-dims">
         <article class="method-dim">
           <div class="method-dim__header">
-            <span class="method-dim__icon" style="background: #3b82f6;">A</span>
+            <span class="method-dim__icon">A</span>
             <h3>{copy.activity}</h3>
           </div>
           <p>{copy.activityDescription}</p>
         </article>
         <article class="method-dim">
           <div class="method-dim__header">
-            <span class="method-dim__icon" style="background: #8b5cf6;">C</span>
+            <span class="method-dim__icon">C</span>
             <h3>{copy.community}</h3>
           </div>
           <p>{copy.communityDescription}</p>
         </article>
         <article class="method-dim">
           <div class="method-dim__header">
-            <span class="method-dim__icon" style="background: #f59e0b;">Q</span>
+            <span class="method-dim__icon">Q</span>
             <h3>{copy.quality}</h3>
           </div>
           <p>{copy.qualityDescription}</p>
         </article>
         <article class="method-dim">
           <div class="method-dim__header">
-            <span class="method-dim__icon" style="background: #10b981;">S</span>
+            <span class="method-dim__icon">S</span>
             <h3>{copy.sustainability}</h3>
           </div>
           <p>{copy.sustainabilityDescription}</p>
@@ -203,8 +203,8 @@ const isZh = lang === 'zh';
     border-bottom: 1px solid var(--border);
   }
   .method-hero h1 {
-    font-size: 1.6rem;
-    font-weight: 800;
+    font-size: 2.25rem;
+    font-weight: 500;
     margin: 0 0 8px;
   }
   .method-hero p {
@@ -223,12 +223,12 @@ const isZh = lang === 'zh';
     align-items: center;
     gap: 8px;
     font-size: 1.15rem;
-    font-weight: 700;
+    font-weight: 600;
     margin: 0 0 12px;
     color: var(--text);
   }
   .method-section h2 svg {
-    color: var(--accent);
+    color: var(--muted);
     flex-shrink: 0;
   }
   .method-section__intro {
@@ -245,7 +245,7 @@ const isZh = lang === 'zh';
     gap: 12px;
   }
   .method-dim {
-    padding: 14px;
+    padding: 16px;
     border: 1px solid var(--border);
     border-radius: var(--radius);
     background: var(--surface);
@@ -262,14 +262,15 @@ const isZh = lang === 'zh';
     width: 28px;
     height: 28px;
     border-radius: 6px;
-    color: white;
-    font-weight: 800;
+    color: var(--muted);
+    background: var(--surface-soft);
+    font-weight: 600;
     font-size: 0.75rem;
     flex-shrink: 0;
   }
   .method-dim h3 {
     font-size: 0.9rem;
-    font-weight: 700;
+    font-weight: 600;
     margin: 0;
   }
   .method-dim p {
@@ -289,7 +290,7 @@ const isZh = lang === 'zh';
     display: flex;
     align-items: flex-start;
     gap: 12px;
-    padding: 10px 14px;
+    padding: 12px 16px;
     border: 1px solid var(--border);
     border-radius: var(--radius);
     background: var(--surface);
@@ -298,18 +299,14 @@ const isZh = lang === 'zh';
     display: grid;
     place-items: center;
     min-width: 44px;
-    height: 28px;
+    height: 32px;
     border-radius: 6px;
     font-size: 0.75rem;
-    font-weight: 800;
-    color: white;
+    font-weight: 600;
+    color: var(--text);
+    background: var(--surface-soft);
     flex-shrink: 0;
   }
-  .method-label__badge[data-score-level="90"] { background: #10b981; }
-  .method-label__badge[data-score-level="80"] { background: #3b82f6; }
-  .method-label__badge[data-score-level="70"] { background: #8b5cf6; }
-  .method-label__badge[data-score-level="60"] { background: #f59e0b; }
-  .method-label__badge[data-score-level="0"] { background: #94a3b8; }
   .method-label strong {
     font-size: 0.88rem;
     display: block;
@@ -338,7 +335,7 @@ const isZh = lang === 'zh';
   }
   .method-steps li::marker {
     color: var(--accent);
-    font-weight: 700;
+    font-weight: 600;
   }
 
   /* Lifecycle */
@@ -348,24 +345,18 @@ const isZh = lang === 'zh';
     gap: 12px;
   }
   .method-status {
-    padding: 14px;
+    padding: 16px;
     border: 1px solid var(--border);
     border-radius: var(--radius);
     background: var(--surface);
   }
   .method-status__badge {
     display: inline-block;
-    padding: 2px 10px;
-    border-radius: 999px;
     font-size: 0.72rem;
-    font-weight: 700;
-    color: white;
+    font-weight: 600;
+    color: var(--muted);
     margin-bottom: 8px;
   }
-  .method-status[data-status="sandbox"] .method-status__badge { background: #f59e0b; }
-  .method-status[data-status="incubating"] .method-status__badge { background: #8b5cf6; }
-  .method-status[data-status="graduated"] .method-status__badge { background: #10b981; }
-  .method-status[data-status="archived"] .method-status__badge { background: #94a3b8; }
   .method-status p {
     font-size: 0.82rem;
     color: var(--muted);
@@ -377,13 +368,14 @@ const isZh = lang === 'zh';
   .method-cta {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    padding: 8px 18px;
+    gap: 8px;
+    min-height: 44px;
+    padding: 8px 16px;
     border-radius: 8px;
     background: var(--accent);
-    color: white;
+    color: var(--accent-contrast);
     font-size: 0.86rem;
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: none;
     margin-top: 16px;
     transition: opacity 0.2s;
@@ -400,7 +392,7 @@ const isZh = lang === 'zh';
       grid-template-columns: 1fr;
     }
     .method-hero h1 {
-      font-size: 1.3rem;
+      font-size: 1.8rem;
     }
   }
 </style>
