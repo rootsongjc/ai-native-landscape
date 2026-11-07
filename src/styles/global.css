@@ -1352,7 +1352,7 @@ html[data-theme='dark'] .methodology-grid article {
 }
 
 .result-main h3,
-.project-list-item h2 {
+.project-list-item :is(h2, h3) {
   margin: 0;
   font-size: 1.02rem;
 }
@@ -1391,6 +1391,18 @@ html[data-theme='dark'] .methodology-grid article {
 .project-score span {
   color: var(--muted);
   font-size: 0.8rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .subcategory-group {
@@ -1706,20 +1718,20 @@ html[data-theme='dark'] .methodology-grid article {
   flex: 1 1 0;
 }
 
-.project-list-item h2 {
+.project-list-item :is(h2, h3) {
   font-size: 0.98rem;
   line-height: 1.3;
   margin: 0;
   font-weight: 600;
 }
 
-.project-list-item h2 a {
+.project-list-item :is(h2, h3) a {
   color: var(--text);
   text-decoration: none;
   transition: color 0.15s;
 }
 
-.project-list-item h2 a:hover {
+.project-list-item :is(h2, h3) a:hover {
   color: var(--accent);
 }
 
@@ -1736,11 +1748,11 @@ html[data-theme='dark'] .methodology-grid article {
 
 .project-list-side {
   display: grid;
-  grid-template-columns: auto 8px 64px;
+  grid-template-columns: auto minmax(0, 1fr) 8px 64px;
   align-items: center;
   gap: 0 8px;
   flex-shrink: 0;
-  min-width: 200px;
+  min-width: 300px;
 }
 
 .project-list-side__stats {
@@ -1767,6 +1779,21 @@ html[data-theme='dark'] .methodology-grid article {
   font-size: 0.68rem;
   color: var(--muted);
   font-weight: 600;
+}
+
+.project-list-signals {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 12px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+
+.project-list-signals strong {
+  color: var(--text);
+  font-weight: 500;
 }
 
 /* Status dot — colored circle replaces text pill */
@@ -1964,7 +1991,7 @@ meter {
 
   .site-header.is-nav-open .site-nav__links {
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, max-content));
+    grid-template-columns: repeat(4, minmax(0, max-content));
     gap: 8px;
     align-items: center;
   }
@@ -2285,7 +2312,7 @@ meter {
     border-radius: 10px;
   }
 
-  .project-list-item h2 {
+  .project-list-item :is(h2, h3) {
     font-size: 1rem;
     line-height: 1.2;
   }
@@ -2318,6 +2345,12 @@ meter {
 
   .project-score span {
     font-size: 0.68rem;
+  }
+
+  .project-list-signals {
+    flex: 1;
+    min-width: 0;
+    white-space: normal;
   }
 
   .card-actions--stacked {

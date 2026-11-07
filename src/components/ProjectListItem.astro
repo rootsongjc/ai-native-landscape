@@ -1,7 +1,7 @@
 ---
 import { localizedPath, projectDescription, projectIconUrl, statusLabel, ui } from '../lib/landscape.mjs';
 
-const { project, lang = 'en' } = Astro.props;
+const { project, lang = 'en', headingLevel = 2 } = Astro.props;
 const copy = ui(lang);
 const avatar = projectIconUrl(project);
 ---
@@ -10,9 +10,10 @@ const avatar = projectIconUrl(project);
   class="project-list-item"
   data-card
   data-repo={project.repoSlug}
+  data-category={project.category}
   data-name={project.name.toLowerCase()}
   data-status={project.status}
-  data-tags={(project.tags || []).join(' ')}
+  data-tags={JSON.stringify(project.tags || [])}
   data-score=""
   data-oss-date={project.ossDate || ''}
   data-subcategory={project.subCategory}
@@ -32,14 +33,20 @@ const avatar = projectIconUrl(project);
       <span hidden={Boolean(avatar)}>{project.name.slice(0, 2).toUpperCase()}</span>
     </div>
     <div class="project-list-copy">
-      <h2><a href={localizedPath(`/projects/${project.slug}/`, lang)}>{project.name}</a></h2>
+      {headingLevel === 3
+        ? <h3><a href={localizedPath(`/projects/${project.slug}/`, lang)}>{project.name}</a></h3>
+        : <h2><a href={localizedPath(`/projects/${project.slug}/`, lang)}>{project.name}</a></h2>}
       <p>{projectDescription(project, lang)}</p>
     </div>
   </div>
   <div class="project-list-side">
-    <div class="project-score" data-score-repo={project.repoSlug}>
+    <div class="project-score" data-score-repo={project.repoSlug} role="img" aria-label={copy.overallHealth}>
       <strong data-score-value>--</strong>
-      <span data-score-label>{copy.scoreLoading}</span>
+      <span class="sr-only" data-score-label>{copy.scoreLoading}</span>
+    </div>
+    <div class="project-list-signals" role="group" aria-label={copy.projectSignals}>
+      <span>{copy.stars} <strong data-project-stars>--</strong></span>
+      <span>{copy.lastCommit} <strong data-project-last-commit>--</strong></span>
     </div>
     <span class={`status-dot status-dot--${project.status}`} title={statusLabel(project.status, lang)} />
     <div class="card-actions card-actions--stacked">

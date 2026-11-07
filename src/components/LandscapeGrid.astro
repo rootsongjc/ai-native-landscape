@@ -10,7 +10,6 @@ import {
   localizedPath,
   projectDescription,
   SITE,
-  statusLabel,
   subCategoryName,
   ui,
 } from '../lib/landscape.mjs';
@@ -22,7 +21,7 @@ const categories = landscape.categories
   .filter((cat) => (landscape.byCategory[cat.key] || []).length > 0)
   .sort((a, b) => (landscape.byCategory[b.key] || []).length - (landscape.byCategory[a.key] || []).length);
 const directoryProjectStat = { value: landscape.projectCount, label: copy.projects };
-const categoryHighlights = categories.slice(0, 6).map((category) => {
+const categoryHighlights = categories.map((category) => {
   const projects = landscape.byCategory[category.key] || [];
   const subcategories = (category.subcategories || [])
     .map((subcategory) => ({
@@ -35,13 +34,7 @@ const categoryHighlights = categories.slice(0, 6).map((category) => {
     .slice(0, 4);
   return { category, projects, subcategories };
 });
-const tombProjects = landscape.projects.filter((project) => ['archived', 'unavailable', 'inactive'].includes(project.status));
-const tombStats = {
-  total: tombProjects.length,
-  unavailable: tombProjects.filter((project) => project.status === 'unavailable').length,
-  archived: tombProjects.filter((project) => project.status === 'archived').length,
-  inactive: tombProjects.filter((project) => project.status === 'inactive').length,
-};
+const tombCount = landscape.projects.filter((project) => ['archived', 'unavailable', 'inactive'].includes(project.status)).length;
 
 const searchIndex = landscape.projects.map((project) => ({
   slug: project.slug,
@@ -84,9 +77,9 @@ const canonical = localizedPath('/', lang);
           </div>
           <p class="landscape-hero__help">{copy.homeSearchHelp}</p>
           <div class="landscape-hero__actions">
-            <a class="landscape-hero__cta landscape-hero__cta--primary" href={SITE.starRepo || SITE.repo} target="_blank" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-              {copy.starCta}
+            <a class="landscape-hero__cta landscape-hero__cta--primary" href={localizedPath('/projects/', lang)}>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></svg>
+              {copy.homeBrowseProjects}
             </a>
             <a class="landscape-hero__cta" href={localizedPath('/submit/', lang)}>{copy.submitProject}</a>
           </div>
@@ -100,7 +93,7 @@ const canonical = localizedPath('/', lang);
               <span>{copy.categories}</span>
             </div>
             <div class="landscape-hero__signal landscape-hero__signal--tomb">
-              <strong>{tombStats.total}</strong>
+              <strong>{tombCount}</strong>
               <span>{copy.navTomb}</span>
             </div>
           </div>
@@ -108,10 +101,10 @@ const canonical = localizedPath('/', lang);
         <aside class="landscape-atlas" aria-label={copy.homeAtlasTitle}>
           <div class="landscape-atlas__heading">
             <span>{copy.homeAtlasTitle}</span>
-            <span>{categories.length} {copy.categories}</span>
+            <span>{Math.min(6, categories.length)} / {categories.length} {copy.categories}</span>
           </div>
           <ol class="landscape-atlas__list">
-            {categoryHighlights.map(({ category, projects }, index) => (
+            {categoryHighlights.slice(0, 6).map(({ category, projects }, index) => (
               <li>
                 <a
                   href={localizedPath(`/categories/${category.key}/`, lang)}
@@ -130,44 +123,6 @@ const canonical = localizedPath('/', lang);
             ))}
           </ol>
         </aside>
-      </div>
-    </section>
-
-    <section class="landscape-start" aria-labelledby="landscape-start-title">
-      <div class="landscape-section__head">
-        <h2 id="landscape-start-title">{copy.homeStartTitle}</h2>
-        <p>{copy.homeStartDescription}</p>
-      </div>
-      <div class="landscape-start__grid">
-        <button class="landscape-start-card landscape-start-card--button landscape-start-card--search" type="button" data-focus-home-search>
-          <span class="landscape-start-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-          </span>
-          <strong>{copy.homeStartSearchTitle}</strong>
-          <span>{copy.homeStartSearchBody}</span>
-        </button>
-        <a class="landscape-start-card landscape-start-card--browse" href="#landscape-categories">
-          <span class="landscape-start-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-          </span>
-          <strong>{copy.homeStartCategoriesTitle}</strong>
-          <span>{copy.homeStartCategoriesBody}</span>
-        </a>
-        <a class="landscape-start-card landscape-start-card--method" href={localizedPath('/methodology/', lang)}>
-          <span class="landscape-start-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
-          </span>
-          <strong>{copy.homeStartMethodologyTitle}</strong>
-          <span>{copy.homeStartMethodologyBody}</span>
-        </a>
-        <a class="landscape-start-card landscape-start-card--tomb" href={localizedPath('/tomb/', lang)}>
-          <span class="landscape-start-card__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M10 10h4"/></svg>
-          </span>
-          <strong>{copy.homeStartTombTitle}</strong>
-          <span>{copy.homeStartTombBody}</span>
-          <small>{tombStats.total} {copy.projects} · {tombStats.unavailable} {statusLabel('unavailable', lang)} · {tombStats.archived} {statusLabel('archived', lang)} · {tombStats.inactive} {statusLabel('inactive', lang)}</small>
-        </a>
       </div>
     </section>
 
@@ -338,13 +293,6 @@ const canonical = localizedPath('/', lang);
         homeSearch?.scrollIntoView({ behavior: 'smooth', block: 'center' });
         requestAnimationFrame(() => homeSearchInput.focus());
       }
-    });
-
-    document.querySelectorAll('[data-focus-home-search]').forEach(button => {
-      button.addEventListener('click', () => {
-        homeSearch?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        requestAnimationFrame(() => homeSearchInput?.focus());
-      });
     });
 
     // View toggle
@@ -1266,11 +1214,13 @@ const canonical = localizedPath('/', lang);
     }
 
     .landscape-hero__actions {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
       width: 100%;
     }
 
     .landscape-hero__cta {
-      flex: 1 1 150px;
+      min-width: 0;
       padding: 0 12px;
       font-size: 0.8rem;
     }

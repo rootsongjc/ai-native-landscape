@@ -9,9 +9,10 @@
 ## Features
 
 - **Landscape browsing** — Grid and heatmap views with category filtering
+- **Project directory** — Search, filter, sort, and page through the full catalog at `/projects/`; category filters are shareable in the URL
 - **Project detail pages** — Scores, GitHub metrics, bilingual descriptions (`/projects/<slug>/`)
 - **Author pages** — Click an author on a project detail page to browse all their catalogued projects (`/authors/<slug>/`), including archived projects. Matching uses the canonical author field (case-insensitive, whitespace-normalized), not GitHub repository ownership.
-- **Category pages** — Browse by technology domain (`/categories/<key>/`)
+- **Category pages** — Browse by technology domain with subcategory anchors and shareable tag filters (`/categories/<key>/`)
 - **Scoring system** — 5-dimension evaluation (activity, community, quality, sustainability → health)
 - **Bilingual** — Full Chinese (zh) and English (en) support
 - **Data export** — JSON and CSV formats

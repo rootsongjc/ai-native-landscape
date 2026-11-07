@@ -9,6 +9,7 @@ import {
   projectContent,
   projectDescription,
   projectIconUrl,
+  subCategoryName,
   statusLabel,
   ui,
 } from '../lib/landscape.mjs';
@@ -19,6 +20,7 @@ const author = getProjectAuthor(project);
 const authorName = project.authorLocalized?.[lang] || project.author || copy.unknown;
 const AuthorMetric = author ? 'a' : 'span';
 const category = getCategories().find((item) => item.key === project.category);
+const subcategory = category?.subcategories?.find((item) => item.key === project.subCategory);
 const description = projectDescription(project, lang);
 const html = markdownToHtml(projectContent(project, lang));
 const avatar = projectIconUrl(project, 128);
@@ -56,7 +58,25 @@ const relatedProjects = allProjects
         <svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg>
       </span>
       <a class="detail-breadcrumb__current" href={localizedPath(`/categories/${project.category}/`, lang)}>{categoryName(category, lang)}</a>
+      {subcategory && (
+        <>
+          <span class="breadcrumb-sep" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg>
+          </span>
+          <a class="detail-breadcrumb__current" href={localizedPath(`/categories/${project.category}/?sub=${project.subCategory}`, lang)}>
+            {subCategoryName(project.subCategory, lang)}
+          </a>
+        </>
+      )}
     </nav>
+    {project.tags?.length > 0 && (
+      <nav class="detail-tags" aria-label={copy.tags}>
+        <span class="detail-tags__label">{copy.tags}</span>
+        {project.tags.map((tag) => (
+          <a href={localizedPath(`/categories/${project.category}/?tag=${encodeURIComponent(tag)}`, lang)}>{tag}</a>
+        ))}
+      </nav>
+    )}
 
     <section class="detail-layout">
       <section class="detail-hero">
@@ -389,7 +409,10 @@ const relatedProjects = allProjects
               <span class="metric-row">
                 <span class="metric-row__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
                 <span class="metric-row__label">{copy.license}</span>
-                <strong data-metrics-license>{project.license && project.license !== 'Unknown' ? project.license : copy.unknown}</strong>
+                <strong
+                  data-metrics-license
+                  data-custom-license={copy.customLicense}
+                >{project.license === 'Other' ? copy.customLicense : project.license && project.license !== 'Unknown' ? project.license : copy.unknown}</strong>
               </span>
               <span class="metric-row">
                 <span class="metric-row__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></span>
@@ -456,6 +479,30 @@ const relatedProjects = allProjects
     line-height: 1;
     color: var(--muted);
     min-width: 0;
+  }
+  .detail-tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 16px;
+  }
+  .detail-tags__label {
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+  .detail-tags a {
+    padding: 4px 8px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--muted);
+    font-size: 0.78rem;
+    text-decoration: none;
+  }
+  .detail-tags a:hover,
+  .detail-tags a:focus-visible {
+    color: var(--accent);
+    border-color: var(--accent);
   }
   .detail-breadcrumb__home,
   .detail-breadcrumb__current {
@@ -1614,7 +1661,8 @@ const relatedProjects = allProjects
     ]);
     if (!payload) return;
 
-    const license = formatLicense(payload.license);
+    const rawLicense = formatLicense(payload.license);
+    const license = rawLicense === 'Other' ? licenseNodes[0]?.dataset.customLicense || rawLicense : rawLicense;
     if (license) {
       licenseNodes.forEach((el) => {
         el.textContent = license;
@@ -1650,13 +1698,16 @@ const relatedProjects = allProjects
     const scoreValueEl = document.querySelector('[data-score-value]');
     const scoreArcEl = document.querySelector('[data-score-arc]');
     if (scores && scoreValueEl && scoreArcEl) {
-      const overall = Math.round((scores.activity + scores.community + scores.quality + scores.sustainability) / 4);
-      scoreValueEl.textContent = overall;
-      const circumference = 2 * Math.PI * 26; // r=26
-      const filled = (overall / 100) * circumference;
-      scoreArcEl.style.strokeDasharray = `${filled} ${circumference}`;
-      // Update popover total
-      document.querySelectorAll('[data-score-value-total]').forEach(el => el.textContent = overall);
+      const overall = Number.isFinite(scores.health) ? Math.round(scores.health) : null;
+      if (overall !== null) {
+        scoreValueEl.textContent = overall;
+        const scoreLabelEl = document.querySelector('.detail-score [data-score-label]');
+        if (scoreLabelEl) scoreLabelEl.textContent = window.aiLandscapeScores.scoreLabel(scores.health);
+        const circumference = 2 * Math.PI * 26; // r=26
+        const filled = (overall / 100) * circumference;
+        scoreArcEl.style.strokeDasharray = `${filled} ${circumference}`;
+        document.querySelectorAll('[data-score-value-total]').forEach(el => el.textContent = overall);
+      }
     }
 
     document.querySelectorAll('[data-score-dimension]').forEach(el => {
@@ -1847,19 +1898,13 @@ const relatedProjects = allProjects
 
       // Scores
       if (scores) {
-        const overall = Math.round((scores.activity + scores.community + scores.quality + scores.sustainability) / 4);
+        const overall = Number.isFinite(scores.health) ? Math.round(scores.health) : null;
         const healthEl = template.querySelector('[data-sc-health]');
         const healthLabelEl = template.querySelector('[data-sc-health-label]');
-        if (healthEl) healthEl.textContent = overall;
-        if (healthLabelEl) {
-          healthLabelEl.textContent = overall >= 80
-            ? (lang === 'zh' ? '优秀' : 'Excellent')
-            : overall >= 60
-              ? (lang === 'zh' ? '良好' : 'Good')
-              : overall >= 40
-                ? (lang === 'zh' ? '一般' : 'Fair')
-                : (lang === 'zh' ? '待改进' : 'Needs Work');
-          healthLabelEl.style.color = overall >= 80 ? '#24744f' : overall >= 60 ? '#17639b' : overall >= 40 ? '#8f5a13' : '#ad3434';
+        if (overall !== null && healthEl) healthEl.textContent = overall;
+        if (overall !== null && healthLabelEl) {
+          healthLabelEl.textContent = window.aiLandscapeScores.scoreLabel(scores.health);
+          healthLabelEl.style.color = overall >= 80 ? '#24744f' : overall >= 70 ? '#17639b' : overall >= 60 ? '#8f5a13' : '#ad3434';
         }
 
         const dims = ['activity', 'community', 'quality', 'sustainability'];

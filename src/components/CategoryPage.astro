@@ -67,6 +67,13 @@ const description = categoryDescription(category, lang);
           <span class="status-legend__item"><span class={`status-dot status-dot--${s}`} />{statusLabel(s, lang)}</span>
         ))}
       </div>
+      <nav class="subcategory-jump" aria-label={copy.categoryJump}>
+        {grouped.map((subCategory) => (
+          <a href={`#subcategory-${subCategory.key}`}>
+            {subCategoryName(subCategory.key, lang)} <span>{subCategory.projects.length}</span>
+          </a>
+        ))}
+      </nav>
       {isLegacyCategory && <p class="legacy-notice">{copy.legacyCategoryNotice}</p>}
     </section>
 
@@ -96,10 +103,7 @@ const description = categoryDescription(category, lang);
         </label>
         <label>
           <span>{copy.filterByTag}</span>
-          <select data-filter-tag>
-            <option value="">{copy.allTags}</option>
-            {allTags.map((tag) => <option value={tag}>{tag}</option>)}
-          </select>
+          <input data-filter-tag type="search" list="category-tag-options" placeholder={copy.filterTagPlaceholder} />
         </label>
         <label>
           <span>{copy.sort}</span>
@@ -113,6 +117,9 @@ const description = categoryDescription(category, lang);
       <div class="category-toolbar__actions" style="align-self: end;">
         <button class="button button-secondary" type="button" data-reset>{copy.resetFilters}</button>
       </div>
+      <datalist id="category-tag-options">
+        {allTags.map((tag) => <option value={tag} />)}
+      </datalist>
     </section>
 
     <section
@@ -122,17 +129,19 @@ const description = categoryDescription(category, lang);
       data-project-label-many={copy.projects.toLowerCase()}
     >
       {grouped.map((subCategory) => (
-        <section class="subcategory-group" data-group data-subcategory={subCategory.key}>
-          <button class="subcategory-heading" type="button" data-toggle aria-expanded="true">
-            <span>
-              <strong>{subCategoryName(subCategory.key, lang)}</strong>
-              <small data-group-count>{subCategory.projects.length} {copy.projects.toLowerCase()}</small>
-            </span>
-            <span class="chevron">⌄</span>
-          </button>
+        <section class="subcategory-group" id={`subcategory-${subCategory.key}`} data-group data-subcategory={subCategory.key}>
+          <h2 class="subcategory-title">
+            <button class="subcategory-heading" type="button" data-toggle aria-expanded="true">
+              <span>
+                <strong>{subCategoryName(subCategory.key, lang)}</strong>
+                <small data-group-count>{subCategory.projects.length} {copy.projects.toLowerCase()}</small>
+              </span>
+              <span class="chevron" aria-hidden="true">⌄</span>
+            </button>
+          </h2>
           <p>{subCategory.description?.[lang] || subCategory.description?.en || ''}</p>
           <div class="project-list">
-            {subCategory.projects.map((project) => <ProjectListItem project={project} lang={lang} />)}
+            {subCategory.projects.map((project) => <ProjectListItem project={project} lang={lang} headingLevel={3} />)}
           </div>
         </section>
       ))}
@@ -159,7 +168,23 @@ const description = categoryDescription(category, lang);
       return `${count} ${label}`;
     }
 
-    function applyFilters() {
+    function syncFiltersToUrl() {
+      const url = new URL(window.location.href);
+      const values = {
+        q: search.value.trim(),
+        sub: subCategory.value,
+        status: status.value,
+        tag: tag.value.trim(),
+        sort: sort.value === 'score' ? '' : sort.value,
+      };
+      Object.entries(values).forEach(([key, value]) => {
+        if (value) url.searchParams.set(key, value);
+        else url.searchParams.delete(key);
+      });
+      history.replaceState(null, '', url);
+    }
+
+    function applyFilters(updateUrl = false) {
       const q = search.value.trim().toLowerCase();
       const subCategoryValue = subCategory.value;
       const statusValue = status.value;
@@ -172,16 +197,19 @@ const description = categoryDescription(category, lang);
           .sort((a, b) => {
             if (sort.value === 'name') return a.dataset.name.localeCompare(b.dataset.name);
             if (sort.value === 'newest') return (b.dataset.ossDate || '').localeCompare(a.dataset.ossDate || '');
-            return Number(b.dataset.score) - Number(a.dataset.score);
+            const scoreA = Number(a.dataset.score);
+            const scoreB = Number(b.dataset.score);
+            return (Number.isFinite(scoreB) ? scoreB : -1) - (Number.isFinite(scoreA) ? scoreA : -1);
           })
           .forEach((card) => card.parentElement.appendChild(card));
 
         let groupVisible = 0;
         cards.forEach((card) => {
+          const cardTags = JSON.parse(card.dataset.tags || '[]');
           const match = (!q || card.dataset.search.includes(q))
             && (!subCategoryValue || card.dataset.subcategory === subCategoryValue)
             && (!statusValue || card.dataset.status === statusValue)
-            && (!tagValue || card.dataset.tags.includes(tagValue));
+            && (!tagValue || cardTags.some((cardTag) => cardTag.toLowerCase().includes(tagValue.toLowerCase())));
           card.hidden = !match;
           card.style.display = match ? '' : 'none';
           if (match) {
@@ -198,6 +226,7 @@ const description = categoryDescription(category, lang);
 
       empty.hidden = visible > 0;
       empty.style.display = visible > 0 ? 'none' : '';
+      if (updateUrl) syncFiltersToUrl();
     }
 
     document.querySelectorAll('[data-toggle]').forEach((button) => {
@@ -215,18 +244,18 @@ const description = categoryDescription(category, lang);
       status.value = '';
       tag.value = '';
       sort.value = 'score';
-      applyFilters();
+      applyFilters(true);
     });
 
-    [search, subCategory, status, tag, sort].forEach((input) => {
-      input.addEventListener('input', applyFilters);
-      input.addEventListener('change', applyFilters);
-    });
+    [search, tag].forEach((input) => input.addEventListener('input', () => applyFilters(true)));
+    [subCategory, status, sort].forEach((input) => input.addEventListener('change', () => applyFilters(true)));
 
     const query = new URLSearchParams(window.location.search);
-    if (query.get('sub')) {
-      subCategory.value = query.get('sub');
-    }
+    search.value = query.get('q') || '';
+    subCategory.value = query.get('sub') || '';
+    status.value = query.get('status') || '';
+    tag.value = query.get('tag') || '';
+    sort.value = query.get('sort') || 'score';
 
     applyFilters();
 
@@ -260,6 +289,52 @@ const description = categoryDescription(category, lang);
     .search-field--filter input {
       flex: 1;
       min-width: 0;
+    }
+    .subcategory-title {
+      margin: 0;
+      scroll-margin-top: 128px;
+    }
+    .subcategory-jump {
+      position: sticky;
+      top: 64px;
+      z-index: 20;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+      padding: 8px 0;
+      background: var(--bg);
+    }
+    .subcategory-jump a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      min-height: 32px;
+      padding: 4px 10px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--muted);
+      font-size: 0.8rem;
+      text-decoration: none;
+    }
+    .subcategory-jump a:hover,
+    .subcategory-jump a:focus-visible {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+    .subcategory-jump span {
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+    @media (max-width: 720px) {
+      .subcategory-jump {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 4px;
+      }
+      .subcategory-jump a {
+        flex-shrink: 0;
+      }
     }
   </style>
 </BaseLayout>

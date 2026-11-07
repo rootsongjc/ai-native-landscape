@@ -138,12 +138,18 @@ const structuredData = {
       scoreLabels: copy.scoreLabels,
       scoreLoading: copy.scoreLoading,
       scoreUnavailable: copy.scoreUnavailable,
+      projectSignalLabels: {
+        stars: copy.stars,
+        lastCommit: copy.lastCommit,
+        overallHealth: copy.overallHealth,
+      },
       pageLang: lang,
     }}>
       (() => {
         const normalizeRepo = (value) => String(value || '').trim().toLowerCase();
         const cache = new Map();
         const batchSize = 40;
+        const batchConcurrency = 4;
 
         const labelFor = (score) => {
           if (!Number.isFinite(score)) return scoreUnavailable;
@@ -155,6 +161,24 @@ const structuredData = {
         };
 
         const formatScore = (value) => (Number.isFinite(value) ? String(Math.round(value)) : '--');
+        const formatCompactCount = (value) => {
+          if (!Number.isFinite(value)) return '--';
+          if (value >= 1000000) return `${(value / 1000000).toFixed(1)}m`;
+          if (value >= 1000) return `${(value / 1000).toFixed(1)}k`;
+          return String(value);
+        };
+        const formatRelativeTime = (date) => {
+          const timestamp = Date.parse(date || '');
+          if (!Number.isFinite(timestamp)) return '--';
+          const seconds = Math.round((timestamp - Date.now()) / 1000);
+          const unit = Math.abs(seconds) < 60 ? 'second'
+            : Math.abs(seconds) < 3600 ? 'minute'
+              : Math.abs(seconds) < 86400 ? 'hour'
+                : 'day';
+          const divisor = { second: 1, minute: 60, hour: 3600, day: 86400 }[unit];
+          return new Intl.RelativeTimeFormat(pageLang === 'zh' ? 'zh-CN' : 'en', { numeric: 'auto' })
+            .format(Math.round(seconds / divisor), unit);
+        };
 
         async function fetchBatch(repos, locale) {
           if (repos.length === 0) return [];
@@ -174,20 +198,25 @@ const structuredData = {
           const normalized = Array.from(new Set(repos.map(normalizeRepo).filter(Boolean)));
           const missing = normalized.filter((repo) => !cache.has(repo));
 
-          for (let index = 0; index < missing.length; index += batchSize) {
-            const batch = missing.slice(index, index + batchSize);
-            const projects = await fetchBatch(batch, locale);
-            const seen = new Set();
+          for (let index = 0; index < missing.length; index += batchSize * batchConcurrency) {
+            const batches = [];
+            for (let offset = index; offset < Math.min(index + batchSize * batchConcurrency, missing.length); offset += batchSize) {
+              batches.push(missing.slice(offset, offset + batchSize));
+            }
+            await Promise.all(batches.map(async (batch) => {
+              const projects = await fetchBatch(batch, locale);
+              const seen = new Set();
 
-            projects.forEach((project) => {
-              const repo = normalizeRepo(project.repo);
-              seen.add(repo);
-              cache.set(repo, project);
-            });
+              projects.forEach((project) => {
+                const repo = normalizeRepo(project.repo);
+                seen.add(repo);
+                cache.set(repo, project);
+              });
 
-            batch.forEach((repo) => {
-              if (!seen.has(repo)) cache.set(repo, null);
-            });
+              batch.forEach((repo) => {
+                if (!seen.has(repo)) cache.set(repo, null);
+              });
+            }));
           }
 
           return cache;
@@ -235,12 +264,29 @@ const structuredData = {
 
           const labelNode = selectNode('[data-score-label]');
           if (labelNode) labelNode.textContent = stateLabel;
+          if (element.matches('.project-score')) {
+            const card = element.closest('[data-card]');
+            if (card) card.dataset.score = Number.isFinite(health) ? String(health) : '';
+          }
 
           const meterNode = selectNode('[data-score-meter]');
           if (meterNode) meterNode.value = Number.isFinite(health) ? Math.round(health) : 0;
 
           const healthNode = selectNode('[data-score-health]');
           if (healthNode) healthNode.textContent = formatScore(score?.health);
+          if (element.matches('.project-score')) {
+            element.setAttribute('aria-label', `${projectSignalLabels.overallHealth}: ${formatScore(health)} · ${stateLabel}`);
+          }
+
+          const metrics = cache.get(normalizeRepo(element.dataset.scoreRepo))?.metrics;
+          const metricScope = element.closest('[data-card]') || element;
+          const starsNode = metricScope.querySelector('[data-project-stars]');
+          if (starsNode) starsNode.textContent = formatCompactCount(metrics?.stars);
+          const lastCommitNode = metricScope.querySelector('[data-project-last-commit]');
+          if (lastCommitNode) {
+            lastCommitNode.textContent = formatRelativeTime(metrics?.lastCommitAt);
+            if (metrics?.lastCommitAt) lastCommitNode.title = new Date(metrics.lastCommitAt).toISOString().slice(0, 10);
+          }
 
           const activityNode = selectNode('[data-score-activity]');
           if (activityNode) activityNode.textContent = formatScore(score?.activity);
@@ -255,8 +301,7 @@ const structuredData = {
           if (sustainabilityNode) sustainabilityNode.textContent = formatScore(score?.sustainability);
         }
 
-        async function hydrateScores(scope = document, locale = pageLang) {
-          const elements = Array.from(scope.querySelectorAll('[data-score-repo]'));
+        async function hydrateScoreElements(elements, locale = pageLang) {
           const repos = elements.map((element) => element.dataset.scoreRepo).filter(Boolean);
 
           try {
@@ -272,6 +317,12 @@ const structuredData = {
           return cache;
         }
 
+        async function hydrateScores(scope = document, locale = pageLang) {
+          const elements = Array.from(scope.querySelectorAll('[data-score-repo]'))
+            .filter((element) => !element.closest('[data-defer-score-hydration]'));
+          return hydrateScoreElements(elements, locale);
+        }
+
         window.aiLandscapeScores = {
           fetchScores,
           getCachedScore,
@@ -280,6 +331,7 @@ const structuredData = {
           getProjectStatus,
           computeStatus,
           hydrateScores,
+          hydrateScoreElements,
           scoreLabel: labelFor,
         };
       })();
@@ -315,6 +367,10 @@ const structuredData = {
       </div>
       <nav class="site-nav" id="site-primary-nav" aria-label="Primary">
         <div class="site-nav__links">
+          <a class="site-nav__link" href={localizedPath('/projects/', lang)}>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></svg>
+            <span>{copy.navBrowseProjects}</span>
+          </a>
           <button class="site-nav__link" type="button" data-nav-search aria-label={copy.search}>
             <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
             <span>{copy.search}</span>
@@ -322,10 +378,6 @@ const structuredData = {
           <a class="site-nav__link" href={localizedPath('/methodology/', lang)}>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16"/><path d="M7 16V8M12 16V5M17 16v-6"/></svg>
             <span>{copy.navMethodology}</span>
-          </a>
-          <a class="site-nav__link" href={localizedPath('/tomb/', lang)}>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V7l8-4 8 4v14"/><path d="M9 21v-4a3 3 0 0 1 6 0v4"/><path d="M10 10h4"/></svg>
-            <span>{copy.navTomb}</span>
           </a>
           <a class="site-nav__link" href={localizedPath('/about/', lang)}>
             <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 10v5"/><path d="M12 7h.01"/></svg>
@@ -430,6 +482,12 @@ const structuredData = {
             <div class="footer-nav__group">
               <h3 class="footer-nav__heading">{copy.footerResources}</h3>
               <ul class="footer-nav__list">
+                <li>
+                  <a href={localizedPath('/tomb/', lang)}>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V7l8-4 8 4v14"/><path d="M9 21v-4a3 3 0 0 1 6 0v4"/><path d="M10 10h4"/></svg>
+                    <span>{copy.navTomb}</span>
+                  </a>
+                </li>
                 <li>
                   <a href={footerBlogUrl} target="_blank" rel="noopener noreferrer">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19.5h14"/><path d="M7 16.5V5.5a2 2 0 0 1 2-2h8v13"/><path d="M7 7.5h10"/><path d="M10 11.5h7"/></svg>

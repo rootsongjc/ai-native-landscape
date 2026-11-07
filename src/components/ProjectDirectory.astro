@@ -1,0 +1,296 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectListItem from './ProjectListItem.astro';
+import { getLandscape, localizedPath, categoryName, statusLabel, ui } from '../lib/landscape.mjs';
+
+const { lang = 'en' } = Astro.props;
+const copy = ui(lang);
+const landscape = getLandscape();
+const categories = landscape.categories.filter((category) => (landscape.byCategory[category.key] || []).length > 0);
+const projects = [...landscape.projects].sort((a, b) => a.name.localeCompare(b.name));
+const tags = [...new Set(projects.flatMap((project) => project.tags || []))].sort();
+const statuses = ['tracked', 'unavailable', 'archived', 'inactive']
+  .filter((status) => projects.some((project) => project.status === status));
+---
+
+<BaseLayout
+  title={copy.allProjectsTitle}
+  description={copy.allProjectsDescription}
+  canonical={localizedPath('/projects/', lang)}
+  lang={lang}
+>
+  <main class="project-directory-page">
+    <nav class="back-link" aria-label="Breadcrumb">
+      <a class="back-link__home" href={localizedPath('/', lang)}>{copy.navLandscape}</a>
+      <span class="back-link__sep" aria-hidden="true">/</span>
+      <span class="back-link__current">{copy.allProjectsTitle}</span>
+    </nav>
+    <section class="page-heading">
+      <h1>{copy.allProjectsTitle}</h1>
+      <p>{copy.allProjectsIntro}</p>
+      <p class="project-directory-count"><strong>{projects.length}</strong> {copy.projects}</p>
+    </section>
+
+    <section class="toolbar toolbar--category project-directory-toolbar" aria-label={copy.searchSectionDescription}>
+      <div class="category-toolbar__search">
+        <label class="search-field search-field--filter">
+          <svg class="filter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input data-filter-search type="search" placeholder={copy.searchPlaceholder} />
+        </label>
+      </div>
+      <div class="category-toolbar__filters">
+        <label>
+          <span>{copy.category}</span>
+          <select data-filter-category>
+            <option value="">{copy.allCategories}</option>
+            {categories.map((category) => <option value={category.key}>{categoryName(category, lang)}</option>)}
+          </select>
+        </label>
+        <label>
+          <span>{copy.status}</span>
+          <select data-filter-status>
+            <option value="">{copy.allStatus}</option>
+            {statuses.map((status) => <option value={status}>{statusLabel(status, lang)}</option>)}
+          </select>
+        </label>
+        <label>
+          <span>{copy.filterByTag}</span>
+          <input data-filter-tag type="search" list="project-directory-tags" placeholder={copy.filterTagPlaceholder} />
+        </label>
+        <label>
+          <span>{copy.sort}</span>
+          <select data-filter-sort>
+            <option value="name">{copy.name}</option>
+            <option value="score">{copy.score}</option>
+            <option value="newest">{copy.ossDate}</option>
+          </select>
+        </label>
+      </div>
+      <div class="category-toolbar__actions">
+        <button class="button button-secondary" type="button" data-reset>{copy.resetFilters}</button>
+      </div>
+      <datalist id="project-directory-tags">
+        {tags.map((tag) => <option value={tag} />)}
+      </datalist>
+    </section>
+
+    <section class="project-directory-results" aria-label={copy.allProjectsTitle} data-defer-score-hydration>
+      <div class="project-list" data-project-list>
+        {projects.map((project) => <ProjectListItem project={project} lang={lang} />)}
+      </div>
+      <p class="empty-state" data-empty hidden>{copy.noProjects}</p>
+      <p class="project-directory-score-status" data-score-sort-loading hidden>{copy.sortScoreLoading}</p>
+      <nav class="project-directory-pagination" aria-label={copy.allProjectsTitle} data-pagination>
+        <button class="button button-secondary" type="button" data-page-previous disabled>{copy.previousPage}</button>
+        <p data-page-info aria-live="polite"></p>
+        <button class="button button-secondary" type="button" data-page-next>{copy.nextPage}</button>
+      </nav>
+    </section>
+  </main>
+
+  <script define:vars={{ pageSize: 40, pageCountTemplate: copy.pageCount }}>
+    const root = document.querySelector('.project-directory-page');
+    const list = root?.querySelector('[data-project-list]');
+    const search = root?.querySelector('[data-filter-search]');
+    const category = root?.querySelector('[data-filter-category]');
+    const status = root?.querySelector('[data-filter-status]');
+    const tag = root?.querySelector('[data-filter-tag]');
+    const sort = root?.querySelector('[data-filter-sort]');
+    const empty = root?.querySelector('[data-empty]');
+    const previous = root?.querySelector('[data-page-previous]');
+    const next = root?.querySelector('[data-page-next]');
+    const pageInfo = root?.querySelector('[data-page-info]');
+    const scoreLoading = root?.querySelector('[data-score-sort-loading]');
+    const cards = Array.from(root?.querySelectorAll('[data-card]') || []);
+    const params = new URLSearchParams(location.search);
+    let page = Math.max(1, Number(params.get('page')) || 1);
+    let hydrationGeneration = 0;
+    let allScoresReady = false;
+    let allScoresLoading = false;
+
+    search.value = params.get('q') || '';
+    category.value = params.get('category') || '';
+    status.value = params.get('status') || '';
+    tag.value = params.get('tag') || '';
+    sort.value = params.get('sort') || 'name';
+
+    function syncUrl() {
+      const url = new URL(location.href);
+      const filters = {
+        q: search.value.trim(),
+        category: category.value,
+        status: status.value,
+        tag: tag.value.trim(),
+        sort: sort.value === 'name' ? '' : sort.value,
+        page: page > 1 ? String(page) : '',
+      };
+      Object.entries(filters).forEach(([key, value]) => {
+        if (value) url.searchParams.set(key, value);
+        else url.searchParams.delete(key);
+      });
+      history.replaceState(null, '', url);
+    }
+
+    function hydrateVisibleScores() {
+      const generation = ++hydrationGeneration;
+      const scoreElements = cards
+        .filter((card) => !card.hidden)
+        .map((card) => card.querySelector('.project-score'))
+        .filter(Boolean);
+      window.aiLandscapeScores?.hydrateScoreElements(scoreElements).then(() => {
+        if (generation !== hydrationGeneration) return;
+        cards.forEach((card) => {
+          const score = window.aiLandscapeScores.getCachedScore(card.dataset.repo);
+          card.dataset.score = Number.isFinite(score?.health) ? String(score.health) : '';
+        });
+        render(false, false);
+      });
+    }
+
+    function hydrateAllScores() {
+      if (allScoresReady || allScoresLoading) return;
+      allScoresLoading = true;
+      scoreLoading.hidden = false;
+      const scoreElements = cards.map((card) => card.querySelector('.project-score')).filter(Boolean);
+      window.aiLandscapeScores?.hydrateScoreElements(scoreElements).then(() => {
+        allScoresReady = true;
+        allScoresLoading = false;
+        scoreLoading.hidden = true;
+        cards.forEach((card) => {
+          const score = window.aiLandscapeScores.getCachedScore(card.dataset.repo);
+          card.dataset.score = Number.isFinite(score?.health) ? String(score.health) : '';
+        });
+        render(false, false);
+      });
+    }
+
+    function render(updateUrl = false, hydrate = true) {
+      const query = search.value.trim().toLowerCase();
+      const selectedTag = tag.value.trim();
+      const filtered = cards.filter((card) => {
+        const tags = JSON.parse(card.dataset.tags || '[]');
+        return (!query || card.dataset.search.includes(query))
+          && (!category.value || card.dataset.category === category.value)
+          && (!status.value || card.dataset.status === status.value)
+          && (!selectedTag || tags.some((projectTag) => projectTag.toLowerCase().includes(selectedTag.toLowerCase())));
+      });
+
+      filtered.sort((a, b) => {
+        if (sort.value === 'name') return a.dataset.name.localeCompare(b.dataset.name);
+        if (sort.value === 'newest') return (b.dataset.ossDate || '').localeCompare(a.dataset.ossDate || '');
+        const scoreA = Number(a.dataset.score);
+        const scoreB = Number(b.dataset.score);
+        return (Number.isFinite(scoreB) ? scoreB : -1) - (Number.isFinite(scoreA) ? scoreA : -1);
+      });
+      filtered.forEach((card) => list.appendChild(card));
+
+      const pageCount = Math.max(1, Math.ceil(filtered.length / pageSize));
+      page = Math.min(page, pageCount);
+      const start = filtered.length ? (page - 1) * pageSize : 0;
+      const end = Math.min(start + pageSize, filtered.length);
+      cards.forEach((card) => {
+        const index = filtered.indexOf(card);
+        const visible = index >= start && index < end;
+        card.hidden = !visible;
+        card.style.display = visible ? '' : 'none';
+      });
+
+      empty.hidden = filtered.length > 0;
+      previous.disabled = page <= 1;
+      next.disabled = page >= pageCount;
+      pageInfo.textContent = pageCountTemplate
+        .replace('{start}', String(filtered.length ? start + 1 : 0))
+        .replace('{end}', String(end))
+        .replace('{count}', String(filtered.length));
+      if (updateUrl) syncUrl();
+      if (hydrate) {
+        if (sort.value === 'score' && !allScoresReady) hydrateAllScores();
+        else hydrateVisibleScores();
+      }
+    }
+
+    const updateTextFilter = () => { page = 1; render(true); };
+    [search, tag].forEach((input) => input.addEventListener('input', updateTextFilter));
+    [category, status, sort].forEach((input) => input.addEventListener('change', updateTextFilter));
+    root.querySelector('[data-reset]').addEventListener('click', () => {
+      search.value = '';
+      category.value = '';
+      status.value = '';
+      tag.value = '';
+      sort.value = 'name';
+      page = 1;
+      render(true);
+    });
+    previous.addEventListener('click', () => {
+      if (page > 1) { page -= 1; render(true); }
+    });
+    next.addEventListener('click', () => {
+      page += 1;
+      render(true);
+    });
+    render();
+  </script>
+
+  <style>
+    .filter-icon {
+      width: 16px;
+      height: 16px;
+      color: var(--muted);
+      flex-shrink: 0;
+    }
+    .project-directory-page {
+      padding: 24px 0 64px;
+    }
+    .project-directory-count {
+      color: var(--muted);
+    }
+    .project-directory-count strong {
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+    }
+    .project-directory-results {
+      margin-top: 24px;
+    }
+    .project-directory-pagination {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+    .project-directory-pagination p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.85rem;
+      font-variant-numeric: tabular-nums;
+      text-align: center;
+    }
+    .project-directory-score-status {
+      margin: 12px 0;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    .project-directory-pagination button:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+    @media (max-width: 720px) {
+      .project-directory-page {
+        padding: 16px 0 48px;
+      }
+      .project-directory-pagination {
+        gap: 8px;
+      }
+      .project-directory-pagination button {
+        min-height: 40px;
+        padding-inline: 10px;
+      }
+      .project-directory-pagination p {
+        font-size: 0.76rem;
+      }
+    }
+  </style>
+</BaseLayout>
