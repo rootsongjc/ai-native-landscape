@@ -106,6 +106,8 @@ and also supports manual dispatch. Each collection is verified against the read 
 failed or skipped repositories cause a nonzero exit and appear in the uploaded JSON
 report. A repository absent from the deployed worker manifest must be published to
 the manifest before it can be collected.
+Projects already marked `unavailable` are explicitly listed as skipped in logs and
+the report; specifying `--repo` includes that repository for a manual check.
 
 ## Deployment (Cloudflare Pages)
 

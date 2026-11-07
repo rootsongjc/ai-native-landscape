@@ -1,8 +1,8 @@
 ---
 name: LangChain Go
 slug: langchaingo
-homepage: https://tmc.github.io/langchaongo/
-repo: https://github.com/tmc/langchaongo
+homepage: https://tmc.github.io/langchaingo/
+repo: https://github.com/tmc/langchaingo
 license: Unknown
 category: coding-devtools
 subCategory: sdk-frameworks
@@ -15,7 +15,7 @@ description: >-
 author: tmc
 ossDate: '2023-02-18T20:04:54Z'
 featured: false
-status: unavailable
+status: tracked
 ---
 
 LangChain Go is the Go implementation of LangChain, providing the easiest way to write LLM-based programs in Go. It offers modular components including chains, tools, callbacks, vector stores, and document loaders, enabling developers to build production-grade applications from prompt assembly to multi-step agent orchestration using idiomatic Go.

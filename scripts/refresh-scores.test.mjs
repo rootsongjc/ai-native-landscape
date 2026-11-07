@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { refreshReasons, refreshRepository } from './refresh-scores.mjs';
+import { collectionInventory, refreshReasons, refreshRepository } from './refresh-scores.mjs';
 
 const repo = 'project-hami/hami';
 const now = Date.now();
@@ -14,6 +14,19 @@ const entry = (timestamp) => ({
 const snapshots = (en, zh = en) => ({
   en: new Map(en ? [[repo, en]] : []),
   zh: new Map(zh ? [[repo, zh]] : []),
+});
+
+test('reports known unavailable repositories as skipped but allows an explicit manual check', () => {
+  const projects = [
+    { repoSlug: repo, status: 'tracked' },
+    { repoSlug: 'owner/gone', status: 'unavailable' },
+    { repoSlug: 'owner/archived', status: 'archived' },
+  ];
+  const inventory = collectionInventory(projects);
+  assert.deepEqual(inventory.repos, [repo, 'owner/archived']);
+  assert.deepEqual(inventory.skipped, [{ repo: 'owner/gone', reason: 'Catalog status is unavailable' }]);
+  assert.deepEqual(collectionInventory(projects, ['owner/gone']).repos, ['owner/gone']);
+  assert.throws(() => collectionInventory(projects, ['owner/unknown']), /not in the catalog/);
 });
 
 test('refreshes past the exact age threshold and checks both languages', () => {
