@@ -16,7 +16,7 @@ description: DeepSeek-native AI coding agent for your terminal, engineered aroun
 author: esengine
 ossDate: '2026-04-21T08:27:02Z'
 featured: false
-status: tracked
+status: archived
 ---
 
 ## Overview
