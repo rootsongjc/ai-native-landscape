@@ -12,7 +12,7 @@ description: OpenMind 的模块化 AI 运行时，面向多模态代理与机器
 author: OpenMind
 ossDate: '2025-01-08T21:23:40.000Z'
 featured: false
-status: tracked
+status: archived
 ---
 ## 简介
 

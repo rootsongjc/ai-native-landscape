@@ -16,7 +16,7 @@ description: 面向终端的 DeepSeek 原生 AI 编程智能体，围绕前缀�
 author: esengine
 ossDate: '2026-04-21T08:27:02Z'
 featured: false
-status: tracked
+status: archived
 ---
 
 ## 简介
