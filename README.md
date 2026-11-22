@@ -109,6 +109,14 @@ the manifest before it can be collected.
 Projects already marked `unavailable` are explicitly listed as skipped in logs and
 the report; specifying `--repo` includes that repository for a manual check.
 
+A repository the worker reports as not found (deleted, made private, or renamed) is
+recorded under `unavailable` in the report and does not fail the run. The workflow
+then triggers `health-check`, which verifies every tracked repository against the
+GitHub API and opens a PR that marks deleted repositories `unavailable`, archived ones
+`archived`, and rewrites `repo` for renamed or transferred repositories. A rename
+whose new location is already listed under another slug is reported as a warning for
+manual cleanup. `health-check` also runs every Monday.
+
 ## Deployment (Cloudflare Pages)
 
 - **Build command**: `npm ci && npm run build`

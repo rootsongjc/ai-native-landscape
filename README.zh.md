@@ -107,6 +107,13 @@ ai-landscape/
 已标记 `unavailable` 的项目会在日志和报告中明确记录为跳过；
 指定 `--repo` 时仍可手动检查该仓库。
 
+评分 Worker 报告为不存在的仓库（已删除、转为私有或已改名）会记录在报告的
+`unavailable` 中，不会导致任务失败。工作流随后会触发 `health-check`：
+它通过 GitHub API 核对所有在跟踪的仓库并自动创建 PR，把已删除的仓库标记为
+`unavailable`、已归档的标记为 `archived`，并为改名或迁移的仓库改写 `repo` 地址。
+如果改名后的新地址已由另一个 slug 收录，则以警告形式报告，需人工清理。
+`health-check` 另外每周一定时运行。
+
 ## 部署（Cloudflare Pages）
 
 - **构建命令**：`npm ci && npm run build`

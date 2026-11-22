@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: read
+  actions: write
 
 concurrency:
   group: refresh-project-scores
@@ -23,7 +24,15 @@ jobs:
           node-version: '24'
           cache: npm
       - run: npm ci
-      - run: npm run refresh:scores -- --report "$RUNNER_TEMP/score-refresh.json"
+      - id: refresh
+        run: npm run refresh:scores -- --report "$RUNNER_TEMP/score-refresh.json"
+      # Deleted or renamed repositories do not fail this job; the health check
+      # verifies them against GitHub and opens a PR that updates the catalog.
+      - name: Trigger health check for unavailable repositories
+        if: steps.refresh.outputs.unavailable > 0
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run health-check.yml --repo "$GITHUB_REPOSITORY"
       - uses: actions/upload-artifact@v4
         if: always()
         with:

@@ -1,4 +1,4 @@
-import { writeFileSync } from 'node:fs';
+import { appendFileSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { parseArgs } from 'node:util';
@@ -23,6 +23,12 @@ export function collectionInventory(projects, requestedRepos) {
   const repos = [...catalog.keys()].filter((repo) =>
     selected ? selected.includes(repo) : !skippedRepos.has(repo));
   return { repos, skipped, catalogCount: catalog.size };
+}
+
+// A repository the score worker cannot find was deleted, made private, or renamed.
+// That is a catalog change for the health check to record, not a failed collection.
+export function isRepositoryGone(message) {
+  return /repository not found/i.test(String(message));
 }
 
 export function refreshReasons(repo, snapshots, now, maxAgeDays) {
@@ -149,6 +155,7 @@ async function main() {
     skipped,
     candidates,
     updated: [],
+    unavailable: [],
     failures: [],
   };
   const saveReport = () => {
@@ -169,6 +176,12 @@ async function main() {
         report.updated.push(updated);
         console.log(`Updated and verified: ${repo}`);
       } catch (error) {
+        if (isRepositoryGone(error.message)) {
+          report.unavailable.push({ repo, error: error.message });
+          const prefix = process.env.GITHUB_ACTIONS ? '::warning::' : '';
+          console.warn(`${prefix}Unavailable: ${repo}: ${error.message}`);
+          return;
+        }
         report.failures.push({ repo, error: error.message });
         console.error(`Failed: ${repo}: ${error.message}`);
       }
@@ -178,7 +191,10 @@ async function main() {
   }
   report.finishedAt = new Date().toISOString();
   saveReport();
-  console.log(`Updated ${report.updated.length}; failed ${report.failures.length}; unchanged ${repos.length - candidates.length}; skipped ${skipped.length}.`);
+  console.log(`Updated ${report.updated.length}; unavailable ${report.unavailable.length}; failed ${report.failures.length}; unchanged ${repos.length - candidates.length}; skipped ${skipped.length}.`);
+  if (process.env.GITHUB_OUTPUT) {
+    appendFileSync(process.env.GITHUB_OUTPUT, `unavailable=${report.unavailable.length}\n`);
+  }
   if (report.failures.length > 0) process.exitCode = 1;
 }
 

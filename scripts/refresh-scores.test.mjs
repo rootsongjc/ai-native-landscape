@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { collectionInventory, refreshReasons, refreshRepository } from './refresh-scores.mjs';
+import { collectionInventory, isRepositoryGone, refreshReasons, refreshRepository } from './refresh-scores.mjs';
 
 const repo = 'project-hami/hami';
 const now = Date.now();
@@ -72,4 +72,11 @@ test('verifies persisted timestamps in both locales after collection', async () 
     url.pathname === '/recalculate' ? request(url, init) :
       url.searchParams.get('locale') === 'zh' ? { projects: [] } : { projects: [entry(Date.now())] }
   ), /zh: missing/);
+});
+
+test('separates repositories that no longer exist from collection failures', () => {
+  assert.equal(isRepositoryGone('Repository not found (404)'), true);
+  assert.equal(isRepositoryGone('/recalculate: HTTP 404'), false);
+  assert.equal(isRepositoryGone('GitHub API rate limit exceeded'), false);
+  assert.equal(isRepositoryGone('en: persisted collection date did not advance'), false);
 });

@@ -14,7 +14,7 @@ description: 微软的多语言智能体框架，用于构建、编排和部署 
 author: Microsoft
 ossDate: '2025-04-28T19:40:42.000Z'
 featured: false
-status: tracked
+status: unavailable
 ---
 ## 简介
 
