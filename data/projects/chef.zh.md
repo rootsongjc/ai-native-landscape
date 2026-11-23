@@ -2,7 +2,7 @@
 name: Chef
 slug: chef
 homepage: https://chef.convex.dev/
-repo: https://github.com/get-convex/chef
+repo: https://github.com/convex/chef
 license: Apache-2.0
 category: applications-products
 subCategory: low-code-builders

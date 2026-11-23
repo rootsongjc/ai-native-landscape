@@ -2,7 +2,7 @@
 name: PR-Agent
 slug: pr-agent
 homepage: https://www.qodo.ai/
-repo: https://github.com/qodo-ai/pr-agent
+repo: https://github.com/The-PR-Agent/pr-agent
 license: Apache-2.0
 category: training-optimization
 subCategory: prompt-quality

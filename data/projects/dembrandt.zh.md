@@ -2,7 +2,7 @@
 name: Dembrandt
 slug: dembrandt
 homepage: null
-repo: https://github.com/thevangelist/dembrandt
+repo: https://github.com/dembrandt/dembrandt
 license: MIT
 category: coding-devtools
 subCategory: ide-cli-tools

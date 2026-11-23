@@ -2,7 +2,7 @@
 name: Petri
 slug: petri
 homepage: https://safety-research.github.io/petri/
-repo: https://github.com/safety-research/petri
+repo: https://github.com/meridianlabs-ai/inspect_petri
 license: MIT
 category: training-optimization
 subCategory: evaluation-benchmarks

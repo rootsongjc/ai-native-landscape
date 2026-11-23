@@ -13,7 +13,7 @@ description: 一个跨平台的轻量级 CLI，用于简化 git worktree 管理�
 author: CodeRabbit
 ossDate: '2025-08-07T21:13:33Z'
 featured: false
-status: tracked
+status: archived
 ---
 gtr（Git Worktree Runner）是由 CodeRabbit 开发的基于 Bash 的跨平台命令行工具，用于简化 git worktree 管理，并集成编辑器和 AI 工具。它封装并扩展了原生 git worktree 功能，自动完成按分支创建工作树、选择性配置文件复制和可选的依赖安装，支持并行开发和审查工作流。
 

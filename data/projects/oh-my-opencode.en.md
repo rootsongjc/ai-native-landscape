@@ -2,7 +2,7 @@
 name: Oh My OpenCode
 slug: oh-my-opencode
 homepage: null
-repo: https://github.com/code-yeongyu/oh-my-opencode
+repo: https://github.com/code-yeongyu/oh-my-openagent
 license: Unknown
 category: coding-devtools
 subCategory: coding-agents

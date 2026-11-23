@@ -2,7 +2,7 @@
 name: Open Interpreter
 slug: open-interpreter
 homepage: https://openinterpreter.com/
-repo: https://github.com/openinterpreter/open-interpreter
+repo: https://github.com/openinterpreter/openinterpreter
 license: AGPL-3.0
 category: coding-devtools
 subCategory: ide-cli-tools

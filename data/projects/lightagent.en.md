@@ -2,7 +2,7 @@
 name: LightAgent
 slug: lightagent
 homepage: null
-repo: https://github.com/wxai-space/lightagent
+repo: https://github.com/wanxingai/LightAgent
 license: Apache-2.0
 category: agents
 subCategory: agent-frameworks

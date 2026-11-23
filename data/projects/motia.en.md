@@ -2,7 +2,7 @@
 name: Motia
 slug: motia
 homepage: null
-repo: https://github.com/motiadev/motia
+repo: https://github.com/iii-hq/iii
 license: Unknown
 category: applications-products
 subCategory: workflow-automation

@@ -2,7 +2,7 @@
 name: Datachain
 slug: datachain
 homepage: https://docs.datachain.ai
-repo: https://github.com/iterative/datachain
+repo: https://github.com/datachain-ai/datachain
 license: Apache-2.0
 category: platform-infra
 subCategory: data-platforms

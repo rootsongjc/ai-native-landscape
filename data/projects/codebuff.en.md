@@ -2,7 +2,7 @@
 name: Codebuff
 slug: codebuff
 homepage: https://codebuff.com/docs
-repo: https://github.com/codebuffai/codebuff
+repo: https://github.com/CodebuffAI/freebuff
 license: Apache-2.0
 category: agents
 subCategory: agent-orchestration

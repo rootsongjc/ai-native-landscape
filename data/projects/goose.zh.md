@@ -2,7 +2,7 @@
 name: goose
 slug: goose
 homepage: https://block.github.io/goose/
-repo: https://github.com/block/goose
+repo: https://github.com/aaif-goose/goose
 license: Apache-2.0
 category: applications-products
 subCategory: workflow-automation

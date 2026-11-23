@@ -2,7 +2,7 @@
 name: Hyprnote
 slug: hyprnote
 homepage: https://hyprnote.com
-repo: https://github.com/fastrepl/hyprnote
+repo: https://github.com/fastrepl/anarlog
 license: MIT
 category: applications-products
 subCategory: productivity-tools

@@ -2,7 +2,7 @@
 name: verl
 slug: verl
 homepage: https://verl.readthedocs.io/en/latest/
-repo: https://github.com/volcengine/verl
+repo: https://github.com/verl-project/verl
 license: Apache-2.0
 category: training-optimization
 subCategory: training-frameworks

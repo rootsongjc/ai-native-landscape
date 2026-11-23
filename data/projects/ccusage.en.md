@@ -2,7 +2,7 @@
 name: ccusage
 slug: ccusage
 homepage: https://ccusage.com/
-repo: https://github.com/ryoppippi/ccusage
+repo: https://github.com/ccusage/ccusage
 license: MIT
 category: coding-devtools
 subCategory: ide-cli-tools

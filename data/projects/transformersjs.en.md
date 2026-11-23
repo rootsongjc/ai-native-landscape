@@ -2,7 +2,7 @@
 name: Transformers.js
 slug: transformersjs
 homepage: https://huggingface.co/docs/transformers.js
-repo: https://github.com/xenova/transformers.js
+repo: https://github.com/huggingface/transformers.js
 license: Apache-2.0
 category: inference-serving
 subCategory: edge-local-inference

@@ -2,7 +2,7 @@
 name: Suna
 slug: suna
 homepage: https://www.suna.so/
-repo: https://github.com/kortix-ai/suna
+repo: https://github.com/kortix-ai/CompanyOS
 license: Unknown
 category: applications-products
 subCategory: workflow-automation

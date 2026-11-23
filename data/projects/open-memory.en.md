@@ -2,7 +2,7 @@
 name: OpenMemory — Explainable Long-term Memory Engine
 slug: open-memory
 homepage: https://openmemory.cavira.app
-repo: https://github.com/caviraoss/openmemory
+repo: https://github.com/CaviraOSS/LongMemory
 license: Apache-2.0
 category: rag-knowledge
 subCategory: agent-memory-context

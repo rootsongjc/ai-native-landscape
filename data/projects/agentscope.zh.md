@@ -2,7 +2,7 @@
 name: AgentScope
 slug: agentscope
 homepage: https://doc.agentscope.io/
-repo: https://github.com/modelscope/agentscope
+repo: https://github.com/agentscope-ai/agentscope
 license: MIT
 category: agents
 subCategory: agent-frameworks

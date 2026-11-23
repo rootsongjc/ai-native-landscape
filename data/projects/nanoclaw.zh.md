@@ -2,7 +2,7 @@
 name: NanoClaw
 slug: nanoclaw
 homepage: https://nanoclaw.dev
-repo: https://github.com/gavrielc/nanoclaw
+repo: https://github.com/nanocoai/nanoclaw
 license: MIT
 category: agents
 subCategory: agent-frameworks

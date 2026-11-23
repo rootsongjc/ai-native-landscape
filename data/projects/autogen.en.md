@@ -16,7 +16,7 @@ description: >-
 author: Microsoft
 ossDate: '2023-08-18T11:43:45.000Z'
 featured: false
-status: tracked
+status: archived
 ---
 AutoGen is Microsoft's programming framework for agentic AI, designed for building multi-agent systems with flexible conversation patterns. It uses a layered and extensible architecture where each layer has clearly divided responsibilities, enabling developers to work at different levels of abstraction from high-level APIs to low-level components.
 

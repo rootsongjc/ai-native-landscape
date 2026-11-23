@@ -2,7 +2,7 @@
 name: FastMCP
 slug: fastmcp
 homepage: https://gofastmcp.com/
-repo: https://github.com/jlowin/fastmcp
+repo: https://github.com/PrefectHQ/fastmcp
 license: Apache-2.0
 category: coding-devtools
 subCategory: mcp-tools

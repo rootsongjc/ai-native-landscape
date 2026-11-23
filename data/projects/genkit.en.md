@@ -2,7 +2,7 @@
 name: Genkit
 slug: genkit
 homepage: https://genkit.dev/
-repo: https://github.com/firebase/genkit
+repo: https://github.com/genkit-ai/genkit
 license: Apache-2.0
 category: coding-devtools
 subCategory: sdk-frameworks

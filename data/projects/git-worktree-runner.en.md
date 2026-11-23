@@ -13,7 +13,7 @@ description: A portable, cross-platform CLI that simplifies git worktree managem
 author: CodeRabbit
 ossDate: '2025-08-07T21:13:33Z'
 featured: false
-status: tracked
+status: archived
 ---
 gtr (Git Worktree Runner) is a Bash-based, cross-platform CLI by CodeRabbit that simplifies git worktree management with editor and AI tool integration. It wraps and extends native git worktree functionality to automate per-branch worktree creation, selective config copying, and optional dependency installation, supporting parallel development and review workflows.
 

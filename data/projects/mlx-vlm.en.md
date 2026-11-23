@@ -2,7 +2,7 @@
 name: MLX-VLM
 slug: mlx-vlm
 homepage: null
-repo: https://github.com/blaizzy/mlx-vlm
+repo: https://github.com/Neywa-Labs/mlx-vlm
 license: MIT
 category: training-optimization
 subCategory: finetuning-alignment
