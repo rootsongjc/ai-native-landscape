@@ -16,13 +16,54 @@ npm install
 npm run dev          # http://127.0.0.1:4173
 ```
 
+## Inclusion Standards
+
+A new project must meet every requirement below. The same list is published on the
+[methodology page](https://landscape.jimmysong.io/methodology/), and the thresholds are
+defined once as `INCLUSION` in `src/lib/landscape.mjs`.
+
+1. A public GitHub repository that is not a fork and is not archived.
+2. An open source license that GitHub can detect.
+3. At least 200 GitHub stars.
+4. The repository is at least 60 days old and has a commit in the last 90 days.
+5. A software project, not an awesome list, prompt collection, documentation-only repository, or landing page.
+6. Not already listed, and it fits an existing subcategory.
+
+Meeting these requirements makes a project eligible for review; it does not guarantee a
+listing. Maintainers also weigh relevance to AI Native systems and differentiation in
+crowded categories.
+
+### How submissions are triaged
+
+The `triage` workflow (`scripts/triage-submission.mjs`) checks every submission issue and
+every external pull request that adds a project. It posts one comment with the result of
+each check and applies a label:
+
+| Label | Meaning | What happens |
+|---|---|---|
+| `eligible` | All requirements are met | Stays open for maintainer review |
+| `not-yet-eligible` | One or more requirements are not met | Closed as not planned |
+| `duplicate` | The repository is already listed | Closed as not planned |
+| `needs-info` | No valid GitHub repository could be found, or a PR touches unrelated files | Stays open until fixed |
+| `exception` | Applied by a maintainer only | Star, age, and activity requirements are waived |
+
+A submitter can comment `/recheck` to run the checks again; a closed `not-yet-eligible`
+submission is reopened automatically once it qualifies. Each author may have at most two
+open submissions at a time.
+
+To check a submission locally without changing anything:
+
+```bash
+GITHUB_TOKEN=$(gh auth token) npm run triage -- --number 48 --dry-run
+```
+
 ## Adding a New Project
 
 ### Option 1: GitHub Issue (Recommended for new contributors)
 
 1. Go to [Submit Project](https://github.com/rootsongjc/ai-native-landscape/issues/new?template=add-project.yml).
 2. Fill in the issue form with project details.
-3. A maintainer will review and add the project.
+3. The automated check replies with the result. A maintainer reviews eligible projects and adds them.
 
 ### Option 2: Pull Request
 
@@ -44,14 +85,10 @@ subCategory: mcp-tools
 tags:
   - AI Agent
   - MCP
-description:
-  en: Short English description of the project.
-  zh: Short Chinese description of the project.
+description: Short English description of the project.
 author: Organization
 ossDate: '2025-01-01T00:00:00.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 ```
@@ -70,14 +107,10 @@ subCategory: mcp-tools
 tags:
   - AI Agent
   - MCP
-description:
-  en: Short English description of the project.
-  zh: Short Chinese description of the project.
+description: 项目的中文简介。
 author: Organization
 ossDate: '2025-01-01T00:00:00.000Z'
 featured: false
-thumbnail: ''
-source: ''
 status: tracked
 ---
 ```
@@ -107,8 +140,7 @@ npm run build
 | `repo` | Valid GitHub repository URL. Must be unique across all projects. |
 | `category` | Must match a top-level key from `data/categories.yaml`. |
 | `subCategory` | Must match a subcategory key that belongs to the declared `category`. |
-| `description.en` | Non-empty English description. |
-| `description.zh` | Non-empty Chinese description. |
+| `description` | Non-empty string in each file: English in `.en.md`, Chinese in `.zh.md`. |
 
 ### Category and SubCategory Keys
 
@@ -131,7 +163,8 @@ If you are unsure which category to use, leave `subCategory` empty and let the a
 |---|---|
 | `tracked` | Listed and actively tracked |
 | `inactive` | No recent activity but not yet archived |
-| `archived` | Project stopped maintenance or repository deleted |
+| `archived` | Repository is archived on GitHub or the project stopped maintenance |
+| `unavailable` | Repository returns 404 (deleted or made private) |
 
 ## Updating an Existing Project
 

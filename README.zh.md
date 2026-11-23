@@ -87,6 +87,8 @@ ai-landscape/
 | `npm run build:index` | 构建搜索索引 |
 | `npm run export` | 导出项目为 JSON/CSV |
 | `npm run refresh:scores` | 补采超过 7 天或任一语言缺失的指标与评分，并验证持久化结果 |
+| `npm run triage` | 按收录标准检查提交的 issue 或 PR（`-- --number 48 --dry-run`） |
+| `npm test` | 运行脚本单元测试 |
 | `npm run generate:og` | 生成所有项目的 OG 图片 |
 | `npm run build` | 完整构建流程（校验 → 索引 → 导出 → OG → Astro 构建） |
 | `npm run dev` | 启动开发服务器 `127.0.0.1:4173` |

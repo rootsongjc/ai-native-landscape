@@ -87,6 +87,8 @@ Scores (0–100) are fetched at runtime from an external API and cached client-s
 | `npm run build:index` | Build search index |
 | `npm run export` | Export projects as JSON/CSV |
 | `npm run refresh:scores` | Refresh scoring data older than 7 days or missing in either language, then verify persisted results |
+| `npm run triage` | Check a submission issue or pull request against the inclusion standards (`-- --number 48 --dry-run`) |
+| `npm test` | Run the script unit tests |
 | `npm run generate:og` | Generate OG images for all projects |
 | `npm run build` | Full build pipeline (validate → index → export → OG → astro build) |
 | `npm run dev` | Start dev server at `127.0.0.1:4173` |

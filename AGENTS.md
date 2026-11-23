@@ -28,7 +28,9 @@ npm run preview              # Preview built site
 npm run validate             # Runs scripts/validate-data.mjs against data/schema.project.json
 ```
 
-No test framework configured.
+Script unit tests use the Node.js built-in runner: `npm test` (files matching `scripts/*.test.mjs`).
+
+Submission triage: `npm run triage -- --number <n> --dry-run` checks an issue or pull request against the inclusion standards (`INCLUSION` in `src/lib/landscape.mjs`). The `triage` workflow runs it on every submission.
 
 ## Architecture
 
