@@ -5,7 +5,7 @@ homepage: null
 repo: https://github.com/datalab-to/marker
 license: GPL-3.0
 category: rag-knowledge
-subCategory: retrieval-indexing
+subCategory: document-processing
 tags:
   - Utility
 description: 快速准确地将 PDF 转换为 Markdown、JSON、块和 HTML 的工具。

@@ -4,8 +4,8 @@ slug: mlrun
 homepage: https://mlrun.org
 repo: https://github.com/mlrun/mlrun
 license: Apache-2.0
-category: platform-infra
-subCategory: deployment-operations
+category: training-optimization
+subCategory: experiment-mlops
 tags:
   - Dev Tools
   - ML Platform

@@ -4,8 +4,8 @@ slug: a2ui
 homepage: https://a2ui.org/
 repo: https://github.com/a2ui-project/a2ui
 license: MIT
-category: agents
-subCategory: agent-frameworks
+category: coding-devtools
+subCategory: mcp-tools
 tags:
   - Agent Framework
   - UI

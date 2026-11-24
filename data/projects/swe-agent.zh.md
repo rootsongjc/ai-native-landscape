@@ -4,8 +4,8 @@ slug: swe-agent
 homepage: https://swe-agent.com/latest/
 repo: https://github.com/swe-agent/swe-agent
 license: MIT
-category: agents
-subCategory: agent-frameworks
+category: coding-devtools
+subCategory: coding-agents
 tags:
   - Agent Framework
 description: SWE-agent：一个由学术团队开发的自动化软件工程代理框架，适用于代码修复、评估与自动化工作流。

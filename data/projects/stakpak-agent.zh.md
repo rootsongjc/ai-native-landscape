@@ -4,8 +4,8 @@ slug: stakpak-agent
 homepage: https://stakpak.dev
 repo: https://github.com/stakpak/agent
 license: Apache-2.0
-category: agents
-subCategory: agent-frameworks
+category: coding-devtools
+subCategory: coding-agents
 tags:
   - Agent Framework
   - Dev Tools

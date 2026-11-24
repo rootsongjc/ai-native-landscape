@@ -5,7 +5,7 @@ homepage: https://cloud.google.com/vertex-ai
 repo: https://github.com/GoogleCloudPlatform/genmedia-creative-studio
 license: Apache-2.0
 category: models-modalities
-subCategory: audio-speech
+subCategory: image-video-generation
 tags:
   - Application
   - Audio

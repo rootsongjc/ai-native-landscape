@@ -4,8 +4,8 @@ slug: agentset
 homepage: https://agentset.ai
 repo: https://github.com/agentset-ai/agentset
 license: MIT
-category: agents
-subCategory: agent-frameworks
+category: rag-knowledge
+subCategory: retrieval-indexing
 tags:
   - Agent Framework
   - RAG

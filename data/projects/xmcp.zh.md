@@ -4,8 +4,8 @@ slug: xmcp
 homepage: https://xmcp.dev
 repo: https://github.com/basementstudio/xmcp
 license: MIT
-category: agents
-subCategory: agent-frameworks
+category: coding-devtools
+subCategory: mcp-tools
 tags:
   - Agent Framework
   - Framework

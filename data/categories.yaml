@@ -78,23 +78,16 @@ categories:
     zh: 模型与多模态
     en: Models & Modalities
   description:
-    zh: 基础模型、模型工具链与多模态能力。
-    en: Foundation models, model toolkits, and multimodal capabilities.
+    zh: 模型工具链与多模态工程能力，不收录基础模型本身。
+    en: Model toolkits and multimodal engineering; foundation models themselves are out of scope.
   subcategories:
-  - key: foundation-models
-    name:
-      zh: 基础模型
-      en: Foundation Models
-    description:
-      zh: 通用模型、权重发布与模型家族。
-      en: Foundation model families and model releases.
   - key: model-toolkits
     name:
       zh: 模型工具链
       en: Model Toolkits
     description:
-      zh: 模型转换、量化、压缩与部署辅助。
-      en: Tooling for model conversion, quantization, and packaging.
+      zh: 模型定义库、模型转换、量化、压缩与部署辅助。
+      en: Model-definition libraries and tooling for conversion, quantization, and packaging.
   - key: multimodal
     name:
       zh: 多模态
@@ -114,8 +107,8 @@ categories:
       zh: 图像与视频生成
       en: Image & Video Generation
     description:
-      zh: 视觉生成模型与图像视频创作工具。
-      en: Image/video generation models and creative pipelines.
+      zh: 图像视频生成工具链与创作管线。
+      en: Image/video generation toolchains and creative pipelines.
 
 - key: inference-serving
   name:

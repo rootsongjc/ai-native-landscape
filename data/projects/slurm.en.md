@@ -4,8 +4,8 @@ slug: slurm
 homepage: https://slurm.schedmd.com/
 repo: https://github.com/schedmd/slurm
 license: Unknown
-category: training-optimization
-subCategory: experiment-mlops
+category: platform-infra
+subCategory: heterogeneous-compute-scheduling
 tags:
   - CLI
   - Dev Tools

@@ -5,7 +5,7 @@ homepage: null
 repo: https://github.com/deepseek-ai/deepgemm
 license: MIT
 category: inference-serving
-subCategory: inference-runtimes
+subCategory: gpu-acceleration
 tags:
   - Framework
 description: 实现干净且高效的 FP8 GEMM（矩阵乘加）内核，提供细粒度缩放以支持更高效的低精度矩阵计算。

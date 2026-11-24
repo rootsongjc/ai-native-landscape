@@ -4,8 +4,8 @@ slug: keras
 homepage: https://keras.io/
 repo: https://github.com/keras-team/keras
 license: Apache-2.0
-category: models-modalities
-subCategory: foundation-models
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - LLM
 description: Keras 是一个高级深度学习 API，运行在 TensorFlow 之上，提供直观的界面用于构建和训练神经网络模型，支持快速实验。

@@ -4,8 +4,8 @@ slug: elevenlabs-ui
 homepage: https://ui.elevenlabs.io
 repo: https://github.com/elevenlabs/ui
 license: MIT
-category: models-modalities
-subCategory: multimodal
+category: applications-products
+subCategory: chat-interfaces
 tags:
   - Dev Tools
   - UI

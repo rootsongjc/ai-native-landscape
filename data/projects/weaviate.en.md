@@ -5,7 +5,7 @@ homepage: https://weaviate.io/developers/weaviate/
 repo: https://github.com/weaviate/weaviate
 license: BSD-3-Clause
 category: rag-knowledge
-subCategory: retrieval-indexing
+subCategory: vector-databases
 tags:
   - Database
   - Deployment

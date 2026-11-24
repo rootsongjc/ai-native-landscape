@@ -4,8 +4,8 @@ slug: codebuff
 homepage: https://codebuff.com/docs
 repo: https://github.com/CodebuffAI/freebuff
 license: Apache-2.0
-category: agents
-subCategory: agent-orchestration
+category: coding-devtools
+subCategory: coding-agents
 tags:
   - AI Agent
   - Dev Tools

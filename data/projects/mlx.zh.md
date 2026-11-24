@@ -4,8 +4,8 @@ slug: mlx
 homepage: https://ml-explore.github.io/mlx/
 repo: https://github.com/ml-explore/mlx
 license: MIT
-category: platform-infra
-subCategory: deployment-operations
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - Framework
   - ML Platform

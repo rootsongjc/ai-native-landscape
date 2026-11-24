@@ -4,8 +4,8 @@ slug: mlflow
 homepage: https://mlflow.org/
 repo: https://github.com/mlflow/mlflow
 license: Apache-2.0
-category: platform-infra
-subCategory: deployment-operations
+category: training-optimization
+subCategory: experiment-mlops
 tags:
   - Dev Tools
   - ML Platform

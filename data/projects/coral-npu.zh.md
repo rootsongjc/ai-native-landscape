@@ -5,7 +5,7 @@ homepage: https://developers.google.com/coral
 repo: https://github.com/google-coral/coralnpu
 license: Apache-2.0
 category: inference-serving
-subCategory: inference-runtimes
+subCategory: edge-local-inference
 tags:
   - Edge
   - Inference

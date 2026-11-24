@@ -136,7 +136,7 @@ The `score` object contains: `health`, `activity`, `community`, `popularity`, `q
 |---|---|
 | Agent Systems | Agent Frameworks, Orchestration & Workflows |
 | Knowledge & Context | Memory & Context, Vector Databases, Retrieval & Indexing, Document Processing, Knowledge Graphs, Data Connectors |
-| Models & Modalities | Foundation Models, Model Toolkits, Multimodal, Audio & Speech, Image & Video Generation |
+| Models & Modalities | Model Toolkits, Multimodal, Audio & Speech, Image & Video Generation |
 | Inference & Runtime | Model Serving, Inference Runtimes, Sandboxes & Execution, GPU Acceleration, Edge & Local, LLM Routing & Gateways |
 | Training, Evaluation & Optimization | Training Frameworks, Finetuning & Alignment, Experiment & MLOps, Evaluation & Benchmarks, Observability & Monitoring, Prompt Quality, Safety & Guardrails, Optimization & Simulation |
 | Developer Tooling | MCP & Tool Protocols, Coding Agents, IDE & CLI Tools, SDK Frameworks, Browser Automation, Developer Utilities |

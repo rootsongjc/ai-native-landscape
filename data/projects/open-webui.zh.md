@@ -4,8 +4,8 @@ slug: open-webui
 homepage: https://openwebui.com/
 repo: https://github.com/open-webui/open-webui
 license: BSD-3-Clause
-category: platform-infra
-subCategory: cloud-native-ai
+category: applications-products
+subCategory: chat-interfaces
 tags:
   - Docker
   - Kubernetes

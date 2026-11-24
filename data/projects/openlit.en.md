@@ -5,7 +5,7 @@ homepage: https://docs.openlit.io/
 repo: https://github.com/openlit/openlit
 license: Apache-2.0
 category: training-optimization
-subCategory: evaluation-benchmarks
+subCategory: observability-monitoring
 tags:
   - Dev Tools
 description: >-

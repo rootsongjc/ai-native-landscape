@@ -4,8 +4,8 @@ slug: mlc-llm
 homepage: https://llm.mlc.ai/
 repo: https://github.com/mlc-ai/mlc-llm
 license: Apache-2.0
-category: platform-infra
-subCategory: deployment-operations
+category: inference-serving
+subCategory: inference-runtimes
 tags:
   - Deployment
 description: 通用的 LLM 部署引擎，结合 ML 编译技术以提升模型部署性能。

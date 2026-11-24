@@ -5,7 +5,7 @@ homepage: https://docs.openlit.io/
 repo: https://github.com/openlit/openlit
 license: Apache-2.0
 category: training-optimization
-subCategory: evaluation-benchmarks
+subCategory: observability-monitoring
 tags:
   - Dev Tools
 description: OpenLIT 是一个面向 AI 工程的开源平台，提供 LLM 可观测性、Prompt 管理、评估与 Guardrails 等工具与 SDK。

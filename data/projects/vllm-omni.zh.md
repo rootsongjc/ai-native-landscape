@@ -4,8 +4,8 @@ slug: vllm-omni
 homepage: https://docs.vllm.ai/projects/vllm-omni
 repo: https://github.com/vllm-project/vllm-omni
 license: Apache-2.0
-category: models-modalities
-subCategory: multimodal
+category: inference-serving
+subCategory: model-serving
 tags:
   - Framework
   - Inference

@@ -4,8 +4,8 @@ slug: chandra
 homepage: https://www.datalab.to
 repo: https://github.com/datalab-to/chandra
 license: Apache-2.0
-category: models-modalities
-subCategory: multimodal
+category: rag-knowledge
+subCategory: document-processing
 tags:
   - Application
   - Model

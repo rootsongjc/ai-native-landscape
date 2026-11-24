@@ -4,8 +4,8 @@ slug: pandas
 homepage: https://pandas.pydata.org
 repo: https://github.com/pandas-dev/pandas
 license: BSD-3-Clause
-category: rag-knowledge
-subCategory: data-connectors
+category: platform-infra
+subCategory: data-platforms
 tags:
   - Data Processing
   - Python

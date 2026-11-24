@@ -4,8 +4,8 @@ slug: ray
 homepage: https://ray.io/
 repo: https://github.com/ray-project/ray
 license: Apache-2.0
-category: coding-devtools
-subCategory: sdk-frameworks
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - Orchestration
 description: 用于扩展 AI 和 Python 应用的统一框架，为机器学习工作负载和通用并行计算提供分布式计算能力。

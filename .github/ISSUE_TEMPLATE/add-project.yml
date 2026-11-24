@@ -98,7 +98,6 @@ body:
         - document-processing
         - knowledge-graphs
         - data-connectors
-        - foundation-models
         - model-toolkits
         - multimodal
         - audio-speech

@@ -5,7 +5,7 @@ homepage: null
 repo: https://github.com/deepseek-ai/deepgemm
 license: MIT
 category: inference-serving
-subCategory: inference-runtimes
+subCategory: gpu-acceleration
 tags:
   - Framework
 description: >-

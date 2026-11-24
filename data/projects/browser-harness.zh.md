@@ -4,8 +4,8 @@ slug: browser-harness
 homepage: https://browser-use.com
 repo: https://github.com/browser-use/browser-harness
 license: MIT
-category: agents
-subCategory: agent-frameworks
+category: coding-devtools
+subCategory: browser-automation
 tags:
   - Agent Framework
   - Automation

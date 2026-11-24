@@ -5,37 +5,38 @@ homepage: https://lightx2v-en.readthedocs.io/en/latest/
 repo: https://github.com/modeltc/lightx2v
 license: Apache-2.0
 category: models-modalities
-subCategory: multimodal
+subCategory: image-video-generation
 tags:
-  - Embedding
+  - Video Generation
+  - Image Generation
   - Inference
-  - Vision
-description: LightX2V 提供轻量化的图像到向量转换模型，便于在低资源环境中进行视觉特征提取与向量检索。
+  - Diffusion
+  - Quantization
+description: LightX2V 是一个轻量级的图像与视频生成推理框架，通过步数蒸馏、量化和并行等手段加速扩散模型推理，并支持多种硬件平台部署。
 author: ModelTC
 ossDate: '2025-03-24T10:27:56Z'
 featured: false
 status: tracked
 ---
 
-LightX2V 是一个轻量级的图像到视频生成推理框架，专为在资源受限的硬件上高效生成视频而设计。它提供优化的模型架构和工具，能够在不依赖大量计算资源的情况下实现快速的视觉特征提取和视频合成。
+LightX2V 是 ModelTC 开发的轻量级图像与视频生成推理框架。它用一套推理栈支持多种生成模型，重点是让这些模型跑得更快、成本更低，使文生视频、图生视频、文生图和图像编辑等任务能够在团队现有的硬件上运行。
 
 ## 核心特性
 
-- **轻量化模型架构**，在保持生成质量的同时实现快速推理
-- **优化的嵌入表示**，专为检索和相似度计算任务调优
-- **模型压缩与知识蒸馏**策略，在参数量大幅减少的同时保持质量损失可控
-- **高效的嵌入归一化**，确保不同视觉输入的向量表示一致性
-- **完整文档**，提供部署指南、微调示例和基准测试结果
+- **一套框架支持多种模型**，包括 Wan、HunyuanVideo、Qwen-Image、LTX 等系列，覆盖文生视频、图生视频、文生图和图像编辑
+- **步数蒸馏**：提供 4 步和 8 步蒸馏模型与 LoRA，无需 CFG 即可推理
+- **量化**：支持 FP8、NVFP4 和 GGUF 等格式
+- **显存与吞吐优化**：块级卸载、CFG 并行和分离式部署等
+- **服务化 API**：可将模型作为服务运行，并提供 Docker 镜像简化环境搭建
 
 ## 使用场景
 
-- 边缘设备或低算力环境下的视觉检索和相似图像搜索
-- GPU 资源有限或共享场景下的轻量级视频生成工作流
-- 资源受限的生产部署中的高效视觉理解任务
-- 在消费级硬件上快速原型验证图像到视频的生成管道
+- 以更少的推理步数和更低的延迟提供图像与视频生成服务
+- 在显存有限的 GPU 上运行大型视频模型
+- 在非 NVIDIA 加速器和 AI PC 上部署生成模型
 
 ## 技术特点
 
-- 专注于模型压缩、知识蒸馏和嵌入归一化，在推理速度和生成质量之间取得平衡
-- 轻量级设计允许在内存和计算预算有限的硬件上部署，同时保持有竞争力的准确性
-- 模块化架构支持独立推理和集成到更大的多媒体处理管道中
+- 同时支持自回归视频生成和双向扩散推理
+- 支持 NVIDIA GPU 之外的平台，包括 AMD ROCm、昇腾、寒武纪、海光和 Intel AI PC
+- 蒸馏和量化后的权重随框架一同发布在 Hugging Face
