@@ -5,7 +5,7 @@ homepage: https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/
 repo: https://github.com/nvidia/gpu-operator
 license: Apache-2.0
 category: platform-infra
-subCategory: cloud-native-ai
+subCategory: heterogeneous-compute-scheduling
 tags:
   - Deployment
   - Inference

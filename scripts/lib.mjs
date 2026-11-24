@@ -15,6 +15,10 @@ const TAG_PRIORITY_RULES = [
   { key: 'coding-agents', anyTags: ['vibe coding', 'code agent'] },
   { key: 'chat-interfaces', anyTags: ['chatbot', 'chat ui', 'copilot'] },
   { key: 'llm-routing-gateways', anyTags: ['ai gateway', 'ai gateways', 'llm router'] },
+  { key: 'gpu-cloud-marketplaces', anyTags: ['gpu cloud', 'gpu marketplace', 'compute marketplace', 'gpu rental'] },
+  { key: 'gpu-virtualization-sharing', anyTags: ['gpu virtualization', 'gpu sharing', 'vgpu', 'fractional gpu'] },
+  { key: 'heterogeneous-compute-scheduling', anyTags: ['gpu scheduling', 'batch scheduling', 'job queueing', 'device plugin', 'heterogeneous computing'] },
+  { key: 'gpu-observability-cost', anyTags: ['gpu monitoring', 'gpu observability', 'gpu telemetry', 'finops', 'cost optimization'] },
   { key: 'evaluation-benchmarks', anyTags: ['evaluation', 'benchmark'] },
   { key: 'observability-monitoring', anyTags: ['observability', 'observation', 'monitoring', 'analytics'] },
   { key: 'prompt-quality', anyTags: ['prompt engineering'] },
@@ -159,6 +163,22 @@ const SUBCATEGORY_RULES = [
   {
     key: 'inference-runtimes',
     terms: ['inference runtime', 'kernel', 'engine', 'executor'],
+  },
+  {
+    key: 'gpu-cloud-marketplaces',
+    terms: ['gpu cloud', 'gpu marketplace', 'compute marketplace', 'gpu rental', 'gpu prices', 'decentralized compute'],
+  },
+  {
+    key: 'gpu-virtualization-sharing',
+    terms: ['gpu virtualization', 'gpu sharing', 'vgpu', 'fractional gpu', 'gpu pooling', 'time-slicing'],
+  },
+  {
+    key: 'heterogeneous-compute-scheduling',
+    terms: ['gpu scheduling', 'batch scheduling', 'job queueing', 'device plugin', 'heterogeneous comput'],
+  },
+  {
+    key: 'gpu-observability-cost',
+    terms: ['gpu monitoring', 'gpu telemetry', 'gpu metrics', 'gpu observability', 'finops', 'cost monitoring'],
   },
   {
     key: 'gpu-acceleration',

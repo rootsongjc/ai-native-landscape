@@ -5,7 +5,7 @@ homepage: https://docs.nvidia.com/run-ai/
 repo: https://github.com/dsx-ai-factory/run-ai
 license: Apache-2.0
 category: platform-infra
-subCategory: cloud-native-ai
+subCategory: heterogeneous-compute-scheduling
 tags:
   - GPU Orchestration
   - Kubernetes
