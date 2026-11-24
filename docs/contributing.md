@@ -37,7 +37,8 @@ crowded categories.
 
 The `triage` workflow (`scripts/triage-submission.mjs`) checks every submission issue and
 every external pull request that adds a project. It posts one comment with the result of
-each check and applies a label:
+each check and applies a label, acting as the **AI Native Landscape Bot** GitHub App
+(`ai-native-landscape-bot[bot]`):
 
 | Label | Meaning | What happens |
 |---|---|---|
