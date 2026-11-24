@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import LandscapeCategory from './LandscapeCategory.astro';
 import LandscapeHeatmap from './LandscapeHeatmap.astro';
+import LandscapeMap from './LandscapeMap.astro';
 import LandscapeToolbar from './LandscapeToolbar.astro';
 import SearchModal from './SearchModal.astro';
 import {
@@ -52,79 +53,65 @@ const canonical = localizedPath('/', lang);
 <BaseLayout title={SITE.title} description={copy.metaDescription} canonical={canonical} lang={lang}>
   <main class="landscape-page" data-landscape-page>
     <section class="landscape-hero" aria-labelledby="landscape-title">
-      <div class="landscape-hero__card">
-        <div class="landscape-hero__text">
+      <div class="landscape-hero__bar">
+        <div class="landscape-hero__title">
           <h1 id="landscape-title">{copy.homeHeroHeadline}</h1>
-          <p class="landscape-hero__desc">{copy.heroDescription}</p>
-          <div class="landscape-hero__search-wrap" data-home-search>
-            <form class="landscape-hero__search" role="search" aria-label={copy.search}>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-              </svg>
-              <input
-                id="home-search-input"
-                type="search"
-                placeholder={copy.homeSearchPrompt}
-                autocomplete="off"
-                data-home-search-input
-              />
-              <kbd>/</kbd>
-            </form>
-            <div class="landscape-hero__results" data-home-search-panel hidden>
-              <div class="landscape-hero__results-list" data-home-search-results></div>
-              <div class="landscape-hero__empty" data-home-search-empty hidden>{copy.searchModalNoResults}</div>
-            </div>
-          </div>
-          <p class="landscape-hero__help">{copy.homeSearchHelp}</p>
-          <div class="landscape-hero__actions">
-            <a class="landscape-hero__cta landscape-hero__cta--primary" href={localizedPath('/projects/', lang)}>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></svg>
-              {copy.homeBrowseProjects}
-            </a>
-            <a class="landscape-hero__cta" href={localizedPath('/submit/', lang)}>{copy.submitProject}</a>
-          </div>
-          <div class="landscape-hero__signals" aria-label={copy.scopeBoundary}>
-            <div class="landscape-hero__signal landscape-hero__signal--projects">
-              <strong>{landscape.projectCount}</strong>
-              <span>{copy.projects}</span>
-            </div>
-            <div class="landscape-hero__signal landscape-hero__signal--categories">
-              <strong>{categories.length}</strong>
-              <span>{copy.categories}</span>
-            </div>
-            <div class="landscape-hero__signal landscape-hero__signal--tomb">
-              <strong>{tombCount}</strong>
-              <span>{copy.navTomb}</span>
-            </div>
+          <p class="landscape-hero__stats">
+            {landscape.projectCount} {copy.projects} · {categories.length} {copy.categories} ·{' '}
+            <a href={localizedPath('/tomb/', lang)}>{tombCount} {copy.navTomb}</a>
+          </p>
+        </div>
+        <div class="landscape-hero__search-wrap" data-home-search>
+          <form class="landscape-hero__search" role="search" aria-label={copy.search}>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <input
+              id="home-search-input"
+              type="search"
+              placeholder={copy.homeSearchPrompt}
+              autocomplete="off"
+              data-home-search-input
+            />
+            <kbd>/</kbd>
+          </form>
+          <div class="landscape-hero__results" data-home-search-panel hidden>
+            <div class="landscape-hero__results-list" data-home-search-results></div>
+            <div class="landscape-hero__empty" data-home-search-empty hidden>{copy.searchModalNoResults}</div>
           </div>
         </div>
-        <aside class="landscape-atlas" aria-label={copy.homeAtlasTitle}>
-          <div class="landscape-atlas__heading">
-            <span>{copy.homeAtlasTitle}</span>
-            <span>{Math.min(6, categories.length)} / {categories.length} {copy.categories}</span>
-          </div>
-          <ol class="landscape-atlas__list">
-            {categoryHighlights.slice(0, 6).map(({ category, projects }, index) => (
-              <li>
-                <a
-                  href={localizedPath(`/categories/${category.key}/`, lang)}
-                  aria-label={`${categoryName(category, lang)}, ${projects.length} ${copy.projects}`}
-                >
-                  <span class="landscape-atlas__index" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
-                  <span class="landscape-atlas__domain">
-                    <span>{categoryName(category, lang)}</span>
-                    <span class="landscape-atlas__track" aria-hidden="true">
-                      <span style={`--atlas-share: ${Math.round(projects.length / categoryHighlights[0].projects.length * 100)}%;`}></span>
-                    </span>
-                  </span>
-                  <span class="landscape-atlas__count">{projects.length}</span>
-                </a>
-              </li>
-            ))}
-          </ol>
-        </aside>
+        <div class="landscape-hero__actions">
+          <a class="landscape-hero__cta landscape-hero__cta--primary" href={localizedPath('/projects/', lang)}>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></svg>
+            {copy.homeBrowseProjects}
+          </a>
+          <a class="landscape-hero__cta" href={localizedPath('/submit/', lang)}>{copy.submitProject}</a>
+        </div>
       </div>
     </section>
+
+    <div class="landscape-views" data-home-view="map" data-home-views>
+      <script is:inline>
+        (function () {
+          var view = new URLSearchParams(location.search).get('display');
+          if (view !== 'list' && view !== 'map') {
+            try { view = localStorage.getItem('landscape-home-view'); } catch (error) { view = null; }
+          }
+          if (view === 'list') document.currentScript.parentElement.dataset.homeView = 'list';
+        })();
+      </script>
+      <div class="landscape-viewswitch" role="group" aria-label={copy.homeViewLabel}>
+        <button type="button" data-home-view-btn="map" aria-pressed="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="5" rx="1"/><rect x="13" y="10" width="8" height="11" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/></svg>
+          {copy.homeViewMap}
+        </button>
+        <button type="button" data-home-view-btn="list" aria-pressed="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
+          {copy.homeViewList}
+        </button>
+      </div>
+
+    <LandscapeMap lang={lang} />
 
     <section class="landscape-categories" id="landscape-categories" aria-labelledby="landscape-categories-title">
       <div class="landscape-section__head">
@@ -177,6 +164,7 @@ const canonical = localizedPath('/', lang);
 
       <LandscapeHeatmap lang={lang} />
     </details>
+    </div>
 
     <section class="landscape-skill-guide" aria-labelledby="landscape-skill-guide-title">
       <div>
@@ -282,6 +270,11 @@ const canonical = localizedPath('/', lang);
       });
     }
 
+    // The results panel overlays the page, so dismiss it when clicking elsewhere.
+    document.addEventListener('click', (e) => {
+      if (homeSearchPanel && !homeSearch?.contains(e.target)) homeSearchPanel.hidden = true;
+    });
+
     // Global slash key listener to focus search
     document.addEventListener('keydown', (e) => {
       // Only trigger if not typing in an input/textarea
@@ -294,6 +287,26 @@ const canonical = localizedPath('/', lang);
         requestAnimationFrame(() => homeSearchInput.focus());
       }
     });
+
+    // Homepage view: landscape map (default) or the list-style directory
+    const homeViews = document.querySelector('[data-home-views]');
+    const homeViewBtns = document.querySelectorAll('[data-home-view-btn]');
+    function syncHomeViewBtns() {
+      homeViewBtns.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.homeViewBtn === homeViews.dataset.homeView)));
+    }
+    homeViewBtns.forEach(b => b.addEventListener('click', () => {
+      const view = b.dataset.homeViewBtn;
+      homeViews.dataset.homeView = view;
+      try { localStorage.setItem('landscape-home-view', view); } catch {}
+      const url = new URL(location);
+      if (view === 'map') url.searchParams.delete('display');
+      else url.searchParams.set('display', view);
+      history.replaceState(null, '', url);
+      syncHomeViewBtns();
+      // Card tooltips are measured on resize; they had no layout while hidden.
+      window.dispatchEvent(new Event('resize'));
+    }));
+    syncHomeViewBtns();
 
     // View toggle
     const viewBtns = document.querySelectorAll('[data-view]');
@@ -508,42 +521,62 @@ const canonical = localizedPath('/', lang);
     gap: 48px;
   }
 
+  .landscape-views {
+    display: grid;
+    gap: 48px;
+    min-width: 0;
+  }
+
+  .landscape-viewswitch {
+    justify-self: start;
+    display: inline-flex;
+    margin-bottom: -28px;
+    padding: 3px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface);
+  }
+
+  .landscape-viewswitch button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 34px;
+    padding: 0 14px;
+    border: 0;
+    border-radius: 9px;
+    background: transparent;
+    color: var(--muted);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .landscape-viewswitch button svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .landscape-viewswitch button:hover {
+    color: var(--text);
+  }
+
+  .landscape-viewswitch button[aria-pressed='true'] {
+    background: var(--accent);
+    color: var(--accent-contrast);
+  }
+
+  .landscape-views[data-home-view='list'] :global(.lmap),
+  .landscape-views[data-home-view='map'] .landscape-categories,
+  .landscape-views[data-home-view='map'] .landscape-directory {
+    display: none;
+  }
+
   .landscape-hero,
   .landscape-search,
   .landscape-directory {
     display: grid;
     gap: 16px;
-  }
-
-  .landscape-hero__card {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
-    align-items: center;
-    gap: 48px;
-    padding: 48px;
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    background: var(--surface);
-  }
-
-  .landscape-hero__text {
-    display: grid;
-    gap: 16px;
-    min-width: 0;
-  }
-
-  .landscape-hero h1 {
-    margin: 0;
-    line-height: 1.1;
-    font-weight: 500;
-  }
-
-  .landscape-hero__desc {
-    margin: 0;
-    color: var(--muted);
-    font-size: clamp(0.92rem, 1.2vw, 1.05rem);
-    line-height: 1.6;
-    max-width: 520px;
   }
 
   /* Skill guide — compact inline banner */
@@ -606,14 +639,6 @@ const canonical = localizedPath('/', lang);
     }
   }
 
-  @media (max-width: 720px) {
-    .landscape-hero__card {
-      grid-template-columns: 1fr;
-      gap: 32px;
-      padding: 24px;
-    }
-  }
-
   .landscape-section__head {
     display: grid;
     gap: 8px;
@@ -671,33 +696,12 @@ const canonical = localizedPath('/', lang);
     .landscape-page {
       gap: 40px;
     }
-
-    .landscape-hero {
-      padding-top: 10px;
-    }
-
   }
 
   @media (max-width: 480px) {
     .landscape-page {
       padding: 16px 0 48px;
       gap: 32px;
-    }
-
-    .landscape-hero {
-      padding-top: 0;
-    }
-
-    .landscape-hero__card {
-      gap: 24px;
-      padding: 24px 20px;
-      border-radius: 16px;
-    }
-
-    .landscape-hero__desc {
-      font-size: 0.92rem;
-      line-height: 1.55;
-      max-width: none;
     }
 
     .landscape-skill-guide {
@@ -761,35 +765,13 @@ const canonical = localizedPath('/', lang);
     gap: 16px;
   }
 
-  .landscape-hero__card {
-    min-height: 520px;
-    padding: clamp(32px, 4vw, 64px);
-    text-align: left;
-  }
-
-  .landscape-hero__text {
-    max-width: 620px;
-    justify-items: start;
-    gap: 16px;
-  }
-
-  .landscape-hero h1 {
-    font-size: clamp(2.5rem, 4vw, 3.75rem);
-    letter-spacing: -0.02em;
-  }
-
-  .landscape-hero__desc {
-    max-width: 50ch;
-    font-size: clamp(1rem, 1.4vw, 1.125rem);
-  }
-
   .landscape-hero__search {
     display: grid;
     grid-template-columns: auto minmax(0, 1fr) auto;
     align-items: center;
     gap: 12px;
     width: 100%;
-    min-height: 56px;
+    min-height: 46px;
     padding: 0 16px;
     border: 1px solid var(--border);
     border-radius: 10px;
@@ -845,51 +827,6 @@ const canonical = localizedPath('/', lang);
     font-size: 0.75rem;
     font-weight: 500;
     line-height: 1;
-  }
-
-  .landscape-hero__help {
-    margin: -8px 0 0;
-    color: var(--muted);
-    font-size: 0.9rem;
-  }
-
-  .landscape-hero__actions {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 12px;
-  }
-
-  .landscape-hero__cta {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    min-height: 44px;
-    padding: 0 16px;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    background: var(--surface-soft);
-    color: var(--text);
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: border-color 0.16s, background-color 0.16s;
-  }
-
-  .landscape-hero__cta:hover {
-    border-color: var(--muted);
-  }
-
-  .landscape-hero__cta svg {
-    width: 18px;
-    height: 18px;
-  }
-
-  .landscape-hero__cta--primary {
-    border-color: var(--accent);
-    background: var(--accent);
-    color: var(--accent-contrast);
   }
 
   .landscape-start__grid {
@@ -1149,13 +1086,8 @@ const canonical = localizedPath('/', lang);
   }
 
   @media (max-width: 720px) {
-    .landscape-hero__card {
-      min-height: 0;
-      padding: 24px;
-    }
-
     .landscape-hero__search {
-      min-height: 56px;
+      min-height: 46px;
       border-radius: 10px;
     }
 
@@ -1190,12 +1122,8 @@ const canonical = localizedPath('/', lang);
   }
 
   @media (max-width: 480px) {
-    .landscape-hero h1 {
-      font-size: 2.25rem;
-    }
-
     .landscape-hero__search {
-      min-height: 56px;
+      min-height: 46px;
       grid-template-columns: auto minmax(0, 1fr);
       padding: 0 16px;
     }
@@ -1213,18 +1141,6 @@ const canonical = localizedPath('/', lang);
       display: none;
     }
 
-    .landscape-hero__actions {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) auto;
-      width: 100%;
-    }
-
-    .landscape-hero__cta {
-      min-width: 0;
-      padding: 0 12px;
-      font-size: 0.8rem;
-    }
-
     .landscape-skill-guide__cmd {
       max-width: 100%;
       white-space: normal;
@@ -1232,11 +1148,78 @@ const canonical = localizedPath('/', lang);
     }
   }
 
-  .landscape-hero__search-wrap {
+  .landscape-hero__bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 24px;
+  }
+
+  .landscape-hero__title {
     display: grid;
+    gap: 2px;
+    min-width: 0;
+  }
+
+  .landscape-hero h1 {
+    margin: 0;
+    font-size: clamp(1.5rem, 2.4vw, 2rem);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  .landscape-hero__stats {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.82rem;
+  }
+
+  .landscape-hero__stats a:hover {
+    color: var(--accent);
+  }
+
+  .landscape-hero__actions {
+    display: flex;
     gap: 8px;
-    width: 100%;
-    text-align: left;
+  }
+
+  .landscape-hero__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 46px;
+    padding: 0 16px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--surface-soft);
+    color: var(--text);
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: border-color 0.16s;
+  }
+
+  .landscape-hero__cta:hover {
+    border-color: var(--muted);
+  }
+
+  .landscape-hero__cta svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .landscape-hero__cta--primary {
+    border-color: var(--accent);
+    background: var(--accent);
+    color: var(--accent-contrast);
+  }
+
+  .landscape-hero__search-wrap {
+    position: relative;
+    flex: 1 1 320px;
+    min-width: 0;
   }
 
   .landscape-hero__search-wrap .landscape-hero__search {
@@ -1244,11 +1227,16 @@ const canonical = localizedPath('/', lang);
   }
 
   .landscape-hero__results {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    left: 0;
+    z-index: 30;
     overflow: hidden;
     border: 1px solid var(--border);
     border-radius: 10px;
     background: var(--surface);
-    box-shadow: var(--shadow);
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.2);
   }
 
   .landscape-hero__results[hidden] {
@@ -1344,33 +1332,6 @@ const canonical = localizedPath('/', lang);
     text-align: center;
   }
 
-  .landscape-hero__signals {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 16px;
-    width: 100%;
-    padding-top: 16px;
-    border-top: 1px solid var(--border);
-  }
-
-  .landscape-hero__signal {
-    display: grid;
-    gap: 2px;
-    text-align: left;
-  }
-
-  .landscape-hero__signal strong {
-    color: var(--text);
-    font-size: 1.12rem;
-    line-height: 1;
-  }
-
-  .landscape-hero__signal span {
-    color: var(--muted);
-    font-size: 0.72rem;
-    font-weight: 500;
-  }
-
   .landscape-category-overview__main {
     display: grid;
     grid-template-columns: auto minmax(0, 1fr) auto;
@@ -1395,103 +1356,9 @@ const canonical = localizedPath('/', lang);
     font-size: 0.78rem;
   }
 
-  .landscape-atlas {
-    min-width: 0;
-    padding: 24px;
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    background: var(--surface-soft);
-  }
-
-  .landscape-atlas__heading {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 16px;
-    padding-bottom: 16px;
-    color: var(--muted);
-    font-size: 0.8rem;
-  }
-
-  .landscape-atlas__heading span:first-child {
-    color: var(--text);
-    font-size: 1rem;
-    font-weight: 600;
-  }
-
-  .landscape-atlas__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .landscape-atlas__list a {
-    display: grid;
-    grid-template-columns: 24px minmax(0, 1fr) auto;
-    align-items: center;
-    gap: 16px;
-    padding: 12px 0;
-    border-top: 1px solid var(--border);
-    color: var(--text);
-    font-size: 0.875rem;
-    transition: color 0.16s;
-  }
-
-  .landscape-atlas__list a:hover {
-    color: var(--accent);
-  }
-
-  .landscape-atlas__index,
-  .landscape-atlas__count {
-    color: var(--muted);
-    font-family: var(--mono, ui-monospace, monospace);
-    font-size: 0.75rem;
-  }
-
-  .landscape-atlas__count {
-    text-align: right;
-  }
-
-  .landscape-atlas__domain {
-    display: grid;
-    gap: 8px;
-    min-width: 0;
-  }
-
-  .landscape-atlas__track {
-    display: block;
-    height: 4px;
-    overflow: hidden;
-    border-radius: 4px;
-    background: var(--border);
-  }
-
-  .landscape-atlas__track > span {
-    display: block;
-    width: var(--atlas-share);
-    height: 100%;
-    border-radius: inherit;
-    background: color-mix(in srgb, var(--accent) 45%, var(--muted));
-  }
-
-  .landscape-atlas__list li:first-child .landscape-atlas__track > span {
-    background: var(--accent);
-  }
-
-  @media (max-width: 900px) {
-    .landscape-hero__card {
-      grid-template-columns: 1fr;
-      min-height: 0;
-    }
-  }
-
   @media (max-width: 720px) {
     .landscape-page {
       gap: 40px;
-    }
-
-    .landscape-hero__signals {
-      gap: 8px;
     }
 
     .landscape-category-overview__main {
@@ -1510,4 +1377,14 @@ const canonical = localizedPath('/', lang);
     }
   }
 
+  @media (max-width: 720px) {
+    .landscape-hero__actions {
+      flex: 1 1 100%;
+    }
+
+    .landscape-hero__cta {
+      flex: 1;
+      padding: 0 12px;
+    }
+  }
 </style>
