@@ -4,8 +4,8 @@ slug: paddlepaddle
 homepage: https://www.paddlepaddle.org/
 repo: https://github.com/paddlepaddle/paddle
 license: Apache-2.0
-category: models-modalities
-subCategory: foundation-models
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - LLM
 description: 百度开发的开源深度学习平台，为机器学习和深度学习研究与生产提供全面的生态系统。

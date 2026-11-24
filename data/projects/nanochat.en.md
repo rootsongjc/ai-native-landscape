@@ -4,8 +4,8 @@ slug: nanochat
 homepage: null
 repo: https://github.com/karpathy/nanochat
 license: MIT
-category: applications-products
-subCategory: productivity-tools
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - Application
 description: >-

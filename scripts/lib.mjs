@@ -48,7 +48,6 @@ const TAG_PRIORITY_RULES = [
   { key: 'productivity-tools', anyTags: ['application', 'product', 'assistant', 'dashboard', 'visualization'], excludeTags: ['agent framework', 'agents', 'ai agent', 'mcp'] },
   { key: 'sdk-frameworks', anyTags: ['sdk', 'frameworks', 'application framework', 'middleware', 'project', 'python', 'java'] },
   { key: 'developer-utilities', anyTags: ['plugin', 'frontend', 'programming'] },
-  { key: 'foundation-models', anyTags: ['llm', 'model', 'models', 'foundation model', 'embedding model'] },
 ];
 
 const SUBCATEGORY_RULES = [
@@ -232,10 +231,6 @@ const SUBCATEGORY_RULES = [
     key: 'desktop-clients',
     terms: ['desktop', 'electron', 'mac app', 'windows app', 'desktop client'],
   },
-  {
-    key: 'foundation-models',
-    terms: ['foundation model', 'llm', 'model family', 'checkpoint', 'pretrained model'],
-  },
 ];
 
 const LEGACY_RULE_FALLBACK = {
@@ -246,7 +241,7 @@ const LEGACY_RULE_FALLBACK = {
   evaluation_monitoring: { category: 'evaluation-observability', subCategory: 'evaluation-benchmarks' },
   ai_gateways: { category: 'inference-serving', subCategory: 'llm-routing-gateways' },
   inference_serving: { category: 'inference-serving', subCategory: 'model-serving' },
-  models_foundation: { category: 'models-modalities', subCategory: 'foundation-models' },
+  models_foundation: { category: 'models-modalities', subCategory: 'model-toolkits' },
   training_finetuning: { category: 'training-optimization', subCategory: 'training-frameworks' },
   vibe_coding: { category: 'coding-devtools', subCategory: 'coding-agents' },
 };

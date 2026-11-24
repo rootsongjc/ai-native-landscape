@@ -5,7 +5,7 @@ homepage: https://firecrawl.dev
 repo: https://github.com/firecrawl/firecrawl
 license: AGPL-3.0
 category: rag-knowledge
-subCategory: retrieval-indexing
+subCategory: data-connectors
 tags:
   - Utility
 description: >-

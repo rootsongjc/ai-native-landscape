@@ -5,7 +5,7 @@ homepage: https://triton-lang.org/
 repo: https://github.com/triton-lang/triton
 license: MIT
 category: inference-serving
-subCategory: inference-runtimes
+subCategory: gpu-acceleration
 tags:
   - Framework
 description: Triton 是一个面向高性能深度学习算子与编译器开发的语言与工具链，旨在简化 GPU 算子开发并提升性能。

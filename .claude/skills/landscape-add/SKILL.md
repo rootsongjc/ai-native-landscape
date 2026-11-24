@@ -46,7 +46,7 @@ cat data/categories.yaml
 |----------|--------------|
 | `agents` | `agent-frameworks`, `agent-orchestration` |
 | `rag-knowledge` | `agent-memory-context`, `vector-databases`, `retrieval-indexing`, `document-processing`, `knowledge-graphs`, `data-connectors` |
-| `models-modalities` | `foundation-models`, `model-toolkits`, `multimodal`, `audio-speech`, `image-video-generation` |
+| `models-modalities` | `model-toolkits`, `multimodal`, `audio-speech`, `image-video-generation` |
 | `inference-serving` | `model-serving`, `inference-runtimes`, `sandboxes-runtimes`, `gpu-acceleration`, `edge-local-inference`, `llm-routing-gateways` |
 | `training-optimization` | `training-frameworks`, `finetuning-alignment`, `experiment-mlops`, `evaluation-benchmarks`, `observability-monitoring`, `prompt-quality`, `safety-guardrails`, `optimization-simulation` |
 | `coding-devtools` | `mcp-tools`, `coding-agents`, `ide-cli-tools`, `sdk-frameworks`, `browser-automation`, `developer-utilities` |

@@ -5,7 +5,7 @@ homepage: null
 repo: https://github.com/dao-ailab/flash-attention
 license: BSD-3-Clause
 category: inference-serving
-subCategory: inference-runtimes
+subCategory: gpu-acceleration
 tags:
   - Framework
 description: Fast and memory-efficient exact attention implementation optimized for large Transformer training and inference.

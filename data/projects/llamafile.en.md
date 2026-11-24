@@ -4,8 +4,8 @@ slug: llamafile
 homepage: https://mozilla-ai.github.io/llamafile/
 repo: https://github.com/mozilla-ai/llamafile
 license: Apache-2.0
-category: applications-products
-subCategory: productivity-tools
+category: inference-serving
+subCategory: edge-local-inference
 tags:
   - Application
   - Dev Tools

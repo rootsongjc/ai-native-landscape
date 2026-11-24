@@ -4,8 +4,8 @@ slug: keras
 homepage: https://keras.io/
 repo: https://github.com/keras-team/keras
 license: Apache-2.0
-category: models-modalities
-subCategory: foundation-models
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - LLM
 description: >-

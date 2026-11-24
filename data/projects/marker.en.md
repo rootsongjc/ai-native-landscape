@@ -5,7 +5,7 @@ homepage: null
 repo: https://github.com/datalab-to/marker
 license: GPL-3.0
 category: rag-knowledge
-subCategory: retrieval-indexing
+subCategory: document-processing
 tags:
   - Utility
 description: Converts PDF, image, PPTX, DOCX, XLSX, HTML, EPUB files to markdown, JSON, chunks, and HTML quickly and accurately.

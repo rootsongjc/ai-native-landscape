@@ -4,8 +4,8 @@ slug: hermes-agent
 homepage: https://hermes-agent.nousresearch.com/docs
 repo: https://github.com/nousresearch/hermes-agent
 license: MIT
-category: coding-devtools
-subCategory: ide-cli-tools
+category: agents
+subCategory: agent-frameworks
 tags:
   - AI Agent
   - CLI

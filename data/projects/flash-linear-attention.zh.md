@@ -5,7 +5,7 @@ homepage: https://pypi.org/project/flash-linear-attention/
 repo: https://github.com/fla-org/flash-linear-attention
 license: MIT
 category: inference-serving
-subCategory: inference-runtimes
+subCategory: gpu-acceleration
 tags:
   - Dev Tools
 description: 基于 Triton 的 PyTorch 库，提供高效线性注意力内核与模型组件。

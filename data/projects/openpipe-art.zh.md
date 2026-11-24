@@ -4,8 +4,8 @@ slug: openpipe-art
 homepage: https://art.openpipe.ai
 repo: https://github.com/openpipe/art
 license: Apache-2.0
-category: rag-knowledge
-subCategory: retrieval-indexing
+category: training-optimization
+subCategory: finetuning-alignment
 tags:
   - AI Agent
   - RAG

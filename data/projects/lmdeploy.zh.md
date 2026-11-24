@@ -4,8 +4,8 @@ slug: lmdeploy
 homepage: https://lmdeploy.readthedocs.io/en/latest/
 repo: https://github.com/internlm/lmdeploy
 license: Apache-2.0
-category: platform-infra
-subCategory: deployment-operations
+category: inference-serving
+subCategory: model-serving
 tags:
   - Deployment
   - Dev Tools

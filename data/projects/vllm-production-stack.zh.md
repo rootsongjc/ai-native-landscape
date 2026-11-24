@@ -5,7 +5,7 @@ homepage: https://docs.vllm.ai/projects/production-stack
 repo: https://github.com/vllm-project/production-stack
 license: Apache-2.0
 category: inference-serving
-subCategory: inference-runtimes
+subCategory: model-serving
 tags:
   - Deployment
   - Inference

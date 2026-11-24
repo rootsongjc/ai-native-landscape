@@ -4,8 +4,8 @@ slug: unitycatalog
 homepage: https://unitycatalog.io/
 repo: https://github.com/unitycatalog/unitycatalog
 license: Apache-2.0
-category: rag-knowledge
-subCategory: data-connectors
+category: platform-infra
+subCategory: data-platforms
 tags:
   - Connector
   - Data

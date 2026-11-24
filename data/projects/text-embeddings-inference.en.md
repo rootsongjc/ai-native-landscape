@@ -4,8 +4,8 @@ slug: text-embeddings-inference
 homepage: https://huggingface.co/docs/text-embeddings-inference
 repo: https://github.com/huggingface/text-embeddings-inference
 license: Apache-2.0
-category: rag-knowledge
-subCategory: retrieval-indexing
+category: inference-serving
+subCategory: model-serving
 tags:
   - Inference
   - RAG

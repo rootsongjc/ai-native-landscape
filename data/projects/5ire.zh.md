@@ -4,8 +4,8 @@ slug: 5ire
 homepage: https://5ire.app/
 repo: https://github.com/nanbingxyz/5ire
 license: Apache-2.0
-category: coding-devtools
-subCategory: mcp-tools
+category: applications-products
+subCategory: desktop-clients
 tags:
   - Dev Tools
   - MCP

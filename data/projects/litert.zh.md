@@ -5,7 +5,7 @@ homepage: https://ai.google.dev/edge/litert/next/overview
 repo: https://github.com/google-ai-edge/litert
 license: Apache-2.0
 category: inference-serving
-subCategory: inference-runtimes
+subCategory: edge-local-inference
 tags:
   - Edge
   - Inference

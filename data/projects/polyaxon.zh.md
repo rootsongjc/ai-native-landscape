@@ -5,7 +5,7 @@ homepage: https://polyaxon.com/docs/
 repo: https://github.com/polyaxon/polyaxon
 license: Apache-2.0
 category: training-optimization
-subCategory: observability-monitoring
+subCategory: experiment-mlops
 tags:
   - Orchestration
   - Workflow

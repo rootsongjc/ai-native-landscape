@@ -4,8 +4,8 @@ slug: nanochat
 homepage: null
 repo: https://github.com/karpathy/nanochat
 license: MIT
-category: applications-products
-subCategory: productivity-tools
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - Application
 description: 一个面向可复现训练与部署的轻量级 ChatGPT 克隆，目标实现低成本（$100 级别）可运行的端到端 LLM 系统。

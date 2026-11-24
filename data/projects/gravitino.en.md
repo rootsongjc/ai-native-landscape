@@ -4,8 +4,8 @@ slug: gravitino
 homepage: https://gravitino.apache.org
 repo: https://github.com/apache/gravitino
 license: Apache-2.0
-category: rag-knowledge
-subCategory: data-connectors
+category: platform-infra
+subCategory: data-platforms
 tags:
   - Connector
   - Data

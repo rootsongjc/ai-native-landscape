@@ -5,7 +5,7 @@ homepage: https://lancedb.github.io/lancedb/
 repo: https://github.com/lancedb/lancedb
 license: Apache-2.0
 category: rag-knowledge
-subCategory: retrieval-indexing
+subCategory: vector-databases
 tags:
   - Data
   - RAG

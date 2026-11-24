@@ -5,39 +5,40 @@ homepage: https://lightx2v-en.readthedocs.io/en/latest/
 repo: https://github.com/modeltc/lightx2v
 license: Apache-2.0
 category: models-modalities
-subCategory: multimodal
+subCategory: image-video-generation
 tags:
-  - Embedding
+  - Video Generation
+  - Image Generation
   - Inference
-  - Vision
+  - Diffusion
+  - Quantization
 description: >-
-  LightX2V provides lightweight image-to-vector models and tooling for efficient visual feature extraction and vector
-  retrieval in resource-constrained environments.
+  LightX2V is a lightweight inference framework for image and video generation models that speeds up diffusion
+  inference with step distillation, quantization, and parallelism, and deploys across a wide range of hardware.
 author: ModelTC
 ossDate: '2025-03-24T10:27:56Z'
 featured: false
 status: tracked
 ---
 
-LightX2V is a lightweight image-to-video generation inference framework designed for efficient video generation on resource-constrained hardware. It provides optimized model architectures and tooling that enable fast visual feature extraction and video synthesis without demanding heavy computational resources.
+LightX2V is a lightweight inference framework for image and video generation, developed by ModelTC. It puts many generation models behind one inference stack and focuses on making them faster and cheaper to run, so that text-to-video, image-to-video, text-to-image, and image editing workloads fit on the hardware a team actually has.
 
 ## Key Features
 
-- **Lightweight model architectures** that achieve fast inference speeds while maintaining competitive generation quality
-- **Optimized embedding representations** tuned specifically for retrieval and similarity computation tasks
-- **Model compression and knowledge distillation** strategies that reduce parameter counts without significant quality loss
-- **Efficient embedding normalization** for consistent vector representations across diverse visual inputs
-- **Comprehensive documentation** with deployment guides, fine-tuning examples, and benchmark results
+- **One framework for many models**, including the Wan, HunyuanVideo, Qwen-Image, and LTX families, across text-to-video, image-to-video, text-to-image, and image editing
+- **Step distillation**: 4-step and 8-step distilled models and LoRAs that run without classifier-free guidance
+- **Quantization**, including FP8, NVFP4, and GGUF formats
+- **Memory and throughput optimizations** such as block-level offloading, CFG parallelism, and disaggregated deployment
+- **Service API** for running models as a server, with a Docker image for setup
 
 ## Use Cases
 
-- Visual retrieval and similar-image search on edge devices or low-compute environments
-- Lightweight video generation workflows where GPU resources are limited or shared
-- Efficient visual understanding tasks in resource-constrained production deployments
-- Prototyping image-to-video pipelines on consumer-grade hardware
+- Serving image and video generation with fewer inference steps and lower latency
+- Running large video models on GPUs with limited memory
+- Deploying generation models on non-NVIDIA accelerators and AI PCs
 
 ## Technical Highlights
 
-- Focuses on model compression, knowledge distillation, and embedding normalization to balance speed and quality
-- Lightweight design allows deployment on hardware with limited memory and compute budgets while preserving accuracy
-- Modular architecture supports both standalone inference and integration into larger multimedia pipelines
+- Supports autoregressive video generation as well as bidirectional diffusion inference
+- Deploys beyond NVIDIA GPUs, including AMD ROCm, Ascend, Cambricon, Hygon, and Intel AI PC platforms
+- Distilled and quantized weights are published on Hugging Face alongside the framework

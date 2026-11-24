@@ -4,8 +4,8 @@ slug: utopia
 homepage: null
 repo: https://github.com/deeplethe/utopia
 license: Apache-2.0
-category: models-modalities
-subCategory: foundation-models
+category: rag-knowledge
+subCategory: knowledge-graphs
 tags:
   - Knowledge Graph
   - Bitemporal

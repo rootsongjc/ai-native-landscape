@@ -4,8 +4,8 @@ slug: docutranslate
 homepage: https://pypi.org/project/docutranslate/
 repo: https://github.com/xunbu/docutranslate
 license: MPL-2.0
-category: platform-infra
-subCategory: data-platforms
+category: rag-knowledge
+subCategory: document-processing
 tags:
   - Data
   - Dev Tools

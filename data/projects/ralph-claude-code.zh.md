@@ -4,8 +4,8 @@ slug: ralph-claude-code
 homepage: https://frankbria.com
 repo: https://github.com/frankbria/ralph-claude-code
 license: MIT
-category: agents
-subCategory: agent-frameworks
+category: coding-devtools
+subCategory: coding-agents
 tags:
   - Agent Framework
   - Agents

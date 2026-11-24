@@ -5,7 +5,7 @@ homepage: null
 repo: https://github.com/microsoft/graphrag
 license: MIT
 category: rag-knowledge
-subCategory: retrieval-indexing
+subCategory: knowledge-graphs
 tags:
   - Data
   - RAG
