@@ -26,6 +26,9 @@ npm run preview              # Preview built site
 
 # Data validation
 npm run validate             # Runs scripts/validate-data.mjs against data/schema.project.json
+
+# Landscape map logos
+npm run sync:avatars         # Resolve new GitHub owners into data/avatars.json (incremental; --force to redo all)
 ```
 
 Script unit tests use the Node.js built-in runner: `npm test` (files matching `scripts/*.test.mjs`).
@@ -40,6 +43,7 @@ Submission triage: `npm run triage -- --number <n> --dry-run` checks an issue or
 - **Taxonomy**: `data/categories.yaml` — two-level hierarchy (category → subCategory)
 - **Schema**: `data/schema.project.json` — JSON Schema for project validation (ajv)
 - **Exports**: `exports/` — generated JSON output
+- **Avatars**: `data/avatars.json` — GitHub owner → numeric avatar id, written by `npm run sync:avatars`. The landscape map needs the direct `avatars.githubusercontent.com/u/<id>` URL because it is CORS-enabled and can be drawn into the PNG/PDF export; owners missing from the file still show a logo on the page but are exported as initials. Run the script after adding projects.
 
 Project frontmatter fields: `name`, `slug`, `homepage`, `repo`, `license`, `category`, `subCategory`, `tags`, `logo`, `status`, `author`, `ossDate`, `featured`, `thumbnail`, `source`, plus `score` object (`health`, `activity`, `community`, `quality`, `sustainability`).
 
@@ -59,12 +63,13 @@ Data pipeline: `loadProjectDocuments()` → merge bilingual files → AJV valida
 
 ### Components (`src/components/`)
 
-- `LandscapeGrid.astro` — main grid orchestrator (search + filters + cards)
+- `LandscapeGrid.astro` — homepage orchestrator; shows the landscape map by default with a Landscape/List switch (`?display=list`, remembered in `localStorage`) to the category overview + directory (search + filters + cards)
 - `LandscapeToolbar.astro` — search/filter controls
 - `LandscapeCategory.astro` — category section rendering
 - `LandscapeCard.astro` — individual project card with scores
 - `ProjectDetail.astro` — full project detail page (35K, largest component)
 - `LandscapeHeatmap.astro` — visual heatmap view
+- `LandscapeMap.astro` — CNCF-style landscape picture, the default homepage view (category boxes → subcategory boxes → logo tiles), with hover/click detail popover, search highlight, zoom, fullscreen, and client-side PNG/PDF export (canvas + `jspdf`)
 - `LandscapeIndex.astro` — index/search page
 
 ### Scoring

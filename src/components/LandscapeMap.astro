@@ -1,0 +1,1301 @@
+---
+import {
+  categoryName,
+  getLandscape,
+  localizedPath,
+  projectDescription,
+  SITE,
+  subCategoryName,
+  ui,
+} from '../lib/landscape.mjs';
+import avatarIds from '../../data/avatars.json';
+
+const { lang = 'en' } = Astro.props;
+const copy = ui(lang);
+const landscape = getLandscape();
+
+const HIDDEN_STATUSES = new Set(['archived', 'unavailable', 'inactive']);
+const PALETTE = ['#2563eb', '#7c3aed', '#0891b2', '#059669', '#d97706', '#dc2626', '#db2777', '#4f46e5'];
+const GRID_COLUMNS = 12;
+// A featured project takes a 2×2 tile.
+const FEATURED_UNITS = 4;
+
+// The export draws logos into a canvas, which needs CORS-clean images. Only the direct
+// avatar URL sends CORS headers; the github.com/<owner>.png redirect does not, so owners
+// missing from data/avatars.json (npm run sync:avatars) are exported as initials.
+function avatarFor(project) {
+  const owner = project.repoSlug?.split('/')[0];
+  if (!owner) return { src: '', cors: false };
+  const id = avatarIds[owner.toLowerCase()];
+  return id
+    ? { src: `https://avatars.githubusercontent.com/u/${id}?s=96&v=4`, cors: true }
+    : { src: `https://github.com/${encodeURIComponent(owner)}.png?size=96`, cors: false };
+}
+
+const categories = landscape.categories
+  .map((category) => {
+    const subcategories = (category.subcategories || [])
+      .map((subcategory) => {
+        const projects = (landscape.bySubCategory[subcategory.key] || [])
+          .filter((project) => project.category === category.key && !HIDDEN_STATUSES.has(project.status))
+          .sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)));
+        const units = projects.reduce((sum, project) => sum + (project.featured ? FEATURED_UNITS : 1), 0);
+        return {
+          key: subcategory.key,
+          name: subCategoryName(subcategory.key, lang),
+          projects,
+          units,
+          columns: Math.min(14, Math.max(4, Math.ceil(Math.sqrt(units * 1.8)))),
+        };
+      })
+      .filter((subcategory) => subcategory.projects.length > 0)
+      .sort((a, b) => b.units - a.units);
+    const count = subcategories.reduce((sum, subcategory) => sum + subcategory.projects.length, 0);
+    return { key: category.key, name: categoryName(category, lang), subcategories, count };
+  })
+  .filter((category) => category.count > 0)
+  .sort((a, b) => b.count - a.count)
+  .map((category, index) => ({ ...category, color: PALETTE[index % PALETTE.length] }));
+
+// Categories share a row in pairs, each taking a width proportional to its size.
+categories.forEach((category, index) => {
+  const partner = categories[index % 2 === 0 ? index + 1 : index - 1];
+  category.span = partner
+    ? Math.min(8, Math.max(4, Math.round((GRID_COLUMNS * category.count) / (category.count + partner.count))))
+    : GRID_COLUMNS;
+});
+for (let index = 0; index + 1 < categories.length; index += 2) {
+  categories[index + 1].span = GRID_COLUMNS - categories[index].span;
+}
+
+const projectCount = categories.reduce((sum, category) => sum + category.count, 0);
+
+const projectData = {};
+categories.forEach((category) => {
+  category.subcategories.forEach((subcategory) => {
+    subcategory.projects.forEach((project) => {
+      projectData[project.slug] = {
+        n: project.name,
+        d: projectDescription(project, lang),
+        r: project.repoSlug || '',
+        h: project.homepage || '',
+        l: project.license || '',
+        a: project.authorLocalized?.[lang] || project.author || '',
+        t: (project.tags || []).slice(0, 4),
+        c: category.name,
+        s: subcategory.name,
+        f: Boolean(project.featured),
+      };
+    });
+  });
+});
+
+const clientConfig = {
+  lang,
+  title: copy.lmapTitle,
+  siteHost: new URL(SITE.url).host,
+  summary: `${projectCount} ${copy.projects} · ${categories.length} ${copy.categories}`,
+  labels: {
+    matches: copy.lmapMatches,
+    fullscreen: copy.lmapFullscreen,
+    exitFullscreen: copy.lmapExitFullscreen,
+    generating: copy.lmapGenerating,
+    exportFailed: copy.lmapExportFailed,
+    details: copy.lmapDetails,
+    website: copy.website,
+    license: copy.license,
+    score: copy.lmapScore,
+    close: copy.lmapClose,
+    featured: copy.lmapFeatured,
+  },
+};
+
+const safeJson = (value) => JSON.stringify(value).replace(/</g, '\\u003c');
+---
+
+<section class="lmap" id="landscape-map" data-lmap aria-labelledby="lmap-title">
+  <div class="lmap__head">
+    <div class="lmap__heading">
+      <h2 id="lmap-title">{copy.lmapTitle}</h2>
+      <p>{copy.lmapDescription}</p>
+    </div>
+    <div class="lmap__tools">
+      <label class="lmap__search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="search" placeholder={copy.lmapSearch} aria-label={copy.lmapSearch} autocomplete="off" data-lmap-search />
+      </label>
+      <span class="lmap__matches" data-lmap-matches aria-live="polite"></span>
+      <div class="lmap__group">
+        <button type="button" class="lmap__btn lmap__btn--icon" data-lmap-zoom="-1" title={copy.lmapZoomOut} aria-label={copy.lmapZoomOut}>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <button type="button" class="lmap__btn lmap__btn--icon" data-lmap-zoom="1" title={copy.lmapZoomIn} aria-label={copy.lmapZoomIn}>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <button type="button" class="lmap__btn lmap__btn--icon" data-lmap-fullscreen title={copy.lmapFullscreen} aria-label={copy.lmapFullscreen}>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg>
+        </button>
+      </div>
+      <div class="lmap__group">
+        <button type="button" class="lmap__btn" data-lmap-export="png" title={copy.lmapDownloadPng}>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span data-lmap-export-label>PNG</span>
+        </button>
+        <button type="button" class="lmap__btn" data-lmap-export="pdf" title={copy.lmapDownloadPdf}>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span data-lmap-export-label>PDF</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="lmap__body" data-lmap-body>
+    {categories.map((category) => (
+      <section class="lmap__cat" style={`--cat:${category.color};--span:${category.span}`} data-lmap-cat>
+        <header class="lmap__cat-head">
+          <a href={localizedPath(`/categories/${category.key}/`, lang)} data-lmap-cat-name>{category.name}</a>
+          <span data-lmap-cat-count>{category.count}</span>
+        </header>
+        <div class="lmap__subs">
+          {category.subcategories.map((subcategory) => (
+            <div class="lmap__sub" style={`--units:${subcategory.units};--cols:${subcategory.columns}`} data-lmap-sub>
+              <a class="lmap__sub-head" href={localizedPath(`/categories/${category.key}/?sub=${subcategory.key}`, lang)}>
+                <span class="lmap__sub-name" data-lmap-sub-name>{subcategory.name}</span>
+                <span class="lmap__sub-count" data-lmap-sub-count>{subcategory.projects.length}</span>
+              </a>
+              <div class="lmap__tiles">
+                {subcategory.projects.map((project) => {
+                  const avatar = avatarFor(project);
+                  return (
+                    <a
+                      class:list={['lmap__tile', { 'lmap__tile--featured': project.featured }]}
+                      href={localizedPath(`/projects/${project.slug}/`, lang)}
+                      aria-label={project.name}
+                      data-lmap-tile={project.slug}
+                    >
+                      {avatar.src && (
+                        <img
+                          src={avatar.src}
+                          alt=""
+                          width="48"
+                          height="48"
+                          loading="lazy"
+                          decoding="async"
+                          crossorigin={avatar.cors ? 'anonymous' : undefined}
+                          onerror="this.hidden=true;this.nextElementSibling.hidden=false"
+                        />
+                      )}
+                      <span class="lmap__tile-initial" hidden={Boolean(avatar.src)}>{project.name.slice(0, 2).toUpperCase()}</span>
+                    </a>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+
+  <p class="lmap__note">{copy.lmapNote}</p>
+
+  <div class="lmap__pop" data-lmap-pop role="dialog" aria-live="polite" hidden></div>
+
+  <script type="application/json" data-lmap-data set:html={safeJson(projectData)}></script>
+  <script type="application/json" data-lmap-config set:html={safeJson(clientConfig)}></script>
+</section>
+
+<script>
+  const root = document.querySelector('[data-lmap]');
+  if (root) initLandscapeMap(root);
+
+  function initLandscapeMap(root) {
+    const body = root.querySelector('[data-lmap-body]');
+    const pop = root.querySelector('[data-lmap-pop]');
+    const data = JSON.parse(root.querySelector('[data-lmap-data]').textContent || '{}');
+    const config = JSON.parse(root.querySelector('[data-lmap-config]').textContent || '{}');
+    const labels = config.labels;
+    const tiles = [...body.querySelectorAll('[data-lmap-tile]')];
+
+    function el(tag, className, text) {
+      const node = document.createElement(tag);
+      if (className) node.className = className;
+      if (text != null) node.textContent = text;
+      return node;
+    }
+
+    function compact(value) {
+      if (!Number.isFinite(value)) return '';
+      if (value >= 1000) return `${(value / 1000).toFixed(value >= 10000 ? 0 : 1)}k`;
+      return String(value);
+    }
+
+    // ---- Detail popover -------------------------------------------------
+    let activeTile = null;
+    let pinned = false;
+    let hideTimer = 0;
+    let restoringFocus = false;
+
+    function scoreText(repo) {
+      const scores = window.aiLandscapeScores?.getCachedScore(repo);
+      if (!Number.isFinite(scores?.health)) return '';
+      const health = Math.round(scores.health);
+      const tier = window.aiLandscapeScores.scoreLabel(health);
+      return `${labels.score} ${health}${tier ? ` · ${tier}` : ''}`;
+    }
+
+    function renderPopover(tile) {
+      const slug = tile.dataset.lmapTile;
+      const project = data[slug];
+      if (!project) return false;
+      pop.replaceChildren();
+      pop.setAttribute('aria-label', project.n);
+
+      const head = el('div', 'lmap__pop-head');
+      const logo = el('span', 'lmap__pop-logo');
+      const tileImage = tile.querySelector('img');
+      if (tileImage && !tileImage.hidden) {
+        const image = el('img');
+        image.src = tileImage.src;
+        image.alt = '';
+        logo.append(image);
+      } else {
+        logo.textContent = project.n.slice(0, 2).toUpperCase();
+      }
+      const title = el('div', 'lmap__pop-title');
+      title.append(el('strong', '', project.n));
+      title.append(el('span', '', [project.a, `${project.c} / ${project.s}`].filter(Boolean).join(' · ')));
+      const close = el('button', 'lmap__pop-close', '×');
+      close.type = 'button';
+      close.setAttribute('aria-label', labels.close);
+      close.addEventListener('click', () => hidePopover(true));
+      head.append(logo, title, close);
+      pop.append(head);
+
+      if (project.d) pop.append(el('p', 'lmap__pop-desc', project.d));
+
+      const meta = el('div', 'lmap__pop-meta');
+      if (project.f) meta.append(el('span', 'lmap__pop-chip lmap__pop-chip--accent', labels.featured));
+      const score = el('span', 'lmap__pop-chip', scoreText(project.r));
+      score.dataset.lmapPopScore = '';
+      score.hidden = !score.textContent;
+      meta.append(score);
+      const stars = el('span', 'lmap__pop-chip');
+      stars.dataset.lmapPopStars = '';
+      stars.hidden = true;
+      meta.append(stars);
+      if (project.l) meta.append(el('span', 'lmap__pop-chip', `${labels.license}: ${project.l}`));
+      project.t.forEach((tag) => meta.append(el('span', 'lmap__pop-chip lmap__pop-chip--tag', tag)));
+      pop.append(meta);
+
+      const actions = el('div', 'lmap__pop-actions');
+      const details = el('a', 'lmap__pop-link lmap__pop-link--primary', labels.details);
+      details.href = tile.href;
+      actions.append(details);
+      if (project.r) {
+        const repo = el('a', 'lmap__pop-link', 'GitHub');
+        repo.href = `https://github.com/${project.r}`;
+        repo.target = '_blank';
+        repo.rel = 'noopener';
+        actions.append(repo);
+      }
+      if (project.h) {
+        const home = el('a', 'lmap__pop-link', labels.website);
+        home.href = project.h;
+        home.target = '_blank';
+        home.rel = 'noopener';
+        actions.append(home);
+      }
+      pop.append(actions);
+
+      const applyLiveData = () => {
+        if (activeTile !== tile) return;
+        const text = scoreText(project.r);
+        score.textContent = text;
+        score.hidden = !text;
+        const starCount = window.aiLandscapeScores?.getProjectMetrics?.(project.r)?.stars;
+        stars.textContent = Number.isFinite(starCount) ? `★ ${compact(starCount)}` : '';
+        stars.hidden = !stars.textContent;
+        placePopover(tile);
+      };
+      applyLiveData();
+      if (project.r && window.aiLandscapeScores && !window.aiLandscapeScores.getProjectData?.(project.r)) {
+        window.aiLandscapeScores.fetchScores([project.r]).then(applyLiveData).catch(() => {});
+      }
+      return true;
+    }
+
+    function placePopover(tile) {
+      const margin = 10;
+      const rect = tile.getBoundingClientRect();
+      const width = pop.offsetWidth;
+      const height = pop.offsetHeight;
+      let left = rect.left + rect.width / 2 - width / 2;
+      left = Math.max(margin, Math.min(left, window.innerWidth - width - margin));
+      let top = rect.bottom + margin;
+      if (top + height > window.innerHeight - margin && rect.top - margin - height >= margin) {
+        top = rect.top - margin - height;
+      }
+      top = Math.max(margin, Math.min(top, window.innerHeight - height - margin));
+      pop.style.left = `${Math.round(left)}px`;
+      pop.style.top = `${Math.round(top)}px`;
+    }
+
+    function showPopover(tile, pin) {
+      clearTimeout(hideTimer);
+      activeTile?.classList.remove('is-active');
+      activeTile = tile;
+      pinned = pin;
+      if (!renderPopover(tile)) return;
+      tile.classList.add('is-active');
+      pop.classList.toggle('lmap__pop--pinned', pin);
+      pop.hidden = false;
+      placePopover(tile);
+    }
+
+    function hidePopover(restoreFocus = false) {
+      clearTimeout(hideTimer);
+      if (!activeTile) return;
+      const tile = activeTile;
+      tile.classList.remove('is-active');
+      activeTile = null;
+      pinned = false;
+      pop.hidden = true;
+      if (restoreFocus) {
+        // Returning focus to the tile must not reopen the hover popover.
+        restoringFocus = true;
+        tile.focus({ preventScroll: true });
+        restoringFocus = false;
+      }
+    }
+
+    function scheduleHide() {
+      clearTimeout(hideTimer);
+      hideTimer = window.setTimeout(() => {
+        if (!pinned) hidePopover();
+      }, 160);
+    }
+
+    body.addEventListener('pointerover', (event) => {
+      if (event.pointerType !== 'mouse' || pinned) return;
+      const tile = event.target.closest('[data-lmap-tile]');
+      if (tile && tile !== activeTile) showPopover(tile, false);
+      else if (tile) clearTimeout(hideTimer);
+    });
+    body.addEventListener('pointerout', (event) => {
+      if (event.pointerType !== 'mouse' || pinned) return;
+      const tile = event.target.closest('[data-lmap-tile]');
+      if (tile && !tile.contains(event.relatedTarget)) scheduleHide();
+    });
+    pop.addEventListener('pointerenter', () => clearTimeout(hideTimer));
+    pop.addEventListener('pointerleave', () => {
+      if (!pinned) scheduleHide();
+    });
+
+    body.addEventListener('focusin', (event) => {
+      const tile = event.target.closest('[data-lmap-tile]');
+      if (tile && !pinned && !restoringFocus && tile.matches(':focus-visible')) showPopover(tile, false);
+    });
+    body.addEventListener('focusout', (event) => {
+      if (!pinned && !pop.contains(event.relatedTarget)) scheduleHide();
+    });
+
+    body.addEventListener('click', (event) => {
+      const tile = event.target.closest('[data-lmap-tile]');
+      if (!tile || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      if (pinned && activeTile === tile) {
+        hidePopover();
+        return;
+      }
+      showPopover(tile, true);
+      // The popover sits after the whole map in DOM order, so a keyboard activation
+      // (detail 0) moves focus into it rather than leaving hundreds of tiles to tab through.
+      if (event.detail === 0) pop.querySelector('.lmap__pop-link')?.focus({ preventScroll: true });
+    });
+
+    // Tabbing past either end of the popover closes it and returns to the tile.
+    pop.addEventListener('keydown', (event) => {
+      if (event.key !== 'Tab') return;
+      const focusable = [...pop.querySelectorAll('a[href], button')];
+      const edge = event.shiftKey ? focusable[0] : focusable[focusable.length - 1];
+      if (document.activeElement !== edge) return;
+      event.preventDefault();
+      hidePopover(true);
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!pinned) return;
+      if (pop.contains(event.target) || event.target.closest?.('[data-lmap-tile]')) return;
+      hidePopover();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && activeTile) hidePopover(pinned);
+    });
+    const reposition = () => {
+      if (!activeTile) return;
+      if (pinned) placePopover(activeTile);
+      else hidePopover();
+    };
+    window.addEventListener('scroll', reposition, { passive: true });
+    root.addEventListener('scroll', reposition, { passive: true });
+    window.addEventListener('resize', reposition);
+
+    // ---- Search highlight -----------------------------------------------
+    const searchInput = root.querySelector('[data-lmap-search]');
+    const matches = root.querySelector('[data-lmap-matches]');
+    const haystack = new Map(
+      tiles.map((tile) => {
+        const project = data[tile.dataset.lmapTile] || {};
+        return [tile, [project.n, project.d, project.a, project.r, project.s, project.c, ...(project.t || [])].join(' ').toLowerCase()];
+      }),
+    );
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.trim().toLowerCase();
+      let count = 0;
+      tiles.forEach((tile) => {
+        const match = Boolean(query) && haystack.get(tile).includes(query);
+        tile.classList.toggle('is-match', match);
+        if (match) count += 1;
+      });
+      root.classList.toggle('lmap--filtering', Boolean(query));
+      matches.textContent = query ? labels.matches.replace('{count}', String(count)) : '';
+    });
+
+    // ---- Zoom and fullscreen --------------------------------------------
+    const TILE_SIZES = [24, 30, 36, 44, 54, 66];
+    let tileSize = parseFloat(getComputedStyle(root).getPropertyValue('--lmap-tile')) || 36;
+    const zoomButtons = [...root.querySelectorAll('[data-lmap-zoom]')];
+    function updateZoomButtons() {
+      zoomButtons.forEach((button) => {
+        const direction = Number(button.dataset.lmapZoom);
+        button.disabled = direction < 0 ? tileSize <= TILE_SIZES[0] : tileSize >= TILE_SIZES[TILE_SIZES.length - 1];
+      });
+    }
+    zoomButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const direction = Number(button.dataset.lmapZoom);
+        const next = direction < 0
+          ? [...TILE_SIZES].reverse().find((size) => size < tileSize)
+          : TILE_SIZES.find((size) => size > tileSize);
+        if (!next) return;
+        tileSize = next;
+        root.style.setProperty('--lmap-tile', `${next}px`);
+        hidePopover();
+        updateZoomButtons();
+      });
+    });
+    updateZoomButtons();
+
+    const fullscreenButton = root.querySelector('[data-lmap-fullscreen]');
+    if (!root.requestFullscreen) {
+      fullscreenButton.hidden = true;
+    } else {
+      fullscreenButton.addEventListener('click', () => {
+        if (document.fullscreenElement === root) document.exitFullscreen();
+        else root.requestFullscreen().catch(() => {});
+      });
+      document.addEventListener('fullscreenchange', () => {
+        const label = document.fullscreenElement === root ? labels.exitFullscreen : labels.fullscreen;
+        fullscreenButton.title = label;
+        fullscreenButton.setAttribute('aria-label', label);
+        hidePopover();
+      });
+    }
+
+    // ---- PNG / PDF export -----------------------------------------------
+    const EXPORT_WIDTH = 2000;
+    const EXPORT_PADDING = 40;
+    const EXPORT_HEADER = 96;
+    const EXPORT_FOOTER = 56;
+    // Stay below the canvas area limit of Safari.
+    const MAX_CANVAS_AREA = 16_000_000;
+
+    function loadImage(src) {
+      return new Promise((resolve) => {
+        const image = new Image();
+        const timer = setTimeout(() => resolve(null), 15000);
+        image.crossOrigin = 'anonymous';
+        image.onload = () => {
+          clearTimeout(timer);
+          resolve(image);
+        };
+        image.onerror = () => {
+          clearTimeout(timer);
+          resolve(null);
+        };
+        image.src = src;
+      });
+    }
+
+    async function loadImages(sources, onProgress) {
+      const unique = [...new Set(sources.filter(Boolean))];
+      const loaded = new Map();
+      let cursor = 0;
+      let done = 0;
+      const worker = async () => {
+        while (cursor < unique.length) {
+          const src = unique[cursor];
+          cursor += 1;
+          loaded.set(src, await loadImage(src));
+          done += 1;
+          onProgress(done / unique.length);
+        }
+      };
+      await Promise.all(Array.from({ length: Math.min(24, unique.length) }, worker));
+      return loaded;
+    }
+
+    function roundRect(ctx, x, y, width, height, radius) {
+      ctx.beginPath();
+      if (ctx.roundRect) ctx.roundRect(x, y, width, height, radius);
+      else ctx.rect(x, y, width, height);
+    }
+
+    function fitText(ctx, text, maxWidth) {
+      if (ctx.measureText(text).width <= maxWidth) return text;
+      let fitted = text;
+      while (fitted.length > 1 && ctx.measureText(`${fitted}…`).width > maxWidth) fitted = fitted.slice(0, -1);
+      return `${fitted}…`;
+    }
+
+    async function renderCanvas(onProgress) {
+      const sources = new Map(tiles.map((tile) => [tile.dataset.lmapTile, tile.querySelector('img')?.src || '']));
+      const images = await loadImages([...sources.values()], onProgress);
+
+      const stage = el('div', 'lmap-export-stage');
+      stage.style.width = `${EXPORT_WIDTH}px`;
+      const clone = body.cloneNode(true);
+      clone.querySelectorAll('img').forEach((image) => image.remove());
+      clone.querySelectorAll('.is-match, .is-active').forEach((node) => node.classList.remove('is-match', 'is-active'));
+      stage.append(clone);
+      document.body.append(stage);
+
+      try {
+        const origin = clone.getBoundingClientRect();
+        const offsetX = EXPORT_PADDING;
+        const offsetY = EXPORT_HEADER;
+        const box = (node) => {
+          const rect = node.getBoundingClientRect();
+          return { x: rect.left - origin.left + offsetX, y: rect.top - origin.top + offsetY, w: rect.width, h: rect.height };
+        };
+
+        const width = EXPORT_WIDTH + EXPORT_PADDING * 2;
+        const height = Math.ceil(origin.height) + EXPORT_HEADER + EXPORT_FOOTER;
+        const scale = Math.min(2, Math.sqrt(MAX_CANVAS_AREA / (width * height)));
+        const canvas = document.createElement('canvas');
+        canvas.width = Math.round(width * scale);
+        canvas.height = Math.round(height * scale);
+        const ctx = canvas.getContext('2d');
+        ctx.scale(canvas.width / width, canvas.height / height);
+        ctx.imageSmoothingQuality = 'high';
+
+        const rootStyle = getComputedStyle(document.documentElement);
+        const color = (name, fallback) => rootStyle.getPropertyValue(name).trim() || fallback;
+        const palette = {
+          bg: color('--bg', '#f5f7fa'),
+          surface: color('--surface', '#ffffff'),
+          soft: color('--surface-soft', '#edf1f5'),
+          text: color('--text', '#141c28'),
+          muted: color('--muted', '#4f5c6e'),
+          border: color('--border', '#d6dde5'),
+        };
+        const fontFamily = getComputedStyle(document.body).fontFamily;
+        const font = (weight, size) => `${weight} ${size}px ${fontFamily}`;
+        const drawLabel = (node, align = 'left') => {
+          const rect = box(node);
+          const style = getComputedStyle(node);
+          ctx.font = font(style.fontWeight, parseFloat(style.fontSize));
+          ctx.fillStyle = style.color;
+          ctx.textAlign = align;
+          ctx.textBaseline = 'middle';
+          const text = node.textContent.trim();
+          // Counts never shrink in the layout; only left-aligned names can be clipped.
+          if (align === 'right') ctx.fillText(text, rect.x + rect.w, rect.y + rect.h / 2 + 0.5);
+          else ctx.fillText(fitText(ctx, text, rect.w + 1), rect.x, rect.y + rect.h / 2 + 0.5);
+        };
+
+        ctx.fillStyle = palette.bg;
+        ctx.fillRect(0, 0, width, height);
+
+        ctx.textBaseline = 'middle';
+        ctx.textAlign = 'left';
+        ctx.fillStyle = palette.text;
+        ctx.font = font(700, 36);
+        ctx.fillText(config.title, EXPORT_PADDING, 42);
+        ctx.fillStyle = palette.muted;
+        ctx.font = font(400, 16);
+        ctx.fillText(`${config.summary} · ${new Date().toISOString().slice(0, 10)}`, EXPORT_PADDING, 76);
+        ctx.textAlign = 'right';
+        ctx.font = font(600, 18);
+        ctx.fillText(config.siteHost, width - EXPORT_PADDING, 46);
+
+        clone.querySelectorAll('[data-lmap-cat]').forEach((category) => {
+          const rect = box(category);
+          const head = box(category.querySelector('.lmap__cat-head'));
+          const accent = getComputedStyle(category).getPropertyValue('--cat').trim();
+          const radius = 10;
+          roundRect(ctx, rect.x, rect.y, rect.w, rect.h, radius);
+          ctx.fillStyle = accent;
+          ctx.fill();
+          const inset = 1.5;
+          const innerTop = head.y + head.h;
+          roundRect(ctx, rect.x + inset, innerTop, rect.w - inset * 2, rect.y + rect.h - innerTop - inset, [0, 0, radius - inset, radius - inset]);
+          ctx.fillStyle = palette.surface;
+          ctx.fill();
+          drawLabel(category.querySelector('[data-lmap-cat-name]'));
+          drawLabel(category.querySelector('[data-lmap-cat-count]'), 'right');
+
+          category.querySelectorAll('[data-lmap-sub]').forEach((subcategory) => {
+            const subRect = box(subcategory);
+            roundRect(ctx, subRect.x + 0.5, subRect.y + 0.5, subRect.w - 1, subRect.h - 1, 8);
+            ctx.fillStyle = palette.soft;
+            ctx.fill();
+            ctx.strokeStyle = palette.border;
+            ctx.lineWidth = 1;
+            ctx.stroke();
+            drawLabel(subcategory.querySelector('[data-lmap-sub-name]'));
+            drawLabel(subcategory.querySelector('[data-lmap-sub-count]'), 'right');
+          });
+        });
+
+        clone.querySelectorAll('[data-lmap-tile]').forEach((tile) => {
+          const rect = box(tile);
+          const slug = tile.dataset.lmapTile;
+          const radius = Math.min(8, rect.w * 0.16);
+          roundRect(ctx, rect.x, rect.y, rect.w, rect.h, radius);
+          ctx.fillStyle = '#ffffff';
+          ctx.fill();
+          const image = images.get(sources.get(slug));
+          if (image) {
+            ctx.save();
+            roundRect(ctx, rect.x, rect.y, rect.w, rect.h, radius);
+            ctx.clip();
+            ctx.drawImage(image, rect.x, rect.y, rect.w, rect.h);
+            ctx.restore();
+          } else {
+            ctx.fillStyle = '#4f5c6e';
+            ctx.font = font(700, Math.round(rect.w * 0.34));
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText((data[slug]?.n || '').slice(0, 2).toUpperCase(), rect.x + rect.w / 2, rect.y + rect.h / 2 + 1);
+          }
+          roundRect(ctx, rect.x + 0.5, rect.y + 0.5, rect.w - 1, rect.h - 1, radius);
+          ctx.strokeStyle = palette.border;
+          ctx.lineWidth = 1;
+          ctx.stroke();
+        });
+
+        ctx.fillStyle = palette.muted;
+        ctx.font = font(400, 14);
+        ctx.textAlign = 'left';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(root.querySelector('.lmap__note').textContent.trim(), EXPORT_PADDING, height - EXPORT_FOOTER / 2);
+        ctx.textAlign = 'right';
+        ctx.fillText(`https://${config.siteHost}`, width - EXPORT_PADDING, height - EXPORT_FOOTER / 2);
+
+        return { canvas, width, height };
+      } finally {
+        stage.remove();
+      }
+    }
+
+    function saveBlob(blob, filename) {
+      const url = URL.createObjectURL(blob);
+      const link = el('a');
+      link.href = url;
+      link.download = filename;
+      document.body.append(link);
+      link.click();
+      link.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
+
+    const exportButtons = [...root.querySelectorAll('[data-lmap-export]')];
+    let rendered = null;
+    let renderedKey = '';
+
+    async function exportAs(format, onProgress) {
+      const key = `${document.documentElement.dataset.theme || ''}`;
+      if (!rendered || renderedKey !== key) {
+        rendered = await renderCanvas(onProgress);
+        renderedKey = key;
+      }
+      const { canvas, width, height } = rendered;
+      const filename = `ai-oss-landscape-${config.lang}-${new Date().toISOString().slice(0, 10)}`;
+      if (format === 'png') {
+        const blob = await new Promise((resolve) => canvas.toBlob(resolve, 'image/png'));
+        if (!blob) throw new Error('PNG encoding failed');
+        saveBlob(blob, `${filename}.png`);
+        return;
+      }
+      const { jsPDF } = await import('jspdf');
+      const pageWidth = width * 0.75;
+      const pageHeight = height * 0.75;
+      const pdf = new jsPDF({
+        orientation: pageWidth > pageHeight ? 'landscape' : 'portrait',
+        unit: 'pt',
+        format: [pageWidth, pageHeight],
+        compress: true,
+      });
+      pdf.addImage(canvas.toDataURL('image/jpeg', 0.92), 'JPEG', 0, 0, pageWidth, pageHeight);
+      pdf.save(`${filename}.pdf`);
+    }
+
+    exportButtons.forEach((button) => {
+      const label = button.querySelector('[data-lmap-export-label]');
+      const idleText = label.textContent;
+      button.addEventListener('click', async () => {
+        exportButtons.forEach((other) => { other.disabled = true; });
+        label.textContent = `${labels.generating}…`;
+        try {
+          await exportAs(button.dataset.lmapExport, (progress) => {
+            label.textContent = `${labels.generating} ${Math.round(progress * 100)}%`;
+          });
+          label.textContent = idleText;
+        } catch (error) {
+          console.error(error);
+          label.textContent = labels.exportFailed;
+          setTimeout(() => { label.textContent = idleText; }, 3000);
+        } finally {
+          exportButtons.forEach((other) => { other.disabled = false; });
+        }
+      });
+    });
+  }
+</script>
+
+<style is:global>
+  .lmap {
+    --lmap-tile: 36px;
+    --lmap-gap: 4px;
+    position: relative;
+    display: grid;
+    gap: 16px;
+    min-width: 0;
+    scroll-margin-top: 80px;
+  }
+
+  .lmap:fullscreen {
+    align-content: start;
+    padding: 20px 24px 32px;
+    overflow: auto;
+    background: var(--bg);
+  }
+
+  .lmap__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 12px 24px;
+  }
+
+  .lmap__heading {
+    display: grid;
+    gap: 4px;
+    min-width: 0;
+    flex: 1 1 320px;
+  }
+
+  .lmap__heading h2 {
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 1.25;
+    color: var(--text);
+  }
+
+  .lmap__heading p {
+    margin: 0;
+    max-width: 70ch;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .lmap__tools {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .lmap__search {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--surface);
+    color: var(--muted);
+  }
+
+  .lmap__search svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+  }
+
+  .lmap .lmap__search input {
+    width: 190px;
+    min-width: 0;
+    min-height: 0;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: var(--text);
+    font-size: 0.82rem;
+    box-shadow: none;
+  }
+
+  .lmap__search:focus-within {
+    border-color: var(--accent);
+  }
+
+  .lmap__matches {
+    font-size: 0.78rem;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  .lmap__matches:empty {
+    display: none;
+  }
+
+  .lmap__group {
+    display: flex;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--surface);
+    overflow: hidden;
+  }
+
+  .lmap__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    height: 34px;
+    padding: 0 12px;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    color: var(--text);
+    font-size: 0.8rem;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  .lmap__btn + .lmap__btn {
+    border-left: 1px solid var(--border);
+  }
+
+  .lmap__btn--icon {
+    width: 36px;
+    padding: 0;
+  }
+
+  .lmap__btn svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+  }
+
+  .lmap__btn:hover:not(:disabled) {
+    background: var(--surface-soft);
+    color: var(--accent);
+  }
+
+  .lmap__btn:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+
+  .lmap__body {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .lmap__cat {
+    grid-column: span var(--span, 12);
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    border: 1.5px solid var(--cat);
+    border-radius: 10px;
+    background: var(--surface);
+    overflow: hidden;
+  }
+
+  .lmap__cat-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 5px 10px;
+    background: var(--cat);
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  .lmap__cat-head a {
+    min-width: 0;
+    overflow: hidden;
+    color: inherit;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .lmap__cat-head a:hover {
+    text-decoration: underline;
+  }
+
+  .lmap__cat-head span {
+    font-size: 0.78rem;
+    font-variant-numeric: tabular-nums;
+    opacity: 0.9;
+  }
+
+  .lmap__subs {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 6px;
+  }
+
+  .lmap__sub {
+    flex: var(--units) 1 calc(var(--cols) * (var(--lmap-tile) + var(--lmap-gap)) + 10px);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+    max-width: 100%;
+    padding: 4px 6px 6px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface-soft);
+  }
+
+  .lmap__sub-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 6px;
+    color: var(--muted);
+    font-size: 0.7rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .lmap__sub-head:hover {
+    color: var(--accent);
+  }
+
+  .lmap__sub-name {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .lmap__sub-count {
+    flex-shrink: 0;
+    font-variant-numeric: tabular-nums;
+    opacity: 0.8;
+  }
+
+  .lmap__tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--lmap-tile));
+    grid-auto-rows: var(--lmap-tile);
+    grid-auto-flow: dense;
+    gap: var(--lmap-gap);
+  }
+
+  .lmap__tile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: #fff;
+    overflow: hidden;
+    transition: transform 0.12s ease, box-shadow 0.12s ease, opacity 0.15s ease, border-color 0.12s ease;
+  }
+
+  .lmap__tile--featured {
+    grid-column: span 2;
+    grid-row: span 2;
+    border-radius: 8px;
+  }
+
+  .lmap__tile img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .lmap__tile-initial {
+    color: #4f5c6e;
+    font-size: calc(var(--lmap-tile) * 0.32);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .lmap__tile--featured .lmap__tile-initial {
+    font-size: calc(var(--lmap-tile) * 0.6);
+  }
+
+  .lmap__tile:hover,
+  .lmap__tile:focus-visible,
+  .lmap__tile.is-active {
+    z-index: 2;
+    border-color: var(--cat);
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.22);
+    transform: scale(1.18);
+    outline: none;
+  }
+
+  .lmap__tile--featured:hover,
+  .lmap__tile--featured:focus-visible,
+  .lmap__tile--featured.is-active {
+    transform: scale(1.08);
+  }
+
+  .lmap--filtering .lmap__tile:not(.is-match) {
+    opacity: 0.14;
+    filter: grayscale(1);
+  }
+
+  .lmap--filtering .lmap__tile.is-match {
+    border-color: var(--cat);
+    box-shadow: 0 0 0 2px var(--cat);
+  }
+
+  .lmap__note {
+    margin: 0;
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+
+  .lmap__pop {
+    position: fixed;
+    z-index: 60;
+    display: grid;
+    gap: 10px;
+    width: min(340px, calc(100vw - 20px));
+    padding: 14px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface);
+    color: var(--text);
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.2);
+  }
+
+  .lmap__pop[hidden] {
+    display: none;
+  }
+
+  .lmap__pop--pinned {
+    border-color: var(--accent);
+  }
+
+  .lmap__pop-head {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .lmap__pop-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: #fff;
+    color: #4f5c6e;
+    font-size: 0.85rem;
+    font-weight: 700;
+    overflow: hidden;
+  }
+
+  .lmap__pop-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .lmap__pop-title {
+    display: grid;
+    gap: 2px;
+    min-width: 0;
+  }
+
+  .lmap__pop-title strong {
+    overflow: hidden;
+    font-size: 1rem;
+    line-height: 1.3;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .lmap__pop-title span {
+    font-size: 0.74rem;
+    line-height: 1.4;
+    color: var(--muted);
+  }
+
+  .lmap__pop-close {
+    align-self: start;
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    border: 0;
+    border-radius: 6px;
+    background: transparent;
+    color: var(--muted);
+    font-size: 1.1rem;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  .lmap__pop-close:hover {
+    background: var(--surface-soft);
+    color: var(--text);
+  }
+
+  .lmap__pop-desc {
+    display: -webkit-box;
+    margin: 0;
+    overflow: hidden;
+    font-size: 0.82rem;
+    line-height: 1.55;
+    color: var(--text);
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+  }
+
+  .lmap__pop-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .lmap__pop-chip {
+    padding: 2px 8px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface-soft);
+    font-size: 0.7rem;
+    line-height: 1.5;
+    color: var(--muted);
+  }
+
+  .lmap__pop-chip[hidden] {
+    display: none;
+  }
+
+  .lmap__pop-chip--accent {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+
+  .lmap__pop-chip--tag {
+    border-style: dashed;
+    background: transparent;
+  }
+
+  .lmap__pop-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .lmap__pop-link {
+    padding: 5px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .lmap__pop-link:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .lmap__pop-link--primary,
+  .lmap__pop-link--primary:hover {
+    border-color: var(--accent);
+    background: var(--accent);
+    color: var(--accent-contrast);
+  }
+
+  .lmap-export-stage {
+    --lmap-tile: 40px;
+    --lmap-gap: 4px;
+    position: fixed;
+    top: 0;
+    left: -100000px;
+    pointer-events: none;
+  }
+
+  .lmap-export-stage .lmap__cat {
+    grid-column: span var(--span, 12);
+  }
+
+  .lmap-export-stage .lmap__tile {
+    transition: none;
+    transform: none;
+    opacity: 1;
+    filter: none;
+  }
+
+  @media (max-width: 1023px) {
+    .lmap__body > .lmap__cat {
+      grid-column: 1 / -1;
+    }
+
+    .lmap-export-stage .lmap__body > .lmap__cat {
+      grid-column: span var(--span, 12);
+    }
+  }
+
+  @media (max-width: 720px) {
+    .lmap {
+      --lmap-tile: 30px;
+    }
+
+    .lmap__search {
+      flex: 1 1 100%;
+    }
+
+    .lmap .lmap__search input {
+      width: 100%;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .lmap__tile {
+      transition: none;
+    }
+  }
+</style>
