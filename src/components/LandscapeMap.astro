@@ -236,6 +236,7 @@ const safeJson = (value) => JSON.stringify(value).replace(/</g, '\\u003c');
     let activeTile = null;
     let pinned = false;
     let hideTimer = 0;
+    let restoringFocus = false;
 
     function scoreText(repo) {
       const scores = window.aiLandscapeScores?.getCachedScore(repo);
@@ -250,6 +251,7 @@ const safeJson = (value) => JSON.stringify(value).replace(/</g, '\\u003c');
       const project = data[slug];
       if (!project) return false;
       pop.replaceChildren();
+      pop.setAttribute('aria-label', project.n);
 
       const head = el('div', 'lmap__pop-head');
       const logo = el('span', 'lmap__pop-logo');
@@ -361,7 +363,12 @@ const safeJson = (value) => JSON.stringify(value).replace(/</g, '\\u003c');
       activeTile = null;
       pinned = false;
       pop.hidden = true;
-      if (restoreFocus) tile.focus({ preventScroll: true });
+      if (restoreFocus) {
+        // Returning focus to the tile must not reopen the hover popover.
+        restoringFocus = true;
+        tile.focus({ preventScroll: true });
+        restoringFocus = false;
+      }
     }
 
     function scheduleHide() {
@@ -389,7 +396,7 @@ const safeJson = (value) => JSON.stringify(value).replace(/</g, '\\u003c');
 
     body.addEventListener('focusin', (event) => {
       const tile = event.target.closest('[data-lmap-tile]');
-      if (tile && !pinned && tile.matches(':focus-visible')) showPopover(tile, false);
+      if (tile && !pinned && !restoringFocus && tile.matches(':focus-visible')) showPopover(tile, false);
     });
     body.addEventListener('focusout', (event) => {
       if (!pinned && !pop.contains(event.relatedTarget)) scheduleHide();
@@ -399,8 +406,24 @@ const safeJson = (value) => JSON.stringify(value).replace(/</g, '\\u003c');
       const tile = event.target.closest('[data-lmap-tile]');
       if (!tile || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
       event.preventDefault();
-      if (pinned && activeTile === tile) hidePopover();
-      else showPopover(tile, true);
+      if (pinned && activeTile === tile) {
+        hidePopover();
+        return;
+      }
+      showPopover(tile, true);
+      // The popover sits after the whole map in DOM order, so a keyboard activation
+      // (detail 0) moves focus into it rather than leaving hundreds of tiles to tab through.
+      if (event.detail === 0) pop.querySelector('.lmap__pop-link')?.focus({ preventScroll: true });
+    });
+
+    // Tabbing past either end of the popover closes it and returns to the tile.
+    pop.addEventListener('keydown', (event) => {
+      if (event.key !== 'Tab') return;
+      const focusable = [...pop.querySelectorAll('a[href], button')];
+      const edge = event.shiftKey ? focusable[0] : focusable[focusable.length - 1];
+      if (document.activeElement !== edge) return;
+      event.preventDefault();
+      hidePopover(true);
     });
 
     document.addEventListener('click', (event) => {
