@@ -2,7 +2,7 @@
 name: OpenSandbox
 slug: open-sandbox
 homepage: null
-repo: https://github.com/alibaba/opensandbox
+repo: https://github.com/opensandbox-group/OpenSandbox
 license: Apache-2.0
 category: inference-serving
 subCategory: sandboxes-runtimes

@@ -2,7 +2,7 @@
 name: cuDF
 slug: cudf
 homepage: https://docs.rapids.ai/api/cudf/stable/
-repo: https://github.com/rapidsai/cudf
+repo: https://github.com/NVIDIA/cudf
 license: Apache-2.0
 category: platform-infra
 subCategory: data-platforms

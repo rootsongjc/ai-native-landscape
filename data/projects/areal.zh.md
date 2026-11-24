@@ -2,7 +2,7 @@
 name: AReaL
 slug: areal
 homepage: https://inclusionai.github.io/AReaL/
-repo: https://github.com/inclusionai/areal
+repo: https://github.com/areal-project/AReaL
 license: Apache-2.0
 category: training-optimization
 subCategory: finetuning-alignment

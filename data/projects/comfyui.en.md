@@ -2,7 +2,7 @@
 name: ComfyUI
 slug: comfyui
 homepage: null
-repo: https://github.com/comfyanonymous/comfyui
+repo: https://github.com/Comfy-Org/ComfyUI
 license: GPL-3.0
 category: models-modalities
 subCategory: image-video-generation

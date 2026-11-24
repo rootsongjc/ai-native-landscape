@@ -2,7 +2,7 @@
 name: DroidRun
 slug: droidrun
 homepage: https://droidrun.ai
-repo: https://github.com/droidrun/droidrun
+repo: https://github.com/droidrun/mobilerun
 license: MIT
 category: coding-devtools
 subCategory: ide-cli-tools

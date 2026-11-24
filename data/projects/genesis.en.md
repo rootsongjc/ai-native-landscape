@@ -2,7 +2,7 @@
 name: Genesis
 slug: genesis
 homepage: https://genesis-embodied-ai.github.io/
-repo: https://github.com/genesis-embodied-ai/genesis
+repo: https://github.com/Genesis-Embodied-AI/genesis-world
 license: Apache-2.0
 category: inference-serving
 subCategory: inference-runtimes

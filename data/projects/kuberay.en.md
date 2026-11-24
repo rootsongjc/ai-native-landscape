@@ -2,7 +2,7 @@
 name: KubeRay
 slug: kuberay
 homepage: https://docs.ray.io/en/latest/cluster/kubernetes/index.html
-repo: https://github.com/ray-project/kuberay
+repo: https://github.com/kuberay-project/kuberay
 license: Apache-2.0
 category: inference-serving
 subCategory: inference-runtimes

@@ -2,7 +2,7 @@
 name: CosyVoice
 slug: cosyvoice
 homepage: https://funaudiollm.github.io/cosyvoice3/
-repo: https://github.com/funaudiollm/cosyvoice
+repo: https://github.com/QwenAudio/CosyVoice
 license: Apache-2.0
 category: models-modalities
 subCategory: audio-speech

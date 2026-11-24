@@ -14,7 +14,7 @@ description: 用于代理式 AI 的编程框架，可实现多代理工作流的
 author: Microsoft
 ossDate: '2023-08-18T11:43:45.000Z'
 featured: false
-status: tracked
+status: archived
 ---
 AutoGen 是微软推出的代理式 AI 编程框架，用于构建具有灵活对话模式的多智能体系统。框架采用分层可扩展的架构设计，各层职责明确，使开发者能够在不同抽象级别上工作，从高级 API 到底层组件。
 

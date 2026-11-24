@@ -2,7 +2,7 @@
 name: LEANN
 slug: leann
 homepage: null
-repo: https://github.com/yichuan-w/leann
+repo: https://github.com/StarTrail-org/LEANN
 license: MIT
 category: rag-knowledge
 subCategory: retrieval-indexing

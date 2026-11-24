@@ -2,7 +2,7 @@
 name: OpenHands
 slug: openhands
 homepage: https://docs.all-hands.dev/usage/getting-started
-repo: https://github.com/all-hands-ai/openhands
+repo: https://github.com/OpenHands/OpenHands
 license: MIT
 category: agents
 subCategory: agent-frameworks

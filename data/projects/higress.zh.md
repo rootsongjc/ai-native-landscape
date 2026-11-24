@@ -2,7 +2,7 @@
 name: Higress
 slug: higress
 homepage: https://higress.ai/en/
-repo: https://github.com/alibaba/higress
+repo: https://github.com/higress-group/higress
 license: Apache-2.0
 category: inference-serving
 subCategory: llm-routing-gateways

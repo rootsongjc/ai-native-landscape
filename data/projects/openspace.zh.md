@@ -2,7 +2,7 @@
 name: OpenSpace
 slug: openspace
 homepage: https://open-space.cloud/
-repo: https://github.com/HKUDS/OpenSpace
+repo: https://github.com/HKUDS/AgentPilot
 license: MIT
 category: coding-devtools
 subCategory: mcp-tools

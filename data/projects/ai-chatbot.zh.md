@@ -2,7 +2,7 @@
 name: AI Chatbot (Vercel Chat SDK)
 slug: ai-chatbot
 homepage: https://chat.vercel.ai/
-repo: https://github.com/vercel/ai-chatbot
+repo: https://github.com/vercel/chatbot
 license: Apache-2.0
 category: applications-products
 subCategory: chat-interfaces

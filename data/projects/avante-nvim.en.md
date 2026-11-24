@@ -2,7 +2,7 @@
 name: avante.nvim
 slug: avante-nvim
 homepage: https://nix-community.github.io/nixvim/plugins/avante/index.html
-repo: https://github.com/yetone/avante.nvim
+repo: https://github.com/avante-corp/avante.nvim
 license: Apache-2.0
 category: coding-devtools
 subCategory: coding-agents

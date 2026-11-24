@@ -2,7 +2,7 @@
 name: text-generation-webui
 slug: text-generation-webui
 homepage: https://oobabooga.gumroad.com/l/deep_reason
-repo: https://github.com/oobabooga/text-generation-webui
+repo: https://github.com/oobabooga/textgen
 license: AGPL-3.0
 category: applications-products
 subCategory: chat-interfaces

@@ -2,7 +2,7 @@
 name: NeMo
 slug: nemo
 homepage: https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/main/
-repo: https://github.com/nvidia/nemo
+repo: https://github.com/NVIDIA-NeMo/Speech
 license: Apache-2.0
 category: training-optimization
 subCategory: training-frameworks

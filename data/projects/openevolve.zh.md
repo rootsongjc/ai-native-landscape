@@ -2,7 +2,7 @@
 name: OpenEvolve
 slug: openevolve
 homepage: null
-repo: https://github.com/codelion/openevolve
+repo: https://github.com/algorithmicsuperintelligence/openevolve
 license: Apache-2.0
 category: coding-devtools
 subCategory: sdk-frameworks

@@ -2,7 +2,7 @@
 name: OpenCode
 slug: opencode
 homepage: https://opencode.ai
-repo: https://github.com/sst/opencode
+repo: https://github.com/anomalyco/opencode
 license: MIT
 category: coding-devtools
 subCategory: coding-agents

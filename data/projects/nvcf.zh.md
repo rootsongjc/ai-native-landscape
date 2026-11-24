@@ -2,7 +2,7 @@
 name: NVIDIA Cloud Functions
 slug: nvcf
 homepage: https://docs.nvidia.com/nvcf/overview
-repo: https://github.com/NVIDIA/nvcf
+repo: https://github.com/dsx-ai-factory/nvcf
 license: Apache-2.0
 category: inference-serving
 subCategory: model-serving

@@ -2,7 +2,7 @@
 name: ChatGPT on WeChat
 slug: chatgpt-on-wechat
 homepage: null
-repo: https://github.com/zhayujie/chatgpt-on-wechat
+repo: https://github.com/zhayujie/CowAgent
 license: Other
 category: applications-products
 subCategory: chat-interfaces

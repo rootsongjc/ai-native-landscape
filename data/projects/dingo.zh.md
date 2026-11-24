@@ -2,7 +2,7 @@
 name: Dingo
 slug: dingo
 homepage: https://huggingface.co/spaces/DataEval/dingo
-repo: https://github.com/dataeval/dingo
+repo: https://github.com/MigoXLab/dingo
 license: Apache-2.0
 category: training-optimization
 subCategory: evaluation-benchmarks
