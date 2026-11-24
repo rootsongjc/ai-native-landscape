@@ -14,7 +14,7 @@
     "refresh:scores": "node --use-env-proxy scripts/refresh-scores.mjs",
     "sync:avatars": "node --use-env-proxy scripts/sync-avatars.mjs",
     "triage": "node --use-env-proxy scripts/triage-submission.mjs",
-    "test": "node --test scripts/",
+    "test": "node --test \"scripts/*.test.mjs\"",
     "build": "npm run validate && npm run build:index && npm run export && npm run build:worker-manifest && astro build",
     "dev": "astro dev --host --port 4173",
     "dev:fresh": "astro dev --host --port 4173 --force",

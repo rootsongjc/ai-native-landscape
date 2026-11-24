@@ -11,6 +11,7 @@ import { getRoot, loadProjects } from './lib.mjs';
 
 const CONCURRENCY = 8;
 const ATTEMPTS = 3;
+const TIMEOUT_MS = 10000;
 
 export function parseAvatarId(location) {
   const match = /^https:\/\/avatars\.githubusercontent\.com\/u\/(\d+)(?:[/?#]|$)/.exec(location || '');
@@ -26,7 +27,11 @@ export function catalogOwners(projects) {
 async function resolveAvatarId(owner) {
   for (let attempt = 1; attempt <= ATTEMPTS; attempt += 1) {
     try {
-      const response = await fetch(`https://github.com/${encodeURIComponent(owner)}.png`, { method: 'HEAD', redirect: 'manual' });
+      const response = await fetch(`https://github.com/${encodeURIComponent(owner)}.png`, {
+        method: 'HEAD',
+        redirect: 'manual',
+        signal: AbortSignal.timeout(TIMEOUT_MS),
+      });
       if (response.status === 404) return null;
       const id = parseAvatarId(response.headers.get('location'));
       if (id) return id;

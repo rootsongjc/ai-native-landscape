@@ -93,7 +93,10 @@ const canonical = localizedPath('/', lang);
     <div class="landscape-views" data-home-view="map" data-home-views>
       <script is:inline>
         (function () {
-          var view = new URLSearchParams(location.search).get('display');
+          var params = new URLSearchParams(location.search);
+          var view = params.get('display');
+          // The heatmap lives in the list view, so old ?view=heatmap links open it.
+          if (view !== 'list' && view !== 'map' && params.get('view') === 'heatmap') view = 'list';
           if (view !== 'list' && view !== 'map') {
             try { view = localStorage.getItem('landscape-home-view'); } catch (error) { view = null; }
           }
@@ -299,7 +302,8 @@ const canonical = localizedPath('/', lang);
       homeViews.dataset.homeView = view;
       try { localStorage.setItem('landscape-home-view', view); } catch {}
       const url = new URL(location);
-      if (view === 'map') url.searchParams.delete('display');
+      // A ?view=heatmap link implies the list view, so the map needs an explicit override.
+      if (view === 'map' && url.searchParams.get('view') !== 'heatmap') url.searchParams.delete('display');
       else url.searchParams.set('display', view);
       history.replaceState(null, '', url);
       syncHomeViewBtns();
