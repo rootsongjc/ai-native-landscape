@@ -5,7 +5,7 @@ homepage: https://volcano.sh/
 repo: https://github.com/volcano-sh/volcano
 license: Apache-2.0
 category: platform-infra
-subCategory: cloud-native-ai
+subCategory: heterogeneous-compute-scheduling
 tags:
   - Dev Tools
   - Orchestration

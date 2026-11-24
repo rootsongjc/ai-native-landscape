@@ -141,7 +141,7 @@ The `score` object contains: `health`, `activity`, `community`, `popularity`, `q
 | Training, Evaluation & Optimization | Training Frameworks, Finetuning & Alignment, Experiment & MLOps, Evaluation & Benchmarks, Observability & Monitoring, Prompt Quality, Safety & Guardrails, Optimization & Simulation |
 | Developer Tooling | MCP & Tool Protocols, Coding Agents, IDE & CLI Tools, SDK Frameworks, Browser Automation, Developer Utilities |
 | Applications & Experience | Chat Interfaces, Desktop Clients, Workflow Automation, Low-code Builders, Productivity Tools |
-| Platform & Infrastructure | Cloud Native AI, Data Platforms, Security & Policy, Deployment & Operations |
+| Platform & Infrastructure | Cloud Native AI, GPU Cloud & Marketplaces, GPU Virtualization & Sharing, Heterogeneous Compute Scheduling, GPU Observability & Cost, Data Platforms, Security & Policy, Deployment & Operations |
 
 The file also contains `legacyAliases` that map old category keys to their current equivalents for backward-compatible URL routing.
 
