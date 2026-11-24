@@ -5,7 +5,7 @@ homepage: null
 repo: https://github.com/unifabric-io/unifabric
 license: Apache-2.0
 category: platform-infra
-subCategory: cloud-native-ai
+subCategory: gpu-observability-cost
 tags:
   - Observability
   - Networking

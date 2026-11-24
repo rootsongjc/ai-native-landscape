@@ -51,7 +51,7 @@ cat data/categories.yaml
 | `training-optimization` | `training-frameworks`, `finetuning-alignment`, `experiment-mlops`, `evaluation-benchmarks`, `observability-monitoring`, `prompt-quality`, `safety-guardrails`, `optimization-simulation` |
 | `coding-devtools` | `mcp-tools`, `coding-agents`, `ide-cli-tools`, `sdk-frameworks`, `browser-automation`, `developer-utilities` |
 | `applications-products` | `chat-interfaces`, `desktop-clients`, `workflow-automation`, `low-code-builders`, `productivity-tools` |
-| `platform-infra` | `cloud-native-ai`, `data-platforms`, `security-policy`, `deployment-operations` |
+| `platform-infra` | `cloud-native-ai`, `gpu-cloud-marketplaces`, `gpu-virtualization-sharing`, `heterogeneous-compute-scheduling`, `gpu-observability-cost`, `data-platforms`, `security-policy`, `deployment-operations` |
 
 **Auto-classification hints** — check the project's GitHub topics and README keywords against `TAG_PRIORITY_RULES` and `SUBCATEGORY_RULES` in `scripts/lib.mjs` (lines 12–48 for tag rules, lines 50–219 for subcategory rules). First match wins.
 

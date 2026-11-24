@@ -5,7 +5,7 @@ homepage: https://dstack.ai
 repo: https://github.com/dstackai/dstack
 license: MPL-2.0
 category: platform-infra
-subCategory: cloud-native-ai
+subCategory: gpu-cloud-marketplaces
 tags:
   - Cloud Native
   - GPU

@@ -4,8 +4,8 @@ slug: kai-scheduler
 homepage: https://github.com/NVIDIA/KAI-Scheduler
 repo: https://github.com/nvidia/kai-scheduler
 license: Apache-2.0
-category: inference-serving
-subCategory: inference-runtimes
+category: platform-infra
+subCategory: heterogeneous-compute-scheduling
 tags:
   - Deployment
   - Inference
