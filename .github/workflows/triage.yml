@@ -22,10 +22,10 @@ on:
         type: choice
         options: ['true', 'false']
 
+# Comments, labels, and closing are done as the AI Native Landscape Bot GitHub App,
+# so the workflow's own token only needs to read the base branch.
 permissions:
   contents: read
-  issues: write
-  pull-requests: write
 
 concurrency:
   group: triage-${{ github.event.issue.number || github.event.pull_request.number || github.run_id }}
@@ -39,7 +39,7 @@ jobs:
       github.event_name == 'workflow_dispatch' ||
       github.event_name == 'pull_request_target' ||
       (github.event_name == 'issues' && (github.event.action != 'labeled' || github.event.label.name == 'exception')) ||
-      (github.event_name == 'issue_comment' && contains(github.event.comment.body, '/recheck'))
+      (github.event_name == 'issue_comment' && github.event.comment.user.type != 'Bot' && contains(github.event.comment.body, '/recheck'))
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
@@ -47,9 +47,18 @@ jobs:
           node-version: '24'
           cache: npm
       - run: npm ci
+      # The App is installed on this repository only and has no Contents permission.
+      - name: Mint a token for the AI Native Landscape Bot
+        id: app-token
+        uses: actions/create-github-app-token@v3
+        with:
+          app-id: ${{ vars.LANDSCAPE_BOT_APP_ID }}
+          private-key: ${{ secrets.LANDSCAPE_BOT_PRIVATE_KEY }}
+          permission-issues: write
+          permission-pull-requests: write
       - name: Check submission against the inclusion standards
         env:
-          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
           NUMBER: ${{ github.event.issue.number || github.event.pull_request.number || inputs.number }}
           DRY_RUN: ${{ inputs.dry_run }}
         run: |
