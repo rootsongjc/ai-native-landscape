@@ -123,7 +123,8 @@ const safeJson = (value) => JSON.stringify(value).replace(/</g, '\\u003c');
       <h2 id="lmap-title">{copy.lmapTitle}</h2>
       <p class="lmap__stats">
         {landscape.projectCount} {copy.projects} · {listedCategoryCount} {copy.categories} ·{' '}
-        <a href={localizedPath('/tomb/', lang)}>{tombCount} {copy.navTomb}</a>
+        <a href={localizedPath('/tomb/', lang)}>{tombCount} {copy.navTomb}</a> ·{' '}
+        <a href={localizedPath('/submit/', lang)}>{copy.submitProject}</a>
       </p>
       <p class="lmap__desc">{copy.lmapDescription}</p>
     </div>
