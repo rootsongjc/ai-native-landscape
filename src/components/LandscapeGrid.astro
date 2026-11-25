@@ -35,7 +35,6 @@ const categoryHighlights = categories.map((category) => {
     .slice(0, 4);
   return { category, projects, subcategories };
 });
-const tombCount = landscape.projects.filter((project) => ['archived', 'unavailable', 'inactive'].includes(project.status)).length;
 
 const searchIndex = landscape.projects.map((project) => ({
   slug: project.slug,
@@ -54,32 +53,7 @@ const canonical = localizedPath('/', lang);
   <main class="landscape-page" data-landscape-page>
     <section class="landscape-hero" aria-labelledby="landscape-title">
       <div class="landscape-hero__bar">
-        <div class="landscape-hero__title">
-          <h1 id="landscape-title">{copy.homeHeroHeadline}</h1>
-          <p class="landscape-hero__stats">
-            {landscape.projectCount} {copy.projects} · {categories.length} {copy.categories} ·{' '}
-            <a href={localizedPath('/tomb/', lang)}>{tombCount} {copy.navTomb}</a>
-          </p>
-        </div>
-        <div class="landscape-hero__search-wrap" data-home-search>
-          <form class="landscape-hero__search" role="search" aria-label={copy.search}>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-            </svg>
-            <input
-              id="home-search-input"
-              type="search"
-              placeholder={copy.homeSearchPrompt}
-              autocomplete="off"
-              data-home-search-input
-            />
-            <kbd>/</kbd>
-          </form>
-          <div class="landscape-hero__results" data-home-search-panel hidden>
-            <div class="landscape-hero__results-list" data-home-search-results></div>
-            <div class="landscape-hero__empty" data-home-search-empty hidden>{copy.searchModalNoResults}</div>
-          </div>
-        </div>
+        <h1 id="landscape-title">{copy.homeHeroHeadline}</h1>
         <div class="landscape-hero__actions">
           <a class="landscape-hero__cta landscape-hero__cta--primary" href={localizedPath('/projects/', lang)}>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></svg>
@@ -168,128 +142,16 @@ const canonical = localizedPath('/', lang);
       <LandscapeHeatmap lang={lang} />
     </details>
     </div>
-
-    <section class="landscape-skill-guide" aria-labelledby="landscape-skill-guide-title">
-      <div>
-        <h2 id="landscape-skill-guide-title">{copy.skillGuideTitle}</h2>
-        <p>{copy.skillGuideDescription}</p>
-      </div>
-      <div class="landscape-skill-guide__commands">
-        <code class="landscape-skill-guide__cmd">npx skills add rootsongjc/ai-native-landscape --skill landscape-search</code>
-        <code class="landscape-skill-guide__cmd">npx landscape-search</code>
-      </div>
-      <a class="landscape-skill-guide__link" href={SITE.repo} target="_blank" rel="noopener">{copy.skillGuideCta} →</a>
-    </section>
   </main>
 
   <SearchModal searchIndex={searchIndex} lang={lang} />
 
-  <script define:vars={{ searchIndex, lang }}>
+  <script define:vars={{ searchIndex }}>
     const grid = document.querySelector('[data-landscape-grid]');
     const heatmap = document.querySelector('[data-heatmap]');
     const categorySelect = document.querySelector('[data-landscape-category]');
     const statusSelect = document.querySelector('[data-landscape-status]');
     const sortSelect = document.querySelector('[data-landscape-sort]');
-    const homeSearch = document.querySelector('[data-home-search]');
-    const homeSearchInput = document.querySelector('[data-home-search-input]');
-    const homeSearchPanel = document.querySelector('[data-home-search-panel]');
-    const homeSearchResults = document.querySelector('[data-home-search-results]');
-    const homeSearchEmpty = document.querySelector('[data-home-search-empty]');
-    let homeSearchCurrentResults = [];
-
-    function projectHref(project) {
-      const prefix = lang === 'zh' ? '/zh/projects/' : '/projects/';
-      return prefix + project.slug + '/';
-    }
-
-    function esc(s) {
-      const d = document.createElement('div');
-      d.textContent = s || '';
-      return d.innerHTML;
-    }
-
-    function renderHomeSearch(query) {
-      if (!homeSearchPanel || !homeSearchResults || !homeSearchEmpty) return;
-      if (!query) {
-        homeSearchCurrentResults = [];
-        homeSearchPanel.hidden = true;
-        homeSearchResults.innerHTML = '';
-        homeSearchEmpty.hidden = true;
-        return;
-      }
-
-      const q = query.toLowerCase();
-      const results = searchIndex.filter(p => {
-        const name = (p.name || '').toLowerCase();
-        const desc = (p.description || '').toLowerCase();
-        const tags = (p.tags || []).join(' ').toLowerCase();
-        const cat = (p.categoryKey || '').toLowerCase();
-        const subcat = (p.subCategoryKey || '').toLowerCase();
-        return name.includes(q) || desc.includes(q) || tags.includes(q) || cat.includes(q) || subcat.includes(q);
-      }).slice(0, 8);
-      homeSearchCurrentResults = results;
-      homeSearchPanel.hidden = false;
-
-      if (results.length === 0) {
-        homeSearchResults.innerHTML = '';
-        homeSearchEmpty.hidden = false;
-        return;
-      }
-
-      homeSearchEmpty.hidden = true;
-      homeSearchResults.innerHTML = results.map(p => {
-        const tags = (p.tags || []).slice(0, 3);
-        const meta = [p.categoryKey, p.subCategoryKey].filter(Boolean).join(' / ');
-        return `<a class="landscape-hero__result" href="${projectHref(p)}">
-          <span class="landscape-hero__result-main">
-            <span class="landscape-hero__result-name">${esc(p.name)}</span>
-            ${meta ? `<span class="landscape-hero__result-category">${esc(meta)}</span>` : ''}
-          </span>
-          <span class="landscape-hero__result-desc">${esc((p.description || '').substring(0, 132))}</span>
-          ${tags.length ? `<span class="landscape-hero__result-tags">${tags.map(tag => `<span>${esc(tag)}</span>`).join('')}</span>` : ''}
-        </a>`;
-      }).join('');
-    }
-
-    if (homeSearchInput) {
-      homeSearch?.querySelector('form')?.addEventListener('submit', (e) => {
-        e.preventDefault();
-        if (homeSearchCurrentResults[0]) {
-          window.location.href = projectHref(homeSearchCurrentResults[0]);
-        }
-      });
-      homeSearchInput.addEventListener('input', () => renderHomeSearch(homeSearchInput.value.trim()));
-      homeSearchInput.addEventListener('focus', () => renderHomeSearch(homeSearchInput.value.trim()));
-      homeSearchInput.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-          homeSearchInput.value = '';
-          renderHomeSearch('');
-          return;
-        }
-        if (e.key === 'Enter' && homeSearchCurrentResults[0]) {
-          e.preventDefault();
-          window.location.href = projectHref(homeSearchCurrentResults[0]);
-        }
-      });
-    }
-
-    // The results panel overlays the page, so dismiss it when clicking elsewhere.
-    document.addEventListener('click', (e) => {
-      if (homeSearchPanel && !homeSearch?.contains(e.target)) homeSearchPanel.hidden = true;
-    });
-
-    // Global slash key listener to focus search
-    document.addEventListener('keydown', (e) => {
-      // Only trigger if not typing in an input/textarea
-      const isInputFocused = document.activeElement?.tagName === 'INPUT' || 
-                            document.activeElement?.tagName === 'TEXTAREA' ||
-                            document.activeElement?.isContentEditable;
-      if (!isInputFocused && e.key === '/' && homeSearchInput) {
-        e.preventDefault();
-        homeSearch?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        requestAnimationFrame(() => homeSearchInput.focus());
-      }
-    });
 
     // Homepage view: landscape map (default) or the list-style directory
     const homeViews = document.querySelector('[data-home-views]');
@@ -583,66 +445,6 @@ const canonical = localizedPath('/', lang);
     gap: 16px;
   }
 
-  /* Skill guide — compact inline banner */
-  .landscape-skill-guide {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 18px;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    background: var(--surface);
-  }
-
-  .landscape-skill-guide__title {
-    font-size: 0.82rem;
-    font-weight: 600;
-    color: var(--text);
-  }
-
-  .landscape-skill-guide__cmd {
-    padding: 3px 10px;
-    border: 1px solid rgba(10, 132, 255, 0.2);
-    border-radius: 4px;
-    background: rgba(10, 132, 255, 0.05);
-    font-family: var(--mono, ui-monospace, monospace);
-    font-size: 0.74rem;
-    font-weight: 600;
-    color: var(--accent);
-    white-space: nowrap;
-  }
-
-  html[data-theme='dark'] .landscape-skill-guide__cmd {
-    border-color: rgba(110, 168, 255, 0.2);
-    background: rgba(110, 168, 255, 0.08);
-  }
-
-  .landscape-skill-guide__sep {
-    color: var(--border);
-    font-weight: 300;
-  }
-
-  .landscape-skill-guide__link {
-    font-size: 0.78rem;
-    font-weight: 600;
-    color: var(--accent);
-    text-decoration: none;
-    margin-left: auto;
-  }
-
-  .landscape-skill-guide__link:hover {
-    text-decoration: underline;
-  }
-
-  @media (max-width: 720px) {
-    .landscape-skill-guide__cmd {
-      font-size: 0.68rem;
-      max-width: 100%;
-      overflow-x: auto;
-    }
-  }
-
   .landscape-section__head {
     display: grid;
     gap: 8px;
@@ -708,34 +510,6 @@ const canonical = localizedPath('/', lang);
       gap: 32px;
     }
 
-    .landscape-skill-guide {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 8px;
-      padding: 12px;
-      border-radius: 16px;
-    }
-
-    .landscape-skill-guide__title,
-    .landscape-skill-guide__sep {
-      display: none;
-    }
-
-    .landscape-skill-guide__cmd {
-      display: block;
-      min-width: 0;
-      padding: 6px 9px;
-      border-radius: 6px;
-      font-size: 0.68rem;
-      white-space: nowrap;
-    }
-
-    .landscape-skill-guide__link {
-      margin-left: 0;
-      justify-self: end;
-      font-size: 0.78rem;
-    }
-
     .landscape-section__head h2 {
       font-size: 1.45rem;
       letter-spacing: 0;
@@ -763,74 +537,9 @@ const canonical = localizedPath('/', lang);
 
   .landscape-start,
   .landscape-categories,
-  .landscape-directory,
-  .landscape-skill-guide {
+  .landscape-directory {
     display: grid;
     gap: 16px;
-  }
-
-  .landscape-hero__search {
-    display: grid;
-    grid-template-columns: auto minmax(0, 1fr) auto;
-    align-items: center;
-    gap: 12px;
-    width: 100%;
-    min-height: 46px;
-    padding: 0 16px;
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    background: var(--surface-soft);
-    color: var(--text);
-    text-align: left;
-    transition: border-color 0.16s, background-color 0.16s;
-  }
-
-  .landscape-hero__search:hover {
-    border-color: var(--muted);
-  }
-
-  .landscape-hero__search:focus-within {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
-  }
-
-  .landscape-hero__search svg {
-    width: 18px;
-    height: 18px;
-    color: var(--muted);
-  }
-
-  .landscape-hero__search input {
-    min-width: 0;
-    border: 0;
-    outline: 0;
-    background: transparent;
-    color: var(--text);
-    font-size: 1rem;
-    font-weight: 400;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  .landscape-hero__search input::placeholder {
-    color: var(--muted);
-    opacity: 1;
-  }
-
-  .landscape-hero__search kbd {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 24px;
-    height: 24px;
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    background: var(--surface);
-    color: var(--muted);
-    font-size: 0.75rem;
-    font-weight: 500;
-    line-height: 1;
   }
 
   .landscape-start__grid {
@@ -1034,38 +743,6 @@ const canonical = localizedPath('/', lang);
     margin: 0 24px 24px;
   }
 
-  .landscape-skill-guide {
-    grid-template-columns: minmax(0, 1fr) auto auto;
-    align-items: center;
-    padding: 20px;
-  }
-
-  .landscape-skill-guide h2 {
-    margin: 0 0 4px;
-    font-size: 1rem;
-  }
-
-  .landscape-skill-guide p {
-    margin: 0;
-    color: var(--muted);
-    font-size: 0.86rem;
-    line-height: 1.45;
-  }
-
-  .landscape-skill-guide__commands {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    justify-content: flex-end;
-    min-width: 0;
-  }
-
-  .landscape-skill-guide .landscape-skill-guide__link {
-    margin-left: 0;
-    justify-self: end;
-    white-space: nowrap;
-  }
-
   @media (max-width: 980px) {
     .landscape-start__grid,
     .landscape-category-overview {
@@ -1079,22 +756,9 @@ const canonical = localizedPath('/', lang);
     .landscape-start-card:nth-child(-n + 2) {
       border-bottom: 1px solid var(--border);
     }
-
-    .landscape-skill-guide {
-      grid-template-columns: 1fr;
-    }
-
-    .landscape-skill-guide__commands {
-      justify-content: flex-start;
-    }
   }
 
   @media (max-width: 720px) {
-    .landscape-hero__search {
-      min-height: 46px;
-      border-radius: 10px;
-    }
-
     .landscape-start__grid,
     .landscape-category-overview {
       grid-template-columns: 1fr;
@@ -1125,44 +789,12 @@ const canonical = localizedPath('/', lang);
     }
   }
 
-  @media (max-width: 480px) {
-    .landscape-hero__search {
-      min-height: 46px;
-      grid-template-columns: auto minmax(0, 1fr);
-      padding: 0 16px;
-    }
-
-    .landscape-hero__search svg {
-      width: 18px;
-      height: 18px;
-    }
-
-    .landscape-hero__search input {
-      font-size: 0.95rem;
-    }
-
-    .landscape-hero__search kbd {
-      display: none;
-    }
-
-    .landscape-skill-guide__cmd {
-      max-width: 100%;
-      white-space: normal;
-      overflow-wrap: anywhere;
-    }
-  }
-
   .landscape-hero__bar {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
     gap: 12px 24px;
-  }
-
-  .landscape-hero__title {
-    display: grid;
-    gap: 2px;
-    min-width: 0;
   }
 
   .landscape-hero h1 {
@@ -1171,16 +803,6 @@ const canonical = localizedPath('/', lang);
     font-weight: 600;
     line-height: 1.2;
     letter-spacing: -0.01em;
-  }
-
-  .landscape-hero__stats {
-    margin: 0;
-    color: var(--muted);
-    font-size: 0.82rem;
-  }
-
-  .landscape-hero__stats a:hover {
-    color: var(--accent);
   }
 
   .landscape-hero__actions {
@@ -1218,122 +840,6 @@ const canonical = localizedPath('/', lang);
     border-color: var(--accent);
     background: var(--accent);
     color: var(--accent-contrast);
-  }
-
-  .landscape-hero__search-wrap {
-    position: relative;
-    flex: 1 1 320px;
-    min-width: 0;
-  }
-
-  .landscape-hero__search-wrap .landscape-hero__search {
-    width: 100%;
-  }
-
-  .landscape-hero__results {
-    position: absolute;
-    top: calc(100% + 6px);
-    right: 0;
-    left: 0;
-    z-index: 30;
-    overflow: hidden;
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    background: var(--surface);
-    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.2);
-  }
-
-  .landscape-hero__results[hidden] {
-    display: none;
-  }
-
-  .landscape-hero__results-list {
-    display: grid;
-    gap: 4px;
-    max-height: min(460px, 52vh);
-    overflow-y: auto;
-    padding: 8px;
-  }
-
-  :global(.landscape-hero__result) {
-    display: grid;
-    gap: 8px;
-    padding: 12px;
-    border: 1px solid transparent;
-    border-radius: 12px;
-    color: var(--text);
-    text-decoration: none;
-    transition: background-color 0.16s;
-  }
-
-  :global(.landscape-hero__result:hover),
-  :global(.landscape-hero__result:focus-visible) {
-    background: var(--surface-soft);
-  }
-
-  :global(.landscape-hero__result-main) {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 12px;
-    min-width: 0;
-  }
-
-  :global(.landscape-hero__result-name) {
-    min-width: 0;
-    overflow: hidden;
-    color: var(--text);
-    font-size: 0.95rem;
-    font-weight: 600;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  :global(.landscape-hero__result-category) {
-    flex: 0 1 auto;
-    min-width: 90px;
-    overflow: hidden;
-    color: var(--muted);
-    font-size: 0.68rem;
-    font-weight: 500;
-    text-align: right;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  :global(.landscape-hero__result-desc) {
-    overflow: hidden;
-    color: var(--muted);
-    font-size: 0.8rem;
-    line-height: 1.4;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  :global(.landscape-hero__result-tags) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-  }
-
-  :global(.landscape-hero__result-tags span) {
-    display: inline-flex;
-    align-items: center;
-    min-height: 20px;
-    padding: 0 8px;
-    border-radius: 4px;
-    background: var(--surface-soft);
-    color: var(--muted);
-    font-size: 0.68rem;
-    font-weight: 500;
-  }
-
-  .landscape-hero__empty {
-    padding: 24px 16px;
-    color: var(--muted);
-    font-size: 0.9rem;
-    font-weight: 500;
-    text-align: center;
   }
 
   .landscape-category-overview__main {
