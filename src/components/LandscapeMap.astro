@@ -70,6 +70,10 @@ for (let index = 0; index + 1 < categories.length; index += 2) {
 
 const projectCount = categories.reduce((sum, category) => sum + category.count, 0);
 
+// The heading counts the whole catalog, including the tomb projects the map leaves out.
+const listedCategoryCount = landscape.categories.filter((category) => (landscape.byCategory[category.key] || []).length > 0).length;
+const tombCount = landscape.projects.filter((project) => HIDDEN_STATUSES.has(project.status)).length;
+
 const projectData = {};
 categories.forEach((category) => {
   category.subcategories.forEach((subcategory) => {
@@ -117,7 +121,12 @@ const safeJson = (value) => JSON.stringify(value).replace(/</g, '\\u003c');
   <div class="lmap__head">
     <div class="lmap__heading">
       <h2 id="lmap-title">{copy.lmapTitle}</h2>
-      <p>{copy.lmapDescription}</p>
+      <p class="lmap__stats">
+        {landscape.projectCount} {copy.projects} · {listedCategoryCount} {copy.categories} ·{' '}
+        <a href={localizedPath('/tomb/', lang)}>{tombCount} {copy.navTomb}</a> ·{' '}
+        <a href={localizedPath('/submit/', lang)}>{copy.submitProject}</a>
+      </p>
+      <p class="lmap__desc">{copy.lmapDescription}</p>
     </div>
     <div class="lmap__tools">
       <label class="lmap__search">
@@ -795,9 +804,11 @@ const safeJson = (value) => JSON.stringify(value).replace(/</g, '\\u003c');
 
   .lmap__heading {
     display: grid;
-    gap: 4px;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: baseline;
+    gap: 4px 12px;
     min-width: 0;
-    flex: 1 1 320px;
+    flex: 1 1 460px;
   }
 
   .lmap__heading h2 {
@@ -809,9 +820,23 @@ const safeJson = (value) => JSON.stringify(value).replace(/</g, '\\u003c');
 
   .lmap__heading p {
     margin: 0;
+    color: var(--muted);
+  }
+
+  .lmap__stats {
+    font-size: 0.82rem;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  .lmap__stats a:hover {
+    color: var(--accent);
+  }
+
+  .lmap__desc {
+    grid-column: 1 / -1;
     max-width: 70ch;
     font-size: 0.9rem;
-    color: var(--muted);
   }
 
   .lmap__tools {
@@ -1282,6 +1307,28 @@ const safeJson = (value) => JSON.stringify(value).replace(/</g, '\\u003c');
   @media (max-width: 720px) {
     .lmap {
       --lmap-tile: 30px;
+    }
+
+    /* Too narrow for the counts to sit beside the title, so they lead the description. */
+    .lmap__heading {
+      display: block;
+    }
+
+    .lmap__heading h2 {
+      margin-bottom: 4px;
+    }
+
+    .lmap__heading p {
+      display: inline;
+      font-size: 0.86rem;
+    }
+
+    .lmap__stats {
+      white-space: normal;
+    }
+
+    .lmap__stats::after {
+      content: ' · ';
     }
 
     .lmap__search {
