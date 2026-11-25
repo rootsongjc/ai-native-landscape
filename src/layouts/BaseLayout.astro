@@ -62,11 +62,12 @@ const structuredData = {
     <link rel="alternate" hreflang={selfHreflang} href={canonicalUrl} />
     <link rel="alternate" hreflang={alternateHreflang} href={alternateUrl} />
     <link rel="alternate" hreflang="x-default" href={defaultUrl} />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
-    <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" href="/favicon.ico?v=2" sizes="48x48" />
+    <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml" sizes="any" />
+    <link rel="icon" href="/favicon-32x32.png?v=2" type="image/png" sizes="32x32" />
+    <link rel="icon" href="/favicon-16x16.png?v=2" type="image/png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" sizes="180x180" />
+    <link rel="manifest" href="/site.webmanifest?v=2" />
     <link rel="preconnect" href="https://api.github.com" crossorigin />
     <link rel="preconnect" href={SITE.scoreApiBase} crossorigin />
     <meta name="theme-color" content="#0a84ff" />
@@ -342,10 +343,10 @@ const structuredData = {
       <div class="site-header__bar">
         <a class="brand" href={localizedPath('/', lang)}>
           <span class="brand-mark">
-            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path class="brand-mark__path" d="M7.5 25.5L18 8.8l10.5 16.7" />
-              <path class="brand-mark__bar" d="M12.2 25.5h11.6" />
-              <circle class="brand-mark__node" cx="18" cy="19.5" r="3.2" />
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="4" y="4" width="24" height="56" rx="6" fill="#1f7ff0"/>
+              <rect x="32" y="4" width="28" height="32" rx="6" fill="#5aa9ff"/>
+              <rect x="32" y="40" width="28" height="20" rx="6" fill="#f59e0b"/>
             </svg>
           </span>
           <span class="brand-wordmark">
@@ -469,10 +470,10 @@ const structuredData = {
         <div class="footer-top">
           <div class="footer-brand">
             <a class="footer-brand__link" href={localizedPath('/', lang)}>
-              <svg class="footer-brand__icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M7.5 25.5L18 8.8l10.5 16.7" />
-                <path d="M12.2 25.5h11.6" />
-                <circle cx="18" cy="19.5" r="3.2" />
+              <svg class="footer-brand__icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="4" y="4" width="24" height="56" rx="6" fill="#1f7ff0"/>
+                <rect x="32" y="4" width="28" height="32" rx="6" fill="#5aa9ff"/>
+                <rect x="32" y="40" width="28" height="20" rx="6" fill="#f59e0b"/>
               </svg>
               <span class="footer-brand__title">{copy.footerTitle}</span>
             </a>
