@@ -5,7 +5,7 @@ homepage: https://www.llm-d.ai/
 repo: https://github.com/llm-d/llm-d
 license: Apache-2.0
 category: inference-serving
-subCategory: inference-runtimes
+subCategory: model-serving
 tags:
   - Inference
   - ML Platform

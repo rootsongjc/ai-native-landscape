@@ -5,7 +5,7 @@ homepage: https://www.trychroma.com/
 repo: https://github.com/chroma-core/chroma
 license: Apache-2.0
 category: rag-knowledge
-subCategory: retrieval-indexing
+subCategory: vector-databases
 tags:
   - Dev Tools
   - RAG

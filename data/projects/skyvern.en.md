@@ -4,8 +4,8 @@ slug: skyvern
 homepage: https://www.skyvern.com
 repo: https://github.com/skyvern-ai/skyvern
 license: AGPL-3.0
-category: agents
-subCategory: agent-frameworks
+category: coding-devtools
+subCategory: browser-automation
 tags:
   - Agent Framework
   - Agents

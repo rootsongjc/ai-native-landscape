@@ -2,7 +2,7 @@
 name: LibreChat
 slug: librechat
 homepage: https://librechat.ai/
-repo: https://github.com/danny-avila/librechat
+repo: https://github.com/LibreChat-AI/LibreChat
 license: MIT
 category: applications-products
 subCategory: chat-interfaces

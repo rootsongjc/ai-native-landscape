@@ -4,8 +4,8 @@ slug: open-metadata
 homepage: https://open-metadata.org/
 repo: https://github.com/open-metadata/openmetadata
 license: Apache-2.0
-category: rag-knowledge
-subCategory: data-connectors
+category: platform-infra
+subCategory: data-platforms
 tags:
   - Application
   - Data

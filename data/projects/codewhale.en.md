@@ -2,7 +2,7 @@
 name: CodeWhale
 slug: codewhale
 homepage: https://codewhale.net/
-repo: https://github.com/Hmbown/CodeWhale
+repo: https://github.com/codewhale-hq/Codewhale
 license: MIT
 category: coding-devtools
 subCategory: coding-agents

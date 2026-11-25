@@ -2,7 +2,7 @@
 name: CoPaw
 slug: copaw
 homepage: https://copaw.agentscope.io/
-repo: https://github.com/agentscope-ai/copaw
+repo: https://github.com/agentscope-ai/QwenPaw
 license: Apache-2.0
 category: applications-products
 subCategory: productivity-tools

@@ -26,9 +26,14 @@ npm run preview              # Preview built site
 
 # Data validation
 npm run validate             # Runs scripts/validate-data.mjs against data/schema.project.json
+
+# Landscape map logos
+npm run sync:avatars         # Resolve new GitHub owners into data/avatars.json (incremental; --force to redo all)
 ```
 
-No test framework configured.
+Script unit tests use the Node.js built-in runner: `npm test` (files matching `scripts/*.test.mjs`).
+
+Submission triage: `npm run triage -- --number <n> --dry-run` checks an issue or pull request against the inclusion standards (`INCLUSION` in `src/lib/landscape.mjs`). The `triage` workflow runs it on every submission.
 
 ## Architecture
 
@@ -38,6 +43,7 @@ No test framework configured.
 - **Taxonomy**: `data/categories.yaml` — two-level hierarchy (category → subCategory)
 - **Schema**: `data/schema.project.json` — JSON Schema for project validation (ajv)
 - **Exports**: `exports/` — generated JSON output
+- **Avatars**: `data/avatars.json` — GitHub owner → numeric avatar id, written by `npm run sync:avatars`. The landscape map needs the direct `avatars.githubusercontent.com/u/<id>` URL because it is CORS-enabled and can be drawn into the PNG/PDF export; owners missing from the file still show a logo on the page but are exported as initials. Run the script after adding projects.
 
 Project frontmatter fields: `name`, `slug`, `homepage`, `repo`, `license`, `category`, `subCategory`, `tags`, `logo`, `status`, `author`, `ossDate`, `featured`, `thumbnail`, `source`, plus `score` object (`health`, `activity`, `community`, `quality`, `sustainability`).
 
@@ -57,12 +63,13 @@ Data pipeline: `loadProjectDocuments()` → merge bilingual files → AJV valida
 
 ### Components (`src/components/`)
 
-- `LandscapeGrid.astro` — main grid orchestrator (search + filters + cards)
+- `LandscapeGrid.astro` — homepage orchestrator; shows the landscape map by default with a Landscape/List switch (`?display=list`, remembered in `localStorage`) to the category overview + directory (search + filters + cards)
 - `LandscapeToolbar.astro` — search/filter controls
 - `LandscapeCategory.astro` — category section rendering
 - `LandscapeCard.astro` — individual project card with scores
 - `ProjectDetail.astro` — full project detail page (35K, largest component)
 - `LandscapeHeatmap.astro` — visual heatmap view
+- `LandscapeMap.astro` — CNCF-style landscape picture, the default homepage view (category boxes → subcategory boxes → logo tiles), with hover/click detail popover, search highlight, zoom, fullscreen, and client-side PNG/PDF export (canvas + `jspdf`)
 - `LandscapeIndex.astro` — index/search page
 
 ### Scoring
@@ -78,5 +85,6 @@ Bilingual content managed as paired files (`<slug>.zh.md` + `<slug>.en.md`). Lan
 - ES modules throughout (`"type": "module"`)
 - Tag-based auto-classification: `TAG_PRIORITY_RULES` in `lib.mjs` maps tags to subcategories; rules run in order, first match wins
 - All projects must have both `category` and `subCategory` — if unclassifiable, project shouldn't be listed
+- `status` is always `tracked`. Dead projects (repo archived or deleted, or no longer maintained) are removed from the repository: delete both language files in a pull request. Do not add an archived/inactive status or an archive page. The weekly `health-check` workflow proposes removals in a pull request for a maintainer to merge
 - Astro static output mode — all pages pre-rendered at build time
 - No client-side framework; interactivity via vanilla JS in `<script>` tags inside Astro components

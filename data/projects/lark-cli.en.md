@@ -4,8 +4,8 @@ slug: lark-cli
 homepage: null
 repo: https://github.com/larksuite/cli
 license: MIT
-category: agents
-subCategory: agent-frameworks
+category: coding-devtools
+subCategory: ide-cli-tools
 tags:
   - Agent Framework
   - CLI

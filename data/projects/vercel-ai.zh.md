@@ -5,7 +5,7 @@ homepage: https://ai-sdk.dev
 repo: https://github.com/vercel/ai
 license: Apache-2.0
 category: coding-devtools
-subCategory: developer-utilities
+subCategory: sdk-frameworks
 tags:
   - Dev Tools
   - Frontend

@@ -251,21 +251,8 @@ html[data-theme='dark'] .footer-brand__link:hover {
 }
 
 .footer-brand__icon {
-  width: 30px;
-  height: 30px;
-  padding: 5px;
-  border: none;
-  border-radius: 10px;
-  stroke: var(--accent);
-  stroke-width: 2;
-  fill: none;
-  background: color-mix(in srgb, var(--accent-soft) 72%, transparent);
-  box-shadow: none;
-}
-
-.footer-brand__icon circle {
-  fill: var(--accent);
-  stroke: none;
+  width: 28px;
+  height: 28px;
 }
 
 .footer-brand__title {
@@ -392,32 +379,11 @@ html[data-theme='dark'] .footer-brand__link:hover {
   height: 32px;
   display: grid;
   place-items: center;
-  color: var(--accent);
 }
 
 .brand-mark svg {
   width: 32px;
   height: 32px;
-}
-
-.brand-mark__path,
-.brand-mark__bar,
-.brand-mark__node {
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.brand-mark__path {
-  stroke-width: 3.2;
-}
-
-.brand-mark__bar {
-  stroke-width: 2.2;
-}
-
-.brand-mark__node {
-  stroke-width: 2;
 }
 
 .brand-wordmark,
@@ -1463,10 +1429,6 @@ html[data-theme='dark'] .methodology-grid article {
   background: #7c3aed;
 }
 
-.status-pill--archived {
-  background: #6b7280;
-}
-
 .logo {
   width: 40px;
   height: 40px;
@@ -1808,10 +1770,7 @@ html[data-theme='dark'] .methodology-grid article {
 .status-dot--graduated { background: #1f7a45; }
 .status-dot--incubating { background: #2563eb; }
 .status-dot--sandbox { background: #7c3aed; }
-.status-dot--archived { background: #6b7280; }
 .status-dot--tracked { background: #0a84ff; }
-.status-dot--unavailable { background: #ef4444; }
-.status-dot--inactive { background: #f59e0b; }
 .status-dot--recommended { background: #0f9f6e; }
 .status-dot--worthWatching { background: #d97706; }
 .status-dot--newlyAdded { background: #06b6d4; }

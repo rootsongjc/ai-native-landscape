@@ -2,10 +2,10 @@
 name: Beads
 slug: beads
 homepage: https://steveyegge.github.io/beads/
-repo: https://github.com/steveyegge/beads
+repo: https://github.com/gastownhall/beads
 license: MIT
-category: agents
-subCategory: agent-frameworks
+category: rag-knowledge
+subCategory: agent-memory-context
 tags:
   - Agent Framework
   - Dev Tools

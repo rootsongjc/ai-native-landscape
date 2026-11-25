@@ -2,7 +2,7 @@
 name: OpenShell
 slug: openshell
 homepage: null
-repo: https://github.com/nvidia/openshell
+repo: https://github.com/ai-openshell/openshell
 license: Apache-2.0
 category: inference-serving
 subCategory: sandboxes-runtimes

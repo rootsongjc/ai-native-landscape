@@ -5,7 +5,7 @@ homepage: null
 repo: https://github.com/volcengine/minecontext
 license: Apache-2.0
 category: rag-knowledge
-subCategory: retrieval-indexing
+subCategory: agent-memory-context
 tags:
   - Data
   - RAG

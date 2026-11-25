@@ -12,6 +12,7 @@ jobs:
         with:
           node-version: '24'
       - run: npm ci
+      - run: npm test
       - run: npm run build
 
   trigger-worker-sync:
@@ -33,7 +34,8 @@ jobs:
             exit 0
           fi
 
-          DIFF=$(git diff --name-only "$PREV_HEAD" "HEAD" -- 'data/projects/' 'data/categories.yaml')
+          # Removed projects have nothing to score, so deleted files are left out.
+          DIFF=$(git diff --name-only --diff-filter=d "$PREV_HEAD" "HEAD" -- 'data/projects/' 'data/categories.yaml')
           if [ -n "$DIFF" ]; then
             echo "changed=true" >> "$GITHUB_OUTPUT"
             echo "Project data changes:"

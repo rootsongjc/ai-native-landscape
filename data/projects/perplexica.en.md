@@ -2,7 +2,7 @@
 name: Perplexica
 slug: perplexica
 homepage: null
-repo: https://github.com/itzcrazykns/perplexica
+repo: https://github.com/ItzCrazyKns/Vane
 license: MIT
 category: rag-knowledge
 subCategory: retrieval-indexing

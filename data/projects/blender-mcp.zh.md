@@ -2,7 +2,7 @@
 name: BlenderMCP
 slug: blender-mcp
 homepage: null
-repo: https://github.com/ahujasid/blender-mcp
+repo: https://github.com/ahujasid/mcp-for-blender
 license: MIT
 category: coding-devtools
 subCategory: mcp-tools

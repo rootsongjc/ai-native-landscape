@@ -2,10 +2,10 @@
 name: Memori
 slug: memori
 homepage: https://memorilabs.ai
-repo: https://github.com/gibsonai/memori
+repo: https://github.com/MemoriLabs/Memori
 license: Apache-2.0
 category: rag-knowledge
-subCategory: retrieval-indexing
+subCategory: agent-memory-context
 tags:
   - Agents
   - RAG

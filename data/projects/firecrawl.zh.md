@@ -5,7 +5,7 @@ homepage: https://firecrawl.dev
 repo: https://github.com/firecrawl/firecrawl
 license: AGPL-3.0
 category: rag-knowledge
-subCategory: retrieval-indexing
+subCategory: data-connectors
 tags:
   - Utility
 description: 一个面向 AI 的 Web 数据 API，将整个网站转换为干净的 markdown 或结构化数据，方便用于 RAG 与知识库构建。

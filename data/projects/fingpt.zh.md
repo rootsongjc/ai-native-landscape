@@ -4,8 +4,8 @@ slug: fingpt
 homepage: https://ai4finance.org
 repo: https://github.com/ai4finance-foundation/fingpt
 license: MIT
-category: rag-knowledge
-subCategory: retrieval-indexing
+category: training-optimization
+subCategory: finetuning-alignment
 tags:
   - Data
 description: 开源的金融大语言模型项目，提供金融领域定制的数据管道、指令微调与 RAG 工具链。

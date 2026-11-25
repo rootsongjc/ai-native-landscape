@@ -2,7 +2,7 @@
 name: Everywhere
 slug: everywhere
 homepage: https://everywhere.sylinko.com
-repo: https://github.com/dearva/everywhere
+repo: https://github.com/Sylinko/Everywhere
 license: Apache-2.0
 category: agents
 subCategory: agent-frameworks

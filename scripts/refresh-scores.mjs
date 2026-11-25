@@ -16,13 +16,8 @@ export function collectionInventory(projects, requestedRepos) {
   const selected = requestedRepos?.map((repo) => repo.toLowerCase());
   const unknown = selected?.filter((repo) => !catalog.has(repo)) || [];
   if (unknown.length > 0) throw new Error(`Repositories not in the catalog: ${unknown.join(', ')}`);
-  const skipped = selected ? [] : [...catalog]
-    .filter(([, project]) => project.status === 'unavailable')
-    .map(([repo]) => ({ repo, reason: 'Catalog status is unavailable' }));
-  const skippedRepos = new Set(skipped.map((entry) => entry.repo));
-  const repos = [...catalog.keys()].filter((repo) =>
-    selected ? selected.includes(repo) : !skippedRepos.has(repo));
-  return { repos, skipped, catalogCount: catalog.size };
+  const repos = selected ? [...catalog.keys()].filter((repo) => selected.includes(repo)) : [...catalog.keys()];
+  return { repos, catalogCount: catalog.size };
 }
 
 // A repository the score worker cannot find was deleted, made private, or renamed.
@@ -133,7 +128,7 @@ async function main() {
   if (!values['max-age-days'].trim() || !Number.isFinite(maxAgeDays) || maxAgeDays < 0) {
     throw new Error('--max-age-days must be a non-negative number');
   }
-  const { repos, skipped, catalogCount } = collectionInventory(loadProjects(), values.repo);
+  const { repos, catalogCount } = collectionInventory(loadProjects(), values.repo);
 
   const before = Object.fromEntries(locales.map((locale) => [locale, new Map()]));
   for (let index = 0; index < repos.length; index += 40) {
@@ -152,7 +147,6 @@ async function main() {
     dryRun: values['dry-run'],
     catalogCount,
     total: repos.length,
-    skipped,
     candidates,
     updated: [],
     unavailable: [],
@@ -163,7 +157,6 @@ async function main() {
   };
   saveReport();
   console.log(`Checked ${repos.length} repositories in both languages; ${candidates.length} need collection.`);
-  for (const entry of skipped) console.log(`Skipped: ${entry.repo}: ${entry.reason}`);
   if (values['dry-run']) {
     for (const entry of candidates) console.log(`${entry.repo}: ${entry.reasons.join('; ')}`);
     return;
@@ -191,7 +184,7 @@ async function main() {
   }
   report.finishedAt = new Date().toISOString();
   saveReport();
-  console.log(`Updated ${report.updated.length}; unavailable ${report.unavailable.length}; failed ${report.failures.length}; unchanged ${repos.length - candidates.length}; skipped ${skipped.length}.`);
+  console.log(`Updated ${report.updated.length}; unavailable ${report.unavailable.length}; failed ${report.failures.length}; unchanged ${repos.length - candidates.length}.`);
   if (process.env.GITHUB_OUTPUT) {
     appendFileSync(process.env.GITHUB_OUTPUT, `unavailable=${report.unavailable.length}\n`);
   }

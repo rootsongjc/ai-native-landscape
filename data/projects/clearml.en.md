@@ -5,7 +5,7 @@ homepage: https://clear.ml/docs
 repo: https://github.com/clearml/clearml
 license: Apache-2.0
 category: training-optimization
-subCategory: training-frameworks
+subCategory: experiment-mlops
 tags:
   - Deployment
   - ML Platform

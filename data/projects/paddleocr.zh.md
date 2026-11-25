@@ -4,8 +4,8 @@ slug: paddleocr
 homepage: https://www.paddleocr.ai
 repo: https://github.com/paddlepaddle/paddleocr
 license: Apache-2.0
-category: models-modalities
-subCategory: multimodal
+category: rag-knowledge
+subCategory: document-processing
 tags:
   - Application
   - Multimodal

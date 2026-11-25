@@ -5,7 +5,7 @@ homepage: https://developer.nvidia.com/nccl
 repo: https://github.com/nvidia/nccl
 license: Apache-2.0
 category: inference-serving
-subCategory: inference-runtimes
+subCategory: gpu-acceleration
 tags:
   - AI Kernel Library
   - Inference

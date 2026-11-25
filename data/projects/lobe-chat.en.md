@@ -2,7 +2,7 @@
 name: Lobe-Chat
 slug: lobe-chat
 homepage: https://lobehub.com/
-repo: https://github.com/lobehub/lobe-chat
+repo: https://github.com/lobehub/lobehub
 license: Apache-2.0
 category: applications-products
 subCategory: chat-interfaces

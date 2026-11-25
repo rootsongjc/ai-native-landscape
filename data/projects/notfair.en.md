@@ -2,7 +2,7 @@
 name: NotFair
 slug: notfair
 homepage: null
-repo: https://github.com/nowork-studio/NotFair
+repo: https://github.com/nowork-studio/notfair-plugin
 license: MIT
 category: coding-devtools
 subCategory: ide-cli-tools

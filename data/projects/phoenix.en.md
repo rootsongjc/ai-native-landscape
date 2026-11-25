@@ -1,43 +1,46 @@
 ---
 name: Phoenix
 slug: phoenix
-homepage: https://www.phoenixframework.org/
-repo: https://github.com/phoenixframework/phoenix
-license: MIT
+homepage: https://arize.com/docs/phoenix
+repo: https://github.com/Arize-ai/phoenix
+license: Elastic-2.0
 category: training-optimization
 subCategory: observability-monitoring
 tags:
-  - Deployment
-  - Dev Tools
+  - Observability
+  - Tracing
+  - Evaluation
+  - OpenTelemetry
+  - LLMOps
 description: >-
-  Phoenix is a high-performance web framework built with Elixir, optimized for realtime, distributed, and scalable web
-  applications.
-author: 'Chris McCord '
-ossDate: '2014-01-20T14:14:11.000Z'
+  Phoenix is Arize AI's observability and evaluation platform for LLM applications and agents, covering
+  OpenTelemetry-based tracing, evals, datasets and experiments, and prompt management.
+author: Arize AI
+ossDate: '2022-11-09T23:44:35Z'
 featured: false
 status: tracked
 ---
 
-## Introduction
+## Overview
 
-Phoenix is a modern web framework built on Elixir that emphasizes performance, concurrency, and realtime capabilities. It provides a robust structure and toolchain for taking applications from prototype to production.
+Phoenix, built by Arize AI, is an observability and evaluation platform for LLM applications and agents. It collects traces over OpenTelemetry, lets you run evaluations against them, and keeps datasets, experiments, and prompts in one place so a change to an application can be measured rather than guessed at. It runs on a laptop, in a notebook, in a container, or as a hosted service.
 
 ## Key Features
 
-- High concurrency and low latency leveraging the Erlang/OTP platform
-- Built-in realtime primitives (Channels / LiveView)
-- Powerful routing and request pipeline
-- Generators and developer tooling for fast iteration
+- Tracing built on OpenTelemetry and the OpenInference conventions, with auto-instrumentation for common frameworks and model providers
+- Evaluation with LLM-based and code-based evaluators for retrieval relevance, answer quality, and other criteria
+- Datasets and experiments: versioned example sets for comparing prompts, models, and retrieval settings side by side
+- Prompt playground and prompt management, including versioning and replaying traced calls with modified prompts
+- Self-hosted deployment through pip, Docker, or Kubernetes
 
 ## Use Cases
 
-- Realtime collaboration apps (chat, whiteboard, collaborative editing)
-- High-concurrency API services and microservices
-- Low-latency backends for finance or IoT
-- Education, social, and communication products
+- Debugging agent and RAG pipelines by inspecting each span of a request
+- Regression testing a prompt or model change against a fixed dataset before release
+- Tracking latency, token usage, and evaluation scores of an application in production
 
 ## Technical Highlights
 
-- Fault-tolerant and hot-upgrade capable via the Erlang VM
-- LiveView for server-rendered realtime UIs
-- Mature ecosystem (Hex packages, detailed docs)
+- Vendor-neutral instrumentation: traces are standard OTLP, so they can be sent to other backends as well
+- Python and TypeScript clients
+- Source-available under the Elastic License 2.0, which is not an OSI-approved open-source license

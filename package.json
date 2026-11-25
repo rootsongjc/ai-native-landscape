@@ -12,18 +12,22 @@
     "import:website": "node scripts/import-website-data.mjs",
     "build:worker-manifest": "node scripts/generate-worker-manifest.mjs",
     "refresh:scores": "node --use-env-proxy scripts/refresh-scores.mjs",
+    "sync:avatars": "node --use-env-proxy scripts/sync-avatars.mjs",
+    "triage": "node --use-env-proxy scripts/triage-submission.mjs",
+    "test": "node --test \"scripts/*.test.mjs\"",
     "build": "npm run validate && npm run build:index && npm run export && npm run build:worker-manifest && astro build",
     "dev": "astro dev --host --port 4173",
     "dev:fresh": "astro dev --host --port 4173 --force",
     "preview": "astro preview --host --port 4173"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.7.4",
+    "@astrojs/sitemap": "^3.7.6",
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
-    "astro": "^7.4.7",
+    "astro": "^7.4.13",
     "html2canvas": "^1.4.1",
     "js-yaml": "^4.1.0",
+    "jspdf": "^4.2.1",
     "marked": "^18.0.4",
     "qrcode": "^1.5.4"
   }

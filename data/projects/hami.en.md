@@ -4,8 +4,8 @@ slug: hami
 homepage: https://project-hami.io
 repo: https://github.com/project-hami/hami
 license: Apache-2.0
-category: inference-serving
-subCategory: model-serving
+category: platform-infra
+subCategory: gpu-virtualization-sharing
 tags:
   - Deployment
   - Inference Service

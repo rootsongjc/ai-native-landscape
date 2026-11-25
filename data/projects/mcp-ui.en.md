@@ -2,7 +2,7 @@
 name: MCP-UI
 slug: mcp-ui
 homepage: null
-repo: https://github.com/idosal/mcp-ui
+repo: https://github.com/MCP-UI-Org/mcp-ui
 license: Apache-2.0
 category: coding-devtools
 subCategory: mcp-tools

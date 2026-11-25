@@ -17,7 +17,7 @@ description: 一个为 Claude、VS Code、Cursor 等工具提供自动化项目�
 author: doobidoo
 ossDate: '2024-12-26T10:15:44Z'
 featured: false
-status: unavailable
+status: tracked
 ---
 
 ## 简介

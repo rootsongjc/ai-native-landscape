@@ -2,7 +2,7 @@
 name: Strands Agents
 slug: strands-agents
 homepage: https://strandsagents.com/
-repo: https://github.com/strands-agents/sdk-python
+repo: https://github.com/strands-agents/harness-sdk
 license: Apache-2.0
 category: agents
 subCategory: agent-frameworks

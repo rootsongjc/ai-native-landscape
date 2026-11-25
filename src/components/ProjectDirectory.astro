@@ -9,8 +9,7 @@ const landscape = getLandscape();
 const categories = landscape.categories.filter((category) => (landscape.byCategory[category.key] || []).length > 0);
 const projects = [...landscape.projects].sort((a, b) => a.name.localeCompare(b.name));
 const tags = [...new Set(projects.flatMap((project) => project.tags || []))].sort();
-const statuses = ['tracked', 'unavailable', 'archived', 'inactive']
-  .filter((status) => projects.some((project) => project.status === status));
+const statuses = [...new Set(projects.map((project) => project.status).filter(Boolean))];
 ---
 
 <BaseLayout

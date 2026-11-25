@@ -2,7 +2,7 @@
 name: cagent
 slug: cagent
 homepage: https://www.docker.com
-repo: https://github.com/docker/cagent
+repo: https://github.com/docker/docker-agent
 license: Apache-2.0
 category: agents
 subCategory: agent-frameworks

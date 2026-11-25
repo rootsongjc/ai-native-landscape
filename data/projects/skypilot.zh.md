@@ -4,8 +4,8 @@ slug: skypilot
 homepage: https://skypilot.ai/
 repo: https://github.com/skypilot-org/skypilot
 license: Apache-2.0
-category: training-optimization
-subCategory: experiment-mlops
+category: platform-infra
+subCategory: gpu-cloud-marketplaces
 tags:
   - Dev Tools
   - Workflow

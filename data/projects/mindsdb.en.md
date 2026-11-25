@@ -2,7 +2,7 @@
 name: MindsDB
 slug: mindsdb
 homepage: https://mindsdb.com
-repo: https://github.com/mindsdb/mindsdb
+repo: https://github.com/mindsdb/mindshub
 license: MIT
 category: rag-knowledge
 subCategory: data-connectors

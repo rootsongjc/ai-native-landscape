@@ -2,7 +2,7 @@
 name: LightGBM
 slug: lightgbm
 homepage: https://lightgbm.readthedocs.io/
-repo: https://github.com/microsoft/lightgbm
+repo: https://github.com/lightgbm-org/LightGBM
 license: Other
 category: training-optimization
 subCategory: training-frameworks

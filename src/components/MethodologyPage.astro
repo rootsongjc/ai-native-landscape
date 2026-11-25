@@ -110,7 +110,10 @@ const isZh = lang === 'zh';
         <li>{copy.curationRule2}</li>
         <li>{copy.curationRule3}</li>
         <li>{copy.curationRule4}</li>
+        <li>{copy.curationRule5}</li>
+        <li>{copy.curationRule6}</li>
       </ul>
+      <p class="method-section__intro">{copy.curationNote}</p>
     </section>
 
         <!-- Reference status -->
@@ -132,10 +135,6 @@ const isZh = lang === 'zh';
         <article class="method-status" data-status="graduated">
           <span class="method-status__badge">{copy.statuses.graduated}</span>
           <p>{copy.statusGraduatedDescription}</p>
-        </article>
-        <article class="method-status" data-status="archived">
-          <span class="method-status__badge">{copy.statuses.archived}</span>
-          <p>{copy.statusArchivedDescription}</p>
         </article>
       </div>
     </section>
@@ -172,18 +171,18 @@ const isZh = lang === 'zh';
       </ol>
     </section>
 
-    <!-- How to Archive -->
+    <!-- How projects are removed -->
     <section class="method-section">
       <h2>
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 8v13H3V8M1 3h22v5H1zM10 12h4"/></svg>
-        {copy.howToArchive}
+        {copy.howToRemove}
       </h2>
-      <p class="method-section__intro">{copy.howToArchiveDescription}</p>
+      <p class="method-section__intro">{copy.howToRemoveDescription}</p>
       <ul class="method-rules">
-        <li>{copy.archiveReason1}</li>
-        <li>{copy.archiveReason2}</li>
-        <li>{copy.archiveReason3}</li>
-        <li>{copy.archiveReason4}</li>
+        <li>{copy.removeReason1}</li>
+        <li>{copy.removeReason2}</li>
+        <li>{copy.removeReason3}</li>
+        <li>{copy.removeReason4}</li>
       </ul>
     </section>
   </main>

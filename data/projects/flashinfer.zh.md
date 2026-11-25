@@ -5,7 +5,7 @@ homepage: https://flashinfer.ai
 repo: https://github.com/flashinfer-ai/flashinfer
 license: MIT
 category: inference-serving
-subCategory: inference-runtimes
+subCategory: gpu-acceleration
 tags:
   - Dev Tools
   - Inference

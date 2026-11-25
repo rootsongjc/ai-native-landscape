@@ -4,8 +4,8 @@ slug: olmocr
 homepage: https://olmocr.allenai.org/
 repo: https://github.com/allenai/olmocr
 license: Apache-2.0
-category: models-modalities
-subCategory: multimodal
+category: rag-knowledge
+subCategory: document-processing
 tags:
   - Multimodal
   - Tool

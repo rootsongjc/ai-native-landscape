@@ -2,7 +2,7 @@
 name: Memvid
 slug: memvid
 homepage: https://www.memvid.com/
-repo: https://github.com/olow304/memvid
+repo: https://github.com/memvid/memvid
 license: Apache-2.0
 category: rag-knowledge
 subCategory: retrieval-indexing

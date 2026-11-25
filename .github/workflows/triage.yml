@@ -1,0 +1,68 @@
+name: triage
+
+on:
+  issues:
+    types: [opened, edited, labeled]
+  issue_comment:
+    types: [created]
+  # Runs in the context of the base branch so the checks cannot be altered by a fork.
+  # This workflow must never check out or execute code from the pull request.
+  pull_request_target:
+    types: [opened, synchronize]
+  workflow_dispatch:
+    inputs:
+      number:
+        description: 'Issue or pull request number (empty = all open)'
+        required: false
+        type: string
+      dry_run:
+        description: 'Dry run (print the result without commenting, labeling, or closing)'
+        required: false
+        default: 'true'
+        type: choice
+        options: ['true', 'false']
+
+# Comments, labels, and closing are done as the AI Native Landscape Bot GitHub App,
+# so the workflow's own token only needs to read the base branch.
+permissions:
+  contents: read
+
+concurrency:
+  group: triage-${{ github.event.issue.number || github.event.pull_request.number || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event_name == 'pull_request_target' ||
+      (github.event_name == 'issues' && (github.event.action != 'labeled' || github.event.label.name == 'exception')) ||
+      (github.event_name == 'issue_comment' && github.event.comment.user.type != 'Bot' && contains(github.event.comment.body, '/recheck'))
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      # The App is installed on this repository only and has no Contents permission.
+      - name: Mint a token for the AI Native Landscape Bot
+        id: app-token
+        uses: actions/create-github-app-token@v3
+        with:
+          app-id: ${{ vars.LANDSCAPE_BOT_APP_ID }}
+          private-key: ${{ secrets.LANDSCAPE_BOT_PRIVATE_KEY }}
+          permission-issues: write
+          permission-pull-requests: write
+      - name: Check submission against the inclusion standards
+        env:
+          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
+          NUMBER: ${{ github.event.issue.number || github.event.pull_request.number || inputs.number }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          ARGS=()
+          if [ -n "$NUMBER" ]; then ARGS+=(--number "$NUMBER"); else ARGS+=(--all-open); fi
+          if [ "$DRY_RUN" = "true" ]; then ARGS+=(--dry-run); fi
+          npm run triage -- "${ARGS[@]}"

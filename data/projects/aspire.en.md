@@ -2,7 +2,7 @@
 name: Aspire
 slug: aspire
 homepage: https://aspire.dev
-repo: https://github.com/dotnet/aspire
+repo: https://github.com/microsoft/aspire
 license: MIT
 category: coding-devtools
 subCategory: ide-cli-tools

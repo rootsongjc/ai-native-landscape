@@ -13,7 +13,6 @@ const LEGACY_CATEGORIES = new Set([
  * - Homepage & category pages change frequently → weekly, priority 0.8
  * - Project detail pages change less → monthly, priority 0.6
  * - Static pages (about, methodology) → monthly, priority 0.5
- * - Tomb/archive pages → yearly, priority 0.3
  */
 function sitemapPriority(pathname) {
   // Homepage
@@ -27,10 +26,6 @@ function sitemapPriority(pathname) {
   // Project pages
   if (pathname.includes('/projects/')) {
     return { changefreq: 'monthly', priority: 0.6 };
-  }
-  // Tomb pages
-  if (pathname.includes('/tomb')) {
-    return { changefreq: 'yearly', priority: 0.3 };
   }
   // Submit page
   if (pathname.includes('/submit')) {

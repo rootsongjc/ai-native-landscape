@@ -5,7 +5,7 @@ homepage: https://www.openviking.ai/
 repo: https://github.com/volcengine/openviking
 license: AGPL-3.0
 category: rag-knowledge
-subCategory: retrieval-indexing
+subCategory: agent-memory-context
 tags:
   - Data
   - Project

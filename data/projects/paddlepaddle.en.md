@@ -4,8 +4,8 @@ slug: paddlepaddle
 homepage: https://www.paddlepaddle.org/
 repo: https://github.com/paddlepaddle/paddle
 license: Apache-2.0
-category: models-modalities
-subCategory: foundation-models
+category: training-optimization
+subCategory: training-frameworks
 tags:
   - LLM
 description: >-

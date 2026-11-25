@@ -48,7 +48,7 @@ This returns a JSON array of 600+ projects. Each project has:
 | `tags` | string[] | Topic tags |
 | `author` | string | Maintainer org |
 | `ossDate` | string | Open source date |
-| `status` | string | tracked / incubating / graduated / archived |
+| `status` | string | tracked |
 | `score` | object | Health scores (activity, community, quality, sustainability) |
 | `content` | object | `{zh: string, en: string}` detailed markdown descriptions |
 

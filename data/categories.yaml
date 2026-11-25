@@ -78,23 +78,16 @@ categories:
     zh: 模型与多模态
     en: Models & Modalities
   description:
-    zh: 基础模型、模型工具链与多模态能力。
-    en: Foundation models, model toolkits, and multimodal capabilities.
+    zh: 模型工具链与多模态工程能力，不收录基础模型本身。
+    en: Model toolkits and multimodal engineering; foundation models themselves are out of scope.
   subcategories:
-  - key: foundation-models
-    name:
-      zh: 基础模型
-      en: Foundation Models
-    description:
-      zh: 通用模型、权重发布与模型家族。
-      en: Foundation model families and model releases.
   - key: model-toolkits
     name:
       zh: 模型工具链
       en: Model Toolkits
     description:
-      zh: 模型转换、量化、压缩与部署辅助。
-      en: Tooling for model conversion, quantization, and packaging.
+      zh: 模型定义库、模型转换、量化、压缩与部署辅助。
+      en: Model-definition libraries and tooling for conversion, quantization, and packaging.
   - key: multimodal
     name:
       zh: 多模态
@@ -114,8 +107,8 @@ categories:
       zh: 图像与视频生成
       en: Image & Video Generation
     description:
-      zh: 视觉生成模型与图像视频创作工具。
-      en: Image/video generation models and creative pipelines.
+      zh: 图像视频生成工具链与创作管线。
+      en: Image/video generation toolchains and creative pipelines.
 
 - key: inference-serving
   name:
@@ -333,16 +326,44 @@ categories:
     zh: 平台与基础设施
     en: Platform & Infrastructure
   description:
-    zh: 云原生 AI、数据平台、安全治理与运维能力。
-    en: Cloud-native AI platform capabilities and infrastructure.
+    zh: 云原生 AI、算力流通与调度、数据平台、安全治理与运维能力。
+    en: Cloud-native AI, GPU compute supply and scheduling, data platforms, security, and operations.
   subcategories:
   - key: cloud-native-ai
     name:
       zh: 云原生 AI
       en: Cloud Native AI
     description:
-      zh: K8s、调度与云原生 AI 基础设施。
-      en: Kubernetes-native AI infrastructure and scheduling.
+      zh: K8s 原生 AI 平台、集群运行时与通用云原生 AI 基础设施。
+      en: Kubernetes-native AI platforms, cluster runtimes, and general cloud-native AI infrastructure.
+  - key: gpu-cloud-marketplaces
+    name:
+      zh: 算力云与算力市场
+      en: GPU Cloud & Marketplaces
+    description:
+      zh: 算力租赁、多云 GPU 聚合与撮合、竞价实例和去中心化算力网络。
+      en: GPU rental, multi-cloud GPU brokering and aggregation, spot capacity, and decentralized compute networks.
+  - key: gpu-virtualization-sharing
+    name:
+      zh: GPU 虚拟化与共享
+      en: GPU Virtualization & Sharing
+    description:
+      zh: vGPU、显存与算力隔离、分时复用、MPS/MIG 切片和多租户 GPU 池化。
+      en: vGPU, memory and compute isolation, time-slicing, MPS/MIG partitioning, and multi-tenant GPU pooling.
+  - key: heterogeneous-compute-scheduling
+    name:
+      zh: 异构算力调度
+      en: Heterogeneous Compute Scheduling
+    description:
+      zh: 跨厂商加速器的设备管理、批量调度、作业排队与配额治理。
+      en: Device management, batch scheduling, job queueing, and quota governance across accelerator vendors.
+  - key: gpu-observability-cost
+    name:
+      zh: 算力可观测与成本
+      en: GPU Observability & Cost
+    description:
+      zh: GPU 遥测、利用率与能耗监控、算力成本分摊与优化。
+      en: GPU telemetry, utilization and energy monitoring, and compute cost allocation and optimization.
   - key: data-platforms
     name:
       zh: 数据平台

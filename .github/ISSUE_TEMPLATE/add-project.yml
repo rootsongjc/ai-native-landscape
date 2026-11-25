@@ -9,10 +9,17 @@ body:
       value: |
         Thanks for contributing to AI Native Landscape!
 
-        Before submitting, please:
-        1. **Search** [existing projects](https://landscape.jimmysong.io) to avoid duplicates
-        2. Ensure the project has an **active open source repository**
-        3. Verify the project fits the [inclusion criteria](https://landscape.jimmysong.io/methodology/)
+        Every submission is checked automatically against the [inclusion standards](https://landscape.jimmysong.io/methodology/).
+        Submissions that do not meet them are closed with the result. Before submitting, confirm that the project:
+
+        1. Is a **public GitHub repository** that is not a fork and not archived
+        2. Has an **open source license** that GitHub can detect
+        3. Has **at least 200 GitHub stars**
+        4. Was **created at least 60 days ago** and has a **commit in the last 90 days**
+        5. Is a **software project**, not an awesome list, prompt collection, or landing page
+        6. Is **not already listed** — search [existing projects](https://landscape.jimmysong.io) first
+
+        If the project falls short today, comment `/recheck` on your issue once it qualifies instead of opening a new one.
 
   - type: input
     id: name
@@ -71,11 +78,9 @@ body:
         - models-modalities
         - inference-serving
         - training-optimization
-        - evaluation-observability
         - coding-devtools
         - applications-products
         - platform-infra
-        - open-source-misc
     validations:
       required: true
 
@@ -83,36 +88,35 @@ body:
     id: subCategory
     attributes:
       label: Subcategory
-      description: Choose the most specific subcategory. Pick "uncategorized" if unsure.
+      description: Choose the most specific subcategory.
       options:
         - agent-frameworks
         - agent-orchestration
         - agent-memory-context
-        - mcp-tools
-        - sandboxes-runtimes
         - vector-databases
         - retrieval-indexing
         - document-processing
         - knowledge-graphs
         - data-connectors
-        - foundation-models
         - model-toolkits
         - multimodal
         - audio-speech
         - image-video-generation
         - model-serving
         - inference-runtimes
+        - sandboxes-runtimes
         - gpu-acceleration
         - edge-local-inference
         - llm-routing-gateways
         - training-frameworks
         - finetuning-alignment
         - experiment-mlops
-        - optimization-simulation
         - evaluation-benchmarks
         - observability-monitoring
         - prompt-quality
         - safety-guardrails
+        - optimization-simulation
+        - mcp-tools
         - coding-agents
         - ide-cli-tools
         - sdk-frameworks
@@ -127,8 +131,6 @@ body:
         - data-platforms
         - security-policy
         - deployment-operations
-        - uncategorized
-        - learning-resources
     validations:
       required: true
 
@@ -159,8 +161,8 @@ body:
       options:
         - label: The project has a publicly accessible GitHub repository
           required: true
-        - label: The project is actively maintained (commits in the last 6 months)
-          required: false
+        - label: The project meets the inclusion standards listed at the top of this form
+          required: true
         - label: The project is open source (not a wrapper around a proprietary API)
           required: true
         - label: I have searched and this project is not already listed

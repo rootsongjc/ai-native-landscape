@@ -19,7 +19,7 @@ Sync a single project's metadata from its GitHub repository. Keeps the landscape
 
 ### Step 1: Identify the Project
 
-Accept project identifier (same as archive skill):
+Accept project identifier (same as the remove skill):
 - **Slug** (preferred): `landscape-update langchain`
 - **Name** (partial): `landscape-update "LangChain"`
 - **Repo URL**: `landscape-update https://github.com/langchain-ai/langchain`
@@ -51,7 +51,7 @@ Extract:
 - `licenseInfo.spdxId` — license identifier
 - `repositoryTopics[].name` — GitHub topics → tags
 - `owner.login` — author/org
-- `isArchived` — if true, suggest archiving
+- `isArchived` — if true, suggest removing the project
 - `latestRelease.tagName` / `latestRelease.publishedAt` — latest release info
 - `updatedAt` — last push/activity timestamp
 
@@ -67,7 +67,6 @@ Compare GitHub data vs current frontmatter:
 | `tags` | GitHub topics changed significantly |
 | `homepage` | URL changed |
 | `author` | Org renamed |
-| `status` | GitHub `isArchived` is true |
 
 **Present changes to user before applying.** Format:
 
@@ -95,7 +94,7 @@ If `tags` changed:
 - Remove topics no longer on GitHub (unless manually added)
 
 **Special handling:**
-- If `isArchived` is true on GitHub → warn user, suggest running `landscape-archive`
+- If `isArchived` is true on GitHub → warn user, suggest running `landscape-remove`
 - If `homepage` changed → update both files
 - If `name` changed → update `name` field, but keep `slug` unchanged
 
@@ -121,7 +120,7 @@ Summarize what changed:
 - Fields updated (list old → new)
 - Files modified
 - Validation/build status
-- If project is archived on GitHub, recommend `landscape-archive`
+- If project is archived on GitHub, recommend `landscape-remove`
 
 ## Batch Update
 
@@ -137,7 +136,7 @@ Update multiple specific projects:
 | Error | Fix |
 |-------|-----|
 | Slug not found | List matches, ask user |
-| GitHub repo not found | Repo may be deleted, suggest archiving |
+| GitHub repo not found | Repo may be deleted, suggest removing the project |
 | GitHub API rate limit | Wait and retry, or use cached data |
 | No changes detected | Report "already up to date" |
 | License "NOASSERTION" | Set to "Unknown", note in report |

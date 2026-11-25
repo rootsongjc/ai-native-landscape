@@ -4,8 +4,8 @@ slug: mlc-llm
 homepage: https://llm.mlc.ai/
 repo: https://github.com/mlc-ai/mlc-llm
 license: Apache-2.0
-category: platform-infra
-subCategory: deployment-operations
+category: inference-serving
+subCategory: inference-runtimes
 tags:
   - Deployment
 description: >-

@@ -2,7 +2,7 @@
 name: OpenMontage
 slug: open-montage
 homepage: null
-repo: https://github.com/calesthio/OpenMontage
+repo: https://github.com/OpenMontageInc/OpenMontage
 license: AGPL-3.0
 category: models-modalities
 subCategory: image-video-generation

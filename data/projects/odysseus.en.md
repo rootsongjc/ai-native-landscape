@@ -2,7 +2,7 @@
 name: Odysseus
 slug: odysseus
 homepage: null
-repo: https://github.com/pewdiepie-archdaemon/odysseus
+repo: https://github.com/odysseus-dev/odysseus
 license: MIT
 category: applications-products
 subCategory: chat-interfaces

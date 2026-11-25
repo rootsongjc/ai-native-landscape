@@ -15,6 +15,10 @@ const TAG_PRIORITY_RULES = [
   { key: 'coding-agents', anyTags: ['vibe coding', 'code agent'] },
   { key: 'chat-interfaces', anyTags: ['chatbot', 'chat ui', 'copilot'] },
   { key: 'llm-routing-gateways', anyTags: ['ai gateway', 'ai gateways', 'llm router'] },
+  { key: 'gpu-cloud-marketplaces', anyTags: ['gpu cloud', 'gpu marketplace', 'compute marketplace', 'gpu rental'] },
+  { key: 'gpu-virtualization-sharing', anyTags: ['gpu virtualization', 'gpu sharing', 'vgpu', 'fractional gpu'] },
+  { key: 'heterogeneous-compute-scheduling', anyTags: ['gpu scheduling', 'batch scheduling', 'job queueing', 'device plugin', 'heterogeneous computing'] },
+  { key: 'gpu-observability-cost', anyTags: ['gpu monitoring', 'gpu observability', 'gpu telemetry', 'finops', 'cost optimization'] },
   { key: 'evaluation-benchmarks', anyTags: ['evaluation', 'benchmark'] },
   { key: 'observability-monitoring', anyTags: ['observability', 'observation', 'monitoring', 'analytics'] },
   { key: 'prompt-quality', anyTags: ['prompt engineering'] },
@@ -44,7 +48,6 @@ const TAG_PRIORITY_RULES = [
   { key: 'productivity-tools', anyTags: ['application', 'product', 'assistant', 'dashboard', 'visualization'], excludeTags: ['agent framework', 'agents', 'ai agent', 'mcp'] },
   { key: 'sdk-frameworks', anyTags: ['sdk', 'frameworks', 'application framework', 'middleware', 'project', 'python', 'java'] },
   { key: 'developer-utilities', anyTags: ['plugin', 'frontend', 'programming'] },
-  { key: 'foundation-models', anyTags: ['llm', 'model', 'models', 'foundation model', 'embedding model'] },
 ];
 
 const SUBCATEGORY_RULES = [
@@ -161,6 +164,22 @@ const SUBCATEGORY_RULES = [
     terms: ['inference runtime', 'kernel', 'engine', 'executor'],
   },
   {
+    key: 'gpu-cloud-marketplaces',
+    terms: ['gpu cloud', 'gpu marketplace', 'compute marketplace', 'gpu rental', 'gpu prices', 'decentralized compute'],
+  },
+  {
+    key: 'gpu-virtualization-sharing',
+    terms: ['gpu virtualization', 'gpu sharing', 'vgpu', 'fractional gpu', 'gpu pooling', 'time-slicing'],
+  },
+  {
+    key: 'heterogeneous-compute-scheduling',
+    terms: ['gpu scheduling', 'batch scheduling', 'job queueing', 'device plugin', 'heterogeneous comput'],
+  },
+  {
+    key: 'gpu-observability-cost',
+    terms: ['gpu monitoring', 'gpu telemetry', 'gpu metrics', 'gpu observability', 'finops', 'cost monitoring'],
+  },
+  {
     key: 'gpu-acceleration',
     terms: ['gpu', 'cuda', 'tensor', 'npu', 'accelerator', 'nccl'],
   },
@@ -212,10 +231,6 @@ const SUBCATEGORY_RULES = [
     key: 'desktop-clients',
     terms: ['desktop', 'electron', 'mac app', 'windows app', 'desktop client'],
   },
-  {
-    key: 'foundation-models',
-    terms: ['foundation model', 'llm', 'model family', 'checkpoint', 'pretrained model'],
-  },
 ];
 
 const LEGACY_RULE_FALLBACK = {
@@ -226,7 +241,7 @@ const LEGACY_RULE_FALLBACK = {
   evaluation_monitoring: { category: 'evaluation-observability', subCategory: 'evaluation-benchmarks' },
   ai_gateways: { category: 'inference-serving', subCategory: 'llm-routing-gateways' },
   inference_serving: { category: 'inference-serving', subCategory: 'model-serving' },
-  models_foundation: { category: 'models-modalities', subCategory: 'foundation-models' },
+  models_foundation: { category: 'models-modalities', subCategory: 'model-toolkits' },
   training_finetuning: { category: 'training-optimization', subCategory: 'training-frameworks' },
   vibe_coding: { category: 'coding-devtools', subCategory: 'coding-agents' },
 };
@@ -693,7 +708,6 @@ function mergeProjectDocumentsEntry(base, incoming) {
     content: mergeLocalizedObject(base.content, incoming.content),
     authorLocalized: mergeLocalizedObject(base.authorLocalized, incoming.authorLocalized),
     ossDate: preferValue(base.ossDate, incoming.ossDate),
-    archivedDate: preferValue(base.archivedDate, incoming.archivedDate),
     featured: preferValue(base.featured, incoming.featured),
     thumbnail: preferValue(base.thumbnail, incoming.thumbnail),
     source: mergeLocalizedObject(base.source, incoming.source),
@@ -740,7 +754,6 @@ function projectFrontMatterForLang(project, lang) {
     description: project.description?.[lang] || project.description?.en || project.description?.zh || '',
     author: project.authorLocalized?.[lang] || project.authorLocalized?.en || project.author || '',
     ossDate: project.ossDate || '',
-    archivedDate: project.archivedDate || '',
     featured: Boolean(project.featured),
     thumbnail: project.thumbnail || '',
     source: project.source?.[lang] || project.source?.en || project.source?.zh || '',

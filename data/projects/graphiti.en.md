@@ -4,8 +4,8 @@ slug: graphiti
 homepage: null
 repo: https://github.com/getzep/graphiti
 license: Apache-2.0
-category: agents
-subCategory: agent-frameworks
+category: rag-knowledge
+subCategory: knowledge-graphs
 tags:
   - Agent Framework
   - MCP

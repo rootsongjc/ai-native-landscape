@@ -4,8 +4,8 @@ slug: swe-agent
 homepage: https://swe-agent.com/latest/
 repo: https://github.com/swe-agent/swe-agent
 license: MIT
-category: agents
-subCategory: agent-frameworks
+category: coding-devtools
+subCategory: coding-agents
 tags:
   - Agent Framework
 description: >-

@@ -3,10 +3,7 @@
   <circle cx="1040" cy="88" r="260" fill="#0a84ff" opacity=".18"/>
   <circle cx="118" cy="552" r="220" fill="#0a84ff" opacity=".12"/>
   <rect x="72" y="72" width="1056" height="486" rx="36" fill="#141b25" stroke="#2f6fb8" stroke-width="2"/>
-  <rect x="116" y="116" width="84" height="84" rx="20" fill="#0a84ff"/>
-  <path d="M137 174 158 137l21 37" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="158" cy="163" r="7" fill="none" stroke="#fff" stroke-width="4"/>
-  <path d="M148 174h20" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <g transform="translate(116 116) scale(1.3125)"><rect x="4" y="4" width="24" height="56" rx="6" fill="#1f7ff0"/><rect x="32" y="4" width="28" height="32" rx="6" fill="#5aa9ff"/><rect x="32" y="40" width="28" height="20" rx="6" fill="#f59e0b"/></g>
   <text x="116" y="286" fill="#f8fbff" font-family="Inter, Arial, sans-serif" font-size="68" font-weight="800">Open Source AI Landscape</text>
   <text x="116" y="354" fill="#b7c4d8" font-family="Inter, Arial, sans-serif" font-size="30">The curated landscape of open-source AI tools, frameworks, agents, runtimes and infrastructure.</text>
   <text x="116" y="424" fill="#7db8ff" font-family="Inter, Arial, sans-serif" font-size="28">Agents · MCP · RAG · AI Infra · AI Native Tooling</text>

@@ -9,6 +9,7 @@ Documentation for the [AI Native Landscape](https://landscape.jimmysong.io) proj
 | [Architecture](architecture.md) | Project structure, data flow, component hierarchy, and scoring system |
 | [Contributing](contributing.md) | How to add projects, fix data, and submit pull requests |
 | [Deployment](deployment.md) | Cloudflare Pages deployment, CI/CD, and local environment setup |
+| [GPU Compute Taxonomy](gpu-compute-taxonomy.md) | Definitions, boundaries, inclusion criteria, and first-batch entries for the GPU compute subcategories |
 
 ## Quick Start
 
