@@ -26,17 +26,17 @@ Hippo Memory is a local-first, MIT-licensed memory layer for AI coding agents wr
 
 ## Key Features
 
-- **Local SQLite and Markdown Mirrors**: Keeps every memory in a local `.hippo/` SQLite store with readable markdown mirrors that can be inspected or committed to version control.
-- **Zero LLM Calls on Save and Default Recall**: Runs BM25 search out of the box with no model or network call required; optional local Transformers.js or API embeddings can be enabled per project.
+- **Local SQLite and Markdown Mirrors**: Keeps memories in a local `.hippo/` SQLite store with readable markdown mirrors that can be inspected or committed to version control; captured user messages are stored without a markdown mirror.
+- **Zero LLM Calls on Save and Default Recall**: Runs BM25 search out of the box with no model or network call required; `hippo init` installs a local Transformers.js embedder when hippo is a global npm install (`--no-embeddings` skips it), and an API embedder (OpenAI, Voyage, or Cohere) is opt-in.
 - **Outcome-Weighted Recall**: Strengthens memories that get used, lowers the rank of bad recalls, retires outdated facts via `hippo supersede`, and gives error-tagged memories double half-life.
-- **Cross-Tool Portability and Import**: Shares one store across coding agents via native hooks, instruction blocks, CLI, MCP server, and HTTP API, with importers for ChatGPT exports, `CLAUDE.md`, `.cursorrules`, Slack, GitHub, and markdown notes.
-- **Automated Consolidation**: Runs `hippo sleep` to extract lessons from recent git commits, import agent notes, deduplicate entries, and promote high-value lessons to a global store.
+- **Cross-Tool Portability and Import**: Shares one store across coding agents via native hooks, instruction blocks, CLI, MCP server, and HTTP API, with `hippo import` commands for ChatGPT exports, `CLAUDE.md`, `.cursorrules`, and markdown notes; Slack and GitHub content comes in through webhook connectors and `backfill` commands.
+- **Automated Consolidation**: Runs `hippo sleep` to extract lessons from recent git commits, import agent notes, deduplicate entries, and promote high-value lessons to a global store; `hippo sleep` sends text to Anthropic when `ANTHROPIC_API_KEY` is set (`extraction.enabled: false` turns this off), or to an OpenAI-compatible endpoint instead when `HIPPO_LLM_BASE_URL` and `HIPPO_LLM_MODEL` are set.
 
 ## Use Cases
 
 - Persisting project conventions, architectural decisions, and past bug fixes across coding-agent sessions without re-teaching the agent.
 - Switching between Claude Code, Codex, Cursor, and MCP-compatible tools while sharing one local project memory store.
-- Keeping proprietary engineering knowledge on-device in SQLite and markdown with full provenance per memory record.
+- Keeping engineering knowledge in SQLite and markdown on the local machine; text leaves it only through an API embedder, a reranker, model-read rule capture (`capture.followUpRules`), `hippo refine`, or `hippo sleep` with `ANTHROPIC_API_KEY` or a custom model endpoint (`HIPPO_LLM_BASE_URL` and `HIPPO_LLM_MODEL`) set, and memories ingested from Slack and GitHub carry a source reference (`slack://` provenance, `artifact_ref`).
 
 ## Links
 
