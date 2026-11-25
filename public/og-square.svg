@@ -3,10 +3,7 @@
   <!-- Top accent -->
   <rect width="600" height="6" fill="#0a84ff"/>
   <!-- Logo -->
-  <rect x="48" y="60" width="64" height="64" rx="16" fill="#0a84ff"/>
-  <path d="M66 104 L80 80l14 24" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="80" cy="100" r="5.5" fill="none" stroke="#fff" stroke-width="3"/>
-  <path d="M72 104h16" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+  <g transform="translate(48 60) scale(1.0)"><rect x="4" y="4" width="24" height="56" rx="6" fill="#1f7ff0"/><rect x="32" y="4" width="28" height="32" rx="6" fill="#5aa9ff"/><rect x="32" y="40" width="28" height="20" rx="6" fill="#f59e0b"/></g>
   <!-- Title - HUGE, single line with icon -->
   <text x="130" y="105" fill="#ffffff" font-family="Inter,Arial,sans-serif" font-size="42" font-weight="900">AI原生全景图</text>
   <!-- Subtitle -->
