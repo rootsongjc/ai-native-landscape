@@ -3,7 +3,7 @@ name: CUTLASS
 slug: cutlass
 homepage: null
 repo: https://github.com/nvidia/cutlass
-license: Other
+license: BSD-3-Clause
 category: inference-serving
 subCategory: gpu-acceleration
 tags:
@@ -11,7 +11,6 @@ tags:
 description: CUDA Templates for Linear Algebra Subroutines（CUTLASS），NVIDIA 提供的高性能矩阵运算模板库。
 author: NVIDIA
 ossDate: '2017-11-30T00:11:24.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

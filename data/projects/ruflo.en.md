@@ -17,7 +17,6 @@ description: >-
   autonomous workflow coordination, and conversational AI systems with enterprise-grade architecture.
 author: ruvnet
 ossDate: '2025-06-02T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 

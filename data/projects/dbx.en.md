@@ -16,7 +16,6 @@ description: >-
   Dameng and more — shipping desktop, Docker, CLI, and web builds with a built-in AI assistant and an MCP server.
 author: t8y2
 ossDate: '2026-04-29'
-featured: false
 status: tracked
 ---
 

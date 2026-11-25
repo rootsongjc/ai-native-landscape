@@ -14,7 +14,6 @@ tags:
 description: 一个基于 TypeScript 与 React 的可定制聊天界面组件库，旨在快速构建 AI 助手与对话界面。
 author: Assistant UI
 ossDate: '2023-11-22T16:01:17Z'
-featured: false
 status: tracked
 ---
 Assistant UI 是一个基于 TypeScript/React 的开源组件库，用于构建可定制的 AI 聊天界面。它提供可组合的 UI 组件，覆盖消息流、输入区、富媒体渲染和插件扩展点，便于与任意后端推理服务或智能体层集成。

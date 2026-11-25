@@ -17,7 +17,6 @@ tags:
 description: 开源的本地优先多智能体桌面应用：指挥官 LLM 负责规划、调度专家子智能体，并将你已安装的编码 CLI 作为本地会话驱动，自带 key、无厂商锁定。
 author: Orkas-AI
 ossDate: '2026-04-29'
-featured: false
 status: tracked
 ---
 

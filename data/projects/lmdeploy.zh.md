@@ -12,7 +12,6 @@ tags:
 description: LMDeploy 是一套用于大模型压缩、部署与服务化的工具集，提供高性能推理引擎、量化与分发能力，便于将模型在各类环境中上线。
 author: InternLM
 ossDate: '2023-06-15T12:38:06.000Z'
-featured: false
 status: tracked
 ---
 

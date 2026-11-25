@@ -14,7 +14,6 @@ description: >-
   model providers and rich guardrail policies.
 author: Portkey-AI
 ossDate: '2023-08-23T11:52:47.000Z'
-featured: false
 status: tracked
 ---
 Portkey's AI Gateway is a lightweight, enterprise-grade routing layer that connects requests to 200+ model providers and supports multiple modalities. It offers fast routing, retries and fallbacks, load balancing, extensible guardrails for safety, and auth controls—making it suitable for managing large-scale LLM traffic in production.

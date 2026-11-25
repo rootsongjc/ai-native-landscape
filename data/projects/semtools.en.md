@@ -13,7 +13,6 @@ tags:
 description: A command-line toolkit for semantic search, embedding generation, and document parsing for local and CI workflows.
 author: run-llama
 ossDate: '2025-08-23T21:56:09Z'
-featured: false
 status: tracked
 ---
 ## Overview

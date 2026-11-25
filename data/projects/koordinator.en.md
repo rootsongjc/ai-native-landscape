@@ -13,7 +13,6 @@ tags:
 description: 'A QoS-based Kubernetes scheduling system for co-locating microservices, big data, and AI workloads, with fine-grained GPU and heterogeneous device scheduling.'
 author: Koordinator
 ossDate: '2022-03-16T07:14:48.000Z'
-featured: false
 status: tracked
 ---
 

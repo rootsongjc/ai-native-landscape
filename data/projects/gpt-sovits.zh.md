@@ -13,7 +13,6 @@ tags:
 description: GPT-SoVITS 是一个开源少样本语音转换与 TTS WebUI，支持跨语言推理与工程化部署。
 author: RVC-Boss
 ossDate: '2024-01-14T18:05:21Z'
-featured: false
 status: tracked
 ---
 

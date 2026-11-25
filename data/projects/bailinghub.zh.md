@@ -14,7 +14,6 @@ tags:
 description: 基于 Agent 能力合约（ACC）的开源 A2B 控制平面，让 Agent 安全接入已有业务系统。
 author: bailinghub
 ossDate: '2026-07-09T09:08:51Z'
-featured: false
 status: tracked
 ---
 

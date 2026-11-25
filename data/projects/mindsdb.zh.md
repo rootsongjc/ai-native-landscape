@@ -11,7 +11,6 @@ tags:
 description: AI 查询引擎 - 构建能在大规模联合数据上回答问题的 AI 平台 - 你唯一需要的 MCP 服务器。
 author: MindsDB
 ossDate: '2018-08-02T17:56:45.000Z'
-featured: false
 status: tracked
 ---
 

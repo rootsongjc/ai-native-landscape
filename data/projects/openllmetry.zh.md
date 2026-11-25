@@ -12,7 +12,6 @@ tags:
 description: 基于 OpenTelemetry 思想的 LLM/AI 可观测性工具，提供模型请求的跟踪与指标聚合，用于诊断与监控。
 author: traceloop
 ossDate: '2023-09-02T14:42:59.000Z'
-featured: false
 status: tracked
 ---
 

@@ -15,7 +15,6 @@ tags:
 description: An open-source AI agent toolbox built with Rust that combines a WebAssembly sandbox runtime, multi-provider model adapters, a tool and skill system, and a built-in web dashboard.
 author: guyoung
 ossDate: '2026-05-16'
-featured: false
 status: tracked
 ---
 

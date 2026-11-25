@@ -12,7 +12,6 @@ tags:
 description: DataTrove 提供可扩展、平台无关的数据处理管道，用于大规模文本数据的清洗、去重与转换。
 author: Hugging Face
 ossDate: '2023-06-14T12:05:28.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

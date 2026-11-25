@@ -13,7 +13,6 @@ tags:
 description: Presenton 是一个开源的 AI 演示文稿生成器与 API，支持本地运行与多模型接入。
 author: Presenton
 ossDate: '2025-05-10T14:12:46Z'
-featured: false
 status: tracked
 ---
 

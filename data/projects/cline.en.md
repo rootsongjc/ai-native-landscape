@@ -13,7 +13,6 @@ description: >-
   workflow planning capabilities in VS Code.
 author: Cline Team
 ossDate: '2024-07-06T07:28:10.000Z'
-featured: true
 status: tracked
 ---
 Cline is one of my favorite AI programming agents in VS Code. I don't treat it as just a completion tool, but rather as a "commandable programming assistant": tell it what to do, and it will first build a plan, then execute step by step, run commands in the terminal, open browsers, and monitor outputs.

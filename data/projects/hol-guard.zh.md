@@ -16,7 +16,6 @@ tags:
 description: 面向 AI 编程智能体的开源安全工具，在受支持的集成中于工具操作执行前按本地策略进行检查，并扫描已安装的技能、插件和 MCP 配置中的风险。
 author: HOL (Hashgraph Online)
 ossDate: '2026-03-28T19:02:15Z'
-featured: false
 status: tracked
 ---
 

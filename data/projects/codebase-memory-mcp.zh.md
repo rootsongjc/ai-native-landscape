@@ -16,7 +16,6 @@ description: >-
   高性能代码智能 MCP 服务器，将代码库索引为持久化知识图谱。支持 158 种语言、亚毫秒级查询，token 消耗降低 99%，单静态二进制零依赖交付。
 author: DeusData
 ossDate: '2026-02-24T22:01:00Z'
-featured: false
 status: tracked
 ---
 

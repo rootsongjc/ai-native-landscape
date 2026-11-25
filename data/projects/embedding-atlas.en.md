@@ -15,7 +15,6 @@ description: >-
   search embeddings and metadata.
 author: Apple
 ossDate: '2025-05-07T00:56:44.000Z'
-featured: false
 status: tracked
 ---
 Embedding Atlas is an open-source tool from Apple that provides interactive visualizations for large-scale embedding spaces. It lets you explore, cross-filter, and search embeddings alongside their metadata, making it easier to understand the structure and distribution of high-dimensional data.

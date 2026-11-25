@@ -15,7 +15,6 @@ tags:
 description: 基于 Rust 构建的开源 AI Agent 工具箱，组合 WebAssembly 沙箱运行时、多提供商模型适配、工具与技能系统以及内置 Web 仪表盘。
 author: guyoung
 ossDate: '2026-05-16'
-featured: false
 status: tracked
 ---
 

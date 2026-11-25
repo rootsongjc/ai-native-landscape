@@ -13,7 +13,6 @@ tags:
 description: Kubernetes-native agent framework to declaratively build, run and manage AI agents on Kubernetes.
 author: Solo.o
 ossDate: '2025-01-21T17:03:23.000Z'
-featured: false
 status: tracked
 ---
 

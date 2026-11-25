@@ -14,7 +14,6 @@ tags:
 description: 一个用 Rust 实现的轻量、安全的 Python 解释器，专为在智能体中安全执行 LLM 生成的代码设计。
 author: Pydantic
 ossDate: '2023-05-28T11:13:38Z'
-featured: false
 status: tracked
 ---
 

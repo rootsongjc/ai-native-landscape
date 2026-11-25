@@ -11,7 +11,6 @@ tags:
 description: 用于大规模强化学习优化与训练流水线的框架，支持多后端与 Agentic 训练。
 author: Alibaba
 ossDate: '2025-05-28T11:27:18.000Z'
-featured: false
 status: tracked
 ---
 

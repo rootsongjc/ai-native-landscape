@@ -11,7 +11,6 @@ tags:
 description: Data Prep Kit accelerates unstructured data preparation for LLM applications.
 author: Data Prep Kit / IBM Research
 ossDate: '2024-04-08T23:43:52.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

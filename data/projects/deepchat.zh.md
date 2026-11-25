@@ -15,7 +15,6 @@ tags:
 description: DeepChat 是一款支持多模型、多模态的开源 AI 聊天平台，集成主流云端与本地大模型，提供统一对话体验。
 author: ThinkInAIXYZ
 ossDate: '2025-02-14T01:56:51Z'
-featured: false
 status: tracked
 ---
 ## 详细介绍

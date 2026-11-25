@@ -15,7 +15,6 @@ description: >-
   flow editing and rendering capabilities.
 author: xyflow
 ossDate: '2019-07-15T14:47:30.000Z'
-featured: false
 status: tracked
 ---
 

@@ -16,7 +16,6 @@ description: >-
   智能体开发环境（ADE），编排一组并行编程智能体——让 Codex、Claude Code、OpenCode 或 Pi 各自运行在独立 git worktree 中并行工作，统一集中跟踪。支持桌面端与移动端，使用用户自有订阅。
 author: stablyai
 ossDate: '2026-03-17T03:28:57Z'
-featured: false
 status: tracked
 ---
 

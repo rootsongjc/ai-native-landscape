@@ -14,7 +14,6 @@ description: >-
   multi-platform SDKs.
 author: Pipecat
 ossDate: '2023-12-27T12:59:00.000Z'
-featured: false
 status: tracked
 ---
 

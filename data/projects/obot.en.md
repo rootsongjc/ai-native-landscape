@@ -13,7 +13,6 @@ description: >-
   audit capabilities.
 author: obot-platform
 ossDate: '2024-09-05T19:50:46.000Z'
-featured: false
 status: tracked
 ---
 

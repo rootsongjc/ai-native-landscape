@@ -12,7 +12,6 @@ tags:
 description: Vosk API 提供离线语音识别能力，支持 Android、iOS、Raspberry Pi 及服务器端的多语言 ASR。
 author: alphacep
 ossDate: '2019-09-03T17:48:42.000Z'
-featured: false
 status: tracked
 ---
 

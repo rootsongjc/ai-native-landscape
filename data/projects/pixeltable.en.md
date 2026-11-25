@@ -13,7 +13,6 @@ tags:
 description: A declarative data infrastructure for multimodal AI workloads that simplifies storage, indexing, and inference.
 author: Pixeltable
 ossDate: '2023-05-10T18:03:02Z'
-featured: false
 status: tracked
 ---
 

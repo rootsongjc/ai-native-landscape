@@ -11,7 +11,6 @@ tags:
 description: 基于终端的 AI 结对程序员，通过自然语言命令帮助你编写、编辑和管理代码，支持 Git 集成和多种大语言模型。
 author: Aider
 ossDate: '2023-05-09T18:57:49.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

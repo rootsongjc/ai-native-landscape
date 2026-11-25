@@ -14,7 +14,6 @@ description: >-
   kernels to improve GPU throughput and latency for inference serving.
 author: flashinfer-ai
 ossDate: '2023-01-01T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 ## Introduction

@@ -11,7 +11,6 @@ tags:
 description: Milvus is a high-performance vector database designed for large-scale unstructured data processing.
 author: Milvus
 ossDate: '2019-09-16T06:43:43.000Z'
-featured: false
 status: tracked
 ---
 

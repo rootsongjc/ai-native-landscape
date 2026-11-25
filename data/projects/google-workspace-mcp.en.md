@@ -17,7 +17,6 @@ tags:
 description: A comprehensive Google Workspace MCP server and CLI giving AI assistants natural-language control over Gmail, Calendar, Drive, Docs, Sheets, Slides, Forms, Tasks, Contacts, and Chat via 120+ tools.
 author: taylorwilsdon
 ossDate: '2025-04-27'
-featured: false
 status: tracked
 ---
 

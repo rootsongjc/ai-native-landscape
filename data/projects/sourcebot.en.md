@@ -3,7 +3,7 @@ name: Sourcebot
 slug: sourcebot
 homepage: https://sourcebot.dev/
 repo: https://github.com/sourcebot-dev/sourcebot
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: developer-utilities
 tags:
@@ -13,7 +13,6 @@ description: >-
   natural language queries and multi-repo support.
 author: Sourcebot
 ossDate: '2024-08-23T20:40:37.000Z'
-featured: false
 status: tracked
 ---
 

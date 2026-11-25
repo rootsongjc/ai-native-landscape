@@ -12,7 +12,6 @@ tags:
 description: 一款面向桌面的上下文感知 AI 助手，集成多种本地及远端 LLM 与 MCP 工具以实现智能化交互与自动化。
 author: DearVa
 ossDate: '2025-04-23T08:19:33.000Z'
-featured: false
 status: tracked
 ---
 ## 详细介绍

@@ -17,7 +17,6 @@ description: >-
   Formerly Colleague Skill.
 author: titanwings
 ossDate: '2026-03-30'
-featured: false
 status: tracked
 ---
 

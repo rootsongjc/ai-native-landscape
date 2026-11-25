@@ -14,7 +14,6 @@ tags:
 description: Skyvern 是一个结合视觉能力与大语言模型的开源平台，用于自动化浏览器级工作流并支持本地服务与托管云。
 author: Skyvern
 ossDate: '2024-02-28T15:45:19Z'
-featured: false
 status: tracked
 ---
 

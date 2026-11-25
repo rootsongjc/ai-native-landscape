@@ -14,7 +14,6 @@ tags:
 description: 一款面向编程智能体的技能，阻止智能体把答案埋在长篇大论里，输出对 ADHD 友好、结论前置的简洁回复。
 author: ayghri
 ossDate: '2026-05-13T20:42:06Z'
-featured: false
 status: tracked
 ---
 

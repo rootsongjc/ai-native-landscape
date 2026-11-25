@@ -12,7 +12,6 @@ tags:
 description: 一个面向检索增强生成（RAG）的开源平台，提供多文件格式支持、内置引用与分区能力以简化知识库构建。
 author: Agentset
 ossDate: '2025-03-10T04:52:13Z'
-featured: false
 status: tracked
 ---
 ## 简介

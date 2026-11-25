@@ -3,7 +3,7 @@ name: MCP Memory Service
 slug: mcp-memory-service
 homepage: null
 repo: https://github.com/doobidoo/mcp-memory-service
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: mcp-tools
 tags:
@@ -16,7 +16,6 @@ tags:
 description: Automatic, persistent project context memory and retrieval for Claude, VS Code, Cursor and other tools.
 author: doobidoo
 ossDate: '2024-12-26T10:15:44Z'
-featured: false
 status: tracked
 ---
 

@@ -12,7 +12,6 @@ tags:
 description: Google 开源的数据库 MCP 工具包，为数据库操作提供标准化的 AI 智能体接口。
 author: Google
 ossDate: '2024-06-07T20:52:54.000Z'
-featured: false
 status: tracked
 ---
 GenAI Toolbox for Databases 是 Google 开源的 MCP（Model Context Protocol）服务器，为 AI 智能体提供与数据库交互的标准化接口。它通过处理连接池、身份验证和查询优化等复杂操作，显著简化了数据库工具的开发和部署，支持以最少的代码实现快速集成。

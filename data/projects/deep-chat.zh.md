@@ -11,7 +11,6 @@ tags:
 description: 可嵌入网站的一行代码 AI 聊天组件，支持多种 API、语音、文件与浏览器端模型运行。
 author: Ovidijus Parsiunas / Ovi
 ossDate: '2023-02-19T19:44:18.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

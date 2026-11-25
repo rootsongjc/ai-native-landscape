@@ -12,7 +12,6 @@ tags:
 description: 用于在 Kubernetes 上部署和扩展模型的推理操作器，支持 LLM、嵌入与语音转写等场景。
 author: SubstratusAI
 ossDate: '2023-10-21T00:59:51.000Z'
-featured: false
 status: tracked
 ---
 

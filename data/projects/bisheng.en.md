@@ -16,7 +16,6 @@ description: >-
   observability.
 author: DataElement
 ossDate: '2023-08-28T10:00:24Z'
-featured: false
 status: tracked
 ---
 BISHENG is an open-source LLM DevOps platform designed for building next-generation enterprise AI applications. It organizes large-model capabilities into composable, observable, and manageable applications by integrating workflow orchestration, Retrieval-Augmented Generation (RAG), model management, and evaluation tools.

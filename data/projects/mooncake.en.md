@@ -14,7 +14,6 @@ description: >-
   and distributed KVCache storage.
 author: kvcache-ai
 ossDate: '2024-06-25T05:21:05.000Z'
-featured: false
 status: tracked
 ---
 

@@ -17,7 +17,6 @@ description: >-
   inference with step distillation, quantization, and parallelism, and deploys across a wide range of hardware.
 author: ModelTC
 ossDate: '2025-03-24T10:27:56Z'
-featured: false
 status: tracked
 ---
 

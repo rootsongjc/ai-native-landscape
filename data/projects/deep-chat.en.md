@@ -13,7 +13,6 @@ description: >-
   models
 author: Ovidijus Parsiunas / Ovi
 ossDate: '2023-02-19T19:44:18.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

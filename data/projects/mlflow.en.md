@@ -14,7 +14,6 @@ description: >-
   packaging, model registry and deployment.
 author: MLflow
 ossDate: '2018-06-05T16:05:58.000Z'
-featured: false
 status: tracked
 ---
 

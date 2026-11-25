@@ -13,7 +13,6 @@ tags:
 description: OpenAgents 是一个用于创建和连接 AI 智能体网络的开源平台，支持多协议与插件扩展。
 author: OpenAgents
 ossDate: '2025-03-10T22:27:52Z'
-featured: false
 status: tracked
 ---
 

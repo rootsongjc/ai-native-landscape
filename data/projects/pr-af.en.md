@@ -13,7 +13,6 @@ tags:
 description: Open-source agentic code review engine that turns each PR into a task-specific review plan with focused reviewer agents.
 author: Agent-Field
 ossDate: '2026-03-11T15:35:35Z'
-featured: false
 status: tracked
 ---
 

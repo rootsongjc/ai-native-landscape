@@ -15,7 +15,6 @@ description: >-
   distributed training and multiple backends.
 author: NVIDIA NeMo
 ossDate: '2025-03-16T17:43:21Z'
-featured: false
 status: tracked
 ---
 

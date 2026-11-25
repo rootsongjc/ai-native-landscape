@@ -13,7 +13,6 @@ tags:
 description: A security-focused library OS that minimizes host interfaces and supports kernel- and user-mode constrained execution.
 author: Microsoft
 ossDate: '2024-12-11T01:23:27Z'
-featured: false
 status: tracked
 ---
 

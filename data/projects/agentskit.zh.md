@@ -15,7 +15,6 @@ tags:
 description: 可组合的 TypeScript 智能体工具包，以零依赖核心为基础，提供适配器、运行时、工具、技能、记忆、RAG、沙箱、可观测性与评测等可独立安装的包。
 author: AgentsKit
 ossDate: '2026-04-02'
-featured: false
 status: tracked
 ---
 

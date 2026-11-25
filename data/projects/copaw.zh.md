@@ -13,7 +13,6 @@ tags:
 description: CoPaw 是一个易于安装的个人 AI 助手，可在本地机器或云端部署，支持多种聊天应用并具备可扩展能力。
 author: AgentScope
 ossDate: '2026-02-24T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 ## 详细介绍

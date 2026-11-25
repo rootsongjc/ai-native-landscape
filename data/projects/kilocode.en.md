@@ -13,7 +13,6 @@ description: >-
   many innovative capabilities.
 author: Kilocode
 ossDate: '2025-03-10T15:34:26.000Z'
-featured: false
 status: tracked
 ---
 Kilo Code is an open-source AI coding assistant extension for VS Code and other IDEs that combines the best features of Roo Code and Cline while adding innovative capabilities. It enables developers to generate code through natural language, automatically check code quality, execute terminal commands, and perform browser automation, all within their preferred development environment.

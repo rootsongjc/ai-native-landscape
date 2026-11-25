@@ -13,7 +13,6 @@ tags:
 description: '一组 Kubernetes 设备插件及 Operator，将 Intel GPU、FPGA、QAT 等加速器暴露为可调度资源。'
 author: Intel
 ossDate: '2018-05-14T22:30:06.000Z'
-featured: false
 status: tracked
 ---
 

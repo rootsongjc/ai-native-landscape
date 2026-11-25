@@ -13,7 +13,6 @@ tags:
 description: 面向 AI 智能体的一体化沙箱环境，组合浏览器、Shell、文件系统、MCP 与 VSCode 服务，便于开发与测试。
 author: Agent Infra
 ossDate: '2025-08-06T14:51:05.000Z'
-featured: false
 status: tracked
 ---
 ## 详细介绍

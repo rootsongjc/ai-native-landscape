@@ -15,7 +15,6 @@ tags:
 description: 面向 AI 编程智能体的开源执行层，通过宏命令把环境检查、修改、构建与测试合并到更少的模型轮次中执行，并公开 DeepSWE 基准的全部产物。
 author: Tura AI
 ossDate: '2026-07-06'
-featured: false
 status: tracked
 ---
 

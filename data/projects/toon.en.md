@@ -13,7 +13,6 @@ tags:
 description: A token-oriented, compact and schema-aware data notation for LLM prompts and serialization.
 author: toon-format
 ossDate: '2025-10-22T18:17:32Z'
-featured: false
 status: tracked
 ---
 

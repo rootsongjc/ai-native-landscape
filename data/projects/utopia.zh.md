@@ -16,7 +16,6 @@ description: >-
   基础层，以单个 Rust 二进制加 Postgres 的形态离线部署。
 author: deeplethe
 ossDate: '2026-08-07'
-featured: false
 status: tracked
 ---
 

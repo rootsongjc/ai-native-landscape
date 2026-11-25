@@ -13,7 +13,6 @@ description: >-
   supporting Git integration and multiple LLMs.
 author: Aider
 ossDate: '2023-05-09T18:57:49.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

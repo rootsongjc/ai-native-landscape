@@ -12,7 +12,6 @@ tags:
 description: Perplexica 是一个开源的 AI 驱动搜索引擎，定位为 Perplexity AI 的开源替代方案。
 author: Perplexica
 ossDate: '2024-04-09T10:51:32Z'
-featured: false
 status: tracked
 ---
 

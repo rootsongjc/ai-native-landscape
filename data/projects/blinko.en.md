@@ -12,7 +12,6 @@ tags:
 description: Blinko is an open-source, self-hosted AI-powered card note tool that prioritizes data ownership.
 author: BlinkoSpace
 ossDate: '2024-10-23T10:04:59Z'
-featured: false
 status: tracked
 ---
 Blinko is an open-source, self-hosted personal AI note tool that prioritizes privacy and data ownership. Built using TypeScript, it combines Retrieval-Augmented Generation (RAG) and large language models to enable natural language search, generation, and organization of notes while keeping user data under full user control.

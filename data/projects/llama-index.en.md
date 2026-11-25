@@ -15,7 +15,6 @@ description: >-
   for retrieval-augmented generation.
 author: run-llama
 ossDate: '2022-11-02T04:24:54.000Z'
-featured: false
 status: tracked
 ---
 

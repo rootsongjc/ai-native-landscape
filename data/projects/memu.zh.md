@@ -3,7 +3,7 @@ name: memU
 slug: memu
 homepage: https://memu.pro
 repo: https://github.com/nevamind-ai/memu
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: agent-memory-context
 tags:
@@ -12,7 +12,6 @@ tags:
 description: memU 是开源的 AI 伴侣记忆框架，专注高准确率、快速检索与低成本，适配多种 AI 伴侣场景。
 author: NevaMind-AI
 ossDate: '2025-07-29T01:54:40.000Z'
-featured: false
 status: tracked
 ---
 

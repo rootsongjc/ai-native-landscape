@@ -14,7 +14,6 @@ description: >-
   multimodal document search and knowledge graph construction.
 author: Tencent
 ossDate: '2025-07-22T08:01:23.000Z'
-featured: false
 status: tracked
 ---
 

@@ -12,7 +12,6 @@ tags:
 description: Hugging Face 的 text-embeddings-inference 提供开箱即用的文本向量化推理服务，便于构建相似度检索和语义搜索应用。
 author: Hugging Face
 ossDate: '2023-10-13T13:36:51.000Z'
-featured: false
 status: tracked
 ---
 

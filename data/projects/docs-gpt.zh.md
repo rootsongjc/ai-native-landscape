@@ -12,7 +12,6 @@ tags:
 description: 一个开源的企业级文档智能体平台，结合 RAG 与多模型支持以提供带来源引用的文档问答。
 author: arc53
 ossDate: '2023-02-02T11:03:23Z'
-featured: false
 status: tracked
 ---
 ## 简介

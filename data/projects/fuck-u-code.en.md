@@ -11,7 +11,6 @@ tags:
 description: A static analysis tool that assesses codebase 'legacy-mess' and generates readable Markdown reports.
 author: Done-0
 ossDate: '2025-06-25T16:40:22.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

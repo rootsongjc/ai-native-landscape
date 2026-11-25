@@ -15,7 +15,6 @@ description: >-
   and cluster utilization in cloud-native environments.
 author: Project-HAMi
 ossDate: '2021-09-14T11:51:49.000Z'
-featured: false
 status: tracked
 ---
 

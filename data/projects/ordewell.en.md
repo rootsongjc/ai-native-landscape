@@ -16,7 +16,6 @@ tags:
 description: A task orchestrator for coding agents that turns one goal into an editable plan of tasks — each with its own runner, model, and mode — executed in parallel git worktrees and verified before anything reaches your branch.
 author: ordewell
 ossDate: '2026-07-31'
-featured: false
 status: tracked
 ---
 

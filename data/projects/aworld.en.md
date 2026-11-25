@@ -14,7 +14,6 @@ tags:
 description: AWorld is an agent runtime and research platform designed for large-scale multi-agent self-improvement and training.
 author: inclusionAI
 ossDate: '2025-03-14T08:30:52Z'
-featured: false
 status: tracked
 ---
 ## Overview

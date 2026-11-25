@@ -17,7 +17,6 @@ description: >-
   terminal, code editor, source control, and an agentic AI side-panel that runs against your own keys or local models.
 author: crynta
 ossDate: '2026-04-21T18:33:12.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

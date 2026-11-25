@@ -14,7 +14,6 @@ tags:
 description: 用于构建可观测、可部署的代码优先分布式应用的一体化工具链。
 author: .NET Foundation
 ossDate: '2023-09-25T23:49:49Z'
-featured: false
 status: tracked
 ---
 

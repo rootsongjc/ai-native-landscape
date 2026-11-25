@@ -3,7 +3,7 @@ name: DuckDB
 slug: duckdb
 homepage: http://www.duckdb.org
 repo: https://github.com/duckdb/duckdb
-license: Other
+license: MIT
 category: platform-infra
 subCategory: data-platforms
 tags:
@@ -12,7 +12,6 @@ tags:
 description: An analytical, in-process SQL database suited for interactive queries, ETL, and local analytics.
 author: DuckDB
 ossDate: '2018-06-26T15:04:45Z'
-featured: false
 status: tracked
 ---
 ## Overview

@@ -15,7 +15,6 @@ description: >-
   with support for multiple models and customization options.
 author: Open WebUI Team
 ossDate: '2023-10-06T22:08:27.000Z'
-featured: false
 status: tracked
 ---
 

@@ -112,7 +112,7 @@ Required frontmatter fields:
 | `category` | string | Must match a key in `categories.yaml` |
 | `description` | object | Must contain both `zh` and `en` strings |
 
-Optional fields: `homepage`, `license`, `subCategory`, `tags`, `author`, `ossDate`, `featured`, `thumbnail`, `source`, `status`, `score`.
+Optional fields: `homepage`, `license`, `subCategory`, `tags`, `author`, `ossDate`, `thumbnail`, `source`, `status`, `score`.
 
 The `score` object contains: `health`, `activity`, `community`, `popularity`, `quality`, `sustainability` -- all 0-100.
 
@@ -176,6 +176,31 @@ Overall health is a weighted sum of these dimensions. Tier labels:
 | 70-79 | Worth Trying |
 | 60-69 | Monitor Progress |
 | 0-59 | Explore Carefully |
+
+## Project Levels
+
+Every project has a level: `mature`, `growing`, or `emerging`. A level is computed, never assigned by hand, and there is no `featured` flag. The names avoid foundation vocabulary on purpose: this site is not affiliated with any foundation.
+
+A level measures project health. The overall health score carries the most weight; the other dimensions confirm that the score rests on real contributors, ongoing development and some history. Star count, foundation membership and vendor neutrality are not part of the standard.
+
+| Dimension | Scoring |
+|---|---|
+| Community health (overall health score) | 4 points ≥ 85 · 3 points ≥ 80 · 2 points ≥ 70 · 1 point ≥ 60 |
+| Contributor base | 2 points ≥ 150 contributors · 1 point ≥ 30 |
+| Sustained activity | 2 points: ≥ 300 commits in the last year and a commit in the last 30 days · 1 point: ≥ 50 commits and a commit in the last 90 days |
+| Track record | 2 points: repository created ≥ 730 days ago · 1 point: ≥ 365 days ago |
+
+| Level | Rule |
+|---|---|
+| `mature` | 10 points: full marks on every dimension |
+| `growing` | At least 5 points, with at least 2 for community health and at least 1 for sustained activity |
+| `emerging` | Every other listed project |
+
+The numbers live in `DIMENSIONS` and `LEVELS` in `src/lib/levels.mjs`, which also renders them on the methodology page.
+
+- **Signals**: `npm run sync:levels` reads the score API and writes `data/signals.json`. The build derives levels from that file, so it does not depend on the API. A repository whose collection is incomplete keeps its previous signals; a project with no signals is `emerging`.
+- **Order**: `loadProjects()` sorts by level, then level points, then health score, then name. Categories, subcategories and the landscape map all use this order. Mature projects take a 2×2 tile in the map.
+- **Changes**: the weekly `sync-levels` workflow opens a pull request listing promotions and demotions when a level changes.
 
 ## Internationalization
 

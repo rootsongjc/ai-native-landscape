@@ -15,7 +15,6 @@ description: >-
   collaborative AI agent teams.
 author: Foundation Agents
 ossDate: '2023-06-30T09:04:55.000Z'
-featured: false
 status: tracked
 ---
 

@@ -16,7 +16,6 @@ description: >-
   sequence, workflow, ERD and more — with typed JSON sources, validation receipts, and chat-driven refinement.
 author: tt-a1i
 ossDate: '2026-04-15'
-featured: false
 status: tracked
 ---
 

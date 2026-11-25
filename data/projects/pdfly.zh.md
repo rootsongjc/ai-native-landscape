@@ -13,7 +13,6 @@ tags:
 description: 基于命令行的 PDF 元数据提取与处理工具，适用于批量自动化文档处理任务。
 author: py-pdf
 ossDate: '2022-04-09T20:49:42Z'
-featured: false
 status: tracked
 ---
 

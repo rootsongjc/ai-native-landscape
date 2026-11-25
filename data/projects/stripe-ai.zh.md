@@ -13,7 +13,6 @@ tags:
 description: Stripe 提供的开源 AI 工具集与 SDK，帮助开发者将支付与账单功能安全地集成到 LLM 与智能体工作流中。
 author: Stripe
 ossDate: '2024-11-11T17:13:41Z'
-featured: false
 status: tracked
 ---
 

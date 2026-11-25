@@ -12,7 +12,6 @@ tags:
 description: An AI toolkit for healthcare imaging focused on deep learning workflows for medical image processing and analysis.
 author: Project MONAI
 ossDate: '2019-10-11T16:41:38.000Z'
-featured: false
 status: tracked
 ---
 

@@ -11,7 +11,6 @@ tags:
 description: Claude Code 作为基于命令行的 AI 编程助手，可以说带火了 AI 命令行氛围编程这个赛道。
 author: Anthropic
 ossDate: '2025-02-22T17:41:21.000Z'
-featured: true
 status: tracked
 ---
 自从 Claude Code 发布以来，以命令行为载体的氛围编程工具的热度就甚嚣尘上，Claude Code 作为 Anthropic 的 AI 编程助手，自然也备受瞩目。Claude Code 是一个 AI 编程助手，帮助开发者使用先进的 AI 功能编写、调试和优化代码。

@@ -3,7 +3,7 @@ name: Suna
 slug: suna
 homepage: https://www.suna.so/
 repo: https://github.com/kortix-ai/CompanyOS
-license: Unknown
+license: Elastic-2.0
 category: applications-products
 subCategory: workflow-automation
 tags:
@@ -13,7 +13,6 @@ description: >-
   and workflow orchestration for building agent applications.
 author: Kortix
 ossDate: '2024-10-05T17:01:01.000Z'
-featured: false
 status: tracked
 ---
 

@@ -13,7 +13,6 @@ tags:
 description: An open-source TypeScript AI toolkit from Vercel that simplifies building AI-enabled frontends and edge apps.
 author: Vercel
 ossDate: '2023-05-23T15:04:08Z'
-featured: false
 status: tracked
 ---
 

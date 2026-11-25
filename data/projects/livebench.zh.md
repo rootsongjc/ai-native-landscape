@@ -12,7 +12,6 @@ tags:
 description: LiveBench 是一个面向客观评测与最小污染的 LLM 基准套件，提供可复现的题库、自动评分与在线排行榜服务。
 author: LiveBench
 ossDate: '2024-06-12T12:13:57.000Z'
-featured: false
 status: tracked
 ---
 

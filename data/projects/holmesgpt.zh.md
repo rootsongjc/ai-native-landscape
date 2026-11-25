@@ -11,7 +11,6 @@ tags:
 description: 一款专为云原生环境设计的智能体平台，自动调查告警、定位根因并建议修复方案。
 author: CNCF
 ossDate: '2024-05-30T13:27:10Z'
-featured: false
 status: tracked
 ---
 

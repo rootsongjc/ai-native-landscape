@@ -16,7 +16,6 @@ description: >-
   并输出校准概率——M3 Max 上 7–14 毫秒，无文本生成、不依赖 PyTorch 或云 API。
 author: mizorewww
 ossDate: '2026-09-19'
-featured: false
 status: tracked
 ---
 

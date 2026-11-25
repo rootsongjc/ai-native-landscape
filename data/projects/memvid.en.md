@@ -12,7 +12,6 @@ tags:
 description: Encode millions of text chunks into portable MP4 files for millisecond semantic search and offline-first AI memory.
 author: Saleban Olow (@Olow304)
 ossDate: '2025-05-27T16:01:08.000Z'
-featured: false
 status: tracked
 ---
 

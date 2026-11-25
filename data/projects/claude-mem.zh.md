@@ -12,7 +12,6 @@ tags:
 description: 一个为 Claude Code 提供的插件，自动捕获编码会话的上下文、用 AI 压缩并在未来会话中注入相关记忆。
 author: thedotmack
 ossDate: '2025-08-31T20:50:03Z'
-featured: false
 status: tracked
 ---
 Claude Mem 为每个 AI 智能体提供跨会话的持久上下文能力，自动捕获智能体的所有操作，通过 AI 进行压缩，并在未来会话中注入相关上下文。它解决了智能体在会话之间丢失上下文的常见问题，实现持续且高效的 AI 辅助开发工作流。

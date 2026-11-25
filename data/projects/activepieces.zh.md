@@ -3,7 +3,7 @@ name: Activepieces
 slug: activepieces
 homepage: https://www.activepieces.com
 repo: https://github.com/activepieces/activepieces
-license: Other
+license: MIT
 category: applications-products
 subCategory: workflow-automation
 tags:
@@ -11,7 +11,6 @@ tags:
 description: Activepieces 是开源 AI 自动化与工作流平台，支持 280+ MCP 服务器，助力 AI Agent 与自动化场景快速集成。
 author: Activepieces
 ossDate: '2022-12-03T02:52:46.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

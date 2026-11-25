@@ -12,7 +12,6 @@ tags:
 description: 'AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.'
 author: AG-UI Team
 ossDate: '2025-05-07T12:49:37.000Z'
-featured: false
 status: tracked
 ---
 AG-UI (Agent-User Interaction Protocol) is an innovative protocol designed to bring intelligent agents into frontend applications. The protocol provides a standardized set of interfaces and methods for frontend developers, making it easier and more efficient to integrate and use AI agents in web applications.

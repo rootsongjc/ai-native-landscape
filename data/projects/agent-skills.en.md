@@ -3,7 +3,7 @@ name: Agent Skills
 slug: agent-skills
 homepage: https://agentskills.io/
 repo: https://github.com/vercel-labs/agent-skills
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -13,7 +13,6 @@ tags:
 description: A collection that packages reusable skills as instructions and scripts to extend agents' capabilities.
 author: Vercel
 ossDate: '2025-12-08T19:10:06Z'
-featured: false
 status: tracked
 ---
 

@@ -13,7 +13,6 @@ tags:
 description: Secure open source cloud runtime for AI apps & AI agents.
 author: E2B
 ossDate: '2023-03-04T13:41:18.000Z'
-featured: true
 status: tracked
 ---
 E2B is an open-source infrastructure that allows you to run AI-generated code in secure isolated sandboxes in the cloud. To start and control sandboxes, use our Python SDK or JavaScript SDK.

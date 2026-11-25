@@ -12,7 +12,6 @@ tags:
 description: Deep-Live-Cam 是一个开源的实时面部替换与虚拟形象（avatar）工具，支持离线运行并面向内容创作者与流媒体使用场景。
 author: hacksider
 ossDate: '2023-09-24T13:19:31Z'
-featured: false
 status: tracked
 ---
 Deep-Live-Cam 是一个开源的 AI 驱动视频处理工具，仅需单张图片即可实现实时换脸和一键视频深度伪造。它强调离线和本地化运行，让创作者和主播无需将视频上传到云端即可用虚拟形象替换摄像头画面。

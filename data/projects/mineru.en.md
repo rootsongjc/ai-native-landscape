@@ -13,7 +13,6 @@ description: >-
   JSON formats, supporting formula, table, image extraction and multilingual OCR.
 author: OpenDataLab
 ossDate: '2024-02-29T08:52:34.000Z'
-featured: true
 status: tracked
 ---
 

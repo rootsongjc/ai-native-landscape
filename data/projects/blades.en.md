@@ -12,7 +12,6 @@ tags:
 description: A multimodal AI Agent framework in Go providing pluggable components for models, tools, memory, and middleware.
 author: go-kratos
 ossDate: '2025-09-15T16:43:22.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

@@ -16,7 +16,6 @@ description: >-
   deployment solutions.
 author: LangGenius
 ossDate: '2023-04-12T07:40:24.000Z'
-featured: false
 status: tracked
 ---
 Dify is an open-source LLM application development platform designed to simplify the development and deployment of large language model applications. The platform provides visual application building interfaces, rich model integration options, and enterprise-grade deployment solutions, enabling developers and enterprises to quickly build and deploy AI applications.

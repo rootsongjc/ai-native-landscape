@@ -3,7 +3,7 @@ name: Open Generative AI
 slug: open-generative-ai
 homepage: null
 repo: https://github.com/Anil-matcha/Open-Generative-AI
-license: Unknown
+license: MIT
 category: models-modalities
 subCategory: image-video-generation
 tags:
@@ -14,7 +14,6 @@ tags:
 description: AI 视频平台的开源替代方案，内置 200+ 模型，支持 Flux、Midjourney 风格生成和视频创作工作室。
 author: Anil Matcha
 ossDate: '2023-05-09T00:00:00Z'
-featured: true
 status: tracked
 ---
 

@@ -14,7 +14,6 @@ tags:
 description: ZeroClaw 是一个用 Rust 编写的快速、小型且完全自主的 AI 助手基础设施，可在任意位置部署、自由替换所有组件。
 author: zeroclaw-labs
 ossDate: '2026-02-19T00:00:00Z'
-featured: false
 status: tracked
 ---
 

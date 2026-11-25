@@ -11,7 +11,6 @@ tags:
 description: An open-source evaluation and testing framework to detect performance, bias, and security issues in AI systems.
 author: Giskard-AI
 ossDate: '2022-03-06T21:45:37.000Z'
-featured: false
 status: tracked
 ---
 ## Introduction

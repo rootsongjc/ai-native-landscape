@@ -13,7 +13,6 @@ description: >-
   of code-oriented interaction specifications.
 author: Fission AI
 ossDate: '2025-08-05T10:37:45.000Z'
-featured: false
 status: tracked
 ---
 

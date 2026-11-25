@@ -13,7 +13,6 @@ description: >-
   parallelism and memory management for optimal performance.
 author: HPC-AI Tech / ColossalAI
 ossDate: '2021-10-28T16:19:44.000Z'
-featured: false
 status: tracked
 ---
 Colossal-AI is an open-source distributed training and inference framework that makes large AI models cheaper, faster, and more accessible. It provides advanced parallelism strategies and heterogeneous memory management to reduce resource costs for large-scale model training and deployment.

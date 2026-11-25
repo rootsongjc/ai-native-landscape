@@ -13,7 +13,6 @@ description: >-
   keeping all data local.
 author: PromtEngineer
 ossDate: '2023-05-24T05:32:40.000Z'
-featured: false
 status: tracked
 ---
 ## Summary

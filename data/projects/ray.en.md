@@ -13,7 +13,6 @@ description: >-
   learning workloads and general-purpose parallel computing.
 author: Ray Project
 ossDate: '2016-10-25T19:38:30.000Z'
-featured: false
 status: tracked
 ---
 

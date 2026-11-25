@@ -18,7 +18,6 @@ description: >-
   compression.
 author: cheaper-inference
 ossDate: '2026-02-13'
-featured: false
 status: tracked
 ---
 

@@ -14,7 +14,6 @@ description: >-
   image-generation pipelines.
 author: comfyanonymous
 ossDate: '2023-01-17T03:15:56.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

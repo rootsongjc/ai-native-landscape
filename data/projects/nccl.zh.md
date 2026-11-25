@@ -12,7 +12,6 @@ tags:
 description: 针对多 GPU 环境的高性能集合通信库，优化 PCIe、NVLink、NVSwitch 与 RDMA 网络下的带宽与延迟。
 author: NVIDIA
 ossDate: '2015-06-01T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 

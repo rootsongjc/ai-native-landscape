@@ -17,7 +17,6 @@ description: >-
   and other AI coding agents from a single shared git repo.
 author: Tencent
 ossDate: '2026-04-27T09:42:49.000Z'
-featured: false
 status: tracked
 ---
 

@@ -13,7 +13,6 @@ description: >-
   integration with security tooling.
 author: ProjectDiscovery
 ossDate: '2021-01-02T16:56:05Z'
-featured: false
 status: tracked
 ---
 

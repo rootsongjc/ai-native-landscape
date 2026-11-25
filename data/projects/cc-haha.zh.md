@@ -3,7 +3,7 @@ name: cc-haha
 slug: cc-haha
 homepage: https://cchaha.ai
 repo: https://github.com/NanmiCoder/cc-haha
-license: Unknown
+license: Other
 category: applications-products
 subCategory: desktop-clients
 tags:
@@ -16,7 +16,6 @@ description: >-
   技能市场、多模型与 Computer Use，并支持手机 App 和 IM 渠道远程访问。
 author: NanmiCoder
 ossDate: '2026-03-31'
-featured: false
 status: tracked
 ---
 

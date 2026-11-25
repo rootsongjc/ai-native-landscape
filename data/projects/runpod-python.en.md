@@ -13,7 +13,6 @@ tags:
 description: 'The open-source Python library for the Runpod GPU cloud, covering the platform API and the serverless worker SDK.'
 author: Runpod
 ossDate: '2022-12-09T21:35:48.000Z'
-featured: false
 status: tracked
 ---
 

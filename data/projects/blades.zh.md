@@ -12,7 +12,6 @@ tags:
 description: 一个用 Go 编写的多模态 AI Agent 框架，提供模型、工具、记忆与中间件的可插拔组件。
 author: go-kratos
 ossDate: '2025-09-15T16:43:22.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

@@ -12,7 +12,6 @@ tags:
 description: 针对 Apple Silicon 的高性能数组与机器学习框架，提供 NumPy 风格的 API 与多语言绑定。
 author: ml-explore
 ossDate: '2023-11-28T23:33:45.000Z'
-featured: false
 status: tracked
 ---
 

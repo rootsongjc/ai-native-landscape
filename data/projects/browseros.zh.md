@@ -13,7 +13,6 @@ tags:
 description: 开源的 Agentic 浏览器，隐私优先，可在本地运行 AI Agent，是 ChatGPT Atlas / Perplexity 等在线服务的隐私优先替代方案。
 author: browseros-ai
 ossDate: '2025-05-18T16:23:54Z'
-featured: false
 status: tracked
 ---
 BrowserOS 是一个面向未来的开源浏览器项目，它基于 Chromium 并内置对 AI Agent 的本地执行与编排能力，主打隐私优先和可扩展性。项目目标是把浏览器从被动工具提升为主动的智能助手，让用户在本地运行 AI、自动化重复任务，而不把浏览数据泄露给第三方服务。

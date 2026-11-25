@@ -16,7 +16,6 @@ tags:
 description: A self-hosted, multi-user, multi-agent AI assistant from Tencent Cloud that serves a web dashboard, CLI, and IM channels (Feishu, DingTalk, QQ, Discord, WeCom) from a single process.
 author: Tencent Cloud
 ossDate: '2026-07-08'
-featured: false
 status: tracked
 ---
 

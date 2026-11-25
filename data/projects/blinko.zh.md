@@ -12,7 +12,6 @@ tags:
 description: Blinko 是一款开源的自托管 AI 卡片笔记工具，强调隐私与快速检索。
 author: BlinkoSpace
 ossDate: '2024-10-23T10:04:59Z'
-featured: false
 status: tracked
 ---
 Blinko 是一款开源的自托管个人 AI 笔记工具，以隐私为优先，使用 TypeScript 构建。它结合检索增强生成（RAG）和大语言模型能力，允许用户用自然语言快速检索、生成与组织笔记，同时将数据保存在用户完全控制的环境中。

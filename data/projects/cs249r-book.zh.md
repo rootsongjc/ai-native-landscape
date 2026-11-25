@@ -3,7 +3,7 @@ name: Machine Learning Systems (MLSysBook)
 slug: cs249r-book
 homepage: https://mlsysbook.ai/
 repo: https://github.com/harvard-edge/cs249r_book
-license: Other
+license: CC-BY-NC-SA-4.0
 category: inference-serving
 subCategory: inference-runtimes
 tags:
@@ -11,7 +11,6 @@ tags:
 description: 一本面向真实世界 AI 系统工程的开源教材，覆盖从边缘设备到云端部署的系统设计与实践。
 author: Vijay Janapa Reddi / Harvard EDGE
 ossDate: '2023-09-06T19:31:06.000Z'
-featured: false
 status: tracked
 ---
 ## 详细介绍

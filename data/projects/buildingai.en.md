@@ -13,7 +13,6 @@ tags:
 description: BuildingAI (FastBuildAI) provides a visual low-code platform to create AI apps with monetization features.
 author: FastBuildAI
 ossDate: '2025-03-14T10:22:39Z'
-featured: false
 status: tracked
 ---
 BuildingAI (FastBuildAI) is a block-based AI application building system described as the AI-era WordPress, where anyone can build AI apps like enterprise agents, AI comics, academic systems, and customer service. It offers a drag-and-drop visual editor, built-in models, and monetization features to help non-technical users quickly prototype and ship AI products.

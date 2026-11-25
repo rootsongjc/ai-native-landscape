@@ -16,7 +16,6 @@ description: >-
   条可复制即用的提示词，每条均原文引用自出处，并配以它实际生成的结果展示。另附用 ffmpeg 让智能体剪辑视频的配方，全部内容可在在线画廊中搜索筛选。
 author: ai-boost
 ossDate: '2023-11-09'
-featured: false
 status: tracked
 ---
 ## 详细介绍

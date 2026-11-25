@@ -13,7 +13,6 @@ tags:
 description: Claude Task Master 是一款基于 AI 的任务管理系统，可集成到 Cursor、Lovable、Windsurf 等平台中以提升任务协同与自动化能力。
 author: eyaltoledano
 ossDate: '2025-03-04T18:54:54.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

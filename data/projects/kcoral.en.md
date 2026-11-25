@@ -18,7 +18,6 @@ description: >-
   and a Rust router for multi-node scheduling.
 author: MLC AI
 ossDate: '2026-07-16'
-featured: false
 status: tracked
 ---
 

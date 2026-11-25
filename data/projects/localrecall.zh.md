@@ -13,7 +13,6 @@ tags:
 description: LocalRecall 提供本地化的记忆层与知识库管理，便于与智能体集成的 RAG 功能。
 author: mudler
 ossDate: '2025-02-12T21:07:04Z'
-featured: false
 status: tracked
 ---
 

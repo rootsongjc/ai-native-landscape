@@ -13,7 +13,6 @@ tags:
 description: 'Kubernetes 原生的作业排队系统，负责配额管理，并决定批处理、AI 与 HPC 作业何时被准入集群。'
 author: Kubernetes SIGs
 ossDate: '2022-02-16T05:52:19.000Z'
-featured: false
 status: tracked
 ---
 

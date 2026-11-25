@@ -13,7 +13,6 @@ tags:
 description: 一种基于网络的 GPU over IP 桥接方案，让仅有 CPU 的机器也能像使用本地 GPU 一样挂载并调用远端机器上的 GPU。
 author: Lupine Machines
 ossDate: '2024-08-28T04:02:43Z'
-featured: false
 status: tracked
 ---
 

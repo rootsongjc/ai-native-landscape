@@ -12,7 +12,6 @@ tags:
 description: An open format and documentation for describing, sharing, and discovering agent skills.
 author: Anthropic
 ossDate: '2025-12-16T15:47:19Z'
-featured: false
 status: tracked
 ---
 ## Overview

@@ -16,7 +16,6 @@ description: >-
   DeepSeek — switching models per agent, reusing subscriptions everywhere, and failing over across accounts and providers.
 author: yetone
 ossDate: '2026-09-23'
-featured: false
 status: tracked
 ---
 

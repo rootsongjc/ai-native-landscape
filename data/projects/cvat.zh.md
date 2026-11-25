@@ -12,7 +12,6 @@ tags:
 description: CVAT 是行业领先的视觉数据标注引擎，适用于任意规模的数据标注任务。
 author: CVAT
 ossDate: '2018-06-29T14:02:45.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

@@ -14,7 +14,6 @@ tags:
 description: Rust proxy and library for LLM traffic that routes requests across providers and translates between OpenAI and Anthropic APIs.
 author: NVIDIA-NeMo
 ossDate: '2026-05-19T19:06:33Z'
-featured: false
 status: tracked
 ---
 

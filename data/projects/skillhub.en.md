@@ -15,7 +15,6 @@ description: >-
   team namespaces, and RBAC governance for skill packages, deployable on-premise with Docker or Kubernetes.
 author: iFlytek
 ossDate: '2026-03-11T12:17:05Z'
-featured: false
 status: tracked
 ---
 

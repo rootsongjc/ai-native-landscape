@@ -14,7 +14,6 @@ tags:
 description: A production-ready framework and runtime for building self-evolving AI agents.
 author: Aden
 ossDate: '2026-01-12T00:04:22Z'
-featured: false
 status: tracked
 ---
 ## Overview

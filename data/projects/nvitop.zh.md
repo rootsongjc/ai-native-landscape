@@ -13,7 +13,6 @@ tags:
 description: '交互式 NVIDIA GPU 进程查看器与监控工具集，提供终端界面、Python API 和 Prometheus 导出器。'
 author: Xuehai Pan
 ossDate: '2021-01-25T12:17:02.000Z'
-featured: false
 status: tracked
 ---
 

@@ -15,7 +15,6 @@ tags:
 description: 面向生产级 AI Agent 的开源 SDK（Python 与 TypeScript），构建 Agent Harness 并端到端掌控，任意模型、任意云。
 author: strands-agents
 ossDate: '2025-05-14T19:59:51Z'
-featured: false
 status: tracked
 ---
 

@@ -12,7 +12,6 @@ tags:
 description: 多语种、高质量的流式 TTS / 语音生成工具包，支持零样本克隆与低延迟生成。
 author: FunAudioLLM
 ossDate: '2024-07-03T02:59:22.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

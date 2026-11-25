@@ -15,7 +15,6 @@ description: >-
   deployment.
 author: SwanHubX
 ossDate: '2023-11-24T08:54:45Z'
-featured: false
 status: tracked
 ---
 

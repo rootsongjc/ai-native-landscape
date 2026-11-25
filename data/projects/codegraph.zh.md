@@ -13,7 +13,6 @@ tags:
 description: 为 AI 编码智能体提供预索引代码知识图谱的工具，支持 Claude Code、Codex、Cursor 和 OpenCode，100% 本地运行。
 author: colbymchenry
 ossDate: '2026-01-18T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 CodeGraph 为 AI 编码智能体（Claude Code、Cursor、Codex CLI、OpenCode）构建本地代码知识图谱，让 Agent 一次工具调用即可获取入口点、关联符号和代码片段，无需昂贵的探索式扫描。基准测试显示平均减少 92% 工具调用、加速 71%。

@@ -12,7 +12,6 @@ tags:
 description: 'The NVIDIA device plugin for Kubernetes, which exposes GPUs to the kubelet and supports GPU sharing through time-slicing and MPS.'
 author: NVIDIA
 ossDate: '2017-10-10T21:31:02.000Z'
-featured: false
 status: tracked
 ---
 

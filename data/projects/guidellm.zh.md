@@ -13,7 +13,6 @@ tags:
 description: GuideLLM 提供用于引导、解释和控制大语言模型（LLM）的工具与范式，便于在交互式应用中实现更好的可控性。
 author: vllm-project
 ossDate: '2024-05-29T21:54:22Z'
-featured: false
 status: tracked
 ---
 

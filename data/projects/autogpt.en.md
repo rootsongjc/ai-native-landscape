@@ -11,7 +11,6 @@ tags:
 description: AutoGPT — a platform to build, deploy and run continuous AI agents, supporting self-hosting and platform deployments.
 author: Significant-Gravitas
 ossDate: '2023-03-16T09:21:07.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

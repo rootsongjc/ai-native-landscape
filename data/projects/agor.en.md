@@ -16,7 +16,6 @@ description: >-
   worktrees.
 author: Preset
 ossDate: '2025-10-04T19:17:32Z'
-featured: false
 status: tracked
 ---
 ## Overview

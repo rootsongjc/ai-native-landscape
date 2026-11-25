@@ -11,7 +11,6 @@ tags:
 description: Kilo Code 是一款开源的 VS Code智能体工具，它融合了 Roo Code 和 Cline 的优秀特性，并添加了许多创新功能。
 author: Kilocode
 ossDate: '2025-03-10T15:34:26.000Z'
-featured: false
 status: tracked
 ---
 Kilo Code 是一款适用于 VS Code 及其他 IDE 的开源 AI 编程助手扩展，融合了 Roo Code 和 Cline 的优秀特性并增加了创新功能。它支持通过自然语言生成代码、自动检查代码质量、执行终端命令以及实现浏览器自动化，让开发者在熟悉的开发环境中即可享受 AI 辅助编程。

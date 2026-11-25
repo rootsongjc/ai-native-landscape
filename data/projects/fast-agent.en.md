@@ -13,7 +13,6 @@ description: >-
   workflows with minimal boilerplate.
 author: evalstate
 ossDate: '2025-01-18T20:39:51.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

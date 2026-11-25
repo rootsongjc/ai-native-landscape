@@ -13,7 +13,6 @@ tags:
 description: 在本地或与 DaVinci Resolve 集成，快速生成可编辑且精确的字幕。
 author: Tom Moroney
 ossDate: '2023-03-15T01:51:06Z'
-featured: false
 status: tracked
 ---
 AutoSubs 是一款 AI 驱动的本地字幕生成工具，可直接连接 DaVinci Resolve、Premiere 和 After Effects。它支持多语言转录、说话人分离以及可视化字幕编辑器，所有功能均在设备本地运行，无需云端依赖，最大程度保护隐私。

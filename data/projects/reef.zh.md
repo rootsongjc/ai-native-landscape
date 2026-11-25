@@ -16,7 +16,6 @@ description: >-
   既可以用 Slime/SGLang 训练模型权重，也能进化 Agent 的 harness——提示词、规则与技能。
 author: Human-Agent-Society
 ossDate: '2026-08-31'
-featured: false
 status: tracked
 ---
 

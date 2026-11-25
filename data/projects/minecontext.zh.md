@@ -12,7 +12,6 @@ tags:
 description: MineContext 是一款主动式上下文感知 AI 工具，结合 Context-Engineering 与 ChatGPT Pulse，用于提升对话和检索场景的上下文连贯性与检索效率。
 author: 字节跳动
 ossDate: '2025-06-24T11:15:21.000Z'
-featured: false
 status: tracked
 ---
 

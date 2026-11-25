@@ -13,7 +13,6 @@ tags:
 description: KubeRay 是 Ray 官方的开源 Kubernetes operator，用于简化在 Kubernetes 上部署与管理 Ray 应用。
 author: Ray Project
 ossDate: '2020-10-29T20:42:00Z'
-featured: false
 status: tracked
 ---
 

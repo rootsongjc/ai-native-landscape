@@ -13,7 +13,6 @@ tags:
 description: 一个 CLI 与浏览器扩展，让任何能调用 shell 的 AI 智能体借用你已登录的真实浏览器执行自动化操作，且不打断你的工作。
 author: Tencent
 ossDate: '2026-06-22T07:24:40Z'
-featured: false
 status: tracked
 ---
 ## 简介

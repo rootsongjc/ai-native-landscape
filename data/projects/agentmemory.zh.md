@@ -14,7 +14,6 @@ tags:
 description: AI 编程智能体的持久化记忆层，基于真实场景基准测试，支持跨会话上下文保持。
 author: rohitg00
 ossDate: '2026-02-25T07:32:52Z'
-featured: false
 status: tracked
 ---
 

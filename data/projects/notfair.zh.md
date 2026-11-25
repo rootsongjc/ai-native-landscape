@@ -14,7 +14,6 @@ tags:
 description: 开源 Claude Code 技能集，覆盖 SEO、GEO、Google Ads 和 Meta Ads 自动化。
 author: Nowork Studio
 ossDate: '2026-03-27T00:00:00Z'
-featured: false
 status: tracked
 ---
 

@@ -14,7 +14,6 @@ tags:
 description: Pi 是一个极简、可扩展的编程智能体 CLI 与智能体运行框架，提供统一的多供应商 LLM API、交互式终端 UI 和 TypeScript SDK。
 author: Earendil Works
 ossDate: '2025-08-09'
-featured: false
 status: tracked
 ---
 

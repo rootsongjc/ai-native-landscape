@@ -15,7 +15,6 @@ description: >-
   auto-scaling to simplify large-scale model training on Kubernetes and Ray.
 author: Intelligent Machine Learning
 ossDate: '2022-06-24T09:31:07.000Z'
-featured: false
 status: tracked
 ---
 ## Introduction

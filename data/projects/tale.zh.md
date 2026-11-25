@@ -17,7 +17,6 @@ tags:
 description: 开源的团队与 AI 智能体共享项目工作区：任务看板上人与智能体同列，智能体运行在持久沙箱工作区中，可各自配置运行时、模型、技能与工具，产出以可审查的报告和交付文件回流。
 author: tale-project
 ossDate: '2025-11-30'
-featured: false
 status: tracked
 ---
 

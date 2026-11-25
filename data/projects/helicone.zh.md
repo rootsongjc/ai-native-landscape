@@ -11,7 +11,6 @@ tags:
 description: Helicone 是一款面向 LLM 的开源可观测与分析平台，提供请求追踪、指标、提示管理与成本/延迟分析等功能，便于调试、评估与优化 AI 系统。
 author: Helicone
 ossDate: '2023-01-31T22:34:44.000Z'
-featured: false
 status: tracked
 ---
 

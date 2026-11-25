@@ -11,7 +11,6 @@ tags:
 description: Keras 是一个高级深度学习 API，运行在 TensorFlow 之上，提供直观的界面用于构建和训练神经网络模型，支持快速实验。
 author: Keras Team
 ossDate: '2015-03-28T00:35:42.000Z'
-featured: false
 status: tracked
 ---
 

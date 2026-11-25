@@ -14,7 +14,6 @@ tags:
 description: 面向 AI 智能体的浏览器自动化 CLI，把网站转换为确定性的 CLI 命令，并通过桥接扩展让智能体在你已登录的 Chrome 上操作任意网站，附带可复用的站点适配器。
 author: jackwener
 ossDate: '2026-03-14'
-featured: false
 status: tracked
 ---
 

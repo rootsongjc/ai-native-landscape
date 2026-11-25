@@ -14,7 +14,6 @@ description: >-
   indexing.
 author: Pathway
 ossDate: '2023-07-19T08:43:37.000Z'
-featured: false
 status: tracked
 ---
 

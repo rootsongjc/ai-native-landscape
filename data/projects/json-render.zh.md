@@ -13,7 +13,6 @@ tags:
 description: 一个将 AI 生成的结构化 JSON 转换为可预测、可渲染 UI 的开源框架。
 author: Vercel
 ossDate: '2026-01-14T17:22:39Z'
-featured: false
 status: tracked
 ---
 

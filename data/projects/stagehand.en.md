@@ -15,7 +15,6 @@ description: >-
   automation in production environments.
 author: BrowserBase
 ossDate: '2024-03-24T19:19:44.000Z'
-featured: true
 status: tracked
 ---
 

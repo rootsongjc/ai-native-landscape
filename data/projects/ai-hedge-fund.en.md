@@ -14,7 +14,6 @@ description: >-
   AI-assisted stock selection and risk control.
 author: virattt
 ossDate: '2024-11-29T16:30:01Z'
-featured: false
 status: tracked
 ---
 ## Overview

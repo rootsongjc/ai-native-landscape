@@ -13,7 +13,6 @@ tags:
 description: Multica 是一款原生桌面客户端，通过可视化界面为所有用户带来编程智能体的能力，支持多模型/多智能体协作，数据完全本地化。
 author: multica-ai
 ossDate: '2026-01-13T17:59:46Z'
-featured: false
 status: tracked
 ---
 

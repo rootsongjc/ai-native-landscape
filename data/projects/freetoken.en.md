@@ -16,7 +16,6 @@ description: >-
   consumer hardware, treating GPUs, CPUs, host memory, and interconnects as one elastic inference platform.
 author: FlashML-org
 ossDate: '2026-07-20'
-featured: false
 status: tracked
 ---
 

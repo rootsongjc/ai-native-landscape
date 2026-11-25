@@ -12,7 +12,6 @@ tags:
 description: KitOps 是 CNCF 支持的开源项目，提供将 AI/ML 项目封装为可签名、可版本化的 OCI 工件的标准化方案。
 author: CNCF
 ossDate: '2024-02-02T18:53:31Z'
-featured: false
 status: tracked
 ---
 

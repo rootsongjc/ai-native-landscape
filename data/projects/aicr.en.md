@@ -14,7 +14,6 @@ tags:
 description: NVIDIA AI Cluster Runtime (AICR) generates optimized, validated, and reproducible GPU-accelerated Kubernetes cluster configurations for AI training and inference.
 author: NVIDIA
 ossDate: '2026-01-30T19:02:59Z'
-featured: false
 status: tracked
 ---
 

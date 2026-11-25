@@ -11,7 +11,6 @@ tags:
 description: Neovate Code 是一个面向开发者的开源编码代理，旨在提升编码效率和质量。
 author: 蚂蚁集团
 ossDate: '2025-03-11T08:32:54.000Z'
-featured: false
 status: tracked
 ---
 

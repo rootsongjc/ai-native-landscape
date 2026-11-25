@@ -16,7 +16,6 @@ description: >-
   应用、.NET 程序集和网站，分析全程本地运行，每个结论都附带证据。
 author: morluto
 ossDate: '2026-04-14'
-featured: false
 status: tracked
 ---
 

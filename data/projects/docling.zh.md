@@ -11,7 +11,6 @@ tags:
 description: 面向通用文档理解与转换的开源框架，支持 PDF、DOCX、图片、音频等多种格式的解析与结构化输出。
 author: Docling
 ossDate: '2024-07-09T07:50:26.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

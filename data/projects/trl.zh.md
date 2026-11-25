@@ -12,7 +12,6 @@ tags:
 description: TRL 是 Hugging Face 提供的用于在变换器模型上进行强化学习训练的开源工具包。
 author: Hugging Face
 ossDate: '2020-03-27T10:54:55Z'
-featured: false
 status: tracked
 ---
 

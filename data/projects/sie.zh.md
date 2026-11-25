@@ -14,7 +14,6 @@ tags:
 description: 开源推理服务与生产集群，以共享 GPU 资源 serving Agent 所需的全部模型。
 author: superlinked
 ossDate: '2023-11-07T10:45:53Z'
-featured: false
 status: tracked
 ---
 

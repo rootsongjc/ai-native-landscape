@@ -15,7 +15,6 @@ tags:
 description: A collection of productivity tools and plugins for Claude Code, Codex-CLI, and similar CLI coding agents.
 author: pchalasani
 ossDate: '2025-07-30T20:10:38Z'
-featured: false
 status: tracked
 ---
 claude-code-tools is a collection of productivity tools and extensions designed to enhance Claude Code workflows and similar CLI coding agents. Maintained by pchalasani, it provides plugins for session management, terminal automation, and safety controls that help developers get more out of LLM-driven development environments.

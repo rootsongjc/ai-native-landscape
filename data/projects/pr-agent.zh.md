@@ -12,7 +12,6 @@ tags:
 description: 开源的 AI 驱动的代码审核与 PR 辅助工具，可本地运行或在 CI 中部署，支持多平台集成与可定制化提示。
 author: Qodo AI
 ossDate: '2023-07-05T21:02:15.000Z'
-featured: false
 status: tracked
 ---
 

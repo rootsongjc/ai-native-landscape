@@ -16,7 +16,6 @@ description: >-
   multiple data sources.
 author: Apache Software Foundation
 ossDate: '2015-07-21T18:55:34Z'
-featured: false
 status: tracked
 ---
 

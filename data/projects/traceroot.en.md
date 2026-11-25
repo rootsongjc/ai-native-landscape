@@ -17,7 +17,6 @@ description: >-
   root-causes them against source code and GitHub history, opens verified fix PRs, and evals every fix.
 author: TraceRoot AI
 ossDate: '2025-07-22T19:50:15.000Z'
-featured: false
 status: tracked
 ---
 

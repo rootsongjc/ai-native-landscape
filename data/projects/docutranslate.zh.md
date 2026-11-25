@@ -12,7 +12,6 @@ tags:
 description: DocuTranslate 是一款基于大语言模型的轻量化文档翻译工具，支持多种文档格式与本地/在线解析引擎。
 author: xunbu
 ossDate: '2025-05-08T08:16:40Z'
-featured: false
 status: tracked
 ---
 ## 简介

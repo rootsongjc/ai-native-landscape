@@ -11,7 +11,6 @@ tags:
 description: 基于 Triton 的 PyTorch 库，提供高效线性注意力内核与模型组件。
 author: fla-org
 ossDate: '2023-12-20T06:50:18.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

@@ -12,7 +12,6 @@ tags:
 description: 多模态文档处理与检索增强生成（RAG）系统，支持文本、图片、表格、公式等多种内容的统一解析与智能检索。
 author: HKUDS
 ossDate: '2025-06-06T06:47:29.000Z'
-featured: false
 status: tracked
 ---
 

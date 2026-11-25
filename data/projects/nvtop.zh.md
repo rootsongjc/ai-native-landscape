@@ -12,7 +12,6 @@ tags:
 description: '类似 htop 的 GPU 与加速器任务监视器，支持 AMD、Apple、华为、Intel、NVIDIA 和高通设备。'
 author: Maxime Schmitt
 ossDate: '2017-06-16T09:52:13.000Z'
-featured: false
 status: tracked
 ---
 

@@ -13,7 +13,6 @@ tags:
 description: 用于构建实时、多模态语音 agent 的框架，集成 WebRTC 和可扩展插件生态。
 author: LiveKit
 ossDate: '2023-10-19T23:00:55.000Z'
-featured: false
 status: tracked
 ---
 

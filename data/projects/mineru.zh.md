@@ -11,7 +11,6 @@ tags:
 description: MinerU 是一个高精度的 PDF 文档解析工具，能将复杂 PDF 转换为机器可读的 Markdown 和 JSON 格式，支持公式、表格、图片提取和多语言 OCR。
 author: OpenDataLab
 ossDate: '2024-02-29T08:52:34.000Z'
-featured: true
 status: tracked
 ---
 

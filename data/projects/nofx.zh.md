@@ -13,7 +13,6 @@ tags:
 description: 一个面向多交易所与多模型竞争的开源 AI 交易操作系统，支持自我进化与实时仪表盘。
 author: NoFxAiOS
 ossDate: '2025-10-28T07:17:53Z'
-featured: false
 status: tracked
 ---
 

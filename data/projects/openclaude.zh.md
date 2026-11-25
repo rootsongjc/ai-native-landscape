@@ -3,7 +3,7 @@ name: openclaude
 slug: openclaude
 homepage: https://openclaude.twigpine.com
 repo: https://github.com/Twigpine/openclaude
-license: Unknown
+license: Other
 category: coding-devtools
 subCategory: coding-agents
 tags:
@@ -14,7 +14,6 @@ tags:
 description: 开源的编码智能体 CLI，支持云端与本地模型后端——OpenAI 兼容 API、Gemini、GitHub Models、Codex OAuth、Ollama 等——以统一的终端优先工作流提供工具、子智能体、MCP 与斜杠命令。
 author: Twigpine
 ossDate: '2026-04-01'
-featured: false
 status: tracked
 ---
 

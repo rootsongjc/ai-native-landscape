@@ -12,7 +12,6 @@ tags:
 description: 用于扫描 MCP 服务器与工具以发现潜在安全问题的检测工具，支持多引擎分析与可定制报告。
 author: Cisco AI Defense
 ossDate: '2025-09-24T01:02:24.000Z'
-featured: false
 status: tracked
 ---
 

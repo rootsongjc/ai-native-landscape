@@ -13,7 +13,6 @@ tags:
 description: Generates interactive visual reports to explain machine learning model predictions for stakeholders.
 author: MAIF
 ossDate: '2020-04-29T07:34:23Z'
-featured: false
 status: tracked
 ---
 

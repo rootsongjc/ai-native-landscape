@@ -13,7 +13,6 @@ description: >-
   training and deploying large models.
 author: Lightning-AI
 ossDate: '2023-05-04T17:46:11.000Z'
-featured: false
 status: tracked
 ---
 

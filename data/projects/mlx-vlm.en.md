@@ -16,7 +16,6 @@ description: >-
   and general hardware.
 author: Blaizzy
 ossDate: '2024-04-16T15:10:12.000Z'
-featured: false
 status: tracked
 ---
 

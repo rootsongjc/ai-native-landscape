@@ -11,7 +11,6 @@ tags:
 description: 开源的 GenBI 代理，可将自然语言查询转换为精准 SQL、图表与 AI 洞察。
 author: Canner
 ossDate: '2024-03-13T06:18:20.000Z'
-featured: false
 status: tracked
 ---
 

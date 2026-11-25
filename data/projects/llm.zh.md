@@ -13,7 +13,6 @@ tags:
 description: 面向命令行和 Python 的通用 LLM 工具，支持远程 API 与本地可运行模型。
 author: Simon Willison
 ossDate: '2023-04-01T21:16:57.000Z'
-featured: false
 status: tracked
 ---
 

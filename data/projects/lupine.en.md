@@ -13,7 +13,6 @@ tags:
 description: A GPU over IP bridge that lets CPU-only machines attach and use GPUs hosted on remote machines over the network.
 author: Lupine Machines
 ossDate: '2024-08-28T04:02:43Z'
-featured: false
 status: tracked
 ---
 

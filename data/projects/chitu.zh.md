@@ -13,7 +13,6 @@ tags:
 description: 一个面向生产的大模型推理框架，提供高性能、多算力适配与可伸缩部署能力。
 author: thu-pacman
 ossDate: '2025-02-20T06:34:38Z'
-featured: false
 status: tracked
 ---
 Chitu（赤兔）是由清华大学开发的大语言模型高性能推理框架，聚焦于效率、灵活性和可用性。它提供生产级、低延迟的 LLM 推理能力，覆盖从纯 CPU、单 GPU 到大规模分布式集群的部署场景，并兼容多种硬件供应商以满足企业级落地需求。

@@ -14,7 +14,6 @@ tags:
 description: A Manus-inspired workflow that uses persistent Markdown files to manage plans and agent skills.
 author: Othman Adi
 ossDate: '2026-01-03T07:37:28Z'
-featured: false
 status: tracked
 ---
 

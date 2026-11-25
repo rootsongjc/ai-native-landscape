@@ -14,7 +14,6 @@ description: >-
   model provider configuration.
 author: Charmbracelet
 ossDate: '2025-05-21T12:14:57.000Z'
-featured: false
 status: tracked
 ---
 Crush is an AI assistant that runs in your terminal, connecting tools, code, and workflows to various LLM providers. It supports session management, model switching within sessions, LSP-powered context enhancement, and extensibility via MCP plugins (http, stdio, sse). Crush runs on macOS, Linux, Windows, and BSD, and can be installed via Homebrew, npm, binary releases, or go install.

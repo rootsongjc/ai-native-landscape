@@ -11,7 +11,6 @@ tags:
 description: LibreChat 是一个开源的、可自托管的多模型聊天与代理平台，支持多种 AI 提供方与插件扩展。
 author: LibreChat Contributors
 ossDate: '2023-02-12T01:06:52.000Z'
-featured: false
 status: tracked
 ---
 

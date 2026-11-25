@@ -14,7 +14,6 @@ description: >-
   easy-to-use interface for both research and production environments.
 author: hiyouga
 ossDate: '2023-05-28T10:09:12.000Z'
-featured: false
 status: tracked
 ---
 

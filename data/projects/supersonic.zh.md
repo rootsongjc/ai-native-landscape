@@ -13,7 +13,6 @@ tags:
 description: 一个面向企业的 AI+BI 平台，融合大语言模型与语义层，实现聊天式 BI 与无头 BI 的统一体验。
 author: Tencent Music
 ossDate: '2023-06-12T07:23:28Z'
-featured: false
 status: tracked
 ---
 

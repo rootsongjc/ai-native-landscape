@@ -13,7 +13,6 @@ tags:
 description: 基于大语言模型的可视化 AI 应用构建平台，通过简单的拖拽操作连接各种数据源并嵌入自己的业务逻辑。
 author: Labring
 ossDate: '2023-02-23T16:53:25.000Z'
-featured: false
 status: tracked
 ---
 FastGPT 是由 Labring 团队开源的智能知识库与 AI 应用构建平台。基于大语言模型技术，平台将数据处理、RAG 检索引擎和可视化工作流编排整合为开箱即用的解决方案，让开发者无需深入的 AI 专业知识即可构建专业级问答系统。

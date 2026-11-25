@@ -13,6 +13,7 @@
     "build:worker-manifest": "node scripts/generate-worker-manifest.mjs",
     "refresh:scores": "node --use-env-proxy scripts/refresh-scores.mjs",
     "sync:avatars": "node --use-env-proxy scripts/sync-avatars.mjs",
+    "sync:levels": "node --use-env-proxy scripts/sync-levels.mjs",
     "triage": "node --use-env-proxy scripts/triage-submission.mjs",
     "test": "node --test \"scripts/*.test.mjs\"",
     "build": "npm run validate && npm run build:index && npm run export && npm run build:worker-manifest && astro build",

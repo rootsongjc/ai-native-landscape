@@ -3,7 +3,7 @@ name: Chaterm
 slug: chaterm
 homepage: https://chaterm.ai
 repo: https://github.com/chaterm/Chaterm
-license: NOASSERTION
+license: GPL-3.0
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:
@@ -17,7 +17,6 @@ tags:
 description: 开源 AI 运维终端，支持通过自然语言和智能智能体进行云基础设施的部署、排障和自动化管理。
 author: chaterm
 ossDate: '2025-04-14'
-featured: false
 status: tracked
 ---
 

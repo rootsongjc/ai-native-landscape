@@ -3,7 +3,7 @@ name: CrewAI
 slug: crewai
 homepage: https://crewai.com/
 repo: https://github.com/crewaiinc/crewai
-license: Other
+license: MIT
 category: agents
 subCategory: agent-orchestration
 tags:
@@ -14,7 +14,6 @@ description: >-
   collaboration and customizable workflows.
 author: CrewAI Inc.
 ossDate: '2023-10-27T03:26:59.000Z'
-featured: false
 status: tracked
 ---
 ## Introduction

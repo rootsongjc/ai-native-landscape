@@ -13,7 +13,6 @@ tags:
 description: 一个免费且可本地运行的开源 AI 应用构建平台，简化生成式应用与原型的搭建流程。
 author: Dyad
 ossDate: '2025-04-11T06:33:48Z'
-featured: false
 status: tracked
 ---
 ## 简介

@@ -12,7 +12,6 @@ tags:
 description: 开源 IDE 扩展和规则、工具、模型中心，用于创建、共享和使用自定义 AI 代码助手。
 author: Continue Team
 ossDate: '2023-05-24T03:39:39.000Z'
-featured: false
 status: tracked
 ---
 Continue 是一个开源的 IDE 扩展，允许开发者创建、共享和使用自定义的 AI 代码助手。它提供了一个中心化的平台，汇集了各种规则、工具和模型，使开发者能够轻松地构建和部署自己的 AI 编程助手。

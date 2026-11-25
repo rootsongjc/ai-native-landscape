@@ -16,7 +16,6 @@ tags:
 description: 面向 AI 智能体的开源沙箱引擎，结合操作系统级隔离、默认拒绝的 Dogwood 策略与凭证注入，密钥始终不进入智能体进程。基于 Rust 编写，目前支持 Apple 芯片 macOS。
 author: strands-agents
 ossDate: '2026-10-02T20:34:08Z'
-featured: false
 status: tracked
 ---
 

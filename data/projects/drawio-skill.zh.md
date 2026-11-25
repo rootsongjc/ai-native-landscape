@@ -18,7 +18,6 @@ tags:
 description: 从自然语言生成 draw.io 图表，支持 6 种预设、视觉自检与最多 5 轮自动优化，包含 10,000+ 官方图形和 321 个 AI/LLM 品牌图标。
 author: Agents365-ai
 ossDate: '2026-03-03T16:54:59.000Z'
-featured: false
 status: tracked
 ---
 

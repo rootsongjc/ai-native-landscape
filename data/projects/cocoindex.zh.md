@@ -13,7 +13,6 @@ tags:
 description: 一个面向 AI 的高性能数据处理与索引框架，支持增量处理与语义索引。
 author: CocoIndex
 ossDate: '2025-03-03T23:03:09Z'
-featured: false
 status: tracked
 ---
 CocoIndex 是一款面向长期运行 AI 智能体的增量数据索引引擎，能够使数据索引与不断变化的数据源保持同步。它提供高性能的数据转换和语义索引能力，持续处理更新，确保 RAG 流水线和搜索系统始终反映最新的可用信息。

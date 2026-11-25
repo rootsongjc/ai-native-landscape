@@ -13,7 +13,6 @@ tags:
 description: 一个用于嵌入、沙箱运行与交付智能体的轻量化运行时与容器化工具集。
 author: BoxLite Labs
 ossDate: '2025-12-07T22:49:32Z'
-featured: false
 status: tracked
 ---
 BoxLite 是一个面向 AI 智能体的计算基座，轻量到可以在笔记本上运行，同时具备弹性扩展到云端的能力。它提供可嵌入的运行时与容器化沙箱，帮助开发者在受控环境中隔离、调试并部署智能体工作负载。项目采用 Rust 实现，强调最小运行时依赖与强安全边界。

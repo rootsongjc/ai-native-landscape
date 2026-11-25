@@ -14,7 +14,6 @@ tags:
 description: Cloudflare 出品的自托管 AI 邮件客户端，AI Agent 自动阅读、摘要和处理邮件，完全运行在 Cloudflare Workers 上。
 author: Cloudflare
 ossDate: '2026-04-10T00:00:00Z'
-featured: false
 status: tracked
 ---
 

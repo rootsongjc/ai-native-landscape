@@ -15,7 +15,6 @@ description: >-
   circuit breaker protections.
 author: Frank Bria
 ossDate: '2025-08-27T16:03:45Z'
-featured: false
 status: tracked
 ---
 ## Overview

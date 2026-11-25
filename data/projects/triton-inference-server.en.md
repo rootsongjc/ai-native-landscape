@@ -13,7 +13,6 @@ description: >-
   options.
 author: NVIDIA
 ossDate: '2018-10-04T21:10:30.000Z'
-featured: false
 status: tracked
 ---
 

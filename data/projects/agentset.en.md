@@ -14,7 +14,6 @@ description: >-
   and citation-aware retrieval.
 author: Agentset
 ossDate: '2025-03-10T04:52:13Z'
-featured: false
 status: tracked
 ---
 ## Overview

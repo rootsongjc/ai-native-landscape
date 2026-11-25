@@ -3,7 +3,7 @@ name: Chaterm
 slug: chaterm
 homepage: https://chaterm.ai
 repo: https://github.com/chaterm/Chaterm
-license: NOASSERTION
+license: GPL-3.0
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:
@@ -17,7 +17,6 @@ tags:
 description: An open-source AI terminal for cloud and infrastructure management, enabling deploy, troubleshoot, and automate services using natural language and intelligent agents.
 author: chaterm
 ossDate: '2025-04-14'
-featured: false
 status: tracked
 ---
 

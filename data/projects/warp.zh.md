@@ -15,7 +15,6 @@ tags:
 description: 基于 Rust 构建的现代化智能终端，集成 AI 驱动的命令辅助和 GPU 加速渲染，打造智能体开发环境。
 author: warpdotdev
 ossDate: '2021-07-08'
-featured: false
 status: tracked
 ---
 

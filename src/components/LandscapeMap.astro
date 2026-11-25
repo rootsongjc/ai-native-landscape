@@ -8,6 +8,7 @@ import {
   subCategoryName,
   ui,
 } from '../lib/landscape.mjs';
+import { MAX_POINTS } from '../lib/levels.mjs';
 import avatarIds from '../../data/avatars.json';
 
 const { lang = 'en' } = Astro.props;
@@ -16,8 +17,9 @@ const landscape = getLandscape();
 
 const PALETTE = ['#2563eb', '#7c3aed', '#0891b2', '#059669', '#d97706', '#dc2626', '#db2777', '#4f46e5'];
 const GRID_COLUMNS = 12;
-// A featured project takes a 2×2 tile.
-const FEATURED_UNITS = 4;
+// A Mature project takes a 2×2 tile.
+const LARGE_UNITS = 4;
+const isLarge = (project) => project.level === 'mature';
 
 // The export draws logos into a canvas, which needs CORS-clean images. Only the direct
 // avatar URL sends CORS headers; the github.com/<owner>.png redirect does not, so owners
@@ -36,9 +38,8 @@ const categories = landscape.categories
     const subcategories = (category.subcategories || [])
       .map((subcategory) => {
         const projects = (landscape.bySubCategory[subcategory.key] || [])
-          .filter((project) => project.category === category.key)
-          .sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)));
-        const units = projects.reduce((sum, project) => sum + (project.featured ? FEATURED_UNITS : 1), 0);
+          .filter((project) => project.category === category.key);
+        const units = projects.reduce((sum, project) => sum + (isLarge(project) ? LARGE_UNITS : 1), 0);
         return {
           key: subcategory.key,
           name: subCategoryName(subcategory.key, lang),
@@ -85,7 +86,8 @@ categories.forEach((category) => {
         t: (project.tags || []).slice(0, 4),
         c: category.name,
         s: subcategory.name,
-        f: Boolean(project.featured),
+        v: project.level,
+        p: project.levelTotal,
       };
     });
   });
@@ -93,6 +95,7 @@ categories.forEach((category) => {
 
 const clientConfig = {
   lang,
+  maxPoints: MAX_POINTS,
   title: copy.lmapTitle,
   siteHost: new URL(SITE.url).host,
   summary: `${projectCount} ${copy.projects} · ${categories.length} ${copy.categories}`,
@@ -107,7 +110,7 @@ const clientConfig = {
     license: copy.license,
     score: copy.lmapScore,
     close: copy.lmapClose,
-    featured: copy.lmapFeatured,
+    levels: copy.levels,
   },
 };
 
@@ -175,7 +178,7 @@ const safeJson = (value) => JSON.stringify(value).replace(/</g, '\\u003c');
                   const avatar = avatarFor(project);
                   return (
                     <a
-                      class:list={['lmap__tile', { 'lmap__tile--featured': project.featured }]}
+                      class:list={['lmap__tile', { 'lmap__tile--large': isLarge(project) }]}
                       href={localizedPath(`/projects/${project.slug}/`, lang)}
                       aria-label={project.name}
                       data-lmap-tile={project.slug}
@@ -282,7 +285,7 @@ const safeJson = (value) => JSON.stringify(value).replace(/</g, '\\u003c');
       if (project.d) pop.append(el('p', 'lmap__pop-desc', project.d));
 
       const meta = el('div', 'lmap__pop-meta');
-      if (project.f) meta.append(el('span', 'lmap__pop-chip lmap__pop-chip--accent', labels.featured));
+      meta.append(el('span', `lmap__pop-chip${project.v === 'emerging' ? '' : ' lmap__pop-chip--accent'}`, `${labels.levels[project.v]} ${project.p}/${config.maxPoints}`));
       const score = el('span', 'lmap__pop-chip', scoreText(project.r));
       score.dataset.lmapPopScore = '';
       score.hidden = !score.textContent;
@@ -1055,7 +1058,7 @@ const safeJson = (value) => JSON.stringify(value).replace(/</g, '\\u003c');
     transition: transform 0.12s ease, box-shadow 0.12s ease, opacity 0.15s ease, border-color 0.12s ease;
   }
 
-  .lmap__tile--featured {
+  .lmap__tile--large {
     grid-column: span 2;
     grid-row: span 2;
     border-radius: 8px;
@@ -1075,7 +1078,7 @@ const safeJson = (value) => JSON.stringify(value).replace(/</g, '\\u003c');
     letter-spacing: -0.02em;
   }
 
-  .lmap__tile--featured .lmap__tile-initial {
+  .lmap__tile--large .lmap__tile-initial {
     font-size: calc(var(--lmap-tile) * 0.6);
   }
 
@@ -1089,9 +1092,9 @@ const safeJson = (value) => JSON.stringify(value).replace(/</g, '\\u003c');
     outline: none;
   }
 
-  .lmap__tile--featured:hover,
-  .lmap__tile--featured:focus-visible,
-  .lmap__tile--featured.is-active {
+  .lmap__tile--large:hover,
+  .lmap__tile--large:focus-visible,
+  .lmap__tile--large.is-active {
     transform: scale(1.08);
   }
 

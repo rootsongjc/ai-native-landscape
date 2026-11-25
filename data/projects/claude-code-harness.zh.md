@@ -13,7 +13,6 @@ tags:
 description: Claude Code 专用开发工具，通过结构化提示和任务模板实现高质量自主编码工作流。
 author: Chachamaru127
 ossDate: '2025-12-12T00:00:00Z'
-featured: false
 status: tracked
 ---
 

@@ -13,7 +13,6 @@ tags:
 description: 一个为 Claude Code 提供插件市场与发现平台的项目，汇集智能体、命令与钩子等扩展资源。
 author: Dave Poon
 ossDate: '2025-07-25T02:26:45Z'
-featured: false
 status: tracked
 ---
 Build with Claude 是一个集中式资源平台，用于发现 Claude Skills、Agents、Commands、Hooks、Plugins 和 Marketplace 集合，以扩展 Claude Code、Claude Desktop、Agent SDK 和 OpenClaw。它汇集社区与官方扩展，提供可搜索的 Web UI，支持多种安装方式。

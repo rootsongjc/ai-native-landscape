@@ -14,7 +14,6 @@ tags:
 description: OfficeCLI is a free, open-source single-binary CLI purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files without an Office installation.
 author: iOfficeAI
 ossDate: '2026-03-15T07:39:12Z'
-featured: false
 status: tracked
 ---
 

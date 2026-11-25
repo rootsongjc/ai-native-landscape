@@ -17,7 +17,6 @@ description: >-
   cloud and local LLMs for a unified chat experience.
 author: ThinkInAIXYZ
 ossDate: '2025-02-14T01:56:51Z'
-featured: false
 status: tracked
 ---
 ## Overview

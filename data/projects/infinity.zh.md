@@ -13,7 +13,6 @@ tags:
 description: 一个 AI 原生数据库，提供稠密/稀疏向量、张量、全文与结构化数据的高速混合检索能力。
 author: Infiniflow
 ossDate: '2022-07-18T13:52:38Z'
-featured: false
 status: tracked
 ---
 

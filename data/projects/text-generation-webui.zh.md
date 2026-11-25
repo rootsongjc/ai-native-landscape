@@ -12,7 +12,6 @@ tags:
 description: 本地化 AI 文本生成的终端级 Web UI，支持多种模型接入与丰富的插件生态，适合对本地部署与隐私有要求的开发者和研究者。
 author: oobabooga
 ossDate: '2022-12-21T04:17:37Z'
-featured: false
 status: tracked
 ---
 

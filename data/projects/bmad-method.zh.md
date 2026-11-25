@@ -12,7 +12,6 @@ tags:
 description: BMAD-METHOD 是一种面向 AI 的敏捷开发方法与框架，提供用于构建多角色协作智能体和工程化工作流的工具链与最佳实践。
 author: BMad Code
 ossDate: '2025-04-13T14:54:25.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

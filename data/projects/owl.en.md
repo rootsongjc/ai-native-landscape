@@ -3,7 +3,7 @@ name: OWL
 slug: owl
 homepage: https://www.camel-ai.org/
 repo: https://github.com/camel-ai/owl
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-orchestration
 tags:
@@ -14,7 +14,6 @@ description: >-
   supporting tool invocation, browser automation, and multimodal processing.
 author: camel-ai
 ossDate: '2025-03-01T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 

@@ -18,7 +18,6 @@ description: >-
   with a pull request, under an authorization model designed to take as little human attention as possible.
 author: deepseek-ai
 ossDate: '2026-10-31'
-featured: false
 status: tracked
 ---
 ## Overview

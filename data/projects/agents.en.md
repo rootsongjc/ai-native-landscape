@@ -13,7 +13,6 @@ description: >-
   orchestration, automation, and efficient collaboration.
 author: Seth Hobson
 ossDate: '2023-07-19T18:13:13.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

@@ -16,7 +16,6 @@ tags:
 description: An ultra-lightweight GPU management and Model-as-a-Service (MaaS) platform that pools bare-metal servers, public cloud instances, and private cloud VMs into one heterogeneous cluster across NVIDIA, AMD, Ascend, PPU, Hygon, and Apple Silicon accelerators, serving models behind an OpenAI-compatible endpoint.
 author: Flit AI
 ossDate: '2026-10-22'
-featured: false
 status: tracked
 ---
 

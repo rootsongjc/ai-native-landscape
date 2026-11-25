@@ -13,7 +13,6 @@ description: >-
   help developers debug, evaluate and optimize model usage.
 author: Helicone
 ossDate: '2023-01-31T22:34:44.000Z'
-featured: false
 status: tracked
 ---
 

@@ -15,7 +15,6 @@ tags:
 description: 在你自己的设备上运行的本地优先个人智能体，支持多渠道消息与可编排的技能。
 author: OpenClaw
 ossDate: '2025-11-24T10:16:47Z'
-featured: false
 status: tracked
 ---
 

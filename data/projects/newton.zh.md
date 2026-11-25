@@ -12,7 +12,6 @@ tags:
 description: 基于 NVIDIA Warp 的 GPU 加速物理仿真引擎，面向机器人与仿真研究。
 author: Newton Project
 ossDate: '2025-04-22T04:12:07.000Z'
-featured: false
 status: tracked
 ---
 

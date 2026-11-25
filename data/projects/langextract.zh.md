@@ -12,7 +12,6 @@ tags:
 description: 一个基于 LLM 的文档结构化抽取库，擅长从非结构化文本中提取并可视化结构化信息。
 author: Google
 ossDate: '2025-07-08T20:46:06.000Z'
-featured: false
 status: tracked
 ---
 

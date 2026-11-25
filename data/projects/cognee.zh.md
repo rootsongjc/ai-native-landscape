@@ -15,7 +15,6 @@ tags:
 description: 开源的 AI 记忆平台，基于自托管的记忆图谱引擎，为智能体提供跨会话的持久长期记忆。
 author: topoteretes
 ossDate: '2023-08-16'
-featured: false
 status: tracked
 ---
 

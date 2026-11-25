@@ -15,7 +15,6 @@ description: >-
   with readability.
 author: SGL Project
 ossDate: '2025-09-01T22:31:45Z'
-featured: false
 status: tracked
 ---
 

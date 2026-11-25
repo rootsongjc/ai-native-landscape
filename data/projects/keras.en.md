@@ -13,7 +13,6 @@ description: >-
   TensorFlow and providing an intuitive interface for building and training models.
 author: Keras Team
 ossDate: '2015-03-28T00:35:42.000Z'
-featured: false
 status: tracked
 ---
 

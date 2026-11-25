@@ -3,7 +3,7 @@ name: Youtu-Agent
 slug: youtu-agent
 homepage: https://tencentcloudadp.github.io/youtu-agent/
 repo: https://github.com/tencentcloudadp/youtu-agent
-license: Unknown
+license: MIT
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -12,7 +12,6 @@ tags:
 description: Youtu-Agent is an open-source agent framework published by Tencent Cloud, aimed at research and engineering use.
 author: Tencent Cloud
 ossDate: '2025-08-21T07:58:13Z'
-featured: false
 status: tracked
 ---
 

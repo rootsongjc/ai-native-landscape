@@ -12,7 +12,6 @@ tags:
 description: TRL is an open-source toolkit from Hugging Face for reinforcement learning training on transformer models.
 author: Hugging Face
 ossDate: '2020-03-27T10:54:55Z'
-featured: false
 status: tracked
 ---
 

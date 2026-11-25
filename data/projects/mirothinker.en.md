@@ -15,7 +15,6 @@ tags:
 description: An open-source search agent for tool-augmented reasoning, supporting very long contexts and high-frequency tool calls.
 author: MiroMindAI
 ossDate: '2025-08-07T13:32:12Z'
-featured: false
 status: tracked
 ---
 MiroThinker is an open-source, research-grade search agent from MiroMindAI optimized for tool-augmented reasoning and deep information seeking. It ships as a complete ecosystem including the MiroThinker model, the MiroFlow agent framework, the MiroVerse training dataset, and supporting infrastructure.

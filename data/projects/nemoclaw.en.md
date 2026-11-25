@@ -16,7 +16,6 @@ description: >-
   OpenShell, providing guided onboarding, hardened blueprints, state management, and routed inference.
 author: NVIDIA
 ossDate: '2026-03-15'
-featured: true
 status: tracked
 ---
 

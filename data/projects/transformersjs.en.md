@@ -13,7 +13,6 @@ description: >-
   backends for optimized on-device inference.
 author: Xenova
 ossDate: '2023-02-13T13:51:45.000Z'
-featured: false
 status: tracked
 ---
 

@@ -15,7 +15,6 @@ description: >-
   格式公开维护，支持版本化和语言特定的文档检索。
 author: Andrew Ng（吴恩达）
 ossDate: '2025-03-17'
-featured: false
 status: tracked
 ---
 ## 详细介绍

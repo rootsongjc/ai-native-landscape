@@ -14,7 +14,6 @@ tags:
 description: Anthropic 官方开源的知识工作者插件仓库，用于 Claude Cowork，提升生产力和工作流自动化。
 author: Anthropic
 ossDate: '2026-01-23T20:11:54Z'
-featured: false
 status: tracked
 ---
 

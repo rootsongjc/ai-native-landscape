@@ -14,7 +14,6 @@ description: >-
   efficient data retrieval.
 author: Qdrant
 ossDate: '2019-05-01T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 

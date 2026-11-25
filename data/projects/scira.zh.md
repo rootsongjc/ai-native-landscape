@@ -3,7 +3,7 @@ name: Scira
 slug: scira
 homepage: https://scira.ai
 repo: https://github.com/zaidmukaddam/scira
-license: AGPLv3
+license: AGPL-3.0
 category: applications-products
 subCategory: chat-interfaces
 tags:
@@ -11,7 +11,6 @@ tags:
 description: 一款简洁的 AI 驱动搜索引擎，提供基于网络的信息检索并带来源引注，作为开源的 Perplexity 替代方案。
 author: zaidmukaddam
 ossDate: '2024-08-07T13:29:49.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

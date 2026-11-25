@@ -12,7 +12,6 @@ tags:
 description: Proton 是一个单文件 C++ 二进制的高性能 SQL 流处理引擎，适用于实时分析与流式 ETL。
 author: TimePlus
 ossDate: '2023-08-14T03:11:43.000Z'
-featured: false
 status: tracked
 ---
 

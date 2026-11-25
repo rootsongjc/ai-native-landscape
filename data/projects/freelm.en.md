@@ -19,7 +19,6 @@ description: >-
   latency and per-model quota, with classified failure handling and racing of slow providers — free-only by design.
 author: shihabshahrier
 ossDate: '2026-06-07'
-featured: false
 status: tracked
 ---
 ## Overview

@@ -16,7 +16,6 @@ tags:
 description: An AI-native terminal workspace built with Rust and Tauri, supporting local shells and remote SSH/SFTP with an integrated AI assistant and MCP server.
 author: AnalyseDeCircuit
 ossDate: '2026-01-21'
-featured: false
 status: tracked
 ---
 

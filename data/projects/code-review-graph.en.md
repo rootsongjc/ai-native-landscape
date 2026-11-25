@@ -16,7 +16,6 @@ description: >-
   Tree-sitter and updates it incrementally, so AI coding tools read only the files a change actually touches.
 author: tirth8205
 ossDate: '2026-02-26'
-featured: false
 status: tracked
 ---
 

@@ -19,7 +19,6 @@ description: >-
   requiring changes to the existing agent stack.
 author: NVIDIA
 ossDate: '2026-03-31'
-featured: false
 status: tracked
 ---
 ## Overview

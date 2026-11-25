@@ -12,7 +12,6 @@ tags:
 description: A CLI-native semantic search tool for code, documents and media, with background indexing and agent integrations.
 author: Mixedbread
 ossDate: '2025-11-06T01:01:47Z'
-featured: false
 status: tracked
 ---
 

@@ -14,7 +14,6 @@ description: >-
   architecture, and policy-aware features.
 author: CUGA Project
 ossDate: '2025-09-11T11:58:55Z'
-featured: false
 status: tracked
 ---
 CUGA is an open-source generalist agent framework designed for enterprise environments, supporting complex task execution across web and API interfaces. It integrates with OpenAPI and the Model Context Protocol (MCP) to provide a composable, auditable runtime with policy-aware controls for governed deployments.

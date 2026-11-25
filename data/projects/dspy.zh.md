@@ -11,7 +11,6 @@ tags:
 description: DSPy 是一个面向将基础模型编程化（而非仅靠提示）的开源框架，便于构建组合化、可自我优化的 AI 流水线。
 author: DSPy contributors
 ossDate: '2023-01-09T21:01:51.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

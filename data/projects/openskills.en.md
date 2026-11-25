@@ -12,7 +12,6 @@ tags:
 description: A developer-focused universal skills loader that simplifies installing and managing skills for agents and scripts.
 author: Numman Ali
 ossDate: '2025-10-26T19:43:54Z'
-featured: false
 status: tracked
 ---
 

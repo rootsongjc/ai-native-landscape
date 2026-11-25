@@ -11,7 +11,6 @@ tags:
 description: OpenEvolve 是一个开源的进化编码与自动化发现框架，利用进化算法与大语言模型协同搜索与优化代码与算法。
 author: OpenEvolve
 ossDate: '2025-05-15T11:46:52.000Z'
-featured: false
 status: tracked
 ---
 

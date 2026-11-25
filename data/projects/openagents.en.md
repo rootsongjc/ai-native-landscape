@@ -15,7 +15,6 @@ description: >-
   plugin extensions.
 author: OpenAgents
 ossDate: '2025-03-10T22:27:52Z'
-featured: false
 status: tracked
 ---
 

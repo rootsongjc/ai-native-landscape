@@ -16,7 +16,6 @@ tags:
 description: 本地优先、可自托管的 AI Agent 运行时，提供持久会话、沙箱执行后端、凭据保险库、审批门禁、审计与回放。
 author: SandBase AI
 ossDate: '2026-07-11'
-featured: false
 status: tracked
 ---
 

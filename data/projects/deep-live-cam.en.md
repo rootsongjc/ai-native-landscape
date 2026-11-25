@@ -12,7 +12,6 @@ tags:
 description: Deep-Live-Cam is an open-source real-time face swap and avatar tool that runs offline for creators and streamers.
 author: hacksider
 ossDate: '2023-09-24T13:19:31Z'
-featured: false
 status: tracked
 ---
 Deep-Live-Cam is an open-source AI-powered video manipulation tool that provides real-time face swap and one-click video deepfake using only a single image. It emphasizes offline, local execution, enabling creators and streamers to replace webcam feeds with virtual personas without uploading video to cloud services.

@@ -13,7 +13,6 @@ description: >-
   and a rich model zoo.
 author: Facebook
 ossDate: '2019-09-05T21:30:20.000Z'
-featured: false
 status: tracked
 ---
 ## Introduction

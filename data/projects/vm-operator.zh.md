@@ -16,7 +16,6 @@ description: >-
   VM Operator 通过 Kubernetes 风格的声明式 API 管理虚拟机，将虚拟机变成一等公民的 Kubernetes 资源，让平台团队可以提供自助式的虚拟基础设施。
 author: VMware Tanzu
 ossDate: '2021-02-19'
-featured: false
 status: tracked
 ---
 

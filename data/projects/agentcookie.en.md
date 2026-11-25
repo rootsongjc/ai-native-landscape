@@ -16,7 +16,6 @@ tags:
 description: A CLI tool that keeps browser sessions in sync across Macs over encrypted Tailscale connections, enabling AI agents to wake up authenticated on remote machines.
 author: mvanhorn
 ossDate: '2026-05-16'
-featured: false
 status: tracked
 ---
 

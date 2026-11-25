@@ -16,7 +16,6 @@ description: >-
   voice and shrinking tool output before the model reads it, with measured savings and no loss of answer quality.
 author: JuliusBrussee
 ossDate: '2026-04-04'
-featured: false
 status: tracked
 ---
 

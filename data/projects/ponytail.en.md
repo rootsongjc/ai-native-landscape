@@ -18,7 +18,6 @@ description: >-
   never wrote.
 author: DietrichGebert
 ossDate: '2026-06-12'
-featured: false
 status: tracked
 ---
 

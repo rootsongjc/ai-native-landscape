@@ -13,7 +13,6 @@ description: >-
   structured data with browser control and Docker deployment.
 author: UncleCode
 ossDate: '2024-05-09T09:48:50Z'
-featured: false
 status: tracked
 ---
 Crawl4AI is an open-source LLM-friendly web crawler and scraper that extracts structured data optimized for large language model consumption. It converts web content into clean Markdown and structured formats, making it ideal for RAG pipelines and downstream AI workflows.

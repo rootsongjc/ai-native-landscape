@@ -17,7 +17,6 @@ description: >-
   first-class Kubernetes resources so platform teams can offer self-service virtual infrastructure.
 author: VMware Tanzu
 ossDate: '2021-02-19'
-featured: false
 status: tracked
 ---
 

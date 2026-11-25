@@ -16,7 +16,6 @@ tags:
 description: NanoClaw 是一个容器化运行的轻量 Claude 助手，强调本地安全、代码可读性与可定制性。
 author: gavrielc
 ossDate: '2026-01-31T15:47:22Z'
-featured: false
 status: tracked
 ---
 

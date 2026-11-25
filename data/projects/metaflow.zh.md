@@ -11,7 +11,6 @@ tags:
 description: 面向数据科学与工程的可重复、可扩展的开源工作流框架，便于从原型到生产的交付。
 author: Metaflow 社区
 ossDate: '2019-09-17T17:48:25.000Z'
-featured: false
 status: tracked
 ---
 

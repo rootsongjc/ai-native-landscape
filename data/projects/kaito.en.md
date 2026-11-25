@@ -17,7 +17,6 @@ description: >-
   tuning workflows, with built-in RAG support and node auto-provisioning.
 author: kaito-project
 ossDate: '2023-09-09T01:53:38.000Z'
-featured: false
 status: tracked
 ---
 

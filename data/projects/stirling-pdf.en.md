@@ -11,7 +11,6 @@ tags:
 description: An open-source, self-hosted web PDF editor and processing platform that supports a wide range of PDF operations.
 author: Stirling-Tools
 ossDate: '2023-01-27T18:22:42.000Z'
-featured: false
 status: tracked
 ---
 

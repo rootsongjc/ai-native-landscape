@@ -18,7 +18,6 @@ description: >-
   它替你做事而不是回答问题：应用关闭后继续工作、记得你的偏好，并在任何不可逆操作前先询问。
 author: nano-muse
 ossDate: '2026-09-23'
-featured: false
 status: tracked
 ---
 

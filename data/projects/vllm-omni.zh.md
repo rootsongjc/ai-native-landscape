@@ -14,7 +14,6 @@ tags:
 description: 一个为文本、图像、视频与音频等多模态模型提供高性能、低成本推理与服务的框架。
 author: vLLM Project
 ossDate: '2025-09-11T00:34:43Z'
-featured: false
 status: tracked
 ---
 

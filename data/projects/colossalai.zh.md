@@ -11,7 +11,6 @@ tags:
 description: 面向大规模并行训练与推理的系统，提供多种并行策略、内存管理与高性能推理组件，旨在让大模型训练与推理更高效、可复现。
 author: HPC-AI Tech / ColossalAI
 ossDate: '2021-10-28T16:19:44.000Z'
-featured: false
 status: tracked
 ---
 Colossal-AI 是一个开源的大规模分布式训练与推理框架，致力于让大型 AI 模型更廉价、更快速、更易获取。它提供多种并行策略和异构内存管理能力，有效降低大模型训练与部署的资源成本。

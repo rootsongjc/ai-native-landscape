@@ -14,7 +14,6 @@ description: >-
   accelerators to improve model execution performance.
 author: OpenXLA
 ossDate: '2017-01-01T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 

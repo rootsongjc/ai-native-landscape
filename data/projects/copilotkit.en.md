@@ -15,7 +15,6 @@ description: >-
   components into React and Angular applications, and the creator of the AG-UI Protocol.
 author: CopilotKit
 ossDate: '2023-06-19T04:08:31Z'
-featured: false
 status: tracked
 ---
 ## Overview

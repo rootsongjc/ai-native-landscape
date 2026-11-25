@@ -16,7 +16,6 @@ tags:
 description: 超轻量级 GPU 管理与 MaaS（模型即服务）平台，将自有服务器、公有云实例与私有云虚机统一为一个异构集群，支持 NVIDIA、AMD、昇腾、PPU、海光、Apple Silicon 混合调度，并通过 OpenAI 兼容端点对外提供模型服务。
 author: Flit AI
 ossDate: '2026-10-22'
-featured: false
 status: tracked
 ---
 

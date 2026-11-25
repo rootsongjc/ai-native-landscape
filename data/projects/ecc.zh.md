@@ -17,7 +17,6 @@ description: >-
   的完整工程闭环。
 author: affaan-m
 ossDate: '2026-01-18'
-featured: false
 status: tracked
 ---
 

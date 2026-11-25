@@ -13,7 +13,6 @@ description: >-
   with live previews and one-click deploy.
 author: Cloudflare
 ossDate: '2025-08-25T15:07:31.000Z'
-featured: false
 status: tracked
 ---
 

@@ -11,7 +11,6 @@ tags:
 description: 面向 AI 训练与推理负载的高性能分布式文件系统，优化数据并行与 I/O 性能以支撑大规模训练任务。
 author: DeepSeek
 ossDate: '2025-02-27T13:36:53.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

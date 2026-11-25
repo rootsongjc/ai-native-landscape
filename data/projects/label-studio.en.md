@@ -12,7 +12,6 @@ tags:
 description: Label Studio is a multi-type data labeling and annotation tool with standardized output formats.
 author: HumanSignal
 ossDate: '2019-06-19T02:00:44.000Z'
-featured: false
 status: tracked
 ---
 

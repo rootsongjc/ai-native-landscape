@@ -16,7 +16,6 @@ tags:
 description: Open-source security tool for AI coding agents that checks selected tool actions against local policy before they run on supported integrations, and scans installed skills, plugins, and MCP configuration for risks.
 author: HOL (Hashgraph Online)
 ossDate: '2026-03-28T19:02:15Z'
-featured: false
 status: tracked
 ---
 

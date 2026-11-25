@@ -14,7 +14,6 @@ description: >-
   communication, and extensibility.
 author: Cloudflare
 ossDate: '2025-01-29T23:14:04.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

@@ -11,7 +11,6 @@ tags:
 description: 超级麦吉，第一个开源的 AI 一体化生产力平台（通用智能体 + 工作流引擎 + 即时通讯 + 在线协同办公系统）
 author: dtyq
 ossDate: '2025-05-14T22:04:29.000Z'
-featured: false
 status: tracked
 ---
 

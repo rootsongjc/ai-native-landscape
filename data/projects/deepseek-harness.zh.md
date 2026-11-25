@@ -14,7 +14,6 @@ tags:
 description: DeepSeek AI 开源的 Agent Harness，基于 Cordis 构建，采用"一切皆插件"的架构。
 author: deepseek-ai
 ossDate: '2026-08-13T11:56:32Z'
-featured: false
 status: tracked
 ---
 

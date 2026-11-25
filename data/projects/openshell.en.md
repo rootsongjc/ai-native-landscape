@@ -16,7 +16,6 @@ description: >-
   declarative YAML policies to protect data, credentials, and infrastructure from unauthorized access.
 author: NVIDIA
 ossDate: '2026-02-24'
-featured: true
 status: tracked
 ---
 

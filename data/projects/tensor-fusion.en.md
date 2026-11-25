@@ -13,7 +13,6 @@ tags:
 description: 'A GPU virtualization and pooling solution for Kubernetes that provides fractional GPUs, oversubscription, and GPU-aware autoscaling.'
 author: NexusGPU
 ossDate: '2024-11-12T23:49:48.000Z'
-featured: false
 status: tracked
 ---
 

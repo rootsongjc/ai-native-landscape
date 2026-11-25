@@ -12,7 +12,6 @@ tags:
 description: Google's built-in developer UI for the Agent Development Kit, designed to simplify agent development and debugging.
 author: Google
 ossDate: '2025-05-05T17:16:28Z'
-featured: false
 status: tracked
 ---
 ## Overview

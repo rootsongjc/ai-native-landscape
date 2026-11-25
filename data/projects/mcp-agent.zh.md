@@ -12,7 +12,6 @@ tags:
 description: 基于 Model Context Protocol 的轻量级可组合代理框架，提供多种工作流模式以快速构建可编排的智能体应用。
 author: lastmile-ai
 ossDate: '2024-12-18T01:55:10.000Z'
-featured: false
 status: tracked
 ---
 

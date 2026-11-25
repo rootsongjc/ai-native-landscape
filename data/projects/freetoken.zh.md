@@ -16,7 +16,6 @@ description: >-
   把 GPU、CPU、内存与互连当作一个弹性推理平台统一调度。
 author: FlashML-org
 ossDate: '2026-07-20'
-featured: false
 status: tracked
 ---
 

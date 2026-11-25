@@ -16,7 +16,6 @@ description: >-
   tasks to implementation with full codebase understanding.
 author: shotgun-sh
 ossDate: '2025-08-25T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 

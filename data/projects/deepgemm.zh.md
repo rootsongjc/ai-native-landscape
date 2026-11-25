@@ -11,7 +11,6 @@ tags:
 description: 实现干净且高效的 FP8 GEMM（矩阵乘加）内核，提供细粒度缩放以支持更高效的低精度矩阵计算。
 author: DeepSeek
 ossDate: '2025-02-13T09:09:21.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

@@ -11,7 +11,6 @@ tags:
 description: A user-friendly desktop client for interacting with AI models/LLMs (GPT, Claude, Gemini, Ollama, etc.).
 author: Chatbox AI
 ossDate: '2023-03-06T12:22:15.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

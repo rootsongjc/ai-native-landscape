@@ -15,7 +15,6 @@ description: >-
   agents.
 author: Swarms
 ossDate: '2023-05-11T01:09:00Z'
-featured: false
 status: tracked
 ---
 

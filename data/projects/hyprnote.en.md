@@ -11,7 +11,6 @@ tags:
 description: Hyprnote is a local-first AI notepad designed for private meetings and privacy-preserving note taking.
 author: fastrepl
 ossDate: '2024-12-09T02:51:21Z'
-featured: false
 status: tracked
 ---
 

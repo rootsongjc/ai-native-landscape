@@ -13,7 +13,6 @@ tags:
 description: 'A vendor-neutral CNCF project for real-time cost monitoring and allocation of Kubernetes workloads and cloud spend, including GPU costs.'
 author: OpenCost
 ossDate: '2019-03-27T21:49:05.000Z'
-featured: false
 status: tracked
 ---
 

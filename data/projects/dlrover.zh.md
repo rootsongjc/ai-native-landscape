@@ -13,7 +13,6 @@ tags:
 description: DLRover 是一个自动化的分布式深度学习系统，提供弹性调度、闪电检查点与自动伸缩，简化大规模模型在 Kubernetes/Ray 上的训练与运维。
 author: Intelligent Machine Learning
 ossDate: '2022-06-24T09:31:07.000Z'
-featured: false
 status: tracked
 ---
 ## 详细介绍

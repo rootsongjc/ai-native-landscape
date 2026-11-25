@@ -11,7 +11,6 @@ tags:
 description: NVIDIA 的 NeMo 框架，覆盖语音、语音合成、多模态和大语言模型训练与微调。
 author: NVIDIA
 ossDate: '2019-08-05T20:16:42.000Z'
-featured: false
 status: tracked
 ---
 

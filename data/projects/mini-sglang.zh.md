@@ -13,7 +13,6 @@ tags:
 description: 一个轻量而高性能的大语言模型推理框架，兼顾工程化与可读性。
 author: SGL Project
 ossDate: '2025-09-01T22:31:45Z'
-featured: false
 status: tracked
 ---
 

@@ -12,7 +12,6 @@ tags:
 description: 以单文件声明为中心的规范，用于定义、分发与运行可复现的 LLM 应用。
 author: Mozilla
 ossDate: '2023-09-10T21:12:32Z'
-featured: false
 status: tracked
 ---
 

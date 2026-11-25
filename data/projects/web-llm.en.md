@@ -14,7 +14,6 @@ description: >-
   inference in the browser.
 author: mlc-ai
 ossDate: '2023-04-13T18:11:59.000Z'
-featured: false
 status: tracked
 ---
 

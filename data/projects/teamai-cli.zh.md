@@ -15,7 +15,6 @@ tags:
 description: 腾讯开源的 TeamAI CLI 通过共享 Git 仓库统一管理团队的技能、规则、MCP 与知识，并分发给 Claude Code、Codex、Cursor 等各类 AI 编码 Agent。
 author: Tencent
 ossDate: '2026-04-27T09:42:49.000Z'
-featured: false
 status: tracked
 ---
 

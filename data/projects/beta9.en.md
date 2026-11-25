@@ -13,7 +13,6 @@ description: >-
   scale-to-zero capabilities.
 author: Beam
 ossDate: '2023-11-15T00:53:21.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

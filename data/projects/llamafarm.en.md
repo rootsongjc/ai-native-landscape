@@ -14,7 +14,6 @@ description: >-
   remotely in minutes.
 author: Llama Farm
 ossDate: '2025-07-09T23:48:36.000Z'
-featured: false
 status: tracked
 ---
 

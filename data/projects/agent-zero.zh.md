@@ -12,7 +12,6 @@ tags:
 description: 一个开源、可扩展的智能体框架，支持多代理协作、持久记忆与工具化执行。
 author: Jan Tomášek / agent0ai
 ossDate: '2024-06-10T09:10:45.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

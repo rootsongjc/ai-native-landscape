@@ -14,7 +14,6 @@ description: >-
   execution and automation.
 author: knownsec
 ossDate: '2025-04-06T07:04:34.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

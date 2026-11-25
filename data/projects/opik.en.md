@@ -14,7 +14,6 @@ description: >-
   applications.
 author: Comet
 ossDate: '2023-05-10T12:57:13.000Z'
-featured: false
 status: tracked
 ---
 

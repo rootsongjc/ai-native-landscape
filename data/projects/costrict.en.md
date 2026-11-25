@@ -15,7 +15,6 @@ description: >-
   programming" with Strict Mode, Code Review, Code Completion, and private deployment support.
 author: Sangfor
 ossDate: '2025-04-10T02:06:51Z'
-featured: false
 status: tracked
 ---
 ## Overview

@@ -11,7 +11,6 @@ tags:
 description: Build high-quality software faster with Spec-Driven Development.
 author: GitHub
 ossDate: '2025-08-21T22:54:31.000Z'
-featured: false
 status: tracked
 ---
 

@@ -3,7 +3,7 @@ name: Xiaohongshu MCP
 slug: xiaohongshu-mcp
 homepage: https://www.haha.ai/xiaohongshu-mcp
 repo: https://github.com/xpzouying/xiaohongshu-mcp
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: mcp-tools
 tags:
@@ -14,7 +14,6 @@ description: >-
   login checks, publishing, recommendations, search, and comment interactions.
 author: xpzouying
 ossDate: '2025-08-03T09:08:45.000Z'
-featured: false
 status: tracked
 ---
 

@@ -3,7 +3,7 @@ name: Inkeep Agents
 slug: inkeep-agents
 homepage: https://docs.inkeep.com
 repo: https://github.com/inkeep/agents
-license: Unknown
+license: Elastic-2.0
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -12,7 +12,6 @@ tags:
 description: Inkeep Agents 是一个通过无代码可视化构建器与 TypeScript SDK 创建智能体的框架，支持双向同步与多代理工作流。
 author: Inkeep
 ossDate: '2025-09-05T12:23:24.000Z'
-featured: false
 status: tracked
 ---
 

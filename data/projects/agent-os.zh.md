@@ -12,7 +12,6 @@ tags:
 description: 面向工程团队的规范化 AI Agent 开发与执行框架，提供规范、指令集与插件化工具链，帮助团队把智能体从实验快速推进到可重复的工程流程。
 author: Brian Casel / Builder Methods
 ossDate: '2025-07-16T21:28:59.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

@@ -13,7 +13,6 @@ tags:
 description: A Python library that allows AI to control browsers, suitable for automation tasks and browser-based agents.
 author: browser-use
 ossDate: '2024-10-31T16:00:56.000Z'
-featured: false
 status: tracked
 ---
 ## Introduction

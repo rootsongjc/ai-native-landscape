@@ -13,7 +13,6 @@ tags:
 description: 通用物理仿真与生成式数据平台，面向机器人与具身智能的开源物理引擎。
 author: Genesis-Embodied-AI
 ossDate: '2023-10-31T03:33:11.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

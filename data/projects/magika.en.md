@@ -12,7 +12,6 @@ tags:
 description: Magika is an AI-powered, fast file content type detection tool released by Google's security research team.
 author: Google
 ossDate: '2023-08-22T09:36:55Z'
-featured: false
 status: tracked
 ---
 

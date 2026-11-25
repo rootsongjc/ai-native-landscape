@@ -12,7 +12,6 @@ tags:
 description: 一个用于描述、共享与发现智能体技能（skills）的开源规范与文档集合。
 author: Anthropic
 ossDate: '2025-12-16T15:47:19Z'
-featured: false
 status: tracked
 ---
 ## 简介

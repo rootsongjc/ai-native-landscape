@@ -13,7 +13,6 @@ description: >-
   reproduce and compare model capabilities.
 author: OpenCompass Contributors
 ossDate: '2023-06-15T12:42:58.000Z'
-featured: false
 status: tracked
 ---
 

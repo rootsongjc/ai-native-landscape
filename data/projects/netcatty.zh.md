@@ -15,7 +15,6 @@ tags:
 description: AI 驱动的 SSH 工作区，集成终端、SFTP 浏览器和 Catty Agent，在统一界面中管理多台远程服务器。
 author: binaricat
 ossDate: '2025-12-06'
-featured: false
 status: tracked
 ---
 

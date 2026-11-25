@@ -13,7 +13,6 @@ tags:
 description: 一个 Kubernetes 原生的大规模 AI 工作负载调度器，为容器化 AI 训练与推理工作流提供高效的资源编排与优化能力。
 author: NVIDIA
 ossDate: '2025-02-26T20:39:42Z'
-featured: false
 status: tracked
 ---
 

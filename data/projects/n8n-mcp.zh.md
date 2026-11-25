@@ -13,7 +13,6 @@ tags:
 description: n8n-MCP 是一款为 n8n 工作流自动化平台和 AI 助手（如 Claude）提供桥接能力的 MCP 服务器，支持节点文档检索、模板发现、批量操作和强校验，助力 AI 智能体高效构建和管理 n8n 工作流。
 author: czlonkowski
 ossDate: '2022-12-01T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 

@@ -16,7 +16,6 @@ tags:
 description: 自托管网关，将 Claude、OpenAI、Gemini、Grok 订阅转换为 OpenAI 兼容的 API 端点，提供多账号调度、Token 级计费与密钥分发。
 author: Wei-Shaw
 ossDate: '2025-12-18T00:00:00Z'
-featured: false
 status: tracked
 ---
 

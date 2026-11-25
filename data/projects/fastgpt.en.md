@@ -15,7 +15,6 @@ description: >-
   development of advanced question-answering systems.
 author: Labring
 ossDate: '2023-02-23T16:53:25.000Z'
-featured: false
 status: tracked
 ---
 FastGPT is an open-source intelligent knowledge base and AI application platform by the Labring team. Built on large language models, it bundles data processing, a RAG retrieval engine, and visual workflow orchestration into an out-of-the-box solution, letting developers create professional Q&A systems without deep AI expertise.

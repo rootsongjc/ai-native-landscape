@@ -14,7 +14,6 @@ tags:
 description: Google's CLI and skills that turn any coding assistant into an expert at creating, evaluating, and deploying AI agents on Google Cloud.
 author: google
 ossDate: '2026-04-08T17:09:55Z'
-featured: false
 status: tracked
 ---
 

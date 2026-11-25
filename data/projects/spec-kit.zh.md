@@ -11,7 +11,6 @@ tags:
 description: GitHub 推出的工具包，通过规范驱动开发（Spec-Driven Development）和 AI 增强规范，聚焦意图驱动编码，提升软件质量与开发效率。
 author: GitHub
 ossDate: '2025-08-21T22:54:31.000Z'
-featured: false
 status: tracked
 ---
 

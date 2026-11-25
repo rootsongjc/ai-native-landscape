@@ -13,7 +13,6 @@ tags:
 description: 一个面向安全的 library OS，支持内核与用户态受限执行，用于将宿主接口最小化并降低攻击面。
 author: Microsoft
 ossDate: '2024-12-11T01:23:27Z'
-featured: false
 status: tracked
 ---
 

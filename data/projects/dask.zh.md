@@ -12,7 +12,6 @@ tags:
 description: Dask 是用于并行计算与任务调度的 Python 库，适合处理大规模数据与分布式计算任务。
 author: dask
 ossDate: '2015-01-04T18:50:00Z'
-featured: false
 status: tracked
 ---
 ## 简介

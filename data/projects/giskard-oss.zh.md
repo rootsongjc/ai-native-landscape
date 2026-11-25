@@ -11,7 +11,6 @@ tags:
 description: 一款开源的 AI 评估与测试框架，用于自动检测性能、偏差与安全问题。
 author: Giskard-AI
 ossDate: '2022-03-06T21:45:37.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

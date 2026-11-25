@@ -15,7 +15,6 @@ tags:
 description: 面向 AI Agent 的开源记忆层，提供 7 层记忆架构，支持长期记忆、语义记忆和 RAG 集成。
 author: Moorcheh AI
 ossDate: '2026-03-23T23:08:38Z'
-featured: false
 status: tracked
 ---
 

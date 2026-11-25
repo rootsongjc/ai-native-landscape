@@ -14,7 +14,6 @@ tags:
 description: 一个命令行工具覆盖全部 Google Workspace——Drive、Gmail、Calendar、Sheets、Docs、Chat、Admin 及所有 Workspace API——命令面由 Google Discovery Service 动态生成，并附带 40 多个智能体技能。
 author: googleworkspace
 ossDate: '2026-03-02'
-featured: false
 status: tracked
 ---
 

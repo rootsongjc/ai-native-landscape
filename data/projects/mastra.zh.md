@@ -12,7 +12,6 @@ tags:
 description: 基于 TypeScript 的 AI agent 与助手框架，提供工作流、工具、RAG 与可观测性集成。
 author: Mastra
 ossDate: '2024-08-06T20:44:31.000Z'
-featured: false
 status: tracked
 ---
 

@@ -11,7 +11,6 @@ tags:
 description: DeepEval：模型评测与基准工具（占位），请补充测试用例与说明。
 author: confident-ai
 ossDate: '2023-08-10T05:35:04.000Z'
-featured: false
 status: tracked
 ---
 DeepEval 是一个面向 LLM 的开源评测框架，提供丰富的评测指标、基准与组件级评估功能，方便在本地或 CI 中对 RAG、对话和 Agent 应用进行自动化测试。DeepEval 同时支持与 Confident AI 平台联动以生成共享报告与可视化结果。

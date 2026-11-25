@@ -17,7 +17,6 @@ description: >-
   secure tools. Formerly Gen AI Toolbox for Databases.
 author: googleapis
 ossDate: '2024-06-07'
-featured: false
 status: tracked
 ---
 

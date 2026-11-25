@@ -13,7 +13,6 @@ tags:
 description: A framework for building LLM-powered applications with composable components and rich integrations.
 author: LangChain contributors
 ossDate: '2022-10-17T02:58:36.000Z'
-featured: true
 status: tracked
 ---
 

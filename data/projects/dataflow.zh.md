@@ -12,7 +12,6 @@ tags:
 description: 面向领域化训练与检索增强生成的高质量数据准备与流水线平台。
 author: OpenDCAI
 ossDate: '2024-10-13T14:45:45Z'
-featured: false
 status: tracked
 ---
 DataFlow 是一个开源的数据准备平台，利用最新的基于 LLM 的操作符和流水线进行 AI 数据工程。它能将 PDF、文本和低质量 QA 等噪声数据源转化为适合预训练、监督微调和 RAG 工作流的高质量数据集。

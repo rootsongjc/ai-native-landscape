@@ -14,7 +14,6 @@ description: >-
   minimal code.
 author: Gradio
 ossDate: '2018-12-19T08:24:04.000Z'
-featured: false
 status: tracked
 ---
 

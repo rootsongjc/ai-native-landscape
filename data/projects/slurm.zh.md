@@ -3,7 +3,7 @@ name: Slurm
 slug: slurm
 homepage: https://slurm.schedmd.com/
 repo: https://github.com/schedmd/slurm
-license: Unknown
+license: GPL-2.0-or-later
 category: platform-infra
 subCategory: heterogeneous-compute-scheduling
 tags:
@@ -13,7 +13,6 @@ tags:
 description: Slurm 是一个开源的集群资源管理和作业调度系统，具有简单、可扩展、可移植、容错和互连无关的特性，广泛用于高性能计算和 AI 训练集群的作业调度。
 author: SchedMD
 ossDate: '2009-12-17T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 

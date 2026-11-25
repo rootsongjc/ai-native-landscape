@@ -16,7 +16,6 @@ tags:
 description: Self-hosted unified interface for agent harnesses that runs Codex, Claude Code, and 26 harness bases through one OpenAI Responses-compatible API, implementing the open Unified Harness Protocol (UHP).
 author: HarnessRouter
 ossDate: '2026-08-09T20:19:14Z'
-featured: false
 status: tracked
 ---
 

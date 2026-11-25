@@ -12,7 +12,6 @@ tags:
 description: 一组面向生产的可部署 RAG 与 AI 管道模板，支持实时数据同步与大规模文档索引。
 author: Pathway
 ossDate: '2023-07-19T08:43:37.000Z'
-featured: false
 status: tracked
 ---
 

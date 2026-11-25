@@ -16,7 +16,6 @@ tags:
 description: Apache-2.0 自托管 AI 网关与 MCP 服务器，在 OpenAI、Anthropic、Gemini API 前面提供虚拟密钥、预算、缓存、护栏、反向 MCP 治理与不调用提供商的确定性提示词增强。
 author: happy520ai
 ossDate: '2026-04-27'
-featured: false
 status: tracked
 ---
 

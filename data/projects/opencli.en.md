@@ -16,7 +16,6 @@ description: >-
   any website through your logged-in Chrome via a bridge extension, with reusable site adapters.
 author: jackwener
 ossDate: '2026-03-14'
-featured: false
 status: tracked
 ---
 

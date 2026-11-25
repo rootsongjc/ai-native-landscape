@@ -13,7 +13,6 @@ tags:
 description: 一种面向 Token 的紧凑、可读且具 schema 感知的数据表示格式，面向 LLM 提示与序列化。
 author: toon-format
 ossDate: '2025-10-22T18:17:32Z'
-featured: false
 status: tracked
 ---
 

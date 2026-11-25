@@ -14,7 +14,6 @@ tags:
 description: A code-first Go toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control.
 author: Google
 ossDate: '2025-05-05T17:16:26Z'
-featured: false
 status: tracked
 ---
 ## Overview

@@ -17,7 +17,6 @@ description: >-
   SDK compatibility.
 author: OpenCSG
 ossDate: '2024-01-12T09:44:48Z'
-featured: false
 status: tracked
 ---
 CSGHub is an open-source platform developed by OpenCSG for managing large language models and related AI assets including models, datasets, and code. It offers features comparable to Hugging Face with both SaaS and on-premise deployment options for enterprise LLM lifecycle management.

@@ -3,7 +3,7 @@ name: Cactus
 slug: cactus
 homepage: https://cactuscompute.com/docs
 repo: https://github.com/cactus-compute/cactus
-license: Other
+license: Apache-2.0
 category: inference-serving
 subCategory: edge-local-inference
 tags:
@@ -13,7 +13,6 @@ tags:
 description: 面向手机的能效推理引擎与数值计算框架，优化 ARM CPU 执行以在移动设备上高效运行大模型。
 author: cactus-compute
 ossDate: '2025-04-23T14:33:43.000Z'
-featured: false
 status: tracked
 ---
 Cactus 是一款面向手机和可穿戴设备的低延迟 AI 推理引擎与数值计算框架，由 cactus-compute 开发。它针对 ARM CPU 进行了深度优化，能够在极低功耗和内存占用下运行大语言模型，实现在终端设备上的本地 AI 推理而无需依赖云端连接。

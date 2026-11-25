@@ -14,7 +14,6 @@ description: >-
   large-model training.
 author: hiyouga
 ossDate: '2025-02-22T04:17:31Z'
-featured: false
 status: tracked
 ---
 ## Overview

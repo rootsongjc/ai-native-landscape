@@ -13,7 +13,6 @@ description: >-
   open-source Perplexity alternative.
 author: zaidmukaddam
 ossDate: '2024-08-07T13:29:49.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

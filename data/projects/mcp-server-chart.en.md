@@ -12,7 +12,6 @@ tags:
 description: A visualization mcp contains 25+ visual charts using @antvis. Using for chart generation and data analysis.
 author: AntV
 ossDate: '2025-04-25T09:10:06.000Z'
-featured: false
 status: tracked
 ---
 

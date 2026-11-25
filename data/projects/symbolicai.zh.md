@@ -12,7 +12,6 @@ tags:
 description: SymbolicAI 是一个将经典 Python 编程与可微分、可编程的 LLM 能力结合的神经符号框架。
 author: ExtensityAI
 ossDate: '2022-11-30T17:03:09.000Z'
-featured: false
 status: tracked
 ---
 

@@ -12,7 +12,6 @@ tags:
 description: Volcano 是一个 CNCF 下的 Kubernetes 原生批处理调度系统，专为 AI/大数据/HPC 等批量与弹性任务提供高级调度能力。
 author: volcano-sh
 ossDate: '2019-06-01T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 

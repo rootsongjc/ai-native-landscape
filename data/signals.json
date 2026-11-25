@@ -1,0 +1,5367 @@
+{
+  "syncedAt": "2026-11-25",
+  "projects": {
+    "1jehuang/jcode": {
+      "health": 80.8,
+      "contributors": 64,
+      "commitsLastYear": 3602,
+      "daysSinceLastCommit": 0,
+      "ageDays": 323
+    },
+    "1panel-dev/maxkb": {
+      "health": 80.8,
+      "contributors": 102,
+      "commitsLastYear": 219,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1168
+    },
+    "567-labs/instructor": {
+      "health": 83.8,
+      "contributors": 270,
+      "commitsLastYear": 290,
+      "daysSinceLastCommit": 6,
+      "ageDays": 1259
+    },
+    "666ghj/bettafish": {
+      "health": 65.6,
+      "contributors": 50,
+      "commitsLastYear": 6,
+      "daysSinceLastCommit": 54,
+      "ageDays": 876
+    },
+    "78/xiaozhi-esp32": {
+      "health": 85.7,
+      "contributors": 182,
+      "commitsLastYear": 267,
+      "daysSinceLastCommit": 0,
+      "ageDays": 815
+    },
+    "a2aproject/a2a": {
+      "health": 80.4,
+      "contributors": 180,
+      "commitsLastYear": 49,
+      "daysSinceLastCommit": 0,
+      "ageDays": 609
+    },
+    "a2ui-project/a2ui": {
+      "health": 81.9,
+      "contributors": 116,
+      "commitsLastYear": 856,
+      "daysSinceLastCommit": 0,
+      "ageDays": 426
+    },
+    "aaif-goose/goose": {
+      "health": 90.6,
+      "contributors": 702,
+      "commitsLastYear": 596,
+      "daysSinceLastCommit": 0,
+      "ageDays": 823
+    },
+    "abhigyanpatwari/gitnexus": {
+      "health": 85,
+      "contributors": 218,
+      "commitsLastYear": 574,
+      "daysSinceLastCommit": 0,
+      "ageDays": 479
+    },
+    "activeing123/mcptoon": {
+      "health": 59.4,
+      "contributors": 7,
+      "commitsLastYear": 472,
+      "daysSinceLastCommit": 7,
+      "ageDays": 120
+    },
+    "activeloopai/deeplake": {
+      "health": 52.6,
+      "contributors": 140,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 187,
+      "ageDays": 2665
+    },
+    "activepieces/activepieces": {
+      "health": 88.2,
+      "contributors": 501,
+      "commitsLastYear": 1424,
+      "daysSinceLastCommit": 2,
+      "ageDays": 1451
+    },
+    "addyosmani/agent-skills": {
+      "health": 85.7,
+      "contributors": 104,
+      "commitsLastYear": 403,
+      "daysSinceLastCommit": 6,
+      "ageDays": 280
+    },
+    "aden-hive/hive": {
+      "health": 85.8,
+      "contributors": 230,
+      "commitsLastYear": 124,
+      "daysSinceLastCommit": 7,
+      "ageDays": 315
+    },
+    "affaan-m/ecc": {
+      "health": 91.7,
+      "contributors": 548,
+      "commitsLastYear": 2576,
+      "daysSinceLastCommit": 5,
+      "ageDays": 309
+    },
+    "ag-ui-protocol/ag-ui": {
+      "health": 84.2,
+      "contributors": 195,
+      "commitsLastYear": 1929,
+      "daysSinceLastCommit": 3,
+      "ageDays": 564
+    },
+    "agent-field/agentfield": {
+      "health": 75.6,
+      "contributors": 77,
+      "commitsLastYear": 339,
+      "daysSinceLastCommit": 2,
+      "ageDays": 383
+    },
+    "agent-field/pr-af": {
+      "health": 42.1,
+      "contributors": 6,
+      "commitsLastYear": 4,
+      "daysSinceLastCommit": 12,
+      "ageDays": 256
+    },
+    "agent-infra/sandbox": {
+      "health": 55.7,
+      "contributors": 17,
+      "commitsLastYear": 5,
+      "daysSinceLastCommit": 72,
+      "ageDays": 473
+    },
+    "agent-substrate/substrate": {
+      "health": 80,
+      "contributors": 135,
+      "commitsLastYear": 1147,
+      "daysSinceLastCommit": 2,
+      "ageDays": 193
+    },
+    "agent0ai/agent-zero": {
+      "health": 81.6,
+      "contributors": 75,
+      "commitsLastYear": 479,
+      "daysSinceLastCommit": 4,
+      "ageDays": 896
+    },
+    "agenta-ai/agenta": {
+      "health": 77.3,
+      "contributors": 174,
+      "commitsLastYear": 10238,
+      "daysSinceLastCommit": 2,
+      "ageDays": 1307
+    },
+    "agentgateway/agentgateway": {
+      "health": 83.9,
+      "contributors": 301,
+      "commitsLastYear": 820,
+      "daysSinceLastCommit": 4,
+      "ageDays": 614
+    },
+    "agents365-ai/drawio-skill": {
+      "health": 70.9,
+      "contributors": 21,
+      "commitsLastYear": 82,
+      "daysSinceLastCommit": 3,
+      "ageDays": 264
+    },
+    "agentscope-ai/agentscope": {
+      "health": 85.8,
+      "contributors": 248,
+      "commitsLastYear": 561,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1047
+    },
+    "agentscope-ai/qwenpaw": {
+      "health": 86.1,
+      "contributors": 273,
+      "commitsLastYear": 531,
+      "daysSinceLastCommit": 1,
+      "ageDays": 273
+    },
+    "agentset-ai/agentset": {
+      "health": 55,
+      "contributors": 7,
+      "commitsLastYear": 12,
+      "daysSinceLastCommit": 27,
+      "ageDays": 624
+    },
+    "agentskills/agentskills": {
+      "health": 57.6,
+      "contributors": 42,
+      "commitsLastYear": 2,
+      "daysSinceLastCommit": 20,
+      "ageDays": 337
+    },
+    "agentskit-io/agentskit": {
+      "health": 62.9,
+      "contributors": 8,
+      "commitsLastYear": 271,
+      "daysSinceLastCommit": 9,
+      "ageDays": 230
+    },
+    "agno-agi/agno": {
+      "health": 88.7,
+      "contributors": 646,
+      "commitsLastYear": 449,
+      "daysSinceLastCommit": 6,
+      "ageDays": 1659
+    },
+    "agricidaniel/claude-ads": {
+      "health": 62.8,
+      "contributors": 2,
+      "commitsLastYear": 43,
+      "daysSinceLastCommit": 39,
+      "ageDays": 280
+    },
+    "ahujasid/mcp-for-blender": {
+      "health": 77.5,
+      "contributors": 47,
+      "commitsLastYear": 89,
+      "daysSinceLastCommit": 7,
+      "ageDays": 627
+    },
+    "ai-boost/awesome-image-video-prompts": {
+      "health": 70.5,
+      "contributors": 77,
+      "commitsLastYear": 71,
+      "daysSinceLastCommit": 7,
+      "ageDays": 1105
+    },
+    "ai-dynamo/dynamo": {
+      "health": 86.7,
+      "contributors": 512,
+      "commitsLastYear": 1999,
+      "daysSinceLastCommit": 6,
+      "ageDays": 625
+    },
+    "ai-hypercomputer/maxtext": {
+      "health": 80.6,
+      "contributors": 293,
+      "commitsLastYear": 1350,
+      "daysSinceLastCommit": 6,
+      "ageDays": 1359
+    },
+    "ai-openshell/openshell": {
+      "health": 83.4,
+      "contributors": 148,
+      "commitsLastYear": 953,
+      "daysSinceLastCommit": 1,
+      "ageDays": 272
+    },
+    "ai4finance-foundation/fingpt": {
+      "health": 75,
+      "contributors": 48,
+      "commitsLastYear": 28,
+      "daysSinceLastCommit": 6,
+      "ageDays": 1382
+    },
+    "ai4finance-foundation/finrobot": {
+      "health": 65.3,
+      "contributors": 8,
+      "commitsLastYear": 25,
+      "daysSinceLastCommit": 31,
+      "ageDays": 996
+    },
+    "aidenybai/react-grab": {
+      "health": 56.7,
+      "contributors": 20,
+      "commitsLastYear": 4,
+      "daysSinceLastCommit": 7,
+      "ageDays": 398
+    },
+    "aider-ai/aider": {
+      "health": 64.3,
+      "contributors": 182,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 186,
+      "ageDays": 1289
+    },
+    "aipexstudio/aipex": {
+      "health": 38,
+      "contributors": 13,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 91,
+      "ageDays": 825
+    },
+    "airbytehq/airbyte": {
+      "health": 90.9,
+      "contributors": 1271,
+      "commitsLastYear": 5616,
+      "daysSinceLastCommit": 0,
+      "ageDays": 2311
+    },
+    "akash-network/node": {
+      "health": 70.4,
+      "contributors": 39,
+      "commitsLastYear": 131,
+      "daysSinceLastCommit": 5,
+      "ageDays": 3357
+    },
+    "alexanderradahl/mac-developer-bridge": {
+      "health": 50.8,
+      "contributors": 2,
+      "commitsLastYear": 10,
+      "daysSinceLastCommit": 86,
+      "ageDays": 101
+    },
+    "algorithmicsuperintelligence/openevolve": {
+      "health": 78.8,
+      "contributors": 90,
+      "commitsLastYear": 100,
+      "daysSinceLastCommit": 0,
+      "ageDays": 558
+    },
+    "alibaba-nlp/deepresearch": {
+      "health": 49.2,
+      "contributors": 30,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 271,
+      "ageDays": 684
+    },
+    "alibaba/open-code-review": {
+      "health": 86.5,
+      "contributors": 232,
+      "commitsLastYear": 301,
+      "daysSinceLastCommit": 0,
+      "ageDays": 191
+    },
+    "alibaba/page-agent": {
+      "health": 73.8,
+      "contributors": 34,
+      "commitsLastYear": 40,
+      "daysSinceLastCommit": 7,
+      "ageDays": 427
+    },
+    "alibaba/roll": {
+      "health": 58.5,
+      "contributors": 79,
+      "commitsLastYear": 5,
+      "daysSinceLastCommit": 34,
+      "ageDays": 545
+    },
+    "alibaba/spring-ai-alibaba": {
+      "health": 64.9,
+      "contributors": 277,
+      "commitsLastYear": 2,
+      "daysSinceLastCommit": 48,
+      "ageDays": 807
+    },
+    "allenai/olmocr": {
+      "health": 48.5,
+      "contributors": 16,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 244,
+      "ageDays": 798
+    },
+    "alphacep/vosk-api": {
+      "health": 61,
+      "contributors": 52,
+      "commitsLastYear": 3,
+      "daysSinceLastCommit": 41,
+      "ageDays": 2637
+    },
+    "analysedecircuit/oxideterm": {
+      "health": 69.2,
+      "contributors": 17,
+      "commitsLastYear": 902,
+      "daysSinceLastCommit": 2,
+      "ageDays": 305
+    },
+    "andrewyng/context-hub": {
+      "health": 50.7,
+      "contributors": 32,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 177,
+      "ageDays": 388
+    },
+    "anil-matcha/open-generative-ai": {
+      "health": 76.2,
+      "contributors": 28,
+      "commitsLastYear": 117,
+      "daysSinceLastCommit": 4,
+      "ageDays": 1293
+    },
+    "anomalyco/opencode": {
+      "health": 94.6,
+      "contributors": 1101,
+      "commitsLastYear": 5428,
+      "daysSinceLastCommit": 1,
+      "ageDays": 572
+    },
+    "anthropics/claude-agent-sdk-python": {
+      "health": 79.2,
+      "contributors": 72,
+      "commitsLastYear": 183,
+      "daysSinceLastCommit": 4,
+      "ageDays": 528
+    },
+    "anthropics/claude-code": {
+      "health": 85.6,
+      "contributors": 59,
+      "commitsLastYear": 370,
+      "daysSinceLastCommit": 2,
+      "ageDays": 638
+    },
+    "anthropics/knowledge-work-plugins": {
+      "health": 77.8,
+      "contributors": 32,
+      "commitsLastYear": 417,
+      "daysSinceLastCommit": 5,
+      "ageDays": 302
+    },
+    "anthropics/sandbox-runtime": {
+      "health": 73,
+      "contributors": 38,
+      "commitsLastYear": 192,
+      "daysSinceLastCommit": 12,
+      "ageDays": 400
+    },
+    "anthropics/skills": {
+      "health": 76,
+      "contributors": 17,
+      "commitsLastYear": 12,
+      "daysSinceLastCommit": 8,
+      "ageDays": 426
+    },
+    "antvis/mcp-server-chart": {
+      "health": 46.7,
+      "contributors": 24,
+      "commitsLastYear": 1,
+      "daysSinceLastCommit": 90,
+      "ageDays": 576
+    },
+    "apache/doris": {
+      "health": 89.7,
+      "contributors": 863,
+      "commitsLastYear": 1443,
+      "daysSinceLastCommit": 2,
+      "ageDays": 3391
+    },
+    "apache/gravitino": {
+      "health": 83.2,
+      "contributors": 373,
+      "commitsLastYear": 846,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1311
+    },
+    "apache/iceberg": {
+      "health": 89.7,
+      "contributors": 944,
+      "commitsLastYear": 608,
+      "daysSinceLastCommit": 3,
+      "ageDays": 2925
+    },
+    "apache/spark": {
+      "health": 93.5,
+      "contributors": 3682,
+      "commitsLastYear": 1497,
+      "daysSinceLastCommit": 2,
+      "ageDays": 4653
+    },
+    "apache/superset": {
+      "health": 95.4,
+      "contributors": 1852,
+      "commitsLastYear": 2197,
+      "daysSinceLastCommit": 2,
+      "ageDays": 4142
+    },
+    "apache/yunikorn-core": {
+      "health": 74.3,
+      "contributors": 124,
+      "commitsLastYear": 80,
+      "daysSinceLastCommit": 2,
+      "ageDays": 2720
+    },
+    "apple/axlearn": {
+      "health": 49.7,
+      "contributors": 168,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 139,
+      "ageDays": 1366
+    },
+    "apple/embedding-atlas": {
+      "health": 67,
+      "contributors": 30,
+      "commitsLastYear": 44,
+      "daysSinceLastCommit": 3,
+      "ageDays": 564
+    },
+    "arc53/docsgpt": {
+      "health": 84.7,
+      "contributors": 291,
+      "commitsLastYear": 3585,
+      "daysSinceLastCommit": 2,
+      "ageDays": 1389
+    },
+    "arcships/light-ocr": {
+      "health": 57.4,
+      "contributors": 5,
+      "commitsLastYear": 31,
+      "daysSinceLastCommit": 48,
+      "ageDays": 131
+    },
+    "areal-project/areal": {
+      "health": 77,
+      "contributors": 132,
+      "commitsLastYear": 160,
+      "daysSinceLastCommit": 1,
+      "ageDays": 638
+    },
+    "arize-ai/phoenix": {
+      "health": 85.2,
+      "contributors": 287,
+      "commitsLastYear": 1065,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1475
+    },
+    "assafelovic/gpt-researcher": {
+      "health": 84.6,
+      "contributors": 331,
+      "commitsLastYear": 367,
+      "daysSinceLastCommit": 2,
+      "ageDays": 1290
+    },
+    "assistant-ui/assistant-ui": {
+      "health": 82.7,
+      "contributors": 222,
+      "commitsLastYear": 2849,
+      "daysSinceLastCommit": 2,
+      "ageDays": 1096
+    },
+    "astaxie/tokenhub": {
+      "health": 71.7,
+      "contributors": 38,
+      "commitsLastYear": 1074,
+      "daysSinceLastCommit": 9,
+      "ageDays": 165
+    },
+    "astrbotdevs/astrbot": {
+      "health": 86.4,
+      "contributors": 392,
+      "commitsLastYear": 418,
+      "daysSinceLastCommit": 3,
+      "ageDays": 1445
+    },
+    "avante-corp/avante.nvim": {
+      "health": 81.6,
+      "contributors": 302,
+      "commitsLastYear": 386,
+      "daysSinceLastCommit": 1,
+      "ageDays": 831
+    },
+    "awslabs/mcp": {
+      "health": 85.9,
+      "contributors": 366,
+      "commitsLastYear": 307,
+      "daysSinceLastCommit": 0,
+      "ageDays": 614
+    },
+    "axolotl-ai-cloud/axolotl": {
+      "health": 84.4,
+      "contributors": 273,
+      "commitsLastYear": 276,
+      "daysSinceLastCommit": 5,
+      "ageDays": 1321
+    },
+    "ayghri/i-have-adhd": {
+      "health": 78,
+      "contributors": 53,
+      "commitsLastYear": 77,
+      "daysSinceLastCommit": 44,
+      "ageDays": 195
+    },
+    "azure/taugrid": {
+      "health": 66.8,
+      "contributors": 12,
+      "commitsLastYear": 240,
+      "daysSinceLastCommit": 1,
+      "ageDays": 124
+    },
+    "babysor/mockingbird": {
+      "health": 53.2,
+      "contributors": 41,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 266,
+      "ageDays": 1936
+    },
+    "backnotprop/plannotator": {
+      "health": 83.6,
+      "contributors": 221,
+      "commitsLastYear": 11741,
+      "daysSinceLastCommit": 0,
+      "ageDays": 332
+    },
+    "badlogic/pi-mono": {
+      "health": 90,
+      "contributors": 321,
+      "commitsLastYear": 2090,
+      "daysSinceLastCommit": 0,
+      "ageDays": 472
+    },
+    "bailinghub/bailinghub": {
+      "health": 51.4,
+      "contributors": 1,
+      "commitsLastYear": 32,
+      "daysSinceLastCommit": 2,
+      "ageDays": 138
+    },
+    "basementstudio/xmcp": {
+      "health": 68.2,
+      "contributors": 38,
+      "commitsLastYear": 159,
+      "daysSinceLastCommit": 0,
+      "ageDays": 557
+    },
+    "basicmachines-co/basic-memory": {
+      "health": 73.4,
+      "contributors": 61,
+      "commitsLastYear": 837,
+      "daysSinceLastCommit": 1,
+      "ageDays": 722
+    },
+    "beam-cloud/beta9": {
+      "health": 72.1,
+      "contributors": 23,
+      "commitsLastYear": 252,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1105
+    },
+    "beclab/olares": {
+      "health": 72.1,
+      "contributors": 38,
+      "commitsLastYear": 403,
+      "daysSinceLastCommit": 1,
+      "ageDays": 938
+    },
+    "bentoml/bentoml": {
+      "health": 76.9,
+      "contributors": 240,
+      "commitsLastYear": 12,
+      "daysSinceLastCommit": 8,
+      "ageDays": 2792
+    },
+    "berriai/litellm": {
+      "health": 95.7,
+      "contributors": 1978,
+      "commitsLastYear": 12524,
+      "daysSinceLastCommit": 2,
+      "ageDays": 1215
+    },
+    "bidingcc/buildingai": {
+      "health": 46.4,
+      "contributors": 12,
+      "commitsLastYear": 2,
+      "daysSinceLastCommit": 8,
+      "ageDays": 619
+    },
+    "binaricat/netcatty": {
+      "health": 78.1,
+      "contributors": 116,
+      "commitsLastYear": 1303,
+      "daysSinceLastCommit": 1,
+      "ageDays": 351
+    },
+    "blinkospace/blinko": {
+      "health": 73.4,
+      "contributors": 74,
+      "commitsLastYear": 24,
+      "daysSinceLastCommit": 20,
+      "ageDays": 762
+    },
+    "block/buzz": {
+      "health": 84.3,
+      "contributors": 140,
+      "commitsLastYear": 1188,
+      "daysSinceLastCommit": 1,
+      "ageDays": 262
+    },
+    "blockrunai/clawrouter": {
+      "health": 70.6,
+      "contributors": 34,
+      "commitsLastYear": 322,
+      "daysSinceLastCommit": 1,
+      "ageDays": 293
+    },
+    "bloopai/vibe-kanban": {
+      "health": 77.4,
+      "contributors": 68,
+      "commitsLastYear": 23,
+      "daysSinceLastCommit": 9,
+      "ageDays": 527
+    },
+    "bmad-code-org/bmad-method": {
+      "health": 84.7,
+      "contributors": 164,
+      "commitsLastYear": 311,
+      "daysSinceLastCommit": 13,
+      "ageDays": 589
+    },
+    "boxlite-ai/boxlite": {
+      "health": 73.8,
+      "contributors": 48,
+      "commitsLastYear": 527,
+      "daysSinceLastCommit": 1,
+      "ageDays": 351
+    },
+    "breaking-brake/cc-wf-studio": {
+      "health": 38.9,
+      "contributors": 6,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 115,
+      "ageDays": 387
+    },
+    "brightdata/brightdata-mcp": {
+      "health": 70.9,
+      "contributors": 21,
+      "commitsLastYear": 129,
+      "daysSinceLastCommit": 1,
+      "ageDays": 588
+    },
+    "browser-use/browser-harness": {
+      "health": 81.7,
+      "contributors": 104,
+      "commitsLastYear": 443,
+      "daysSinceLastCommit": 1,
+      "ageDays": 221
+    },
+    "browser-use/browser-use": {
+      "health": 90.8,
+      "contributors": 385,
+      "commitsLastYear": 981,
+      "daysSinceLastCommit": 3,
+      "ageDays": 753
+    },
+    "browserbase/stagehand": {
+      "health": 78.4,
+      "contributors": 52,
+      "commitsLastYear": 262,
+      "daysSinceLastCommit": 1,
+      "ageDays": 974
+    },
+    "browseros-ai/browseros": {
+      "health": 78.1,
+      "contributors": 25,
+      "commitsLastYear": 849,
+      "daysSinceLastCommit": 1,
+      "ageDays": 554
+    },
+    "bubblelabai/bubblelab": {
+      "health": 38.5,
+      "contributors": 14,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 209,
+      "ageDays": 417
+    },
+    "buildermethods/agent-os": {
+      "health": 49.9,
+      "contributors": 20,
+      "commitsLastYear": 2,
+      "daysSinceLastCommit": 49,
+      "ageDays": 495
+    },
+    "bupt-gamma/masfactory": {
+      "health": 60.1,
+      "contributors": 19,
+      "commitsLastYear": 10,
+      "daysSinceLastCommit": 30,
+      "ageDays": 282
+    },
+    "bytedance/deer-flow": {
+      "health": 92.9,
+      "contributors": 692,
+      "commitsLastYear": 1970,
+      "daysSinceLastCommit": 1,
+      "ageDays": 566
+    },
+    "cactus-compute/cactus": {
+      "health": 73.1,
+      "contributors": 33,
+      "commitsLastYear": 115,
+      "daysSinceLastCommit": 2,
+      "ageDays": 273
+    },
+    "camel-ai/camel": {
+      "health": 81.5,
+      "contributors": 238,
+      "commitsLastYear": 28,
+      "daysSinceLastCommit": 9,
+      "ageDays": 1345
+    },
+    "camel-ai/owl": {
+      "health": 73.9,
+      "contributors": 47,
+      "commitsLastYear": 10,
+      "daysSinceLastCommit": 9,
+      "ageDays": 629
+    },
+    "canner/wrenai": {
+      "health": 80.2,
+      "contributors": 96,
+      "commitsLastYear": 116,
+      "daysSinceLastCommit": 6,
+      "ageDays": 984
+    },
+    "caviraoss/longmemory": {
+      "health": 66.9,
+      "contributors": 52,
+      "commitsLastYear": 16,
+      "daysSinceLastCommit": 15,
+      "ageDays": 400
+    },
+    "ccusage/ccusage": {
+      "health": 76.9,
+      "contributors": 83,
+      "commitsLastYear": 1618,
+      "daysSinceLastCommit": 1,
+      "ageDays": 543
+    },
+    "chachamaru127/claude-code-harness": {
+      "health": 64,
+      "contributors": 10,
+      "commitsLastYear": 190,
+      "daysSinceLastCommit": 14,
+      "ageDays": 345
+    },
+    "chaitin/pandawiki": {
+      "health": 73.8,
+      "contributors": 22,
+      "commitsLastYear": 23,
+      "daysSinceLastCommit": 7,
+      "ageDays": 556
+    },
+    "charmbracelet/crush": {
+      "health": 83.8,
+      "contributors": 169,
+      "commitsLastYear": 576,
+      "daysSinceLastCommit": 0,
+      "ageDays": 552
+    },
+    "chatboxai/chatbox": {
+      "health": 82.2,
+      "contributors": 78,
+      "commitsLastYear": 587,
+      "daysSinceLastCommit": 7,
+      "ageDays": 1359
+    },
+    "chaterm/chaterm": {
+      "health": 74.3,
+      "contributors": 67,
+      "commitsLastYear": 425,
+      "daysSinceLastCommit": 0,
+      "ageDays": 590
+    },
+    "chatgptnextweb/nextchat": {
+      "health": 87.6,
+      "contributors": 306,
+      "commitsLastYear": 10,
+      "daysSinceLastCommit": 36,
+      "ageDays": 1355
+    },
+    "cheaper-inference/omniroute": {
+      "health": 94.3,
+      "contributors": 955,
+      "commitsLastYear": 8260,
+      "daysSinceLastCommit": 0,
+      "ageDays": 284
+    },
+    "cherryhq/cherry-studio": {
+      "health": 90.3,
+      "contributors": 549,
+      "commitsLastYear": 2113,
+      "daysSinceLastCommit": 0,
+      "ageDays": 915
+    },
+    "chroma-core/chroma": {
+      "health": 82.9,
+      "contributors": 197,
+      "commitsLastYear": 65,
+      "daysSinceLastCommit": 18,
+      "ageDays": 1511
+    },
+    "chromedevtools/chrome-devtools-mcp": {
+      "health": 85.2,
+      "contributors": 178,
+      "commitsLastYear": 531,
+      "daysSinceLastCommit": 0,
+      "ageDays": 439
+    },
+    "chromedevtools/devtools-protocol": {
+      "health": 66.7,
+      "contributors": 17,
+      "commitsLastYear": 45,
+      "daysSinceLastCommit": 0,
+      "ageDays": 3528
+    },
+    "cisco-ai-defense/mcp-scanner": {
+      "health": 68.1,
+      "contributors": 36,
+      "commitsLastYear": 33,
+      "daysSinceLastCommit": 0,
+      "ageDays": 427
+    },
+    "cjpais/handy": {
+      "health": 82.9,
+      "contributors": 193,
+      "commitsLastYear": 141,
+      "daysSinceLastCommit": 0,
+      "ageDays": 650
+    },
+    "clearml/clearml": {
+      "health": 75.5,
+      "contributors": 120,
+      "commitsLastYear": 30,
+      "daysSinceLastCommit": 1,
+      "ageDays": 2724
+    },
+    "cline/cline": {
+      "health": 89.5,
+      "contributors": 356,
+      "commitsLastYear": 674,
+      "daysSinceLastCommit": 2,
+      "ageDays": 870
+    },
+    "cloudflare/agents": {
+      "health": 76.8,
+      "contributors": 78,
+      "commitsLastYear": 439,
+      "daysSinceLastCommit": 2,
+      "ageDays": 662
+    },
+    "cloudflare/cloudflare-os": {
+      "health": 76.6,
+      "contributors": 32,
+      "commitsLastYear": 459,
+      "daysSinceLastCommit": 2,
+      "ageDays": 221
+    },
+    "cloudflare/security-audit-skill": {
+      "health": 57.2,
+      "contributors": 4,
+      "commitsLastYear": 3,
+      "daysSinceLastCommit": 71,
+      "ageDays": 157
+    },
+    "cloudflare/vibesdk": {
+      "health": 68.2,
+      "contributors": 19,
+      "commitsLastYear": 16,
+      "daysSinceLastCommit": 34,
+      "ageDays": 454
+    },
+    "cloudflare/workerd": {
+      "health": 82.3,
+      "contributors": 252,
+      "commitsLastYear": 3025,
+      "daysSinceLastCommit": 2,
+      "ageDays": 1529
+    },
+    "cloudwego/eino": {
+      "health": 71.9,
+      "contributors": 43,
+      "commitsLastYear": 13,
+      "daysSinceLastCommit": 15,
+      "ageDays": 719
+    },
+    "cocoindex-io/cocoindex": {
+      "health": 78.2,
+      "contributors": 108,
+      "commitsLastYear": 382,
+      "daysSinceLastCommit": 3,
+      "ageDays": 629
+    },
+    "code-yeongyu/oh-my-openagent": {
+      "health": 89.5,
+      "contributors": 387,
+      "commitsLastYear": 21654,
+      "daysSinceLastCommit": 1,
+      "ageDays": 356
+    },
+    "codebuffai/freebuff": {
+      "health": 77.4,
+      "contributors": 36,
+      "commitsLastYear": 4655,
+      "daysSinceLastCommit": 0,
+      "ageDays": 868
+    },
+    "codewhale-hq/codewhale": {
+      "health": 84.9,
+      "contributors": 263,
+      "commitsLastYear": 7477,
+      "daysSinceLastCommit": 1,
+      "ageDays": 308
+    },
+    "colbymchenry/codegraph": {
+      "health": 81,
+      "contributors": 52,
+      "commitsLastYear": 1063,
+      "daysSinceLastCommit": 4,
+      "ageDays": 306
+    },
+    "comet-ml/opik": {
+      "health": 83.6,
+      "contributors": 199,
+      "commitsLastYear": 1277,
+      "daysSinceLastCommit": 4,
+      "ageDays": 1290
+    },
+    "comfy-org/comfyui": {
+      "health": 91.2,
+      "contributors": 366,
+      "commitsLastYear": 588,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1407
+    },
+    "companion-inc/feynman": {
+      "health": 72.5,
+      "contributors": 18,
+      "commitsLastYear": 442,
+      "daysSinceLastCommit": 8,
+      "ageDays": 246
+    },
+    "composiohq/composio": {
+      "health": 83.6,
+      "contributors": 133,
+      "commitsLastYear": 1388,
+      "daysSinceLastCommit": 4,
+      "ageDays": 1001
+    },
+    "conductor-oss/conductor": {
+      "health": 83.6,
+      "contributors": 431,
+      "commitsLastYear": 144,
+      "daysSinceLastCommit": 4,
+      "ageDays": 1079
+    },
+    "confident-ai/deepeval": {
+      "health": 86.3,
+      "contributors": 350,
+      "commitsLastYear": 524,
+      "daysSinceLastCommit": 5,
+      "ageDays": 1199
+    },
+    "confident-ai/deepteam": {
+      "health": 67.3,
+      "contributors": 27,
+      "commitsLastYear": 34,
+      "daysSinceLastCommit": 33,
+      "ageDays": 627
+    },
+    "containers/ramalama": {
+      "health": 74.4,
+      "contributors": 151,
+      "commitsLastYear": 149,
+      "daysSinceLastCommit": 12,
+      "ageDays": 851
+    },
+    "continuedev/continue": {
+      "health": 66.8,
+      "contributors": 507,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 127,
+      "ageDays": 1278
+    },
+    "convex/chef": {
+      "health": 49.9,
+      "contributors": 122,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 256,
+      "ageDays": 602
+    },
+    "copilotkit/copilotkit": {
+      "health": 86.2,
+      "contributors": 288,
+      "commitsLastYear": 4847,
+      "daysSinceLastCommit": 2,
+      "ageDays": 1252
+    },
+    "coplaydev/unity-mcp": {
+      "health": 80.9,
+      "contributors": 99,
+      "commitsLastYear": 284,
+      "daysSinceLastCommit": 7,
+      "ageDays": 614
+    },
+    "coze-dev/coze-loop": {
+      "health": 72.9,
+      "contributors": 48,
+      "commitsLastYear": 53,
+      "daysSinceLastCommit": 15,
+      "ageDays": 516
+    },
+    "coze-dev/coze-studio": {
+      "health": 55.6,
+      "contributors": 62,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 119,
+      "ageDays": 517
+    },
+    "crewaiinc/crewai": {
+      "health": 90,
+      "contributors": 394,
+      "commitsLastYear": 492,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1125
+    },
+    "crynta/terax-ai": {
+      "health": 80,
+      "contributors": 86,
+      "commitsLastYear": 202,
+      "daysSinceLastCommit": 0,
+      "ageDays": 217
+    },
+    "cuga-project/cuga-agent": {
+      "health": 72.4,
+      "contributors": 46,
+      "commitsLastYear": 146,
+      "daysSinceLastCommit": 0,
+      "ageDays": 439
+    },
+    "cvat-ai/cvat": {
+      "health": 87.2,
+      "contributors": 325,
+      "commitsLastYear": 318,
+      "daysSinceLastCommit": 0,
+      "ageDays": 3070
+    },
+    "czlonkowski/n8n-mcp": {
+      "health": 77.1,
+      "contributors": 35,
+      "commitsLastYear": 187,
+      "daysSinceLastCommit": 6,
+      "ageDays": 535
+    },
+    "d4vinci/scrapling": {
+      "health": 82.5,
+      "contributors": 52,
+      "commitsLastYear": 217,
+      "daysSinceLastCommit": 0,
+      "ageDays": 772
+    },
+    "dagger/dagger": {
+      "health": 82.8,
+      "contributors": 336,
+      "commitsLastYear": 5183,
+      "daysSinceLastCommit": 0,
+      "ageDays": 2562
+    },
+    "dagster-io/dagster": {
+      "health": 88.1,
+      "contributors": 713,
+      "commitsLastYear": 358,
+      "daysSinceLastCommit": 0,
+      "ageDays": 3130
+    },
+    "dao-ailab/flash-attention": {
+      "health": 84.4,
+      "contributors": 228,
+      "commitsLastYear": 111,
+      "daysSinceLastCommit": 2,
+      "ageDays": 1650
+    },
+    "dask/dask": {
+      "health": 86.6,
+      "contributors": 661,
+      "commitsLastYear": 58,
+      "daysSinceLastCommit": 0,
+      "ageDays": 4342
+    },
+    "data-prep-kit/data-prep-kit": {
+      "health": 67.7,
+      "contributors": 91,
+      "commitsLastYear": 9,
+      "daysSinceLastCommit": 56,
+      "ageDays": 959
+    },
+    "datachain-ai/datachain": {
+      "health": 70.2,
+      "contributors": 40,
+      "commitsLastYear": 165,
+      "daysSinceLastCommit": 1,
+      "ageDays": 881
+    },
+    "dataelement/bisheng": {
+      "health": 81,
+      "contributors": 91,
+      "commitsLastYear": 4937,
+      "daysSinceLastCommit": 2,
+      "ageDays": 1183
+    },
+    "datalab-to/chandra": {
+      "health": 56.5,
+      "contributors": 5,
+      "commitsLastYear": 5,
+      "daysSinceLastCommit": 8,
+      "ageDays": 412
+    },
+    "datalab-to/marker": {
+      "health": 73.6,
+      "contributors": 38,
+      "commitsLastYear": 50,
+      "daysSinceLastCommit": 5,
+      "ageDays": 1121
+    },
+    "davepoon/buildwithclaude": {
+      "health": 78.4,
+      "contributors": 283,
+      "commitsLastYear": 333,
+      "daysSinceLastCommit": 2,
+      "ageDays": 486
+    },
+    "dayuanjiang/next-ai-draw-io": {
+      "health": 78.8,
+      "contributors": 73,
+      "commitsLastYear": 197,
+      "daysSinceLastCommit": 11,
+      "ageDays": 609
+    },
+    "decolua/9router": {
+      "health": 88.6,
+      "contributors": 429,
+      "commitsLastYear": 511,
+      "daysSinceLastCommit": 2,
+      "ageDays": 322
+    },
+    "deeplethe/utopia": {
+      "health": 75.3,
+      "contributors": 33,
+      "commitsLastYear": 1039,
+      "daysSinceLastCommit": 9,
+      "ageDays": 109
+    },
+    "deepnote/deepnote": {
+      "health": 70.2,
+      "contributors": 25,
+      "commitsLastYear": 97,
+      "daysSinceLastCommit": 5,
+      "ageDays": 418
+    },
+    "deepseek-ai/3fs": {
+      "health": 58.4,
+      "contributors": 48,
+      "commitsLastYear": 2,
+      "daysSinceLastCommit": 7,
+      "ageDays": 632
+    },
+    "deepseek-ai/deepep": {
+      "health": 63.9,
+      "contributors": 52,
+      "commitsLastYear": 5,
+      "daysSinceLastCommit": 35,
+      "ageDays": 643
+    },
+    "deepseek-ai/deepgemm": {
+      "health": 63.4,
+      "contributors": 45,
+      "commitsLastYear": 5,
+      "daysSinceLastCommit": 36,
+      "ageDays": 649
+    },
+    "deepseek-ai/deepseek-harness": {
+      "health": 81.7,
+      "contributors": 71,
+      "commitsLastYear": 15221,
+      "daysSinceLastCommit": 3,
+      "ageDays": 100
+    },
+    "deepseek-ai/dsh-superagent-prototype": {
+      "health": 41.3,
+      "contributors": 1,
+      "commitsLastYear": 1,
+      "daysSinceLastCommit": 25,
+      "ageDays": 22
+    },
+    "deepseek-ai/flashmla": {
+      "health": 63.7,
+      "contributors": 20,
+      "commitsLastYear": 6,
+      "daysSinceLastCommit": 29,
+      "ageDays": 639
+    },
+    "deepset-ai/haystack": {
+      "health": 86.9,
+      "contributors": 586,
+      "commitsLastYear": 794,
+      "daysSinceLastCommit": 4,
+      "ageDays": 2565
+    },
+    "deepspeedai/deepspeed": {
+      "health": 88.1,
+      "contributors": 540,
+      "commitsLastYear": 361,
+      "daysSinceLastCommit": 3,
+      "ageDays": 2494
+    },
+    "dembrandt/dembrandt": {
+      "health": 60.8,
+      "contributors": 7,
+      "commitsLastYear": 133,
+      "daysSinceLastCommit": 3,
+      "ageDays": 366
+    },
+    "deusdata/codebase-memory-mcp": {
+      "health": 85.4,
+      "contributors": 231,
+      "commitsLastYear": 3092,
+      "daysSinceLastCommit": 5,
+      "ageDays": 270
+    },
+    "dexio-wiki/dexio": {
+      "health": 47.4,
+      "contributors": 1,
+      "commitsLastYear": 55,
+      "daysSinceLastCommit": 4,
+      "ageDays": 53
+    },
+    "dietrichgebert/ponytail": {
+      "health": 85.5,
+      "contributors": 134,
+      "commitsLastYear": 162,
+      "daysSinceLastCommit": 3,
+      "ageDays": 163
+    },
+    "docker/docker-agent": {
+      "health": 75.9,
+      "contributors": 144,
+      "commitsLastYear": 2492,
+      "daysSinceLastCommit": 1,
+      "ageDays": 449
+    },
+    "docling-project/docling": {
+      "health": 88.9,
+      "contributors": 446,
+      "commitsLastYear": 622,
+      "daysSinceLastCommit": 3,
+      "ageDays": 866
+    },
+    "done-0/fuck-u-code": {
+      "health": 40.3,
+      "contributors": 6,
+      "commitsLastYear": 1,
+      "daysSinceLastCommit": 78,
+      "ageDays": 515
+    },
+    "doobidoo/mcp-memory-service": {
+      "health": 76.6,
+      "contributors": 191,
+      "commitsLastYear": 756,
+      "daysSinceLastCommit": 0,
+      "ageDays": 699
+    },
+    "dottxt-ai/outlines": {
+      "health": 55.9,
+      "contributors": 189,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 102,
+      "ageDays": 1346
+    },
+    "droidrun/mobilerun": {
+      "health": 73.9,
+      "contributors": 37,
+      "commitsLastYear": 186,
+      "daysSinceLastCommit": 20,
+      "ageDays": 590
+    },
+    "dstackai/dstack": {
+      "health": 73.5,
+      "contributors": 80,
+      "commitsLastYear": 180,
+      "daysSinceLastCommit": 4,
+      "ageDays": 1784
+    },
+    "dstackai/gpuhunt": {
+      "health": 61.5,
+      "contributors": 22,
+      "commitsLastYear": 22,
+      "daysSinceLastCommit": 27,
+      "ageDays": 1189
+    },
+    "dsx-ai-factory/nvcf": {
+      "health": 70.4,
+      "contributors": 66,
+      "commitsLastYear": 978,
+      "daysSinceLastCommit": 0,
+      "ageDays": 236
+    },
+    "dsx-ai-factory/run-ai": {
+      "health": 73.5,
+      "contributors": 51,
+      "commitsLastYear": 2804,
+      "daysSinceLastCommit": 0,
+      "ageDays": 91
+    },
+    "dtyq/magic": {
+      "health": 74,
+      "contributors": 77,
+      "commitsLastYear": 3678,
+      "daysSinceLastCommit": 31,
+      "ageDays": 559
+    },
+    "duckdb/duckdb": {
+      "health": 89.5,
+      "contributors": 1008,
+      "commitsLastYear": 12195,
+      "daysSinceLastCommit": 0,
+      "ageDays": 3073
+    },
+    "dyad-sh/dyad": {
+      "health": 78.7,
+      "contributors": 41,
+      "commitsLastYear": 303,
+      "daysSinceLastCommit": 0,
+      "ageDays": 593
+    },
+    "e2b-dev/e2b": {
+      "health": 78.4,
+      "contributors": 67,
+      "commitsLastYear": 203,
+      "daysSinceLastCommit": 6,
+      "ageDays": 1361
+    },
+    "earendil-works/pi": {
+      "health": 90,
+      "contributors": 321,
+      "commitsLastYear": 2091,
+      "daysSinceLastCommit": 0,
+      "ageDays": 472
+    },
+    "earthtojake/text-to-cad": {
+      "health": 76.9,
+      "contributors": 34,
+      "commitsLastYear": 487,
+      "daysSinceLastCommit": 1,
+      "ageDays": 217
+    },
+    "egonex-ai/understand-anything": {
+      "health": 83.3,
+      "contributors": 79,
+      "commitsLastYear": 146,
+      "daysSinceLastCommit": 0,
+      "ageDays": 255
+    },
+    "eigent-ai/eigent": {
+      "health": 80.7,
+      "contributors": 82,
+      "commitsLastYear": 255,
+      "daysSinceLastCommit": 2,
+      "ageDays": 483
+    },
+    "eleutherai/lm-evaluation-harness": {
+      "health": 83.9,
+      "contributors": 460,
+      "commitsLastYear": 34,
+      "daysSinceLastCommit": 72,
+      "ageDays": 2280
+    },
+    "elevenlabs/ui": {
+      "health": 55.6,
+      "contributors": 24,
+      "commitsLastYear": 5,
+      "daysSinceLastCommit": 8,
+      "ageDays": 447
+    },
+    "elizaos/eliza": {
+      "health": 71.5,
+      "contributors": 8,
+      "commitsLastYear": 3737,
+      "daysSinceLastCommit": 0,
+      "ageDays": 869
+    },
+    "emcie-co/parlant": {
+      "health": 77.2,
+      "contributors": 53,
+      "commitsLastYear": 212,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1013
+    },
+    "eosphoros-ai/db-gpt": {
+      "health": 83.7,
+      "contributors": 219,
+      "commitsLastYear": 58,
+      "daysSinceLastCommit": 4,
+      "ageDays": 1317
+    },
+    "epiral/bb-browser": {
+      "health": 42.4,
+      "contributors": 11,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 180,
+      "ageDays": 294
+    },
+    "ericlbuehler/mistral.rs": {
+      "health": 77.3,
+      "contributors": 103,
+      "commitsLastYear": 82,
+      "daysSinceLastCommit": 4,
+      "ageDays": 998
+    },
+    "eugeniughelbur/obsidian-second-brain": {
+      "health": 74.4,
+      "contributors": 58,
+      "commitsLastYear": 291,
+      "daysSinceLastCommit": 7,
+      "ageDays": 241
+    },
+    "evalstate/fast-agent": {
+      "health": 74.5,
+      "contributors": 97,
+      "commitsLastYear": 199,
+      "daysSinceLastCommit": 4,
+      "ageDays": 671
+    },
+    "everyinc/compound-engineering-plugin": {
+      "health": 80.6,
+      "contributors": 115,
+      "commitsLastYear": 379,
+      "daysSinceLastCommit": 4,
+      "ageDays": 407
+    },
+    "evidentlyai/evidently": {
+      "health": 59.4,
+      "contributors": 97,
+      "commitsLastYear": 3,
+      "daysSinceLastCommit": 75,
+      "ageDays": 2186
+    },
+    "exo-explore/exo": {
+      "health": 80.2,
+      "contributors": 107,
+      "commitsLastYear": 173,
+      "daysSinceLastCommit": 18,
+      "ageDays": 879
+    },
+    "explosion/spacy": {
+      "health": 84,
+      "contributors": 783,
+      "commitsLastYear": 19,
+      "daysSinceLastCommit": 29,
+      "ageDays": 4523
+    },
+    "extensityai/symbolicai": {
+      "health": 60,
+      "contributors": 26,
+      "commitsLastYear": 13,
+      "daysSinceLastCommit": 34,
+      "ageDays": 1451
+    },
+    "eyaltoledano/claude-task-master": {
+      "health": 53.7,
+      "contributors": 57,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 216,
+      "ageDays": 626
+    },
+    "facebookresearch/detectron2": {
+      "health": 70.9,
+      "contributors": 288,
+      "commitsLastYear": 4,
+      "daysSinceLastCommit": 29,
+      "ageDays": 2633
+    },
+    "facebookresearch/faiss": {
+      "health": 86.8,
+      "contributors": 382,
+      "commitsLastYear": 226,
+      "daysSinceLastCommit": 4,
+      "ageDays": 3573
+    },
+    "farama-foundation/gymnasium": {
+      "health": 85,
+      "contributors": 639,
+      "commitsLastYear": 69,
+      "daysSinceLastCommit": 13,
+      "ageDays": 1535
+    },
+    "fastrepl/anarlog": {
+      "health": 75.2,
+      "contributors": 48,
+      "commitsLastYear": 1070,
+      "daysSinceLastCommit": 2,
+      "ageDays": 715
+    },
+    "firecrawl/firecrawl": {
+      "health": 88,
+      "contributors": 181,
+      "commitsLastYear": 817,
+      "daysSinceLastCommit": 0,
+      "ageDays": 953
+    },
+    "fishaudio/fish-speech": {
+      "health": 72,
+      "contributors": 104,
+      "commitsLastYear": 8,
+      "daysSinceLastCommit": 26,
+      "ageDays": 1139
+    },
+    "fission-ai/openspec": {
+      "health": 84.6,
+      "contributors": 149,
+      "commitsLastYear": 266,
+      "daysSinceLastCommit": 5,
+      "ageDays": 474
+    },
+    "fla-org/flash-linear-attention": {
+      "health": 79.8,
+      "contributors": 194,
+      "commitsLastYear": 297,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1070
+    },
+    "flashinfer-ai/flashinfer": {
+      "health": 87.2,
+      "contributors": 554,
+      "commitsLastYear": 3390,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1221
+    },
+    "flashml-org/freetoken": {
+      "health": 76.6,
+      "contributors": 26,
+      "commitsLastYear": 203,
+      "daysSinceLastCommit": 3,
+      "ageDays": 125
+    },
+    "flitai-io/gpuworks": {
+      "health": 73,
+      "contributors": 18,
+      "commitsLastYear": 3101,
+      "daysSinceLastCommit": 2,
+      "ageDays": 31
+    },
+    "flox/flox": {
+      "health": 74.7,
+      "contributors": 84,
+      "commitsLastYear": 498,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1432
+    },
+    "fluid-cloudnative/fluid": {
+      "health": 84,
+      "contributors": 1082,
+      "commitsLastYear": 65,
+      "daysSinceLastCommit": 1,
+      "ageDays": 2326
+    },
+    "flyteorg/flyte": {
+      "health": 82.4,
+      "contributors": 357,
+      "commitsLastYear": 305,
+      "daysSinceLastCommit": 1,
+      "ageDays": 2590
+    },
+    "foryourhealth111-pixel/vibe-skills": {
+      "health": 65.8,
+      "contributors": 13,
+      "commitsLastYear": 94,
+      "daysSinceLastCommit": 16,
+      "ageDays": 275
+    },
+    "foundationagents/metagpt": {
+      "health": 62.8,
+      "contributors": 148,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 308,
+      "ageDays": 1243
+    },
+    "foundationagents/openmanus": {
+      "health": 63,
+      "contributors": 62,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 101,
+      "ageDays": 628
+    },
+    "frankbria/ralph-claude-code": {
+      "health": 66.6,
+      "contributors": 33,
+      "commitsLastYear": 23,
+      "daysSinceLastCommit": 107,
+      "ageDays": 454
+    },
+    "gastownhall/beads": {
+      "health": 86.2,
+      "contributors": 516,
+      "commitsLastYear": 929,
+      "daysSinceLastCommit": 4,
+      "ageDays": 409
+    },
+    "geekjourneyx/md2wechat-skill": {
+      "health": 62.2,
+      "contributors": 5,
+      "commitsLastYear": 36,
+      "daysSinceLastCommit": 41,
+      "ageDays": 318
+    },
+    "genesis-embodied-ai/genesis-world": {
+      "health": 82.3,
+      "contributors": 126,
+      "commitsLastYear": 391,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1121
+    },
+    "genkit-ai/genkit": {
+      "health": 80.2,
+      "contributors": 169,
+      "commitsLastYear": 462,
+      "daysSinceLastCommit": 0,
+      "ageDays": 939
+    },
+    "getpaseo/paseo": {
+      "health": 86,
+      "contributors": 259,
+      "commitsLastYear": 1639,
+      "daysSinceLastCommit": 0,
+      "ageDays": 408
+    },
+    "getzep/graphiti": {
+      "health": 79.8,
+      "contributors": 65,
+      "commitsLastYear": 162,
+      "daysSinceLastCommit": 0,
+      "ageDays": 838
+    },
+    "ggml-org/ggml": {
+      "health": 87.9,
+      "contributors": 949,
+      "commitsLastYear": 1064,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1528
+    },
+    "ggml-org/llama.cpp": {
+      "health": 96.6,
+      "contributors": 2310,
+      "commitsLastYear": 2092,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1355
+    },
+    "ggml-org/whisper.cpp": {
+      "health": 91.7,
+      "contributors": 1166,
+      "commitsLastYear": 905,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1521
+    },
+    "giskard-ai/giskard-oss": {
+      "health": 75.6,
+      "contributors": 94,
+      "commitsLastYear": 101,
+      "daysSinceLastCommit": 5,
+      "ageDays": 1720
+    },
+    "github/copilot-cli": {
+      "health": 74.6,
+      "contributors": 27,
+      "commitsLastYear": 46,
+      "daysSinceLastCommit": 7,
+      "ageDays": 1414
+    },
+    "github/github-mcp-server": {
+      "health": 84.1,
+      "contributors": 183,
+      "commitsLastYear": 134,
+      "daysSinceLastCommit": 4,
+      "ageDays": 626
+    },
+    "github/spec-kit": {
+      "health": 90.1,
+      "contributors": 351,
+      "commitsLastYear": 626,
+      "daysSinceLastCommit": 4,
+      "ageDays": 456
+    },
+    "glips/figma-context-mcp": {
+      "health": 49.2,
+      "contributors": 30,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 153,
+      "ageDays": 646
+    },
+    "go-kratos/blades": {
+      "health": 45.4,
+      "contributors": 19,
+      "commitsLastYear": 1,
+      "daysSinceLastCommit": 8,
+      "ageDays": 431
+    },
+    "golemcloud/golem": {
+      "health": 71,
+      "contributors": 30,
+      "commitsLastYear": 735,
+      "daysSinceLastCommit": 4,
+      "ageDays": 1093
+    },
+    "google-ai-edge/litert": {
+      "health": 79,
+      "contributors": 247,
+      "commitsLastYear": 1814,
+      "daysSinceLastCommit": 0,
+      "ageDays": 811
+    },
+    "google-coral/coralnpu": {
+      "health": 73.8,
+      "contributors": 54,
+      "commitsLastYear": 283,
+      "daysSinceLastCommit": 4,
+      "ageDays": 418
+    },
+    "google-gemini/gemini-cli": {
+      "health": 93,
+      "contributors": 703,
+      "commitsLastYear": 256,
+      "daysSinceLastCommit": 4,
+      "ageDays": 582
+    },
+    "google-research/google-research": {
+      "health": 89.3,
+      "contributors": 896,
+      "commitsLastYear": 85,
+      "daysSinceLastCommit": 4,
+      "ageDays": 2969
+    },
+    "google/adk-go": {
+      "health": 81.5,
+      "contributors": 162,
+      "commitsLastYear": 491,
+      "daysSinceLastCommit": 4,
+      "ageDays": 566
+    },
+    "google/adk-python": {
+      "health": 88.7,
+      "contributors": 672,
+      "commitsLastYear": 1434,
+      "daysSinceLastCommit": 4,
+      "ageDays": 600
+    },
+    "google/adk-web": {
+      "health": 72.7,
+      "contributors": 44,
+      "commitsLastYear": 85,
+      "daysSinceLastCommit": 6,
+      "ageDays": 566
+    },
+    "google/agents-cli": {
+      "health": 61.4,
+      "contributors": 10,
+      "commitsLastYear": 14,
+      "daysSinceLastCommit": 7,
+      "ageDays": 228
+    },
+    "google/ax": {
+      "health": 72.2,
+      "contributors": 28,
+      "commitsLastYear": 146,
+      "daysSinceLastCommit": 2,
+      "ageDays": 237
+    },
+    "google/langextract": {
+      "health": 72.7,
+      "contributors": 33,
+      "commitsLastYear": 34,
+      "daysSinceLastCommit": 15,
+      "ageDays": 502
+    },
+    "google/magika": {
+      "health": 77.8,
+      "contributors": 57,
+      "commitsLastYear": 270,
+      "daysSinceLastCommit": 4,
+      "ageDays": 1188
+    },
+    "google/skills": {
+      "health": 70.3,
+      "contributors": 9,
+      "commitsLastYear": 360,
+      "daysSinceLastCommit": 1,
+      "ageDays": 237
+    },
+    "google/tunix": {
+      "health": 77.5,
+      "contributors": 98,
+      "commitsLastYear": 837,
+      "daysSinceLastCommit": 1,
+      "ageDays": 599
+    },
+    "googleapis/genai-toolbox": {
+      "health": 83.3,
+      "contributors": 180,
+      "commitsLastYear": 259,
+      "daysSinceLastCommit": 12,
+      "ageDays": 899
+    },
+    "googleapis/mcp-toolbox": {
+      "health": 83.3,
+      "contributors": 180,
+      "commitsLastYear": 259,
+      "daysSinceLastCommit": 12,
+      "ageDays": 899
+    },
+    "googlecloudplatform/generative-ai": {
+      "health": 86,
+      "contributors": 313,
+      "commitsLastYear": 110,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1298
+    },
+    "googlecloudplatform/genmedia-creative-studio": {
+      "health": 72.6,
+      "contributors": 35,
+      "commitsLastYear": 376,
+      "daysSinceLastCommit": 0,
+      "ageDays": 831
+    },
+    "googleworkspace/cli": {
+      "health": 55.6,
+      "contributors": 44,
+      "commitsLastYear": 1,
+      "daysSinceLastCommit": 25,
+      "ageDays": 266
+    },
+    "gpustack/gpustack": {
+      "health": 77.4,
+      "contributors": 79,
+      "commitsLastYear": 502,
+      "daysSinceLastCommit": 1,
+      "ageDays": 927
+    },
+    "gradio-app/gradio": {
+      "health": 85.4,
+      "contributors": 505,
+      "commitsLastYear": 119,
+      "daysSinceLastCommit": 1,
+      "ageDays": 2897
+    },
+    "graphify-labs/graphify": {
+      "health": 91.6,
+      "contributors": 436,
+      "commitsLastYear": 1654,
+      "daysSinceLastCommit": 0,
+      "ageDays": 235
+    },
+    "guyoung/boxagnts": {
+      "health": 11.5,
+      "contributors": 1,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 123,
+      "ageDays": 192
+    },
+    "hacksider/deep-live-cam": {
+      "health": 81.5,
+      "contributors": 85,
+      "commitsLastYear": 25,
+      "daysSinceLastCommit": 17,
+      "ageDays": 1157
+    },
+    "happy520ai/unified-ai-system": {
+      "health": 57.5,
+      "contributors": 6,
+      "commitsLastYear": 840,
+      "daysSinceLastCommit": 4,
+      "ageDays": 211
+    },
+    "harnessrouter/harnessrouter": {
+      "health": 72.9,
+      "contributors": 47,
+      "commitsLastYear": 669,
+      "daysSinceLastCommit": 1,
+      "ageDays": 106
+    },
+    "harvard-edge/cs249r_book": {
+      "health": 81.5,
+      "contributors": 132,
+      "commitsLastYear": 6609,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1174
+    },
+    "hashgraph-online/hol-guard": {
+      "health": 78.3,
+      "contributors": 252,
+      "commitsLastYear": 5615,
+      "daysSinceLastCommit": 0,
+      "ageDays": 241
+    },
+    "headroomlabs-ai/headroom": {
+      "health": 88.5,
+      "contributors": 412,
+      "commitsLastYear": 1121,
+      "daysSinceLastCommit": 0,
+      "ageDays": 320
+    },
+    "helicone/helicone": {
+      "health": 72.8,
+      "contributors": 103,
+      "commitsLastYear": 16,
+      "daysSinceLastCommit": 7,
+      "ageDays": 1392
+    },
+    "herdrdev/herdr": {
+      "health": 83.5,
+      "contributors": 91,
+      "commitsLastYear": 412,
+      "daysSinceLastCommit": 5,
+      "ageDays": 242
+    },
+    "heygen-com/hyperframes": {
+      "health": 86.3,
+      "contributors": 155,
+      "commitsLastYear": 3915,
+      "daysSinceLastCommit": 1,
+      "ageDays": 259
+    },
+    "higress-group/higress": {
+      "health": 84,
+      "contributors": 226,
+      "commitsLastYear": 202,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1489
+    },
+    "hiyouga/easyr1": {
+      "health": 58.9,
+      "contributors": 50,
+      "commitsLastYear": 5,
+      "daysSinceLastCommit": 17,
+      "ageDays": 640
+    },
+    "hiyouga/llamafactory": {
+      "health": 86.2,
+      "contributors": 308,
+      "commitsLastYear": 47,
+      "daysSinceLastCommit": 2,
+      "ageDays": 1276
+    },
+    "hkuds/agentpilot": {
+      "health": 49.7,
+      "contributors": 2,
+      "commitsLastYear": 4,
+      "daysSinceLastCommit": 12,
+      "ageDays": 245
+    },
+    "hkuds/ai-trader": {
+      "health": 52.2,
+      "contributors": 20,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 167,
+      "ageDays": 393
+    },
+    "hkuds/deepcode": {
+      "health": 77,
+      "contributors": 39,
+      "commitsLastYear": 512,
+      "daysSinceLastCommit": 7,
+      "ageDays": 556
+    },
+    "hkuds/deeptutor": {
+      "health": 88.4,
+      "contributors": 349,
+      "commitsLastYear": 2779,
+      "daysSinceLastCommit": 5,
+      "ageDays": 327
+    },
+    "hkuds/lightrag": {
+      "health": 86.9,
+      "contributors": 417,
+      "commitsLastYear": 2372,
+      "daysSinceLastCommit": 4,
+      "ageDays": 779
+    },
+    "hkuds/nanobot": {
+      "health": 90.7,
+      "contributors": 504,
+      "commitsLastYear": 1251,
+      "daysSinceLastCommit": 4,
+      "ageDays": 293
+    },
+    "hkuds/rag-anything": {
+      "health": 79.6,
+      "contributors": 81,
+      "commitsLastYear": 136,
+      "daysSinceLastCommit": 8,
+      "ageDays": 533
+    },
+    "hkuds/vibe-trading": {
+      "health": 84.4,
+      "contributors": 208,
+      "commitsLastYear": 2200,
+      "daysSinceLastCommit": 4,
+      "ageDays": 234
+    },
+    "holmesgpt/holmesgpt": {
+      "health": 75.6,
+      "contributors": 78,
+      "commitsLastYear": 126,
+      "daysSinceLastCommit": 3,
+      "ageDays": 906
+    },
+    "hpcaitech/colossalai": {
+      "health": 83.7,
+      "contributors": 207,
+      "commitsLastYear": 141,
+      "daysSinceLastCommit": 6,
+      "ageDays": 1851
+    },
+    "hsliuping/tradingagents-cn": {
+      "health": 44.7,
+      "contributors": 1,
+      "commitsLastYear": 1,
+      "daysSinceLastCommit": 64,
+      "ageDays": 514
+    },
+    "huggingface/candle": {
+      "health": 84.6,
+      "contributors": 295,
+      "commitsLastYear": 51,
+      "daysSinceLastCommit": 5,
+      "ageDays": 1252
+    },
+    "huggingface/datatrove": {
+      "health": 70.4,
+      "contributors": 71,
+      "commitsLastYear": 26,
+      "daysSinceLastCommit": 14,
+      "ageDays": 1257
+    },
+    "huggingface/diffusers": {
+      "health": 91,
+      "contributors": 1198,
+      "commitsLastYear": 253,
+      "daysSinceLastCommit": 3,
+      "ageDays": 1637
+    },
+    "huggingface/lerobot": {
+      "health": 87.6,
+      "contributors": 318,
+      "commitsLastYear": 258,
+      "daysSinceLastCommit": 3,
+      "ageDays": 1031
+    },
+    "huggingface/lighteval": {
+      "health": 71.6,
+      "contributors": 126,
+      "commitsLastYear": 10,
+      "daysSinceLastCommit": 26,
+      "ageDays": 1031
+    },
+    "huggingface/peft": {
+      "health": 85.8,
+      "contributors": 405,
+      "commitsLastYear": 236,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1459
+    },
+    "huggingface/text-embeddings-inference": {
+      "health": 73.2,
+      "contributors": 96,
+      "commitsLastYear": 48,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1138
+    },
+    "huggingface/transformers": {
+      "health": 96.5,
+      "contributors": 4281,
+      "commitsLastYear": 1225,
+      "daysSinceLastCommit": 1,
+      "ageDays": 2947
+    },
+    "huggingface/transformers.js": {
+      "health": 76.6,
+      "contributors": 92,
+      "commitsLastYear": 29,
+      "daysSinceLastCommit": 2,
+      "ageDays": 1379
+    },
+    "huggingface/trl": {
+      "health": 87.6,
+      "contributors": 543,
+      "commitsLastYear": 840,
+      "daysSinceLastCommit": 2,
+      "ageDays": 2432
+    },
+    "human-agent-society/reef": {
+      "health": 75.1,
+      "contributors": 46,
+      "commitsLastYear": 953,
+      "daysSinceLastCommit": 1,
+      "ageDays": 84
+    },
+    "humansignal/adala": {
+      "health": 59.4,
+      "contributors": 22,
+      "commitsLastYear": 7,
+      "daysSinceLastCommit": 22,
+      "ageDays": 1181
+    },
+    "humansignal/label-studio": {
+      "health": 84.4,
+      "contributors": 165,
+      "commitsLastYear": 438,
+      "daysSinceLastCommit": 0,
+      "ageDays": 2715
+    },
+    "iflytek/astron-agent": {
+      "health": 76.5,
+      "contributors": 88,
+      "commitsLastYear": 54,
+      "daysSinceLastCommit": 1,
+      "ageDays": 431
+    },
+    "iflytek/astron-rpa": {
+      "health": 68.4,
+      "contributors": 28,
+      "commitsLastYear": 40,
+      "daysSinceLastCommit": 6,
+      "ageDays": 430
+    },
+    "iflytek/skillhub": {
+      "health": 75.3,
+      "contributors": 58,
+      "commitsLastYear": 804,
+      "daysSinceLastCommit": 1,
+      "ageDays": 258
+    },
+    "iii-hq/iii": {
+      "health": 77.9,
+      "contributors": 59,
+      "commitsLastYear": 297,
+      "daysSinceLastCommit": 1,
+      "ageDays": 691
+    },
+    "inclusionai/aworld": {
+      "health": 72.1,
+      "contributors": 52,
+      "commitsLastYear": 750,
+      "daysSinceLastCommit": 16,
+      "ageDays": 620
+    },
+    "infiniflow/infinity": {
+      "health": 72.9,
+      "contributors": 67,
+      "commitsLastYear": 83,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1590
+    },
+    "infiniflow/ragflow": {
+      "health": 94,
+      "contributors": 962,
+      "commitsLastYear": 2523,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1078
+    },
+    "inkeep/agents": {
+      "health": 70.8,
+      "contributors": 25,
+      "commitsLastYear": 56,
+      "daysSinceLastCommit": 6,
+      "ageDays": 445
+    },
+    "insforge/insforge": {
+      "health": 80.5,
+      "contributors": 126,
+      "commitsLastYear": 91,
+      "daysSinceLastCommit": 5,
+      "ageDays": 483
+    },
+    "intel/intel-device-plugins-for-kubernetes": {
+      "health": 69,
+      "contributors": 77,
+      "commitsLastYear": 122,
+      "daysSinceLastCommit": 2,
+      "ageDays": 3115
+    },
+    "intelligent-machine-learning/dlrover": {
+      "health": 69.5,
+      "contributors": 75,
+      "commitsLastYear": 23,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1614
+    },
+    "internlm/lmdeploy": {
+      "health": 79.2,
+      "contributors": 165,
+      "commitsLastYear": 138,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1258
+    },
+    "iofficeai/aionui": {
+      "health": 79.5,
+      "contributors": 122,
+      "commitsLastYear": 35,
+      "daysSinceLastCommit": 20,
+      "ageDays": 469
+    },
+    "iofficeai/officecli": {
+      "health": 75.4,
+      "contributors": 26,
+      "commitsLastYear": 256,
+      "daysSinceLastCommit": 5,
+      "ageDays": 251
+    },
+    "itzcrazykns/vane": {
+      "health": 57.1,
+      "contributors": 50,
+      "commitsLastYear": 1,
+      "daysSinceLastCommit": 84,
+      "ageDays": 959
+    },
+    "jackwener/opencli": {
+      "health": 83.8,
+      "contributors": 268,
+      "commitsLastYear": 162,
+      "daysSinceLastCommit": 17,
+      "ageDays": 251
+    },
+    "jamiepine/voicebox": {
+      "health": 82.5,
+      "contributors": 105,
+      "commitsLastYear": 175,
+      "daysSinceLastCommit": 49,
+      "ageDays": 299
+    },
+    "janhq/jan": {
+      "health": 83.7,
+      "contributors": 193,
+      "commitsLastYear": 1016,
+      "daysSinceLastCommit": 7,
+      "ageDays": 1195
+    },
+    "jax-ml/jax": {
+      "health": 90,
+      "contributors": 1188,
+      "commitsLastYear": 2190,
+      "daysSinceLastCommit": 4,
+      "ageDays": 2948
+    },
+    "jd-opensource/joyagent-jdgenie": {
+      "health": 49.3,
+      "contributors": 18,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 286,
+      "ageDays": 493
+    },
+    "jd-opensource/oxygent": {
+      "health": 51.4,
+      "contributors": 44,
+      "commitsLastYear": 3,
+      "daysSinceLastCommit": 28,
+      "ageDays": 491
+    },
+    "jeecgboot/jeecgboot": {
+      "health": 79.4,
+      "contributors": 40,
+      "commitsLastYear": 93,
+      "daysSinceLastCommit": 13,
+      "ageDays": 2915
+    },
+    "jeinlee1991/chinese-llm-benchmark": {
+      "health": 59.1,
+      "contributors": 2,
+      "commitsLastYear": 34,
+      "daysSinceLastCommit": 5,
+      "ageDays": 1267
+    },
+    "jianchang512/pyvideotrans": {
+      "health": 79.3,
+      "contributors": 66,
+      "commitsLastYear": 410,
+      "daysSinceLastCommit": 2,
+      "ageDays": 1147
+    },
+    "jsvine/pdfplumber": {
+      "health": 67.9,
+      "contributors": 49,
+      "commitsLastYear": 8,
+      "daysSinceLastCommit": 4,
+      "ageDays": 4108
+    },
+    "juliusbrussee/caveman": {
+      "health": 84.3,
+      "contributors": 116,
+      "commitsLastYear": 1633,
+      "daysSinceLastCommit": 3,
+      "ageDays": 232
+    },
+    "jundot/omlx": {
+      "health": 86.1,
+      "contributors": 383,
+      "commitsLastYear": 1404,
+      "daysSinceLastCommit": 2,
+      "ageDays": 282
+    },
+    "jupyter/notebook": {
+      "health": 87.2,
+      "contributors": 673,
+      "commitsLastYear": 48,
+      "daysSinceLastCommit": 5,
+      "ageDays": 4245
+    },
+    "k8sgpt-ai/k8sgpt": {
+      "health": 79.6,
+      "contributors": 157,
+      "commitsLastYear": 151,
+      "daysSinceLastCommit": 3,
+      "ageDays": 1342
+    },
+    "kagent-dev/kagent": {
+      "health": 79.1,
+      "contributors": 228,
+      "commitsLastYear": 501,
+      "daysSinceLastCommit": 1,
+      "ageDays": 671
+    },
+    "kai-scheduler/kai-scheduler": {
+      "health": 74.8,
+      "contributors": 120,
+      "commitsLastYear": 187,
+      "daysSinceLastCommit": 1,
+      "ageDays": 635
+    },
+    "kaito-project/kaito": {
+      "health": 73.5,
+      "contributors": 72,
+      "commitsLastYear": 150,
+      "daysSinceLastCommit": 5,
+      "ageDays": 1171
+    },
+    "kaixxx/noscribe": {
+      "health": 71.4,
+      "contributors": 21,
+      "commitsLastYear": 121,
+      "daysSinceLastCommit": 16,
+      "ageDays": 1291
+    },
+    "karpathy/nanochat": {
+      "health": 59.9,
+      "contributors": 56,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 144,
+      "ageDays": 407
+    },
+    "karpathy/nanogpt": {
+      "health": 58.3,
+      "contributors": 37,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 377,
+      "ageDays": 1426
+    },
+    "katanemo/archgw": {
+      "health": 64.7,
+      "contributors": 45,
+      "commitsLastYear": 8,
+      "daysSinceLastCommit": 31,
+      "ageDays": 867
+    },
+    "katanemo/plano": {
+      "health": 64.7,
+      "contributors": 45,
+      "commitsLastYear": 8,
+      "daysSinceLastCommit": 31,
+      "ageDays": 867
+    },
+    "kayba-ai/agentic-context-engine": {
+      "health": 64.6,
+      "contributors": 33,
+      "commitsLastYear": 10,
+      "daysSinceLastCommit": 62,
+      "ageDays": 404
+    },
+    "keploy/keploy": {
+      "health": 83.9,
+      "contributors": 164,
+      "commitsLastYear": 967,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1769
+    },
+    "keras-team/keras": {
+      "health": 95.2,
+      "contributors": 1611,
+      "commitsLastYear": 470,
+      "daysSinceLastCommit": 0,
+      "ageDays": 4259
+    },
+    "khoj-ai/khoj": {
+      "health": 54.7,
+      "contributors": 76,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 115,
+      "ageDays": 1926
+    },
+    "kilo-org/kilocode": {
+      "health": 89.7,
+      "contributors": 1276,
+      "commitsLastYear": 4279,
+      "daysSinceLastCommit": 0,
+      "ageDays": 624
+    },
+    "kinference-ai/kinference": {
+      "health": 62.6,
+      "contributors": 6,
+      "commitsLastYear": 454,
+      "daysSinceLastCommit": 1,
+      "ageDays": 50
+    },
+    "kitfunso/hippo-memory": {
+      "health": 63.7,
+      "contributors": 5,
+      "commitsLastYear": 1179,
+      "daysSinceLastCommit": 0,
+      "ageDays": 255
+    },
+    "kitops-ml/kitops": {
+      "health": 68.8,
+      "contributors": 52,
+      "commitsLastYear": 49,
+      "daysSinceLastCommit": 6,
+      "ageDays": 1026
+    },
+    "knownsec/aipyapp": {
+      "health": 36.9,
+      "contributors": 13,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 282,
+      "ageDays": 597
+    },
+    "koordinator-sh/koordinator": {
+      "health": 73.8,
+      "contributors": 135,
+      "commitsLastYear": 43,
+      "daysSinceLastCommit": 2,
+      "ageDays": 1714
+    },
+    "kortix-ai/companyos": {
+      "health": 82.1,
+      "contributors": 93,
+      "commitsLastYear": 6041,
+      "daysSinceLastCommit": 0,
+      "ageDays": 780
+    },
+    "kserve/kserve": {
+      "health": 85.9,
+      "contributors": 407,
+      "commitsLastYear": 278,
+      "daysSinceLastCommit": 0,
+      "ageDays": 2798
+    },
+    "kubeai-project/kubeai": {
+      "health": 68.5,
+      "contributors": 47,
+      "commitsLastYear": 49,
+      "daysSinceLastCommit": 2,
+      "ageDays": 1130
+    },
+    "kuberay-project/kuberay": {
+      "health": 80,
+      "contributors": 294,
+      "commitsLastYear": 106,
+      "daysSinceLastCommit": 0,
+      "ageDays": 2217
+    },
+    "kubernetes-sigs/agent-sandbox": {
+      "health": 77.3,
+      "contributors": 193,
+      "commitsLastYear": 531,
+      "daysSinceLastCommit": 1,
+      "ageDays": 469
+    },
+    "kubernetes-sigs/dra-driver-nvidia-gpu": {
+      "health": 74.5,
+      "contributors": 79,
+      "commitsLastYear": 190,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1316
+    },
+    "kubernetes-sigs/gateway-api-inference-extension": {
+      "health": 73.1,
+      "contributors": 174,
+      "commitsLastYear": 33,
+      "daysSinceLastCommit": 1,
+      "ageDays": 817
+    },
+    "kubernetes-sigs/kueue": {
+      "health": 82.4,
+      "contributors": 447,
+      "commitsLastYear": 1635,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1741
+    },
+    "kvcache-ai/agentenv": {
+      "health": 73.8,
+      "contributors": 54,
+      "commitsLastYear": 230,
+      "daysSinceLastCommit": 1,
+      "ageDays": 124
+    },
+    "kvcache-ai/ktransformers": {
+      "health": 79,
+      "contributors": 135,
+      "commitsLastYear": 49,
+      "daysSinceLastCommit": 12,
+      "ageDays": 848
+    },
+    "kvcache-ai/mooncake": {
+      "health": 86.1,
+      "contributors": 455,
+      "commitsLastYear": 926,
+      "daysSinceLastCommit": 4,
+      "ageDays": 879
+    },
+    "kyegomez/swarms": {
+      "health": 79,
+      "contributors": 77,
+      "commitsLastYear": 610,
+      "daysSinceLastCommit": 4,
+      "ageDays": 1290
+    },
+    "labring/fastgpt": {
+      "health": 85.4,
+      "contributors": 212,
+      "commitsLastYear": 661,
+      "daysSinceLastCommit": 4,
+      "ageDays": 1366
+    },
+    "lancedb/lancedb": {
+      "health": 85,
+      "contributors": 316,
+      "commitsLastYear": 823,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1365
+    },
+    "langchain-ai/deepagents": {
+      "health": 84.2,
+      "contributors": 179,
+      "commitsLastYear": 1431,
+      "daysSinceLastCommit": 4,
+      "ageDays": 481
+    },
+    "langchain-ai/langchain": {
+      "health": 96.3,
+      "contributors": 3753,
+      "commitsLastYear": 609,
+      "daysSinceLastCommit": 4,
+      "ageDays": 1496
+    },
+    "langchain-ai/langgraph": {
+      "health": 87.1,
+      "contributors": 295,
+      "commitsLastYear": 279,
+      "daysSinceLastCommit": 4,
+      "ageDays": 1199
+    },
+    "langchain-ai/local-deep-researcher": {
+      "health": 47.6,
+      "contributors": 12,
+      "commitsLastYear": 1,
+      "daysSinceLastCommit": 41,
+      "ageDays": 716
+    },
+    "langchain-ai/open-swe": {
+      "health": 77.2,
+      "contributors": 89,
+      "commitsLastYear": 2634,
+      "daysSinceLastCommit": 2,
+      "ageDays": 550
+    },
+    "langchain-ai/openwiki": {
+      "health": 80.6,
+      "contributors": 119,
+      "commitsLastYear": 213,
+      "daysSinceLastCommit": 7,
+      "ageDays": 153
+    },
+    "langchain4j/langchain4j": {
+      "health": 88.1,
+      "contributors": 522,
+      "commitsLastYear": 499,
+      "daysSinceLastCommit": 4,
+      "ageDays": 1251
+    },
+    "langflow-ai/langflow": {
+      "health": 90.8,
+      "contributors": 404,
+      "commitsLastYear": 759,
+      "daysSinceLastCommit": 7,
+      "ageDays": 1383
+    },
+    "langfuse/langfuse": {
+      "health": 85.9,
+      "contributors": 236,
+      "commitsLastYear": 2569,
+      "daysSinceLastCommit": 3,
+      "ageDays": 1284
+    },
+    "langgenius/dify": {
+      "health": 96,
+      "contributors": 1640,
+      "commitsLastYear": 2600,
+      "daysSinceLastCommit": 2,
+      "ageDays": 1320
+    },
+    "larksuite/cli": {
+      "health": 81.4,
+      "contributors": 168,
+      "commitsLastYear": 126,
+      "daysSinceLastCommit": 7,
+      "ageDays": 244
+    },
+    "lastmile-ai/mcp-agent": {
+      "health": 50,
+      "contributors": 60,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 303,
+      "ageDays": 705
+    },
+    "letta-ai/letta": {
+      "health": 64,
+      "contributors": 155,
+      "commitsLastYear": 4,
+      "daysSinceLastCommit": 37,
+      "ageDays": 1139
+    },
+    "lfnovo/open-notebook": {
+      "health": 82.6,
+      "contributors": 123,
+      "commitsLastYear": 272,
+      "daysSinceLastCommit": 7,
+      "ageDays": 763
+    },
+    "librechat-ai/librechat": {
+      "health": 88.7,
+      "contributors": 426,
+      "commitsLastYear": 1847,
+      "daysSinceLastCommit": 5,
+      "ageDays": 1381
+    },
+    "lightgbm-org/lightgbm": {
+      "health": 86.3,
+      "contributors": 363,
+      "commitsLastYear": 52,
+      "daysSinceLastCommit": 4,
+      "ageDays": 3763
+    },
+    "lightning-ai/litgpt": {
+      "health": 77.5,
+      "contributors": 139,
+      "commitsLastYear": 10,
+      "daysSinceLastCommit": 14,
+      "ageDays": 1299
+    },
+    "lightning-ai/pytorch-lightning": {
+      "health": 86.7,
+      "contributors": 1078,
+      "commitsLastYear": 27,
+      "daysSinceLastCommit": 0,
+      "ageDays": 2795
+    },
+    "lightpanda-io/browser": {
+      "health": 80.3,
+      "contributors": 97,
+      "commitsLastYear": 3513,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1386
+    },
+    "lightricks/ltx-2": {
+      "health": 64.4,
+      "contributors": 9,
+      "commitsLastYear": 12,
+      "daysSinceLastCommit": 0,
+      "ageDays": 325
+    },
+    "lingodotdev/lingo.dev": {
+      "health": 73.2,
+      "contributors": 92,
+      "commitsLastYear": 35,
+      "daysSinceLastCommit": 5,
+      "ageDays": 986
+    },
+    "livebench/livebench": {
+      "health": 69.6,
+      "contributors": 21,
+      "commitsLastYear": 61,
+      "daysSinceLastCommit": 38,
+      "ageDays": 895
+    },
+    "livekit/agents": {
+      "health": 89.5,
+      "contributors": 628,
+      "commitsLastYear": 672,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1131
+    },
+    "livekit/livekit": {
+      "health": 83.1,
+      "contributors": 158,
+      "commitsLastYear": 300,
+      "daysSinceLastCommit": 0,
+      "ageDays": 2246
+    },
+    "liveloveapp/hashbrown": {
+      "health": 69.4,
+      "contributors": 21,
+      "commitsLastYear": 354,
+      "daysSinceLastCommit": 4,
+      "ageDays": 607
+    },
+    "llama-farm/llamafarm": {
+      "health": 38.6,
+      "contributors": 18,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 176,
+      "ageDays": 502
+    },
+    "llm-d/llm-d": {
+      "health": 81.4,
+      "contributors": 270,
+      "commitsLastYear": 467,
+      "daysSinceLastCommit": 0,
+      "ageDays": 574
+    },
+    "lmcache/lmcache": {
+      "health": 87.6,
+      "contributors": 424,
+      "commitsLastYear": 823,
+      "daysSinceLastCommit": 0,
+      "ageDays": 909
+    },
+    "lobehub/lobehub": {
+      "health": 91.5,
+      "contributors": 365,
+      "commitsLastYear": 3547,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1283
+    },
+    "logancyang/obsidian-copilot": {
+      "health": 75.6,
+      "contributors": 50,
+      "commitsLastYear": 612,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1334
+    },
+    "lupinemachines/lupine": {
+      "health": 65.1,
+      "contributors": 11,
+      "commitsLastYear": 380,
+      "daysSinceLastCommit": 8,
+      "ageDays": 818
+    },
+    "maif/shapash": {
+      "health": 70.6,
+      "contributors": 52,
+      "commitsLastYear": 53,
+      "daysSinceLastCommit": 42,
+      "ageDays": 2400
+    },
+    "manaflow-ai/cmux": {
+      "health": 85.9,
+      "contributors": 266,
+      "commitsLastYear": 9280,
+      "daysSinceLastCommit": 1,
+      "ageDays": 300
+    },
+    "marimo-team/marimo": {
+      "health": 85.2,
+      "contributors": 396,
+      "commitsLastYear": 864,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1197
+    },
+    "mastra-ai/mastra": {
+      "health": 88.1,
+      "contributors": 702,
+      "commitsLastYear": 5297,
+      "daysSinceLastCommit": 1,
+      "ageDays": 839
+    },
+    "max-sixty/worktrunk": {
+      "health": 77.1,
+      "contributors": 92,
+      "commitsLastYear": 720,
+      "daysSinceLastCommit": 4,
+      "ageDays": 399
+    },
+    "mcp-ui-org/mcp-ui": {
+      "health": 45.8,
+      "contributors": 20,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 140,
+      "ageDays": 559
+    },
+    "mcp-use/mcp-use": {
+      "health": 77.7,
+      "contributors": 65,
+      "commitsLastYear": 174,
+      "daysSinceLastCommit": 6,
+      "ageDays": 603
+    },
+    "mem0ai/mem0": {
+      "health": 88.6,
+      "contributors": 412,
+      "commitsLastYear": 74,
+      "daysSinceLastCommit": 7,
+      "ageDays": 1250
+    },
+    "memorilabs/memori": {
+      "health": 58.1,
+      "contributors": 42,
+      "commitsLastYear": 2,
+      "daysSinceLastCommit": 68,
+      "ageDays": 488
+    },
+    "mempalace/mempalace": {
+      "health": 86.6,
+      "contributors": 181,
+      "commitsLastYear": 793,
+      "daysSinceLastCommit": 5,
+      "ageDays": 230
+    },
+    "memtensor/memos": {
+      "health": 79.2,
+      "contributors": 108,
+      "commitsLastYear": 140,
+      "daysSinceLastCommit": 16,
+      "ageDays": 503
+    },
+    "memvid/memvid": {
+      "health": 52.1,
+      "contributors": 24,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 133,
+      "ageDays": 545
+    },
+    "meridianlabs-ai/inspect_petri": {
+      "health": 66.1,
+      "contributors": 17,
+      "commitsLastYear": 37,
+      "daysSinceLastCommit": 1,
+      "ageDays": 461
+    },
+    "meta-pytorch/torchtune": {
+      "health": 64,
+      "contributors": 165,
+      "commitsLastYear": 4,
+      "daysSinceLastCommit": 5,
+      "ageDays": 1129
+    },
+    "microsoft/agent-governance-toolkit": {
+      "health": 81.6,
+      "contributors": 167,
+      "commitsLastYear": 586,
+      "daysSinceLastCommit": 6,
+      "ageDays": 265
+    },
+    "microsoft/agent-lightning": {
+      "health": 75.2,
+      "contributors": 54,
+      "commitsLastYear": 41,
+      "daysSinceLastCommit": 13,
+      "ageDays": 522
+    },
+    "microsoft/amplifier": {
+      "health": 66.7,
+      "contributors": 19,
+      "commitsLastYear": 24,
+      "daysSinceLastCommit": 11,
+      "ageDays": 439
+    },
+    "microsoft/aspire": {
+      "health": 84.9,
+      "contributors": 334,
+      "commitsLastYear": 1029,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1155
+    },
+    "microsoft/graphrag": {
+      "health": 70.2,
+      "contributors": 51,
+      "commitsLastYear": 8,
+      "daysSinceLastCommit": 23,
+      "ageDays": 972
+    },
+    "microsoft/intelligent-terminal": {
+      "health": 77.8,
+      "contributors": 511,
+      "commitsLastYear": 406,
+      "daysSinceLastCommit": 5,
+      "ageDays": 188
+    },
+    "microsoft/litebox": {
+      "health": 68.7,
+      "contributors": 19,
+      "commitsLastYear": 108,
+      "daysSinceLastCommit": 5,
+      "ageDays": 712
+    },
+    "microsoft/magentic-ui": {
+      "health": 54.2,
+      "contributors": 36,
+      "commitsLastYear": 1,
+      "daysSinceLastCommit": 8,
+      "ageDays": 567
+    },
+    "microsoft/playwright-mcp": {
+      "health": 76.7,
+      "contributors": 73,
+      "commitsLastYear": 64,
+      "daysSinceLastCommit": 6,
+      "ageDays": 613
+    },
+    "microsoft/semantic-kernel": {
+      "health": 86.8,
+      "contributors": 462,
+      "commitsLastYear": 134,
+      "daysSinceLastCommit": 4,
+      "ageDays": 1366
+    },
+    "microsoft/ufo": {
+      "health": 70.4,
+      "contributors": 30,
+      "commitsLastYear": 19,
+      "daysSinceLastCommit": 42,
+      "ageDays": 1051
+    },
+    "microsoft/vibevoice": {
+      "health": 76.4,
+      "contributors": 23,
+      "commitsLastYear": 21,
+      "daysSinceLastCommit": 48,
+      "ageDays": 456
+    },
+    "microsoft/vscode": {
+      "health": 96.6,
+      "contributors": 3331,
+      "commitsLastYear": 8449,
+      "daysSinceLastCommit": 0,
+      "ageDays": 4100
+    },
+    "migoxlab/dingo": {
+      "health": 47.9,
+      "contributors": 22,
+      "commitsLastYear": 2,
+      "daysSinceLastCommit": 33,
+      "ageDays": 700
+    },
+    "milind-soni/openmausbot": {
+      "health": 87,
+      "contributors": 340,
+      "commitsLastYear": 12615,
+      "daysSinceLastCommit": 0,
+      "ageDays": 105
+    },
+    "milvus-io/milvus": {
+      "health": 87.6,
+      "contributors": 410,
+      "commitsLastYear": 809,
+      "daysSinceLastCommit": 1,
+      "ageDays": 2626
+    },
+    "mindcraft-bots/mindcraft": {
+      "health": 60,
+      "contributors": 72,
+      "commitsLastYear": 3,
+      "daysSinceLastCommit": 29,
+      "ageDays": 1196
+    },
+    "mindsdb/mindshub": {
+      "health": 74.1,
+      "contributors": 908,
+      "commitsLastYear": 4,
+      "daysSinceLastCommit": 32,
+      "ageDays": 3035
+    },
+    "mintplex-labs/anything-llm": {
+      "health": 88.1,
+      "contributors": 301,
+      "commitsLastYear": 459,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1269
+    },
+    "miromindai/mirothinker": {
+      "health": 42.5,
+      "contributors": 14,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 247,
+      "ageDays": 473
+    },
+    "mixedbread-ai/mgrep": {
+      "health": 37,
+      "contributors": 13,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 213,
+      "ageDays": 383
+    },
+    "mizorewww/laya-mlx": {
+      "health": 65.9,
+      "contributors": 5,
+      "commitsLastYear": 89,
+      "daysSinceLastCommit": 1,
+      "ageDays": 65
+    },
+    "mksglu/context-mode": {
+      "health": 79.5,
+      "contributors": 110,
+      "commitsLastYear": 2601,
+      "daysSinceLastCommit": 1,
+      "ageDays": 274
+    },
+    "ml-explore/mlx": {
+      "health": 85.8,
+      "contributors": 422,
+      "commitsLastYear": 324,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1091
+    },
+    "ml-explore/mlx-lm": {
+      "health": 82.8,
+      "contributors": 267,
+      "commitsLastYear": 124,
+      "daysSinceLastCommit": 4,
+      "ageDays": 622
+    },
+    "mlc-ai/kcoral": {
+      "health": 61.7,
+      "contributors": 7,
+      "commitsLastYear": 76,
+      "daysSinceLastCommit": 1,
+      "ageDays": 130
+    },
+    "mlc-ai/mlc-llm": {
+      "health": 79.9,
+      "contributors": 165,
+      "commitsLastYear": 28,
+      "daysSinceLastCommit": 4,
+      "ageDays": 1305
+    },
+    "mlc-ai/web-llm": {
+      "health": 74.9,
+      "contributors": 63,
+      "commitsLastYear": 31,
+      "daysSinceLastCommit": 8,
+      "ageDays": 1317
+    },
+    "mlc-ai/xgrammar": {
+      "health": 74.1,
+      "contributors": 84,
+      "commitsLastYear": 71,
+      "daysSinceLastCommit": 6,
+      "ageDays": 876
+    },
+    "mlflow/mlflow": {
+      "health": 91.1,
+      "contributors": 1294,
+      "commitsLastYear": 1559,
+      "daysSinceLastCommit": 0,
+      "ageDays": 3094
+    },
+    "mlrun/mlrun": {
+      "health": 73.8,
+      "contributors": 108,
+      "commitsLastYear": 119,
+      "daysSinceLastCommit": 2,
+      "ageDays": 2641
+    },
+    "modelcontextprotocol/inspector": {
+      "health": 80.6,
+      "contributors": 139,
+      "commitsLastYear": 2058,
+      "daysSinceLastCommit": 7,
+      "ageDays": 778
+    },
+    "modelcontextprotocol/modelcontextprotocol": {
+      "health": 85.6,
+      "contributors": 395,
+      "commitsLastYear": 274,
+      "daysSinceLastCommit": 4,
+      "ageDays": 787
+    },
+    "modelcontextprotocol/registry": {
+      "health": 77.8,
+      "contributors": 90,
+      "commitsLastYear": 159,
+      "daysSinceLastCommit": 4,
+      "ageDays": 653
+    },
+    "modelcontextprotocol/servers": {
+      "health": 92.1,
+      "contributors": 1073,
+      "commitsLastYear": 1119,
+      "daysSinceLastCommit": 7,
+      "ageDays": 732
+    },
+    "modelscope/ms-swift": {
+      "health": 84.9,
+      "contributors": 255,
+      "commitsLastYear": 303,
+      "daysSinceLastCommit": 5,
+      "ageDays": 1209
+    },
+    "modeltc/lightx2v": {
+      "health": 74.9,
+      "contributors": 70,
+      "commitsLastYear": 208,
+      "daysSinceLastCommit": 2,
+      "ageDays": 610
+    },
+    "modular/modular": {
+      "health": 87.6,
+      "contributors": 538,
+      "commitsLastYear": 6315,
+      "daysSinceLastCommit": 4,
+      "ageDays": 1304
+    },
+    "moonshotai/kimi-code": {
+      "health": 80.1,
+      "contributors": 63,
+      "commitsLastYear": 689,
+      "daysSinceLastCommit": 2,
+      "ageDays": 184
+    },
+    "moorcheh-ai/memanto": {
+      "health": 76.4,
+      "contributors": 141,
+      "commitsLastYear": 252,
+      "daysSinceLastCommit": 4,
+      "ageDays": 244
+    },
+    "morluto/rea": {
+      "health": 92.3,
+      "contributors": 452,
+      "commitsLastYear": 9229,
+      "daysSinceLastCommit": 2,
+      "ageDays": 223
+    },
+    "mozilla-ai/llamafile": {
+      "health": 75.2,
+      "contributors": 80,
+      "commitsLastYear": 20,
+      "daysSinceLastCommit": 19,
+      "ageDays": 1171
+    },
+    "msitarzewski/agency-agents": {
+      "health": 86.6,
+      "contributors": 112,
+      "commitsLastYear": 469,
+      "daysSinceLastCommit": 16,
+      "ageDays": 406
+    },
+    "mudler/localagi": {
+      "health": 65.1,
+      "contributors": 18,
+      "commitsLastYear": 50,
+      "daysSinceLastCommit": 40,
+      "ageDays": 1215
+    },
+    "mudler/localrecall": {
+      "health": 55.5,
+      "contributors": 6,
+      "commitsLastYear": 16,
+      "daysSinceLastCommit": 22,
+      "ageDays": 649
+    },
+    "mufeedvh/code2prompt": {
+      "health": 68.5,
+      "contributors": 43,
+      "commitsLastYear": 29,
+      "daysSinceLastCommit": 21,
+      "ageDays": 990
+    },
+    "mukul975/anthropic-cybersecurity-skills": {
+      "health": 53.2,
+      "contributors": 17,
+      "commitsLastYear": 1,
+      "daysSinceLastCommit": 86,
+      "ageDays": 272
+    },
+    "multica-ai/multica": {
+      "health": 89.5,
+      "contributors": 429,
+      "commitsLastYear": 1807,
+      "daysSinceLastCommit": 0,
+      "ageDays": 315
+    },
+    "musistudio/claude-code-router": {
+      "health": 80.9,
+      "contributors": 82,
+      "commitsLastYear": 168,
+      "daysSinceLastCommit": 4,
+      "ageDays": 637
+    },
+    "mvanhorn/agentcookie": {
+      "health": 59,
+      "contributors": 12,
+      "commitsLastYear": 44,
+      "daysSinceLastCommit": 2,
+      "ageDays": 192
+    },
+    "mvanhorn/last30days-skill": {
+      "health": 85.2,
+      "contributors": 184,
+      "commitsLastYear": 442,
+      "daysSinceLastCommit": 0,
+      "ageDays": 305
+    },
+    "n8n-io/n8n": {
+      "health": 95.4,
+      "contributors": 886,
+      "commitsLastYear": 4538,
+      "daysSinceLastCommit": 0,
+      "ageDays": 2712
+    },
+    "nanbingxyz/5ire": {
+      "health": 68.5,
+      "contributors": 39,
+      "commitsLastYear": 10,
+      "daysSinceLastCommit": 6,
+      "ageDays": 1053
+    },
+    "nanmicoder/cc-haha": {
+      "health": 81.4,
+      "contributors": 50,
+      "commitsLastYear": 811,
+      "daysSinceLastCommit": 0,
+      "ageDays": 238
+    },
+    "nano-muse/nanomuse": {
+      "health": 73.4,
+      "contributors": 44,
+      "commitsLastYear": 2686,
+      "daysSinceLastCommit": 5,
+      "ageDays": 62
+    },
+    "nanocoai/nanoclaw": {
+      "health": 87,
+      "contributors": 192,
+      "commitsLastYear": 532,
+      "daysSinceLastCommit": 0,
+      "ageDays": 297
+    },
+    "nearai/ironclaw": {
+      "health": 79.5,
+      "contributors": 120,
+      "commitsLastYear": 63,
+      "daysSinceLastCommit": 75,
+      "ageDays": 294
+    },
+    "neovateai/neovate-code": {
+      "health": 41.2,
+      "contributors": 34,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 246,
+      "ageDays": 623
+    },
+    "netflix/metaflow": {
+      "health": 79,
+      "contributors": 159,
+      "commitsLastYear": 32,
+      "daysSinceLastCommit": 7,
+      "ageDays": 2624
+    },
+    "nevamind-ai/memu": {
+      "health": 76.4,
+      "contributors": 56,
+      "commitsLastYear": 61,
+      "daysSinceLastCommit": 1,
+      "ageDays": 483
+    },
+    "newton-physics/newton": {
+      "health": 79.1,
+      "contributors": 142,
+      "commitsLastYear": 865,
+      "daysSinceLastCommit": 1,
+      "ageDays": 581
+    },
+    "nextlevelbuilder/ui-ux-pro-max-skill": {
+      "health": 85.3,
+      "contributors": 125,
+      "commitsLastYear": 91,
+      "daysSinceLastCommit": 1,
+      "ageDays": 359
+    },
+    "nexu-io/open-design": {
+      "health": 91.7,
+      "contributors": 456,
+      "commitsLastYear": 436,
+      "daysSinceLastCommit": 2,
+      "ageDays": 210
+    },
+    "nexusgpu/tensor-fusion": {
+      "health": 63.4,
+      "contributors": 13,
+      "commitsLastYear": 49,
+      "daysSinceLastCommit": 2,
+      "ageDays": 741
+    },
+    "neywa-labs/mlx-vlm": {
+      "health": 81,
+      "contributors": 215,
+      "commitsLastYear": 823,
+      "daysSinceLastCommit": 1,
+      "ageDays": 951
+    },
+    "nirdiamant/agents-towards-production": {
+      "health": 72,
+      "contributors": 27,
+      "commitsLastYear": 32,
+      "daysSinceLastCommit": 9,
+      "ageDays": 522
+    },
+    "nirdiamant/genai_agents": {
+      "health": 75.3,
+      "contributors": 54,
+      "commitsLastYear": 30,
+      "daysSinceLastCommit": 23,
+      "ageDays": 802
+    },
+    "nlweb-ai/nlweb": {
+      "health": 49.2,
+      "contributors": 55,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 167,
+      "ageDays": 571
+    },
+    "nofxaios/nofx": {
+      "health": 79.9,
+      "contributors": 67,
+      "commitsLastYear": 56,
+      "daysSinceLastCommit": 21,
+      "ageDays": 389
+    },
+    "nousresearch/hermes-agent": {
+      "health": 97.1,
+      "contributors": 6757,
+      "commitsLastYear": 50747,
+      "daysSinceLastCommit": 0,
+      "ageDays": 490
+    },
+    "nowork-studio/notfair-plugin": {
+      "health": 64.4,
+      "contributors": 15,
+      "commitsLastYear": 48,
+      "daysSinceLastCommit": 7,
+      "ageDays": 242
+    },
+    "numman-ali/openskills": {
+      "health": 41.9,
+      "contributors": 3,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 311,
+      "ageDays": 390
+    },
+    "nvidia-nemo/rl": {
+      "health": 79.6,
+      "contributors": 190,
+      "commitsLastYear": 580,
+      "daysSinceLastCommit": 2,
+      "ageDays": 616
+    },
+    "nvidia-nemo/speech": {
+      "health": 87.9,
+      "contributors": 534,
+      "commitsLastYear": 218,
+      "daysSinceLastCommit": 1,
+      "ageDays": 2667
+    },
+    "nvidia-nemo/switchyard": {
+      "health": 75,
+      "contributors": 74,
+      "commitsLastYear": 498,
+      "daysSinceLastCommit": 2,
+      "ageDays": 187
+    },
+    "nvidia/aicr": {
+      "health": 71.5,
+      "contributors": 93,
+      "commitsLastYear": 938,
+      "daysSinceLastCommit": 2,
+      "ageDays": 296
+    },
+    "nvidia/cudf": {
+      "health": 85.5,
+      "contributors": 397,
+      "commitsLastYear": 1156,
+      "daysSinceLastCommit": 1,
+      "ageDays": 3488
+    },
+    "nvidia/cutlass": {
+      "health": 82.9,
+      "contributors": 306,
+      "commitsLastYear": 43,
+      "daysSinceLastCommit": 2,
+      "ageDays": 3280
+    },
+    "nvidia/dcgm-exporter": {
+      "health": 57.4,
+      "contributors": 110,
+      "commitsLastYear": 3,
+      "daysSinceLastCommit": 18,
+      "ageDays": 1930
+    },
+    "nvidia/gpu-operator": {
+      "health": 76.3,
+      "contributors": 128,
+      "commitsLastYear": 327,
+      "daysSinceLastCommit": 1,
+      "ageDays": 2827
+    },
+    "nvidia/k8s-device-plugin": {
+      "health": 75.9,
+      "contributors": 90,
+      "commitsLastYear": 113,
+      "daysSinceLastCommit": 1,
+      "ageDays": 3331
+    },
+    "nvidia/megatron-lm": {
+      "health": 89.4,
+      "contributors": 458,
+      "commitsLastYear": 918,
+      "daysSinceLastCommit": 2,
+      "ageDays": 2803
+    },
+    "nvidia/nccl": {
+      "health": 83,
+      "contributors": 180,
+      "commitsLastYear": 559,
+      "daysSinceLastCommit": 1,
+      "ageDays": 4028
+    },
+    "nvidia/nemo-relay": {
+      "health": 68.9,
+      "contributors": 55,
+      "commitsLastYear": 823,
+      "daysSinceLastCommit": 1,
+      "ageDays": 237
+    },
+    "nvidia/nemoclaw": {
+      "health": 84.1,
+      "contributors": 187,
+      "commitsLastYear": 1400,
+      "daysSinceLastCommit": 1,
+      "ageDays": 253
+    },
+    "nvidia/skillspector": {
+      "health": 82.2,
+      "contributors": 130,
+      "commitsLastYear": 2730,
+      "daysSinceLastCommit": 1,
+      "ageDays": 248
+    },
+    "nvidia/tensorrt-llm": {
+      "health": 88.3,
+      "contributors": 532,
+      "commitsLastYear": 2585,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1196
+    },
+    "nvidia/transformerengine": {
+      "health": 79.3,
+      "contributors": 234,
+      "commitsLastYear": 307,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1526
+    },
+    "obot-platform/obot": {
+      "health": 72.6,
+      "contributors": 32,
+      "commitsLastYear": 464,
+      "daysSinceLastCommit": 0,
+      "ageDays": 810
+    },
+    "obra/superpowers": {
+      "health": 72.4,
+      "contributors": 44,
+      "commitsLastYear": 6,
+      "daysSinceLastCommit": 21,
+      "ageDays": 411
+    },
+    "oceanbase/seekdb": {
+      "health": 75.3,
+      "contributors": 46,
+      "commitsLastYear": 197,
+      "daysSinceLastCommit": 1,
+      "ageDays": 399
+    },
+    "odysseus-dev/odysseus": {
+      "health": 88,
+      "contributors": 366,
+      "commitsLastYear": 828,
+      "daysSinceLastCommit": 1,
+      "ageDays": 177
+    },
+    "okou-ai/okou": {
+      "health": 67.3,
+      "contributors": 16,
+      "commitsLastYear": 11809,
+      "daysSinceLastCommit": 0,
+      "ageDays": 375
+    },
+    "ollama/ollama": {
+      "health": 93.1,
+      "contributors": 630,
+      "commitsLastYear": 326,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1247
+    },
+    "omacom/omarchy": {
+      "health": 88.7,
+      "contributors": 652,
+      "commitsLastYear": 2097,
+      "daysSinceLastCommit": 0,
+      "ageDays": 541
+    },
+    "omnigent-ai/omnigent": {
+      "health": 86.8,
+      "contributors": 330,
+      "commitsLastYear": 4081,
+      "daysSinceLastCommit": 0,
+      "ageDays": 166
+    },
+    "onnx/onnx": {
+      "health": 87.8,
+      "contributors": 467,
+      "commitsLastYear": 272,
+      "daysSinceLastCommit": 1,
+      "ageDays": 3365
+    },
+    "onyx-dot-app/onyx": {
+      "health": 85.3,
+      "contributors": 210,
+      "commitsLastYear": 2184,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1307
+    },
+    "oobabooga/textgen": {
+      "health": 62.7,
+      "contributors": 393,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 99,
+      "ageDays": 1434
+    },
+    "open-compass/opencompass": {
+      "health": 79.9,
+      "contributors": 224,
+      "commitsLastYear": 87,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1258
+    },
+    "open-metadata/openmetadata": {
+      "health": 88,
+      "contributors": 548,
+      "commitsLastYear": 2880,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1941
+    },
+    "open-webui/open-webui": {
+      "health": 93,
+      "contributors": 893,
+      "commitsLastYear": 2646,
+      "daysSinceLastCommit": 7,
+      "ageDays": 1145
+    },
+    "openagents-org/openagents": {
+      "health": 74.5,
+      "contributors": 62,
+      "commitsLastYear": 1075,
+      "daysSinceLastCommit": 1,
+      "ageDays": 623
+    },
+    "openai/codex": {
+      "health": 94.1,
+      "contributors": 748,
+      "commitsLastYear": 4289,
+      "daysSinceLastCommit": 1,
+      "ageDays": 590
+    },
+    "openai/openai-agents-python": {
+      "health": 86.9,
+      "contributors": 407,
+      "commitsLastYear": 443,
+      "daysSinceLastCommit": 5,
+      "ageDays": 620
+    },
+    "openai/whisper": {
+      "health": 65.8,
+      "contributors": 84,
+      "commitsLastYear": 1,
+      "daysSinceLastCommit": 85,
+      "ageDays": 1526
+    },
+    "openbmb/chatdev": {
+      "health": 68.5,
+      "contributors": 20,
+      "commitsLastYear": 8,
+      "daysSinceLastCommit": 26,
+      "ageDays": 1181
+    },
+    "openbmb/ultrarag": {
+      "health": 69.6,
+      "contributors": 27,
+      "commitsLastYear": 75,
+      "daysSinceLastCommit": 18,
+      "ageDays": 674
+    },
+    "openclaw/openclaw": {
+      "health": 97.1,
+      "contributors": 3822,
+      "commitsLastYear": 49316,
+      "daysSinceLastCommit": 3,
+      "ageDays": 362
+    },
+    "opencost/opencost": {
+      "health": 79.9,
+      "contributors": 229,
+      "commitsLastYear": 79,
+      "daysSinceLastCommit": 4,
+      "ageDays": 2798
+    },
+    "opencsgs/csghub": {
+      "health": 66.2,
+      "contributors": 36,
+      "commitsLastYear": 16,
+      "daysSinceLastCommit": 12,
+      "ageDays": 1044
+    },
+    "opendatalab/mineru": {
+      "health": 83.1,
+      "contributors": 107,
+      "commitsLastYear": 865,
+      "daysSinceLastCommit": 7,
+      "ageDays": 996
+    },
+    "opendcai/dataflow": {
+      "health": 73.9,
+      "contributors": 67,
+      "commitsLastYear": 46,
+      "daysSinceLastCommit": 7,
+      "ageDays": 770
+    },
+    "openenv/openenv": {
+      "health": 76.4,
+      "contributors": 138,
+      "commitsLastYear": 1592,
+      "daysSinceLastCommit": 1,
+      "ageDays": 418
+    },
+    "openhands/openhands": {
+      "health": 92.8,
+      "contributors": 602,
+      "commitsLastYear": 1137,
+      "daysSinceLastCommit": 0,
+      "ageDays": 986
+    },
+    "openinterpreter/openinterpreter": {
+      "health": 89.3,
+      "contributors": 617,
+      "commitsLastYear": 629,
+      "daysSinceLastCommit": 2,
+      "ageDays": 1229
+    },
+    "openlit/openlit": {
+      "health": 75.7,
+      "contributors": 146,
+      "commitsLastYear": 132,
+      "daysSinceLastCommit": 5,
+      "ageDays": 1036
+    },
+    "openmontageinc/openmontage": {
+      "health": 86.6,
+      "contributors": 128,
+      "commitsLastYear": 276,
+      "daysSinceLastCommit": 9,
+      "ageDays": 239
+    },
+    "openpipe/art": {
+      "health": 75.4,
+      "contributors": 28,
+      "commitsLastYear": 250,
+      "daysSinceLastCommit": 0,
+      "ageDays": 624
+    },
+    "openrlhf/openrlhf": {
+      "health": 76.3,
+      "contributors": 97,
+      "commitsLastYear": 30,
+      "daysSinceLastCommit": 22,
+      "ageDays": 1212
+    },
+    "opensandbox-group/opensandbox": {
+      "health": 83.6,
+      "contributors": 211,
+      "commitsLastYear": 2923,
+      "daysSinceLastCommit": 1,
+      "ageDays": 342
+    },
+    "openvinotoolkit/openvino": {
+      "health": 90.4,
+      "contributors": 945,
+      "commitsLastYear": 1100,
+      "daysSinceLastCommit": 2,
+      "ageDays": 2960
+    },
+    "openxla/xla": {
+      "health": 84.9,
+      "contributors": 1169,
+      "commitsLastYear": 3421,
+      "daysSinceLastCommit": 2,
+      "ageDays": 1566
+    },
+    "optimalscale/lmflow": {
+      "health": 50.5,
+      "contributors": 48,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 107,
+      "ageDays": 1336
+    },
+    "oraios/serena": {
+      "health": 83.9,
+      "contributors": 279,
+      "commitsLastYear": 347,
+      "daysSinceLastCommit": 0,
+      "ageDays": 611
+    },
+    "ordewell/ordewell": {
+      "health": 65.6,
+      "contributors": 11,
+      "commitsLastYear": 3741,
+      "daysSinceLastCommit": 0,
+      "ageDays": 116
+    },
+    "orkas-ai/orkas": {
+      "health": 70.6,
+      "contributors": 17,
+      "commitsLastYear": 655,
+      "daysSinceLastCommit": 0,
+      "ageDays": 209
+    },
+    "othmanadi/planning-with-files": {
+      "health": 79.1,
+      "contributors": 74,
+      "commitsLastYear": 291,
+      "daysSinceLastCommit": 2,
+      "ageDays": 325
+    },
+    "oven-sh/bun": {
+      "health": 92,
+      "contributors": 934,
+      "commitsLastYear": 1282,
+      "daysSinceLastCommit": 0,
+      "ageDays": 2051
+    },
+    "ovg-project/kvcached": {
+      "health": 71.3,
+      "contributors": 45,
+      "commitsLastYear": 116,
+      "daysSinceLastCommit": 1,
+      "ageDays": 546
+    },
+    "ovidijusparsiunas/deep-chat": {
+      "health": 66,
+      "contributors": 17,
+      "commitsLastYear": 48,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1374
+    },
+    "p-e-w/heretic": {
+      "health": 75.4,
+      "contributors": 43,
+      "commitsLastYear": 45,
+      "daysSinceLastCommit": 5,
+      "ageDays": 429
+    },
+    "paddlepaddle/paddle": {
+      "health": 90.4,
+      "contributors": 1539,
+      "commitsLastYear": 133,
+      "daysSinceLastCommit": 1,
+      "ageDays": 3753
+    },
+    "paddlepaddle/paddleocr": {
+      "health": 71.6,
+      "contributors": 295,
+      "commitsLastYear": 2,
+      "daysSinceLastCommit": 70,
+      "ageDays": 2391
+    },
+    "pandas-dev/pandas": {
+      "health": 96,
+      "contributors": 4403,
+      "commitsLastYear": 1205,
+      "daysSinceLastCommit": 0,
+      "ageDays": 5936
+    },
+    "panniantong/agent-reach": {
+      "health": 82.7,
+      "contributors": 56,
+      "commitsLastYear": 164,
+      "daysSinceLastCommit": 1,
+      "ageDays": 273
+    },
+    "paperclipai/paperclip": {
+      "health": 90.8,
+      "contributors": 269,
+      "commitsLastYear": 4621,
+      "daysSinceLastCommit": 3,
+      "ageDays": 264
+    },
+    "pathwaycom/serviette": {
+      "health": 70.1,
+      "contributors": 27,
+      "commitsLastYear": 12,
+      "daysSinceLastCommit": 14,
+      "ageDays": 1224
+    },
+    "pchalasani/claude-code-tools": {
+      "health": 66.4,
+      "contributors": 17,
+      "commitsLastYear": 153,
+      "daysSinceLastCommit": 14,
+      "ageDays": 476
+    },
+    "perplexityai/bumblebee": {
+      "health": 59.7,
+      "contributors": 4,
+      "commitsLastYear": 11,
+      "daysSinceLastCommit": 6,
+      "ageDays": 187
+    },
+    "pgvector/pgvector": {
+      "health": 73,
+      "contributors": 27,
+      "commitsLastYear": 129,
+      "daysSinceLastCommit": 1,
+      "ageDays": 2043
+    },
+    "pipecat-ai/pipecat": {
+      "health": 87.7,
+      "contributors": 439,
+      "commitsLastYear": 3843,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1063
+    },
+    "pipelex/pipelex": {
+      "health": 60.8,
+      "contributors": 6,
+      "commitsLastYear": 535,
+      "daysSinceLastCommit": 1,
+      "ageDays": 547
+    },
+    "pixeltable/pixeltable": {
+      "health": 71.3,
+      "contributors": 36,
+      "commitsLastYear": 364,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1293
+    },
+    "polyaxon/polyaxon": {
+      "health": 74.6,
+      "contributors": 98,
+      "commitsLastYear": 138,
+      "daysSinceLastCommit": 4,
+      "ageDays": 3620
+    },
+    "portkey-ai/gateway": {
+      "health": 56.2,
+      "contributors": 123,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 183,
+      "ageDays": 1186
+    },
+    "prefecthq/fastmcp": {
+      "health": 85.9,
+      "contributors": 417,
+      "commitsLastYear": 820,
+      "daysSinceLastCommit": 1,
+      "ageDays": 724
+    },
+    "prefecthq/prefect": {
+      "health": 87.1,
+      "contributors": 529,
+      "commitsLastYear": 605,
+      "daysSinceLastCommit": 4,
+      "ageDays": 3066
+    },
+    "presenton/presenton": {
+      "health": 75.3,
+      "contributors": 26,
+      "commitsLastYear": 354,
+      "daysSinceLastCommit": 5,
+      "ageDays": 560
+    },
+    "preset-io/agor": {
+      "health": 72.7,
+      "contributors": 45,
+      "commitsLastYear": 446,
+      "daysSinceLastCommit": 5,
+      "ageDays": 412
+    },
+    "project-hami/hami": {
+      "health": 79.7,
+      "contributors": 217,
+      "commitsLastYear": 388,
+      "daysSinceLastCommit": 3,
+      "ageDays": 1894
+    },
+    "project-hami/hami-core": {
+      "health": 70.6,
+      "contributors": 69,
+      "commitsLastYear": 354,
+      "daysSinceLastCommit": 3,
+      "ageDays": 1035
+    },
+    "project-monai/monai": {
+      "health": 84.5,
+      "contributors": 334,
+      "commitsLastYear": 112,
+      "daysSinceLastCommit": 6,
+      "ageDays": 2598
+    },
+    "projectdiscovery/katana": {
+      "health": 78.2,
+      "contributors": 80,
+      "commitsLastYear": 320,
+      "daysSinceLastCommit": 5,
+      "ageDays": 2149
+    },
+    "promptfoo/promptfoo": {
+      "health": 87,
+      "contributors": 404,
+      "commitsLastYear": 1334,
+      "daysSinceLastCommit": 2,
+      "ageDays": 1304
+    },
+    "promtengineer/localgpt": {
+      "health": 53.3,
+      "contributors": 51,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 96,
+      "ageDays": 1279
+    },
+    "py-pdf/pdfly": {
+      "health": 63.5,
+      "contributors": 29,
+      "commitsLastYear": 28,
+      "daysSinceLastCommit": 10,
+      "ageDays": 1688
+    },
+    "pydantic/monty": {
+      "health": 76.7,
+      "contributors": 81,
+      "commitsLastYear": 358,
+      "daysSinceLastCommit": 4,
+      "ageDays": 1274
+    },
+    "pydantic/pydantic-ai": {
+      "health": 88.9,
+      "contributors": 667,
+      "commitsLastYear": 2945,
+      "daysSinceLastCommit": 2,
+      "ageDays": 884
+    },
+    "pymupdf/pymupdf": {
+      "health": 78.1,
+      "contributors": 107,
+      "commitsLastYear": 226,
+      "daysSinceLastCommit": 4,
+      "ageDays": 5160
+    },
+    "pytorch/pytorch": {
+      "health": 97.4,
+      "contributors": 7363,
+      "commitsLastYear": 5353,
+      "daysSinceLastCommit": 2,
+      "ageDays": 3754
+    },
+    "pytorch/torchtitan": {
+      "health": 83.5,
+      "contributors": 271,
+      "commitsLastYear": 904,
+      "daysSinceLastCommit": 2,
+      "ageDays": 1076
+    },
+    "qdrant/qdrant": {
+      "health": 84.3,
+      "contributors": 223,
+      "commitsLastYear": 746,
+      "daysSinceLastCommit": 9,
+      "ageDays": 2367
+    },
+    "qualcomm/geniex": {
+      "health": 75.1,
+      "contributors": 30,
+      "commitsLastYear": 561,
+      "daysSinceLastCommit": 1,
+      "ageDays": 830
+    },
+    "qwenaudio/cosyvoice": {
+      "health": 54.1,
+      "contributors": 51,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 183,
+      "ageDays": 874
+    },
+    "qwenlm/qwen-agent": {
+      "health": 51.7,
+      "contributors": 35,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 266,
+      "ageDays": 1159
+    },
+    "ray-project/ray": {
+      "health": 92,
+      "contributors": 1809,
+      "commitsLastYear": 1236,
+      "daysSinceLastCommit": 0,
+      "ageDays": 3682
+    },
+    "refly-ai/refly": {
+      "health": 56.5,
+      "contributors": 45,
+      "commitsLastYear": 3,
+      "daysSinceLastCommit": 23,
+      "ageDays": 1009
+    },
+    "rightnow-ai/openfang": {
+      "health": 54.5,
+      "contributors": 76,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 196,
+      "ageDays": 273
+    },
+    "rlinf/rlinf": {
+      "health": 78.6,
+      "contributors": 149,
+      "commitsLastYear": 188,
+      "daysSinceLastCommit": 1,
+      "ageDays": 467
+    },
+    "roboflow/inference": {
+      "health": 75.9,
+      "contributors": 145,
+      "commitsLastYear": 351,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1212
+    },
+    "rocm/gpu-operator": {
+      "health": 62,
+      "contributors": 40,
+      "commitsLastYear": 35,
+      "daysSinceLastCommit": 5,
+      "ageDays": 1106
+    },
+    "rohanadwankar/oxdraw": {
+      "health": 38.7,
+      "contributors": 5,
+      "commitsLastYear": 1,
+      "daysSinceLastCommit": 59,
+      "ageDays": 413
+    },
+    "rohitg00/agentmemory": {
+      "health": 81.1,
+      "contributors": 75,
+      "commitsLastYear": 233,
+      "daysSinceLastCommit": 7,
+      "ageDays": 272
+    },
+    "rowboatlabs/rowboat": {
+      "health": 76.7,
+      "contributors": 29,
+      "commitsLastYear": 667,
+      "daysSinceLastCommit": 6,
+      "ageDays": 676
+    },
+    "rtk-ai/rtk": {
+      "health": 87.1,
+      "contributors": 205,
+      "commitsLastYear": 1257,
+      "daysSinceLastCommit": 6,
+      "ageDays": 300
+    },
+    "run-llama/llama_index": {
+      "health": 93.3,
+      "contributors": 2010,
+      "commitsLastYear": 65,
+      "daysSinceLastCommit": 11,
+      "ageDays": 1484
+    },
+    "run-llama/semtools": {
+      "health": 31.5,
+      "contributors": 6,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 258,
+      "ageDays": 458
+    },
+    "runpod/runpod-python": {
+      "health": 67.9,
+      "contributors": 56,
+      "commitsLastYear": 103,
+      "daysSinceLastCommit": 4,
+      "ageDays": 1445
+    },
+    "ruvnet/claude-flow": {
+      "health": 85.2,
+      "contributors": 105,
+      "commitsLastYear": 3253,
+      "daysSinceLastCommit": 0,
+      "ageDays": 540
+    },
+    "ruvnet/ruflo": {
+      "health": 85.2,
+      "contributors": 105,
+      "commitsLastYear": 3253,
+      "daysSinceLastCommit": 0,
+      "ageDays": 540
+    },
+    "rvc-boss/gpt-sovits": {
+      "health": 56.3,
+      "contributors": 101,
+      "commitsLastYear": 18,
+      "daysSinceLastCommit": 13,
+      "ageDays": 1
+    },
+    "ryancodrai/turbovec": {
+      "health": 62.2,
+      "contributors": 8,
+      "commitsLastYear": 14,
+      "daysSinceLastCommit": 49,
+      "ageDays": 244
+    },
+    "sandbaseai/sandbase-harness": {
+      "health": 62.3,
+      "contributors": 11,
+      "commitsLastYear": 1350,
+      "daysSinceLastCommit": 7,
+      "ageDays": 133
+    },
+    "schedmd/slurm": {
+      "health": 79.3,
+      "contributors": 535,
+      "commitsLastYear": 4784,
+      "daysSinceLastCommit": 0,
+      "ageDays": 5636
+    },
+    "scrapegraphai/scrapegraph-ai": {
+      "health": 77.2,
+      "contributors": 135,
+      "commitsLastYear": 26,
+      "daysSinceLastCommit": 50,
+      "ageDays": 1031
+    },
+    "searxng/searxng": {
+      "health": 86.2,
+      "contributors": 372,
+      "commitsLastYear": 230,
+      "daysSinceLastCommit": 2,
+      "ageDays": 2051
+    },
+    "servicestack/llms": {
+      "health": 60.3,
+      "contributors": 3,
+      "commitsLastYear": 97,
+      "daysSinceLastCommit": 2,
+      "ageDays": 426
+    },
+    "sgl-project/mini-sglang": {
+      "health": 48.6,
+      "contributors": 36,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 192,
+      "ageDays": 448
+    },
+    "sgl-project/sglang": {
+      "health": 93.8,
+      "contributors": 2337,
+      "commitsLastYear": 5989,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1051
+    },
+    "sgl-project/sglang-omni": {
+      "health": 80.1,
+      "contributors": 207,
+      "commitsLastYear": 1164,
+      "daysSinceLastCommit": 1,
+      "ageDays": 320
+    },
+    "shepherd-agents/shepherd": {
+      "health": 39.8,
+      "contributors": 5,
+      "commitsLastYear": 1,
+      "daysSinceLastCommit": 77,
+      "ageDays": 152
+    },
+    "shihabshahrier/freelm": {
+      "health": 46,
+      "contributors": 1,
+      "commitsLastYear": 22,
+      "daysSinceLastCommit": 45,
+      "ageDays": 170
+    },
+    "shotgun-sh/shotgun": {
+      "health": 30.7,
+      "contributors": 8,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 225,
+      "ageDays": 475
+    },
+    "significant-gravitas/autogpt": {
+      "health": 94.2,
+      "contributors": 880,
+      "commitsLastYear": 1766,
+      "daysSinceLastCommit": 4,
+      "ageDays": 1348
+    },
+    "sillytavern/sillytavern": {
+      "health": 83.8,
+      "contributors": 418,
+      "commitsLastYear": 18,
+      "daysSinceLastCommit": 5,
+      "ageDays": 1382
+    },
+    "simonw/llm": {
+      "health": 80.4,
+      "contributors": 108,
+      "commitsLastYear": 106,
+      "daysSinceLastCommit": 7,
+      "ageDays": 1331
+    },
+    "simstudioai/sim": {
+      "health": 80.8,
+      "contributors": 66,
+      "commitsLastYear": 2787,
+      "daysSinceLastCommit": 2,
+      "ageDays": 686
+    },
+    "sipeed/picoclaw": {
+      "health": 59.3,
+      "contributors": 238,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 98,
+      "ageDays": 291
+    },
+    "siyuan-note/siyuan": {
+      "health": 80.3,
+      "contributors": 139,
+      "commitsLastYear": 4810,
+      "daysSinceLastCommit": 5,
+      "ageDays": 2276
+    },
+    "skypilot-org/skypilot": {
+      "health": 84.7,
+      "contributors": 296,
+      "commitsLastYear": 505,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1930
+    },
+    "skyrl-project/skyrl": {
+      "health": 76.6,
+      "contributors": 117,
+      "commitsLastYear": 291,
+      "daysSinceLastCommit": 4,
+      "ageDays": 580
+    },
+    "skyvern-ai/skyvern": {
+      "health": 81.6,
+      "contributors": 96,
+      "commitsLastYear": 1122,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1000
+    },
+    "sourcebot-dev/sourcebot": {
+      "health": 73.3,
+      "contributors": 66,
+      "commitsLastYear": 96,
+      "daysSinceLastCommit": 0,
+      "ageDays": 823
+    },
+    "spiceai/spiceai": {
+      "health": 74.4,
+      "contributors": 63,
+      "commitsLastYear": 1422,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1934
+    },
+    "spring-projects/spring-ai": {
+      "health": 88.7,
+      "contributors": 590,
+      "commitsLastYear": 313,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1246
+    },
+    "sqliteai/sqlite-vector": {
+      "health": 56.3,
+      "contributors": 13,
+      "commitsLastYear": 13,
+      "daysSinceLastCommit": 24,
+      "ageDays": 596
+    },
+    "stablyai/orca": {
+      "health": 92.1,
+      "contributors": 798,
+      "commitsLastYear": 15346,
+      "daysSinceLastCommit": 0,
+      "ageDays": 252
+    },
+    "stacklok/toolhive": {
+      "health": 76.1,
+      "contributors": 144,
+      "commitsLastYear": 549,
+      "daysSinceLastCommit": 0,
+      "ageDays": 622
+    },
+    "stagewise-io/stagewise": {
+      "health": 67,
+      "contributors": 19,
+      "commitsLastYear": 48,
+      "daysSinceLastCommit": 21,
+      "ageDays": 577
+    },
+    "stakpak/agent": {
+      "health": 42.8,
+      "contributors": 21,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 142,
+      "ageDays": 714
+    },
+    "stanford-crfm/helm": {
+      "health": 50.3,
+      "contributors": 153,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 172,
+      "ageDays": 1821
+    },
+    "stanfordnlp/dspy": {
+      "health": 87.6,
+      "contributors": 484,
+      "commitsLastYear": 202,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1415
+    },
+    "startrail-org/leann": {
+      "health": 77.7,
+      "contributors": 68,
+      "commitsLastYear": 64,
+      "daysSinceLastCommit": 4,
+      "ageDays": 533
+    },
+    "steipete/codexbar": {
+      "health": 85.8,
+      "contributors": 592,
+      "commitsLastYear": 2323,
+      "daysSinceLastCommit": 3,
+      "ageDays": 372
+    },
+    "stirling-tools/stirling-pdf": {
+      "health": 89.3,
+      "contributors": 326,
+      "commitsLastYear": 695,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1396
+    },
+    "strands-agents/box": {
+      "health": 70.2,
+      "contributors": 23,
+      "commitsLastYear": 317,
+      "daysSinceLastCommit": 1,
+      "ageDays": 52
+    },
+    "strands-agents/harness-sdk": {
+      "health": 86.2,
+      "contributors": 360,
+      "commitsLastYear": 899,
+      "daysSinceLastCommit": 1,
+      "ageDays": 558
+    },
+    "stripe/ai": {
+      "health": 71.9,
+      "contributors": 42,
+      "commitsLastYear": 117,
+      "daysSinceLastCommit": 1,
+      "ageDays": 742
+    },
+    "suitenumerique/docs": {
+      "health": 78.8,
+      "contributors": 107,
+      "commitsLastYear": 464,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1049
+    },
+    "superagent-ai/superagent": {
+      "health": 39.8,
+      "contributors": 6,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 92,
+      "ageDays": 1293
+    },
+    "superclaude-org/superclaude_framework": {
+      "health": 57.4,
+      "contributors": 47,
+      "commitsLastYear": 2,
+      "daysSinceLastCommit": 59,
+      "ageDays": 517
+    },
+    "superlinked/sie": {
+      "health": 72.7,
+      "contributors": 23,
+      "commitsLastYear": 781,
+      "daysSinceLastCommit": 5,
+      "ageDays": 1110
+    },
+    "supermemoryai/supermemory": {
+      "health": 80.5,
+      "contributors": 114,
+      "commitsLastYear": 131,
+      "daysSinceLastCommit": 4,
+      "ageDays": 997
+    },
+    "sustainable-computing-io/kepler": {
+      "health": 74,
+      "contributors": 53,
+      "commitsLastYear": 248,
+      "daysSinceLastCommit": 2,
+      "ageDays": 1756
+    },
+    "swanhubx/swanlab": {
+      "health": 68,
+      "contributors": 47,
+      "commitsLastYear": 25,
+      "daysSinceLastCommit": 7,
+      "ageDays": 1095
+    },
+    "swe-agent/swe-agent": {
+      "health": 56.2,
+      "contributors": 101,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 131,
+      "ageDays": 966
+    },
+    "sylinko/everywhere": {
+      "health": 70.9,
+      "contributors": 20,
+      "commitsLastYear": 281,
+      "daysSinceLastCommit": 1,
+      "ageDays": 579
+    },
+    "syllo/nvtop": {
+      "health": 77.8,
+      "contributors": 114,
+      "commitsLastYear": 272,
+      "daysSinceLastCommit": 1,
+      "ageDays": 3447
+    },
+    "sympozium-ai/sympozium": {
+      "health": 69.7,
+      "contributors": 39,
+      "commitsLastYear": 696,
+      "daysSinceLastCommit": 6,
+      "ageDays": 273
+    },
+    "t8y2/dbx": {
+      "health": 87.5,
+      "contributors": 465,
+      "commitsLastYear": 4427,
+      "daysSinceLastCommit": 1,
+      "ageDays": 209
+    },
+    "tabbyml/tabby": {
+      "health": 55.7,
+      "contributors": 118,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 147,
+      "ageDays": 1348
+    },
+    "tale-project/tale": {
+      "health": 67.7,
+      "contributors": 12,
+      "commitsLastYear": 1894,
+      "daysSinceLastCommit": 1,
+      "ageDays": 358
+    },
+    "tauricresearch/tradingagents": {
+      "health": 82.8,
+      "contributors": 24,
+      "commitsLastYear": 259,
+      "daysSinceLastCommit": 21,
+      "ageDays": 696
+    },
+    "taylorwilsdon/google_workspace_mcp": {
+      "health": 80.8,
+      "contributors": 219,
+      "commitsLastYear": 1078,
+      "daysSinceLastCommit": 5,
+      "ageDays": 575
+    },
+    "ten-framework/ten-framework": {
+      "health": 79.4,
+      "contributors": 93,
+      "commitsLastYear": 62,
+      "daysSinceLastCommit": 8,
+      "ageDays": 886
+    },
+    "tencent/browserskill": {
+      "health": 76,
+      "contributors": 61,
+      "commitsLastYear": 1214,
+      "daysSinceLastCommit": 2,
+      "ageDays": 154
+    },
+    "tencent/teamai-cli": {
+      "health": 77.4,
+      "contributors": 120,
+      "commitsLastYear": 1118,
+      "daysSinceLastCommit": 2,
+      "ageDays": 210
+    },
+    "tencent/weknora": {
+      "health": 87.6,
+      "contributors": 398,
+      "commitsLastYear": 1372,
+      "daysSinceLastCommit": 2,
+      "ageDays": 489
+    },
+    "tencentcloud/cubesandbox": {
+      "health": 82.2,
+      "contributors": 150,
+      "commitsLastYear": 478,
+      "daysSinceLastCommit": 2,
+      "ageDays": 227
+    },
+    "tencentcloud/octop": {
+      "health": 80.7,
+      "contributors": 77,
+      "commitsLastYear": 774,
+      "daysSinceLastCommit": 7,
+      "ageDays": 134
+    },
+    "tencentcloud/tencentdb-agent-memory": {
+      "health": 77.8,
+      "contributors": 38,
+      "commitsLastYear": 63,
+      "daysSinceLastCommit": 1,
+      "ageDays": 231
+    },
+    "tencentcloudadp/youtu-agent": {
+      "health": 52.2,
+      "contributors": 17,
+      "commitsLastYear": 4,
+      "daysSinceLastCommit": 16,
+      "ageDays": 460
+    },
+    "tencentcloudbase/cloudbase-ai-toolkit": {
+      "health": 70.2,
+      "contributors": 27,
+      "commitsLastYear": 1010,
+      "daysSinceLastCommit": 1,
+      "ageDays": 550
+    },
+    "tencentmusic/supersonic": {
+      "health": 73,
+      "contributors": 102,
+      "commitsLastYear": 12,
+      "daysSinceLastCommit": 18,
+      "ageDays": 1261
+    },
+    "tensorflow/tensorflow": {
+      "health": 97.9,
+      "contributors": 5457,
+      "commitsLastYear": 5906,
+      "daysSinceLastCommit": 0,
+      "ageDays": 4036
+    },
+    "terminallylazy/tree-ring-memory": {
+      "health": 50.3,
+      "contributors": 2,
+      "commitsLastYear": 21,
+      "daysSinceLastCommit": 69,
+      "ageDays": 143
+    },
+    "tesseract-ocr/tesseract": {
+      "health": 88,
+      "contributors": 252,
+      "commitsLastYear": 135,
+      "daysSinceLastCommit": 2,
+      "ageDays": 4487
+    },
+    "the-pr-agent/pr-agent": {
+      "health": 85.8,
+      "contributors": 492,
+      "commitsLastYear": 1500,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1238
+    },
+    "theagentrouter/agent-router": {
+      "health": 76.6,
+      "contributors": 171,
+      "commitsLastYear": 171,
+      "daysSinceLastCommit": 0,
+      "ageDays": 765
+    },
+    "thedotmack/claude-mem": {
+      "health": 90.2,
+      "contributors": 401,
+      "commitsLastYear": 2466,
+      "daysSinceLastCommit": 0,
+      "ageDays": 450
+    },
+    "thewh1teagle/vibe": {
+      "health": 73,
+      "contributors": 44,
+      "commitsLastYear": 135,
+      "daysSinceLastCommit": 4,
+      "ageDays": 1052
+    },
+    "thinkinaixyz/deepchat": {
+      "health": 77.1,
+      "contributors": 134,
+      "commitsLastYear": 693,
+      "daysSinceLastCommit": 0,
+      "ageDays": 649
+    },
+    "threadlines/threadlines": {
+      "health": 63,
+      "contributors": 144,
+      "commitsLastYear": 914,
+      "daysSinceLastCommit": 0,
+      "ageDays": 184
+    },
+    "thu-maic/openmaic": {
+      "health": 83.4,
+      "contributors": 129,
+      "commitsLastYear": 473,
+      "daysSinceLastCommit": 6,
+      "ageDays": 252
+    },
+    "thu-pacman/chitu": {
+      "health": 72.2,
+      "contributors": 58,
+      "commitsLastYear": 194,
+      "daysSinceLastCommit": 1,
+      "ageDays": 642
+    },
+    "tiger-ai-lab/clawbench": {
+      "health": 65.3,
+      "contributors": 16,
+      "commitsLastYear": 100,
+      "daysSinceLastCommit": 20,
+      "ageDays": 228
+    },
+    "tiger-ai-lab/websitebench": {
+      "health": 33.1,
+      "contributors": 1,
+      "commitsLastYear": 1,
+      "daysSinceLastCommit": 15,
+      "ageDays": 16
+    },
+    "tile-ai/tilelang": {
+      "health": 83.7,
+      "contributors": 255,
+      "commitsLastYear": 345,
+      "daysSinceLastCommit": 1,
+      "ageDays": 782
+    },
+    "timeplus-io/proton": {
+      "health": 75.9,
+      "contributors": 1328,
+      "commitsLastYear": 41,
+      "daysSinceLastCommit": 6,
+      "ageDays": 1198
+    },
+    "tinygrad/tinygrad": {
+      "health": 86.8,
+      "contributors": 515,
+      "commitsLastYear": 1410,
+      "daysSinceLastCommit": 1,
+      "ageDays": 2227
+    },
+    "tinyhumansai/openhuman": {
+      "health": 84.6,
+      "contributors": 200,
+      "commitsLastYear": 45985,
+      "daysSinceLastCommit": 1,
+      "ageDays": 278
+    },
+    "tirth8205/code-review-graph": {
+      "health": 83.1,
+      "contributors": 183,
+      "commitsLastYear": 1037,
+      "daysSinceLastCommit": 12,
+      "ageDays": 270
+    },
+    "titanwings/distilly": {
+      "health": 64.8,
+      "contributors": 4,
+      "commitsLastYear": 15,
+      "daysSinceLastCommit": 43,
+      "ageDays": 239
+    },
+    "tmc/langchaingo": {
+      "health": 81.5,
+      "contributors": 187,
+      "commitsLastYear": 60,
+      "daysSinceLastCommit": 2,
+      "ageDays": 1374
+    },
+    "tmoroney/auto-subs": {
+      "health": 70.3,
+      "contributors": 31,
+      "commitsLastYear": 226,
+      "daysSinceLastCommit": 26,
+      "ageDays": 1350
+    },
+    "tongyi-mai/mai-ui": {
+      "health": 35.2,
+      "contributors": 7,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 98,
+      "ageDays": 344
+    },
+    "toon-format/toon": {
+      "health": 71.8,
+      "contributors": 48,
+      "commitsLastYear": 42,
+      "daysSinceLastCommit": 1,
+      "ageDays": 397
+    },
+    "topoteretes/cognee": {
+      "health": 86.8,
+      "contributors": 336,
+      "commitsLastYear": 2854,
+      "daysSinceLastCommit": 5,
+      "ageDays": 1195
+    },
+    "traceloop/openllmetry": {
+      "health": 78.2,
+      "contributors": 118,
+      "commitsLastYear": 28,
+      "daysSinceLastCommit": 2,
+      "ageDays": 1178
+    },
+    "traceroot-ai/traceroot": {
+      "health": 78.1,
+      "contributors": 95,
+      "commitsLastYear": 2568,
+      "daysSinceLastCommit": 1,
+      "ageDays": 489
+    },
+    "transformerlab/transformerlab-app": {
+      "health": 47.3,
+      "contributors": 36,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 111,
+      "ageDays": 1065
+    },
+    "triggerdotdev/trigger.dev": {
+      "health": 82.5,
+      "contributors": 152,
+      "commitsLastYear": 1042,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1454
+    },
+    "triton-inference-server/server": {
+      "health": 82.8,
+      "contributors": 155,
+      "commitsLastYear": 71,
+      "daysSinceLastCommit": 1,
+      "ageDays": 2972
+    },
+    "triton-lang/triton": {
+      "health": 89.2,
+      "contributors": 751,
+      "commitsLastYear": 706,
+      "daysSinceLastCommit": 0,
+      "ageDays": 4469
+    },
+    "trpc-group/trpc-agent-go": {
+      "health": 74,
+      "contributors": 66,
+      "commitsLastYear": 94,
+      "daysSinceLastCommit": 2,
+      "ageDays": 557
+    },
+    "trycua/cua": {
+      "health": 83.4,
+      "contributors": 167,
+      "commitsLastYear": 3110,
+      "daysSinceLastCommit": 2,
+      "ageDays": 660
+    },
+    "tt-a1i/archify": {
+      "health": 84.6,
+      "contributors": 109,
+      "commitsLastYear": 2599,
+      "daysSinceLastCommit": 2,
+      "ageDays": 222
+    },
+    "tura-ai/tura": {
+      "health": 54.8,
+      "contributors": 7,
+      "commitsLastYear": 25,
+      "daysSinceLastCommit": 49,
+      "ageDays": 139
+    },
+    "twigpine/openclaude": {
+      "health": 85,
+      "contributors": 176,
+      "commitsLastYear": 285,
+      "daysSinceLastCommit": 2,
+      "ageDays": 236
+    },
+    "ufomiao/zcf": {
+      "health": 68.6,
+      "contributors": 17,
+      "commitsLastYear": 117,
+      "daysSinceLastCommit": 4,
+      "ageDays": 481
+    },
+    "unclecode/crawl4ai": {
+      "health": 85.3,
+      "contributors": 114,
+      "commitsLastYear": 279,
+      "daysSinceLastCommit": 2,
+      "ageDays": 928
+    },
+    "unifabric-io/unifabric": {
+      "health": 57.7,
+      "contributors": 4,
+      "commitsLastYear": 84,
+      "daysSinceLastCommit": 9,
+      "ageDays": 219
+    },
+    "unitycatalog/unitycatalog": {
+      "health": 77.6,
+      "contributors": 144,
+      "commitsLastYear": 286,
+      "daysSinceLastCommit": 0,
+      "ageDays": 894
+    },
+    "universal-commerce-protocol/ucp": {
+      "health": 74.2,
+      "contributors": 71,
+      "commitsLastYear": 86,
+      "daysSinceLastCommit": 4,
+      "ageDays": 329
+    },
+    "unslothai/unsloth": {
+      "health": 89.8,
+      "contributors": 461,
+      "commitsLastYear": 7760,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1091
+    },
+    "unstructured-io/unstructured": {
+      "health": 82.3,
+      "contributors": 188,
+      "commitsLastYear": 135,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1520
+    },
+    "upstash/context7": {
+      "health": 83.3,
+      "contributors": 148,
+      "commitsLastYear": 338,
+      "daysSinceLastCommit": 0,
+      "ageDays": 608
+    },
+    "usestrix/strix": {
+      "health": 84.3,
+      "contributors": 80,
+      "commitsLastYear": 290,
+      "daysSinceLastCommit": 5,
+      "ageDays": 476
+    },
+    "valkey-io/valkey": {
+      "health": 87.7,
+      "contributors": 1079,
+      "commitsLastYear": 396,
+      "daysSinceLastCommit": 0,
+      "ageDays": 978
+    },
+    "valuecell-ai/valuecell": {
+      "health": 49.2,
+      "contributors": 17,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 287,
+      "ageDays": 449
+    },
+    "vast-ai/vast-cli": {
+      "health": 64.1,
+      "contributors": 53,
+      "commitsLastYear": 33,
+      "daysSinceLastCommit": 0,
+      "ageDays": 2857
+    },
+    "vectifyai/pageindex": {
+      "health": 75.5,
+      "contributors": 16,
+      "commitsLastYear": 216,
+      "daysSinceLastCommit": 4,
+      "ageDays": 600
+    },
+    "vercel-labs/agent-skills": {
+      "health": 73.4,
+      "contributors": 29,
+      "commitsLastYear": 20,
+      "daysSinceLastCommit": 4,
+      "ageDays": 347
+    },
+    "vercel-labs/json-render": {
+      "health": 73.3,
+      "contributors": 24,
+      "commitsLastYear": 43,
+      "daysSinceLastCommit": 6,
+      "ageDays": 310
+    },
+    "vercel/ai": {
+      "health": 89.7,
+      "contributors": 788,
+      "commitsLastYear": 1645,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1281
+    },
+    "vercel/chatbot": {
+      "health": 67.6,
+      "contributors": 76,
+      "commitsLastYear": 5,
+      "daysSinceLastCommit": 21,
+      "ageDays": 1284
+    },
+    "vercel/workflow": {
+      "health": 77.1,
+      "contributors": 149,
+      "commitsLastYear": 524,
+      "daysSinceLastCommit": 1,
+      "ageDays": 397
+    },
+    "verl-project/verl": {
+      "health": 89.6,
+      "contributors": 775,
+      "commitsLastYear": 330,
+      "daysSinceLastCommit": 1,
+      "ageDays": 754
+    },
+    "vespa-engine/vespa": {
+      "health": 80.6,
+      "contributors": 221,
+      "commitsLastYear": 2055,
+      "daysSinceLastCommit": 1,
+      "ageDays": 3825
+    },
+    "vibiumdev/vibium": {
+      "health": 66.1,
+      "contributors": 12,
+      "commitsLastYear": 714,
+      "daysSinceLastCommit": 5,
+      "ageDays": 347
+    },
+    "vibrantlabsai/ragas": {
+      "health": 78.6,
+      "contributors": 251,
+      "commitsLastYear": 12,
+      "daysSinceLastCommit": 11,
+      "ageDays": 1295
+    },
+    "virattt/ai-hedge-fund": {
+      "health": 81.7,
+      "contributors": 48,
+      "commitsLastYear": 60,
+      "daysSinceLastCommit": 15,
+      "ageDays": 724
+    },
+    "virattt/dexter": {
+      "health": 72.4,
+      "contributors": 25,
+      "commitsLastYear": 10,
+      "daysSinceLastCommit": 62,
+      "ageDays": 405
+    },
+    "vllm-project/aibrix": {
+      "health": 80.5,
+      "contributors": 241,
+      "commitsLastYear": 557,
+      "daysSinceLastCommit": 1,
+      "ageDays": 896
+    },
+    "vllm-project/guidellm": {
+      "health": 74.7,
+      "contributors": 103,
+      "commitsLastYear": 226,
+      "daysSinceLastCommit": 1,
+      "ageDays": 908
+    },
+    "vllm-project/production-stack": {
+      "health": 73.8,
+      "contributors": 175,
+      "commitsLastYear": 35,
+      "daysSinceLastCommit": 18,
+      "ageDays": 671
+    },
+    "vllm-project/semantic-router": {
+      "health": 84.4,
+      "contributors": 305,
+      "commitsLastYear": 1781,
+      "daysSinceLastCommit": 1,
+      "ageDays": 454
+    },
+    "vllm-project/vllm": {
+      "health": 97.3,
+      "contributors": 4193,
+      "commitsLastYear": 5718,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1383
+    },
+    "vllm-project/vllm-omni": {
+      "health": 88.1,
+      "contributors": 631,
+      "commitsLastYear": 1958,
+      "daysSinceLastCommit": 0,
+      "ageDays": 439
+    },
+    "vmware-tanzu/vm-operator": {
+      "health": 70.6,
+      "contributors": 99,
+      "commitsLastYear": 302,
+      "daysSinceLastCommit": 1,
+      "ageDays": 2103
+    },
+    "volcano-sh/volcano": {
+      "health": 85.7,
+      "contributors": 496,
+      "commitsLastYear": 164,
+      "daysSinceLastCommit": 2,
+      "ageDays": 2811
+    },
+    "volcengine/minecontext": {
+      "health": 46,
+      "contributors": 33,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 202,
+      "ageDays": 518
+    },
+    "volcengine/openviking": {
+      "health": 87.1,
+      "contributors": 349,
+      "commitsLastYear": 1447,
+      "daysSinceLastCommit": 1,
+      "ageDays": 323
+    },
+    "wandb/wandb": {
+      "health": 83,
+      "contributors": 262,
+      "commitsLastYear": 482,
+      "daysSinceLastCommit": 2,
+      "ageDays": 3531
+    },
+    "wanshuiyin/auto-claude-code-research-in-sleep": {
+      "health": 79.7,
+      "contributors": 108,
+      "commitsLastYear": 185,
+      "daysSinceLastCommit": 6,
+      "ageDays": 258
+    },
+    "wanxingai/lightagent": {
+      "health": 68.6,
+      "contributors": 29,
+      "commitsLastYear": 66,
+      "daysSinceLastCommit": 9,
+      "ageDays": 673
+    },
+    "warpdotdev/warp": {
+      "health": 86.7,
+      "contributors": 173,
+      "commitsLastYear": 508,
+      "daysSinceLastCommit": 4,
+      "ageDays": 1963
+    },
+    "wavetermdev/waveterm": {
+      "health": 73.1,
+      "contributors": 49,
+      "commitsLastYear": 29,
+      "daysSinceLastCommit": 50,
+      "ageDays": 1629
+    },
+    "weaviate/weaviate": {
+      "health": 83.9,
+      "contributors": 192,
+      "commitsLastYear": 3866,
+      "daysSinceLastCommit": 1,
+      "ageDays": 3891
+    },
+    "web-infra-dev/midscene": {
+      "health": 79.2,
+      "contributors": 95,
+      "commitsLastYear": 296,
+      "daysSinceLastCommit": 2,
+      "ageDays": 853
+    },
+    "wei-shaw/sub2api": {
+      "health": 90,
+      "contributors": 536,
+      "commitsLastYear": 2082,
+      "daysSinceLastCommit": 1,
+      "ageDays": 342
+    },
+    "wshobson/agents": {
+      "health": 80.3,
+      "contributors": 100,
+      "commitsLastYear": 87,
+      "daysSinceLastCommit": 0,
+      "ageDays": 488
+    },
+    "xiaomi/xiaomi-miloco": {
+      "health": 72.6,
+      "contributors": 22,
+      "commitsLastYear": 360,
+      "daysSinceLastCommit": 1,
+      "ageDays": 383
+    },
+    "xllm-ai/xllm": {
+      "health": 75.6,
+      "contributors": 111,
+      "commitsLastYear": 963,
+      "daysSinceLastCommit": 0,
+      "ageDays": 469
+    },
+    "xorbitsai/inference": {
+      "health": 80.1,
+      "contributors": 195,
+      "commitsLastYear": 641,
+      "daysSinceLastCommit": 0,
+      "ageDays": 1259
+    },
+    "xpzouying/xiaohongshu-mcp": {
+      "health": 77.3,
+      "contributors": 46,
+      "commitsLastYear": 79,
+      "daysSinceLastCommit": 1,
+      "ageDays": 478
+    },
+    "xuehaipan/nvitop": {
+      "health": 57.6,
+      "contributors": 7,
+      "commitsLastYear": 13,
+      "daysSinceLastCommit": 13,
+      "ageDays": 2129
+    },
+    "xunbu/docutranslate": {
+      "health": 61.3,
+      "contributors": 5,
+      "commitsLastYear": 30,
+      "daysSinceLastCommit": 23,
+      "ageDays": 565
+    },
+    "xyflow/xyflow": {
+      "health": 82.4,
+      "contributors": 174,
+      "commitsLastYear": 349,
+      "daysSinceLastCommit": 1,
+      "ageDays": 2689
+    },
+    "yamadashy/repomix": {
+      "health": 79.9,
+      "contributors": 90,
+      "commitsLastYear": 462,
+      "daysSinceLastCommit": 2,
+      "ageDays": 864
+    },
+    "yetone/magpie": {
+      "health": 84.7,
+      "contributors": 168,
+      "commitsLastYear": 9101,
+      "daysSinceLastCommit": 0,
+      "ageDays": 62
+    },
+    "yusufkaraaslan/skill_seekers": {
+      "health": 77.1,
+      "contributors": 56,
+      "commitsLastYear": 116,
+      "daysSinceLastCommit": 9,
+      "ageDays": 403
+    },
+    "yylo-dev/yylo": {
+      "health": 61,
+      "contributors": 7,
+      "commitsLastYear": 1098,
+      "daysSinceLastCommit": 1,
+      "ageDays": 321
+    },
+    "yylo-dev/yylo-benchmark": {
+      "health": 50.1,
+      "contributors": 4,
+      "commitsLastYear": 67,
+      "daysSinceLastCommit": 41,
+      "ageDays": 99
+    },
+    "zai-org/zcode": {
+      "health": 66.1,
+      "contributors": 3,
+      "commitsLastYear": 12,
+      "daysSinceLastCommit": 2,
+      "ageDays": 65
+    },
+    "zaidmukaddam/scira": {
+      "health": 50.7,
+      "contributors": 20,
+      "commitsLastYear": 0,
+      "daysSinceLastCommit": 104,
+      "ageDays": 838
+    },
+    "zed-industries/zed": {
+      "health": 95.9,
+      "contributors": 2439,
+      "commitsLastYear": 1296,
+      "daysSinceLastCommit": 1,
+      "ageDays": 2103
+    },
+    "zenml-io/zenml": {
+      "health": 77.4,
+      "contributors": 153,
+      "commitsLastYear": 158,
+      "daysSinceLastCommit": 5,
+      "ageDays": 2196
+    },
+    "zeroclaw-labs/zeroclaw": {
+      "health": 88.7,
+      "contributors": 491,
+      "commitsLastYear": 1074,
+      "daysSinceLastCommit": 0,
+      "ageDays": 284
+    },
+    "zgsm-ai/costrict": {
+      "health": 62.1,
+      "contributors": 276,
+      "commitsLastYear": 6,
+      "daysSinceLastCommit": 56,
+      "ageDays": 593
+    },
+    "zhayujie/cowagent": {
+      "health": 85.3,
+      "contributors": 230,
+      "commitsLastYear": 2450,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1570
+    },
+    "zhuyansen/backlink-guard": {
+      "health": 52.2,
+      "contributors": 2,
+      "commitsLastYear": 40,
+      "daysSinceLastCommit": 4,
+      "ageDays": 39
+    },
+    "zhuyansen/new-term-radar": {
+      "health": 62.3,
+      "contributors": 6,
+      "commitsLastYear": 62,
+      "daysSinceLastCommit": 3,
+      "ageDays": 43
+    },
+    "zipstack/unstract": {
+      "health": 72.1,
+      "contributors": 31,
+      "commitsLastYear": 192,
+      "daysSinceLastCommit": 1,
+      "ageDays": 1006
+    },
+    "zjunlp/easyedit": {
+      "health": 66,
+      "contributors": 77,
+      "commitsLastYear": 14,
+      "daysSinceLastCommit": 18,
+      "ageDays": 1295
+    }
+  }
+}

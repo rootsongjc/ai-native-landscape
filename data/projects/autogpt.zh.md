@@ -11,7 +11,6 @@ tags:
 description: 用于构建、部署与运行连续智能体的平台，支持自托管与平台化部署。
 author: Significant-Gravitas
 ossDate: '2023-03-16T09:21:07.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

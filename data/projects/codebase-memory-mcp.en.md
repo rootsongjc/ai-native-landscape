@@ -17,7 +17,6 @@ description: >-
   Supports 158 languages with sub-millisecond queries and 99% fewer tokens, shipped as a single static binary with zero dependencies.
 author: DeusData
 ossDate: '2026-02-24T22:01:00Z'
-featured: false
 status: tracked
 ---
 

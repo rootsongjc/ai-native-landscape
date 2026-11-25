@@ -13,7 +13,6 @@ tags:
 description: 开源 AI 研究 Agent，自动化文献检索、论文分析和知识综合。
 author: Companion Inc
 ossDate: '2026-03-19T00:00:00Z'
-featured: false
 status: tracked
 ---
 

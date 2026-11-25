@@ -14,7 +14,6 @@ tags:
 description: Open-source agent harness from DeepSeek AI built on an "everything is a plugin" architecture powered by Cordis.
 author: deepseek-ai
 ossDate: '2026-08-13T11:56:32Z'
-featured: false
 status: tracked
 ---
 

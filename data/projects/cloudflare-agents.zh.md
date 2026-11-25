@@ -12,7 +12,6 @@ tags:
 description: Cloudflare Agents：Cloudflare 提供的开源边缘 AI Agent 框架，支持状态管理、实时通信与扩展集成。
 author: Cloudflare
 ossDate: '2025-01-29T23:14:04.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

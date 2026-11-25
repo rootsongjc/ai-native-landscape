@@ -13,7 +13,6 @@ tags:
 description: '透明的容器内 GPU 资源控制器，通过拦截 CUDA 调用强制执行显存与算力限制，无需修改应用或驱动。'
 author: Project-HAMi
 ossDate: '2024-01-23T09:36:22.000Z'
-featured: false
 status: tracked
 ---
 

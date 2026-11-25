@@ -13,7 +13,6 @@ tags:
 description: 'A transparent in-container GPU resource controller that enforces memory and compute limits by intercepting CUDA calls, with no application or driver changes.'
 author: Project-HAMi
 ossDate: '2024-01-23T09:36:22.000Z'
-featured: false
 status: tracked
 ---
 

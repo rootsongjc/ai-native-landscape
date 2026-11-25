@@ -18,7 +18,6 @@ description: >-
   Skill、Claude Code 插件和 MCP 服务器四种用法。
 author: zhuyansen
 ossDate: '2026-10-13'
-featured: false
 status: tracked
 ---
 ## 详细介绍

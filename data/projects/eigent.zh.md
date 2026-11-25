@@ -12,7 +12,6 @@ tags:
 description: 一个开源的多智能体工作台，支持本地部署、MCP 工具集成与企业功能，旨在将复杂工作流自动化并提升生产力。
 author: Eigent
 ossDate: '2025-07-29T15:56:02Z'
-featured: false
 status: tracked
 ---
 Eigent 是一个开源的桌面级多智能体协作平台，作为云端协作工具的本地免费替代方案。它基于 CAMEL-AI 多智能体框架构建，通过可视化编排多个 AI 智能体来解锁卓越的生产力，支持本地和云端两种部署模式。

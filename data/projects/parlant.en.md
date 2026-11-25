@@ -16,7 +16,6 @@ description: >-
   ensure agents follow your rules.
 author: Emcie
 ossDate: '2024-02-15T20:16:15.000Z'
-featured: false
 status: tracked
 ---
 

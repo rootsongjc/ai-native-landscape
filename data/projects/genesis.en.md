@@ -13,7 +13,6 @@ tags:
 description: Universal physics simulation and generative data platform for robotics and embodied AI, open-source physics engine.
 author: Genesis-Embodied-AI
 ossDate: '2023-10-31T03:33:11.000Z'
-featured: false
 status: tracked
 ---
 ## Introduction

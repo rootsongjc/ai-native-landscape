@@ -15,7 +15,6 @@ tags:
 description: A composable TypeScript toolkit for building agent applications from a zero-dependency core and independently installable packages for adapters, runtime, tools, skills, memory, RAG, sandboxing, observability, and evaluation.
 author: AgentsKit
 ossDate: '2026-04-02'
-featured: false
 status: tracked
 ---
 

@@ -17,7 +17,6 @@ description: >-
   三种形态。
 author: headroomlabs-ai
 ossDate: '2026-01-07'
-featured: false
 status: tracked
 ---
 

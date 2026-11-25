@@ -14,7 +14,6 @@ tags:
 description: ScrapeGraphAI 是一个基于大语言模型的网页与文档爬取库，旨在将网站和本地文档高效转换为结构化数据并支持多种集成与 SDK。
 author: ScrapeGraph AI
 ossDate: '2024-01-27T16:54:38.000Z'
-featured: false
 status: tracked
 ---
 

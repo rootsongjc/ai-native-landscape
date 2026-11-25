@@ -3,7 +3,7 @@ name: Langfuse
 slug: langfuse
 homepage: https://langfuse.com/
 repo: https://github.com/langfuse/langfuse
-license: Unknown
+license: MIT
 category: training-optimization
 subCategory: observability-monitoring
 tags:
@@ -15,7 +15,6 @@ description: >-
   for AI applications.
 author: Langfuse
 ossDate: '2023-05-18T17:47:09.000Z'
-featured: false
 status: tracked
 ---
 

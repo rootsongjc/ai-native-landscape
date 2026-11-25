@@ -13,7 +13,6 @@ tags:
 description: Plano 是一个开源 AI 网关与策略运行时，用于在生产环境中对 LLM/API 流量进行路由、安全治理与可观测性管理。
 author: Katanemo
 ossDate: '2026-04-10T00:00:00Z'
-featured: false
 status: tracked
 ---
 

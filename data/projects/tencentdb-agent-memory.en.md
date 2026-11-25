@@ -3,7 +3,7 @@ name: TencentDB Agent Memory
 slug: tencentdb-agent-memory
 homepage: null
 repo: https://github.com/TencentCloud/TencentDB-Agent-Memory
-license: Unknown
+license: MIT
 category: rag-knowledge
 subCategory: agent-memory-context
 tags:
@@ -15,7 +15,6 @@ description: >-
   dependencies.
 author: Tencent
 ossDate: '2026-04-07T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 

@@ -14,7 +14,6 @@ description: >-
   easy to build similarity search and semantic search applications.
 author: Hugging Face
 ossDate: '2023-10-13T13:36:51.000Z'
-featured: false
 status: tracked
 ---
 

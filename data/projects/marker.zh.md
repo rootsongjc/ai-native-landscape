@@ -11,7 +11,6 @@ tags:
 description: 快速准确地将 PDF 转换为 Markdown、JSON、块和 HTML 的工具。
 author: Datalab.to
 ossDate: '2023-10-30T20:14:08.000Z'
-featured: true
 status: tracked
 ---
 

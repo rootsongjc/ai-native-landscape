@@ -14,7 +14,6 @@ description: >-
   applications autonomously.
 author: InsForge
 ossDate: '2025-07-29T05:56:00.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

@@ -3,7 +3,7 @@ name: Oh My OpenCode
 slug: oh-my-opencode
 homepage: null
 repo: https://github.com/code-yeongyu/oh-my-openagent
-license: Unknown
+license: Other
 category: coding-devtools
 subCategory: coding-agents
 tags:
@@ -12,7 +12,6 @@ tags:
 description: Oh My OpenCode 是围绕 OpenCode 生态的 AI 编码工具集，适用于代码生成、改写与开发流程提效。
 author: Community
 ossDate: '2024-01-01T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 

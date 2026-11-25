@@ -14,7 +14,6 @@ description: >-
   enabling AI-assisted 3D modeling and scene manipulation.
 author: Siddharth Ahuja
 ossDate: '2025-03-07T09:58:58.000Z'
-featured: false
 status: tracked
 ---
 BlenderMCP is an MCP server for Blender that allows AI agents to control Blender for 3D modeling and rendering tasks. It connects Blender to Claude AI using the Model Context Protocol, enabling AI-driven scene creation and interactive operations through natural language or structured commands.

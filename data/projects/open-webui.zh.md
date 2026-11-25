@@ -13,7 +13,6 @@ tags:
 description: 可扩展、功能丰富的网络界面，用于与大语言模型交互，提供类似 ChatGPT 的体验，支持多种模型和自定义选项。
 author: Open WebUI Team
 ossDate: '2023-10-06T22:08:27.000Z'
-featured: false
 status: tracked
 ---
 

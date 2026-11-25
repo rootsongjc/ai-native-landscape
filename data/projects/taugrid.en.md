@@ -18,7 +18,6 @@ description: >-
   Kubernetes clusters, from data preparation to distributed training, fine-tuning, and inference.
 author: Azure
 ossDate: '2026-07-24'
-featured: false
 status: tracked
 ---
 

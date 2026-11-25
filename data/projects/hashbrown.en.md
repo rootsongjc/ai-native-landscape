@@ -12,7 +12,6 @@ tags:
 description: A framework for running AI agents in the browser with Angular and React integrations.
 author: Liveloveapp
 ossDate: '2025-03-26T21:26:59Z'
-featured: false
 status: tracked
 ---
 

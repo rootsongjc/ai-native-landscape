@@ -11,7 +11,6 @@ tags:
 description: 一个面向可复现训练与部署的轻量级 ChatGPT 克隆，目标实现低成本（$100 级别）可运行的端到端 LLM 系统。
 author: Andrej Karpathy
 ossDate: '2025-10-13T13:46:35.000Z'
-featured: false
 status: tracked
 ---
 

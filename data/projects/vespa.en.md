@@ -15,7 +15,6 @@ description: >-
   inference, supporting vector search, custom scoring, and near-real-time indexing.
 author: vespa-engine
 ossDate: '2016-06-03T20:54:20Z'
-featured: false
 status: tracked
 ---
 

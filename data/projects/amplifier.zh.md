@@ -12,7 +12,6 @@ tags:
 description: 微软推出的开发与部署辅助工具，专注于 AI 项目的性能分析、模型部署和流水线支持。
 author: Microsoft
 ossDate: '2025-09-09T22:21:51.000Z'
-featured: false
 status: tracked
 ---
 ## 概述

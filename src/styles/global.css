@@ -1562,6 +1562,7 @@ html[data-theme='dark'] .methodology-grid article {
   font-size: 0.76rem;
   color: var(--muted);
   font-weight: 600;
+  text-decoration: none;
 }
 
 .status-legend__item .status-dot {
@@ -1771,6 +1772,9 @@ html[data-theme='dark'] .methodology-grid article {
 .status-dot--incubating { background: #2563eb; }
 .status-dot--sandbox { background: #7c3aed; }
 .status-dot--tracked { background: #0a84ff; }
+.status-dot--mature { background: #1f7a45; }
+.status-dot--growing { background: #2563eb; }
+.status-dot--emerging { background: #94a3b8; }
 .status-dot--recommended { background: #0f9f6e; }
 .status-dot--worthWatching { background: #d97706; }
 .status-dot--newlyAdded { background: #06b6d4; }

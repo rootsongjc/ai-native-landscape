@@ -16,7 +16,6 @@ description: >-
   to 3x faster with more accurate results.
 author: Aiden Bai
 ossDate: '2025-01-15'
-featured: true
 status: tracked
 ---
 

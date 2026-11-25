@@ -13,7 +13,6 @@ description: >-
   and data locality to support large-scale training.
 author: DeepSeek
 ossDate: '2025-02-27T13:36:53.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

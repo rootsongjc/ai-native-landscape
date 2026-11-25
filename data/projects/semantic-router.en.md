@@ -15,7 +15,6 @@ description: >-
   accuracy and efficiency.
 author: vLLM Semantic Router Team
 ossDate: '2025-08-26T21:49:50.000Z'
-featured: false
 status: tracked
 ---
 

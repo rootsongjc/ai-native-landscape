@@ -12,7 +12,6 @@ tags:
 description: ElizaOS 是一个面向多智能体与应用部署的开源平台，提供从代理创建、文档摄取到可视化管理的一体化工具链，适用于构建复杂的多智能体系统与线上服务。
 author: ElizaOS
 ossDate: '2023-08-01T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

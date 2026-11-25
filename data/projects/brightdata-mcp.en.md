@@ -14,7 +14,6 @@ tags:
 description: MCP server providing an all-in-one solution for public web access — crawling, scraping, and structured data extraction for AI agents.
 author: brightdata
 ossDate: '2025-04-15T10:55:56Z'
-featured: false
 status: tracked
 ---
 

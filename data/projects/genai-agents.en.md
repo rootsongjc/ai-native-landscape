@@ -14,7 +14,6 @@ description: >-
   applications and fostering a vibrant developer community.
 author: NirDiamant
 ossDate: '2024-09-09T20:10:19.000Z'
-featured: false
 status: tracked
 ---
 GenAI Agents is one of the most comprehensive generative AI agent development resource libraries available, containing 45+ carefully designed agent implementation cases. The project provides a complete learning path and practical guide for building interactive AI systems, ranging from simple chatbots to complex multi-agent architectures.

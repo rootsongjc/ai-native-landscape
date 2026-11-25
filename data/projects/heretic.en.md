@@ -18,7 +18,6 @@ description: >-
   parameters by co-minimizing refusals and KL divergence from the original model.
 author: Philipp Emanuel Weidmann
 ossDate: '2025-03-16'
-featured: false
 status: tracked
 ---
 

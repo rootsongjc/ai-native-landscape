@@ -12,7 +12,6 @@ tags:
 description: 基于 JAX/XLA 的可扩展深度学习库，支持大规模模型的开发、训练与部署。
 author: Apple
 ossDate: '2023-02-25T01:33:06.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

@@ -13,7 +13,6 @@ tags:
 description: ClearML 是一个开源的 MLOps 平台，提供实验管理、数据管理、流水线与模型服务等能力。
 author: ClearML
 ossDate: '2019-06-10T08:18:32Z'
-featured: false
 status: tracked
 ---
 ClearML 是一个自动化 CI/CD 平台，通过统一的 MLOps/LLMOps 解决方案简化 AI 工作流，涵盖实验管理、数据管理、流水线、编排、调度和模型服务。它帮助团队实现实验可复现性、模型版本管理和全链路训练可观测性，同时支持云端和自托管部署。

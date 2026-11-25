@@ -16,7 +16,6 @@ description: >-
   collaboration, and one-click feedback, compatible with Claude Code, Copilot CLI, Gemini CLI, and more.
 author: backnotprop
 ossDate: '2025-05-01'
-featured: false
 status: tracked
 ---
 

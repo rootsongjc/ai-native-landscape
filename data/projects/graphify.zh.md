@@ -17,7 +17,6 @@ description: >-
   都有依据，不使用向量存储。
 author: Graphify-Labs
 ossDate: '2026-04-03'
-featured: false
 status: tracked
 ---
 

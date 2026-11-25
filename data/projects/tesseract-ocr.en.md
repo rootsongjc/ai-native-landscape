@@ -13,7 +13,6 @@ description: >-
   used for text extraction and document digitization.
 author: Stefan Weil, Zdenko Podobny et al.
 ossDate: '2014-08-12T18:04:59.000Z'
-featured: false
 status: tracked
 ---
 

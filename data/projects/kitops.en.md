@@ -14,7 +14,6 @@ description: >-
   artifacts.
 author: CNCF
 ossDate: '2024-02-02T18:53:31Z'
-featured: false
 status: tracked
 ---
 

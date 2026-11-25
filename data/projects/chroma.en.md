@@ -15,7 +15,6 @@ description: >-
   intelligent RAG systems.
 author: chroma-core
 ossDate: '2022-10-05T17:58:44.000Z'
-featured: false
 status: tracked
 ---
 ## Introduction

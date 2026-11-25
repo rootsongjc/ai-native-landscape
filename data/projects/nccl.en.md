@@ -12,7 +12,6 @@ tags:
 description: High-performance collective communication primitives for GPUs, optimized for PCIe, NVLink, NVSwitch and RDMA networks.
 author: NVIDIA
 ossDate: '2015-06-01T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 

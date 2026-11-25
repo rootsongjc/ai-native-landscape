@@ -14,7 +14,6 @@ tags:
 description: A high-performance, hardware-isolated sandbox service for AI agents built on RustVMM and KVM, with E2B SDK compatibility and sub-60ms cold starts.
 author: Tencent Cloud
 ossDate: '2026-04-10'
-featured: false
 status: tracked
 ---
 

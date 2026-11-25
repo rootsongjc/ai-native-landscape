@@ -12,7 +12,6 @@ tags:
 description: An autonomous data labeling agent framework for building adaptable data pipelines and skills.
 author: HumanSignal
 ossDate: '2023-08-30T12:06:57.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

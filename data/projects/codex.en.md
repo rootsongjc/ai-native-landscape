@@ -11,7 +11,6 @@ tags:
 description: Codex is OpenAI's local coding agent that supports the MCP protocol and integrates with ChatGPT accounts or API keys.
 author: OpenAI
 ossDate: '2025-04-13T05:37:54.000Z'
-featured: false
 status: tracked
 ---
 Codex is OpenAI's AI coding agent that runs in the cloud and handles full software engineering tasks autonomously. It can understand codebases, generate and refactor code, write tests, and fix bugs across entire projects, combining deep code comprehension with autonomous execution to complete complex engineering tasks end-to-end.

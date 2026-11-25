@@ -16,7 +16,6 @@ description: >-
   into enterprise Java applications.
 author: LangChain4j
 ossDate: '2023-06-20T15:30:29Z'
-featured: false
 status: tracked
 ---
 

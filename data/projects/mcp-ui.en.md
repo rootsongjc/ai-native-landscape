@@ -14,7 +14,6 @@ description: >-
   components and remote DOM resources to MCP hosts.
 author: idosal
 ossDate: '2025-05-13T22:41:43.000Z'
-featured: false
 status: tracked
 ---
 

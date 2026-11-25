@@ -13,7 +13,6 @@ description: >-
   applications by combining document stores, vector search, and LLMs.
 author: deepset-ai
 ossDate: '2019-11-14T09:05:28.000Z'
-featured: false
 status: tracked
 ---
 

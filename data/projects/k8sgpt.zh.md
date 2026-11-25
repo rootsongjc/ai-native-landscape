@@ -12,7 +12,6 @@ tags:
 description: 为 Kubernetes 提供诊断与分析能力的 AI 工具，使用 LLM 对集群进行问题定位与解释。
 author: K8sGPT
 ossDate: '2023-03-21T19:58:16.000Z'
-featured: false
 status: tracked
 ---
 

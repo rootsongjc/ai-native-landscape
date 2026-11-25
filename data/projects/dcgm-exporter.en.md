@@ -13,7 +13,6 @@ tags:
 description: 'A Prometheus exporter for NVIDIA GPU telemetry, built on NVIDIA Data Center GPU Manager (DCGM).'
 author: NVIDIA
 ossDate: '2021-08-11T15:40:37.000Z'
-featured: false
 status: tracked
 ---
 

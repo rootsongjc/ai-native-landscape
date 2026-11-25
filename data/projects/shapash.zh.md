@@ -13,7 +13,6 @@ tags:
 description: 用于将机器学习模型的预测解释为交互式可视化报告，帮助业务人员与决策者理解模型决策。
 author: MAIF
 ossDate: '2020-04-29T07:34:23Z'
-featured: false
 status: tracked
 ---
 

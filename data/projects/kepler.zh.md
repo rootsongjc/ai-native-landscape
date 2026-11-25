@@ -13,7 +13,6 @@ tags:
 description: 'CNCF 沙箱项目，以 Prometheus 导出器的形式度量 Kubernetes 负载在 CPU 与 GPU 上的能耗。'
 author: Sustainable Computing
 ossDate: '2022-02-01T19:48:56.000Z'
-featured: false
 status: tracked
 ---
 

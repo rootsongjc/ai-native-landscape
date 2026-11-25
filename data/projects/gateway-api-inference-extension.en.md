@@ -13,7 +13,6 @@ description: >-
   GenAI inference deployments.
 author: Kubernetes SIGs
 ossDate: '2024-08-28T20:04:10.000Z'
-featured: false
 status: tracked
 ---
 ## Introduction

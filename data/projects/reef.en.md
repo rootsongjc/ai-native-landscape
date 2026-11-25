@@ -17,7 +17,6 @@ description: >-
   their harness — prompts, rules, and skills.
 author: Human-Agent-Society
 ossDate: '2026-08-31'
-featured: false
 status: tracked
 ---
 

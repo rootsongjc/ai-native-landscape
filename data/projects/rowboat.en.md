@@ -14,7 +14,6 @@ tags:
 description: Open-source desktop AI coworker that indexes your work into a living knowledge graph and acts on it with built-in work surfaces.
 author: rowboatlabs
 ossDate: '2025-01-13T09:30:40Z'
-featured: false
 status: tracked
 ---
 

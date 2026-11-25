@@ -14,7 +14,6 @@ description: >-
   and improved GPU utilization.
 author: OVG Project
 ossDate: '2025-05-27T17:34:02.000Z'
-featured: false
 status: tracked
 ---
 

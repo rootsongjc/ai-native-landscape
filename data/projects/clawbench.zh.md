@@ -14,7 +14,6 @@ tags:
 description: ClawBench 是一个开源基准，用于评测浏览器 AI 智能体在真实线上网站上完成日常任务的能力，并提供隔离运行环境与五层执行轨迹。
 author: TIGER-AI-Lab
 ossDate: '2026-04-10'
-featured: false
 status: tracked
 ---
 

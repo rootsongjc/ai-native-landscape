@@ -14,7 +14,6 @@ tags:
 description: Z.ai's open-source coding agent harness that delivers an Electron desktop app, a browser-based workbench, and a terminal CLI/TUI from a single TypeScript codebase.
 author: Z.ai
 ossDate: '2026-09-20T12:01:16Z'
-featured: false
 status: tracked
 ---
 

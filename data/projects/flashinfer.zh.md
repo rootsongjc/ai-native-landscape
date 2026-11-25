@@ -12,7 +12,6 @@ tags:
 description: FlashInfer 是一个面向 LLM 推理与服务的高性能内核库，提供高效的 attention 与采样内核以提升 GPU 推理吞吐与延迟表现。
 author: flashinfer-ai
 ossDate: '2023-01-01T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

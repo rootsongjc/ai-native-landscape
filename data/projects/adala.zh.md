@@ -12,7 +12,6 @@ tags:
 description: Adala 是一个面向数据处理与标注任务的自主代理框架，支持多运行时与技能学习。
 author: HumanSignal
 ossDate: '2023-08-30T12:06:57.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

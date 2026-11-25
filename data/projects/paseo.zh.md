@@ -16,7 +16,6 @@ description: >-
   开源的智能体开发环境，覆盖桌面、移动端、Web 和 CLI，可通过同一界面并行运行多个编码智能体，每个智能体使用独立的 worktree。
 author: Paseo
 ossDate: '2025-10-13T12:27:02.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

@@ -12,7 +12,6 @@ tags:
 description: 生成式 AI 智能体技术的全面教程和实现集合，包含 45+ 个从基础到高级的智能体实现，是构建智能交互式 AI 系统的完整指南。
 author: NirDiamant
 ossDate: '2024-09-09T20:10:19.000Z'
-featured: false
 status: tracked
 ---
 GenAI Agents 是目前最全面的生成式 AI 智能体开发资源库之一，包含了 45+ 个精心设计的智能体实现案例。该项目从简单的对话机器人到复杂的多智能体系统，为开发者提供了构建智能交互式 AI 系统的完整学习路径和实践指南。

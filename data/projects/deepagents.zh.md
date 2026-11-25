@@ -12,7 +12,6 @@ tags:
 description: LangChain 提供的深度智能体库，支持规划、子智能体、文件系统工具与持久记忆，用于构建多步骤和长期推理的智能体。
 author: LangChain
 ossDate: '2025-07-27T23:07:53.000Z'
-featured: false
 status: tracked
 ---
 ## 详细介绍

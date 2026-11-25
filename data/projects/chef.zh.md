@@ -12,7 +12,6 @@ tags:
 description: 支持后端的一体化 AI 应用构建器，内置数据库、免配置认证、实时 UI 与后台工作流，帮助开发者快速搭建可运行的全栈 AI 应用。
 author: Convex Team
 ossDate: '2025-03-31T19:00:59.000Z'
-featured: false
 status: tracked
 ---
 Chef 是唯一真正理解后端的 AI 应用构建器。由 Convex 团队打造，它内置了数据库、零配置认证、文件上传、实时界面和后台工作流，使开发者无需拼凑各种后端服务即可快速构建全栈 AI 应用。

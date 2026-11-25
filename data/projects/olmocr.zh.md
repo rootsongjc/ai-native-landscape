@@ -12,7 +12,6 @@ tags:
 description: 用于将 PDF 与图像化文档线性化为可读纯文本和 Markdown 的工具包，面向 LLM 数据集构建与大规模文档处理。
 author: Allen Institute for AI (AI2)
 ossDate: '2024-09-17T14:53:40.000Z'
-featured: false
 status: tracked
 ---
 

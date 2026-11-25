@@ -14,7 +14,6 @@ tags:
 description: A zero-dependency Python CLI that unifies local MCP server configs across every AI client and serves them all as a single stdio MCP server, keeping tool schemas and skill files out of the context window.
 author: activeing123
 ossDate: '2026-07-27'
-featured: false
 status: tracked
 ---
 

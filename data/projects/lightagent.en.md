@@ -14,7 +14,6 @@ description: >-
   and multi-agent scenarios.
 author: Wanxing AI
 ossDate: '2025-01-20T12:31:57Z'
-featured: false
 status: tracked
 ---
 

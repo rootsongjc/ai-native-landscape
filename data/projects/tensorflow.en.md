@@ -13,7 +13,6 @@ tags:
 description: Google's open-source end-to-end machine learning platform for building and training deep learning models.
 author: Google
 ossDate: '2015-11-07T01:19:20.000Z'
-featured: false
 status: tracked
 ---
 

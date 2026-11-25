@@ -15,7 +15,6 @@ tags:
 description: ruflo 是领先的 Claude 智能体编排平台，可部署智能多智能体群、协调自主工作流，并构建对话式 AI 系统，具备企业级架构和分布式群智能。
 author: ruvnet
 ossDate: '2025-06-02T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 

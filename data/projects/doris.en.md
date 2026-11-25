@@ -11,7 +11,6 @@ tags:
 description: Apache Doris is an easy-to-use, high-performance unified analytics database for real-time and offline analysis.
 author: Apache
 ossDate: '2017-08-10T12:13:30Z'
-featured: false
 status: tracked
 ---
 ## Overview

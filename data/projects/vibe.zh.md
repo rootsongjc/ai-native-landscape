@@ -11,7 +11,6 @@ tags:
 description: 一款支持完全离线运行的跨平台音视频转录工具，强调隐私保护与批量处理能力。
 author: thewh1teagle
 ossDate: '2024-01-08T03:29:06.000Z'
-featured: false
 status: tracked
 ---
 

@@ -18,7 +18,6 @@ description: >-
   on clouds, Kubernetes, and bare metal.
 author: dstackai
 ossDate: '2022-01-04'
-featured: false
 status: tracked
 ---
 

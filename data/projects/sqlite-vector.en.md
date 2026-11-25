@@ -3,7 +3,7 @@ name: sqlite-vector
 slug: sqlite-vector
 homepage: https://sqlite.ai/
 repo: https://github.com/sqliteai/sqlite-vector
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: vector-databases
 tags:
@@ -15,7 +15,6 @@ description: >-
   extension.
 author: SQLiteAI
 ossDate: '2025-04-07T11:17:59Z'
-featured: false
 status: tracked
 ---
 

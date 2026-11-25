@@ -16,7 +16,6 @@ tags:
 description: AI 智能体技能，可跨 Reddit、X、YouTube、HN、Polymarket 及全网研究任意主题，并生成带引用的结构化摘要。
 author: mvanhorn
 ossDate: '2026-01-23'
-featured: false
 status: tracked
 ---
 

@@ -16,7 +16,6 @@ description: >-
   renderers, and CLI tooling for local deployment and integration.
 author: iOfficeAI
 ossDate: '2025-08-07T10:29:51Z'
-featured: false
 status: tracked
 ---
 ## Overview

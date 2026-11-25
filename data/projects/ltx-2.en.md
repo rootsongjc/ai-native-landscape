@@ -3,7 +3,7 @@ name: LTX-2
 slug: ltx-2
 homepage: https://ltx.io
 repo: https://github.com/Lightricks/LTX-2
-license: Unknown
+license: Apache-2.0
 category: models-modalities
 subCategory: image-video-generation
 tags:
@@ -16,7 +16,6 @@ description: >-
   model that generates synchronized audio and video in one model, from Lightricks.
 author: Lightricks
 ossDate: '2026-01-03'
-featured: false
 status: tracked
 ---
 

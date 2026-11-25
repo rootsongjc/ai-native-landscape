@@ -17,7 +17,6 @@ description: >-
   and semantic memory with RAG-based retrieval.
 author: Moorcheh AI
 ossDate: '2026-03-23T23:08:38Z'
-featured: false
 status: tracked
 ---
 

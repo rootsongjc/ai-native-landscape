@@ -12,7 +12,6 @@ tags:
 description: An open-source ETL solution to convert complex documents into clean, structured formats for language-model workflows.
 author: Unstructured
 ossDate: '2022-09-26T21:53:41.000Z'
-featured: false
 status: tracked
 ---
 

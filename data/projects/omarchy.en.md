@@ -17,7 +17,6 @@ tags:
 description: An opinionated Arch Linux desktop by DHH built on the Hyprland Wayland compositor, treating AI coding agents as first-class citizens with pre-wired agent launchers, subscription usage tracking, and crash diagnosis.
 author: DHH (omacom)
 ossDate: '2025-06-01T07:26:22Z'
-featured: false
 status: tracked
 ---
 

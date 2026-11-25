@@ -14,7 +14,6 @@ tags:
 description: 一个开源的 Java 库，提供统一 API 用于在企业级 Java 应用中集成大语言模型与向量数据库。
 author: LangChain4j
 ossDate: '2023-06-20T15:30:29Z'
-featured: false
 status: tracked
 ---
 

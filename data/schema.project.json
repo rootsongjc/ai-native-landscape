@@ -44,7 +44,6 @@
       }
     },
     "ossDate": { "type": "string" },
-    "featured": { "type": "boolean" },
     "thumbnail": { "type": "string" },
     "source": {
       "type": "object",

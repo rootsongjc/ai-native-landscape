@@ -11,7 +11,6 @@ tags:
 description: 一个面向 AI 的 Web 数据 API，将整个网站转换为干净的 markdown 或结构化数据，方便用于 RAG 与知识库构建。
 author: Mendable AI
 ossDate: '2024-04-15T21:02:29.000Z'
-featured: false
 status: tracked
 ---
 Firecrawl 是一个专为 AI 工作流设计的 Web 数据 API，支持大规模搜索、抓取和交互网站内容。它能够爬取目标网站、发现可访问的子页面，并将网页内容转换为干净的 markdown 或结构化数据，优化为适合检索增强生成（RAG）和大语言模型使用的格式。

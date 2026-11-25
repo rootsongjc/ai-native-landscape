@@ -14,7 +14,6 @@ description: >-
   generation.
 author: FunAudioLLM
 ossDate: '2024-07-03T02:59:22.000Z'
-featured: false
 status: tracked
 ---
 ## Introduction

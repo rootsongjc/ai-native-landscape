@@ -12,7 +12,6 @@ tags:
 description: CVAT is an industry-leading computer vision annotation tool suitable for annotation at any scale.
 author: CVAT
 ossDate: '2018-06-29T14:02:45.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

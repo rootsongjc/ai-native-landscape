@@ -12,7 +12,6 @@ tags:
 description: 基于真实流量自动生成 API 和集成测试的开发者工具，支持记录并回放 API 调用、数据库操作与消息流，生成可重复运行的测试与 mocks。
 author: Keploy
 ossDate: '2022-01-19T10:40:31.000Z'
-featured: false
 status: tracked
 ---
 

@@ -12,7 +12,6 @@ tags:
 description: A Nix-powered, reproducible and shareable development environment and package manager.
 author: Flox
 ossDate: '2022-12-22T15:52:43Z'
-featured: false
 status: tracked
 ---
 Flox provides a deterministic foundation for the software development lifecycle, powered by Nix to deliver reproducible and shareable development environments. It ensures runtime consistency across local development, CI pipelines, and image builds by layering and replacing dependencies where needed, eliminating the "works on my machine" problem.

@@ -17,7 +17,6 @@ description: >-
   Rust binary plus Postgres.
 author: deeplethe
 ossDate: '2026-08-07'
-featured: false
 status: tracked
 ---
 

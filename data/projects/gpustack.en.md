@@ -12,7 +12,6 @@ tags:
 description: Open-source GPU cluster manager for efficient model training and high-performance inference orchestration.
 author: gpustack
 ossDate: '2024-05-11T03:41:58.000Z'
-featured: false
 status: tracked
 ---
 

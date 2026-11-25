@@ -16,7 +16,6 @@ tags:
 description: A Python CLI, three Agent Skills, a Claude Code plugin, and an MCP server that catch new AI model, product, and repo names where they first appear (X, Hugging Face trending, GitHub breakout repos, directory sitemaps), then size the search demand behind each name with Google Ads volume and Google Trends to label each keyword prioritize, watch, or skip.
 author: Yansen Zhu
 ossDate: '2026-10-12'
-featured: false
 status: tracked
 ---
 

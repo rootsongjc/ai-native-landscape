@@ -13,7 +13,6 @@ tags:
 description: 用于构建与运行可复现 AI 智能体工作流的开源语言与工具集。
 author: Pipelex
 ossDate: '2025-05-26T07:21:34Z'
-featured: false
 status: tracked
 ---
 

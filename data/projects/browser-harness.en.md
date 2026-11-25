@@ -15,7 +15,6 @@ description: >-
   any browser task, with agents able to write missing functions at runtime.
 author: Browser Use
 ossDate: '2026-04-17T01:56:15Z'
-featured: false
 status: tracked
 ---
 ## Overview

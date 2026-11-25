@@ -11,7 +11,6 @@ tags:
 description: Apache Doris 是一款易用、高性能且统一的分析型数据库，适用于实时与离线分析场景。
 author: Apache
 ossDate: '2017-08-10T12:13:30Z'
-featured: false
 status: tracked
 ---
 ## 简介

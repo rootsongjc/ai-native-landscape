@@ -3,7 +3,7 @@ name: LangChain Go
 slug: langchaingo
 homepage: https://tmc.github.io/langchaingo/
 repo: https://github.com/tmc/langchaingo
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: sdk-frameworks
 tags:
@@ -14,7 +14,6 @@ description: >-
   model-based applications in Go.
 author: tmc
 ossDate: '2023-02-18T20:04:54Z'
-featured: false
 status: tracked
 ---
 

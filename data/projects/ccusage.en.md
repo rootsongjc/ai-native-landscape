@@ -14,7 +14,6 @@ tags:
 description: A CLI tool for analyzing token usage and costs from coding agent CLIs like Claude Code, Codex, and Gemini CLI.
 author: ryoppippi
 ossDate: '2025-05-29'
-featured: false
 thumbnail: ''
 source: ''
 status: tracked

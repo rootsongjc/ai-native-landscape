@@ -1,10 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { localizedPath, SITE, ui } from '../lib/landscape.mjs';
+import { getProjects, levelLabel, levelsSyncedAt, localizedPath, SITE, ui } from '../lib/landscape.mjs';
+import { DIMENSIONS, LEVELS, MAX_POINTS, tierText } from '../lib/levels.mjs';
 
 const { lang = 'en' } = Astro.props;
 const copy = ui(lang);
 const isZh = lang === 'zh';
+const syncedAt = levelsSyncedAt();
+const levelCounts = {};
+for (const project of getProjects()) levelCounts[project.level] = (levelCounts[project.level] || 0) + 1;
 ---
 
 <BaseLayout title={copy.methodologyPageTitle} description={copy.methodologyPageDescription} canonical={localizedPath('/methodology/', lang)} lang={lang}>
@@ -116,27 +120,76 @@ const isZh = lang === 'zh';
       <p class="method-section__intro">{copy.curationNote}</p>
     </section>
 
-        <!-- Reference status -->
-    <section class="method-section">
+    <!-- Project levels -->
+    <section class="method-section" id="project-levels">
       <h2>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-        {copy.projectLifecycle}
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 20h4v-6H3zM10 20h4V9h-4zM17 20h4V4h-4z"/></svg>
+        {copy.projectLevels}
       </h2>
-      <p class="method-section__intro">{copy.projectLifecycleDescription}</p>
-      <div class="method-lifecycle">
-        <article class="method-status" data-status="sandbox">
-          <span class="method-status__badge">{copy.statuses.sandbox}</span>
-          <p>{copy.statusSandboxDescription}</p>
-        </article>
-        <article class="method-status" data-status="incubating">
-          <span class="method-status__badge">{copy.statuses.incubating}</span>
-          <p>{copy.statusIncubatingDescription}</p>
-        </article>
-        <article class="method-status" data-status="graduated">
-          <span class="method-status__badge">{copy.statuses.graduated}</span>
-          <p>{copy.statusGraduatedDescription}</p>
-        </article>
+      <p class="method-section__intro">{copy.projectLevelsDescription}</p>
+
+      <h3 class="method-section__subhead">{copy.levelDimensionsTitle}</h3>
+      <p class="method-section__intro">{copy.levelDimensionsDescription.replace('{count}', DIMENSIONS.length).replace('{max}', MAX_POINTS)}</p>
+      <div class="method-table-wrap">
+        <table class="method-table">
+          <thead>
+            <tr>
+              <th scope="col">{copy.levelDimension}</th>
+              <th scope="col">{copy.levelScoring}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {DIMENSIONS.map((dimension) => (
+              <tr>
+                <th scope="row">
+                  <strong>{copy.levelDimensions[dimension.key].name}</strong>
+                  <span>{copy.levelDimensions[dimension.key].description}</span>
+                </th>
+                <td>
+                  <ul class="method-tiers">
+                    {dimension.tiers.map((tier) => (
+                      <li>
+                        <span class="method-tiers__points">{copy.levelPointsLabel.replace('{points}', tier.points)}</span>
+                        {tierText(dimension.key, tier.points, lang)}
+                      </li>
+                    ))}
+                  </ul>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
+
+      <h3 class="method-section__subhead">{copy.levelRulesTitle}</h3>
+      <div class="method-lifecycle">
+        {LEVELS.map((level) => (
+          <article class="method-status" data-level={level.key}>
+            <span class="method-status__badge">
+              <span class={`status-dot status-dot--${level.key}`} />
+              {levelLabel(level.key, lang)}
+              <small>{levelCounts[level.key] || 0}</small>
+            </span>
+            <p class="method-status__rule">
+              {copy.levelRule[level.key]
+                .replace('{min}', level.minPoints)
+                .replace('{max}', MAX_POINTS)
+                .replace('{required}', Object.entries(level.required)
+                  .map(([key, points]) => copy.levelRequiredPoints.replace('{dimension}', copy.levelDimensions[key].name).replace('{points}', points))
+                  .join(isZh ? '、' : ' and '))}
+            </p>
+            <p>{copy.levelDescriptions[level.key]}</p>
+          </article>
+        ))}
+      </div>
+
+      <h3 class="method-section__subhead">{copy.levelNotesTitle}</h3>
+      <ul class="method-rules">
+        <li>{copy.levelNote1}</li>
+        <li>{copy.levelNote2}</li>
+        <li>{copy.levelNote3}</li>
+      </ul>
+      {syncedAt && <p class="method-section__intro">{copy.levelSyncedAt.replace('{date}', syncedAt)}</p>}
     </section>
 
     <!-- How to Submit -->
@@ -340,7 +393,7 @@ const isZh = lang === 'zh';
   /* Lifecycle */
   .method-lifecycle {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 12px;
   }
   .method-status {
@@ -350,10 +403,12 @@ const isZh = lang === 'zh';
     background: var(--surface);
   }
   .method-status__badge {
-    display: inline-block;
-    font-size: 0.72rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
     font-weight: 600;
-    color: var(--muted);
+    color: var(--text);
     margin-bottom: 8px;
   }
   .method-status p {
@@ -361,6 +416,77 @@ const isZh = lang === 'zh';
     color: var(--muted);
     margin: 0;
     line-height: 1.45;
+  }
+  .method-status__badge small {
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: var(--muted);
+  }
+  .method-status .method-status__rule {
+    margin-bottom: 6px;
+    color: var(--text);
+    font-weight: 600;
+  }
+  .method-table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+  .method-table {
+    width: 100%;
+    min-width: 480px;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+  .method-table th,
+  .method-table td {
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid var(--border);
+    color: var(--muted);
+  }
+  .method-table tbody tr:last-child th,
+  .method-table tbody tr:last-child td {
+    border-bottom: 0;
+  }
+  .method-table thead th {
+    font-weight: 600;
+    color: var(--text);
+    white-space: nowrap;
+  }
+  .method-tiers {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 4px;
+  }
+  .method-tiers li {
+    display: flex;
+    gap: 10px;
+  }
+  .method-tiers__points {
+    flex-shrink: 0;
+    min-width: 3em;
+    color: var(--text);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+  .method-table tbody th {
+    width: 34%;
+    font-weight: 400;
+  }
+  .method-table tbody th strong {
+    display: block;
+    color: var(--text);
+    font-weight: 600;
+  }
+  .method-section__subhead {
+    margin: 20px 0 8px;
+    font-size: 0.95rem;
   }
 
   /* CTA Button */

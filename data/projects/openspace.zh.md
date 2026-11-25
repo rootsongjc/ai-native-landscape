@@ -16,7 +16,6 @@ description: >-
   面向 AI 智能体的质量优先技能中心（Skill Hub）——支持在 Claude Code、Codex、Cursor、OpenClaw 与 nanobot 等智能体间浏览、导入、复用、进化与共享技能，以 MCP 服务形式接入，并依据真实任务结果对技能进行评估。
 author: HKUDS
 ossDate: '2026-03-24T08:01:49Z'
-featured: false
 status: tracked
 ---
 

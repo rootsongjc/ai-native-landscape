@@ -12,7 +12,6 @@ tags:
 description: CAMEL 是一个面向大规模多智能体研究的开源框架，支持模拟、数据生成与协作式代理能力。
 author: CAMEL 社区
 ossDate: '2023-03-17T21:41:54.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

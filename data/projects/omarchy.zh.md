@@ -17,7 +17,6 @@ tags:
 description: 由 DHH 打造的观点鲜明的 Arch Linux 桌面发行版，基于 Hyprland Wayland 合成器，将 AI 编程智能体视为一等公民，预置智能体启动器、订阅用量面板与崩溃诊断。
 author: DHH (omacom)
 ossDate: '2025-06-01T07:26:22Z'
-featured: false
 status: tracked
 ---
 

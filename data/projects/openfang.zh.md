@@ -15,7 +15,6 @@ tags:
 description: 用 Rust 构建的开源智能体操作系统，提供约 32MB 的轻量级运行时，用于 AI Agent 的执行、编排与生命周期管理。
 author: RightNow-AI
 ossDate: '2026-02-24T23:12:38Z'
-featured: false
 status: tracked
 ---
 

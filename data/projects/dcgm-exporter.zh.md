@@ -13,7 +13,6 @@ tags:
 description: '基于 NVIDIA Data Center GPU Manager（DCGM）的 Prometheus 导出器，用于采集 NVIDIA GPU 遥测数据。'
 author: NVIDIA
 ossDate: '2021-08-11T15:40:37.000Z'
-featured: false
 status: tracked
 ---
 

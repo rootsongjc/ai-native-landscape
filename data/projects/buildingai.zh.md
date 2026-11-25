@@ -13,7 +13,6 @@ tags:
 description: BuildingAI 提供可视化低代码界面，帮助开发者和创业者快速搭建 AI 应用并支持商业化能力。
 author: FastBuildAI
 ossDate: '2025-03-14T10:22:39Z'
-featured: false
 status: tracked
 ---
 BuildingAI（FastBuildAI）是一个块式的 AI 应用构建系统，被誉为 AI 时代的 WordPress，任何人都可以用它构建企业智能体、AI 漫画、学术系统和客服等 AI 应用。它面向非技术用户与创业者，提供可视化拖拽界面与内置模型，使团队能够快速搭建原型与上线产品。

@@ -14,7 +14,6 @@ description: >-
   portable JSON.
 author: Google
 ossDate: '2025-09-24T23:14:02Z'
-featured: false
 status: tracked
 ---
 ## Overview

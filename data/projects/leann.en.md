@@ -15,7 +15,6 @@ description: >-
   cloud costs and full privacy.
 author: yichuan-w
 ossDate: '2025-06-09T06:52:59.000Z'
-featured: false
 status: tracked
 ---
 

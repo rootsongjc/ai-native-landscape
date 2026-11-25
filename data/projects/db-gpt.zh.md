@@ -12,7 +12,6 @@ tags:
 description: DB-GPT 是一个面向数据原生应用的框架，集成 RAG、Text2SQL、多模型路由等能力，旨在简化基于数据库的智能应用开发。
 author: Eosphoros AI
 ossDate: '2023-01-01T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

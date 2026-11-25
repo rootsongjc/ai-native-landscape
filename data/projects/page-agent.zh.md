@@ -14,7 +14,6 @@ tags:
 description: 阿里巴巴出品的页面内 JavaScript GUI 智能体。一行脚本即可让任意网页拥有自己的 AI 智能体，通过基于文本的 DOM 操作以自然语言控制界面——无需截图，也无需多模态 LLM。
 author: alibaba
 ossDate: '2025-09-23'
-featured: false
 status: tracked
 ---
 

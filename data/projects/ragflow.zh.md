@@ -12,7 +12,6 @@ tags:
 description: 基于深度文档理解的开源 RAG 引擎，支持复杂文档解析和知识问答。
 author: InfiniFlow
 ossDate: '2023-12-12T06:13:13.000Z'
-featured: false
 status: tracked
 ---
 

@@ -15,7 +15,6 @@ description: >-
   and scalable deployment.
 author: thu-pacman
 ossDate: '2025-02-20T06:34:38Z'
-featured: false
 status: tracked
 ---
 Chitu is a high-performance inference framework for large language models developed by Tsinghua University, focusing on efficiency, flexibility, and availability. It delivers production-grade, low-latency LLM inference across a wide range of deployment scenarios from CPU-only and single-GPU setups to large-scale distributed clusters, with multi-vendor hardware compatibility for enterprise adoption.

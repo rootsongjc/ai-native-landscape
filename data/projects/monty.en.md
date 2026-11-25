@@ -14,7 +14,6 @@ tags:
 description: A minimal, secure Python interpreter written in Rust for safely executing LLM-generated Python code.
 author: Pydantic
 ossDate: '2023-05-28T11:13:38Z'
-featured: false
 status: tracked
 ---
 

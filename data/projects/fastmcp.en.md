@@ -13,7 +13,6 @@ description: >-
   authentication, deployment tooling, and comprehensive server/client features.
 author: jlowin / FastMCP
 ossDate: '2024-11-30T01:47:40.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

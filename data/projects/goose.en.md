@@ -14,7 +14,6 @@ description: >-
   testing, and publishing).
 author: Goose
 ossDate: '2024-08-23T19:03:36.000Z'
-featured: false
 status: tracked
 ---
 Goose is an autonomous AI coding agent developed by Block that can understand and modify codebases with minimal human intervention. It operates as a developer assistant that autonomously handles engineering tasks through an extensible plugin and recipe system, running locally via CLI or desktop client with full developer control over automation workflows.

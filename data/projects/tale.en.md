@@ -17,7 +17,6 @@ tags:
 description: An open-source project workspace where teammates and AI agents share one task board — agents run in persistent sandbox workspaces with per-agent runtime, model, skills, and tools, and results come back as reviewable reports and delivered files.
 author: tale-project
 ossDate: '2025-11-30'
-featured: false
 status: tracked
 ---
 

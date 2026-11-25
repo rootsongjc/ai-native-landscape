@@ -13,7 +13,6 @@ tags:
 description: An open source durable computing platform that simplifies building and deploying highly reliable distributed systems.
 author: Golem Cloud
 ossDate: '2023-11-24T08:54:54Z'
-featured: false
 status: tracked
 ---
 Golem Cloud is an agent-native platform for building AI agents and distributed applications that never lose state and never duplicate work. It runs WebAssembly components as durable execution units, enabling developers to build highly reliable stateful services without manually handling distributed systems complexity.

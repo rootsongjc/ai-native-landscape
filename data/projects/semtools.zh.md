@@ -13,7 +13,6 @@ tags:
 description: 面向命令行的语义搜索与文档解析工具，方便在本地或流水线中进行嵌入检索与解析处理。
 author: run-llama
 ossDate: '2025-08-23T21:56:09Z'
-featured: false
 status: tracked
 ---
 ## 简介

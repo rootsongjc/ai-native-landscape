@@ -14,7 +14,6 @@ description: >-
   workloads.
 author: Apache Software Foundation
 ossDate: '2014-02-25T08:00:08Z'
-featured: false
 status: tracked
 ---
 Apache Spark is a unified analytics engine for large-scale data processing, widely used in ML pipelines across industry. It provides multi-language APIs for Scala, Java, Python, and R, unifying batch processing, stream processing, and machine learning within a single high-performance distributed platform.

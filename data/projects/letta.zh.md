@@ -12,7 +12,6 @@ tags:
 description: 用于构建具备高级记忆与自我改进能力的有状态代理平台，支持本地与云端部署。
 author: letta-ai
 ossDate: '2023-10-11T07:38:37.000Z'
-featured: false
 status: tracked
 ---
 

@@ -12,7 +12,6 @@ tags:
 description: 统一的元数据平台，用于数据发现、数据治理与可观测性，支持丰富的连接器与协作功能。
 author: OpenMetadata
 ossDate: '2021-08-01T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 

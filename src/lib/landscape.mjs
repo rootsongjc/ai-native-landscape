@@ -1,6 +1,7 @@
 import { marked } from 'marked';
 import { buildAuthors, projectAuthorKey } from './authors.mjs';
-import { buildLandscapeIndex, loadCategories, loadProjects, loadTaxonomy } from '../../scripts/lib.mjs';
+import { buildLandscapeIndex, loadCategories, loadProjects, loadSignals, loadTaxonomy } from '../../scripts/lib.mjs';
+import { DIMENSIONS, MAX_POINTS } from './levels.mjs';
 
 marked.use({
   gfm: true,
@@ -73,8 +74,7 @@ export const UI = {
     lmapDetails: '查看详情',
     lmapScore: '评分',
     lmapClose: '关闭',
-    lmapFeatured: '精选',
-    lmapNote: '大图标为精选项目。',
+    lmapNote: '大图标为成熟级别的项目；各子分类内按级别和评定总分排序。',
     homeStartTitle: '从这里开始',
     homeStartDescription: '搜索项目，或按技术领域、评分方法和生命周期探索',
     homeStartSearchTitle: '搜索项目',
@@ -143,11 +143,13 @@ export const UI = {
     quality: '影响力',
     sustainability: '持续性',
     unknown: '未知',
+    levels: {
+      mature: '成熟',
+      growing: '成长',
+      emerging: '新兴',
+    },
     statuses: {
       tracked: '已跟踪',
-      sandbox: '观察中',
-      incubating: '已验证',
-      graduated: '代表项目',
       recommended: '推荐使用',
       worthWatching: '值得关注',
       newlyAdded: '新收录',
@@ -269,14 +271,37 @@ export const UI = {
     curationRule5: '是软件项目，而不是 awesome 列表、提示词合集、纯文档仓库或落地页。',
     curationRule6: '尚未被收录，并且能归入现有的某个子分类。',
     curationNote: '满足以上条件只代表可以进入审核，不保证收录：维护者还会判断项目与 AI Native 的相关性，以及在项目密集的分类中是否有明确的差异点。知名组织的新项目可由维护者破例收录。标准生效前已收录的项目继续保留。未达标的项目在达标后可以在原 issue 中回复 /recheck 重新检查。',
-    projectLifecycle: '参考状态',
-    projectLifecycleDescription: '参考状态只用于帮助社区理解项目在本 Landscape 中的可参考程度，不代表孵化、认证或基金会治理。',
-    statusSandbox: '观察中',
-    statusSandboxDescription: '新收录或信号仍需继续观察的项目，适合进一步调研和验证。',
-    statusIncubating: '已验证',
-    statusIncubatingDescription: '项目已有较清晰的工程价值和社区信号，可作为同类方案的候选参考。',
-    statusGraduated: '代表项目',
-    statusGraduatedDescription: '项目在对应领域具备较高可见度、使用信号或社区活跃度，可作为重点参考对象。',
+    projectLevels: '项目级别',
+    projectLevelsDescription: '每个项目都有一个级别：成熟、成长或新兴。级别不由人工指定，也没有“精选”项目，它完全由公开数据计算得出。级别衡量的是项目的健康度：综合健康度占的分量最重，其余维度用来确认这个分数背后有真实的贡献者、持续的开发和一定的历史。star 数、是否加入基金会、是否厂商中立都不参与评定。本站不隶属于任何基金会，级别不代表任何机构的认证或背书。',
+    levelDimensionsTitle: '评定维度',
+    levelDimensionsDescription: '共 {count} 个维度，满分 {max} 分。每个维度取所满足的最高一档，都不满足计 0 分。',
+    levelDimension: '维度',
+    levelScoring: '计分',
+    levelPointsLabel: '{points} 分',
+    levelDimensions: {
+      health: { name: '社区健康', description: '评分体系给出的综合健康度，综合了活跃度、社区参与度、影响力和持续性。这是权重最高的维度。' },
+      contributors: { name: '贡献者规模', description: '向仓库贡献过代码的人数，反映项目是否依赖少数人。' },
+      activity: { name: '持续活跃', description: '最近一年的提交量和最近一次提交的时间。' },
+      trackRecord: { name: '项目历史', description: '仓库存在的时间，反映项目是否经过时间检验。' },
+    },
+    levelRulesTitle: '级别划分',
+    levelRule: {
+      mature: '总分 {min} 分，即所有维度都拿到满分。',
+      growing: '总分不低于 {min} 分，且{required}。',
+      emerging: '已满足收录标准、但未达到成长级别的项目，包括新项目和早期项目。',
+    },
+    levelRequiredPoints: '{dimension}不低于 {points} 分',
+    levelDescriptions: {
+      mature: '社区健康、贡献者众多、持续活跃，并且经过了时间检验。',
+      growing: '已有稳定的社区和开发节奏，但在部分维度上仍有差距。',
+      emerging: '仍在早期，或暂时缺少足够的社区和活跃度信号。',
+    },
+    levelNotesTitle: '规则说明',
+    levelNote1: '数据来自评分服务采集的 GitHub 指标，每周同步一次并提交到仓库的 data/signals.json；级别变动以 Pull Request 的形式公开记录。',
+    levelNote2: '维护者不能调整单个项目的级别，只能修改对所有项目生效的标准。项目的数据变化后，级别会自动升降。',
+    levelNote3: '全景图和各分类中的默认排序依次为：级别、总分、综合健康度、名称。成熟级别的项目在全景图中以大图标显示。',
+    levelSyncedAt: '当前级别基于 {date} 的数据。',
+    levelBreakdown: '{level} · {total}/{max} 分',
     howToSubmit: '如何提交项目',
     howToSubmitDescription: '如果你发现一个值得收录的开源 AI 项目，可以通过以下步骤提交。',
     submitStep1: '确认项目不在当前列表中（使用搜索功能检查）。',
@@ -383,8 +408,7 @@ export const UI = {
     lmapDetails: 'View details',
     lmapScore: 'Score',
     lmapClose: 'Close',
-    lmapFeatured: 'Featured',
-    lmapNote: 'Larger logos are featured projects.',
+    lmapNote: 'Larger logos are Mature projects. Each subcategory is ordered by level, then level points.',
     homeStartTitle: 'Start here',
     homeStartDescription: 'Search projects or explore by domain, methodology and lifecycle status',
     homeStartSearchTitle: 'Search projects',
@@ -453,11 +477,13 @@ export const UI = {
     quality: 'Impact',
     sustainability: 'Sustainability',
     unknown: 'Unknown',
+    levels: {
+      mature: 'Mature',
+      growing: 'Growing',
+      emerging: 'Emerging',
+    },
     statuses: {
       tracked: 'Tracked',
-      sandbox: 'Tracking',
-      incubating: 'Verified',
-      graduated: 'Established',
       recommended: 'Recommended',
       worthWatching: 'Worth Watching',
       newlyAdded: 'Newly Added',
@@ -578,14 +604,37 @@ export const UI = {
     curationRule5: 'A software project, not an awesome list, prompt collection, documentation-only repository, or landing page.',
     curationRule6: 'Not already listed, and it fits an existing subcategory.',
     curationNote: 'Meeting these requirements makes a project eligible for review; it does not guarantee a listing. Maintainers also weigh how relevant the project is to AI Native systems and whether it stands apart in a crowded category. Maintainers may make an exception for a new project from an established organization. Projects listed before these requirements took effect remain listed. If a project falls short now, comment /recheck on the original issue once it qualifies.',
-    projectLifecycle: 'Reference Status',
-    projectLifecycleDescription: 'Reference status helps the community understand how much signal a listed project currently has. It is not incubation, certification, or foundation governance.',
-    statusSandbox: 'Tracking',
-    statusSandboxDescription: 'Newly listed or still-observed projects that need more community and maintenance signal before being treated as stronger references.',
-    statusIncubating: 'Verified',
-    statusIncubatingDescription: 'Projects with clear engineering value and enough community signal to be considered as candidates in the category.',
-    statusGraduated: 'Established',
-    statusGraduatedDescription: 'Projects with strong visibility, adoption signal, or community activity in their category.',
+    projectLevels: 'Project Levels',
+    projectLevelsDescription: 'Every project has a level: Mature, Growing, or Emerging. Nobody assigns a level by hand and there are no featured projects; it is computed entirely from public data. A level measures project health. The overall health score carries the most weight, and the other dimensions confirm that the score rests on real contributors, ongoing development, and some history. Star count, foundation membership, and vendor neutrality play no part. This site is not affiliated with any foundation, and a level is not a certification or endorsement by any organization.',
+    levelDimensionsTitle: 'Dimensions',
+    levelDimensionsDescription: 'There are {count} dimensions and {max} points in total. Each dimension scores the highest tier it meets, or 0 if it meets none.',
+    levelDimension: 'Dimension',
+    levelScoring: 'Scoring',
+    levelPointsLabel: '{points} pts',
+    levelDimensions: {
+      health: { name: 'Community health', description: 'The overall health score from the scoring model, which combines activity, community, impact, and sustainability. This dimension carries the most weight.' },
+      contributors: { name: 'Contributor base', description: 'How many people have contributed code, which shows whether the project depends on a few individuals.' },
+      activity: { name: 'Sustained activity', description: 'Commits over the last year and how recent the latest commit is.' },
+      trackRecord: { name: 'Track record', description: 'How long the repository has existed, which shows whether the project has stood the test of time.' },
+    },
+    levelRulesTitle: 'Levels',
+    levelRule: {
+      mature: '{min} points in total, which means full marks on every dimension.',
+      growing: 'At least {min} points in total, with {required}.',
+      emerging: 'Projects that meet the inclusion standards but not the Growing level, including new and early-stage projects.',
+    },
+    levelRequiredPoints: 'at least {points} for {dimension}',
+    levelDescriptions: {
+      mature: 'A healthy community, many contributors, sustained activity, and a proven track record.',
+      growing: 'An established community and development pace, with gaps on some dimensions.',
+      emerging: 'Still early, or currently short on community and activity signals.',
+    },
+    levelNotesTitle: 'Rules',
+    levelNote1: 'The data is the GitHub metrics collected by the scoring service, synced weekly into data/signals.json in the repository. Level changes are recorded publicly in a pull request.',
+    levelNote2: 'Maintainers cannot adjust the level of an individual project, only the standard that applies to every project. When a project\'s data changes, its level moves up or down automatically.',
+    levelNote3: 'The default order in the landscape and in each category is level, then total points, then health score, then name. Mature projects are shown with larger logos in the landscape.',
+    levelSyncedAt: 'Current levels are based on data from {date}.',
+    levelBreakdown: '{level} · {total}/{max} points',
     howToSubmit: 'How to Submit a Project',
     howToSubmitDescription: 'If you find an open source AI project worth including, follow these steps.',
     submitStep1: 'Confirm the project is not already listed (use the search function).',
@@ -812,6 +861,25 @@ function formatStatusFallback(status, lang = 'en') {
   return words
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ');
+}
+
+export function levelLabel(level, lang = 'en') {
+  return ui(lang).levels[level] || level;
+}
+
+// "Mature · 9/10 points — Community health 2 · Contributor base 2 · …"
+export function levelBreakdown(project, lang = 'en') {
+  const copy = ui(lang);
+  const summary = copy.levelBreakdown
+    .replace('{level}', levelLabel(project.level, lang))
+    .replace('{total}', project.levelTotal)
+    .replace('{max}', MAX_POINTS);
+  const parts = DIMENSIONS.map(({ key }) => `${copy.levelDimensions[key].name} ${project.levelPoints[key]}`);
+  return `${summary} — ${parts.join(' · ')}`;
+}
+
+export function levelsSyncedAt() {
+  return loadSignals().syncedAt;
 }
 
 export function statusLabel(status, lang = 'en') {

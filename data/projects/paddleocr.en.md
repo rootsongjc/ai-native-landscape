@@ -14,7 +14,6 @@ description: >-
   or PDFs into structured data.
 author: PaddlePaddle
 ossDate: '2020-05-08T10:38:16.000Z'
-featured: false
 status: tracked
 ---
 

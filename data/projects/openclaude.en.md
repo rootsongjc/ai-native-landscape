@@ -3,7 +3,7 @@ name: openclaude
 slug: openclaude
 homepage: https://openclaude.twigpine.com
 repo: https://github.com/Twigpine/openclaude
-license: Unknown
+license: Other
 category: coding-devtools
 subCategory: coding-agents
 tags:
@@ -16,7 +16,6 @@ description: >-
   Codex OAuth, Ollama and more — keeping one terminal-first workflow with tools, agents, MCP, and slash commands.
 author: Twigpine
 ossDate: '2026-04-01'
-featured: false
 status: tracked
 ---
 

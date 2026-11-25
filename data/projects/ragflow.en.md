@@ -12,7 +12,6 @@ tags:
 description: An open-source RAG engine based on deep document understanding, supporting complex document parsing and knowledge Q&A
 author: InfiniFlow
 ossDate: '2023-12-12T06:13:13.000Z'
-featured: false
 status: tracked
 ---
 

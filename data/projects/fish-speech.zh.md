@@ -14,7 +14,6 @@ tags:
 description: 业界领先的开源文本转语音系统，具备声音克隆能力，支持多语言自然语音合成。
 author: Fish Audio
 ossDate: '2023-10-10'
-featured: false
 thumbnail: ''
 source: ''
 status: tracked

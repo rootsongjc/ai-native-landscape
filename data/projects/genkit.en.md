@@ -15,7 +15,6 @@ description: >-
   SDKs and model provider integrations.
 author: Firebase
 ossDate: '2024-04-29T22:04:42.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

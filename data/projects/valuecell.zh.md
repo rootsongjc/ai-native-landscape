@@ -13,7 +13,6 @@ tags:
 description: 一个社区驱动的多智能体金融平台，提供研究、策略与自动化交易能力，并把敏感数据保存在本地。
 author: ValueCell AI
 ossDate: '2025-09-01T09:07:06Z'
-featured: false
 status: tracked
 ---
 

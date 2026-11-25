@@ -14,7 +14,6 @@ description: >-
   adapters to simplify building intelligent database-driven apps.
 author: Eosphoros AI
 ossDate: '2023-01-01T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

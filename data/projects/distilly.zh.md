@@ -16,7 +16,6 @@ description: >-
   Agent 或机器人都能安装调用的 Agent Skill。前身为 Colleague Skill（同事 Skill）。
 author: titanwings
 ossDate: '2026-03-30'
-featured: false
 status: tracked
 ---
 

@@ -13,7 +13,6 @@ tags:
 description: 'Vast.ai 的开源 Python 命令行与 API 客户端。Vast.ai 是撮合机主与按需、可中断租户的 GPU 租赁市场。'
 author: Vast.ai
 ossDate: '2019-01-29T00:44:09.000Z'
-featured: false
 status: tracked
 ---
 

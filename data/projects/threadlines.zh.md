@@ -17,7 +17,6 @@ description: >-
   注册表中智能体的智能体开发环境（ADE）。多个智能体可共享同一线程，智能体可自行创建线程；拉取请求、CI 检查、源代码管理与内置浏览器就在对话旁边。完全运行在用户自己的电脑上，无需托管后端。
 author: Threadlines
 ossDate: '2026-05-25'
-featured: false
 status: tracked
 ---
 ## 详细介绍

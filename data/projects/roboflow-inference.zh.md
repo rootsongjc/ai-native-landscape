@@ -3,7 +3,7 @@ name: Roboflow Inference
 slug: roboflow-inference
 homepage: https://inference.roboflow.com/
 repo: https://github.com/roboflow/inference
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: model-serving
 tags:
@@ -13,7 +13,6 @@ tags:
 description: Roboflow Inference 是一个面向计算机视觉的推理与工作流平台，支持本地与云端部署、视频流工作流与丰富的模型集成。
 author: Roboflow
 ossDate: '2023-07-31T17:00:40.000Z'
-featured: false
 status: tracked
 ---
 

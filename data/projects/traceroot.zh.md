@@ -15,7 +15,6 @@ tags:
 description: TraceRoot 是面向 AI Agent 的开源可观测与自我改进层，自动检测生产环境故障，结合源码与 GitHub 历史定位根因，提交修复 PR 并通过评测验证每一处修复。
 author: TraceRoot AI
 ossDate: '2025-07-22T19:50:15.000Z'
-featured: false
 status: tracked
 ---
 

@@ -13,7 +13,6 @@ tags:
 description: 将整个代码库打包为 AI 友好格式的工具，便于向大模型提供完整、结构化的代码上下文。
 author: yamadashy
 ossDate: '2024-07-13T07:11:32.000Z'
-featured: false
 status: tracked
 ---
 

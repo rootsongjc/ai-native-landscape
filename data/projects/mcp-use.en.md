@@ -15,7 +15,6 @@ description: >-
   servers.
 author: mcp-use
 ossDate: '2025-03-28T10:06:31.000Z'
-featured: false
 status: tracked
 ---
 

@@ -13,7 +13,6 @@ description: >-
   deep learning research and production.
 author: Baidu
 ossDate: '2016-08-15T06:59:08.000Z'
-featured: false
 status: tracked
 ---
 

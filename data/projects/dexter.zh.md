@@ -12,7 +12,6 @@ tags:
 description: Dexter 是一个面向深度金融研究的自治智能体，旨在自动化数据收集、分析与策略验证。
 author: virattt
 ossDate: '2025-10-14T21:02:00.000Z'
-featured: false
 status: tracked
 ---
 ## 详细介绍

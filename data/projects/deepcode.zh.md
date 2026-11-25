@@ -11,7 +11,6 @@ tags:
 description: 基于多智能体系统的代码生成与研究复现平台，能将论文与自然语言转化为可运行代码。
 author: HKU Data Intelligence Lab
 ossDate: '2025-05-14T05:23:02.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

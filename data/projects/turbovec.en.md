@@ -17,7 +17,6 @@ description: >-
   7.8× smaller than float32 and up to 4.4× faster than FAISS at matching recall.
 author: RyanCodrai
 ossDate: '2026-03-26'
-featured: false
 status: tracked
 ---
 

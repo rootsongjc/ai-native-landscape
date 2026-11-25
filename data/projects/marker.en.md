@@ -11,7 +11,6 @@ tags:
 description: Converts PDF, image, PPTX, DOCX, XLSX, HTML, EPUB files to markdown, JSON, chunks, and HTML quickly and accurately.
 author: Datalab.to
 ossDate: '2023-10-30T20:14:08.000Z'
-featured: true
 status: tracked
 ---
 

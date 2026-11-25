@@ -12,7 +12,6 @@ tags:
 description: 面向数据中心级分布式推理的开源框架，优化多 GPU / 多节点场景下的大模型推理与调度，支持多种引擎（vLLM、SGLang、TensorRT-LLM）。
 author: ai-dynamo
 ossDate: '2025-03-03T18:40:07.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

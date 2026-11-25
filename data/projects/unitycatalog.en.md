@@ -12,7 +12,6 @@ tags:
 description: An open, multimodal catalog for data and AI that provides unified governance, metadata management, and access control.
 author: Unity Catalog Community
 ossDate: '2023-01-01T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 

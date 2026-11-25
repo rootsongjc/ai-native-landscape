@@ -11,7 +11,6 @@ tags:
 description: 由 Vercel 提供的可部署、可扩展的 Next.js 聊天机器人模板，支持多模型与多提供商集成。
 author: Vercel
 ossDate: '2023-05-19T16:36:23.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

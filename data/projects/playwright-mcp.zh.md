@@ -11,7 +11,6 @@ tags:
 description: Playwright MCP 提供基于 Playwright 的 Model Context Protocol (MCP) 服务器，使 LLM 能通过可访问性快照与网页交互，适用于多种 MCP 客户端。
 author: Microsoft
 ossDate: '2025-03-21T17:48:36.000Z'
-featured: false
 status: tracked
 ---
 

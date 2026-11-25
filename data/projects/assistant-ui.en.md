@@ -14,7 +14,6 @@ tags:
 description: A TypeScript + React open-source component library for building customizable chat interfaces for AI assistants.
 author: Assistant UI
 ossDate: '2023-11-22T16:01:17Z'
-featured: false
 status: tracked
 ---
 Assistant UI is an open-source TypeScript/React component library for building customizable chat interfaces with LLM backends. It provides composable UI components covering message streams, input composers, rich media rendering, and plugin extension points, making it straightforward to integrate with any inference backend or agent layer.

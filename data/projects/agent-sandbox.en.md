@@ -14,7 +14,6 @@ description: >-
   orchestrating, and managing agent workloads securely and at scale.
 author: Kubernetes SIGs
 ossDate: '2025-08-12T04:55:05Z'
-featured: false
 status: tracked
 ---
 ## Overview

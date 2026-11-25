@@ -3,7 +3,7 @@ name: Xiaomi Miloco
 slug: xiaomi-miloco
 homepage: null
 repo: https://github.com/XiaoMi/xiaomi-miloco
-license: Unknown
+license: Other
 category: applications-products
 subCategory: workflow-automation
 tags:
@@ -15,7 +15,6 @@ description: >-
   编排全屋设备，提供主动式个性化智能体验。
 author: Xiaomi
 ossDate: '2025-11-06T13:01:59Z'
-featured: false
 status: tracked
 ---
 ## 简介

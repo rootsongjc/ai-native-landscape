@@ -13,7 +13,6 @@ tags:
 description: 'A CNCF Sandbox Prometheus exporter that measures the energy consumption of Kubernetes workloads across CPU and GPU.'
 author: Sustainable Computing
 ossDate: '2022-02-01T19:48:56.000Z'
-featured: false
 status: tracked
 ---
 

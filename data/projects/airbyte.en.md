@@ -3,7 +3,7 @@ name: Airbyte
 slug: airbyte
 homepage: 'https://airbyte.com'
 repo: https://github.com/airbytehq/airbyte
-license: Other
+license: Elastic-2.0
 category: rag-knowledge
 subCategory: data-connectors
 tags:
@@ -15,7 +15,6 @@ tags:
 description: Open-source data movement platform for ELT pipelines and AI agents, moving data from APIs, databases, and files to warehouses, lakes, and AI applications.
 author: Airbyte
 ossDate: '2020-07-27'
-featured: false
 thumbnail: ''
 source: ''
 status: tracked

@@ -16,7 +16,6 @@ description: >-
   video, and audio.
 author: vLLM Project
 ossDate: '2025-09-11T00:34:43Z'
-featured: false
 status: tracked
 ---
 

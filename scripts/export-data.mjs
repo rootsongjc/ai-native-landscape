@@ -17,6 +17,7 @@ const headers = [
   'homepage',
   'repo',
   'status',
+  'level',
   'totalScore',
   'scorePercent',
 ];

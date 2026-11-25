@@ -14,7 +14,6 @@ tags:
 description: 免费的 AI 路由器与 token 节省工具，将 Claude Code、Codex、Cursor、Cline、Copilot 等编码工具接入 40+ 服务商、100+ 模型，按订阅→低价→免费三级自动回退，并节省 20-40% token。
 author: decolua
 ossDate: '2026-01-05'
-featured: false
 status: tracked
 ---
 

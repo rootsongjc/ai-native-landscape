@@ -11,7 +11,6 @@ tags:
 description: 面向 agent 的高性能代理数据平面，为 agent-to-agent 与 agent-to-tool 提供安全、可观测与治理能力。
 author: Solo.io
 ossDate: '2025-03-18T20:55:22.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

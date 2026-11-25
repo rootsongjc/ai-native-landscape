@@ -13,7 +13,6 @@ tags:
 description: Eino 是一个以 Go 为核心的 LLM 应用开发框架，强调可组合性、流处理和工程化能力。
 author: 字节跳动
 ossDate: '2024-12-04T06:47:27Z'
-featured: false
 status: tracked
 ---
 

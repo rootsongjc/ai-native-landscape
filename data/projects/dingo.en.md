@@ -11,7 +11,6 @@ tags:
 description: A tool for automated data quality evaluation that combines rule-based and model-based assessments.
 author: MigoXLab / DataEval
 ossDate: '2024-12-24T05:59:24.000Z'
-featured: false
 status: tracked
 ---
 ## Introduction

@@ -11,7 +11,6 @@ tags:
 description: 基于 MCP 协议的开源语音 AI 聊天机器人，支持多模态交互与物联网控制。
 author: '78'
 ossDate: '2024-08-31T10:08:16.000Z'
-featured: false
 status: tracked
 ---
 

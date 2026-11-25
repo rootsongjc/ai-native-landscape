@@ -13,7 +13,6 @@ tags:
 description: pandas 是用于结构化数据处理与分析的开源 Python 库，是 ML 和 AI 数据预处理工作流的核心依赖。
 author: pandas-dev
 ossDate: '2010-08-24T01:37:33Z'
-featured: false
 status: tracked
 ---
 

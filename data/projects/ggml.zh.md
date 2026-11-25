@@ -11,7 +11,6 @@ tags:
 description: ggml 是一个面向机器学习的轻量级张量库，适配多种硬件与量化方案。
 author: ggml-org
 ossDate: '2022-09-18T17:07:19Z'
-featured: false
 status: tracked
 ---
 ggml 是一个面向机器学习的轻量级 C/C++ 张量库，能够在通用硬件上实现大型模型推理。它专注于低内存占用和高性能，支持多种硬件平台的整数量化、自动微分和多种加速后端，是构建高效本地推理工具链的基础库。

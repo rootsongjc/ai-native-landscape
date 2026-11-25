@@ -41,7 +41,7 @@ export function refreshReasons(repo, snapshots, now, maxAgeDays) {
   });
 }
 
-async function requestJson(url, init = {}) {
+export async function requestJson(url, init = {}) {
   for (let attempt = 0; attempt < 3; attempt += 1) {
     let response;
     try {

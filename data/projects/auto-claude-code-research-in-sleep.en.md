@@ -15,7 +15,6 @@ tags:
 description: ARIS is a lightweight Markdown-only skills collection for autonomous ML research, enabling cross-model review loops, idea discovery, and experiment automation that works with any LLM agent.
 author: wanshuiyin
 ossDate: '2026-03-10'
-featured: false
 status: tracked
 ---
 

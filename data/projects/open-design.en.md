@@ -17,7 +17,6 @@ description: >-
   design systems and 19 built-in skills.
 author: nexu-io
 ossDate: '2026-04-28'
-featured: false
 status: tracked
 ---
 

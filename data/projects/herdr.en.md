@@ -17,7 +17,6 @@ description: >-
   blocked, or idle, and lets agents drive it through a CLI and socket API.
 author: herdrdev
 ossDate: '2026-03-27'
-featured: false
 status: tracked
 ---
 

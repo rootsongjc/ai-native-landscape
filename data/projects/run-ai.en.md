@@ -16,7 +16,6 @@ tags:
 description: An open-source AI workload and GPU orchestration platform for Kubernetes, combining GPU-aware scheduling, fractional GPU allocation, quotas, governance, and observability to share GPU resources efficiently across teams and clusters.
 author: NVIDIA
 ossDate: '2026-08-25'
-featured: false
 status: tracked
 ---
 

@@ -12,7 +12,6 @@ tags:
 description: 一站式 LLM 聊天机器人平台与开发框架，支持多渠道接入、知识库和多种模型后端。
 author: AstrBotDevs
 ossDate: '2022-12-08T13:27:46.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

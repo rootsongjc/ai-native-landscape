@@ -16,7 +16,6 @@ description: >-
   multi-stage decoding across heterogeneous stages and exposed through OpenAI-compatible endpoints.
 author: sgl-project
 ossDate: '2026-01-07'
-featured: false
 status: tracked
 ---
 

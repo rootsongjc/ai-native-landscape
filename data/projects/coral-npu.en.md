@@ -12,7 +12,6 @@ tags:
 description: Coral NPU is an energy-efficient machine learning accelerator core for edge devices provided by Google Coral.
 author: Google
 ossDate: '2025-10-02T22:32:37Z'
-featured: false
 status: tracked
 ---
 Coral NPU is a hardware accelerator for edge AI inference developed by Google Coral, supporting TensorFlow Lite models. It emphasizes co-optimized hardware architecture and software stack to deliver real-time inference under constrained power and compute budgets for edge devices.

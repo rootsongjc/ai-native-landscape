@@ -3,7 +3,7 @@ name: Skills
 slug: anthropic-skills
 homepage: https://www.anthropic.com/
 repo: https://github.com/anthropics/skills
-license: Unknown
+license: Other
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -13,7 +13,6 @@ tags:
 description: An open-source library from Anthropic for defining, sharing, and reusing task-oriented capability modules.
 author: Anthropic
 ossDate: '2025-09-22T15:53:31Z'
-featured: false
 status: tracked
 ---
 

@@ -13,7 +13,6 @@ description: >-
   deployable engineering systems.
 author: Foundation Agents
 ossDate: '2025-03-06T14:08:14Z'
-featured: false
 status: tracked
 ---
 

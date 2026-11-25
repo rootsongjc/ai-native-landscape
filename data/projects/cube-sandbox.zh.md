@@ -14,7 +14,6 @@ tags:
 description: 基于 RustVMM 和 KVM 构建的高性能硬件隔离沙箱服务，兼容 E2B SDK，冷启动低于 60ms，专为 AI 智能体设计。
 author: Tencent Cloud
 ossDate: '2026-04-10'
-featured: false
 status: tracked
 ---
 

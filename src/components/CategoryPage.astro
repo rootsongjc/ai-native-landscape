@@ -8,10 +8,12 @@ import {
   legacyCategoryTargets,
   localizedPath,
   scoreLabel,
+  levelLabel,
   statusLabel,
   subCategoryName,
   ui,
 } from '../lib/landscape.mjs';
+import { LEVELS } from '../lib/levels.mjs';
 
 const { lang = 'en', category, canonicalCategoryKey = category.key } = Astro.props;
 const copy = ui(lang);
@@ -27,6 +29,9 @@ const grouped = (category.subcategories || []).map((subCategory) => ({
 
 const allTags = Array.from(new Set(projects.flatMap((project) => project.tags || []))).sort();
 const statuses = [...new Set(projects.map((p) => p.status).filter(Boolean))];
+const levels = LEVELS
+  .map(({ key }) => ({ key, count: projects.filter((project) => project.level === key).length }))
+  .filter((level) => level.count > 0);
 const title = `${categoryName(category, lang)}`;
 const description = categoryDescription(category, lang);
 ---
@@ -61,8 +66,10 @@ const description = categoryDescription(category, lang);
         </span>
       </div>
       <div class="status-legend">
-        {statuses.map((s) => (
-          <span class="status-legend__item"><span class={`status-dot status-dot--${s}`} />{statusLabel(s, lang)}</span>
+        {levels.map((level) => (
+          <a class="status-legend__item" href={localizedPath('/methodology/#project-levels', lang)}>
+            <span class={`status-dot status-dot--${level.key}`} />{levelLabel(level.key, lang)} {level.count}
+          </a>
         ))}
       </div>
       <nav class="subcategory-jump" aria-label={copy.categoryJump}>

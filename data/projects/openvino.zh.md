@@ -12,7 +12,6 @@ tags:
 description: OpenVINO：Intel 提供的推理优化工具套件，专注于在 Intel 硬件上加速深度学习模型的推理。
 author: OpenVINO
 ossDate: '2018-10-15T10:54:40.000Z'
-featured: false
 status: tracked
 ---
 

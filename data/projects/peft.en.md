@@ -15,7 +15,6 @@ tags:
 description: State-of-the-art parameter-efficient fine-tuning methods for large language models, enabling adapter-based training with minimal GPU resources.
 author: Hugging Face
 ossDate: '2022-11-25'
-featured: false
 thumbnail: ''
 source: ''
 status: tracked

@@ -13,7 +13,6 @@ description: >-
   distributed training.
 author: DeepSeek
 ossDate: '2025-02-17T01:33:04.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

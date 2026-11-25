@@ -12,7 +12,6 @@ tags:
 description: Graphiti 是一个用于构建实时知识图谱的开源框架，专为动态和频繁更新的数据场景以及代理记忆与 RAG 应用设计。
 author: Zep / getzep
 ossDate: '2024-08-08T22:08:30.000Z'
-featured: false
 status: tracked
 ---
 

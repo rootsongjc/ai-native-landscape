@@ -3,7 +3,7 @@ name: GitNexus
 slug: gitnexus
 homepage: https://gitnexus.vercel.app
 repo: https://github.com/abhigyanpatwari/gitnexus
-license: Other
+license: PolyForm-Noncommercial-1.0.0
 category: coding-devtools
 subCategory: mcp-tools
 tags:
@@ -13,7 +13,6 @@ tags:
 description: GitNexus 是一个完全在浏览器中运行的客户端知识图谱构建工具，支持将任意代码仓库索引为交互式知识图谱，内置 Graph RAG Agent，可为 AI 编程助手提供深层代码架构感知能力。
 author: Abhigyan Patwari
 ossDate: '2025-08-02T23:20:31Z'
-featured: false
 status: tracked
 ---
 ## 详细介绍

@@ -13,7 +13,6 @@ tags:
 description: 一个为编码智能体构建的开源开发工作流与技能库，强调 TDD、流程化与可验证的自动化。
 author: Jesse Vincent
 ossDate: '2025-10-09T19:45:18Z'
-featured: false
 status: tracked
 ---
 

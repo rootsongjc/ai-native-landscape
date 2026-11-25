@@ -15,7 +15,6 @@ description: >-
   with content in the AI era.
 author: Supermemory
 ossDate: '2024-02-27T20:10:04.000Z'
-featured: false
 status: tracked
 ---
 

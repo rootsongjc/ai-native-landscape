@@ -14,7 +14,6 @@ tags:
 description: Z.ai 开源的 AI 编程工作台，单一代码库同时提供 Electron 桌面应用、浏览器工作台和终端 Agent CLI/TUI。
 author: Z.ai
 ossDate: '2026-09-20T12:01:16Z'
-featured: false
 status: tracked
 ---
 

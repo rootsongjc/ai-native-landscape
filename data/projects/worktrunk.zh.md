@@ -14,7 +14,6 @@ tags:
 description: 一个面向并行智能体工作流的命令行工具，简化 Git worktree 操作并提供钩子与 LLM 提交集成。
 author: max-sixty
 ossDate: '2025-10-17T22:13:14Z'
-featured: false
 status: tracked
 ---
 

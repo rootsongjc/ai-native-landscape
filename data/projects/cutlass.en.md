@@ -3,7 +3,7 @@ name: CUTLASS
 slug: cutlass
 homepage: null
 repo: https://github.com/nvidia/cutlass
-license: Other
+license: BSD-3-Clause
 category: inference-serving
 subCategory: gpu-acceleration
 tags:
@@ -13,7 +13,6 @@ description: >-
   provided by NVIDIA.
 author: NVIDIA
 ossDate: '2017-11-30T00:11:24.000Z'
-featured: false
 status: tracked
 ---
 ## Introduction

@@ -17,7 +17,6 @@ description: >-
   orchestration, and lifecycle management.
 author: RightNow-AI
 ossDate: '2026-02-24T23:12:38Z'
-featured: false
 status: tracked
 ---
 

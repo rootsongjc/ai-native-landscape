@@ -14,7 +14,6 @@ description: >-
   features to automate complex workflows and boost productivity.
 author: Eigent
 ossDate: '2025-07-29T15:56:02Z'
-featured: false
 status: tracked
 ---
 Eigent is an open-source desktop multi-agent platform that serves as a local and free alternative to cloud-based cowork tools. Built on the CAMEL-AI framework, it enables users to automate complex workflows through visual orchestration of multiple AI agents, supporting both local and cloud deployment modes.

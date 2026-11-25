@@ -12,7 +12,6 @@ tags:
 description: Polyaxon is an MLOps platform for managing, training and monitoring large-scale machine learning workloads.
 author: Polyaxon
 ossDate: '2016-12-26T12:48:47.000Z'
-featured: false
 status: tracked
 ---
 

@@ -13,7 +13,6 @@ tags:
 description: 在设备上运行多模态与文本模型的统一推理 SDK，支持 CPU/GPU/NPU 与多种模型格式。
 author: NexaAI
 ossDate: '2024-08-16T20:13:07.000Z'
-featured: false
 status: tracked
 ---
 

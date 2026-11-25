@@ -13,7 +13,6 @@ description: >-
   pipelines.
 author: Mendable AI
 ossDate: '2024-04-15T21:02:29.000Z'
-featured: false
 status: tracked
 ---
 Firecrawl is a web data API purpose-built for AI workflows, capable of searching, scraping, and interacting with websites at scale. It crawls target sites, discovers accessible subpages, and transforms web content into clean markdown or structured data optimized for retrieval-augmented generation (RAG) and large language model consumption.

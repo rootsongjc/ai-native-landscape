@@ -17,7 +17,6 @@ description: >-
   policies, cloud sandboxes, and real-time collaboration from any device.
 author: Omnigent
 ossDate: '2026-06-11T12:18:13.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

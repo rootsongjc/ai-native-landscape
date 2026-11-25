@@ -13,7 +13,6 @@ tags:
 description: '面向 Kubernetes 的 GPU 虚拟化与池化方案，提供分数级 GPU、超分和 GPU 感知的弹性伸缩。'
 author: NexusGPU
 ossDate: '2024-11-12T23:49:48.000Z'
-featured: false
 status: tracked
 ---
 

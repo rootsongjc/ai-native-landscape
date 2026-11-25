@@ -16,7 +16,6 @@ description: >-
   包的形式交付。它监听 GitHub（可选飞书），在被允许的人提出请求时开启工作项，在独立的智能体会话和工作目录中执行，并在原始对话中答复（例如提交一个拉取请求），其授权模型以尽量少占用人类注意力为目标。
 author: deepseek-ai
 ossDate: '2026-10-31'
-featured: false
 status: tracked
 ---
 ## 详细介绍

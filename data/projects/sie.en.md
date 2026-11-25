@@ -14,7 +14,6 @@ tags:
 description: Open-source inference server and production cluster that serves all the models your agent needs with shared GPU resources.
 author: superlinked
 ossDate: '2023-11-07T10:45:53Z'
-featured: false
 status: tracked
 ---
 

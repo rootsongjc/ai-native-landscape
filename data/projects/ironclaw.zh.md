@@ -14,7 +14,6 @@ tags:
 description: 受 OpenClaw 启发的 Rust 实现，专注于隐私和安全
 author: NEAR AI
 ossDate: '2026-02-03'
-featured: false
 status: tracked
 ---
 

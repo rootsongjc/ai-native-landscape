@@ -11,7 +11,6 @@ tags:
 description: An AI coding agent tool built for terminal, 100% open source and vendor-agnostic, focused on terminal user interface.
 author: SST
 ossDate: '2025-04-30T20:08:00.000Z'
-featured: false
 status: tracked
 ---
 

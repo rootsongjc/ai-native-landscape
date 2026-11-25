@@ -3,7 +3,7 @@ name: Chrome DevTools Protocol
 slug: devtools-protocol
 homepage: https://chromedevtools.github.io/devtools-protocol/
 repo: https://github.com/chromedevtools/devtools-protocol
-license: Other
+license: BSD-3-Clause
 category: coding-devtools
 subCategory: developer-utilities
 tags:
@@ -13,7 +13,6 @@ description: >-
   automation.
 author: Google
 ossDate: '2017-03-28T18:01:17.000Z'
-featured: false
 status: tracked
 ---
 ## Summary

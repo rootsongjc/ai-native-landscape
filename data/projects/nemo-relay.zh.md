@@ -17,7 +17,6 @@ description: >-
   事件、ATIF 轨迹或 OpenTelemetry 追踪、日志与指标——无需改动现有智能体技术栈。
 author: NVIDIA
 ossDate: '2026-03-31'
-featured: false
 status: tracked
 ---
 ## 详细介绍

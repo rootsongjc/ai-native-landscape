@@ -11,7 +11,6 @@ tags:
 description: FastMCP 是一个面向生产环境的 Python MCP（Model Context Protocol）框架，提供企业级身份认证、部署工具与丰富的客户端/服务端功能。
 author: jlowin / FastMCP 社区
 ossDate: '2024-11-30T01:47:40.000Z'
-featured: false
 status: tracked
 ---
 ## 详细介绍

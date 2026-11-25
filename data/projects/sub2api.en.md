@@ -16,7 +16,6 @@ tags:
 description: A self-hosted gateway that converts Claude, OpenAI, Gemini, and Grok subscriptions into OpenAI-compatible API endpoints, with multi-account scheduling, token-level billing, and key distribution.
 author: Wei-Shaw
 ossDate: '2025-12-18T00:00:00Z'
-featured: false
 status: tracked
 ---
 

@@ -19,7 +19,6 @@ description: >-
   remembers you, and asks before anything you cannot undo.
 author: nano-muse
 ossDate: '2026-09-23'
-featured: false
 status: tracked
 ---
 

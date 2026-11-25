@@ -14,7 +14,6 @@ description: >-
   models and retrieval.
 author: DroidRun
 ossDate: '2025-04-12T22:03:47Z'
-featured: false
 status: tracked
 ---
 ## Overview

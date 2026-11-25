@@ -13,7 +13,6 @@ tags:
 description: 'A decentralized, peer-to-peer cloud compute marketplace where providers lease GPU and CPU capacity to tenants through on-chain reverse auctions.'
 author: Akash Network
 ossDate: '2017-09-15T22:55:19.000Z'
-featured: false
 status: tracked
 ---
 

@@ -13,7 +13,6 @@ tags:
 description: A lightweight runtime and container tooling for embedding, sandboxing, and shipping AI agents.
 author: BoxLite Labs
 ossDate: '2025-12-07T22:49:32Z'
-featured: false
 status: tracked
 ---
 BoxLite is a compute substrate for AI agents that is lightweight enough to run on a laptop yet elastic enough to scale into the cloud. It provides an embeddable runtime and containerized sandbox to isolate, debug, and deploy agent workloads in controlled environments. Implemented in Rust, the project focuses on minimal runtime dependencies and strong security boundaries.

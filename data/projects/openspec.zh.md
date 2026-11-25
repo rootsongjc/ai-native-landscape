@@ -11,7 +11,6 @@ tags:
 description: OpenSpec 是一个面向 AI 编程助手的规范驱动开发平台，帮助定义、验证与执行面向代码的交互规范。
 author: Fission AI
 ossDate: '2025-08-05T10:37:45.000Z'
-featured: false
 status: tracked
 ---
 

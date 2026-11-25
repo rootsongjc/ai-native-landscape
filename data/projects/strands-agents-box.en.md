@@ -16,7 +16,6 @@ tags:
 description: An open source sandbox engine for AI agents that combines OS-level isolation with default-deny Dogwood policies and credential injection, keeping secrets outside the agent process. Written in Rust, currently supporting macOS on Apple silicon.
 author: strands-agents
 ossDate: '2026-10-02T20:34:08Z'
-featured: false
 status: tracked
 ---
 

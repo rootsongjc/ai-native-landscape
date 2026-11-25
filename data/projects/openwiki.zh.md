@@ -14,7 +14,6 @@ tags:
 description: OpenWiki 是一款 CLI 工具，用于为代码库编写并维护面向智能体的文档，让 AI 智能体始终与最新的项目知识保持同步。
 author: langchain-ai
 ossDate: '2026-06-22T23:48:26Z'
-featured: false
 status: tracked
 ---
 

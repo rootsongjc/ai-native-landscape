@@ -13,7 +13,6 @@ tags:
 description: ADK 是 Google 开源的 Python 工具包，专为灵活构建、评估和部署高阶 AI Agent 设计，支持多模型与多场景。
 author: Google
 ossDate: '2025-04-01T20:44:40.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

@@ -14,7 +14,6 @@ description: >-
   LLM capabilities.
 author: ExtensityAI
 ossDate: '2022-11-30T17:03:09.000Z'
-featured: false
 status: tracked
 ---
 

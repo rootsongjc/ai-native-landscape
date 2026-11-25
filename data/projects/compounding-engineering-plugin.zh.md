@@ -14,7 +14,6 @@ tags:
 description: 面向 Claude Code、Codex、Cursor 等 AI 编程助手的复合工程（Compound Engineering）官方插件，将迭代增强的工程工作流引入编码工具。
 author: EveryInc
 ossDate: '2025-10-09T19:43:46Z'
-featured: true
 status: tracked
 ---
 

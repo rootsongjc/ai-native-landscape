@@ -18,7 +18,6 @@ description: >-
   作为本地服务，按实测延迟与按模型配额路由请求，对各类失败分类处理并竞速慢提供商——设计上只走免费额度。
 author: shihabshahrier
 ossDate: '2026-06-07'
-featured: false
 status: tracked
 ---
 ## 详细介绍

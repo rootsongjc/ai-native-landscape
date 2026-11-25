@@ -13,7 +13,6 @@ tags:
 description: 多智能体 AI 编程助手，通过协调专用代理执行代码修改、运行测试并生成高质量提交。适用于自动化代码修复、重构与增强开发流程。
 author: CodebuffAI
 ossDate: '2024-07-09T21:21:56.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

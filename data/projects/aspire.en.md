@@ -14,7 +14,6 @@ tags:
 description: A code-first, integrated toolchain for building observable, production-ready distributed applications.
 author: .NET Foundation
 ossDate: '2023-09-25T23:49:49Z'
-featured: false
 status: tracked
 ---
 

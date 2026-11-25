@@ -13,7 +13,6 @@ tags:
 description: Presenton is an open-source AI presentation generator and API that supports local run and multi-model integration.
 author: Presenton
 ossDate: '2025-05-10T14:12:46Z'
-featured: false
 status: tracked
 ---
 

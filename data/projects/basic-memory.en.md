@@ -16,7 +16,6 @@ description: >-
   (MCP).
 author: Basic Machines
 ossDate: '2024-12-02T22:40:43Z'
-featured: false
 status: tracked
 ---
 Basic Memory is a local-first knowledge system that stores user knowledge as structured Markdown files and exposes them to compatible LLMs via the Model Context Protocol (MCP). It implements a writable memory layer that keeps data local by default while offering optional cloud sync, ensuring AI conversations actually remember context without requiring users to re-explain their projects.

@@ -14,7 +14,6 @@ tags:
 description: OpenClaw-inspired Rust implementation focused on privacy and security
 author: NEAR AI
 ossDate: '2026-02-03'
-featured: false
 status: tracked
 ---
 

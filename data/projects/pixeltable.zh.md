@@ -13,7 +13,6 @@ tags:
 description: 一个面向多模态 AI 工作负载的声明式数据基础设施，简化数据存储、索引与推理流程。
 author: Pixeltable
 ossDate: '2023-05-10T18:03:02Z'
-featured: false
 status: tracked
 ---
 

@@ -15,7 +15,6 @@ description: >-
   production-ready services.
 author: BentoML
 ossDate: '2019-04-02T01:39:27.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

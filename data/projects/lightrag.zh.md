@@ -12,7 +12,6 @@ tags:
 description: LightRAG 是一个专注于简单高效的检索增强生成（RAG）工具包，支持文档索引、图谱抽取与服务化部署。
 author: HKUDS
 ossDate: '2024-10-02T11:57:54.000Z'
-featured: false
 status: tracked
 ---
 

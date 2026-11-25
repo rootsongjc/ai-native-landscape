@@ -16,7 +16,6 @@ tags:
 description: 面向训练、推理与智能体工作负载的厂商无关编排平台，支持在云、Kubernetes 与裸金属上调度 NVIDIA、AMD、TPU、Tenstorrent 等算力。
 author: dstackai
 ossDate: '2022-01-04'
-featured: false
 status: tracked
 ---
 

@@ -3,7 +3,7 @@ name: pgvector
 slug: pgvector
 homepage: https://pgvector.org
 repo: https://github.com/pgvector/pgvector
-license: Unknown
+license: PostgreSQL
 category: rag-knowledge
 subCategory: vector-databases
 tags:
@@ -13,7 +13,6 @@ description: >-
   and approximate search (HNSW, IVFFlat) inside Postgres.
 author: pgvector
 ossDate: '2021-01-15T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 

@@ -13,7 +13,6 @@ description: >-
   training tools, and extensible language components.
 author: Explosion
 ossDate: '2014-07-03T15:15:40Z'
-featured: false
 status: tracked
 ---
 
