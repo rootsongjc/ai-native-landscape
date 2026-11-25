@@ -26,17 +26,17 @@ Hippo Memory 是一个面向 AI 编程智能体的本地优先开源记忆层，
 
 ## 核心特性
 
-- **本地 SQLite 与 Markdown 镜像**：将记忆保存在项目目录的 `.hippo/` SQLite 存储中，同时维护人类可读、可纳入版本控制的 Markdown 镜像文件。
-- **保存与默认检索零 LLM 调用**：开箱即用 BM25 检索，无需调用模型或发起网络请求；同时支持按需开启本地 Transformers.js 或外部 API 向量嵌入。
+- **本地 SQLite 与 Markdown 镜像**：将记忆保存在项目目录的 `.hippo/` SQLite 存储中，同时维护人类可读、可纳入版本控制的 Markdown 镜像文件；捕获的用户消息不生成 Markdown 镜像。
+- **保存与默认检索零 LLM 调用**：开箱即用 BM25 检索，无需调用模型或发起网络请求；`hippo init` 默认安装本地 Transformers.js 嵌入模型（可用 `--no-embeddings` 跳过），API 嵌入（OpenAI、Voyage 或 Cohere）需主动开启。
 - **结果驱动的记忆权重**：持续使用的记忆会获得强化，标记为错误的召回会降低排序，通过 `hippo supersede` 替换过期事实，错误类记忆具备双倍半衰期。
-- **跨工具共享与导入**：通过原生 Hook、指令块、CLI、MCP Server 与 HTTP API 连接多款编程智能体，支持导入 ChatGPT 导出记录、`CLAUDE.md`、`.cursorrules`、Slack、GitHub 与 Markdown 笔记。
-- **自动整理与巩固**：通过 `hippo sleep` 从近期 Git 提交提取经验、导入各智能体笔记、自动去重，并将高价值经验同步至全局记忆库。
+- **跨工具共享与导入**：通过原生 Hook、指令块、CLI、MCP Server 与 HTTP API 连接多款编程智能体，可通过 `hippo import` 命令导入 ChatGPT 导出记录、`CLAUDE.md`、`.cursorrules` 与 Markdown 笔记；Slack 与 GitHub 内容则通过 Webhook 连接器和 `backfill` 命令接入。
+- **自动整理与巩固**：通过 `hippo sleep` 从近期 Git 提交提取经验、导入各智能体笔记、自动去重，并将高价值经验同步至全局记忆库；设置了 `ANTHROPIC_API_KEY` 时，`hippo sleep` 会将文本发送至 Anthropic，除非将 `extraction.enabled` 设为 `false`。
 
 ## 适用场景
 
 - 在多次编程智能体会话之间持久保留项目规范、架构决策与已修复的报错经验，避免重复教学。
 - 在 Claude Code、Codex、Cursor 与各类 MCP 工具间切换时共享同一份本地项目记忆库。
-- 将团队与个人工程知识保留在本地 SQLite 与 Markdown 文件中，并为每条记忆记录来源信息。
+- 将工程知识保存在本机的 SQLite 与 Markdown 文件中；文本仅会通过 API 嵌入、重排序器、模型读取的规则捕获（`capture.followUpRules`）、`hippo refine`，或设置了 `ANTHROPIC_API_KEY` 时的 `hippo sleep` 离开本机，从 Slack 与 GitHub 接入的记忆带有来源引用（`slack://` 来源、`artifact_ref`）。
 
 ## 相关链接
 
