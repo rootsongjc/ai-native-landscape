@@ -12,7 +12,6 @@ tags:
 description: 一个简洁且高效的仓库，用于训练与微调中等规模的 GPT 模型，适合教学与实验。
 author: Andrej Karpathy
 ossDate: '2022-12-28T00:51:12Z'
-featured: false
 status: tracked
 ---
 

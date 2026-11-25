@@ -12,7 +12,6 @@ tags:
 description: 一个基于 SQL 的开源记忆引擎，帮助大语言模型在会话间持久化与检索上下文。
 author: GibsonAI
 ossDate: '2025-07-24T07:07:51Z'
-featured: false
 status: tracked
 ---
 

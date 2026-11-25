@@ -15,7 +15,6 @@ tags:
 description: Kaito 是一个面向 Kubernetes 的 AI 工具链 Operator，自动化大模型推理与调优工作流并支持 RAG 引擎与节点自动扩容。
 author: kaito-project
 ossDate: '2023-09-09T01:53:38.000Z'
-featured: false
 status: tracked
 ---
 

@@ -13,7 +13,6 @@ tags:
 description: 用于构建以 LLM 为核心的应用框架，支持丰富的集成与可扩展组件。
 author: LangChain contributors
 ossDate: '2022-10-17T02:58:36.000Z'
-featured: true
 status: tracked
 ---
 

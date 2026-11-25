@@ -3,7 +3,7 @@ name: SearXNG
 slug: searxng
 homepage: https://docs.searxng.org
 repo: https://github.com/searxng/searxng
-license: GPL-3.0
+license: AGPL-3.0
 category: rag-knowledge
 subCategory: retrieval-indexing
 tags:
@@ -13,7 +13,6 @@ description: >-
   databases without user tracking.
 author: searxng
 ossDate: '2021-04-12T15:18:15.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

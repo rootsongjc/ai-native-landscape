@@ -13,7 +13,6 @@ tags:
 description: 面向边缘设备的高性能、可扩展轻量级深度学习推理运行时。
 author: Google
 ossDate: '2024-09-04T03:33:35Z'
-featured: false
 status: tracked
 ---
 

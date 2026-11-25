@@ -14,7 +14,6 @@ description: >-
   MCP-based Rube server.
 author: Composio
 ossDate: '2024-02-23T13:58:27.000Z'
-featured: false
 status: tracked
 ---
 ## Introduction

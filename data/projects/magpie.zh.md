@@ -14,7 +14,6 @@ tags:
 description: 本地网关加菜单栏应用，把所有编码智能体的模型管理集中一处——Claude Code 跑 Kimi、Codex 跑 DeepSeek——按智能体切换模型、随处复用订阅，并在账号与服务商之间自动故障切换。
 author: yetone
 ossDate: '2026-09-23'
-featured: false
 status: tracked
 ---
 

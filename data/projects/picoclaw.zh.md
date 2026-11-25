@@ -13,7 +13,6 @@ tags:
 description: PicoClaw 是一个用 Go 编写的超轻量 AI 助手，面向低成本硬件场景，具备低内存占用与快速启动能力。
 author: Sipeed
 ossDate: '2026-02-04T12:32:35Z'
-featured: false
 status: tracked
 ---
 

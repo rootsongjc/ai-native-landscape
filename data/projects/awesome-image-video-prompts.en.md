@@ -18,7 +18,6 @@ description: >-
   gallery.
 author: ai-boost
 ossDate: '2023-11-09'
-featured: false
 status: tracked
 ---
 ## Overview

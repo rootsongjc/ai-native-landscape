@@ -13,7 +13,6 @@ tags:
 description: 高性能的向量相似性搜索与聚类库，适用于大规模向量检索与加速近邻搜索。
 author: Faiss (facebookresearch)
 ossDate: '2017-02-07T16:07:05.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

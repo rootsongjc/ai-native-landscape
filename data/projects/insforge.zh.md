@@ -12,7 +12,6 @@ tags:
 description: 面向 AI 原生的 Supabase 替代方案，提供可被 AI 智能体管理的全栈后端功能与开发体验。
 author: InsForge
 ossDate: '2025-07-29T05:56:00.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

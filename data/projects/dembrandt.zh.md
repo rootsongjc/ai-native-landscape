@@ -14,7 +14,6 @@ tags:
 description: 一个基于 Playwright 的命令行工具，用于从任意网站自动提取 logo、颜色、排版、间距与组件等设计 tokens 并导出结构化 JSON 文件。
 author: thevangelist
 ossDate: '2025-11-22T13:49:09Z'
-featured: false
 status: tracked
 ---
 ## 简介

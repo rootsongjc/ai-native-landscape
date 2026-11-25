@@ -12,7 +12,6 @@ tags:
 description: 高性能、地理分布式并支持联邦的元数据湖，用于管理数据与 AI 资产的统一元数据访问与治理。
 author: Apache
 ossDate: '2023-04-23T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 

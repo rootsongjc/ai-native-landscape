@@ -15,7 +15,6 @@ tags:
 description: 一个开源的 LLM 资产与生命周期管理平台，支持 SaaS 与本地部署并兼容 Python SDK。
 author: OpenCSG
 ossDate: '2024-01-12T09:44:48Z'
-featured: false
 status: tracked
 ---
 CSGHub 是由 OpenCSG 团队开发的开源平台，用于管理大语言模型及相关 AI 资产（模型、数据集、代码等）。它提供类似 Hugging Face 的功能体验，同时支持 SaaS 和本地部署，满足企业级 LLM 生命周期管理需求。

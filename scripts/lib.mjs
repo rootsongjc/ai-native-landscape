@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import yaml from 'js-yaml';
+import { compareProjects, evaluateLevel } from '../src/lib/levels.mjs';
 
 const root = path.resolve(process.cwd());
 const dataDir = path.join(root, 'data');
@@ -247,6 +248,7 @@ const LEGACY_RULE_FALLBACK = {
 };
 
 let taxonomyCache = null;
+let signalsCache = null;
 
 export function getRoot() {
   return root;
@@ -437,6 +439,17 @@ export function resolveProjectTaxonomy(project) {
   throw new Error(`Unable to resolve taxonomy for ${projectLabel}`);
 }
 
+// data/signals.json is the snapshot written by `npm run sync:levels`. Levels and the
+// catalog order are derived from it at build time, so a build never depends on the score API.
+export function loadSignals() {
+  if (!signalsCache) {
+    const file = path.join(dataDir, 'signals.json');
+    const snapshot = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : {};
+    signalsCache = { syncedAt: snapshot.syncedAt || '', projects: snapshot.projects || {} };
+  }
+  return signalsCache;
+}
+
 export function toScore(project) {
   const rawScore = project.score || {};
   const hasAuthoritativeScore = ['health', 'community', 'quality', 'sustainability'].some((key) => rawScore[key] !== undefined);
@@ -469,12 +482,21 @@ export function toScore(project) {
   const category = getCategory(resolvedTaxonomy.category);
   const subCategory = getSubCategory(resolvedTaxonomy.subCategory);
 
+  const repoSlug = normalizeRepoSlug(project.repo);
+  const signals = loadSignals().projects[repoSlug.toLowerCase()] || null;
+
+  const evaluation = evaluateLevel(signals);
+
   return {
     ...project,
     score,
+    signals,
+    level: evaluation.level,
+    levelPoints: evaluation.points,
+    levelTotal: evaluation.total,
     category: resolvedTaxonomy.category,
     subCategory: resolvedTaxonomy.subCategory,
-    repoSlug: normalizeRepoSlug(project.repo),
+    repoSlug,
     totalScore,
     scorePercent: totalScore === null ? null : Math.round(totalScore),
     taxonomyReason: resolvedTaxonomy.reason,
@@ -488,7 +510,7 @@ export function toScore(project) {
 export function loadProjects() {
   return loadProjectDocuments()
     .map((project) => toScore(project))
-    .sort((a, b) => (b.totalScore ?? -1) - (a.totalScore ?? -1) || a.name.localeCompare(b.name));
+    .sort(compareProjects);
 }
 
 function buildLegacyCategoryGroups(projects, taxonomy) {
@@ -708,7 +730,6 @@ function mergeProjectDocumentsEntry(base, incoming) {
     content: mergeLocalizedObject(base.content, incoming.content),
     authorLocalized: mergeLocalizedObject(base.authorLocalized, incoming.authorLocalized),
     ossDate: preferValue(base.ossDate, incoming.ossDate),
-    featured: preferValue(base.featured, incoming.featured),
     thumbnail: preferValue(base.thumbnail, incoming.thumbnail),
     source: mergeLocalizedObject(base.source, incoming.source),
     status: preferValue(base.status, incoming.status),
@@ -754,7 +775,6 @@ function projectFrontMatterForLang(project, lang) {
     description: project.description?.[lang] || project.description?.en || project.description?.zh || '',
     author: project.authorLocalized?.[lang] || project.authorLocalized?.en || project.author || '',
     ossDate: project.ossDate || '',
-    featured: Boolean(project.featured),
     thumbnail: project.thumbnail || '',
     source: project.source?.[lang] || project.source?.en || project.source?.zh || '',
     status: project.status,

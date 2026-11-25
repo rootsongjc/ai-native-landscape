@@ -14,7 +14,6 @@ tags:
 description: Parlant 是一款专为实际业务场景打造的合规 AI Agent 框架，支持分钟级部署，确保智能体严格遵循业务规则。
 author: Emcie
 ossDate: '2024-02-15T20:16:15.000Z'
-featured: false
 status: tracked
 ---
 

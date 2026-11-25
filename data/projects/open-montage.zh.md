@@ -15,7 +15,6 @@ tags:
 description: 首个开源的智能体视频生产系统，将 AI 编程助手变成完整的视频工作室，自动完成调研、脚本、素材生成、剪辑与最终合成。
 author: Calesthio
 ossDate: '2026-03-29T15:23:22Z'
-featured: false
 status: tracked
 ---
 

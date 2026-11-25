@@ -14,7 +14,6 @@ description: >-
   visualize server behavior and responses.
 author: Model Context Protocol
 ossDate: '2024-10-03T21:47:42.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

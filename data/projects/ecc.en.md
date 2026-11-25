@@ -18,7 +18,6 @@ description: >-
   security scanning.
 author: affaan-m
 ossDate: '2026-01-18'
-featured: false
 status: tracked
 ---
 

@@ -16,7 +16,6 @@ tags:
 description: An Apache-2.0 self-hosted AI gateway and MCP server that fronts OpenAI, Anthropic, and Gemini APIs with virtual keys, budgets, caching, guardrails, reverse MCP governance, and provider-free deterministic prompt enhancement.
 author: happy520ai
 ossDate: '2026-04-27'
-featured: false
 status: tracked
 ---
 

@@ -13,7 +13,6 @@ description: >-
   reusable commands and tailored agent behaviors.
 author: SuperClaude Team
 ossDate: '2025-06-22T12:03:53.000Z'
-featured: false
 status: tracked
 ---
 

@@ -16,7 +16,6 @@ description: >-
   local software and a managed cloud service.
 author: Skyvern
 ossDate: '2024-02-28T15:45:19Z'
-featured: false
 status: tracked
 ---
 

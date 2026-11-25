@@ -15,7 +15,6 @@ description: >-
   synthesize arbitrary speech.
 author: babysor
 ossDate: '2021-08-07T03:53:39Z'
-featured: false
 status: tracked
 ---
 

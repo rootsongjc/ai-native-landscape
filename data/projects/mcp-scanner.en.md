@@ -14,7 +14,6 @@ description: >-
   reporting.
 author: Cisco AI Defense
 ossDate: '2025-09-24T01:02:24.000Z'
-featured: false
 status: tracked
 ---
 

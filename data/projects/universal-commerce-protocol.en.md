@@ -15,7 +15,6 @@ description: >-
   consistently.
 author: Universal Commerce Protocol
 ossDate: '2025-12-31T02:17:21Z'
-featured: false
 status: tracked
 ---
 

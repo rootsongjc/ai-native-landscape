@@ -15,7 +15,6 @@ description: >-
   Atlas and Perplexity.
 author: browseros-ai
 ossDate: '2025-05-18T16:23:54Z'
-featured: false
 status: tracked
 ---
 BrowserOS is an open-source, Chromium-based browser designed to run AI agents natively and privately. It aims to empower users with local AI automation while keeping data and API keys under user control.

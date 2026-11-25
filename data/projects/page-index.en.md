@@ -15,7 +15,6 @@ description: >-
   long documents.
 author: Vectify AI
 ossDate: '2025-04-01T10:53:54Z'
-featured: false
 status: tracked
 ---
 

@@ -11,7 +11,6 @@ tags:
 description: 在命令行中使用 GitHub Copilot 的交互式编码助手，提升本地开发效率与代码理解能力。
 author: GitHub
 ossDate: '2025-09-26T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

@@ -17,7 +17,6 @@ description: >-
   output compression, significantly improving AI coding assistant efficiency and lowering costs.
 author: rtk-ai
 ossDate: '2026-01-22'
-featured: false
 status: tracked
 ---
 

@@ -13,7 +13,6 @@ tags:
 description: Generate accurate, editable subtitles locally or integrated with DaVinci Resolve.
 author: Tom Moroney
 ossDate: '2023-03-15T01:51:06Z'
-featured: false
 status: tracked
 ---
 AutoSubs is an AI-powered desktop application for on-device subtitle generation that connects directly to DaVinci Resolve, Premiere, and After Effects. It offers multilingual transcription, speaker diarization, and a visual subtitle editor, all running locally without cloud dependency for maximum privacy.

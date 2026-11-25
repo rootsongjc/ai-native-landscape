@@ -16,7 +16,6 @@ description: >-
   面向 Kubernetes 和 vLLM 的推理控制平面，在多个推理端点之间进行选择，并应用策略、路由和负载均衡。通过监听 vLLM KV-cache 事件和引擎指标做出放置决策。
 author: Kinference-AI (Buoyant)
 ossDate: '2026-10-05'
-featured: false
 status: tracked
 ---
 

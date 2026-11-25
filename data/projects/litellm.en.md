@@ -13,7 +13,6 @@ description: >-
   and pluggable provider integrations for production deployments.
 author: BerriAI
 ossDate: '2023-07-27T00:09:52.000Z'
-featured: false
 status: tracked
 ---
 

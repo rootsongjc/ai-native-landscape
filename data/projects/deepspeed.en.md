@@ -14,7 +14,6 @@ description: >-
   reducing cost.
 author: DeepSpeed Team
 ossDate: '2020-01-23T18:35:18.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

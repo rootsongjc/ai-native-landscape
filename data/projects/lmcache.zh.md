@@ -11,7 +11,6 @@ tags:
 description: 面向 LLM 服务的高性能 KV 缓存层，旨在降低首次响应时间并提升吞吐量，特别适用于长上下文场景和多轮对话。
 author: LMCache
 ossDate: '2024-05-28T21:06:04.000Z'
-featured: false
 status: tracked
 ---
 

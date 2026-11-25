@@ -13,7 +13,6 @@ tags:
 description: 交互式计算环境，广泛用于数据科学和机器学习开发。
 author: Project Jupyter
 ossDate: '2015-04-09T06:58:03.000Z'
-featured: false
 status: tracked
 ---
 

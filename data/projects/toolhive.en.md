@@ -16,7 +16,6 @@ description: >-
   components.
 author: StackLok
 ossDate: '2025-03-12T14:49:15Z'
-featured: false
 status: tracked
 ---
 

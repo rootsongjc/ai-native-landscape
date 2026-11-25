@@ -13,7 +13,6 @@ tags:
 description: 面向开发者终端的只读扫描工具，扫描磁盘上的包、扩展和开发工具元数据，用于检测已知软件供应链漏洞的暴露情况。
 author: Perplexity AI
 ossDate: '2026-05-20T18:11:37Z'
-featured: false
 status: tracked
 ---
 

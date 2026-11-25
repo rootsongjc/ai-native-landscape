@@ -3,7 +3,7 @@ name: Skills
 slug: anthropic-skills
 homepage: https://www.anthropic.com/
 repo: https://github.com/anthropics/skills
-license: Unknown
+license: Other
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -13,7 +13,6 @@ tags:
 description: Anthropic 提供的开源智能体技能库，用于定义、共享与复用面向任务的能力模块。
 author: Anthropic
 ossDate: '2025-09-22T15:53:31Z'
-featured: false
 status: tracked
 ---
 

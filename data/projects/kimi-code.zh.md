@@ -16,7 +16,6 @@ description: >-
   模型，也支持其他兼容模型服务。
 author: Moonshot AI
 ossDate: '2026-05-22'
-featured: false
 status: tracked
 ---
 

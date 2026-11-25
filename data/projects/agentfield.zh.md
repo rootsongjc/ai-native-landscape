@@ -14,7 +14,6 @@ tags:
 description: 将 Kubernetes 的理念带入智能体运行时，提供可扩展、可观测且具身份感知的智能体微服务平台。
 author: Agent Field
 ossDate: '2025-11-05T02:04:44Z'
-featured: false
 status: tracked
 ---
 ## 简介

@@ -12,7 +12,6 @@ tags:
 description: WeKnora 是腾讯开源的文档理解与检索框架，基于大语言模型（LLM）和 RAG 技术，支持多格式文档解析、知识图谱构建与智能问答，适用于企业知识管理、科研文献分析等场景。
 author: 腾讯
 ossDate: '2025-07-22T08:01:23.000Z'
-featured: false
 status: tracked
 ---
 

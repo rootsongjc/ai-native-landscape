@@ -12,7 +12,6 @@ tags:
 description: XLA（Accelerated Linear Algebra）是一个用于机器学习模型编译的高性能编译器，能够为 CPU、GPU 与专用加速器生成高效执行代码。
 author: OpenXLA
 ossDate: '2017-01-01T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 

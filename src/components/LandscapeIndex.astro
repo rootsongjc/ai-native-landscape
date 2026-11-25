@@ -21,7 +21,7 @@ const categories = landscape.categories
   .sort((a, b) => (landscape.byCategory[b.key] || []).length - (landscape.byCategory[a.key] || []).length);
 const primaryCategories = categories.slice(0, 4);
 const secondaryCategories = categories.slice(4);
-const featured = landscape.projects.filter((project) => project.featured).slice(0, 6);
+const featured = landscape.projects.filter((project) => project.level === 'mature').slice(0, 6);
 
 const searchIndex = landscape.projects.map((project) => ({
   slug: project.slug,

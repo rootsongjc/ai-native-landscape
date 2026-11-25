@@ -16,7 +16,6 @@ description: >-
   Recall@5 达 96.6% 且零 API 调用，检索后端可插拔。
 author: MemPalace
 ossDate: '2026-04-05'
-featured: false
 status: tracked
 ---
 

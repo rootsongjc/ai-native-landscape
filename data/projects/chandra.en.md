@@ -13,7 +13,6 @@ tags:
 description: Chandra is a high‑accuracy OCR model that converts images and PDFs into structured outputs with layout information.
 author: Datalab
 ossDate: '2025-10-08T21:34:16Z'
-featured: false
 status: tracked
 ---
 Chandra is a high-accuracy OCR model that handles complex tables, forms, handwriting, and full layout recognition. It converts images and PDFs into structured HTML, Markdown, or JSON outputs while preserving layout information such as headers, footers, tables, checkboxes, and mathematical notation, making it suitable for the most demanding document digitization tasks.

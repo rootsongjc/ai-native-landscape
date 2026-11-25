@@ -15,7 +15,6 @@ description: >-
   speed up development and builds.
 author: Oven
 ossDate: '2021-04-14T00:48:17Z'
-featured: false
 status: tracked
 ---
 Bun is an incredibly fast JavaScript runtime, bundler, test runner, and package manager combined into a single integrated platform. Distributed as a single binary, it focuses on fast startup, speedy dependency installation, and build performance. Bun is widely used as a high-performance runtime for AI tooling and development workflows.

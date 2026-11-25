@@ -17,7 +17,6 @@ description: >-
   featuring 118+ third-party integrations, local memory trees, an Obsidian wiki, and native voice interaction.
 author: senamakel
 ossDate: '2025-04-01'
-featured: false
 status: tracked
 ---
 

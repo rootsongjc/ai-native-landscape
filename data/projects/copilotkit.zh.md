@@ -13,7 +13,6 @@ tags:
 description: CopilotKit 是一个开源前端框架，用于在 React 和 Angular 应用中快速集成 AI Copilot、Agent 以及生成式 UI 组件，是 AG-UI 协议的发起者。
 author: CopilotKit
 ossDate: '2023-06-19T04:08:31Z'
-featured: false
 status: tracked
 ---
 ## 详细介绍

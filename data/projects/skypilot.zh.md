@@ -12,7 +12,6 @@ tags:
 description: Skypilot 是一个用于在云和本地集群上自动化分布式训练与推理任务的开源工具，简化资源调度与环境配置。
 author: skypilot-org
 ossDate: '2021-08-11T23:32:15.000Z'
-featured: false
 status: tracked
 ---
 

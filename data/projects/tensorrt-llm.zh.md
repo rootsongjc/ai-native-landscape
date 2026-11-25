@@ -14,7 +14,6 @@ tags:
 description: NVIDIA 开源大模型推理优化工具箱，专为 GPU 高效推理和企业级部署设计。
 author: NVIDIA
 ossDate: '2023-08-16T17:14:27.000Z'
-featured: false
 status: tracked
 ---
 

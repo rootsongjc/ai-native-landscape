@@ -15,7 +15,6 @@ tags:
 description: Phoenix 是 Arize AI 推出的 LLM 应用与智能体可观测性和评测平台，涵盖基于 OpenTelemetry 的链路追踪、评测、数据集与实验以及提示词管理。
 author: Arize AI
 ossDate: '2022-11-09T23:44:35Z'
-featured: false
 status: tracked
 ---
 

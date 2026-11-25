@@ -17,7 +17,6 @@ tags:
 description: An open-source personal cloud OS built on Kubernetes, enabling self-hosted AI agents, local model serving, and private data sovereignty.
 author: beclab
 ossDate: '2024-04-29'
-featured: false
 status: tracked
 ---
 

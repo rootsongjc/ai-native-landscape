@@ -14,7 +14,6 @@ tags:
 description: NVIDIA NeMo 团队推出的 Rust LLM 流量代理与库，跨厂商路由请求并在 OpenAI 与 Anthropic API 之间做协议转换。
 author: NVIDIA-NeMo
 ossDate: '2026-05-19T19:06:33Z'
-featured: false
 status: tracked
 ---
 

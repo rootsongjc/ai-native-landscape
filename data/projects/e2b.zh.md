@@ -13,7 +13,6 @@ tags:
 description: 用于 AI 应用和智能体的安全开源云运行时环境。
 author: E2B
 ossDate: '2023-03-04T13:41:18.000Z'
-featured: true
 status: tracked
 ---
 E2B 是一个开源基础设施，允许您在云端安全隔离的沙箱中运行 AI 生成的代码。您可以使用我们的 Python SDK 或 JavaScript SDK 来启动和控制沙箱。

@@ -3,7 +3,7 @@ name: MCP Servers
 slug: mcp-servers
 homepage: 'https://modelcontextprotocol.io'
 repo: https://github.com/modelcontextprotocol/servers
-license: Other
+license: Apache-2.0 AND MIT
 category: coding-devtools
 subCategory: mcp-tools
 tags:
@@ -14,7 +14,6 @@ tags:
 description: Official reference implementations of Model Context Protocol servers, providing standardized tool interfaces for AI agents to interact with external systems and data sources.
 author: Anthropic
 ossDate: '2024-11-19'
-featured: true
 thumbnail: ''
 source: ''
 status: tracked

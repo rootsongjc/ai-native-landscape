@@ -16,7 +16,6 @@ description: >-
   通过 OpenAI 兼容端点对外提供服务。
 author: sgl-project
 ossDate: '2026-01-07'
-featured: false
 status: tracked
 ---
 

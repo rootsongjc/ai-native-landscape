@@ -13,7 +13,6 @@ description: >-
   multimodal models, with training, quantization and inference acceleration support.
 author: ModelScope
 ossDate: '2023-08-01T15:06:39.000Z'
-featured: false
 status: tracked
 ---
 

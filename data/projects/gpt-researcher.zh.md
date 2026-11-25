@@ -11,7 +11,6 @@ tags:
 description: 基于多代理与检索的深度研究代理，自动化网页与本地文档检索并生成带来源的研究报告。
 author: assafelovic
 ossDate: '2023-05-12T10:33:54.000Z'
-featured: false
 status: tracked
 ---
 

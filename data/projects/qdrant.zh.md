@@ -12,7 +12,6 @@ tags:
 description: Qdrant 是一款面向生产环境的向量搜索引擎与向量数据库，提供高性能相似度检索、量化支持、持久化以及多语言客户端，适用于语义搜索、推荐与检索增强生成等场景。
 author: Qdrant
 ossDate: '2019-05-01T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 

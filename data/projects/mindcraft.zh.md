@@ -12,7 +12,6 @@ tags:
 description: 基于 LLM 的 Minecraft 多主体与代理框架，用于在 Minecraft 世界中构建可交互的智能机器人与任务系统。
 author: mindcraft-bots
 ossDate: '2023-08-16T06:39:59.000Z'
-featured: false
 status: tracked
 ---
 

@@ -11,7 +11,6 @@ tags:
 description: 面向大规模 AI 工作负载的开源无服务器推理引擎，支持快速容器启动与 GPU 支持。
 author: Beam
 ossDate: '2023-11-15T00:53:21.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

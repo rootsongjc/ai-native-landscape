@@ -12,7 +12,6 @@ tags:
 description: 一个开源的 ML 与 LLM 评估、测试与监控框架，支持从实验到生产的一站式质量检查与仪表盘展示。
 author: Evidently Team
 ossDate: '2020-11-25T15:20:08.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

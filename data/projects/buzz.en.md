@@ -15,7 +15,6 @@ tags:
 description: A self-hostable workspace where humans and AI agents build together in the same rooms, built on a Nostr relay you own.
 author: Block
 ossDate: '2026-03-06T21:00:56Z'
-featured: false
 status: tracked
 ---
 Buzz is a self-hostable team workspace where humans and AI agents share the same channels, threads, and direct messages. Built on a Nostr relay, every message, reaction, workflow step, review approval, and git event is a signed event in one auditable log, so people and agents operate with the same identity model and the same surface area.

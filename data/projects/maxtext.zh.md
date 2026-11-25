@@ -13,7 +13,6 @@ tags:
 description: 高性能、可扩展的 JAX+Python LLM 库与参考实现，面向 Google Cloud TPU 与 GPU。
 author: AI-Hypercomputer
 ossDate: '2023-02-28T19:47:29.000Z'
-featured: false
 status: tracked
 ---
 

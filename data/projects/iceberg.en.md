@@ -15,7 +15,6 @@ description: >-
   compatibility. Widely used in AI data pipelines and ML feature stores.
 author: Apache
 ossDate: '2018-11-19T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 

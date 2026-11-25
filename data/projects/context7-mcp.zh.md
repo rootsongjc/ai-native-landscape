@@ -11,7 +11,6 @@ tags:
 description: 为任何提示提供最新的代码文档，直接从源头获取版本特定的文档和代码示例，并将其直接放入您的提示中。
 author: Upstash
 ossDate: '2025-03-26T23:40:39.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

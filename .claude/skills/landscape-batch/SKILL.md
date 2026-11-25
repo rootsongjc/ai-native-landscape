@@ -138,7 +138,6 @@ description: <description>
 logo: ''
 author: <org>
 ossDate: '<date>'
-featured: false
 thumbnail: ''
 source: ''
 status: tracked

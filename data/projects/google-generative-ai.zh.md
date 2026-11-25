@@ -13,7 +13,6 @@ tags:
 description: Google Cloud 的 Generative AI 示例与笔记，展示如何在 Vertex AI 与 Gemini 上构建和部署生成式 AI 工作流。
 author: Google
 ossDate: '2023-05-05T12:31:07.000Z'
-featured: false
 status: tracked
 ---
 ## 详细介绍

@@ -12,7 +12,6 @@ tags:
 description: ONNX 是一个开放的模型交换格式与生态，旨在提高机器学习模型在框架、工具与硬件之间的互操作性。
 author: ONNX
 ossDate: '2017-09-07T04:53:45Z'
-featured: false
 status: tracked
 ---
 

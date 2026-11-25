@@ -11,7 +11,6 @@ tags:
 description: Claude-Flow 是一个面向 Claude 平台的 AI 编排与多智能体协同框架，支持高并发 agent 调度、Hooks 自动化与 Flow Nexus 云集成。
 author: ruvnet
 ossDate: '2023-06-01T00:00:00+08:00'
-featured: false
 status: tracked
 ---
 ## 简介

@@ -12,7 +12,6 @@ tags:
 description: OpenPipe 出品的开源强化学习训练框架，用于对基于 LLM 的代理进行强化学习训练与微调。
 author: OpenPipe
 ossDate: '2025-03-10T18:25:47.000Z'
-featured: false
 status: tracked
 ---
 

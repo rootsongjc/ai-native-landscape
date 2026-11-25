@@ -13,7 +13,6 @@ description: >-
   remediation suggestions.
 author: CNCF
 ossDate: '2024-05-30T13:27:10Z'
-featured: false
 status: tracked
 ---
 

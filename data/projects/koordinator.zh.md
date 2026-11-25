@@ -13,7 +13,6 @@ tags:
 description: '基于 QoS 的 Kubernetes 调度系统，支持微服务、大数据与 AI 负载混部，并提供精细化的 GPU 与异构设备调度。'
 author: Koordinator
 ossDate: '2022-03-16T07:14:48.000Z'
-featured: false
 status: tracked
 ---
 

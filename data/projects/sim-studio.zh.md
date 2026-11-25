@@ -11,7 +11,6 @@ tags:
 description: 轻量级且用户友好的智能体工作流程构建平台，支持云托管和自托管多种部署方式。
 author: Sim Studio
 ossDate: '2025-01-05T22:47:49.000Z'
-featured: false
 status: tracked
 ---
 Sim Studio 是一个轻量级且用户友好的智能体工作流程构建平台，通过直观的可视化界面和强大的后端支持，让开发者能够快速构建和管理复杂的 AI 工作流程。平台提供云托管和自托管两种部署方式，满足不同场景需求。

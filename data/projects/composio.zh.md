@@ -12,7 +12,6 @@ tags:
 description: 为 AI 客户端与代理提供丰富集成与工具的 SDK 与平台，支持 TypeScript 与 Python SDK，以及用于将 AI 与 500+ 应用连接的 MCP 服务 Rube。
 author: Composio
 ossDate: '2024-02-23T13:58:27.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

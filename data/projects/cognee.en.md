@@ -17,7 +17,6 @@ description: >-
   knowledge graph engine.
 author: topoteretes
 ossDate: '2023-08-16'
-featured: false
 status: tracked
 ---
 

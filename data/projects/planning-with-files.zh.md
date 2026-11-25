@@ -14,7 +14,6 @@ tags:
 description: 一个受 Manus 工作流启发、以持久化 Markdown 文件为中心的计划与智能体技能管理工具。
 author: Othman Adi
 ossDate: '2026-01-03T07:37:28Z'
-featured: false
 status: tracked
 ---
 

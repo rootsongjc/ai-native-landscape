@@ -17,7 +17,6 @@ tags:
 description: 基于 Kubernetes 的开源个人云操作系统，支持自托管 AI 智能体、本地模型推理和数据自主权。
 author: beclab
 ossDate: '2024-04-29'
-featured: false
 status: tracked
 ---
 

@@ -14,7 +14,6 @@ tags:
 description: 一套用于部署与治理 MCP 服务器的企业级平台，提供注册中心、运行时、网关与门户组件。
 author: StackLok
 ossDate: '2025-03-12T14:49:15Z'
-featured: false
 status: tracked
 ---
 

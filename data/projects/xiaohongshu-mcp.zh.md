@@ -3,7 +3,7 @@ name: Xiaohongshu MCP
 slug: xiaohongshu-mcp
 homepage: https://www.haha.ai/xiaohongshu-mcp
 repo: https://github.com/xpzouying/xiaohongshu-mcp
-license: Unknown
+license: Apache-2.0
 category: coding-devtools
 subCategory: mcp-tools
 tags:
@@ -12,7 +12,6 @@ tags:
 description: 面向小红书内容运营的开源 MCP 服务，支持登录检测、图文发布、推荐与搜索、帖子详情与评论等自动化操作，便于在多种 AI 客户端中统一调用。
 author: xpzouying
 ossDate: '2025-08-03T09:08:45.000Z'
-featured: false
 status: tracked
 ---
 

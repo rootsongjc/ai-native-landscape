@@ -11,7 +11,6 @@ tags:
 description: 一款用于评估代码‘混乱度’并生成可读报告的静态分析工具，支持多语言和 Markdown 输出。
 author: Done-0
 ossDate: '2025-06-25T16:40:22.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

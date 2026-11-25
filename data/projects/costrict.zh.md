@@ -13,7 +13,6 @@ tags:
 description: Costrict（前身为 Shenma）是深信服开源的企业级 AI 编程助手，以"严肃编程"为核心理念，提供严格模式、代码审查、代码补全等能力，支持私有化部署。
 author: 深信服 (Sangfor)
 ossDate: '2025-04-10T02:06:51Z'
-featured: false
 status: tracked
 ---
 ## 详细介绍

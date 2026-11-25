@@ -16,7 +16,6 @@ description: >-
   可以并行运行数十个 Agent，每个额外会话仅占用极少内存，启动近乎瞬时。
 author: 1jehuang
 ossDate: '2026-01-05'
-featured: false
 status: tracked
 ---
 

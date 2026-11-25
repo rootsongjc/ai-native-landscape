@@ -13,7 +13,6 @@ tags:
 description: 可自托管的"第二大脑"平台，用于将网页与文档转为可检索知识库并支持构建自定义智能体与自动化。
 author: Khoj AI
 ossDate: '2021-08-16T01:48:44Z'
-featured: false
 status: tracked
 ---
 

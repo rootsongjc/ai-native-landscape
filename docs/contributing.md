@@ -89,7 +89,6 @@ tags:
 description: Short English description of the project.
 author: Organization
 ossDate: '2025-01-01T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 ```
@@ -111,7 +110,6 @@ tags:
 description: 项目的中文简介。
 author: Organization
 ossDate: '2025-01-01T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 ```
@@ -165,6 +163,25 @@ If you are unsure which category to use, leave `subCategory` empty and let the a
 | `tracked` | Listed and actively tracked |
 
 `tracked` is the only valid value. A project that should no longer be listed is removed, see [Project Removal](#project-removal).
+
+### Project Levels
+
+Do not set a level or a `featured` flag in a project file; the schema rejects both. Each project's level (`mature`, `growing`, `emerging`) is computed from its health, and it decides the order within a category. Star count, foundation membership and vendor neutrality are not considered.
+
+| Dimension | Scoring |
+|---|---|
+| Community health (overall health score) | 4 points ≥ 85 · 3 points ≥ 80 · 2 points ≥ 70 · 1 point ≥ 60 |
+| Contributor base | 2 points ≥ 150 contributors · 1 point ≥ 30 |
+| Sustained activity | 2 points: ≥ 300 commits in the last year and a commit in the last 30 days · 1 point: ≥ 50 commits and a commit in the last 90 days |
+| Track record | 2 points: repository created ≥ 730 days ago · 1 point: ≥ 365 days ago |
+
+| Level | Rule |
+|---|---|
+| `mature` | 10 points: full marks on every dimension |
+| `growing` | At least 5 points, with at least 2 for community health and at least 1 for sustained activity |
+| `emerging` | Every other listed project |
+
+A new project is `emerging` until the next `npm run sync:levels` run picks up its signals. To change how projects are ranked, propose a change to the standard in `src/lib/levels.mjs`, which applies to every project.
 
 ## Updating an Existing Project
 

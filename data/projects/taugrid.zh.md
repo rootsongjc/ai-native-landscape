@@ -16,7 +16,6 @@ tags:
 description: 云原生 AI 基础设施，在 GPU Kubernetes 集群上运行、调度并监控 AI 工作负载，覆盖数据准备、分布式训练、微调与推理。
 author: Azure
 ossDate: '2026-07-24'
-featured: false
 status: tracked
 ---
 

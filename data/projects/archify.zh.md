@@ -14,7 +14,6 @@ tags:
 description: 一个智能体技能，把想法、方案或代码库转换为可交互的独立 HTML 图表——架构图、时序图、工作流、ERD 等——附带类型化 JSON 源、校验凭证，并支持通过对话迭代修改。
 author: tt-a1i
 ossDate: '2026-04-15'
-featured: false
 status: tracked
 ---
 

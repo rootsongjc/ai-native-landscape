@@ -14,7 +14,6 @@ description: >-
   edge applications in local or self-hosted environments.
 author: Cloudflare
 ossDate: '2022-09-15T15:15:16.000Z'
-featured: false
 status: tracked
 ---
 

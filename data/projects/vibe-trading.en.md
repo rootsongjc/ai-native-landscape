@@ -14,7 +14,6 @@ tags:
 description: Your personal AI trading agent with multi-agent architecture, backtesting, and MCP integration for algorithmic trading.
 author: HKUDS
 ossDate: '2026-04-01T09:52:20Z'
-featured: false
 status: tracked
 ---
 

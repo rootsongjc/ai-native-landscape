@@ -11,7 +11,6 @@ tags:
 description: 一个开源的本地托管 PDF 编辑与处理平台，支持丰富的 PDF 操作与自定义流水线。
 author: Stirling-Tools
 ossDate: '2023-01-27T18:22:42.000Z'
-featured: false
 status: tracked
 ---
 

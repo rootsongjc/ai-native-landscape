@@ -3,7 +3,7 @@ name: cmux
 slug: cmux
 homepage: https://cmux.com
 repo: https://github.com/manaflow-ai/cmux
-license: Unknown
+license: GPL-3.0-or-later
 category: coding-devtools
 subCategory: ide-cli-tools
 tags:
@@ -15,7 +15,6 @@ tags:
 description: 基于 Ghostty 的开源 macOS 终端，具备纵向标签页与通知能力，专为 AI 编程智能体与可编程性而设计。
 author: manaflow-ai
 ossDate: '2026-01-28'
-featured: false
 status: tracked
 ---
 

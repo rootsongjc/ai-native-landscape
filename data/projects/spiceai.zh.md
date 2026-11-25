@@ -15,7 +15,6 @@ tags:
 description: 一个面向时序数据与应用集成的开源加速引擎，提供 SQL 查询、全文检索与 LLM 推理能力。
 author: Spice.ai
 ossDate: '2021-08-08T23:26:13Z'
-featured: false
 status: tracked
 ---
 

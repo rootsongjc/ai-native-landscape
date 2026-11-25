@@ -13,7 +13,6 @@ tags:
 description: 允许 AI 控制浏览器的 Python 库，适合自动化任务与基于浏览器的 agent。
 author: browser-use
 ossDate: '2024-10-31T16:00:56.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

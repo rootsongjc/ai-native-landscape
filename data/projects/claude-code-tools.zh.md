@@ -15,7 +15,6 @@ tags:
 description: 为 Claude Code、Codex-CLI 等 CLI 智能体提供的实用生产力工具集合与插件。
 author: pchalasani
 ossDate: '2025-07-30T20:10:38Z'
-featured: false
 status: tracked
 ---
 claude-code-tools 是一套旨在增强 Claude Code 工作流及类似 CLI 编码智能体体验的生产力工具和扩展集合。由 pchalasani 维护，提供会话管理、终端自动化和安全控制等插件，帮助开发者从 LLM 驱动的开发环境中获得更高效率。

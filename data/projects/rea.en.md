@@ -17,7 +17,6 @@ description: >-
   analysis running locally and every conclusion backed by evidence.
 author: morluto
 ossDate: '2026-04-14'
-featured: false
 status: tracked
 ---
 

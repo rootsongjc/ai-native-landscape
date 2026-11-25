@@ -14,7 +14,6 @@ tags:
 description: OpenWiki is a CLI that writes and maintains agent documentation for your codebase, keeping AI agents in sync with up-to-date project knowledge.
 author: langchain-ai
 ossDate: '2026-06-22T23:48:26Z'
-featured: false
 status: tracked
 ---
 

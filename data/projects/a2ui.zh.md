@@ -12,7 +12,6 @@ tags:
 description: 一个开源的声明式 UI 规范与工具集，使智能体以安全且可移植的 JSON 描述生成可渲染界面。
 author: Google
 ossDate: '2025-09-24T23:14:02Z'
-featured: false
 status: tracked
 ---
 ## 简介

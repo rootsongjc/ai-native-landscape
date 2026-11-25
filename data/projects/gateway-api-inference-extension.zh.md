@@ -11,7 +11,6 @@ tags:
 description: 将 Gateway API 与外部处理扩展结合，构建 Kubernetes 原生的推理网关以优化生成式 AI 推理部署。
 author: Kubernetes SIGs
 ossDate: '2024-08-28T20:04:10.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

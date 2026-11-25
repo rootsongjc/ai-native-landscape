@@ -12,7 +12,6 @@ tags:
 description: Google Research 汇集了 Google 的开源研究代码与数据集，涵盖机器学习、计算机视觉、语言模型等多个研究方向。
 author: Google
 ossDate: '2014-01-01T00:00:00+08:00'
-featured: false
 status: tracked
 ---
 ## 简介

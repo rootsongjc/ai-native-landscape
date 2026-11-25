@@ -3,7 +3,7 @@ name: PyTorch
 slug: pytorch
 homepage: https://pytorch.org/
 repo: https://github.com/pytorch/pytorch
-license: Unknown
+license: BSD-3-Clause
 category: training-optimization
 subCategory: training-frameworks
 tags:
@@ -13,7 +13,6 @@ tags:
 description: 开源深度学习框架，支持动态图与高效 GPU 加速，适用于研究与生产部署。
 author: PyTorch
 ossDate: '2016-08-13T05:26:41.000Z'
-featured: false
 status: tracked
 ---
 

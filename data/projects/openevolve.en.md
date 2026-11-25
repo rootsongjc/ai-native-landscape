@@ -13,7 +13,6 @@ description: >-
   LLMs to discover and optimize code and algorithms.
 author: OpenEvolve
 ossDate: '2025-05-15T11:46:52.000Z'
-featured: false
 status: tracked
 ---
 

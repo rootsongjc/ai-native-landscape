@@ -16,7 +16,6 @@ tags:
 description: 通过加密的 Tailscale 连接在 Mac 之间同步浏览器会话，使远程机器上的 AI 智能体自动获得认证状态。
 author: mvanhorn
 ossDate: '2026-05-16'
-featured: false
 status: tracked
 ---
 

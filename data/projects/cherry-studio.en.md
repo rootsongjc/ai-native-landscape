@@ -12,7 +12,6 @@ tags:
 description: AI conversation client with multi-provider integration. Focused on privacy and security with all data stored locally.
 author: CherryHQ
 ossDate: '2024-05-24T01:56:26.000Z'
-featured: false
 status: tracked
 ---
 Cherry Studio is a feature-rich AI conversation client that supports integration with multiple service providers and is compatible with OpenAI/Anthropic API format services.

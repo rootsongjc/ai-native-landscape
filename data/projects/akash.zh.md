@@ -13,7 +13,6 @@ tags:
 description: '去中心化的点对点云算力市场，供给方通过链上反向竞价将 GPU 与 CPU 资源出租给租户。'
 author: Akash Network
 ossDate: '2017-09-15T22:55:19.000Z'
-featured: false
 status: tracked
 ---
 

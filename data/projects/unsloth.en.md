@@ -15,7 +15,6 @@ description: >-
   wide model support.
 author: Unsloth Team
 ossDate: '2023-11-29T16:50:09.000Z'
-featured: false
 status: tracked
 ---
 

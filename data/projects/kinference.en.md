@@ -17,7 +17,6 @@ description: >-
   routing, and load balancing. It monitors vLLM KV-cache events and engine metrics to make placement decisions.
 author: Kinference-AI (Buoyant)
 ossDate: '2026-10-05'
-featured: false
 status: tracked
 ---
 

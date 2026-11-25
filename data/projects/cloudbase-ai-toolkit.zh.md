@@ -13,7 +13,6 @@ tags:
 description: CloudBase AI ToolKit 提供开箱即用的 AI IDE、前端与后端示例和部署流水线，帮助开发者快速生成、部署并托管全栈 AI 应用。
 author: Tencent CloudBase
 ossDate: '2025-05-23T08:31:26.000Z'
-featured: false
 status: tracked
 ---
 ## 详细介绍

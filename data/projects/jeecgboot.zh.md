@@ -13,7 +13,6 @@ tags:
 description: 一个开源的 Java 低代码平台，通过代码生成与 AI 辅助开发提升企业开发效率。
 author: JeecgBoot
 ossDate: '2018-11-26T10:40:00Z'
-featured: false
 status: tracked
 ---
 

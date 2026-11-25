@@ -14,7 +14,6 @@ tags:
 description: 提供公网访问一站式方案的 MCP 服务器，为 AI Agent 提供爬取、抓取和结构化数据提取能力。
 author: brightdata
 ossDate: '2025-04-15T10:55:56Z'
-featured: false
 status: tracked
 ---
 

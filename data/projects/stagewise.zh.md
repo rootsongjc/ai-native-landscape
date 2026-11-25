@@ -12,7 +12,6 @@ tags:
 description: 首个面向现有生产级 Web 应用的前端编码智能体，在浏览器中运行，直接修改本地代码库。
 author: Stagewise Team
 ossDate: '2025-04-26T12:43:16.000Z'
-featured: false
 status: tracked
 ---
 

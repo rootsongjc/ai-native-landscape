@@ -16,7 +16,6 @@ tags:
 description: Turn any code into an interactive knowledge graph you can explore, search, and ask questions about, with native support for Claude Code, Codex, Cursor, Copilot, and Gemini CLI.
 author: Egonex-AI
 ossDate: '2026-03-15'
-featured: false
 status: tracked
 ---
 

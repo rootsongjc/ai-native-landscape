@@ -3,7 +3,7 @@ name: Oh My OpenCode
 slug: oh-my-opencode
 homepage: null
 repo: https://github.com/code-yeongyu/oh-my-openagent
-license: Unknown
+license: Other
 category: coding-devtools
 subCategory: coding-agents
 tags:
@@ -14,7 +14,6 @@ description: >-
   acceleration.
 author: Community
 ossDate: '2024-01-01T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 

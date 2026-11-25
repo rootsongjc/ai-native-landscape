@@ -12,7 +12,6 @@ tags:
 description: 基于 Pydantic 的结构化输出库，简化从任意 LLM 提取可靠 JSON 结构化数据的流程。
 author: Instructor 社区
 ossDate: '2023-06-14T10:42:23.000Z'
-featured: false
 status: tracked
 ---
 

@@ -13,7 +13,6 @@ description: >-
   Codex, Amp and more.
 author: BloopAI Team
 ossDate: '2025-06-14T19:10:21.000Z'
-featured: false
 status: tracked
 ---
 

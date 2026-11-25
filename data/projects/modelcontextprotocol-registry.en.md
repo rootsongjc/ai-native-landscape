@@ -16,7 +16,6 @@ description: >-
   capabilities for MCP-compatible servers.
 author: Anthropic
 ossDate: '2025-02-05T17:58:01.000Z'
-featured: false
 status: tracked
 ---
 

@@ -14,7 +14,6 @@ description: >-
   high-quality IaC.
 author: Stakpak
 ossDate: '2024-12-10T21:56:17Z'
-featured: false
 status: tracked
 ---
 

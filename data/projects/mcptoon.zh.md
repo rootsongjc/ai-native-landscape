@@ -14,7 +14,6 @@ tags:
 description: 零依赖的 Python 命令行工具，将本机 MCP server 配置统一成一份并同步到各个 AI 客户端，还能把全部 server 聚合成单个 stdio MCP server，同时让工具 schema 与技能文件远离上下文窗口。
 author: activeing123
 ossDate: '2026-07-27'
-featured: false
 status: tracked
 ---
 

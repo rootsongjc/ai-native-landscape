@@ -16,7 +16,6 @@ description: >-
   开源的智能体元 harness，在 Claude Code、Codex、Cursor 和自定义智能体之上提供统一的编排层，支持策略管控、云端沙箱以及跨设备实时协作。
 author: Omnigent
 ossDate: '2026-06-11T12:18:13.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

@@ -3,7 +3,7 @@ name: AI-Trader
 slug: ai-trader
 homepage: https://hkuds.github.io/AI-Trader/
 repo: https://github.com/hkuds/ai-trader
-license: Unknown
+license: MIT
 category: applications-products
 subCategory: productivity-tools
 tags:
@@ -12,7 +12,6 @@ tags:
 description: 一个面向量化研究与实盘回测的开源智能交易系统，集成策略模拟、交易执行与可视化监控。
 author: HKUDS
 ossDate: '2025-10-23T12:45:00.000Z'
-featured: false
 status: tracked
 ---
 

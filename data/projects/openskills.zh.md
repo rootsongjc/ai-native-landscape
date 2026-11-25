@@ -12,7 +12,6 @@ tags:
 description: 面向开发者的通用技能（skill）加载器，简化在智能体与脚本中安装与管理技能的流程。
 author: Numman Ali
 ossDate: '2025-10-26T19:43:54Z'
-featured: false
 status: tracked
 ---
 

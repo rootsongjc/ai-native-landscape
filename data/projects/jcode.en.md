@@ -16,7 +16,6 @@ description: >-
   workflows — run dozens of agents in parallel with minimal per-session RAM and near-instant startup.
 author: 1jehuang
 ossDate: '2026-01-05'
-featured: false
 status: tracked
 ---
 

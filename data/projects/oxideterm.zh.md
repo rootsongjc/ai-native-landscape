@@ -16,7 +16,6 @@ tags:
 description: 基于 Rust 和 Tauri 构建的 AI-native 终端工作区，支持本地 Shell 和远程 SSH/SFTP，集成 AI 助手和 MCP Server。
 author: AnalyseDeCircuit
 ossDate: '2026-01-21'
-featured: false
 status: tracked
 ---
 

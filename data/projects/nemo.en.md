@@ -11,7 +11,6 @@ tags:
 description: NVIDIA's NeMo framework for speech, TTS, multimodal and LLM training & fine-tuning.
 author: NVIDIA
 ossDate: '2019-08-05T20:16:42.000Z'
-featured: false
 status: tracked
 ---
 

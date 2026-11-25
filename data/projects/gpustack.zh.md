@@ -12,7 +12,6 @@ tags:
 description: 面向 GPU 集群管理与训练与推理编排的开源平台，聚焦资源利用率与运维可观测性。
 author: gpustack
 ossDate: '2024-05-11T03:41:58.000Z'
-featured: false
 status: tracked
 ---
 

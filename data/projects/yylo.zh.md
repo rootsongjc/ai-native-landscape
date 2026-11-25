@@ -17,7 +17,6 @@ tags:
 description: 面向编码智能体的命令行编排器，为开发者提供快速智能体循环，为项目运营者提供类型化的任务、验证、合并与发布就绪边界，并以回执提供不可变证据。
 author: yylo-dev
 ossDate: '2026-01-06'
-featured: false
 status: tracked
 ---
 

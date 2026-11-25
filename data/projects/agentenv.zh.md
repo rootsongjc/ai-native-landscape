@@ -15,7 +15,6 @@ tags:
 description: 分布式智能体环境运行平台，支撑 Kimi K3 的智能体强化学习训练。
 author: kvcache-ai
 ossDate: '2026-07-23T02:48:07Z'
-featured: false
 status: tracked
 ---
 

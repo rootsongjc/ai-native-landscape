@@ -14,7 +14,6 @@ description: >-
   learning workloads across clusters.
 author: dask
 ossDate: '2015-01-04T18:50:00Z'
-featured: false
 status: tracked
 ---
 ## Overview

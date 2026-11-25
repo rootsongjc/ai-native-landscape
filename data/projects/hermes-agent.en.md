@@ -16,7 +16,6 @@ description: >-
   automations, deployable from a $5 VPS to GPU clusters.
 author: Nous Research
 ossDate: '2025-07-22T22:22:28Z'
-featured: false
 status: tracked
 ---
 

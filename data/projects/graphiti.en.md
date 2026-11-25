@@ -14,7 +14,6 @@ description: >-
   dynamic data, agent memory, and low-latency hybrid retrieval.
 author: Zep / getzep
 ossDate: '2024-08-08T22:08:30.000Z'
-featured: false
 status: tracked
 ---
 

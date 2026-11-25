@@ -15,7 +15,6 @@ description: >-
   providers and more than 20 vector stores with prioritized routing design.
 author: agno-agi
 ossDate: '2022-05-04T15:23:02.000Z'
-featured: false
 status: tracked
 ---
 Agno is more than a framework — it is a unified platform for intelligent agents designed to build the next generation of AI applications. It supports multimodal and multi-agent systems, integrates over 23 model providers and more than 20 vector stores, and provides flexible routing and priority mechanisms that give developers unprecedented agility and choice.

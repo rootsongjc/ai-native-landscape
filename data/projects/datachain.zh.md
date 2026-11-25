@@ -12,7 +12,6 @@ tags:
 description: 面向非结构化数据的 ETL、分析与版本管理平台，帮助团队构建可重复与可追溯的数据流水线。
 author: Iterative
 ossDate: '2024-06-25T22:29:35.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

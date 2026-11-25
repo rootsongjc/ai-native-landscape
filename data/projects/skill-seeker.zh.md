@@ -12,7 +12,6 @@ tags:
 description: 将网站文档、GitHub 仓库和 PDF 自动转换为可上传的 Claude 技能包，支持冲突检测与本地增强。
 author: Yusuf Karaaslan
 ossDate: '2025-10-17T14:43:48Z'
-featured: false
 status: tracked
 ---
 

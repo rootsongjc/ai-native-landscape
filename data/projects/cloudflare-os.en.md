@@ -15,7 +15,6 @@ tags:
 description: An agent workspace built on Cloudflare Workers for creating documents, building apps, and running agents with company context and systems.
 author: Cloudflare
 ossDate: '2026-04-15T00:00:00Z'
-featured: false
 status: tracked
 ---
 

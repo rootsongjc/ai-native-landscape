@@ -13,7 +13,6 @@ tags:
 description: Chrome DevTools MCP 是一个 MCP 服务器，让 AI 编程助手能够控制和检查实时 Chrome 浏览器，提供强大的性能分析和调试功能。
 author: Google
 ossDate: '2025-09-11T10:39:55.000Z'
-featured: true
 status: tracked
 ---
 ## 简介

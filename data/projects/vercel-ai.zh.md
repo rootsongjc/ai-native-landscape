@@ -13,7 +13,6 @@ tags:
 description: 由 Vercel 提供的开源 TypeScript AI 工具包，旨在简化在前端与边缘环境中构建 AI 应用的流程。
 author: Vercel
 ossDate: '2023-05-23T15:04:08Z'
-featured: false
 status: tracked
 ---
 

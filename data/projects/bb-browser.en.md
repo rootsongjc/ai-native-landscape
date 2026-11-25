@@ -14,7 +14,6 @@ tags:
 description: CLI and MCP server for AI agents to control Chrome with your login state — your browser is the API.
 author: epiral
 ossDate: '2026-01-31T03:55:42Z'
-featured: false
 status: tracked
 ---
 

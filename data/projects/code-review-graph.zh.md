@@ -14,7 +14,6 @@ tags:
 description: 本地优先的代码智能图谱，通过 MCP 和 CLI 提供服务。用 Tree-sitter 构建代码库的持久化结构地图并增量更新，让 AI 编码工具只读取变更真正涉及的文件。
 author: tirth8205
 ossDate: '2026-02-26'
-featured: false
 status: tracked
 ---
 

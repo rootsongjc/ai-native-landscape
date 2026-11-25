@@ -14,7 +14,6 @@ tags:
 description: Google 产品和技术的 Agent Skills 合集，涵盖 BigQuery、Cloud Run、GKE 等 Google Cloud 服务。
 author: Google
 ossDate: '2026-03-31'
-featured: false
 status: tracked
 ---
 

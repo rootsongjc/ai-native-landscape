@@ -14,7 +14,6 @@ description: >-
   XSS、SQL 注入等微调规则集。
 author: Alibaba
 ossDate: '2026-05-18T02:16:36Z'
-featured: false
 status: tracked
 ---
 ## 简介

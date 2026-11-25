@@ -18,7 +18,6 @@ description: >-
   等任意 ACP 兼容的智能体 CLI。
 author: microsoft
 ossDate: '2026-05-18T10:57:07Z'
-featured: false
 status: tracked
 ---
 

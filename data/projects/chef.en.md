@@ -14,7 +14,6 @@ description: >-
   background workflows to rapidly build full-stack AI apps.
 author: Convex Team
 ossDate: '2025-03-31T19:00:59.000Z'
-featured: false
 status: tracked
 ---
 Chef is the only AI app builder that truly understands the backend. Built by Convex, it enables developers to rapidly create full-stack AI applications with a built-in database, zero-config authentication, file uploads, real-time UIs, and background workflows out of the box, eliminating the need to stitch together separate backend services.

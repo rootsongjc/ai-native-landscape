@@ -17,7 +17,6 @@ description: >-
   — returning clean structured data with zero API fees.
 author: Panniantong
 ossDate: '2026-02-24'
-featured: false
 status: tracked
 ---
 

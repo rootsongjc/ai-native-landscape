@@ -15,7 +15,6 @@ tags:
 description: A coding-agent skill from Cloudflare that orchestrates isolated sub-agents through a six-phase security audit pipeline, producing independently verified, machine-readable findings.
 author: Cloudflare
 ossDate: '2026-06-18'
-featured: false
 status: tracked
 ---
 

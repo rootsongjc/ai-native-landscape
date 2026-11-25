@@ -14,7 +14,6 @@ description: >-
   execution.
 author: Jan Tomášek / agent0ai
 ossDate: '2024-06-10T09:10:45.000Z'
-featured: false
 status: tracked
 ---
 ## Introduction

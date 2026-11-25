@@ -12,7 +12,6 @@ tags:
 description: Label Studio 是一款多类型的数据标注与注释工具，支持标准化输出格式。
 author: HumanSignal
 ossDate: '2019-06-19T02:00:44.000Z'
-featured: false
 status: tracked
 ---
 

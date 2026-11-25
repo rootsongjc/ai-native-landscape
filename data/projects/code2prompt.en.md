@@ -13,7 +13,6 @@ tags:
 description: A tool that converts codebases into a single LLM prompt for code analysis, generation, and automation workflows.
 author: mufeedvh
 ossDate: '2024-03-09T12:42:06.000Z'
-featured: false
 status: tracked
 ---
 Code2Prompt is an open-source tool that transforms a codebase into a structured LLM prompt, useful for code analysis, automated review, and generation tasks. It traverses project directories, builds a file tree, and collects file metadata to produce context-rich prompts that save developers from manually assembling code context for large models.

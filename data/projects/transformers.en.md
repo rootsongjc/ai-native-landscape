@@ -16,7 +16,6 @@ tags:
 description: The model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal, for both inference and training.
 author: Hugging Face
 ossDate: '2018-10-29'
-featured: true
 thumbnail: ''
 source: ''
 status: tracked

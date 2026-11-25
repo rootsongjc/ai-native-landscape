@@ -3,7 +3,7 @@ name: Megatron-LM
 slug: megatron-lm
 homepage: https://developer.nvidia.com/
 repo: https://github.com/nvidia/megatron-lm
-license: Unknown
+license: BSD-3-Clause
 category: training-optimization
 subCategory: training-frameworks
 tags:
@@ -11,7 +11,6 @@ tags:
 description: Reference implementation from NVIDIA for large-scale model training and inference with distributed optimizations.
 author: NVIDIA
 ossDate: '2019-03-21T16:15:52.000Z'
-featured: false
 status: tracked
 ---
 

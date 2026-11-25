@@ -11,7 +11,6 @@ tags:
 description: An open-source, self-hostable multi-model chat and agent platform with extensive integrations and plugin support.
 author: LibreChat Contributors
 ossDate: '2023-02-12T01:06:52.000Z'
-featured: false
 status: tracked
 ---
 

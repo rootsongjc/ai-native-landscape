@@ -12,7 +12,6 @@ tags:
 description: 用于微调 LLaMA 模型的综合框架，支持多种训练方法、高效算法和易于使用的界面，适用于研究和生产环境。
 author: hiyouga
 ossDate: '2023-05-28T10:09:12.000Z'
-featured: false
 status: tracked
 ---
 

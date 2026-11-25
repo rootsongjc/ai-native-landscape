@@ -15,7 +15,6 @@ tags:
 description: Open-source SDK for production AI agents in Python and TypeScript — build an agent harness and control it end-to-end, any model, any cloud.
 author: strands-agents
 ossDate: '2025-05-14T19:59:51Z'
-featured: false
 status: tracked
 ---
 

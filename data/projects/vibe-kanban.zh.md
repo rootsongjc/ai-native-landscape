@@ -11,7 +11,6 @@ tags:
 description: 用于管理 AI 编码代理的看板工具，支持 Claude Code、Gemini CLI、Codex、Amp 等多种代理的编排、审查与任务跟踪。
 author: BloopAI 团队
 ossDate: '2025-06-14T19:10:21.000Z'
-featured: false
 status: tracked
 ---
 

@@ -12,7 +12,6 @@ tags:
 description: An open-source MCP toolkit by Google that provides standardized AI agent interfaces for database operations.
 author: Google
 ossDate: '2024-06-07T20:52:54.000Z'
-featured: false
 status: tracked
 ---
 GenAI Toolbox for Databases is an open-source MCP server developed by Google that provides standardized interfaces for AI agents to interact with databases. It simplifies database tool development and deployment by handling complex operations such as connection pooling, authentication, and query optimization, enabling rapid integration with minimal code.

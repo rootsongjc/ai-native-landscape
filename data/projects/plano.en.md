@@ -13,7 +13,6 @@ tags:
 description: Plano is an open-source AI gateway and policy runtime for routing, securing, and observing production LLM/API traffic.
 author: Katanemo
 ossDate: '2026-04-10T00:00:00Z'
-featured: false
 status: tracked
 ---
 

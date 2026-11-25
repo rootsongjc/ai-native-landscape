@@ -3,7 +3,7 @@ name: Sourcebot
 slug: sourcebot
 homepage: https://sourcebot.dev/
 repo: https://github.com/sourcebot-dev/sourcebot
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: developer-utilities
 tags:
@@ -11,7 +11,6 @@ tags:
 description: 开源自托管的代码理解与搜索平台，支持自然语言提问、代码导航和多仓库检索，助力开发者高效理解和管理代码。
 author: Sourcebot
 ossDate: '2024-08-23T20:40:37.000Z'
-featured: false
 status: tracked
 ---
 

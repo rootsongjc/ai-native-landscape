@@ -14,7 +14,6 @@ tags:
 description: 由 Pydantic 和 FastAPI 团队打造的结构化生产级 AI 系统框架，支持多智能体设置，具有严格的数据验证和实时输出功能。
 author: Pydantic
 ossDate: '2024-06-21T15:55:04.000Z'
-featured: false
 status: tracked
 ---
 

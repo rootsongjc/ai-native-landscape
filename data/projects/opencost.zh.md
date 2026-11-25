@@ -13,7 +13,6 @@ tags:
 description: '厂商中立的 CNCF 项目，用于实时监控并分摊 Kubernetes 负载与云支出成本，包括 GPU 成本。'
 author: OpenCost
 ossDate: '2019-03-27T21:49:05.000Z'
-featured: false
 status: tracked
 ---
 

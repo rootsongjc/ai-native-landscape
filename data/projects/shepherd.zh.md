@@ -14,7 +14,6 @@ tags:
 description: 运行时底座，将 Agent 执行变为可逆的类 Git 追踪，让元 Agent 可以观察、分叉、重放和回滚任意运行。
 author: shepherd-agents
 ossDate: '2026-06-24T17:26:46Z'
-featured: false
 status: tracked
 ---
 

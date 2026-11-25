@@ -13,7 +13,6 @@ tags:
 description: 开源的 Agent 化代码审查引擎，将每个 PR 转化为任务专属的审查计划并派出专注的审查 Agent。
 author: Agent-Field
 ossDate: '2026-03-11T15:35:35Z'
-featured: false
 status: tracked
 ---
 

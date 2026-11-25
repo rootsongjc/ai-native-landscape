@@ -15,7 +15,6 @@ tags:
 description: 面向 AI 集群高速网络的云原生可观测性系统，覆盖 RDMA、RoCE/InfiniBand 和 NVLink，并将网络流量归因到 Kubernetes 工作负载。
 author: unifabric-io
 ossDate: '2026-04-19T15:41:54Z'
-featured: false
 status: tracked
 ---
 

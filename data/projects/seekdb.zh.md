@@ -12,7 +12,6 @@ tags:
 description: 一个 AI 原生搜索数据库，在单一引擎中统一向量、文本与结构化数据以支持混合检索与数据库内 AI 工作流。
 author: OceanBase
 ossDate: '2025-10-21T11:31:11Z'
-featured: false
 status: tracked
 ---
 

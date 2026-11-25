@@ -15,7 +15,6 @@ tags:
 description: 一个使用视觉语言模型驱动的跨平台 UI 自动化框架，用截图为主的纯视觉定位与操作来编写自动化脚本。
 author: web-infra-dev
 ossDate: '2024-07-23T04:03:50Z'
-featured: false
 status: tracked
 ---
 

@@ -17,7 +17,6 @@ description: >-
   no text generation, PyTorch, or cloud API.
 author: mizorewww
 ossDate: '2026-09-19'
-featured: false
 status: tracked
 ---
 

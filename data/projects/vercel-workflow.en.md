@@ -12,7 +12,6 @@ tags:
 description: Workflow DevKit is a development kit for building durable, resumable, and observable async workflows.
 author: Vercel
 ossDate: '2025-10-23T09:07:31Z'
-featured: false
 status: tracked
 ---
 

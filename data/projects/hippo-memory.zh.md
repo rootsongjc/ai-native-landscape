@@ -16,7 +16,6 @@ tags:
 description: 面向编程智能体（Claude Code、Codex、Cursor、OpenClaw、OpenCode、Pi 及 MCP 客户端）的本地优先记忆层，基于 SQLite 与 Markdown 镜像存储，零运行时依赖。
 author: kitfunso
 ossDate: '2026-03-15T10:40:26Z'
-featured: false
 status: tracked
 ---
 

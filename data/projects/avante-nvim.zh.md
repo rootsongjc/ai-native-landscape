@@ -11,7 +11,6 @@ tags:
 description: avante.nvim 将 AI 驱动的代码建议与一键应用能力带入 Neovim 编辑器，实现类似 Cursor 的智能交互体验。
 author: yetone
 ossDate: '2024-08-14T16:45:16Z'
-featured: false
 status: tracked
 ---
 ## 简介

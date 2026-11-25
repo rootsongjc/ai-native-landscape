@@ -12,7 +12,6 @@ tags:
 description: Inspector 是一款用于 MCP（Model Context Protocol）服务器的可视化测试工具，帮助开发者验证与展示 MCP 服务的行为与可视化输出。
 author: Model Context Protocol
 ossDate: '2024-10-03T21:47:42.000Z'
-featured: false
 status: tracked
 ---
 ## 详细介绍

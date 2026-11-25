@@ -12,7 +12,6 @@ tags:
 description: 面向企业的可编排智能体工作流平台，用于构建下一代 SuperAgents。
 author: 科大讯飞
 ossDate: '2025-09-19T08:46:01Z'
-featured: false
 status: tracked
 ---
 Astron Agent 是科大讯飞推出的企业级智能体工作流平台，用于构建下一代 SuperAgents。项目支持多智能体协同编排、低代码接入与企业级治理能力，提供完整的运行时与开发工具链，帮助团队在生产环境中快速部署复杂的自动化与智能化流程。

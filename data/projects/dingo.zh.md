@@ -11,7 +11,6 @@ tags:
 description: 一个用于自动化数据质量评估的工具，支持规则与模型相结合的多维度评估。
 author: MigoXLab / DataEval
 ossDate: '2024-12-24T05:59:24.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

@@ -11,7 +11,6 @@ tags:
 description: 用于构建与部署可扩展 AI Agent 与工作流的开源平台，提供任务持久化、重试、可观测性与弹性伸缩能力。
 author: trigger.dev
 ossDate: '2022-11-30T14:59:07.000Z'
-featured: false
 status: tracked
 ---
 

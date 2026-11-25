@@ -13,7 +13,6 @@ tags:
 description: 'A Python library and catalog that aggregates GPU instance prices, regions, and specs across cloud providers and GPU marketplaces.'
 author: dstack
 ossDate: '2023-08-23T06:53:10.000Z'
-featured: false
 status: tracked
 ---
 

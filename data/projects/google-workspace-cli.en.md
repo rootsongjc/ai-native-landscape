@@ -16,7 +16,6 @@ description: >-
   Workspace API — with its command surface built dynamically from Google's Discovery Service and 40+ agent skills included.
 author: googleworkspace
 ossDate: '2026-03-02'
-featured: false
 status: tracked
 ---
 

@@ -14,7 +14,6 @@ tags:
 description: State-of-the-art open source text-to-speech system with voice cloning capabilities, supporting multiple languages with natural-sounding output.
 author: Fish Audio
 ossDate: '2023-10-10'
-featured: false
 thumbnail: ''
 source: ''
 status: tracked

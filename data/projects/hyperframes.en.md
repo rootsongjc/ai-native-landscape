@@ -14,7 +14,6 @@ tags:
 description: Write HTML, render video. Built for AI agents to programmatically create videos from code.
 author: HeyGen
 ossDate: '2026-03-10T00:00:00Z'
-featured: true
 status: tracked
 ---
 

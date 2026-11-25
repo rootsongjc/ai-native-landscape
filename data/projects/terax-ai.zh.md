@@ -16,7 +16,6 @@ description: >-
   轻量（约 7MB）、终端优先的 AI 原生开发工作区，基于 Tauri 2、Rust 与 React 构建，融合原生 PTY 终端、代码编辑器、版本控制以及支持自带密钥或本地模型运行的智能体 AI 侧边栏。
 author: crynta
 ossDate: '2026-04-21T18:33:12.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

@@ -12,7 +12,6 @@ tags:
 description: 面向个人与企业的 Agent-ready RPA 套件，提供开箱即用的自动化工具与企业级集成能力。
 author: 科大讯飞
 ossDate: '2025-09-20T08:51:40Z'
-featured: false
 status: tracked
 ---
 Astron RPA 是科大讯飞推出的 Agent-ready RPA 套件，面向个人与企业用户，提供开箱即用的自动化工具与企业级集成能力。项目支持与 Astron Agent 等智能体平台深度协作，将规则化自动化与智能决策能力融合。

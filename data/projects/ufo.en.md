@@ -14,7 +14,6 @@ description: >-
   multi-application workflows.
 author: Microsoft
 ossDate: '2024-01-08T05:07:52.000Z'
-featured: false
 status: tracked
 ---
 

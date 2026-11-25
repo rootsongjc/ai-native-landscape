@@ -15,7 +15,6 @@ tags:
 description: Cloud-native observability for the high-speed networks of AI clusters, covering RDMA, RoCE/InfiniBand, and NVLink, and attributing network traffic to Kubernetes workloads.
 author: unifabric-io
 ossDate: '2026-04-19T15:41:54Z'
-featured: false
 status: tracked
 ---
 

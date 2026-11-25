@@ -12,7 +12,6 @@ tags:
 description: 用于将复杂文档无缝转换为结构化数据的开源 ETL 解决方案，适配语言模型的数据处理场景。
 author: Unstructured
 ossDate: '2022-09-26T21:53:41.000Z'
-featured: false
 status: tracked
 ---
 

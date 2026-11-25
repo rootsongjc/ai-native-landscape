@@ -13,7 +13,6 @@ tags:
 description: Google 开源的端到端机器学习平台，用于构建和训练深度学习模型。
 author: Google
 ossDate: '2015-11-07T01:19:20.000Z'
-featured: false
 status: tracked
 ---
 

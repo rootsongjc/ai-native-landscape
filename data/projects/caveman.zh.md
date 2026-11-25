@@ -14,7 +14,6 @@ tags:
 description: 面向编码智能体的技能加本地代理组合，通过"穴居人"式压缩应答风格和在模型读取前压缩工具输出来削减 token 消耗，实测节省显著且答案质量不降。
 author: JuliusBrussee
 ossDate: '2026-04-04'
-featured: false
 status: tracked
 ---
 

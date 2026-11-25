@@ -16,7 +16,6 @@ tags:
 description: 面向 Node.js 与 C++ 的快速、完全离线 OCR 工具包，基于 PP-OCRv6 与 ONNX Runtime，输出识别文本、置信度与坐标，支持 CoreML 与 WebGPU 加速。
 author: arcships
 ossDate: '2026-07-14'
-featured: false
 status: tracked
 ---
 

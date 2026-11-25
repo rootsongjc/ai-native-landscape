@@ -3,7 +3,7 @@ name: GitNexus
 slug: gitnexus
 homepage: https://gitnexus.vercel.app
 repo: https://github.com/abhigyanpatwari/gitnexus
-license: Other
+license: PolyForm-Noncommercial-1.0.0
 category: coding-devtools
 subCategory: mcp-tools
 tags:
@@ -16,7 +16,6 @@ description: >-
   via MCP.
 author: Abhigyan Patwari
 ossDate: '2025-08-02T23:20:31Z'
-featured: false
 status: tracked
 ---
 ## Overview

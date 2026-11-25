@@ -3,7 +3,7 @@ name: PyTorch
 slug: pytorch
 homepage: https://pytorch.org/
 repo: https://github.com/pytorch/pytorch
-license: Unknown
+license: BSD-3-Clause
 category: training-optimization
 subCategory: training-frameworks
 tags:
@@ -15,7 +15,6 @@ description: >-
   graphs and strong GPU acceleration.
 author: PyTorch
 ossDate: '2016-08-13T05:26:41.000Z'
-featured: false
 status: tracked
 ---
 

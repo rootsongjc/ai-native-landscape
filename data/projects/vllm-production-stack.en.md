@@ -13,7 +13,6 @@ tags:
 description: A reference system for Kubernetes-native cluster deployment and community-driven performance optimization for vLLM.
 author: vLLM Project
 ossDate: '2025-01-21T23:09:11Z'
-featured: false
 status: tracked
 ---
 

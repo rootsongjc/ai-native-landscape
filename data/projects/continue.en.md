@@ -14,7 +14,6 @@ description: >-
   models.
 author: Continue Team
 ossDate: '2023-05-24T03:39:39.000Z'
-featured: false
 status: tracked
 ---
 Continue is an open-source IDE extension that allows developers to create, share, and use custom AI code assistants. It provides a centralized hub of rules, tools, and models, enabling developers to easily build and deploy their own AI programming assistants.

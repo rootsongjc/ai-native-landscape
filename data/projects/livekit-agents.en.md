@@ -13,7 +13,6 @@ tags:
 description: A framework for building real-time, multimodal voice agents, integrating WebRTC and an extensible plugin ecosystem.
 author: LiveKit
 ossDate: '2023-10-19T23:00:55.000Z'
-featured: false
 status: tracked
 ---
 

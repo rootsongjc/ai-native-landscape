@@ -11,7 +11,6 @@ tags:
 description: OpenManus 是一个模块化的开源智能体框架，便于将自然语言驱动的智能体原型推进到可部署的工程化系统。
 author: Foundation Agents
 ossDate: '2025-03-06T14:08:14Z'
-featured: false
 status: tracked
 ---
 

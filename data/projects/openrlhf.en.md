@@ -15,7 +15,6 @@ description: >-
   and hybrid-engine training.
 author: OpenRLHF Team
 ossDate: '2023-07-30T02:20:13.000Z'
-featured: false
 status: tracked
 ---
 

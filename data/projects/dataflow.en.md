@@ -12,7 +12,6 @@ tags:
 description: A data preparation and pipeline platform for domain training and retrieval-augmented generation.
 author: OpenDCAI
 ossDate: '2024-10-13T14:45:45Z'
-featured: false
 status: tracked
 ---
 DataFlow is an open-source data preparation platform that uses the latest LLM-based operators and pipelines for AI data engineering. It transforms noisy data sources such as PDFs, plain text, and low-quality QA into high-quality datasets suitable for pre-training, supervised fine-tuning, and RAG workflows.

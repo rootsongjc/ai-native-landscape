@@ -17,7 +17,6 @@ tags:
 description: A command-line orchestrator for coding agents that gives developers a quick agent loop and operators typed task, validation, merge, and release-readiness boundaries with receipt-backed evidence.
 author: yylo-dev
 ossDate: '2026-01-06'
-featured: false
 status: tracked
 ---
 

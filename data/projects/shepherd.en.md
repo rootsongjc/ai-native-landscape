@@ -14,7 +14,6 @@ tags:
 description: Runtime substrate that turns agent execution into a reversible, Git-like trace so meta-agents can observe, fork, replay, and revert any run.
 author: shepherd-agents
 ossDate: '2026-06-24T17:26:46Z'
-featured: false
 status: tracked
 ---
 

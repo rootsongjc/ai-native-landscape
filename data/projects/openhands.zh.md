@@ -12,7 +12,6 @@ tags:
 description: 一个面向软件开发者的开源平台，通过自治智能体辅助代码修改、运行与测试。
 author: All-Hands-AI
 ossDate: '2024-03-13T03:33:31.000Z'
-featured: false
 status: tracked
 ---
 

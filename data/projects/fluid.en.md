@@ -15,7 +15,6 @@ tags:
 description: Elastic data abstraction and acceleration layer for BigData/AI applications on Kubernetes, enabling efficient data access through distributed caching.
 author: CNCF
 ossDate: '2020-07-11T22:57:18.000Z'
-featured: false
 status: tracked
 ---
 

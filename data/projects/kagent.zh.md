@@ -13,7 +13,6 @@ tags:
 description: Kubernetes 原生的 Agent 框架，用于在 K8s 上声明式创建、运行与管理 AI agent。
 author: Solo.o
 ossDate: '2025-01-21T17:03:23.000Z'
-featured: false
 status: tracked
 ---
 

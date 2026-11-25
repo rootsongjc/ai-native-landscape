@@ -14,7 +14,6 @@ tags:
 description: DeerFlow 是字节跳动开源的超级智能体运行时框架，通过沙箱、记忆、工具、技能和子智能体的协同工作，能够处理从几分钟到几小时不同级别的复杂任务。
 author: ByteDance
 ossDate: '2026-03-23'
-featured: false
 status: tracked
 ---
 ## 详细介绍

@@ -15,7 +15,6 @@ tags:
 description: An agentic development environment built as a modern terminal, combining AI-powered command assistance with a GPU-accelerated Rust-based interface.
 author: warpdotdev
 ossDate: '2021-07-08'
-featured: false
 status: tracked
 ---
 

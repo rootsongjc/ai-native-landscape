@@ -11,7 +11,6 @@ tags:
 description: TradingAgents 是一个用于金融交易的多智能体框架，基于 LLM 的策略与回测工具。
 author: TauricResearch
 ossDate: '2024-12-28T03:31:08Z'
-featured: false
 status: tracked
 ---
 

@@ -14,7 +14,6 @@ tags:
 description: Claude Code 广告审计与优化技能，覆盖 Google Ads 和 Meta Ads 的 250+ 自动检查项。
 author: AgriciDaniel
 ossDate: '2026-02-11T00:00:00Z'
-featured: false
 status: tracked
 ---
 

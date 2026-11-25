@@ -13,7 +13,6 @@ tags:
 description: Browser Harness 是一个基于 CDP 构建的极简自愈式浏览器套件，赋予 LLM 完全的自由来完成任何浏览器任务，代理可以在运行中编写缺失的功能。
 author: Browser Use
 ossDate: '2026-04-17T01:56:15Z'
-featured: false
 status: tracked
 ---
 ## 详细介绍

@@ -14,7 +14,6 @@ description: >-
   inference components.
 author: vllm-project
 ossDate: '2024-06-10T23:06:10.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

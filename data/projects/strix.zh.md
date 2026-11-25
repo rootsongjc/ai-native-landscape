@@ -14,7 +14,6 @@ tags:
 description: 开源 AI 渗透测试工具，通过自主安全 Agent 发现并修复应用中的漏洞。
 author: usestrix
 ossDate: '2025-08-05T21:28:30Z'
-featured: false
 status: tracked
 ---
 

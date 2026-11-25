@@ -12,7 +12,6 @@ tags:
 description: Agency Agents 是一个包含 147+ 个专业化 AI 智能体角色的开源合集，覆盖工程、设计、营销、销售、产品等 12 个部门，可一键集成 Claude Code、Cursor、Copilot 等主流 AI 编程工具。
 author: msitarzewski
 ossDate: '2025-03-01T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 ## 详细介绍

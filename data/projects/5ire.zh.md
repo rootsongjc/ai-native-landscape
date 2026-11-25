@@ -12,7 +12,6 @@ tags:
 description: 5ire 是一款跨平台桌面 AI 助手及 MCP 客户端，支持主流服务商，具备本地知识库和工具扩展能力。
 author: nanbingxyz
 ossDate: '2024-01-06T06:57:15.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

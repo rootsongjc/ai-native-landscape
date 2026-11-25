@@ -16,7 +16,6 @@ tags:
 description: 将任意代码转换为可探索、搜索和问答的交互式知识图谱，原生支持 Claude Code、Codex、Cursor、Copilot 和 Gemini CLI。
 author: Egonex-AI
 ossDate: '2026-03-15'
-featured: false
 status: tracked
 ---
 

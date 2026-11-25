@@ -17,7 +17,6 @@ description: >-
   to enterprise deployment.
 author: Nir Diamant
 ossDate: '2025-06-16T17:33:44.000Z'
-featured: false
 status: tracked
 ---
 ## Introduction

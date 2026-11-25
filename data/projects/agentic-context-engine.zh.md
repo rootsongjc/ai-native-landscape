@@ -11,7 +11,6 @@ tags:
 description: Agentic Context Engine（ACE）是一个用于让智能体从经验中学习的上下文工程框架与实现。
 author: Kayba AI
 ossDate: '2025-10-15T15:36:20.000Z'
-featured: false
 status: tracked
 ---
 ## 详细介绍

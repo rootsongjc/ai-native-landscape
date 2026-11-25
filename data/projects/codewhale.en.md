@@ -15,7 +15,6 @@ tags:
 description: DeepSeek and MiMo powered coding agent that runs in the terminal, built with Rust for speed and reliability.
 author: Hmbown
 ossDate: '2026-01-19T18:21:01Z'
-featured: false
 status: tracked
 ---
 

@@ -13,7 +13,6 @@ tags:
 description: An open-source multi-agent platform for automated collection, analysis, and reporting of massive social media data.
 author: 666ghj
 ossDate: '2024-07-01T13:11:38Z'
-featured: false
 status: tracked
 ---
 BettaFish (WeiYu) is a multi-agent public opinion analysis assistant built from scratch without external frameworks. It breaks information cocoons by integrating web crawling, retrieval, sentiment analysis, and multimodal parsing to continuously collect and analyze data from major social media platforms.

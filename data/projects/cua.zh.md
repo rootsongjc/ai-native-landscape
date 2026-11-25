@@ -12,7 +12,6 @@ tags:
 description: CUA 提供用于训练和评估可操作完整桌面（macOS、Linux、Windows）智能体的开源基础设施和工具链。
 author: TryCUA
 ossDate: '2025-01-31T15:02:49.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

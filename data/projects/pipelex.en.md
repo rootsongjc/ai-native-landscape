@@ -13,7 +13,6 @@ tags:
 description: An open-source language and toolkit for building and running reproducible AI agent workflows.
 author: Pipelex
 ossDate: '2025-05-26T07:21:34Z'
-featured: false
 status: tracked
 ---
 

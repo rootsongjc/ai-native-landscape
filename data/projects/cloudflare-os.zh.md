@@ -15,7 +15,6 @@ tags:
 description: 基于 Cloudflare Workers 构建的智能体工作区，用于创建文档、构建应用，并结合企业上下文与系统运行智能体。
 author: Cloudflare
 ossDate: '2026-04-15T00:00:00Z'
-featured: false
 status: tracked
 ---
 

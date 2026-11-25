@@ -15,7 +15,6 @@ description: >-
   Lovable, and Windsurf to enhance task collaboration and automation capabilities.
 author: eyaltoledano
 ossDate: '2025-03-04T18:54:54.000Z'
-featured: false
 status: tracked
 ---
 ## Introduction

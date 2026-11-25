@@ -17,7 +17,6 @@ description: >-
   calls — over a pluggable retrieval backend.
 author: MemPalace
 ossDate: '2026-04-05'
-featured: false
 status: tracked
 ---
 

@@ -13,7 +13,6 @@ tags:
 description: MCP 提供一套标准化协议，帮助模型与外部工具、服务和主机安全、高效地交换上下文信息。
 author: Amazon Web Services
 ossDate: '2025-03-21T00:39:00Z'
-featured: false
 status: tracked
 ---
 ## 简介

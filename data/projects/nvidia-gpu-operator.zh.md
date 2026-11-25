@@ -12,7 +12,6 @@ tags:
 description: NVIDIA GPU Operator 在 Kubernetes 中自动部署、配置并管理 GPU 相关组件与驱动。
 author: NVIDIA
 ossDate: '2019-02-26T22:56:06Z'
-featured: false
 status: tracked
 ---
 

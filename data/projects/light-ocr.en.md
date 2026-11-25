@@ -16,7 +16,6 @@ tags:
 description: A fast, fully offline OCR toolkit for Node.js and C++ built on PP-OCRv6 and ONNX Runtime, returning text, confidence scores, and coordinates with CoreML and WebGPU acceleration.
 author: arcships
 ossDate: '2026-07-14'
-featured: false
 status: tracked
 ---
 

@@ -12,7 +12,6 @@ tags:
 description: An agent-ready RPA suite providing out-of-the-box automation tools and enterprise integration capabilities.
 author: iFlytek
 ossDate: '2025-09-20T08:51:40Z'
-featured: false
 status: tracked
 ---
 Astron RPA is an agent-ready Robotic Process Automation suite from iFlytek designed for both individuals and enterprises. It ships with reusable automation components, low-code/no-code integration tools, and deep adapters for collaboration with agent orchestration platforms like Astron Agent.

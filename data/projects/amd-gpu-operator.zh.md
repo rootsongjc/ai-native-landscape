@@ -13,7 +13,6 @@ tags:
 description: 'Kubernetes Operator，为 AMD Instinct 与 Radeon GPU 自动完成驱动安装、设备插件部署、节点打标与指标采集。'
 author: AMD
 ossDate: '2023-11-14T07:02:56.000Z'
-featured: false
 status: tracked
 ---
 

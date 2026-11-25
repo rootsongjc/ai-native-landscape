@@ -13,7 +13,6 @@ description: >-
   enabling LLMs to operate efficiently on real codebases.
 author: Oraios AI
 ossDate: '2025-03-23T22:35:24.000Z'
-featured: false
 status: tracked
 ---
 

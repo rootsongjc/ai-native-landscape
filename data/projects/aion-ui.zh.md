@@ -14,7 +14,6 @@ tags:
 description: 面向 LLM 与智能体交互的前端 UI 框架与界面库，提供可定制组件、渲染器和 CLI 工具以便本地部署与集成。
 author: iOfficeAI
 ossDate: '2025-08-07T10:29:51Z'
-featured: false
 status: tracked
 ---
 ## 简介

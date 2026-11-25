@@ -12,7 +12,6 @@ tags:
 description: 一个以 Nix 为核心、可复现且可分享的开发环境与包管理工具。
 author: Flox
 ossDate: '2022-12-22T15:52:43Z'
-featured: false
 status: tracked
 ---
 Flox 为软件开发生命周期提供确定性基础，以 Nix 为核心驱动可复现、可分享的开发环境。它通过环境分层与依赖替换，确保本地开发、CI 管道与镜像构建之间的运行时一致性，从根本上消除"在我电脑上能跑"的问题。

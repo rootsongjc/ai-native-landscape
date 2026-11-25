@@ -13,7 +13,6 @@ tags:
 description: SwanLab 是一个开源、现代化的模型训练追踪与可视化工具，支持云端与自托管部署。
 author: SwanHubX
 ossDate: '2023-11-24T08:54:45Z'
-featured: false
 status: tracked
 ---
 

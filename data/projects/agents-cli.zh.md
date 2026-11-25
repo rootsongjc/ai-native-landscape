@@ -14,7 +14,6 @@ tags:
 description: Google 的 CLI 与技能包，让任意编程助手成为在 Google Cloud 上创建、评测和部署 AI Agent 的专家。
 author: google
 ossDate: '2026-04-08T17:09:55Z'
-featured: false
 status: tracked
 ---
 

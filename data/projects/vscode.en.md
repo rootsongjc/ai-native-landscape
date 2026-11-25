@@ -13,7 +13,6 @@ description: >-
   ecosystem.
 author: Microsoft
 ossDate: '2015-09-03T20:23:38.000Z'
-featured: true
 status: tracked
 ---
 

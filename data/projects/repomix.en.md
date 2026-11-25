@@ -15,7 +15,6 @@ description: >-
   large models.
 author: yamadashy
 ossDate: '2024-07-13T07:11:32.000Z'
-featured: false
 status: tracked
 ---
 

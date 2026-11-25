@@ -13,7 +13,6 @@ tags:
 description: 一个面向大语言模型（LLM）的模块化全栈强化学习（RL）库，用于训练长时程、真实环境任务。
 author: NovaSky-AI
 ossDate: '2025-04-22T17:33:31Z'
-featured: false
 status: tracked
 ---
 

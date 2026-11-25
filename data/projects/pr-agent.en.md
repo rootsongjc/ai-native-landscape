@@ -14,7 +14,6 @@ description: >-
   multi-platform integrations and customizable prompts.
 author: Qodo AI
 ossDate: '2023-07-05T21:02:15.000Z'
-featured: false
 status: tracked
 ---
 

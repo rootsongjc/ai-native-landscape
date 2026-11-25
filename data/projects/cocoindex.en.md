@@ -15,7 +15,6 @@ description: >-
   indexing.
 author: CocoIndex
 ossDate: '2025-03-03T23:03:09Z'
-featured: false
 status: tracked
 ---
 CocoIndex is an incremental data indexing engine designed for long-horizon AI agents that need to keep data indexes synchronized with constantly changing sources. It provides high-performance data transformation and semantic indexing that continuously processes updates, ensuring RAG pipelines and search systems always reflect the latest available information.

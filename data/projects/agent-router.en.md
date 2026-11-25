@@ -16,7 +16,6 @@ description: >-
   API with centralized credentials, routing, quotas, and failover. Formerly Envoy AI Gateway.
 author: Agentic AI Foundation
 ossDate: '2024-10-21T02:59:59.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

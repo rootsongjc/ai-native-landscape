@@ -12,7 +12,6 @@ tags:
 description: 将操作系统风格的虚拟内存抽象带入 LLM 系统，提供弹性按需的 KV 缓存分配，从而提升 GPU 在动态负载下的利用率。
 author: OVG Project
 ossDate: '2025-05-27T17:34:02.000Z'
-featured: false
 status: tracked
 ---
 

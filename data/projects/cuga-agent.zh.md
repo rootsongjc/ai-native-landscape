@@ -12,7 +12,6 @@ tags:
 description: 一个面向企业的开源通用智能体，支持 Web/API 执行、OpenAPI/MCP 集成与策略感知功能。
 author: CUGA Project
 ossDate: '2025-09-11T11:58:55Z'
-featured: false
 status: tracked
 ---
 CUGA 是一个面向企业的开源通用智能体框架，支持在 Web 和 API 上执行复杂任务。它集成了 OpenAPI 和模型上下文协议（MCP），提供可组合、可审计的运行时，并内置策略感知控制，适合在受管环境中部署。

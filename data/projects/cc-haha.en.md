@@ -3,7 +3,7 @@ name: cc-haha
 slug: cc-haha
 homepage: https://cchaha.ai
 repo: https://github.com/NanmiCoder/cc-haha
-license: Unknown
+license: Other
 category: applications-products
 subCategory: desktop-clients
 tags:
@@ -17,7 +17,6 @@ description: >-
   with remote access from mobile apps and IM channels.
 author: NanmiCoder
 ossDate: '2026-03-31'
-featured: false
 status: tracked
 ---
 

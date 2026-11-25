@@ -12,7 +12,6 @@ tags:
 description: Polyaxon：用于管理、训练与监控大规模机器学习工作负载的 MLOps 平台。
 author: Polyaxon
 ossDate: '2016-12-26T12:48:47.000Z'
-featured: false
 status: tracked
 ---
 

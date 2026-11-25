@@ -15,7 +15,6 @@ tags:
 description: 面向 macOS 的本地优先 MCP 服务器，让 ChatGPT 把真实的 Mac 当作执行环境——shell、文件系统、PTY 会话、后台任务与只读 Codex 历史。
 author: alexanderradahl
 ossDate: '2026-08-15'
-featured: false
 status: tracked
 ---
 

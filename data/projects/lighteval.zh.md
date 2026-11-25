@@ -11,7 +11,6 @@ tags:
 description: Hugging Face 出品的轻量级 LLM 评估工具，支持多后端与丰富基准任务。
 author: Hugging Face
 ossDate: '2024-01-26T13:15:39.000Z'
-featured: false
 status: tracked
 ---
 

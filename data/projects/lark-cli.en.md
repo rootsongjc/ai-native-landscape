@@ -16,7 +16,6 @@ description: >-
   domains with 200+ commands and 24 AI Agent Skills, designed for both humans and AI agents.
 author: Larksuite
 ossDate: '2026-03-25T07:13:30Z'
-featured: true
 status: tracked
 ---
 

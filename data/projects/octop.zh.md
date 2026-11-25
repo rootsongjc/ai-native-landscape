@@ -16,7 +16,6 @@ tags:
 description: 腾讯云开源的自托管多用户、多智能体 AI 助手，单进程同时提供 Web 仪表盘、CLI 与飞书、钉钉、QQ、Discord、企业微信等 IM 渠道。
 author: Tencent Cloud
 ossDate: '2026-07-08'
-featured: false
 status: tracked
 ---
 

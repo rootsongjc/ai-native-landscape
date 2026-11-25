@@ -15,7 +15,6 @@ description: >-
   Anthropic-compatible APIs, with role-based workspaces for users, team leaders, and administrators.
 author: astaxie
 ossDate: '2026-06-10T15:32:07Z'
-featured: false
 status: tracked
 ---
 ## Overview

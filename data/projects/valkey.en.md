@@ -3,7 +3,7 @@ name: Valkey
 slug: valkey
 homepage: https://valkey.io
 repo: https://github.com/valkey-io/valkey
-license: Unknown
+license: BSD-3-Clause
 category: platform-infra
 subCategory: data-platforms
 tags:
@@ -11,7 +11,6 @@ tags:
 description: A high-performance distributed key-value database optimized for caching and real-time workloads.
 author: Valkey Project
 ossDate: '2024-03-22T00:42:17Z'
-featured: false
 status: tracked 
 ---
 

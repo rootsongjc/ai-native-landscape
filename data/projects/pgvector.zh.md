@@ -3,7 +3,7 @@ name: pgvector
 slug: pgvector
 homepage: https://pgvector.org
 repo: https://github.com/pgvector/pgvector
-license: Unknown
+license: PostgreSQL
 category: rag-knowledge
 subCategory: vector-databases
 tags:
@@ -11,7 +11,6 @@ tags:
 description: pgvector 是一个为 PostgreSQL 提供向量相似度检索能力的开源扩展，便于在数据库中存储与检索向量并支持近似/精确检索策略。
 author: pgvector
 ossDate: '2021-01-15T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 

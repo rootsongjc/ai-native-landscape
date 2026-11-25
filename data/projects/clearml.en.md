@@ -13,7 +13,6 @@ tags:
 description: ClearML is an open-source MLOps platform providing experiment tracking, data management, pipelines and model serving.
 author: ClearML
 ossDate: '2019-06-10T08:18:32Z'
-featured: false
 status: tracked
 ---
 ClearML is an auto-magical CI/CD platform that streamlines AI workloads with comprehensive experiment management, data management, pipelines, orchestration, scheduling, and model serving in one unified MLOps and LLMOps solution. It helps teams achieve reproducibility, model versioning, and full training observability for both cloud and self-hosted deployments.

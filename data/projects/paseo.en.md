@@ -17,7 +17,6 @@ description: >-
   parallel, each in its own worktree, through one interface.
 author: Paseo
 ossDate: '2025-10-13T12:27:02.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

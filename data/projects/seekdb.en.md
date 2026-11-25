@@ -14,7 +14,6 @@ description: >-
   and in-database AI workflows.
 author: OceanBase
 ossDate: '2025-10-21T11:31:11Z'
-featured: false
 status: tracked
 ---
 

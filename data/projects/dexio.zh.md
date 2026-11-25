@@ -17,7 +17,6 @@ description: >-
   应用展示链接图、每个页面及其完整历史。可从一个 Docker Compose 文件自托管，也提供托管版。
 author: dexio-wiki
 ossDate: '2026-09-30'
-featured: false
 status: tracked
 ---
 ## 详细介绍

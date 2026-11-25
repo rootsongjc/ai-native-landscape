@@ -16,7 +16,6 @@ description: >-
   websites, with isolated runs and five-layer execution traces.
 author: TIGER-AI-Lab
 ossDate: '2026-04-10'
-featured: false
 status: tracked
 ---
 

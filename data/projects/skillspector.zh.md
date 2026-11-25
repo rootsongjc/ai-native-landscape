@@ -14,7 +14,6 @@ tags:
 description: NVIDIA 出品的 AI Agent 技能安全扫描器，覆盖 16 大类 64 种漏洞模式，检测恶意模式和安全风险。
 author: NVIDIA
 ossDate: '2026-03-21T00:28:43Z'
-featured: false
 status: tracked
 ---
 

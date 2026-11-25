@@ -13,7 +13,6 @@ tags:
 description: 为代码智能体提供持久化记忆和高效检索的轻量化框架。
 author: Steve Yegge
 ossDate: '2025-10-12T03:09:46Z'
-featured: false
 status: tracked
 ---
 Beads 是一个面向代码智能体的轻量级记忆层，为 AI 辅助开发提供持久化上下文与高效检索能力。它通过将重要上下文转换为嵌入并保存在高效索引中，帮助智能体在多轮交互或长期会话中保持连贯性和历史感知。

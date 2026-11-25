@@ -16,7 +16,6 @@ description: >-
   TPE 参数优化器，能够自动找到高质量的消融参数，同时最小化拒绝次数和与原始模型的 KL 散度，从而保留原始模型的智能水平。
 author: Philipp Emanuel Weidmann
 ossDate: '2025-03-16'
-featured: false
 status: tracked
 ---
 

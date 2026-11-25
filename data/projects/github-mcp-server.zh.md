@@ -3,7 +3,7 @@ name: GitHub MCP Server
 slug: github-mcp-server
 homepage: null
 repo: https://github.com/github/github-mcp-server
-license: Other
+license: MIT
 category: coding-devtools
 subCategory: mcp-tools
 tags:
@@ -11,7 +11,6 @@ tags:
 description: GitHub 官方的 MCP 服务器，为 AI 智能体提供与 GitHub 仓库交互的标准化接口。
 author: GitHub
 ossDate: '2025-03-04T16:42:04.000Z'
-featured: false
 status: tracked
 ---
 GitHub MCP Server 是 GitHub 官方的 Model Context Protocol 服务器实现，使 AI 智能体能够通过 MCP 协议与 GitHub API 无缝交互。它为 AI 助手提供了标准化接口，可以访问和操作 GitHub 资源，包括仓库、问题和拉取请求。

@@ -11,7 +11,6 @@ tags:
 description: 全面的开源解决方案，用于创建和管理具有文档交互、嵌入和完全自定义功能的私有 LLM 聊天机器人。
 author: Mintplex Labs
 ossDate: '2023-06-04T02:29:14.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

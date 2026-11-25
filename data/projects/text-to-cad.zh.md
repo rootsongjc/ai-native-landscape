@@ -14,7 +14,6 @@ tags:
 description: 面向 CAD、机器人和硬件设计的智能体技能集合，让 AI 智能体用自然语言直接生成可制造的零件、3D 模型与机器人描述文件。
 author: earthtojake
 ossDate: '2026-04-22T01:09:45Z'
-featured: false
 status: tracked
 ---
 

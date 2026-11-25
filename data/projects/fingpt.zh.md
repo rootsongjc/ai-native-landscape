@@ -11,7 +11,6 @@ tags:
 description: 开源的金融大语言模型项目，提供金融领域定制的数据管道、指令微调与 RAG 工具链。
 author: AI4Finance Foundation
 ossDate: '2023-02-11T20:21:34.000Z'
-featured: false
 status: tracked
 ---
 ## 详细介绍

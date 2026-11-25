@@ -14,7 +14,6 @@ tags:
 description: A developer-focused CLI that simplifies Git worktree workflows for parallel agent and LLM-driven tasks.
 author: max-sixty
 ossDate: '2025-10-17T22:13:14Z'
-featured: false
 status: tracked
 ---
 

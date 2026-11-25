@@ -16,7 +16,6 @@ tags:
 description: 新词雷达以 CLI、三个 Agent Skill、Claude Code 插件与 MCP 服务器形态运行，在 AI 新模型、新产品、新仓库名字最早出现的地方（X、Hugging Face 热门、GitHub 爆发仓库、导航站 sitemap）捕获它们，再用 Google Ads 搜索量与 Google Trends 估算每个名字背后的搜索需求，给出「优先 / 观察 / 跳过」标记。
 author: Yansen Zhu
 ossDate: '2026-10-12'
-featured: false
 status: tracked
 ---
 

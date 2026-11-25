@@ -13,7 +13,6 @@ description: >-
   and places them directly into your prompt.
 author: Upstash
 ossDate: '2025-03-26T23:40:39.000Z'
-featured: false
 status: tracked
 ---
 ## Introduction

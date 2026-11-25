@@ -16,7 +16,6 @@ tags:
 description: An AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web, then synthesizes a grounded summary with source citations.
 author: mvanhorn
 ossDate: '2026-01-23'
-featured: false
 status: tracked
 ---
 

@@ -16,7 +16,6 @@ description: >-
   Agent Development Environment (ADE) that orchestrates a fleet of parallel coding agents — run Codex, Claude Code, OpenCode, or Pi side-by-side, each in its own git worktree, tracked in one place. Available on desktop and mobile with your own subscriptions.
 author: stablyai
 ossDate: '2026-03-17T03:28:57Z'
-featured: false
 status: tracked
 ---
 

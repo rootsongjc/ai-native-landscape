@@ -3,7 +3,7 @@ name: Onyx
 slug: onyx
 homepage: https://www.onyx.app/
 repo: https://github.com/onyx-dot-app/onyx
-license: Unknown
+license: MIT
 category: applications-products
 subCategory: chat-interfaces
 tags:
@@ -11,7 +11,6 @@ tags:
 description: 可自托管的开源 AI 平台与聊天界面，支持 Agents、RAG、深度检索与 40+ 数据源连接器。
 author: Onyx 社区
 ossDate: '2023-04-27T06:04:01.000Z'
-featured: false
 status: tracked
 ---
 

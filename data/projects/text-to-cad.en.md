@@ -14,7 +14,6 @@ tags:
 description: A collection of agent skills for CAD, robotics, and hardware design that let AI agents generate production-ready mechanical parts, 3D models, and robot descriptions from natural language.
 author: earthtojake
 ossDate: '2026-04-22T01:09:45Z'
-featured: false
 status: tracked
 ---
 

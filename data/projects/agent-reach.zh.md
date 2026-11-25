@@ -16,7 +16,6 @@ description: >-
   GitHub、B 站、小红书、雪球等，返回干净的结构化数据，零 API 费用。
 author: Panniantong
 ossDate: '2026-02-24'
-featured: false
 status: tracked
 ---
 

@@ -15,7 +15,6 @@ tags:
 description: An open-source execution layer for AI coding agents that groups environment inspection, edits, builds, and tests into macro commands run in fewer model turns, with published DeepSWE benchmark artifacts.
 author: Tura AI
 ossDate: '2026-07-06'
-featured: false
 status: tracked
 ---
 

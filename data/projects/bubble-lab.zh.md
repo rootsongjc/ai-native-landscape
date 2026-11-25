@@ -13,7 +13,6 @@ tags:
 description: 一个开源的 AI 原生工作流自动化平台，提供可视化编辑、TypeScript 导出与完整可观测性。
 author: Bubble Lab
 ossDate: '2025-10-02T22:59:25Z'
-featured: false
 status: tracked
 ---
 Bubble Lab 是一个开源核心的工作流引擎，驱动 Bubble Lab 平台运行，可独立运行、自托管和扩展。它主张以类型安全的 TypeScript 方式表达、调试与导出工作流，将可视化流程编译为整洁、可部署的 TypeScript 代码，避免被闭源编辑器锁定。

@@ -12,7 +12,6 @@ tags:
 description: Diffusers：Hugging Face 提供的模块化扩展库，包含用于图像、音频及 3D 生成的预训练扩散模型与流水线。
 author: Hugging Face
 ossDate: '2022-05-30T16:04:02.000Z'
-featured: false
 status: tracked
 ---
 

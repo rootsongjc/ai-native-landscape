@@ -13,7 +13,6 @@ tags:
 description: TokenHub 是一个私有化部署的企业级 AI 网关，通过 OpenAI 与 Anthropic 兼容 API 统一接入多模型提供方，并为普通用户、团队负责人和管理员提供基于角色的独立工作空间。
 author: 谢孟军（astaxie）
 ossDate: '2026-06-10T15:32:07Z'
-featured: false
 status: tracked
 ---
 ## 简介

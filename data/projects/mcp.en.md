@@ -15,7 +15,6 @@ description: >-
   descriptions.
 author: Amazon Web Services
 ossDate: '2025-03-21T00:39:00Z'
-featured: false
 status: tracked
 ---
 ## Overview

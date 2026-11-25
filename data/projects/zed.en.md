@@ -3,7 +3,7 @@ name: Zed
 slug: zed
 homepage: https://zed.dev
 repo: https://github.com/zed-industries/zed
-license: Unknown
+license: GPL-3.0 AND Apache-2.0
 category: coding-devtools
 subCategory: coding-agents
 tags:
@@ -11,7 +11,6 @@ tags:
 description: Next-generation code editor designed for high-performance collaboration with humans and AI.
 author: Zed Industries
 ossDate: '2021-02-20T03:01:06.000Z'
-featured: false
 status: tracked
 ---
 

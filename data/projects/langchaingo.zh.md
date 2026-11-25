@@ -3,7 +3,7 @@ name: LangChain Go
 slug: langchaingo
 homepage: https://tmc.github.io/langchaingo/
 repo: https://github.com/tmc/langchaingo
-license: Unknown
+license: MIT
 category: coding-devtools
 subCategory: sdk-frameworks
 tags:
@@ -12,7 +12,6 @@ tags:
 description: LangChain Go 是 LangChain 在 Go 语言中的实现，提供可组合的 SDK 与工具，便于在 Go 中构建基于大语言模型的应用。
 author: tmc
 ossDate: '2023-02-18T20:04:54Z'
-featured: false
 status: tracked
 ---
 

@@ -14,7 +14,6 @@ tags:
 description: Open-source A2B control plane based on Agent Capability Contracts for safely connecting agents to existing business systems.
 author: bailinghub
 ossDate: '2026-07-09T09:08:51Z'
-featured: false
 status: tracked
 ---
 

@@ -13,7 +13,6 @@ description: >-
   terminal and developer assistant capabilities.
 author: Open Interpreter Contributors
 ossDate: '2023-07-14T07:10:44.000Z'
-featured: false
 status: tracked
 ---
 

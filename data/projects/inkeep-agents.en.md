@@ -3,7 +3,7 @@ name: Inkeep Agents
 slug: inkeep-agents
 homepage: https://docs.inkeep.com
 repo: https://github.com/inkeep/agents
-license: Unknown
+license: Elastic-2.0
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -14,7 +14,6 @@ description: >-
   two-way sync for shipping assistants and multi-agent workflows.
 author: Inkeep
 ossDate: '2025-09-05T12:23:24.000Z'
-featured: false
 status: tracked
 ---
 

@@ -14,7 +14,6 @@ tags:
 description: A containerized runtime and agent builder for building and running lightweight AI agents.
 author: Docker
 ossDate: '2025-09-01T12:14:45Z'
-featured: false
 status: tracked
 ---
 cagent is an AI Agent Builder and Runtime developed by Docker Engineering that enables developers to build and run AI agents using Docker's container infrastructure. It provides a unified workflow from agent construction to deployment, leveraging containerization for resource isolation, scalability, and seamless integration with cloud-native and edge environments.

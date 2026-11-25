@@ -14,7 +14,6 @@ tags:
 description: 一种以本地 Markdown 为中心的记忆系统，允许 LLM 通过模型上下文协议（MCP）读写你的知识库。
 author: Basic Machines
 ossDate: '2024-12-02T22:40:43Z'
-featured: false
 status: tracked
 ---
 Basic Memory 是一个本地优先的知识记忆系统，将用户知识以结构化 Markdown 文件保存，并通过模型上下文协议（MCP）让兼容的 LLM 读写这些文件。它实现了可写入的记忆层，默认本地存储保护隐私，同时提供可选的云同步，确保 AI 对话真正记住上下文。

@@ -14,7 +14,6 @@ tags:
 description: OfficeCLI 是一款免费、开源的单文件 CLI，专为 AI 智能体读写、编辑和自动化 Word、Excel、PowerPoint 文件而设计，无需安装 Office。
 author: iOfficeAI
 ossDate: '2026-03-15T07:39:12Z'
-featured: false
 status: tracked
 ---
 

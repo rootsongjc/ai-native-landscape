@@ -17,7 +17,6 @@ tags:
 description: An open-source, local-first multi-agent desktop app where a Commander LLM plans work, dispatches specialist sub-agents, and runs your installed coding CLIs as local sessions — with BYO keys and no vendor lock-in.
 author: Orkas-AI
 ossDate: '2026-04-29'
-featured: false
 status: tracked
 ---
 

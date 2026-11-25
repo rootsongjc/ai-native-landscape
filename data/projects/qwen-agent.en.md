@@ -15,7 +15,6 @@ description: >-
   to quickly build intelligent assistants and applications.
 author: QwenLM
 ossDate: '2023-09-22T02:24:56.000Z'
-featured: false
 status: tracked
 ---
 

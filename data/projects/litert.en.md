@@ -13,7 +13,6 @@ tags:
 description: A high-performance, scalable lightweight deep learning inference runtime for edge devices.
 author: Google
 ossDate: '2024-09-04T03:33:35Z'
-featured: false
 status: tracked
 ---
 

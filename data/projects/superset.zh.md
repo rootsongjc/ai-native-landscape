@@ -14,7 +14,6 @@ tags:
 description: 一个开源的数据可视化与数据探索平台，支持交互式仪表盘、SQL 查询与多种数据源连接。
 author: Apache Software Foundation
 ossDate: '2015-07-21T18:55:34Z'
-featured: false
 status: tracked
 ---
 

@@ -17,7 +17,6 @@ description: >-
   or Grok CLI, each with its own personality, model, computer, and connected apps.
 author: milind-soni
 ossDate: '2026-08-11T18:58:55.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

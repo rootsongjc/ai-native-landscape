@@ -12,7 +12,6 @@ tags:
 description: 'NVIDIA 官方 Kubernetes 设备插件，向 kubelet 暴露 GPU，并支持通过分时复用与 MPS 共享 GPU。'
 author: NVIDIA
 ossDate: '2017-10-10T21:31:02.000Z'
-featured: false
 status: tracked
 ---
 

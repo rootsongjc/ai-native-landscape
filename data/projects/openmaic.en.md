@@ -17,7 +17,6 @@ description: >-
   whiteboard drawing, voice explanations, and export to PPTX or HTML formats.
 author: THU-MAIC
 ossDate: '2025-03-16'
-featured: false
 status: tracked
 ---
 

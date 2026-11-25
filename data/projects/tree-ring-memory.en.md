@@ -16,7 +16,6 @@ tags:
 description: A framework-agnostic, local-first memory lifecycle framework for AI agents with a Rust CLI, SQLite/FTS recall, forgetting, audit, consolidation, and multi-agent write coordination.
 author: TerminallyLazy
 ossDate: '2026-07-04'
-featured: false
 status: tracked
 ---
 

@@ -13,7 +13,6 @@ tags:
 description: NeMo RL 是一个面向大模型的可扩展后训练强化学习库，支持高性能分布式训练与多样化后端。
 author: NVIDIA NeMo
 ossDate: '2025-03-16T17:43:21Z'
-featured: false
 status: tracked
 ---
 

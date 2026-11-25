@@ -15,7 +15,6 @@ tags:
 description: Distributed platform for running agent environments at scale, powering agentic RL training for Kimi K3.
 author: kvcache-ai
 ossDate: '2026-07-23T02:48:07Z'
-featured: false
 status: tracked
 ---
 

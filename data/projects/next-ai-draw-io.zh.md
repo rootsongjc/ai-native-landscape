@@ -12,7 +12,6 @@ tags:
 description: 一个基于 Next.js 的开源 Web 应用，将 AI 能力与 draw.io 图表编辑结合以支持自然语言驱动的图形创建与增强。
 author: DayuanJiang
 ossDate: '2025-03-23T15:03:48Z'
-featured: false
 status: tracked
 ---
 

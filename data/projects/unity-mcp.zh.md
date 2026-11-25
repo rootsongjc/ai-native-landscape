@@ -12,7 +12,6 @@ tags:
 description: Unity MCP 是一款开源工具，允许 AI 助手（如 Claude、Cursor）通过 Model Context Protocol (MCP) 直接与 Unity 编辑器交互，实现自动化管理和编辑。
 author: Coplay
 ossDate: '2025-03-18T11:01:58Z'
-featured: false
 status: tracked
 ---
 

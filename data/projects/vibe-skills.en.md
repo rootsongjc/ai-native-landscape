@@ -15,7 +15,6 @@ description: >-
   management, enabling any AI agent to instantly upgrade its functionality.
 author: foryourhealth111-pixel
 ossDate: '2026-02-22T13:51:44Z'
-featured: false
 status: tracked
 ---
 

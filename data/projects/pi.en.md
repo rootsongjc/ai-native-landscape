@@ -14,7 +14,6 @@ tags:
 description: Pi is a minimal, extensible coding agent CLI and agent harness with a unified multi-provider LLM API, an interactive terminal UI, and a TypeScript SDK.
 author: Earendil Works
 ossDate: '2025-08-09'
-featured: false
 status: tracked
 ---
 

@@ -12,7 +12,6 @@ tags:
 description: 'An htop-like task monitor for GPUs and accelerators from AMD, Apple, Huawei, Intel, NVIDIA, and Qualcomm.'
 author: Maxime Schmitt
 ossDate: '2017-06-16T09:52:13.000Z'
-featured: false
 status: tracked
 ---
 

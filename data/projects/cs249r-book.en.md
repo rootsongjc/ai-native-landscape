@@ -3,7 +3,7 @@ name: Machine Learning Systems (MLSysBook)
 slug: cs249r-book
 homepage: https://mlsysbook.ai/
 repo: https://github.com/harvard-edge/cs249r_book
-license: Other
+license: CC-BY-NC-SA-4.0
 category: inference-serving
 subCategory: inference-runtimes
 tags:
@@ -13,7 +13,6 @@ description: >-
   deployment.
 author: Vijay Janapa Reddi / Harvard EDGE
 ossDate: '2023-09-06T19:31:06.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

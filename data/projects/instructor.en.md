@@ -12,7 +12,6 @@ tags:
 description: A Pydantic-based library for reliable structured outputs from any LLM, simplifying JSON extraction and validation.
 author: Instructor Community
 ossDate: '2023-06-14T10:42:23.000Z'
-featured: false
 status: tracked
 ---
 

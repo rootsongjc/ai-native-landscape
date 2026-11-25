@@ -13,7 +13,6 @@ tags:
 description: 由 Firebase 开发的开源框架，用于构建面向生产环境的全栈 AI 应用，支持多语言 SDK 与多家模型提供商集成。
 author: Firebase
 ossDate: '2024-04-29T22:04:42.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

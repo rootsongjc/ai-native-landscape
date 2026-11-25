@@ -14,7 +14,6 @@ description: >-
   suitable for inference and training.
 author: Hugging Face
 ossDate: '2022-05-30T16:04:02.000Z'
-featured: false
 status: tracked
 ---
 

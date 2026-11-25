@@ -11,7 +11,6 @@ tags:
 description: Promptfoo 是一个面向开发者的本地化 LLM 测试与红队工具，支持自动化评测、红队扫描与 CI 集成。
 author: Promptfoo 社区
 ossDate: '2023-04-28T15:48:49.000Z'
-featured: false
 status: tracked
 ---
 

@@ -11,7 +11,6 @@ tags:
 description: 一个面向大模型应用的开源网页爬虫与抓取器，输出清洁的 Markdown 与结构化数据，支持浏览器控制、Docker 部署与 LLM 驱动的抽取。
 author: UncleCode
 ossDate: '2024-05-09T09:48:50Z'
-featured: false
 status: tracked
 ---
 Crawl4AI 是一个开源的 LLM 友好型网页爬虫与抓取器，能够提取针对大语言模型消费优化的结构化数据。它将网页内容转换为干净的 Markdown 和结构化格式，非常适合 RAG 流水线和下游 AI 工作流使用。

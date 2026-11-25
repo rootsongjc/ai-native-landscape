@@ -13,7 +13,6 @@ tags:
 description: 'Runpod GPU 云的开源 Python 库，涵盖平台 API 与 Serverless Worker SDK。'
 author: Runpod
 ossDate: '2022-12-09T21:35:48.000Z'
-featured: false
 status: tracked
 ---
 

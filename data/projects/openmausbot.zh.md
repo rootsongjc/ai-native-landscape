@@ -16,7 +16,6 @@ description: >-
   一款开源、本地优先的桌面聊天应用，每个联系人都是运行在你本机 Claude、Codex 或 Grok CLI 上的真实 AI 智能体，各自拥有独立的人设、模型、计算机和已连接的应用。
 author: milind-soni
 ossDate: '2026-08-11T18:58:55.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

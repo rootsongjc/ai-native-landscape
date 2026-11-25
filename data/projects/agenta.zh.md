@@ -12,7 +12,6 @@ tags:
 description: Agenta 是一个开源的 LLMOps 平台，集成提示管理、评测与可观测性，帮助团队快速构建可靠的 LLM 应用。
 author: Agenta-AI
 ossDate: '2023-04-26T09:54:28.000Z'
-featured: false
 status: tracked
 ---
 ## 详细介绍

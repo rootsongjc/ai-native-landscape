@@ -11,7 +11,6 @@ tags:
 description: SWE-agent：一个由学术团队开发的自动化软件工程代理框架，适用于代码修复、评估与自动化工作流。
 author: SWE-agent
 ossDate: '2024-04-02T04:09:47.000Z'
-featured: false
 status: tracked
 ---
 

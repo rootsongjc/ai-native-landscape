@@ -13,7 +13,6 @@ tags:
 description: An extensible, convenient, and efficient toolbox for fine-tuning and inference of large foundation models.
 author: OptimalScale
 ossDate: '2023-03-27T13:56:29.000Z'
-featured: false
 status: tracked
 ---
 

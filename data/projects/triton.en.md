@@ -13,7 +13,6 @@ description: >-
   simplify GPU kernel programming while delivering strong performance.
 author: Triton Team
 ossDate: '2014-08-30T17:07:16.000Z'
-featured: false
 status: tracked
 ---
 

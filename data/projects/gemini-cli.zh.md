@@ -11,7 +11,6 @@ tags:
 description: Google 推出的命令行 AI 智能体工具，已于 2025 年 5 月宣布停止维护，过渡至 Antigravity CLI。
 author: Google
 ossDate: '2025-04-17T17:04:31.000Z'
-featured: true
 status: tracked
 ---
 > **停止维护公告**：Google 于 2026 年 5 月 19 日宣布将 Gemini CLI 过渡至 [Antigravity CLI](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/)。**2026 年 6 月 18 日起**，Gemini CLI 及 Gemini Code Assist IDE 扩展将停止服务（免费用户、AI Pro 及 Ultra 用户）。企业客户（Gemini Code Assist Standard/Enterprise 许可证）不受影响。

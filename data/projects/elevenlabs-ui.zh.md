@@ -12,7 +12,6 @@ tags:
 description: ElevenLabs UI 是基于 shadcn/ui 构建的组件库与注册表，帮助更快构建多模态智能体界面组件。
 author: ElevenLabs
 ossDate: '2025-09-03T16:29:41.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

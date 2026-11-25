@@ -3,7 +3,7 @@ name: Roboflow Inference
 slug: roboflow-inference
 homepage: https://inference.roboflow.com/
 repo: https://github.com/roboflow/inference
-license: Unknown
+license: Apache-2.0
 category: inference-serving
 subCategory: model-serving
 tags:
@@ -15,7 +15,6 @@ description: >-
   video stream workflows, and rich model integrations.
 author: Roboflow
 ossDate: '2023-07-31T17:00:40.000Z'
-featured: false
 status: tracked
 ---
 

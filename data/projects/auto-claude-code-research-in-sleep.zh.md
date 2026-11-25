@@ -15,7 +15,6 @@ tags:
 description: ARIS 是一套轻量级的纯 Markdown 技能集合，面向自主化机器学习研究，提供跨模型评审循环、创意发现与实验自动化，兼容任意 LLM 智能体。
 author: wanshuiyin
 ossDate: '2026-03-10'
-featured: false
 status: tracked
 ---
 

@@ -17,7 +17,6 @@ description: >-
   自动降级和叠加式 token 压缩。
 author: cheaper-inference
 ossDate: '2026-02-13'
-featured: false
 status: tracked
 ---
 

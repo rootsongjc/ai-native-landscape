@@ -14,7 +14,6 @@ tags:
 description: 一个可自托管的多扇区语义记忆引擎，提供高召回、低成本且可解释的长期记忆能力。
 author: Cavira
 ossDate: '2025-10-19T16:12:49Z'
-featured: false
 status: tracked
 ---
 

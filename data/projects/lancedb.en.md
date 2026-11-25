@@ -12,7 +12,6 @@ tags:
 description: Developer-friendly, embedded retrieval engine for multimodal AI. Search More; Manage Less.
 author: LanceDB
 ossDate: '2023-04-20'
-featured: false
 status: tracked
 ---
 

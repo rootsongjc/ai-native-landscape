@@ -16,7 +16,6 @@ tags:
 description: Local-first memory layer for coding agents (Claude Code, Codex, Cursor, OpenClaw, OpenCode, Pi, and MCP clients) backed by SQLite and markdown mirrors with zero runtime dependencies.
 author: kitfunso
 ossDate: '2026-03-15T10:40:26Z'
-featured: false
 status: tracked
 ---
 

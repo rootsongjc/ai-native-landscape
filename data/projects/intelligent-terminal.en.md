@@ -18,7 +18,6 @@ description: >-
   agent CLI including GitHub Copilot, Claude, Codex, and Gemini.
 author: microsoft
 ossDate: '2026-05-18T10:57:07Z'
-featured: false
 status: tracked
 ---
 

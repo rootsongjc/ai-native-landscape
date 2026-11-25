@@ -14,7 +14,6 @@ tags:
 description: 一个面向工程化的 Go 工具包，用于构建、评估与部署复杂的智能体应用。
 author: Google
 ossDate: '2025-05-05T17:16:26Z'
-featured: false
 status: tracked
 ---
 ## 简介

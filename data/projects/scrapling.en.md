@@ -16,7 +16,6 @@ tags:
 description: An adaptive web scraping framework with AI-powered element selection, stealth capabilities, and MCP server support for AI agent integration.
 author: D4Vinci
 ossDate: '2024-10-13'
-featured: false
 thumbnail: ''
 source: ''
 status: tracked

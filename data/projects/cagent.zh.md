@@ -14,7 +14,6 @@ tags:
 description: 用于构建和运行轻量级智能体的容器化运行时，由 Docker 工程团队开发。
 author: Docker
 ossDate: '2025-09-01T12:14:45Z'
-featured: false
 status: tracked
 ---
 cagent 是由 Docker 工程团队开发的 AI 智能体构建器与运行时，使开发者能够利用 Docker 的容器基础设施来构建和运行 AI 智能体。它提供了从智能体构建到部署的统一工作流，借助容器化实现资源隔离、弹性伸缩，并与云原生和边缘环境无缝集成。

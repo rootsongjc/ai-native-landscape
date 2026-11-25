@@ -13,7 +13,6 @@ tags:
 description: '面向 Kubernetes 上批处理、数据与机器学习负载的通用资源调度器，以层级队列与配额为核心。'
 author: Apache Software Foundation
 ossDate: '2019-06-13T15:18:08.000Z'
-featured: false
 status: tracked
 ---
 

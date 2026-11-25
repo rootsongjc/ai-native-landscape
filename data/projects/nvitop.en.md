@@ -13,7 +13,6 @@ tags:
 description: 'An interactive NVIDIA GPU process viewer and monitoring toolkit with a terminal UI, a Python API, and a Prometheus exporter.'
 author: Xuehai Pan
 ossDate: '2021-01-25T12:17:02.000Z'
-featured: false
 status: tracked
 ---
 

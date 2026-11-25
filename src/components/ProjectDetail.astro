@@ -10,7 +10,8 @@ import {
   projectDescription,
   projectIconUrl,
   subCategoryName,
-  statusLabel,
+  levelBreakdown,
+  levelLabel,
   ui,
 } from '../lib/landscape.mjs';
 
@@ -88,10 +89,10 @@ const relatedProjects = allProjects
             <div class="detail-hero__info">
               <div class="detail-title-row">
                 <h1>{project.name}</h1>
-                <strong class="reference-status detail-title-status" data-reference-status={project.status}>
+                <a class="reference-status detail-title-status" data-level={project.level} href={localizedPath('/methodology/#project-levels', lang)} title={levelBreakdown(project, lang)}>
                   <span class="reference-status__dot"></span>
-                  {statusLabel(project.status, lang)}
-                </strong>
+                  {levelLabel(project.level, lang)}
+                </a>
               </div>
               <p class="detail-desc">{description}</p>
             </div>
@@ -907,9 +908,10 @@ const relatedProjects = allProjects
     background: var(--accent);
     box-shadow: none;
   }
-  .detail-score-panel[data-reference-status="graduated"] .reference-status__dot { background: #10b981; }
-  .detail-score-panel[data-reference-status="incubating"] .reference-status__dot { background: #8b5cf6; }
-  .detail-score-panel[data-reference-status="sandbox"] .reference-status__dot { background: #f59e0b; }
+  .reference-status[data-level="mature"] .reference-status__dot { background: #1f7a45; }
+  .reference-status[data-level="growing"] .reference-status__dot { background: #2563eb; }
+  .reference-status[data-level="emerging"] .reference-status__dot { background: #94a3b8; }
+  a.reference-status { text-decoration: none; }
 
   .detail-meta {
     display: flex;

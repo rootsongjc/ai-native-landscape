@@ -13,7 +13,6 @@ description: >-
   Vercel AI Gateway.
 author: Vercel
 ossDate: '2023-05-19T16:36:23.000Z'
-featured: false
 status: tracked
 ---
 ## Introduction

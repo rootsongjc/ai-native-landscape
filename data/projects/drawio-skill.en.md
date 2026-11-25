@@ -18,7 +18,6 @@ tags:
 description: Generate draw.io diagrams from natural language with 6 presets, vision self-check, multi-round refinement, and 10,000+ official shapes including 321 AI/LLM brand logos.
 author: Agents365-ai
 ossDate: '2026-03-03T16:54:59.000Z'
-featured: false
 status: tracked
 ---
 

@@ -14,7 +14,6 @@ tags:
 description: 基于 Envoy Gateway 构建的开源 AI 与智能体流量控制平面，提供统一的 OpenAI 兼容 API，集中管理凭证、路由、配额与故障切换。前身为 Envoy AI Gateway。
 author: Agentic AI Foundation
 ossDate: '2024-10-21T02:59:59.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

@@ -14,7 +14,6 @@ description: >-
   models.
 author: Apple
 ossDate: '2023-02-25T01:33:06.000Z'
-featured: false
 status: tracked
 ---
 ## Introduction

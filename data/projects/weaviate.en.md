@@ -16,7 +16,6 @@ description: >-
   search and structured filtering for AI applications.
 author: Weaviate
 ossDate: '2016-03-30T15:03:17.000Z'
-featured: false
 status: tracked
 ---
 

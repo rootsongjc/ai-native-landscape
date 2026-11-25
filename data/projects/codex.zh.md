@@ -11,7 +11,6 @@ tags:
 description: Codex 是 OpenAI 提供的本地化编程智能体，支持 MCP 协议并能与 ChatGPT 账号或 API Key 集成。
 author: OpenAI
 ossDate: '2025-04-13T05:37:54.000Z'
-featured: false
 status: tracked
 ---
 Codex 是 OpenAI 推出的云端 AI 编程智能体，能够自主处理完整的软件工程任务。它可以理解代码库、生成和重构代码、编写测试以及修复跨项目的缺陷，将深度代码理解与自主执行相结合，端到端地完成复杂的工程任务。

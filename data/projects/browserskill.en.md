@@ -13,7 +13,6 @@ tags:
 description: A CLI and browser extension that lets any shell-capable AI agent borrow your real, logged-in browser to perform browser automation without interrupting your work.
 author: Tencent
 ossDate: '2026-06-22T07:24:40Z'
-featured: false
 status: tracked
 ---
 ## Introduction

@@ -15,7 +15,6 @@ description: >-
   developers quickly generate, deploy and host full-stack AI applications.
 author: Tencent CloudBase
 ossDate: '2025-05-23T08:31:26.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

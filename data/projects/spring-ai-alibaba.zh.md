@@ -13,7 +13,6 @@ tags:
 description: 面向 Java 开发者的 Agentic AI 框架，支持多 agent、工作流、MCP 集成与企业级生态对接。
 author: Alibaba
 ossDate: '2024-09-09T01:35:50Z'
-featured: false
 status: tracked
 ---
 

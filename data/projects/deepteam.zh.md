@@ -12,7 +12,6 @@ tags:
 description: 一个用于对大语言模型与 LLM 系统进行红队测试的开源框架，聚焦安全性与稳健性评估。
 author: Confident AI
 ossDate: '2025-03-05T06:34:21Z'
-featured: false
 status: tracked
 ---
 ## 简介

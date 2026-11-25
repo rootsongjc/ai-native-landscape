@@ -12,7 +12,6 @@ tags:
 description: 一个面向 CLI 的语义检索工具，支持代码、文档与多媒体的自然语言搜索与实时索引。
 author: Mixedbread
 ossDate: '2025-11-06T01:01:47Z'
-featured: false
 status: tracked
 ---
 

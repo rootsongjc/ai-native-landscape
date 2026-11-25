@@ -13,7 +13,6 @@ description: >-
   observable, large-scale microservice and AI automation pipelines.
 author: Conductor
 ossDate: '2023-12-08T06:06:09.000Z'
-featured: false
 status: tracked
 ---
 Conductor OSS is an event-driven agentic workflow engine that provides durable and highly resilient execution for applications and AI agents. Originally built at Netflix, it models business processes as versioned JSON workflow definitions to coordinate complex microservices and asynchronous tasks with deep runtime observability.

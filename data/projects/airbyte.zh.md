@@ -3,7 +3,7 @@ name: Airbyte
 slug: airbyte
 homepage: 'https://airbyte.com'
 repo: https://github.com/airbytehq/airbyte
-license: Other
+license: Elastic-2.0
 category: rag-knowledge
 subCategory: data-connectors
 tags:
@@ -15,7 +15,6 @@ tags:
 description: 开源数据移动平台，用于 ELT 管道和 AI 智能体数据接入，支持从 API、数据库和文件迁移数据到数据仓库、数据湖和 AI 应用。
 author: Airbyte
 ossDate: '2020-07-27'
-featured: false
 thumbnail: ''
 source: ''
 status: tracked

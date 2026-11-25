@@ -17,7 +17,6 @@ description: >-
   7.8 倍内存，相同召回下比 FAISS 快至 4.4 倍。
 author: RyanCodrai
 ossDate: '2026-03-26'
-featured: false
 status: tracked
 ---
 

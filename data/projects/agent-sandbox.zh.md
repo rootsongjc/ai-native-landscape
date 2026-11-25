@@ -12,7 +12,6 @@ tags:
 description: 一个由 Kubernetes SIGs 发起的智能体沙箱项目，旨在提供可扩展、安全的智能体执行与编排平台原型。
 author: Kubernetes SIGs
 ossDate: '2025-08-12T04:55:05Z'
-featured: false
 status: tracked
 ---
 ## 简介

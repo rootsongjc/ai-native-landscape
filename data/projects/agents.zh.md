@@ -11,7 +11,6 @@ tags:
 description: Claude Code Agents 是一套为 Anthropic Claude Code 平台设计的智能体与插件生态，支持多智能体编排、自动化开发与高效协作。
 author: Seth Hobson
 ossDate: '2023-07-19T18:13:13.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

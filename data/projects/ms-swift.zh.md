@@ -11,7 +11,6 @@ tags:
 description: ModelScope 社区提供的 SWIFT 框架，面向大模型与多模态模型的轻量化微调、评估与部署，支持丰富训练方法、量化与推理加速。
 author: ModelScope
 ossDate: '2023-08-01T15:06:39.000Z'
-featured: false
 status: tracked
 ---
 

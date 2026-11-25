@@ -3,7 +3,7 @@ name: LightGBM
 slug: lightgbm
 homepage: https://lightgbm.readthedocs.io/
 repo: https://github.com/lightgbm-org/LightGBM
-license: Other
+license: MIT
 category: training-optimization
 subCategory: training-frameworks
 tags:
@@ -13,7 +13,6 @@ description: >-
   ranking, classification, and large-scale ML tasks.
 author: Microsoft
 ossDate: '2016-08-05T05:45:50.000Z'
-featured: false
 status: tracked
 ---
 LightGBM is a high-performance gradient boosting framework optimized for efficiency and scalability. It supports parallel and distributed training, GPU acceleration, and provides flexible interfaces for Python and R. LightGBM is widely used in production systems and ML competitions.

@@ -16,7 +16,6 @@ tags:
 description: GenMedia Creative Studio 是一个基于 Vertex AI 的生成媒体演示应用，展示图像、视频、音频与文本到语音等多模态能力。
 author: Google Cloud
 ossDate: '2024-08-15T20:28:49Z'
-featured: false
 status: tracked
 ---
 

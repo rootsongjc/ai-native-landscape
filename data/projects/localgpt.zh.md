@@ -11,7 +11,6 @@ tags:
 description: 一个本地化的私有文档智能平台，支持混合检索与多模型推理，所有数据保存在本地。
 author: PromtEngineer
 ossDate: '2023-05-24T05:32:40.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

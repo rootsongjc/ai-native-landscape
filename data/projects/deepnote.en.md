@@ -15,7 +15,6 @@ description: >-
   rich data integrations.
 author: Deepnote
 ossDate: '2025-09-29T15:24:25Z'
-featured: false
 status: tracked
 ---
 Deepnote is a collaborative data notebook platform for data science teams with AI-powered assistance. It is compatible with Jupyter and supports Python, R, and SQL, combining interactive notebooks with cloud execution environments for real-time multi-user collaboration.

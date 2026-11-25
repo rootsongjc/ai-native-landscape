@@ -11,7 +11,6 @@ tags:
 description: Hyprnote 是一款本地优先的 AI 笔记应用，面向私人会议与隐私保护场景。
 author: fastrepl
 ossDate: '2024-12-09T02:51:21Z'
-featured: false
 status: tracked
 ---
 

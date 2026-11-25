@@ -16,7 +16,6 @@ description: >-
   openly maintained in Markdown format with support for versioned and language-specific documentation retrieval.
 author: Andrew Ng
 ossDate: '2025-03-17'
-featured: false
 status: tracked
 ---
 ## Overview

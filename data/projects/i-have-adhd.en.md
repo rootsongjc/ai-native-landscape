@@ -14,7 +14,6 @@ tags:
 description: A skill for coding agents that stops them from burying the answer, producing ADHD-friendly output that leads with the result.
 author: ayghri
 ossDate: '2026-05-13T20:42:06Z'
-featured: false
 status: tracked
 ---
 

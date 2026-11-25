@@ -13,7 +13,6 @@ tags:
 description: 'A universal resource scheduler for batch, data, and machine learning workloads on Kubernetes, built around hierarchical queues and quotas.'
 author: Apache Software Foundation
 ossDate: '2019-06-13T15:18:08.000Z'
-featured: false
 status: tracked
 ---
 

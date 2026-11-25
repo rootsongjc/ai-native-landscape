@@ -16,7 +16,6 @@ description: >-
   explainable long-term memory for LLM applications.
 author: Cavira
 ossDate: '2025-10-19T16:12:49Z'
-featured: false
 status: tracked
 ---
 

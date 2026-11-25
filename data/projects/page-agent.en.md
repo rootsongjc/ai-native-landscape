@@ -16,7 +16,6 @@ description: >-
   interface with natural language via text-based DOM manipulation — no screenshots or multimodal LLMs required.
 author: alibaba
 ossDate: '2025-09-23'
-featured: false
 status: tracked
 ---
 

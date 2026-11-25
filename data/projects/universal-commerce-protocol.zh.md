@@ -13,7 +13,6 @@ tags:
 description: 一个标准化协议，促进智能体、平台与支付与身份等服务提供方之间的安全互操作。
 author: Universal Commerce Protocol
 ossDate: '2025-12-31T02:17:21Z'
-featured: false
 status: tracked
 ---
 

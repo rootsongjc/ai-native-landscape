@@ -16,7 +16,6 @@ description: >-
   embedding models.
 author: jundot
 ossDate: '2026-02-13'
-featured: true
 status: tracked
 ---
 

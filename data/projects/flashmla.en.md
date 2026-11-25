@@ -13,7 +13,6 @@ description: >-
   with reduced memory footprint.
 author: DeepSeek
 ossDate: '2025-02-21T06:31:27.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

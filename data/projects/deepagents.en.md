@@ -14,7 +14,6 @@ description: >-
   for multi-step reasoning.
 author: LangChain
 ossDate: '2025-07-27T23:07:53.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

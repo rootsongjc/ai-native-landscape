@@ -15,7 +15,6 @@ description: >-
   collections.
 author: Dave Poon
 ossDate: '2025-07-25T02:26:45Z'
-featured: false
 status: tracked
 ---
 Build with Claude is a single hub to find Claude Skills, Agents, Commands, Hooks, Plugins, and Marketplace collections to extend Claude Code, Claude Desktop, Agent SDK, and OpenClaw. It aggregates community and curated extensions into a searchable Web UI, enabling installation via the Claude plugin marketplace or manual repository-based updates.

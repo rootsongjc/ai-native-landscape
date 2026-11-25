@@ -14,7 +14,6 @@ description: >-
   enhancing retrieval and enabling advanced temporal queries.
 author: Microsoft
 ossDate: '2024-03-27T17:57:52.000Z'
-featured: false
 status: tracked
 ---
 

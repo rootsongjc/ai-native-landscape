@@ -11,7 +11,6 @@ tags:
 description: Facebook AI Research 的下一代目标检测与分割库，提供高性能的检测/分割算法与丰富的基准模型。
 author: Facebook
 ossDate: '2019-09-05T21:30:20.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

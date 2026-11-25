@@ -17,7 +17,6 @@ tags:
 description: 功能全面的 Google Workspace MCP 服务器与 CLI，通过 120+ 工具让 AI 助手用自然语言操控 Gmail、日历、Drive、Docs、Sheets、Slides、Forms、Tasks、Contacts 和 Chat。
 author: taylorwilsdon
 ossDate: '2025-04-27'
-featured: false
 status: tracked
 ---
 

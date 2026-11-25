@@ -14,7 +14,6 @@ tags:
 description: 一个面向企业场景的开源 LLM DevOps 平台，提供工作流、RAG、模型管理与观测等功能。
 author: DataElement
 ossDate: '2023-08-28T10:00:24Z'
-featured: false
 status: tracked
 ---
 BISHENG 是一个面向企业场景的开源 LLM DevOps 平台，旨在帮助用户构建下一代企业 AI 应用。它将大模型能力组织为可编排、可观测、可管理的企业应用，融合工作流编排、检索增强生成（RAG）、模型管理与评估等模块。

@@ -16,7 +16,6 @@ tags:
 description: 一个面向个性化学习的多智能体教学系统，集成检索增强生成、知识图谱与交互式可视化。
 author: HKUDS
 ossDate: '2025-12-28T15:35:54Z'
-featured: false
 status: tracked
 ---
 ## 简介

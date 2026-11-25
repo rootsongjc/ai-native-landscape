@@ -17,7 +17,6 @@ description: >-
   OpenTelemetry-based tracing, evals, datasets and experiments, and prompt management.
 author: Arize AI
 ossDate: '2022-11-09T23:44:35Z'
-featured: false
 status: tracked
 ---
 

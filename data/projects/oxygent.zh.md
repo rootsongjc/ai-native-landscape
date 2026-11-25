@@ -12,7 +12,6 @@ tags:
 description: 一个面向企业级应用的多智能体协作框架，支持本地优先的任务编排与工具接入。
 author: 京东
 ossDate: '2025-07-18T02:40:42Z'
-featured: false
 status: tracked
 ---
 

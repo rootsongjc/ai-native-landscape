@@ -3,7 +3,7 @@ name: VM0
 slug: vm0
 homepage: https://vm0.ai
 repo: https://github.com/okou-ai/okou
-license: BSL-1.1
+license: BUSL-1.1
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -18,7 +18,6 @@ description: >-
   observability, and multi-model routing.
 author: VM0.ai
 ossDate: '2025-11-14T03:27:22Z'
-featured: false
 status: tracked
 ---
 

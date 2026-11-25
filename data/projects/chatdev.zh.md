@@ -11,7 +11,6 @@ tags:
 description: 基于大模型的多智能体协作框架，用于将自然语言想法自动化为可运行的软件工程流程。
 author: OpenBMB
 ossDate: '2023-08-28T02:18:13.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

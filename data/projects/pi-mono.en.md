@@ -13,7 +13,6 @@ tags:
 description: Pi Monorepo — an AI agent toolkit monorepo with coding agents, unified LLM API, TUI and Web UI libraries.
 author: badlogic
 ossDate: '2022-01-01'
-featured: false
 status: tracked
 ---
 

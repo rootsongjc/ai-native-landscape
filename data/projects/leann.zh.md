@@ -13,7 +13,6 @@ tags:
 description: LEANN 是创新的向量数据库与个人 AI 平台，可将你的笔记本变为强大的 RAG 系统，支持本地语义检索数百万文档，存储节省 97%，无精度损失。
 author: yichuan-w
 ossDate: '2025-06-09T06:52:59.000Z'
-featured: false
 status: tracked
 ---
 

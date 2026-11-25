@@ -13,7 +13,6 @@ tags:
 description: 'A Kubernetes Dynamic Resource Allocation (DRA) driver for NVIDIA GPUs, enabling claim-based allocation and flexible GPU sharing.'
 author: Kubernetes SIGs
 ossDate: '2023-04-17T19:12:49.000Z'
-featured: false
 status: tracked
 ---
 

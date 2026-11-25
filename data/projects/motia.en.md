@@ -3,7 +3,7 @@ name: Motia
 slug: motia
 homepage: null
 repo: https://github.com/iii-hq/iii
-license: Unknown
+license: Apache-2.0 AND Elastic-2.0
 category: applications-products
 subCategory: workflow-automation
 tags:
@@ -15,7 +15,6 @@ description: >-
   designed to provide a React-like developer experience for server-side systems.
 author: MotiaDev
 ossDate: '2025-01-02T17:45:02.000Z'
-featured: false
 status: tracked
 ---
 

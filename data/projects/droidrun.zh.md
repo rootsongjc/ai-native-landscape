@@ -12,7 +12,6 @@ tags:
 description: 一个面向移动设备的开源自动化框架，允许通过自然语言指令驱动手机操作并集成模型与检索。
 author: DroidRun
 ossDate: '2025-04-12T22:03:47Z'
-featured: false
 status: tracked
 ---
 ## 简介

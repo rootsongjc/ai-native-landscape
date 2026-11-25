@@ -16,7 +16,6 @@ description: >-
   hours through the coordination of sandboxes, memories, tools, skills, and subagents.
 author: ByteDance
 ossDate: '2026-03-23'
-featured: false
 status: tracked
 ---
 ## Overview

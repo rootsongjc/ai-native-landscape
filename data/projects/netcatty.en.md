@@ -15,7 +15,6 @@ tags:
 description: An AI-powered SSH workspace combining terminal, SFTP browser, and Catty Agent for multi-host server management in a unified interface.
 author: binaricat
 ossDate: '2025-12-06'
-featured: false
 status: tracked
 ---
 

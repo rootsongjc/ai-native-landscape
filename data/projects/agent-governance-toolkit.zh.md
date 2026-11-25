@@ -17,7 +17,6 @@ tags:
 description: 微软推出的 AI 智能体治理工具包，提供策略执行、零信任身份、执行沙箱和可靠性工程，覆盖 OWASP 智能体 Top 10 全部风险。
 author: Microsoft
 ossDate: '2026-03-02'
-featured: false
 status: tracked
 ---
 

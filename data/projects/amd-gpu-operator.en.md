@@ -13,7 +13,6 @@ tags:
 description: 'A Kubernetes operator that automates driver installation, device plugin deployment, node labeling, and metrics for AMD Instinct and Radeon GPUs.'
 author: AMD
 ossDate: '2023-11-14T07:02:56.000Z'
-featured: false
 status: tracked
 ---
 

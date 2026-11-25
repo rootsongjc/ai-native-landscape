@@ -11,7 +11,6 @@ tags:
 description: A Triton-based, PyTorch library of efficient linear-attention kernels and models for scalable sequence modeling.
 author: fla-org
 ossDate: '2023-12-20T06:50:18.000Z'
-featured: false
 status: tracked
 ---
 ## Introduction

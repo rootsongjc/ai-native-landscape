@@ -12,7 +12,6 @@ tags:
 description: Google Coral 提供的面向边缘设备的能效型机器学习加速器核心。
 author: Google
 ossDate: '2025-10-02T22:32:37Z'
-featured: false
 status: tracked
 ---
 Coral NPU 是 Google Coral 开发的面向边缘 AI 推理的硬件加速器，支持 TensorFlow Lite 模型。它在硬件架构和软件栈上进行协同优化，旨在为边缘设备在受限功耗和计算资源下提供实时推理能力。

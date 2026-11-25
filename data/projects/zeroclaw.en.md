@@ -16,7 +16,6 @@ description: >-
   everything.
 author: zeroclaw-labs
 ossDate: '2026-02-19T00:00:00Z'
-featured: false
 status: tracked
 ---
 

@@ -11,7 +11,6 @@ tags:
 description: A PyTorch-native platform for generative model pretraining and distributed optimization.
 author: PyTorch
 ossDate: '2023-12-13T01:51:37.000Z'
-featured: false
 status: tracked
 ---
 

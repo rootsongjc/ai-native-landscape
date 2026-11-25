@@ -13,7 +13,6 @@ tags:
 description: 最简单的与 MCP 服务器交互并创建自定义代理的方式，支持连接任何 LLM 到 MCP 服务器。
 author: mcp-use
 ossDate: '2025-03-28T10:06:31.000Z'
-featured: false
 status: tracked
 ---
 

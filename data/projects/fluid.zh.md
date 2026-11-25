@@ -15,7 +15,6 @@ tags:
 description: 面向 Kubernetes 上大数据/AI 应用的弹性数据抽象与加速层，通过分布式缓存实现高效数据访问。
 author: CNCF
 ossDate: '2020-07-11T22:57:18.000Z'
-featured: false
 status: tracked
 ---
 

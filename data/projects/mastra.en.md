@@ -12,7 +12,6 @@ tags:
 description: TypeScript-based AI agent and assistant framework with workflow, tool, RAG, and observability integration.
 author: Mastra
 ossDate: '2024-08-06T20:44:31.000Z'
-featured: false
 status: tracked
 ---
 

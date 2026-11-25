@@ -13,7 +13,6 @@ tags:
 description: ClawRouter 是一个专为 AI 智能体设计的 LLM 路由器，支持智能路由、成本优化和微支付，由 BlockRunAI 为 OpenClaw 打造。
 author: BlockRunAI
 ossDate: '2026-02-03T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 ## 详细介绍

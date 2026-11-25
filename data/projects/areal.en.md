@@ -15,7 +15,6 @@ description: >-
   and reproducibility.
 author: Ant Group
 ossDate: '2025-02-24T07:23:43Z'
-featured: false
 status: tracked
 ---
 AReaL is an open-source, fully asynchronous reinforcement learning system designed for large reasoning and agentic models, maintained by the inclusionAI community with contributions from Ant Group and academic partners. It provides algorithm-system co-design to enable stable, high-throughput RL training that scales from a single node to thousands of GPUs.

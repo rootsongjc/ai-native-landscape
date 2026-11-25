@@ -13,7 +13,6 @@ tags:
 description: Agent Skills 是由 Google Chrome 团队工程师 Addy Osmani 开源的生产级工程技能集合，包含 20 个结构化工作流和 7 个斜杠命令，覆盖从需求定义到生产发布的完整开发生命周期。
 author: Addy Osmani
 ossDate: '2026-02-15T20:20:26Z'
-featured: false
 status: tracked
 ---
 ## 详细介绍

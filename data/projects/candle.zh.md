@@ -12,7 +12,6 @@ tags:
 description: Hugging Face 的 Candle：一个以 Rust 为核心、面向高性能与无 Python 运行时的轻量级机器学习框架。
 author: Hugging Face
 ossDate: '2023-06-19T16:06:31.000Z'
-featured: false
 status: tracked
 ---
 

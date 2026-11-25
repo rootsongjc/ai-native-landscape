@@ -16,7 +16,6 @@ tags:
 description: 面向编码智能体的任务编排器：将一个目标拆解为可编辑的任务计划，每个任务指定各自的运行器、模型与模式，在并行 git worktree 中执行并在合并前经过验证。
 author: ordewell
 ossDate: '2026-07-31'
-featured: false
 status: tracked
 ---
 

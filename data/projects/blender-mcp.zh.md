@@ -12,7 +12,6 @@ tags:
 description: BlenderMCP 将 Blender 与 Claude AI 通过 MCP 协议集成，支持 AI 驱动的 3D 建模与场景操作。
 author: Siddharth Ahuja
 ossDate: '2025-03-07T09:58:58.000Z'
-featured: false
 status: tracked
 ---
 BlenderMCP 是一个面向 Blender 的 MCP 服务器，允许 AI 智能体控制 Blender 进行 3D 建模与渲染任务。它通过 Model Context Protocol 将 Blender 与 Claude AI 连接，支持通过自然语言或结构化指令进行 AI 驱动的场景创建与交互式操作。

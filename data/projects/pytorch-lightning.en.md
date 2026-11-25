@@ -14,7 +14,6 @@ description: >-
   training, and deployment.
 author: Lightning AI
 ossDate: '2019-03-31T00:45:57.000Z'
-featured: false
 status: tracked
 ---
 

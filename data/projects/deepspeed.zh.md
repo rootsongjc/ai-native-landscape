@@ -12,7 +12,6 @@ tags:
 description: 一个高性能的深度学习训练与推理优化库，可显著加速大规模模型的训练与推理并降低成本。
 author: DeepSpeed 团队
 ossDate: '2020-01-23T18:35:18.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

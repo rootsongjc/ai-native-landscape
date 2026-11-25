@@ -16,7 +16,6 @@ description: >-
   运行，每个窗格标记“工作中/受阻/空闲”，智能体可通过 CLI 和 socket API 驱动它。
 author: herdrdev
 ossDate: '2026-03-27'
-featured: false
 status: tracked
 ---
 

@@ -11,7 +11,6 @@ tags:
 description: Neovate Code is an open-source coding agent designed to boost developer productivity and code quality.
 author: Ant Group
 ossDate: '2025-03-11T08:32:54.000Z'
-featured: false
 status: tracked
 ---
 

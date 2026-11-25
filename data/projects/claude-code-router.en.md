@@ -14,7 +14,6 @@ description: >-
   development, enhancing development efficiency.
 author: Musi Studio
 ossDate: '2025-02-25T02:17:18.000Z'
-featured: false
 status: tracked
 ---
 Claude Code Router is an intelligent routing tool specifically designed for Claude AI code development scenarios, aimed at optimizing AI request distribution and processing workflows. Through intelligent routing algorithms, this tool can distribute requests to the most suitable Claude model instances based on code task complexity, type, and priority, thereby improving overall development efficiency and response quality.

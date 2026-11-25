@@ -15,7 +15,6 @@ tags:
 description: A local-first personal AI assistant that runs on your devices and integrates with messaging channels.
 author: OpenClaw
 ossDate: '2025-11-24T10:16:47Z'
-featured: false
 status: tracked
 ---
 

@@ -12,7 +12,6 @@ tags:
 description: EasyR1 是一个高效、可扩展的多模态强化学习训练框架，基于 veRL 设计并支持大模型与视觉 - 语言模型的训练与评估。
 author: hiyouga
 ossDate: '2025-02-22T04:17:31Z'
-featured: false
 status: tracked
 ---
 ## 简介

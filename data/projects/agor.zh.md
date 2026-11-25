@@ -14,7 +14,6 @@ tags:
 description: Agor 是 Preset 出品的多人空间，用于在可视化画布上并行管理和编排多路 AI 智能体工作流。
 author: Preset
 ossDate: '2025-10-04T19:17:32Z'
-featured: false
 status: tracked
 ---
 ## 简介

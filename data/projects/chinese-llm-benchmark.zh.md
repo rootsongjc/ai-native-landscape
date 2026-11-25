@@ -12,7 +12,6 @@ tags:
 description: ReLE（chinese-llm-benchmark）是社区维护的中文大模型评测与排行榜项目，覆盖教育、医疗、金融、法律、推理等多个细分能力维度。
 author: jeinlee1991
 ossDate: '2023-06-04T07:23:20.000Z'
-featured: false
 status: tracked
 ---
 

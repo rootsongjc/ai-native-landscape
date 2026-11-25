@@ -13,7 +13,6 @@ tags:
 description: 一个集运行时、打包器、包管理器与测试工具于一体的高性能 JavaScript 平台，旨在显著加速开发与构建流程。
 author: Oven
 ossDate: '2021-04-14T00:48:17Z'
-featured: false
 status: tracked
 ---
 Bun 是一个极速的 JavaScript 运行时、打包器、测试运行器和包管理器——四合一的高性能平台。它以单一二进制文件分发，注重启动速度、依赖安装与构建性能，被广泛用作 AI 工具链和开发流程的高性能运行时。

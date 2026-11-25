@@ -11,7 +11,6 @@ tags:
 description: Claude Code as a command-line based AI programming assistant has pioneered the trend of AI command-line vibe coding.
 author: Anthropic
 ossDate: '2025-02-22T17:41:21.000Z'
-featured: true
 status: tracked
 ---
 Since the release of Claude Code, command-line based vibe coding tools have gained significant popularity. As Anthropic's AI programming assistant, Claude Code has naturally attracted much attention. Claude Code is an AI programming assistant that helps developers write, debug and optimize code using advanced AI capabilities.

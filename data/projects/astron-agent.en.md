@@ -14,7 +14,6 @@ description: >-
   integration.
 author: iFlytek
 ossDate: '2025-09-19T08:46:01Z'
-featured: false
 status: tracked
 ---
 Astron Agent is an enterprise-grade agentic workflow platform by iFlytek for building next-generation SuperAgents. It provides orchestration for multi-agent collaboration, low-code integration pathways, and enterprise governance features, along with runtime components and SDKs to accelerate building and deploying complex automated workflows in production.

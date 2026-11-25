@@ -11,7 +11,6 @@ tags:
 description: 面向生成式模型预训练与分布式优化的 PyTorch 平台参考实现。
 author: PyTorch
 ossDate: '2023-12-13T01:51:37.000Z'
-featured: false
 status: tracked
 ---
 

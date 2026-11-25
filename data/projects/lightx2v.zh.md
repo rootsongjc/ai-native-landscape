@@ -15,7 +15,6 @@ tags:
 description: LightX2V 是一个轻量级的图像与视频生成推理框架，通过步数蒸馏、量化和并行等手段加速扩散模型推理，并支持多种硬件平台部署。
 author: ModelTC
 ossDate: '2025-03-24T10:27:56Z'
-featured: false
 status: tracked
 ---
 

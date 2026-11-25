@@ -16,7 +16,6 @@ tags:
 description: 开源的 Kubernetes AI 工作负载与 GPU 编排平台，融合 GPU 感知调度、分数 GPU 分配、配额、治理与可观测性，帮助组织在多团队、多集群间高效共享 GPU 资源。
 author: NVIDIA
 ossDate: '2026-08-25'
-featured: false
 status: tracked
 ---
 

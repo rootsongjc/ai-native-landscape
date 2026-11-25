@@ -12,7 +12,6 @@ tags:
 description: An AI inferencing operator for Kubernetes that simplifies deploying LLMs, embeddings, and speech-to-text services.
 author: SubstratusAI
 ossDate: '2023-10-21T00:59:51.000Z'
-featured: false
 status: tracked
 ---
 

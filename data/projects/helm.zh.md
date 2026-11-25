@@ -11,7 +11,6 @@ tags:
 description: 由 Stanford CRFM 开发的 Holistic Evaluation 框架，用于可复现的基础模型评估与基准管理。
 author: Stanford CRFM
 ossDate: '2021-11-29T08:53:17.000Z'
-featured: false
 status: tracked
 ---
 

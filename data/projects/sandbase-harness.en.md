@@ -16,7 +16,6 @@ tags:
 description: A local-first, self-hosted runtime for building and operating AI agents, providing persistent sessions, sandboxed execution backends, credential vaults, approval gates, audit trails, and replay.
 author: SandBase AI
 ossDate: '2026-07-11'
-featured: false
 status: tracked
 ---
 

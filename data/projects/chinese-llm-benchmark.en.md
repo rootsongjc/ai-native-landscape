@@ -14,7 +14,6 @@ description: >-
   education, medical, finance, legal, reasoning and other capability dimensions.
 author: jeinlee1991
 ossDate: '2023-06-04T07:23:20.000Z'
-featured: false
 status: tracked
 ---
 

@@ -11,7 +11,6 @@ tags:
 description: 用于专家并行（expert-parallel）的高效通信库，提供针对大规模分布式训练的低开销通信原语。
 author: DeepSeek
 ossDate: '2025-02-17T01:33:04.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

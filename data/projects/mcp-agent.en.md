@@ -14,7 +14,6 @@ description: >-
   multi-agent, tool-enabled workflows.
 author: lastmile-ai
 ossDate: '2024-12-18T01:55:10.000Z'
-featured: false
 status: tracked
 ---
 

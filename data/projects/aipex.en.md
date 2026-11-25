@@ -13,7 +13,6 @@ description: >-
   via natural language commands.
 author: AIPexStudio
 ossDate: '2024-08-22T03:02:28.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

@@ -12,7 +12,6 @@ tags:
 description: Open-source reinforcement learning trainer from OpenPipe for training LLM-based agents.
 author: OpenPipe
 ossDate: '2025-03-10T18:25:47.000Z'
-featured: false
 status: tracked
 ---
 

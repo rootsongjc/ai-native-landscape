@@ -11,7 +11,6 @@ tags:
 description: A lightweight toolkit from Hugging Face for fast, flexible LLM evaluation across multiple backends.
 author: Hugging Face
 ossDate: '2024-01-26T13:15:39.000Z'
-featured: false
 status: tracked
 ---
 

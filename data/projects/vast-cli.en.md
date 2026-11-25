@@ -13,7 +13,6 @@ tags:
 description: 'The open-source Python CLI and API client for Vast.ai, a GPU rental marketplace matching hosts with on-demand and interruptible renters.'
 author: Vast.ai
 ossDate: '2019-01-29T00:44:09.000Z'
-featured: false
 status: tracked
 ---
 

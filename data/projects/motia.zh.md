@@ -3,7 +3,7 @@ name: Motia
 slug: motia
 homepage: null
 repo: https://github.com/iii-hq/iii
-license: Unknown
+license: Apache-2.0 AND Elastic-2.0
 category: applications-products
 subCategory: workflow-automation
 tags:
@@ -13,7 +13,6 @@ tags:
 description: 统一 API、后台作业、事件流和 AI 智能体的后端框架，类似 React 用于服务器端逻辑，支持多种编程语言和实时可视化。
 author: MotiaDev
 ossDate: '2025-01-02T17:45:02.000Z'
-featured: false
 status: tracked
 ---
 

@@ -17,7 +17,6 @@ tags:
 description: A toolkit for policy enforcement, zero-trust identity, execution sandboxing, and reliability engineering for autonomous AI agents, covering all 10 OWASP Agentic Top 10 risks.
 author: Microsoft
 ossDate: '2026-03-02'
-featured: false
 status: tracked
 ---
 

@@ -14,7 +14,6 @@ description: >-
   intelligent retrieval of text, images, tables, formulas, and more.
 author: HKUDS
 ossDate: '2025-06-06T06:47:29.000Z'
-featured: false
 status: tracked
 ---
 

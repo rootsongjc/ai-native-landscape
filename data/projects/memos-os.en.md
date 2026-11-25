@@ -16,7 +16,6 @@ description: >-
   improving context awareness and long-term consistency.
 author: MemTensor
 ossDate: '2025-07-06T09:51:27Z'
-featured: false
 status: tracked
 ---
 

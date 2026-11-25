@@ -13,7 +13,6 @@ tags:
 description: 一个基于 MCP 的低代码检索增强生成（RAG）开发框架，强调可视化编排与可复现的评估流程。
 author: OpenBMB
 ossDate: '2025-01-16T10:56:02Z'
-featured: false
 status: tracked
 ---
 

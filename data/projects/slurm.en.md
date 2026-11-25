@@ -3,7 +3,7 @@ name: Slurm
 slug: slurm
 homepage: https://slurm.schedmd.com/
 repo: https://github.com/schedmd/slurm
-license: Unknown
+license: GPL-2.0-or-later
 category: platform-infra
 subCategory: heterogeneous-compute-scheduling
 tags:
@@ -15,7 +15,6 @@ description: >-
   fault-tolerant, and interconnect agnostic, widely used in high-performance computing and AI training clusters.
 author: SchedMD
 ossDate: '2009-12-17T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 

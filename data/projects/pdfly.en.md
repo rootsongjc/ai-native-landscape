@@ -13,7 +13,6 @@ tags:
 description: A command-line tool to extract (meta)data from PDFs and manipulate PDF files at scale.
 author: py-pdf
 ossDate: '2022-04-09T20:49:42Z'
-featured: false
 status: tracked
 ---
 

@@ -12,7 +12,6 @@ tags:
 description: 面向交互式 Python 执行与任务自动化的开源工具，结合 LLM 实现自然语言驱动的 Python 交互。
 author: knownsec
 ossDate: '2025-04-06T07:04:34.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

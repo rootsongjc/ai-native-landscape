@@ -13,7 +13,6 @@ tags:
 description: 多智能体 AI 的协调层，提供智能体团队的编排和通信基础设施。
 author: Sympozium AI
 ossDate: '2026-02-23T09:53:24Z'
-featured: false
 status: tracked
 ---
 

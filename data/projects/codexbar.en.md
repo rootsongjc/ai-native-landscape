@@ -15,7 +15,6 @@ description: >-
   Claude Code without requiring login credentials.
 author: steipete
 ossDate: '2025-11-16T17:00:44.000Z'
-featured: false
 status: tracked
 ---
 

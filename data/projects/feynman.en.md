@@ -13,7 +13,6 @@ tags:
 description: Open-source AI research agent that automates literature search, paper analysis, and knowledge synthesis.
 author: Companion Inc
 ossDate: '2026-03-19T00:00:00Z'
-featured: false
 status: tracked
 ---
 

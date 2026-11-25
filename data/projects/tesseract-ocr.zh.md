@@ -11,7 +11,6 @@ tags:
 description: Tesseract 是一款功能强大的开源光学字符识别（OCR）引擎，支持 100 多种语言，广泛应用于文本提取和文档数字化。
 author: Stefan Weil, Zdenko Podobny 等
 ossDate: '2014-08-12T18:04:59.000Z'
-featured: false
 status: tracked
 ---
 

@@ -14,7 +14,6 @@ description: >-
   API.
 author: exo-explore
 ossDate: '2024-06-24T18:36:22.000Z'
-featured: false
 status: tracked
 ---
 exo enables running frontier AI models on distributed consumer hardware by unifying everyday devices into a single inference cluster. It automates device discovery, performs dynamic model partitioning based on available resources, and exposes a ChatGPT-compatible API for seamless integration with existing applications.

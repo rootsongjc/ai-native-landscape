@@ -11,7 +11,6 @@ tags:
 description: Data Prep Kit 用于为 LLM 应用加速非结构化数据的清洗、转换与增强。
 author: Data Prep Kit / IBM Research
 ossDate: '2024-04-08T23:43:52.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

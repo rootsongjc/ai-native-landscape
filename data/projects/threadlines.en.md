@@ -19,7 +19,6 @@ description: >-
   sit beside the chat. It runs on the user's computer with no hosted backend.
 author: Threadlines
 ossDate: '2026-05-25'
-featured: false
 status: tracked
 ---
 ## Overview

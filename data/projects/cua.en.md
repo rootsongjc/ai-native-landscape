@@ -14,7 +14,6 @@ description: >-
   full desktop environments (macOS, Linux, Windows).
 author: TryCUA
 ossDate: '2025-01-31T15:02:49.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

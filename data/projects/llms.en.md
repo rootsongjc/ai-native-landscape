@@ -14,7 +14,6 @@ tags:
 description: Lightweight multi-provider LLM client with an OpenAI-compatible server API and optional chat UI.
 author: ServiceStack
 ossDate: '2025-09-23T11:04:23Z'
-featured: false
 status: tracked
 ---
 

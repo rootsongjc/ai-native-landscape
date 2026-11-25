@@ -15,7 +15,6 @@ tags:
 description: 面向工具增强推理的开源研究级搜索智能体，支持超长上下文与高频工具调用。
 author: MiroMindAI
 ossDate: '2025-08-07T13:32:12Z'
-featured: false
 status: tracked
 ---
 MiroThinker 是由 MiroMindAI 开发的开源研究级搜索智能体，专为工具增强推理和深度信息检索而优化。项目提供完整生态，包括 MiroThinker 模型、MiroFlow 智能体框架、MiroVerse 训练数据集及相关基础设施。

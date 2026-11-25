@@ -14,7 +14,6 @@ description: >-
   building multi-role collaborative agents and engineering workflows.
 author: BMad Code
 ossDate: '2025-04-13T14:54:25.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

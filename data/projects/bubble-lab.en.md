@@ -15,7 +15,6 @@ description: >-
   observability.
 author: Bubble Lab
 ossDate: '2025-10-02T22:59:25Z'
-featured: false
 status: tracked
 ---
 Bubble Lab is an open-core workflow engine powering the Bubble Lab platform that is fully runnable, hostable, and extensible on its own. Built for developers who need full control, transparency, and type safety, it compiles visual flows into clean, production-ready TypeScript that can be owned, debugged, and deployed anywhere.

@@ -12,7 +12,6 @@ tags:
 description: 基于 GPU 的 DataFrame 库，用于加速数据分析与表格计算的开源工具。
 author: RAPIDS (NVIDIA)
 ossDate: '2017-05-07T03:43:37.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

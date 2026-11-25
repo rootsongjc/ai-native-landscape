@@ -12,7 +12,6 @@ tags:
 description: Opik：一个开源的 LLM 评估与可观测平台，帮助团队构建、评估并优化 LLM 应用。
 author: Comet
 ossDate: '2023-05-10T12:57:13.000Z'
-featured: false
 status: tracked
 ---
 

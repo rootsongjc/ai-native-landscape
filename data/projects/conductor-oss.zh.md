@@ -11,7 +11,6 @@ tags:
 description: 源自 Netflix、由社区与 Orkes 维护的分布式工作流编排引擎，支持大规模微服务与事件驱动流程的弹性与可观测执行。
 author: Conductor
 ossDate: '2023-12-08T06:06:09.000Z'
-featured: false
 status: tracked
 ---
 Conductor OSS 是一个事件驱动的智能体工作流引擎，为应用程序和 AI 智能体提供持久化、高弹性的执行能力。该项目源自 Netflix，通过版本化的 JSON 工作流定义协调复杂微服务与异步任务，具备深度运行时可观测性。

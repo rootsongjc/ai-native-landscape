@@ -15,7 +15,6 @@ description: >-
   retrieval.
 author: Faiss (facebookresearch)
 ossDate: '2017-02-07T16:07:05.000Z'
-featured: false
 status: tracked
 ---
 ## Introduction

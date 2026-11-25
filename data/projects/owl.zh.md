@@ -3,7 +3,7 @@ name: OWL
 slug: owl
 homepage: https://www.camel-ai.org/
 repo: https://github.com/camel-ai/owl
-license: Unknown
+license: Apache-2.0
 category: agents
 subCategory: agent-orchestration
 tags:
@@ -12,7 +12,6 @@ tags:
 description: OWL（Optimized Workforce Learning）是一个面向多智能体协作与任务自动化的开源框架，支持工具调用、浏览器自动化与多模态处理。
 author: camel-ai
 ossDate: '2025-03-01T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 

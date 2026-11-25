@@ -15,7 +15,6 @@ description: >-
   filesystem paradigm for hierarchical retrieval and observability.
 author: Volcengine
 ossDate: '2026-01-15T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 

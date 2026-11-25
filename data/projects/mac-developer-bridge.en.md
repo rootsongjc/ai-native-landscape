@@ -15,7 +15,6 @@ tags:
 description: A local-first MCP server for macOS that lets ChatGPT use the real Mac as its execution environment — shell, filesystem, PTY sessions, background jobs, and read-only Codex history.
 author: alexanderradahl
 ossDate: '2026-08-15'
-featured: false
 status: tracked
 ---
 

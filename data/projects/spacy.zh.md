@@ -11,7 +11,6 @@ tags:
 description: 高性能、面向生产的开源自然语言处理库，提供预训练流水线、训练系统与丰富的语言组件。
 author: Explosion
 ossDate: '2014-07-03T15:15:40Z'
-featured: false
 status: tracked
 ---
 

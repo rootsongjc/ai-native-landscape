@@ -14,7 +14,6 @@ description: >-
   collaborative agent capabilities.
 author: CAMEL AI
 ossDate: '2023-03-17T21:41:54.000Z'
-featured: false
 status: tracked
 ---
 ## Introduction

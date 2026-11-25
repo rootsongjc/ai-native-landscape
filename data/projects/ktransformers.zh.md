@@ -12,7 +12,6 @@ tags:
 description: 面向 LLM 推理优化的灵活框架，提供内核注入、前缀缓存与多种 GPU/CPU 加速策略。
 author: KVCACHE / MADSys
 ossDate: '2024-07-26T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 

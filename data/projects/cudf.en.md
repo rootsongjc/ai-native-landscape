@@ -12,7 +12,6 @@ tags:
 description: A GPU DataFrame library for accelerating data analysis and tabular computing with GPU acceleration.
 author: RAPIDS (NVIDIA)
 ossDate: '2017-05-07T03:43:37.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

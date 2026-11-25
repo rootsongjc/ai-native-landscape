@@ -100,7 +100,6 @@ tags:
 description: <English description, 1-2 sentences>
 author: <org or author name>
 ossDate: '<ISO date from repo createdAt>'
-featured: false
 status: tracked
 ---
 
@@ -140,7 +139,6 @@ tags:
 description: <中文描述，1-2 句话>
 author: <org or author name>
 ossDate: '<ISO date from repo createdAt>'
-featured: false
 status: tracked
 ---
 

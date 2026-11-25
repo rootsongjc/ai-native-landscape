@@ -14,7 +14,6 @@ description: >-
   inference and Hugging Face integration.
 author: ml-explore
 ossDate: '2025-03-11T16:38:30.000Z'
-featured: false
 status: tracked
 ---
 

@@ -13,7 +13,6 @@ tags:
 description: Chroma 是开源的嵌入式向量数据库，专为 AI 应用设计，支持高效检索与存储，助力构建智能搜索与 RAG 系统。
 author: chroma-core
 ossDate: '2022-10-05T17:58:44.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

@@ -11,7 +11,6 @@ tags:
 description: 以人为本的网页智能体研究原型，可在网页上浏览和执行操作、生成和执行代码，以及生成和分析文件。
 author: Microsoft
 ossDate: '2025-05-05T20:24:30.000Z'
-featured: false
 status: tracked
 ---
 

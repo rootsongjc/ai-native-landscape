@@ -16,7 +16,6 @@ tags:
 description: Markdown to WeChat CLI tool with 40+ formatting styles, AI-generated images, and batch publishing support for WeChat public accounts.
 author: geekjourneyx
 ossDate: '2026-01-11T06:36:13Z'
-featured: false
 status: tracked
 ---
 

@@ -14,7 +14,6 @@ tags:
 description: 一款用于分析 Claude Code、Codex、Gemini CLI 等编程智能体 CLI 工具的 Token 用量和成本的命令行工具。
 author: ryoppippi
 ossDate: '2025-05-29'
-featured: false
 thumbnail: ''
 source: ''
 status: tracked

@@ -13,7 +13,6 @@ tags:
 description: 一个开源的语音克隆与实时语音生成工具，主打在数秒内克隆声音并支持边训练边在线合成。
 author: babysor
 ossDate: '2021-08-07T03:53:39Z'
-featured: false
 status: tracked
 ---
 

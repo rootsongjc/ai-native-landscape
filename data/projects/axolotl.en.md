@@ -15,7 +15,6 @@ description: >-
   and distributed optimizations.
 author: axolotl-ai-cloud
 ossDate: '2023-04-14T04:25:47.000Z'
-featured: false
 status: tracked
 ---
 ## Introduction

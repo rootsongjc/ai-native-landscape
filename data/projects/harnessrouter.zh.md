@@ -16,7 +16,6 @@ tags:
 description: 自托管的智能体 harness 统一接口层：通过一个兼容 OpenAI Responses 的 API 运行 Codex、Claude Code 等 26 种 harness，实现开放标准统一 Harness 协议（UHP）。
 author: HarnessRouter
 ossDate: '2026-08-09T20:19:14Z'
-featured: false
 status: tracked
 ---
 

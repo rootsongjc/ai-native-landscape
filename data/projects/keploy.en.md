@@ -14,7 +14,6 @@ description: >-
   supporting record-and-replay of API calls, database operations, and streaming events.
 author: Keploy
 ossDate: '2022-01-19T10:40:31.000Z'
-featured: false
 status: tracked
 ---
 

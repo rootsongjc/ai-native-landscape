@@ -68,13 +68,12 @@ for (const record of byRepo.values()) {
     },
     author: firstNonEmpty(primary.author, fallback.author),
     ossDate: firstNonEmpty(primary.oss_date, fallback.oss_date),
-    featured: Boolean(primary.featured || fallback.featured),
     thumbnail: firstNonEmpty(primary.thumbnail, fallback.thumbnail),
     source: {
       zh: zh ? `data/zh/ai_resources.yaml#${zh.slug || slug}` : '',
       en: en ? `data/en/ai_resources.yaml#${en.slug || slug}` : '',
     },
-    status: firstNonEmpty(existing.status, primary.featured || fallback.featured ? 'graduated' : 'sandbox'),
+    status: firstNonEmpty(existing.status, 'tracked'),
   };
 
   const resolvedTaxonomy = resolveProjectTaxonomy(project);

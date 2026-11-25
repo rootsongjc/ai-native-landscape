@@ -14,7 +14,6 @@ description: >-
   knowledge bases and customer service.
 author: 1Panel
 ossDate: '2023-09-14T02:05:12Z'
-featured: false
 status: tracked
 ---
 

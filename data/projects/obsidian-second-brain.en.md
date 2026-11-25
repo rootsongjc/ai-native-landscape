@@ -14,7 +14,6 @@ tags:
 description: Cross-CLI skill that turns your Obsidian vault into a living AI-first second brain across Claude Code and other agents.
 author: eugeniughelbur
 ossDate: '2026-03-24T00:00:00Z'
-featured: false
 status: tracked
 ---
 

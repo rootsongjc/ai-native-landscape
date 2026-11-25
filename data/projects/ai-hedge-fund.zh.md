@@ -12,7 +12,6 @@ tags:
 description: 一个以智能体为中心的量化研究示例，提供回测、CLI 与可视化 Web 应用以探索 AI 在选股与风控中的应用。
 author: virattt
 ossDate: '2024-11-29T16:30:01Z'
-featured: false
 status: tracked
 ---
 ## 简介

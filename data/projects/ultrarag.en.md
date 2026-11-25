@@ -13,7 +13,6 @@ tags:
 description: A low-code RAG framework based on MCP, emphasizing visual orchestration and reproducible evaluation workflows.
 author: OpenBMB
 ossDate: '2025-01-16T10:56:02Z'
-featured: false
 status: tracked
 ---
 

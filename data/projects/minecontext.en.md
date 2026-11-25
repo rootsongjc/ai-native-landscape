@@ -14,7 +14,6 @@ description: >-
   dialogue coherence and retrieval in RAG scenarios.
 author: ByteDance
 ossDate: '2025-06-24T11:15:21.000Z'
-featured: false
 status: tracked
 ---
 

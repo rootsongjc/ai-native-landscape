@@ -13,7 +13,6 @@ tags:
 description: Pi Monorepo — 一个面向 AI 智能体与开发工具的多包 TypeScript 仓库，包含编码智能体、统一 LLM API、TUI 与 Web UI 等组件。
 author: badlogic
 ossDate: '2022-01-01'
-featured: false
 status: tracked
 ---
 

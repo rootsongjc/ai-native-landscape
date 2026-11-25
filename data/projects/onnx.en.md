@@ -14,7 +14,6 @@ description: >-
   hardware.
 author: ONNX
 ossDate: '2017-09-07T04:53:45Z'
-featured: false
 status: tracked
 ---
 

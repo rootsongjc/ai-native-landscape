@@ -13,7 +13,6 @@ tags:
 description: 面向 AI 的数据库，提供对向量、图像、视频与文本的数据存储、检索、版本管理与流式加载功能。
 author: Activeloop
 ossDate: '2019-08-09T06:17:59.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

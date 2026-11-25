@@ -15,7 +15,6 @@ description: >-
   optimization for containerized AI training and inference workflows.
 author: NVIDIA
 ossDate: '2025-02-26T20:39:42Z'
-featured: false
 status: tracked
 ---
 

@@ -12,7 +12,6 @@ tags:
 description: LiveKit 提供可扩展的实时视频、音频与数据堆栈，包含生产级服务器与多语言 SDK。
 author: LiveKit
 ossDate: '2020-09-30T06:49:46Z'
-featured: false
 status: tracked
 ---
 

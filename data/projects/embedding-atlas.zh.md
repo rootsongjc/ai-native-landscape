@@ -13,7 +13,6 @@ tags:
 description: 为大型嵌入提供交互式可视化的工具，支持可视化、交叉过滤和搜索嵌入及元数据。
 author: Apple
 ossDate: '2025-05-07T00:56:44.000Z'
-featured: false
 status: tracked
 ---
 Embedding Atlas 是 Apple 开源的交互式可视化工具，专为大规模嵌入空间设计。它支持对嵌入向量及其元数据进行可视化探索、交叉过滤和搜索，帮助用户直观理解高维数据的结构与分布。

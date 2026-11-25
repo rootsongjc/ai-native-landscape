@@ -14,7 +14,6 @@ description: >-
   queries, tool invocation, and integrations.
 author: Anthropic
 ossDate: '2025-06-11T21:33:43.000Z'
-featured: false
 status: tracked
 ---
 The Claude Agent SDK for Python is Anthropic's official Python toolkit for interacting with Claude Agent (Claude Code). It offers async streaming interfaces, support for custom tools and hooks, and examples of in-process SDK MCP servers to expose tools safely and with low overhead.

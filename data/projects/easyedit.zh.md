@@ -11,7 +11,6 @@ tags:
 description: 一个易用的知识编辑（model editing）框架，提供多种编辑方法、评估指标与数据集，支持 LLM 与部分多模态模型的知识插入、更新与擦除。
 author: ZJUNLP
 ossDate: '2023-05-09T07:48:02Z'
-featured: false
 status: tracked
 ---
 ## 简介

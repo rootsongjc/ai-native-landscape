@@ -11,7 +11,6 @@ tags:
 description: 京东开源的端到端多智能体框架，面向可扩展的任务编排与报告生成。
 author: 京东
 ossDate: '2025-07-16T02:59:53.000Z'
-featured: false
 status: tracked
 ---
 

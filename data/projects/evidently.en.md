@@ -12,7 +12,6 @@ tags:
 description: An open-source framework for evaluating, testing, and monitoring ML and LLM systems from experiments to production.
 author: Evidently Team
 ossDate: '2020-11-25T15:20:08.000Z'
-featured: false
 status: tracked
 ---
 ## Introduction

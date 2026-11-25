@@ -12,7 +12,6 @@ tags:
 description: 一个用于大规模数据处理的统一分析引擎，支持批处理、流处理和机器学习。
 author: Apache Software Foundation
 ossDate: '2014-02-25T08:00:08Z'
-featured: false
 status: tracked
 ---
 Apache Spark 是一个面向大规模数据处理的统一分析引擎，在工业界的机器学习管道中被广泛使用。它支持 Scala、Java、Python 和 R 等多语言接口，将批处理、流处理与机器学习能力整合在同一高性能分布式平台上。

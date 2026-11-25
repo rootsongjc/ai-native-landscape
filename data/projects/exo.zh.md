@@ -12,7 +12,6 @@ tags:
 description: exo：在家中用日常设备组成 AI 集群，支持跨设备分布式推理与 ChatGPT 兼容 API。
 author: exo-explore
 ossDate: '2024-06-24T18:36:22.000Z'
-featured: false
 status: tracked
 ---
 exo 能够将手机、笔记本电脑、树莓派等日常设备统一组成分布式 AI 推理集群，在前沿消费级硬件上运行大型 AI 模型。它通过自动设备发现、基于资源的动态模型分区和点对点连接机制，让用户在本地搭建可扩展的推理平台，并提供 ChatGPT 兼容的 API 以便快速集成。

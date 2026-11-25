@@ -11,7 +11,6 @@ tags:
 description: Milvus 是一个高性能向量数据库，专为大规模非结构化数据处理而设计。
 author: Milvus
 ossDate: '2019-09-16T06:43:43.000Z'
-featured: false
 status: tracked
 ---
 

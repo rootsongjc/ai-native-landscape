@@ -20,7 +20,6 @@ description: >-
   choose a winner or combine judge opinions with test results.
 author: yylo-dev
 ossDate: '2026-08-17'
-featured: false
 status: tracked
 ---
 ## Overview

@@ -13,7 +13,6 @@ tags:
 description: PageIndex 是 Vectify AI 开源的基于推理的文档索引系统，适用于长文档的高精度检索与分析。
 author: Vectify AI
 ossDate: '2025-04-01T10:53:54Z'
-featured: false
 status: tracked
 ---
 

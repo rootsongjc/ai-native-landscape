@@ -12,7 +12,6 @@ tags:
 description: 面向数据资产的云原生编排与开发平台，提供可观测性、血缘与开发友好的编程模型。
 author: Dagster Labs
 ossDate: '2019-01-01T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

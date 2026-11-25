@@ -14,7 +14,6 @@ description: >-
   content management.
 author: Luis Novo
 ossDate: '2024-10-21T17:58:46.000Z'
-featured: false
 status: tracked
 ---
 

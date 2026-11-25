@@ -16,7 +16,6 @@ description: >-
   picks its next step from feedback, working out of the box with Kimi models and other compatible providers.
 author: Moonshot AI
 ossDate: '2026-05-22'
-featured: false
 status: tracked
 ---
 

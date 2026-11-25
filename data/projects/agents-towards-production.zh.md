@@ -15,7 +15,6 @@ tags:
 description: 开源 AI Agent 生产级落地教程与工具集，覆盖从原型到企业部署的全流程。
 author: Nir Diamant
 ossDate: '2025-06-16T17:33:44.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

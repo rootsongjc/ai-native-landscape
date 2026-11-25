@@ -13,7 +13,6 @@ description: >-
   generation, and production feedback loops.
 author: ExplodingGradients
 ossDate: '2023-05-08T17:48:04.000Z'
-featured: false
 status: tracked
 ---
 

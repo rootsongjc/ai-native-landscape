@@ -16,7 +16,6 @@ description: >-
   from one dashboard.
 author: paperclipai
 ossDate: '2026-01-15'
-featured: false
 status: tracked
 ---
 

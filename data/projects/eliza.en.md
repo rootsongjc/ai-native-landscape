@@ -14,7 +14,6 @@ description: >-
   offering CLI tooling, a web dashboard, and plugin-based extensibility.
 author: ElizaOS
 ossDate: '2023-08-01T00:00:00.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

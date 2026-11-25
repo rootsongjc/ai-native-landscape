@@ -12,7 +12,6 @@ tags:
 description: 一个终端原生的 DevOps 智能体，使用 Rust 实现，能执行命令、编辑文件并生成高质量 IaC。
 author: Stakpak
 ossDate: '2024-12-10T21:56:17Z'
-featured: false
 status: tracked
 ---
 

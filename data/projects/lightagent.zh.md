@@ -12,7 +12,6 @@ tags:
 description: 一个开源且轻量的智能体框架，内置记忆、工具与 Tree-of-Thought，支持多模型与多智能体协作。
 author: Wanxing AI
 ossDate: '2025-01-20T12:31:57Z'
-featured: false
 status: tracked
 ---
 

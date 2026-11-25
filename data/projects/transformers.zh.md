@@ -16,7 +16,6 @@ tags:
 description: 面向文本、视觉、音频和多模态任务的模型定义框架，提供推理和训练能力，是现代 AI/ML 开发的事实标准库。
 author: Hugging Face
 ossDate: '2018-10-29'
-featured: true
 thumbnail: ''
 source: ''
 status: tracked

@@ -16,7 +16,6 @@ tags:
 description: 面向 AI agent 的框架无关、本地优先记忆生命周期框架，提供 Rust CLI、SQLite/FTS 召回、遗忘、审计、整合与多智能体写入协调。
 author: TerminallyLazy
 ossDate: '2026-07-04'
-featured: false
 status: tracked
 ---
 

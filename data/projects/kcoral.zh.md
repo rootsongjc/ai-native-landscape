@@ -17,7 +17,6 @@ description: >-
   与节点资源，工作进程运行在沙箱中，并由 Rust 实现的 Router 支持多节点调度。
 author: MLC AI
 ossDate: '2026-07-16'
-featured: false
 status: tracked
 ---
 

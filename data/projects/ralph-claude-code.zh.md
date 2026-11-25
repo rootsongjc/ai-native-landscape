@@ -13,7 +13,6 @@ tags:
 description: 一个针对 Claude Code 的开源自治开发循环工具集，提供会话连续性、速率限制与断路器等保障。
 author: Frank Bria
 ossDate: '2025-08-27T16:03:45Z'
-featured: false
 status: tracked
 ---
 ## 简介

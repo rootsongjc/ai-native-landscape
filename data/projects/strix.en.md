@@ -14,7 +14,6 @@ tags:
 description: Open-source AI penetration testing tool that finds and fixes your application's vulnerabilities with autonomous security agents.
 author: usestrix
 ossDate: '2025-08-05T21:28:30Z'
-featured: false
 status: tracked
 ---
 

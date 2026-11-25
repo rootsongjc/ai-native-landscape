@@ -13,7 +13,6 @@ tags:
 description: Deepnote 是兼容 Jupyter 的协作式笔记本平台，提供实时协作、云端计算与丰富的数据集成功能。
 author: Deepnote
 ossDate: '2025-09-29T15:24:25Z'
-featured: false
 status: tracked
 ---
 Deepnote 是一个面向数据科学团队的协作式数据笔记本平台，提供 AI 驱动的辅助功能。它兼容 Jupyter，支持 Python、R 和 SQL，将交互式笔记本与云端执行环境相结合，实现实时多人协作编辑。

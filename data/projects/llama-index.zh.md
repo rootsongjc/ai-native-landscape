@@ -13,7 +13,6 @@ tags:
 description: LlamaIndex 是一个面向 LLM 应用的数据框架，便于将私有数据接入并增强模型的检索和生成能力。
 author: run-llama
 ossDate: '2022-11-02T04:24:54.000Z'
-featured: false
 status: tracked
 ---
 

@@ -12,7 +12,6 @@ tags:
 description: 基于节点的可视化 Stable Diffusion 工作流构建器，便于用图形化方式组装与调试图像生成流水线。
 author: comfyanonymous
 ossDate: '2023-01-17T03:15:56.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

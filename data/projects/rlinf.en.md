@@ -14,7 +14,6 @@ description: >-
   GRPO, SAC and more, with seamless scaling to large GPU clusters.
 author: RLinf Team
 ossDate: '2025-08-15T00:00:00.000Z'
-featured: true
 status: tracked
 ---
 

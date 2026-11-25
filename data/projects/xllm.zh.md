@@ -16,7 +16,6 @@ description: >-
   xLLM 是一个面向视觉语言模型的开源框架，提供训练与推理工具及文档。
 author: jd-opensource
 ossDate: '2025-08-12T13:16:07.000Z'
-featured: false
 status: tracked
 ---
 

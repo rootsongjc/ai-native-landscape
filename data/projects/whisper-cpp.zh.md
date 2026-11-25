@@ -11,7 +11,6 @@ tags:
 description: whisper.cpp 是 Whisper 的高性能本地实现，支持边缘设备与桌面平台上的语音识别部署。
 author: ggml-org
 ossDate: '2022-09-25T18:26:37.000Z'
-featured: false
 status: tracked
 ---
 

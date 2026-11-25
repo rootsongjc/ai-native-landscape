@@ -3,7 +3,7 @@ name: sqlite-vector
 slug: sqlite-vector
 homepage: https://sqlite.ai/
 repo: https://github.com/sqliteai/sqlite-vector
-license: Unknown
+license: Apache-2.0
 category: rag-knowledge
 subCategory: vector-databases
 tags:
@@ -13,7 +13,6 @@ tags:
 description: 将嵌入向量存储与向量检索能力集成到 SQLite，提供跨平台的轻量向量数据库扩展。
 author: SQLiteAI
 ossDate: '2025-04-07T11:17:59Z'
-featured: false
 status: tracked
 ---
 

@@ -38,7 +38,6 @@ function transformProject(project) {
   const slugs = {};
   const pagePaths = {};
   const tags = {};
-  const featured = {};
   const ossDates = {};
   const sources = {};
 
@@ -47,7 +46,6 @@ function transformProject(project) {
     slugs[lang] = slug;
     pagePaths[lang] = makePagePath(lang, slug);
     tags[lang] = project.tags || [];
-    featured[lang] = Boolean(project.featured);
     if (project.ossDate) {
       ossDates[lang] = project.ossDate;
     }
@@ -62,7 +60,10 @@ function transformProject(project) {
     slugs,
     pagePaths,
     tags,
-    featured,
+    // Kept for the score worker (rootsongjc/website, tools/ai-oss-rank-worker/src/worker.ts),
+    // which reads project.featured[locale] and throws when the key is missing. It is always
+    // empty: the catalog has no featured projects.
+    featured: {},
     ossDates,
     sources,
   };

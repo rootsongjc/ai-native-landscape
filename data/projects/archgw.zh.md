@@ -13,7 +13,6 @@ tags:
 description: ArchGW 是一个面向 agent 的模型原生代理服务器，提供路由、护栏、工具调用与端到端可观测能力。
 author: Arch (katanemo)
 ossDate: '2024-07-09T20:25:56Z'
-featured: false
 status: tracked
 ---
 ## 详细介绍

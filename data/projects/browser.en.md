@@ -12,7 +12,6 @@ tags:
 description: A headless browser built for AI and automation, providing CDP/Playwright/Puppeteer-compatible automation capabilities.
 author: Lightpanda IO
 ossDate: '2023-02-07T15:19:34Z'
-featured: false
 status: tracked
 ---
 Lightpanda Browser is a headless browser designed for AI and automation, serving as a lightweight and fast alternative for agent-driven web browsing. It provides compatibility with the Chrome DevTools Protocol (CDP) and interoperates with toolchains such as Playwright and Puppeteer, aiming to offer a low-latency, reliable runtime for model-driven automation.

@@ -11,7 +11,6 @@ tags:
 description: AIPex 是一款开源的浏览器自动化扩展，通过自然语言指令把浏览器变为智能化自动化平台。
 author: AIPexStudio
 ossDate: '2024-08-22T03:02:28.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

@@ -3,7 +3,7 @@ name: Activepieces
 slug: activepieces
 homepage: https://www.activepieces.com
 repo: https://github.com/activepieces/activepieces
-license: Other
+license: MIT
 category: applications-products
 subCategory: workflow-automation
 tags:
@@ -13,7 +13,6 @@ description: >-
   integration for AI agents and automation scenarios.
 author: Activepieces
 ossDate: '2022-12-03T02:52:46.000Z'
-featured: false
 status: tracked
 ---
 ## Introduction

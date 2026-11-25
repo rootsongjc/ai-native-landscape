@@ -15,7 +15,6 @@ description: >-
   orchestration, tooling, and observability.
 author: tRPC Group
 ossDate: '2025-05-14T13:51:35Z'
-featured: false
 status: tracked
 ---
 

@@ -12,7 +12,6 @@ tags:
 description: 为 AI 与自动化场景设计的无头浏览器，提供与 CDP/Playwright/Puppeteer 兼容的自动化能力。
 author: Lightpanda IO
 ossDate: '2023-02-07T15:19:34Z'
-featured: false
 status: tracked
 ---
 Lightpanda Browser 是为 AI 与自动化场景设计的无头浏览器，是智能体驱动网页浏览的轻量快速替代方案。它兼容 CDP 协议并与 Playwright、Puppeteer 等工具链互操作，旨在为模型驱动的自动化任务提供低延迟、高可靠性的运行时。

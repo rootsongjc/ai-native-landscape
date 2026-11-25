@@ -13,7 +13,6 @@ description: >-
   structured context engineering.
 author: Kayba AI
 ossDate: '2025-10-15T15:36:20.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

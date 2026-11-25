@@ -13,7 +13,6 @@ tags:
 description: An open-source framework that constrains AI output to structured JSON for predictable UI rendering.
 author: Vercel
 ossDate: '2026-01-14T17:22:39Z'
-featured: false
 status: tracked
 ---
 

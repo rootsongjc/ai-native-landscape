@@ -12,7 +12,6 @@ tags:
 description: 用于在 Kubernetes 上进行高性能分布式推理的开源栈，提供调度、分发与性能优化路径。
 author: llm-d
 ossDate: '2025-04-29T18:28:17.000Z'
-featured: false
 status: tracked
 ---
 

@@ -13,7 +13,6 @@ tags:
 description: 创新的 AI 浏览器自动化框架，将代码与自然语言结合，实现生产环境下灵活可靠的自动化。
 author: BrowserBase
 ossDate: '2024-03-24T19:19:44.000Z'
-featured: true
 status: tracked
 ---
 

@@ -3,7 +3,7 @@ name: Cactus
 slug: cactus
 homepage: https://cactuscompute.com/docs
 repo: https://github.com/cactus-compute/cactus
-license: Other
+license: Apache-2.0
 category: inference-serving
 subCategory: edge-local-inference
 tags:
@@ -15,7 +15,6 @@ description: >-
   models with low power and memory footprint.
 author: cactus-compute
 ossDate: '2025-04-23T14:33:43.000Z'
-featured: false
 status: tracked
 ---
 Cactus is a low-latency AI inference engine and numerical computing framework designed for mobile devices and wearables. Developed by cactus-compute, it is optimized for ARM CPUs to run large language models with minimal power consumption and memory footprint, enabling on-device AI without relying on cloud connectivity.

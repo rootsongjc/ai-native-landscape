@@ -13,7 +13,6 @@ tags:
 description: 'A Kubernetes-native job queueing system that manages quotas and decides when batch, AI, and HPC jobs are admitted to a cluster.'
 author: Kubernetes SIGs
 ossDate: '2022-02-16T05:52:19.000Z'
-featured: false
 status: tracked
 ---
 

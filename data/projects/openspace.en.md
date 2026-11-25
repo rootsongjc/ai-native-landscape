@@ -16,7 +16,6 @@ description: >-
   Quality-first skill hub for AI agents — browse, import, reuse, evolve, and share skills across Claude Code, Codex, Cursor, OpenClaw, and nanobot, delivered as an MCP server and judged by real task outcomes.
 author: HKUDS
 ossDate: '2026-03-24T08:01:49Z'
-featured: false
 status: tracked
 ---
 

@@ -15,7 +15,6 @@ description: >-
   session management. Provider-agnostic and extensible for production use.
 author: OpenAI
 ossDate: '2025-03-11T03:42:36.000Z'
-featured: false
 status: tracked
 ---
 

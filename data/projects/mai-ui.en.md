@@ -18,7 +18,6 @@ description: >-
   real-world tasks.
 author: Tongyi-MAI
 ossDate: '2025-12-15T07:53:22Z'
-featured: false
 status: tracked
 ---
 

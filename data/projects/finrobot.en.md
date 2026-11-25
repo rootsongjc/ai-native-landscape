@@ -14,7 +14,6 @@ description: >-
   models.
 author: AI4Finance Foundation
 ossDate: '2024-02-27T02:30:30Z'
-featured: false
 status: tracked
 ---
 FinRobot is an open-source AI agent platform designed specifically for financial analysis, combining large language models with multi-source data adapters for market data, company filings, and news. It enables reusable, orchestrated agent workflows for financial automation and includes example agents for market forecasting, report generation, document analysis, and trading strategies.

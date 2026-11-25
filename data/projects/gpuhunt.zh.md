@@ -13,7 +13,6 @@ tags:
 description: '聚合各云厂商与 GPU 算力市场的实例价格、地域和规格的 Python 库与价格目录。'
 author: dstack
 ossDate: '2023-08-23T06:53:10.000Z'
-featured: false
 status: tracked
 ---
 

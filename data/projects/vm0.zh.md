@@ -3,7 +3,7 @@ name: VM0
 slug: vm0
 homepage: https://vm0.ai
 repo: https://github.com/okou-ai/okou
-license: BSL-1.1
+license: BUSL-1.1
 category: agents
 subCategory: agent-frameworks
 tags:
@@ -16,7 +16,6 @@ tags:
 description: 一个面向自然语言描述的智能体运行时与编排平台，支持会话持久化、可观测性与多模型路由。
 author: VM0.ai
 ossDate: '2025-11-14T03:27:22Z'
-featured: false
 status: tracked
 ---
 

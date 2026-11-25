@@ -17,7 +17,6 @@ description: >-
   LLM inference.
 author: Spice.ai
 ossDate: '2021-08-08T23:26:13Z'
-featured: false
 status: tracked
 ---
 

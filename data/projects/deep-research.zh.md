@@ -13,7 +13,6 @@ tags:
 description: 面向长时信息检索与 agentic 任务的开放式大规模研究代理模型与工具集。
 author: 阿里巴巴
 ossDate: '2025-01-09T11:07:35.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

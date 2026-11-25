@@ -12,7 +12,6 @@ tags:
 description: 面向在浏览器运行智能体的框架，支持 Angular 与 React 集成。
 author: Liveloveapp
 ossDate: '2025-03-26T21:26:59Z'
-featured: false
 status: tracked
 ---
 

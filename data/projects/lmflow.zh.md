@@ -13,7 +13,6 @@ tags:
 description: LMFlow 是一个可扩展、便捷且高效的微调与推理工具箱，针对大规模基础模型的工程化训练与部署提供完整支持。
 author: OptimalScale
 ossDate: '2023-03-27T13:56:29.000Z'
-featured: false
 status: tracked
 ---
 

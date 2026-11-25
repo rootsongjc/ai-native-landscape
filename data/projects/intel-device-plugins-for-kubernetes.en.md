@@ -13,7 +13,6 @@ tags:
 description: 'A collection of Kubernetes device plugins and an operator that expose Intel GPUs, FPGAs, QAT, and other accelerators as schedulable resources.'
 author: Intel
 ossDate: '2018-05-14T22:30:06.000Z'
-featured: false
 status: tracked
 ---
 

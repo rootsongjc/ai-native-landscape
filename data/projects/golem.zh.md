@@ -13,7 +13,6 @@ tags:
 description: 一个开源的可持久计算平台，使构建和部署高可靠分布式系统更容易。
 author: Golem Cloud
 ossDate: '2023-11-24T08:54:54Z'
-featured: false
 status: tracked
 ---
 Golem Cloud 是一个面向智能体原生应用的平台，用于构建永不丢失状态、永不重复执行的 AI 智能体和分布式应用。它以 WebAssembly 组件作为持久执行单元，使开发者能够构建高可靠的有状态服务，而无需手动处理分布式系统的复杂性。

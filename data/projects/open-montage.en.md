@@ -15,7 +15,6 @@ tags:
 description: The first open-source, agentic video production system that turns an AI coding assistant into a full video studio, handling research, scripting, asset generation, editing, and final composition.
 author: Calesthio
 ossDate: '2026-03-29T15:23:22Z'
-featured: false
 status: tracked
 ---
 

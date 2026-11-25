@@ -14,7 +14,6 @@ description: >-
   future sessions.
 author: thedotmack
 ossDate: '2025-08-31T20:50:03Z'
-featured: false
 status: tracked
 ---
 Claude Mem provides persistent context across sessions for every AI agent by automatically capturing everything the agent does, compressing it with AI, and injecting relevant context back into future sessions. It eliminates the common problem of agents losing context between sessions, enabling continuous and productive AI-assisted development workflows.

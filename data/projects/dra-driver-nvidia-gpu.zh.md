@@ -13,7 +13,6 @@ tags:
 description: '面向 NVIDIA GPU 的 Kubernetes 动态资源分配（DRA）驱动，支持基于声明的分配与灵活的 GPU 共享。'
 author: Kubernetes SIGs
 ossDate: '2023-04-17T19:12:49.000Z'
-featured: false
 status: tracked
 ---
 

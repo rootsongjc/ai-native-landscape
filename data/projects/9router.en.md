@@ -16,7 +16,6 @@ description: >-
   providers and 100+ models, with tiered auto-fallback from subscriptions to cheap and free tiers and 20-40% token savings.
 author: decolua
 ossDate: '2026-01-05'
-featured: false
 status: tracked
 ---
 

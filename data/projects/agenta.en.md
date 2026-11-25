@@ -14,7 +14,6 @@ description: >-
   ship reliable LLM applications faster.
 author: Agenta-AI
 ossDate: '2023-04-26T09:54:28.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

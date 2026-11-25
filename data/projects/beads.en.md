@@ -13,7 +13,6 @@ tags:
 description: A lightweight framework that provides persistent memory and efficient retrieval for code agents.
 author: Steve Yegge
 ossDate: '2025-10-12T03:09:46Z'
-featured: false
 status: tracked
 ---
 Beads is a lightweight memory layer designed for coding agents, providing persistent context and efficient retrieval to enhance AI-assisted development. It converts important conversation snippets and code context into embeddings, stores them in an efficient index, and enables reliable retrieval during multi-turn interactions or long-lived sessions.

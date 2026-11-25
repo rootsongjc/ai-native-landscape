@@ -14,7 +14,6 @@ tags:
 description: 25 MB 的轻量级跨平台数据库客户端，支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、DuckDB、SQL Server、达梦等 100+ 数据库，提供桌面端、Docker、CLI 与 Web 版本，内置 AI 助手和 MCP Server。
 author: t8y2
 ossDate: '2026-04-29'
-featured: false
 status: tracked
 ---
 

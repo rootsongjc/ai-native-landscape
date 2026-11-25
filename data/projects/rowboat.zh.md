@@ -14,7 +14,6 @@ tags:
 description: 开源桌面 AI 同事，将你的工作索引为活的知识图谱，并通过内置工作界面基于记忆执行任务。
 author: rowboatlabs
 ossDate: '2025-01-13T09:30:40Z'
-featured: false
 status: tracked
 ---
 

@@ -15,7 +15,6 @@ description: >-
   教师和同学实时互动、丰富的场景类型 (幻灯片、测验、交互式模拟和项目式学习),并支持白板绘图和语音讲解，可导出为 PPTX 或 HTML 格式。
 author: THU-MAIC (清华大学)
 ossDate: '2025-03-16'
-featured: false
 status: tracked
 ---
 

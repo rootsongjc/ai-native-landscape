@@ -13,7 +13,6 @@ description: >-
   supports LLMs and some multimodal editing scenarios.
 author: ZJUNLP
 ossDate: '2023-05-09T07:48:02Z'
-featured: false
 status: tracked
 ---
 ## Overview

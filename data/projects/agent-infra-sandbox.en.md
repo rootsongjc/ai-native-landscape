@@ -15,7 +15,6 @@ description: >-
   containerized runtime.
 author: Agent Infra
 ossDate: '2025-08-06T14:51:05.000Z'
-featured: false
 status: tracked
 ---
 ## Introduction

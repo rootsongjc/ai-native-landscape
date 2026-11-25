@@ -16,7 +16,6 @@ description: >-
   production-grade AI systems with strong data validation and real-time outputs.
 author: Pydantic
 ossDate: '2024-06-21T15:55:04.000Z'
-featured: false
 status: tracked
 ---
 

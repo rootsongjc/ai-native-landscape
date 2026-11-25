@@ -3,7 +3,7 @@ name: CrewAI
 slug: crewai
 homepage: https://crewai.com/
 repo: https://github.com/crewaiinc/crewai
-license: Other
+license: MIT
 category: agents
 subCategory: agent-orchestration
 tags:
@@ -12,7 +12,6 @@ tags:
 description: 轻量、快速的多智能体编排框架，支持 Crews 与 Flows 的协作与流程化执行，适用于构建生产级别的自主代理与事件驱动工作流。
 author: CrewAI Inc.
 ossDate: '2023-10-27T03:26:59.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

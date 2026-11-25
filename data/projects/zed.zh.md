@@ -3,7 +3,7 @@ name: Zed
 slug: zed
 homepage: https://zed.dev
 repo: https://github.com/zed-industries/zed
-license: Unknown
+license: GPL-3.0 AND Apache-2.0
 category: coding-devtools
 subCategory: coding-agents
 tags:
@@ -11,7 +11,6 @@ tags:
 description: Zed 是由 Atom 与 Tree-sitter 核心团队打造的高性能代码编辑器，专注于本地极低延迟与多人实时协作。
 author: Zed Industries
 ossDate: '2021-02-20T03:01:06.000Z'
-featured: false
 status: tracked
 ---
 

@@ -13,7 +13,6 @@ description: >-
   and RAG pipelines.
 author: confident-ai
 ossDate: '2023-08-10T05:35:04.000Z'
-featured: false
 status: tracked
 ---
 DeepEval is a lightweight, extensible evaluation framework for large language models (LLMs). It offers a wide range of ready-made metrics (e.g., G-Eval, RAG metrics, hallucination detection) and supports both end-to-end and component-level testing, enabling reproducible benchmarks in local and CI environments.

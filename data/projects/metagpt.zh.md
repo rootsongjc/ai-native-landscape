@@ -13,7 +13,6 @@ tags:
 description: 多智能体框架，通过协作的 AI 智能体团队自动化软件开发流程，从需求到代码实现。
 author: Foundation Agents
 ossDate: '2023-06-30T09:04:55.000Z'
-featured: false
 status: tracked
 ---
 

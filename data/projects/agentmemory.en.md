@@ -14,7 +14,6 @@ tags:
 description: Persistent memory layer for AI coding agents, enabling cross-session context retention based on real-world benchmarks.
 author: rohitg00
 ossDate: '2026-02-25T07:32:52Z'
-featured: false
 status: tracked
 ---
 

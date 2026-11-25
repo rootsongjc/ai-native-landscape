@@ -13,7 +13,6 @@ tags:
 description: 一个跨平台的 SDK，用于构建、协调与部署可扩展的 AI Agent 和多代理系统。
 author: Microsoft
 ossDate: '2023-02-27T17:39:42.000Z'
-featured: false
 status: tracked
 ---
 

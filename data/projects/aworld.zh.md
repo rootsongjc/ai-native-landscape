@@ -14,7 +14,6 @@ tags:
 description: AWorld 是为多智能体自我改进与大规模训练而设计的开源智能体运行时与研究平台。
 author: inclusionAI
 ossDate: '2025-03-14T08:30:52Z'
-featured: false
 status: tracked
 ---
 ## 详细介绍

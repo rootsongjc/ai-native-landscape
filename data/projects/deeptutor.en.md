@@ -16,7 +16,6 @@ tags:
 description: A multi-agent personalized learning system integrating RAG, knowledge graphs, and interactive visualizations.
 author: HKUDS
 ossDate: '2025-12-28T15:35:54Z'
-featured: false
 status: tracked
 ---
 ## Overview

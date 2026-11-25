@@ -13,7 +13,6 @@ tags:
 description: tRPC-Agent-Go 是一个面向生产的 Go 语言智能体框架，提供强大的多智能体编排、工具集成与可观测性方案。
 author: tRPC Group
 ossDate: '2025-05-14T13:51:35Z'
-featured: false
 status: tracked
 ---
 

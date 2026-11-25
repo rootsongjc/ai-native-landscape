@@ -18,7 +18,6 @@ description: >-
   store.
 author: Graphify-Labs
 ossDate: '2026-04-03'
-featured: false
 status: tracked
 ---
 

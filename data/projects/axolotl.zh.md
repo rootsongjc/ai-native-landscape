@@ -13,7 +13,6 @@ tags:
 description: 免费开源的 LLM 后训练与微调框架，支持多模型、多种微调方法与多卡/多节点优化。
 author: axolotl-ai-cloud
 ossDate: '2023-04-14T04:25:47.000Z'
-featured: false
 status: tracked
 ---
 ## 详细介绍

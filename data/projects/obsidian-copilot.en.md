@@ -11,7 +11,6 @@ tags:
 description: AI assistant plugin for Obsidian, providing intelligent assistance for knowledge management and note-taking.
 author: Logan Yang
 ossDate: '2023-03-31T00:15:29.000Z'
-featured: false
 status: tracked
 ---
 

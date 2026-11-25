@@ -14,7 +14,6 @@ description:
   en: Benchmark for agents reconstructing full-stack websites from browser exploration, using native Harbor tasks and a separate verifier.
   zh: 评测智能体通过浏览器探索后重建全栈网站的基准，采用原生 Harbor 任务和独立验证器。
 author: TIGER-AI-Lab
-featured: false
 thumbnail: ''
 status: tracked
 ---

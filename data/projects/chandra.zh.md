@@ -13,7 +13,6 @@ tags:
 description: Chandra 是一个高精度 OCR 模型，能将图片与 PDF 转为带布局信息的结构化输出。
 author: Datalab
 ossDate: '2025-10-08T21:34:16Z'
-featured: false
 status: tracked
 ---
 Chandra 是一款高精度 OCR 模型，能够处理复杂表格、表单、手写内容及完整版面识别。它可将图片和 PDF 转换为结构化的 HTML、Markdown 或 JSON 输出，同时保留页眉页脚、表格、复选框和数学公式等版面信息，适用于最具挑战性的文档数字化任务。

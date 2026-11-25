@@ -16,7 +16,6 @@ tags:
 description: 一个面向图形界面交互的智能体框架，支持从 2B 到 235B 不同规模的模型以构建真实世界任务的代理体验。
 author: Tongyi-MAI
 ossDate: '2025-12-15T07:53:22Z'
-featured: false
 status: tracked
 ---
 

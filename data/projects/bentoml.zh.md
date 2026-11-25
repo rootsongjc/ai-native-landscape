@@ -13,7 +13,6 @@ tags:
 description: BentoML：用于将机器学习模型打包、容器化并在生产环境中高效部署与服务化的开源框架。
 author: BentoML
 ossDate: '2019-04-02T01:39:27.000Z'
-featured: false
 status: tracked
 ---
 ## 详细介绍

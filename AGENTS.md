@@ -29,6 +29,9 @@ npm run validate             # Runs scripts/validate-data.mjs against data/schem
 
 # Landscape map logos
 npm run sync:avatars         # Resolve new GitHub owners into data/avatars.json (incremental; --force to redo all)
+
+# Project levels
+npm run sync:levels          # Snapshot score API signals into data/signals.json and report level changes (--dry-run to preview)
 ```
 
 Script unit tests use the Node.js built-in runner: `npm test` (files matching `scripts/*.test.mjs`).
@@ -43,9 +46,10 @@ Submission triage: `npm run triage -- --number <n> --dry-run` checks an issue or
 - **Taxonomy**: `data/categories.yaml` — two-level hierarchy (category → subCategory)
 - **Schema**: `data/schema.project.json` — JSON Schema for project validation (ajv)
 - **Exports**: `exports/` — generated JSON output
+- **Signals**: `data/signals.json` — per-repository snapshot (health score, age, contributors, commits in the last year, days since last commit) written by `npm run sync:levels`. Project levels and the catalog order are derived from it at build time. Never edit entries by hand
 - **Avatars**: `data/avatars.json` — GitHub owner → numeric avatar id, written by `npm run sync:avatars`. The landscape map needs the direct `avatars.githubusercontent.com/u/<id>` URL because it is CORS-enabled and can be drawn into the PNG/PDF export; owners missing from the file still show a logo on the page but are exported as initials. Run the script after adding projects.
 
-Project frontmatter fields: `name`, `slug`, `homepage`, `repo`, `license`, `category`, `subCategory`, `tags`, `logo`, `status`, `author`, `ossDate`, `featured`, `thumbnail`, `source`, plus `score` object (`health`, `activity`, `community`, `quality`, `sustainability`).
+Project frontmatter fields: `name`, `slug`, `homepage`, `repo`, `license`, `category`, `subCategory`, `tags`, `logo`, `status`, `author`, `ossDate`, `thumbnail`, `source`, plus `score` object (`health`, `activity`, `community`, `quality`, `sustainability`).
 
 ### Scripts (`scripts/`)
 
@@ -76,6 +80,14 @@ Data pipeline: `loadProjectDocuments()` → merge bilingual files → AJV valida
 
 Scores fetched at runtime from `ai-oss-rank-worker.jimmysong.io`. Four dimensions (0–100): health, activity, community, quality. Tier labels: Must Watch (90+), Strong Recommendation (80+), Recommendation (70+), Worth Watching (60+), General (below).
 
+### Levels
+
+Every project has a computed level: `mature`, `growing`, or `emerging` (deliberately not foundation vocabulary such as graduated/incubating/sandbox — the site belongs to no foundation). A level measures project health: the overall health score is worth up to 4 points, and contributor base, sustained activity and track record up to 2 each. Star count, foundation membership and vendor neutrality are deliberately not part of the standard. `DIMENSIONS` and `LEVELS` in `src/lib/levels.mjs` hold the numbers and are rendered on the methodology page, so the published standard and the computation cannot drift.
+
+`loadProjects()` attaches `level`, `levelPoints`, `levelTotal` and `signals`, and sorts by level → points → health → name, which is the default order of every category and subcategory. Mature projects get a 2×2 tile in the landscape map. The weekly `sync-levels` workflow refreshes the snapshot and opens a pull request when a level changes.
+
+There is no `featured` field and no manual override: to change an outcome, change the standard for all projects.
+
 ### i18n
 
 Bilingual content managed as paired files (`<slug>.zh.md` + `<slug>.en.md`). Language routing via `/en/` and `/zh/` path prefixes.
@@ -85,6 +97,7 @@ Bilingual content managed as paired files (`<slug>.zh.md` + `<slug>.en.md`). Lan
 - ES modules throughout (`"type": "module"`)
 - Tag-based auto-classification: `TAG_PRIORITY_RULES` in `lib.mjs` maps tags to subcategories; rules run in order, first match wins
 - All projects must have both `category` and `subCategory` — if unclassifiable, project shouldn't be listed
+- `level` is computed, never stored in project frontmatter; do not add `featured` or any other hand-picked ranking field (the schema rejects it)
 - `status` is always `tracked`. Dead projects (repo archived or deleted, or no longer maintained) are removed from the repository: delete both language files in a pull request. Do not add an archived/inactive status or an archive page. The weekly `health-check` workflow proposes removals in a pull request for a maintainer to merge
 - Astro static output mode — all pages pre-rendered at build time
 - No client-side framework; interactivity via vanilla JS in `<script>` tags inside Astro components

@@ -3,7 +3,7 @@ name: Chrome DevTools Protocol
 slug: devtools-protocol
 homepage: https://chromedevtools.github.io/devtools-protocol/
 repo: https://github.com/chromedevtools/devtools-protocol
-license: Other
+license: BSD-3-Clause
 category: coding-devtools
 subCategory: developer-utilities
 tags:
@@ -11,7 +11,6 @@ tags:
 description: Chrome DevTools Protocol 是用于浏览器与调试工具之间通信的开放协议，定义了 DevTools 的命令、事件与类型。
 author: Google
 ossDate: '2017-03-28T18:01:17.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

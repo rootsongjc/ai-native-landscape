@@ -12,7 +12,6 @@ tags:
 description: A library for structured generation that simplifies producing and validating JSON/Pydantic outputs directly from LLMs.
 author: .txt / dottxt
 ossDate: '2023-03-17T16:01:18.000Z'
-featured: false
 status: tracked
 ---
 

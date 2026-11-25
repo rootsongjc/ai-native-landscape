@@ -11,7 +11,6 @@ tags:
 description: A command-line tool for Google Gemini supporting text, image, and code AI interactions.
 author: Google
 ossDate: '2025-04-17T17:04:31.000Z'
-featured: true
 status: tracked
 ---
 Gemini CLI is Google's command-line AI tool that enables intelligent interaction with text, images, and code directly from the terminal. It can query and edit large codebases with million-token context, generate applications from PDFs or sketches using multimodal capabilities, and automate tasks like pull requests and code changes. The tool also supports media generation through Imagen, Veo, and Lyria, plus Google Search integration for grounded responses.

@@ -11,7 +11,6 @@ tags:
 description: 通用的 LLM 部署引擎，结合 ML 编译技术以提升模型部署性能。
 author: MLC AI
 ossDate: '2023-04-29T01:59:25.000Z'
-featured: false
 status: tracked
 ---
 

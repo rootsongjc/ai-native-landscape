@@ -12,7 +12,6 @@ tags:
 description: Google 提供的内置开发者界面，用于结合 Agent Development Kit 进行智能体开发与调试。
 author: Google
 ossDate: '2025-05-05T17:16:28Z'
-featured: false
 status: tracked
 ---
 ## 简介

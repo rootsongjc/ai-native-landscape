@@ -13,7 +13,6 @@ tags:
 description: Sample code and notebooks demonstrating how to build and deploy generative AI workflows on Vertex AI and Gemini.
 author: Google
 ossDate: '2023-05-05T12:31:07.000Z'
-featured: false
 status: tracked
 ---
 ## Overview

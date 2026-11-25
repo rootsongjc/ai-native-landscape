@@ -11,7 +11,6 @@ tags:
 description: 面向桌面端的用户友好型 AI 模型客户端，支持主流 LLM（如 GPT、Claude、Gemini 等）。
 author: Chatbox AI
 ossDate: '2023-03-06T12:22:15.000Z'
-featured: false
 status: tracked
 ---
 ## 简介

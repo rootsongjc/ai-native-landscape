@@ -13,7 +13,6 @@ tags:
 description: 统一的 MLOps 框架，支持从经典模型到多智能体系统的一体化开发、评估与部署。
 author: ZenML
 ossDate: '2020-11-19T09:25:46.000Z'
-featured: false
 status: tracked
 ---
 
