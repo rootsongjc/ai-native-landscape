@@ -1,6 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Open Source AI Landscape">
-  <rect width="64" height="64" rx="14" fill="#0a84ff"/>
-  <path d="M16 45 32 17l16 28" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="32" cy="36" r="6" fill="none" stroke="#fff" stroke-width="4"/>
-  <path d="M24 45h16" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AI Native Landscape">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b95ff"/>
+      <stop offset="1" stop-color="#0a5fd0"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#g)"/>
+  <path d="M12 48 32 14l20 34" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="32" cy="46" r="6" fill="#fff"/>
 </svg>
