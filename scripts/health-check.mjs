@@ -1,18 +1,22 @@
 #!/usr/bin/env node
 /**
- * health-check.mjs — Scan tracked projects and detect unavailable/archived repos.
+ * health-check.mjs — Scan listed projects and remove the ones whose repo is gone.
  *
  * Usage:
- *   node scripts/health-check.mjs [--dry-run] [--token $GITHUB_TOKEN]
+ *   node scripts/health-check.mjs [--dry-run]
  *
- * Checks each tracked project's GitHub repo via the GitHub API.
- * - If the repo returns 404 → sets status to "unavailable"
- * - If the repo is archived on GitHub → sets status to "archived"
+ * Checks each project's GitHub repo via the GitHub API.
+ * - If the repo returns 404 or is archived on GitHub → deletes both language files
  * - If the repo was renamed or transferred → rewrites `repo` to the new location
  * - Outputs a summary of changes
  *
+ * Dead projects are removed from the repository, not kept under another status.
+ * The script only edits the working tree: the health-check workflow turns the
+ * result into a pull request, so a maintainer reviews every removal.
+ *
  * With --dry-run, prints what would change without writing files.
- * With --token, uses authenticated requests (higher rate limit).
+ * GITHUB_TOKEN enables authenticated requests (higher rate limit).
+ * HEALTH_CHECK_REPORT is a path that receives the changes as a Markdown list.
  */
 
 import fs from 'node:fs';
@@ -25,6 +29,7 @@ const projectsDir = path.join(root, 'data', 'projects');
 
 const dryRun = process.argv.includes('--dry-run');
 const token = process.env.GITHUB_TOKEN || '';
+const reportPath = process.env.HEALTH_CHECK_REPORT || '';
 
 function parseFrontmatter(content) {
   const match = content.match(/^---\n([\s\S]*?)\n---/);
@@ -37,16 +42,30 @@ function parseFrontmatter(content) {
   return fm;
 }
 
-function setStatus(content, status) {
-  return content.replace(/^status:\s*\S+/m, `status: ${status}`);
-}
-
 function setRepo(content, ownerRepo) {
   return content.replace(/^repo:\s*\S+/m, `repo: https://github.com/${ownerRepo}`);
 }
 
 function repoSlug(fm) {
   return ((fm?.repo || '').match(/github\.com\/([^/]+\/[^/]+)/) || [])[1];
+}
+
+// Drops owners that no remaining project uses from data/avatars.json.
+function pruneAvatars() {
+  const file = path.join(root, 'data', 'avatars.json');
+  if (!fs.existsSync(file)) return;
+  const owners = new Set(fs.readdirSync(projectsDir)
+    .filter((name) => name.endsWith('.en.md'))
+    .map((name) => repoSlug(parseFrontmatter(fs.readFileSync(path.join(projectsDir, name), 'utf-8')))?.split('/')[0].toLowerCase()));
+  const avatars = JSON.parse(fs.readFileSync(file, 'utf-8'));
+  const kept = Object.fromEntries(Object.entries(avatars).filter(([owner]) => owners.has(owner)));
+  fs.writeFileSync(file, `${JSON.stringify(kept, null, 2)}\n`);
+}
+
+function describe(change) {
+  return change.removed
+    ? `Removed ${change.name} (\`${change.slug}\`, https://github.com/${change.repo}): ${change.reason}`
+    : `Rewrote repo of \`${change.slug}\`: ${change.from} → ${change.to} (${change.reason})`;
 }
 
 async function checkRepo(ownerRepo) {
@@ -72,7 +91,7 @@ async function main() {
   const files = fs.readdirSync(projectsDir).filter(f => f.endsWith('.en.md'));
   console.log(`Scanning ${files.length} projects...`);
 
-  const results = { ok: 0, unavailable: 0, archived: 0, renamed: 0, skipped: 0, rate_limited: 0, errors: [] };
+  const results = { ok: 0, removed: 0, renamed: 0, skipped: 0, rate_limited: 0, errors: [] };
   const changes = [];
   const listed = new Map();
   for (const file of files) {
@@ -90,12 +109,6 @@ async function main() {
     const fm = parseFrontmatter(enContent);
     if (!fm) { results.skipped++; continue; }
 
-    // Skip already archived/unavailable
-    if (fm.status === 'archived' || fm.status === 'unavailable') {
-      results.skipped++;
-      continue;
-    }
-
     // Extract owner/repo from repo URL
     const ownerRepo = repoSlug(fm);
     if (!ownerRepo) { results.skipped++; continue; }
@@ -109,10 +122,10 @@ async function main() {
     }
 
     const updates = [];
-    if (check.reason === 'not_found') {
-      changes.push({ slug, from: fm.status, to: 'unavailable', reason: 'repo 404' });
-      results.unavailable++;
-      updates.push((content) => setStatus(content, 'unavailable'));
+    const gone = check.reason === 'not_found' ? 'repo returns 404' : check.archived ? 'archived on GitHub' : '';
+    if (gone) {
+      changes.push({ slug, name: fm.name || slug, repo: ownerRepo, removed: true, reason: gone });
+      results.removed++;
     } else {
       const movedTo = check.fullName && check.fullName.toLowerCase() !== ownerRepo.toLowerCase()
         ? check.fullName : null;
@@ -125,15 +138,11 @@ async function main() {
         listed.set(movedTo.toLowerCase(), slug);
         updates.push((content) => setRepo(content, movedTo));
       }
-      if (check.archived) {
-        changes.push({ slug, from: fm.status, to: 'archived', reason: 'archived on GitHub' });
-        results.archived++;
-        updates.push((content) => setStatus(content, 'archived'));
-      }
       if (updates.length === 0 && !duplicate) results.ok++;
     }
 
     if (!dryRun) {
+      for (const file of gone ? [enPath, zhPath] : []) fs.rmSync(file, { force: true });
       for (const file of updates.length > 0 ? [enPath, zhPath] : []) {
         if (!fs.existsSync(file)) continue;
         const content = fs.readFileSync(file, 'utf-8');
@@ -145,21 +154,21 @@ async function main() {
     if (!token) await new Promise(r => setTimeout(r, 1200));
   }
 
+  if (!dryRun && results.removed > 0) pruneAvatars();
+
   console.log('\n--- Health Check Summary ---');
   console.log(`OK: ${results.ok}`);
-  console.log(`Newly unavailable: ${results.unavailable}`);
-  console.log(`Newly archived: ${results.archived}`);
+  console.log(`Removed (404 or archived): ${results.removed}`);
   console.log(`Renamed or transferred: ${results.renamed}`);
-  console.log(`Skipped (already tomb): ${results.skipped}`);
+  console.log(`Skipped (no GitHub repo): ${results.skipped}`);
   console.log(`Rate limited: ${results.rate_limited}`);
   console.log(`Errors: ${results.errors.length}`);
   for (const error of results.errors) console.log(`${process.env.GITHUB_ACTIONS ? '::warning::' : '  '}${error}`);
 
   if (changes.length > 0) {
     console.log('\nChanges:');
-    for (const c of changes) {
-      console.log(`  ${c.slug}: ${c.from} → ${c.to} (${c.reason})`);
-    }
+    for (const c of changes) console.log(`  ${describe(c)}`);
+    if (reportPath) fs.writeFileSync(reportPath, changes.map((c) => `- ${describe(c)}`).join('\n') + '\n');
   }
 
   if (dryRun && changes.length > 0) {

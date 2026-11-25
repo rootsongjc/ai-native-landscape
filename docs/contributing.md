@@ -163,9 +163,8 @@ If you are unsure which category to use, leave `subCategory` empty and let the a
 | Status | Meaning |
 |---|---|
 | `tracked` | Listed and actively tracked |
-| `inactive` | No recent activity but not yet archived |
-| `archived` | Repository is archived on GitHub or the project stopped maintenance |
-| `unavailable` | Repository returns 404 (deleted or made private) |
+
+`tracked` is the only valid value. A project that should no longer be listed is removed, see [Project Removal](#project-removal).
 
 ## Updating an Existing Project
 
@@ -178,7 +177,7 @@ npm run validate
 
 1. Open a pull request with a clear description of the change.
 
-Common updates: category reclassification, URL changes, description improvements, status changes.
+Common updates: category reclassification, URL changes, description improvements.
 
 ## Fixing Data Issues
 
@@ -212,12 +211,12 @@ Before submitting a PR, verify:
 
 The CI workflow (`.github/workflows/ci.yml`) runs `npm run build` on every push and pull request, which includes validation. PRs that fail validation cannot be merged.
 
-## Project Archival
+## Project Removal
 
-Projects are archived when:
+Projects are removed when:
 
 - The repository has been archived or deleted
 - No commits or releases for 6+ consecutive months
 - The project has announced end-of-life
 
-To archive a project, set `status: archived` in both language files. Archived projects remain in the data but are dimmed in the UI.
+To remove a project, delete both language files (`<slug>.en.md` and `<slug>.zh.md`) in a pull request, and run `npm run sync:avatars` to drop avatar entries no other project uses. Removed projects are not kept in the data; git history keeps the content if the project is resubmitted later. The weekly `health-check` workflow proposes removals for archived or deleted repositories in a pull request that a maintainer reviews and merges.

@@ -1,6 +1,6 @@
 ---
 name: landscape-sync
-description: Full sync all landscape projects from GitHub — batch update metadata, detect status changes, and keep the entire catalog fresh.
+description: Full sync all landscape projects from GitHub — batch update metadata, detect dead repos, and keep the entire catalog fresh.
 ---
 
 # Full Landscape Sync
@@ -51,7 +51,7 @@ gh repo view <owner>/<repo> --json name,description,homepageUrl,licenseInfo,star
 - ✅ Success — data fetched
 - ⚠️ Changed — metadata differs from current
 - ❌ Failed — repo not found, network error
-- 📛 Archived on GitHub — needs status update
+- 📛 Archived on GitHub — propose removal
 
 ### Step 3: Compute Diffs
 
@@ -71,7 +71,7 @@ For each project, compare GitHub data with current frontmatter:
 - **No change**: Skip, no update needed
 - **Minor change**: description tweak, tag update → auto-apply
 - **Major change**: name change, license change → flag for review
-- **Status change**: GitHub archived → flag for archival
+- **Removal**: GitHub archived → flag for removal
 
 ### Step 4: Present Sync Plan
 
@@ -84,7 +84,7 @@ Total projects: XXX
   No change:         XXX
   Minor updates:      XX
   Major changes:       X (review needed)
-  GitHub archived:     X (suggest archive)
+  GitHub archived:     X (propose removal)
   Failed/Not found:    X (investigate)
 
 Minor updates:
@@ -119,26 +119,16 @@ Ask user: "Apply minor updates automatically? Review major changes? [all/review-
 3. Apply approved changes
 
 **For archived repos** (auto-flag):
-1. Don't auto-archive — present for confirmation
-2. If approved, set `status: archived` + `archiveReason: repo-archived`
+1. Don't remove automatically — present for confirmation
+2. If approved, remove the project with `landscape-remove`
 
 **For failed repos** (report only):
 1. List in final report
-2. Suggest manual investigation or archival
+2. Suggest manual investigation or removal
 
-### Step 6: Update Statuses
+### Step 6: Remove Dead Projects
 
-Projects where `status` should change:
-
-```yaml
-# If GitHub isArchived and current status is "tracked"
-status: archived
-archiveDate: '<YYYY-MM-DD>'
-archiveReason: 'repo-archived'
-featured: false
-```
-
-Apply to both language files.
+There is no `archived` status: a project whose repo is archived on GitHub is deleted from the repository. For each approved removal, run `landscape-remove`, which deletes both language files and opens a pull request for a maintainer to merge. Never push removals to `main` directly.
 
 ### Step 7: Validate and Build
 
@@ -155,7 +145,7 @@ npm run build
 
 Processed: XXX projects
   Updated: XX
-  Archived: X
+  Removed: X
   Failed: X
   Unchanged: XXX
 
@@ -166,7 +156,7 @@ Fields updated:
   homepage: X changes
   name: X changes
 
-Archived projects:
+Removed projects:
   - <slug> (reason)
   ...
 
@@ -208,6 +198,6 @@ For faster subsequent syncs:
 |-------|-----|
 | GitHub rate limit | Pause batch, resume after reset |
 | Network timeout | Retry 3x with backoff, skip on failure |
-| Repo deleted/404 | Flag for archival |
+| Repo deleted/404 | Flag for removal |
 | Auth expired | Prompt `gh auth login`, resume |
 | Partial completion | Save progress, support `--resume` |

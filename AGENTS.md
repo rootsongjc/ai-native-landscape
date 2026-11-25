@@ -85,5 +85,6 @@ Bilingual content managed as paired files (`<slug>.zh.md` + `<slug>.en.md`). Lan
 - ES modules throughout (`"type": "module"`)
 - Tag-based auto-classification: `TAG_PRIORITY_RULES` in `lib.mjs` maps tags to subcategories; rules run in order, first match wins
 - All projects must have both `category` and `subCategory` — if unclassifiable, project shouldn't be listed
+- `status` is always `tracked`. Dead projects (repo archived or deleted, or no longer maintained) are removed from the repository: delete both language files in a pull request. Do not add an archived/inactive status or an archive page. The weekly `health-check` workflow proposes removals in a pull request for a maintainer to merge
 - Astro static output mode — all pages pre-rendered at build time
 - No client-side framework; interactivity via vanilla JS in `<script>` tags inside Astro components

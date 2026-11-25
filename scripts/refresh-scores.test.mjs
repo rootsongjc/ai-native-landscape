@@ -16,16 +16,13 @@ const snapshots = (en, zh = en) => ({
   zh: new Map(zh ? [[repo, zh]] : []),
 });
 
-test('reports known unavailable repositories as skipped but allows an explicit manual check', () => {
+test('collects every catalog repository unless specific ones are requested', () => {
   const projects = [
     { repoSlug: repo, status: 'tracked' },
-    { repoSlug: 'owner/gone', status: 'unavailable' },
-    { repoSlug: 'owner/archived', status: 'archived' },
+    { repoSlug: 'owner/other', status: 'tracked' },
   ];
-  const inventory = collectionInventory(projects);
-  assert.deepEqual(inventory.repos, [repo, 'owner/archived']);
-  assert.deepEqual(inventory.skipped, [{ repo: 'owner/gone', reason: 'Catalog status is unavailable' }]);
-  assert.deepEqual(collectionInventory(projects, ['owner/gone']).repos, ['owner/gone']);
+  assert.deepEqual(collectionInventory(projects).repos, [repo, 'owner/other']);
+  assert.deepEqual(collectionInventory(projects, ['owner/other']).repos, ['owner/other']);
   assert.throws(() => collectionInventory(projects, ['owner/unknown']), /not in the catalog/);
 });
 

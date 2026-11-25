@@ -14,7 +14,6 @@ const { lang = 'en' } = Astro.props;
 const copy = ui(lang);
 const landscape = getLandscape();
 
-const HIDDEN_STATUSES = new Set(['archived', 'unavailable', 'inactive']);
 const PALETTE = ['#2563eb', '#7c3aed', '#0891b2', '#059669', '#d97706', '#dc2626', '#db2777', '#4f46e5'];
 const GRID_COLUMNS = 12;
 // A featured project takes a 2×2 tile.
@@ -37,7 +36,7 @@ const categories = landscape.categories
     const subcategories = (category.subcategories || [])
       .map((subcategory) => {
         const projects = (landscape.bySubCategory[subcategory.key] || [])
-          .filter((project) => project.category === category.key && !HIDDEN_STATUSES.has(project.status))
+          .filter((project) => project.category === category.key)
           .sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)));
         const units = projects.reduce((sum, project) => sum + (project.featured ? FEATURED_UNITS : 1), 0);
         return {
@@ -70,9 +69,7 @@ for (let index = 0; index + 1 < categories.length; index += 2) {
 
 const projectCount = categories.reduce((sum, category) => sum + category.count, 0);
 
-// The heading counts the whole catalog, including the tomb projects the map leaves out.
 const listedCategoryCount = landscape.categories.filter((category) => (landscape.byCategory[category.key] || []).length > 0).length;
-const tombCount = landscape.projects.filter((project) => HIDDEN_STATUSES.has(project.status)).length;
 
 const projectData = {};
 categories.forEach((category) => {
@@ -123,7 +120,6 @@ const safeJson = (value) => JSON.stringify(value).replace(/</g, '\\u003c');
       <h2 id="lmap-title">{copy.lmapTitle}</h2>
       <p class="lmap__stats">
         {landscape.projectCount} {copy.projects} · {listedCategoryCount} {copy.categories} ·{' '}
-        <a href={localizedPath('/tomb/', lang)}>{tombCount} {copy.navTomb}</a> ·{' '}
         <a href={localizedPath('/submit/', lang)}>{copy.submitProject}</a>
       </p>
       <p class="lmap__desc">{copy.lmapDescription}</p>

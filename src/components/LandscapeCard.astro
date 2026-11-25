@@ -4,14 +4,13 @@ import { localizedPath, projectDescription, projectIconUrl, scoreLabel } from '.
 const { project, lang = 'en' } = Astro.props;
 const avatar = projectIconUrl(project, 96);
 const href = localizedPath(`/projects/${project.slug}/`, lang);
-const isArchived = project.status === 'archived';
 const repoSlug = project.repoSlug || '';
 const desc = projectDescription(project, lang);
 const scoreStateText = scoreLabel(project.scores?.health, lang);
 ---
 
 <a
-  class:list={['landscape-card', { 'landscape-card--archived': isArchived }]}
+  class="landscape-card"
   href={href}
   data-score-repo={repoSlug}
   data-card-name={project.name}
@@ -63,12 +62,6 @@ const scoreStateText = scoreLabel(project.scores?.health, lang);
     background: var(--surface-soft);
     border-color: var(--border);
     z-index: 10;
-  }
-  .landscape-card--archived {
-    opacity: 0.4;
-  }
-  .landscape-card--archived .landscape-card__name {
-    text-decoration: line-through;
   }
 
   .landscape-card__logo {
