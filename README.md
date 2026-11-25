@@ -11,7 +11,7 @@
 - **Landscape browsing** — Grid and heatmap views with category filtering
 - **Project directory** — Search, filter, sort, and page through the full catalog at `/projects/`; category filters are shareable in the URL
 - **Project detail pages** — Scores, GitHub metrics, bilingual descriptions (`/projects/<slug>/`)
-- **Author pages** — Click an author on a project detail page to browse all their catalogued projects (`/authors/<slug>/`), including archived projects. Matching uses the canonical author field (case-insensitive, whitespace-normalized), not GitHub repository ownership.
+- **Author pages** — Click an author on a project detail page to browse all their catalogued projects (`/authors/<slug>/`). Matching uses the canonical author field (case-insensitive, whitespace-normalized), not GitHub repository ownership.
 - **Category pages** — Browse by technology domain with subcategory anchors and shareable tag filters (`/categories/<key>/`)
 - **Scoring system** — 5-dimension evaluation (activity, community, quality, sustainability → health)
 - **Bilingual** — Full Chinese (zh) and English (en) support
@@ -64,7 +64,7 @@ Each project is a pair of Markdown files with YAML frontmatter:
 | `tags` | | String array of tags |
 | `author` | | Author or organization |
 | `ossDate` | | Date open-sourced |
-| `status` | | Reference status (`tracked`, `recommended`, etc.) |
+| `status` | | Always `tracked`; dead projects are removed, not given another status |
 | `score` | | Scoring dimensions (optional, runtime scores from API) |
 
 ### Scoring
@@ -98,7 +98,7 @@ Scores (0–100) are fetched at runtime from an external API and cached client-s
 The refresh command uses Node.js 24.5+ (CI uses Node.js 24) and honors proxy environment variables.
 `npm run refresh:scores -- --dry-run` audits collection dates without changing data.
 Run `npm run refresh:scores` to refresh stale or missing GitHub metrics and scores
-through the scoring worker. Curated descriptions, classifications, and project statuses
+through the scoring worker. Curated descriptions and classifications
 are not modified. Use `--repo project-hami/hami` to check one repository,
 `--max-age-days 3` to change the freshness threshold, or `--report result.json`
 to save a resumable audit/result report. Rerunning skips successfully refreshed entries.
@@ -108,14 +108,14 @@ and also supports manual dispatch. Each collection is verified against the read 
 failed or skipped repositories cause a nonzero exit and appear in the uploaded JSON
 report. A repository absent from the deployed worker manifest must be published to
 the manifest before it can be collected.
-Projects already marked `unavailable` are explicitly listed as skipped in logs and
-the report; specifying `--repo` includes that repository for a manual check.
 
 A repository the worker reports as not found (deleted, made private, or renamed) is
 recorded under `unavailable` in the report and does not fail the run. The workflow
 then triggers `health-check`, which verifies every tracked repository against the
-GitHub API and opens a PR that marks deleted repositories `unavailable`, archived ones
-`archived`, and rewrites `repo` for renamed or transferred repositories. A rename
+GitHub API and opens a PR that removes projects whose repository was deleted or
+archived (both language files are deleted, nothing is kept under another status) and
+rewrites `repo` for renamed or transferred repositories. A maintainer reviews and
+merges that PR; the workflow never removes a project on its own. A rename
 whose new location is already listed under another slug is reported as a warning for
 manual cleanup. `health-check` also runs every Monday.
 
@@ -160,7 +160,7 @@ These skills are only available inside this repository:
 | **`/landscape-update`** | Sync a single project's metadata from GitHub |
 | **`/landscape-sync`** | Batch sync all projects' metadata from GitHub |
 | **`/landscape-batch`** | Bulk import projects from JSON, CSV, or URL lists |
-| **`/landscape-archive`** | Archive or deprecate a project |
+| **`/landscape-remove`** | Remove a dead or out-of-scope project |
 | **`/landscape-health`** | Run health checks across all projects |
 | **`/landscape-report`** | Generate statistics and analytics reports |
 

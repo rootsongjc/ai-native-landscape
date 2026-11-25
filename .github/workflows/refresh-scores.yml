@@ -27,7 +27,7 @@ jobs:
       - id: refresh
         run: npm run refresh:scores -- --report "$RUNNER_TEMP/score-refresh.json"
       # Deleted or renamed repositories do not fail this job; the health check
-      # verifies them against GitHub and opens a PR that updates the catalog.
+      # verifies them against GitHub and opens a PR that removes or updates them.
       - name: Trigger health check for unavailable repositories
         if: steps.refresh.outputs.unavailable > 0
         env:

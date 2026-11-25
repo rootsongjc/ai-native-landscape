@@ -44,7 +44,6 @@
       }
     },
     "ossDate": { "type": "string" },
-    "archivedDate": { "type": "string" },
     "featured": { "type": "boolean" },
     "thumbnail": { "type": "string" },
     "source": {
@@ -57,7 +56,7 @@
     },
     "status": {
       "type": "string",
-      "enum": ["tracked", "inactive", "archived", "unavailable"]
+      "enum": ["tracked"]
     },
     "score": {
       "type": "object",

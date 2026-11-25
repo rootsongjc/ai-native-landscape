@@ -2,17 +2,17 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import { buildAuthors, projectAuthorKey } from '../src/lib/authors.mjs';
 
-test('groups canonical authors across languages, owners, categories and statuses', () => {
+test('groups canonical authors across languages, owners and categories', () => {
   const projects = [
     { name: 'MCP Servers', slug: 'mcp-servers', author: 'Anthropic', authorLocalized: { zh: '安思' }, repoSlug: 'modelcontextprotocol/servers', category: 'coding-devtools', status: 'tracked' },
-    { name: 'Archived tool', slug: 'archived-tool', author: '  ANTHROPIC  ', repoSlug: 'anthropics/tool', category: 'agents', status: 'archived' },
+    { name: 'Agent tool', slug: 'agent-tool', author: '  ANTHROPIC  ', repoSlug: 'anthropics/tool', category: 'agents', status: 'tracked' },
     { name: 'Other', slug: 'other', author: 'Anthropic community', repoSlug: 'anthropics/community' },
   ];
   const authors = buildAuthors(projects);
   const author = authors.find((item) => item.key === projectAuthorKey(projects[0]));
   assert.equal(author.slug, 'anthropic');
   assert.equal(author.names.zh, '安思');
-  assert.deepEqual(author.projects.map((project) => project.slug), ['archived-tool', 'mcp-servers']);
+  assert.deepEqual(author.projects.map((project) => project.slug), ['agent-tool', 'mcp-servers']);
   assert.equal(authors.length, 2);
 });
 

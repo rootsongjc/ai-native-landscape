@@ -1429,10 +1429,6 @@ html[data-theme='dark'] .methodology-grid article {
   background: #7c3aed;
 }
 
-.status-pill--archived {
-  background: #6b7280;
-}
-
 .logo {
   width: 40px;
   height: 40px;
@@ -1774,10 +1770,7 @@ html[data-theme='dark'] .methodology-grid article {
 .status-dot--graduated { background: #1f7a45; }
 .status-dot--incubating { background: #2563eb; }
 .status-dot--sandbox { background: #7c3aed; }
-.status-dot--archived { background: #6b7280; }
 .status-dot--tracked { background: #0a84ff; }
-.status-dot--unavailable { background: #ef4444; }
-.status-dot--inactive { background: #f59e0b; }
 .status-dot--recommended { background: #0f9f6e; }
 .status-dot--worthWatching { background: #d97706; }
 .status-dot--newlyAdded { background: #06b6d4; }

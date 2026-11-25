@@ -1,11 +1,11 @@
 ---
 name: landscape-health
-description: Batch health check all tracked projects — detect inactive repos, stale data, archived GitHub repos, and auto-suggest status changes.
+description: Batch health check all tracked projects — detect inactive repos, stale data, archived GitHub repos, and propose removals.
 ---
 
 # Landscape Health Check
 
-Scan all tracked projects for signs of abandonment, staleness, or issues. Generate a health report and suggest status changes.
+Scan all tracked projects for signs of abandonment, staleness, or issues. Generate a health report and propose removals. Dead projects are removed from the repository through a pull request; there is no archived or inactive status.
 
 ## When to Use
 
@@ -84,8 +84,8 @@ For each project, calculate:
 |---------------|----------|-----------------|
 | **Healthy** | Score ≥ 60 | No action |
 | **Warning** | Score 30-59 | Flag for review |
-| **Inactive** | Score < 30 | Suggest `status: inactive` |
-| **Dead** | GitHub archived or no commit > 18 months | Suggest `status: archived` |
+| **Inactive** | Score < 30 | Removal candidate — maintainer decides |
+| **Dead** | GitHub archived, repo returns 404, or no commit > 18 months | Propose removal |
 
 ### Step 6: Generate Report
 
@@ -97,8 +97,8 @@ Landscape Health Report — YYYY-MM-DD
 Total tracked: X
   Healthy: X (X%)
   Warning: X (X%)
-  Suggested inactive: X
-  Suggested archived: X
+  Removal candidates (inactive): X
+  Proposed removals (dead): X
 ```
 
 **By category:**
@@ -111,11 +111,11 @@ Category breakdown:
 
 **Action items (sorted by urgency):**
 ```
-🔴 Archive immediately (GitHub archived):
+🔴 Remove (dead):
   - <slug> (repo archived on YYYY-MM-DD)
   - <slug> (no activity since YYYY-MM-DD)
 
-🟡 Review — suggest inactive:
+🟡 Review — removal candidate (inactive):
   - <slug> (last commit: YYYY-MM-DD, score: XX)
   - <slug> (last commit: YYYY-MM-DD, score: XX)
 
@@ -127,11 +127,13 @@ Category breakdown:
 ### Step 7: Apply Suggested Changes (Optional)
 
 If user approves:
-1. For "archive immediately" projects → run `landscape-archive` with reason `no-activity-18m` or `repo-archived`
-2. For "suggest inactive" projects → update `status: inactive` in both language files
+1. For "remove" projects → run `landscape-remove`, which deletes both language files and opens a pull request for a maintainer to merge
+2. For "removal candidate" projects → change nothing unless the user decides to remove them; then run `landscape-remove` as well
 3. Validate and build
 
-Ask user: "Apply all suggested changes? [all/archive-only/review-each/none]"
+Never set a status other than `tracked`, and never push removals to `main` directly.
+
+Ask user: "Open a pull request with the removals? [all/dead-only/review-each/none]"
 
 ### Step 8: Save Report
 
@@ -163,6 +165,6 @@ For ongoing monitoring, this skill can be scheduled:
 | Error | Fix |
 |-------|-----|
 | GitHub API rate limit | Process in batches, save progress, resume |
-| Repo not found | Mark for archival, repo deleted |
+| Repo not found | Propose removal (repo deleted); re-check first, a 404 can be temporary |
 | Network timeout | Retry with backoff, skip and flag |
 | `gh` not authenticated | Prompt user to run `gh auth login` |

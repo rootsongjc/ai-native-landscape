@@ -43,9 +43,6 @@ cat dist/data/projects.json | jq '.'
 ═══════════════════════════════════════════
 
 Total projects: XXX
-  Active (tracked): XXX
-  Inactive: XXX
-  Archived: XXX
 
 Categories: 8
 Subcategories: 30+
@@ -159,7 +156,7 @@ Compare with previous report:
 📈 Growth (vs last report)
 ───────────────────────────
 New projects added:    +XX
-Projects archived:     -XX
+Projects removed:      -XX
 Net change:            +XX
 Fastest growing:       agents (+XX)
 ```

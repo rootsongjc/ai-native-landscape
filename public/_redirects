@@ -50,3 +50,9 @@
 /projects/envoy-ai-gateway/*  /projects/agent-router/:splat  301
 /zh/projects/envoy-ai-gateway  /zh/projects/agent-router/  301
 /zh/projects/envoy-ai-gateway/*  /zh/projects/agent-router/:splat  301
+
+# The Tomb page was removed; dead projects are deleted from the catalog instead.
+/tomb  /projects/  301
+/tomb/  /projects/  301
+/zh/tomb  /zh/projects/  301
+/zh/tomb/  /zh/projects/  301
